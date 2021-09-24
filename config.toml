@@ -1,0 +1,43 @@
+baseURL = "https://yxzi.xyz/Sub/Blog"
+languageCode = "zh-cn"
+title = "My Blog"
+theme = "Rainy"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""     
+    lineNoStart = 1  
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    style = "tango"
+  
+    tabWidth = 4
+    anchorlinenos = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[author]
+  name = "Rainy"
+  homepage = "https://yxzi.xyz"
+
+[params]
+  mainSections = ["article"]
+  headTitle = "Blog"
+  iconTitle = "My Blog"
+  favicon = 'https://yxzi.xyz/Logo.ico'
+  # 生成后的路径
+  extraCSSFiles = ["public/css/Base.css"] 
+  # 预览的路径
+  extraCSSFiles = ["css/Base.css"]
+
+
+
+
