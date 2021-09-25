@@ -31,7 +31,6 @@ theme = "Rainy"
 [params]
   mainSections = ["article"]
   headTitle = "Blog"
-  iconTitle = "My Blog"
   favicon = 'https://yxzi.xyz/Logo.ico'
   # 生成后的路径
   extraCSSFiles = ["public/css/Base.css"] 
