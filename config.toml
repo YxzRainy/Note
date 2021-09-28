@@ -1,6 +1,6 @@
 baseURL = "https://yxzi.xyz/Sub/Blog"
 languageCode = "zh-cn"
-title = "My Blog"
+title = "Rainy · Music"
 theme = "Rainy"
 
 [markup]
@@ -30,7 +30,6 @@ theme = "Rainy"
 
 [params]
   mainSections = ["article"]
-  headTitle = "Blog"
   favicon = 'https://yxzi.xyz/Logo.ico'
   # 生成后的路径
   extraCSSFiles = ["public/css/Base.css"] 
