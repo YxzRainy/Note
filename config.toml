@@ -1,6 +1,6 @@
 baseURL = "https://yxzi.xyz/Sub/Blog"
 languageCode = "zh-cn"
-title = "Rainy · Music"
+title = "Rainy · Blog"
 theme = "Rainy"
 
 [markup]
