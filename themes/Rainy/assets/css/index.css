@@ -480,22 +480,6 @@ table th {
 table thead th {
 	vertical-align: middle;
 }
-/* 内联框架 */
-
-.iframe {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-}
-
-.iframe iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 .post-content pre {
 	display: block;
@@ -506,7 +490,6 @@ table thead th {
 	margin-bottom: 3rem;
 	font-size: 1.4rem;
 	border: 0.1rem solid rgb(177, 177, 177);
-	font-family: var(--CodeFont);
 	border-radius: var(--Ri);
 	letter-spacing: 0.3rem;
 	overflow-x: scroll;
@@ -516,10 +499,9 @@ table thead th {
 .post-content code {
 	padding: 0.2rem 0.5rem;
 	border-radius: 0.2rem;
-	font-family: var(--CodeFont);
-	font-size: 1.4rem;
 	color: var(--CodeCl);
-	background-color: #398f8f;
+	margin: 0 1rem;
+	background-color: #008c8c2f;
 }
 
 /* 代码复制按钮  */
