@@ -5,14 +5,14 @@
     return;
   }
 
-  function flashCopyMessage (el, msg) {
+  function flashCopyMessage(el, msg) {
     el.textContent = msg;
     setTimeout(function () {
       el.textContent = "Copy";
     }, 1000);
   }
 
-  function selectText (node) {
+  function selectText(node) {
     var selection = window.getSelection();
     var range = document.createRange();
     range.selectNodeContents(node);
@@ -21,7 +21,7 @@
     return selection;
   }
 
-  function addCopyButton (containerEl) {
+  function addCopyButton(containerEl) {
     var copyBtn = document.createElement("button");
     copyBtn.className = "highlight-copy-btn";
     copyBtn.textContent = "Copy";
@@ -47,3 +47,5 @@
   var highlightBlocks = document.getElementsByClassName('highlight');
   Array.prototype.forEach.call(highlightBlocks, addCopyButton);
 })();
+
+

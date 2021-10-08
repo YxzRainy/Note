@@ -32,9 +32,9 @@ theme = "Rainy"
   mainSections = ["article"]
   favicon = 'https://yxzi.xyz/Logo.ico'
   # 生成后的路径
-  extraCSSFiles = ["public/css/Base.css"] 
+  extraCSSFiles = ["/Sub/Blog/css/Base.css"]
   # 预览的路径
-  extraCSSFiles = ["css/Base.css"]
+   extraCSSFiles = ["./css/Base.css"]
 
 
 
