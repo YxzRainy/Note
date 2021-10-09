@@ -1,7 +1,8 @@
 <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_wxipf99wp4j.js"></script>
 <script src="./js/copycode.js"></script>
 <script src="./js/Search.js"></script>
-<script src="https://unpkg.com/quicklink@0.1.1/dist/quicklink.umd.js"></script>
+
 {{ if and .Site.Params.lazyImage (not .IsHome) -}}
 <script src="{{ .Site.Params.staticPrefix }}{{ "js/lazyload.min.js" | relURL }}"></script>
 <script>
@@ -10,10 +11,4 @@
   });
 </script>
 {{ end }}
-<script>
-  var posts = document.getElementById('posts-list');
-  posts && quicklink({
-    el: posts,
-    priority: true,
-  });
-</script>
+

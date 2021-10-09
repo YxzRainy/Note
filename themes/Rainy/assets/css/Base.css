@@ -1,6 +1,3 @@
-@charset "utf-8";
-@import url(./Animista.css);
-
 :root {
 	--RainyCl: #008c8cdc;
 	--BrightCl: #eee;
@@ -98,8 +95,6 @@ a {
 	/* 隐藏滚动条 */
 }
 
-
-
 /* 响应式 */
 @media screen and (min-width: 720px) {
 	.BoxShadow {
@@ -112,11 +107,16 @@ a {
 	html {
 		font-size: 8px;
 	}
+	/* 文章目录隐藏 */
+
+	#tab-of-content-area {
+		display: none;
+	}
 
 	.BoxShadow {
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	}
-	
+
 	.Area {
 		width: 100%;
 		left: 0%;
@@ -134,7 +134,4 @@ a {
 		margin: 3rem 0 1rem 0 !important;
 		box-shadow: none;
 	}
-
-
-
 }

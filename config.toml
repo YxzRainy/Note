@@ -31,10 +31,8 @@ theme = "Rainy"
 [params]
   mainSections = ["article"]
   favicon = 'https://yxzi.xyz/Logo.ico'
-  # 生成后的路径
-  extraCSSFiles = ["/Sub/Blog/css/Base.css"]
-  # 预览的路径
-   extraCSSFiles = ["./css/Base.css"]
+
+
 
 
 

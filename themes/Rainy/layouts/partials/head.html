@@ -43,6 +43,13 @@
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
+  {{ with resources.Get "css/Base.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+
+  {{ with resources.Get "css/Animista.css" | minify }}
+  <style>{{ .Content | safeCSS }}</style>
+{{ end }}
 
   {{ range .Site.Params.extraCSSFiles -}}
   <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">

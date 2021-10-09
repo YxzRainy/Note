@@ -1,7 +1,6 @@
 
 function SearchCode() {
     // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-    var searchBtn = document.querySelector('.search-start');
     var searchClear = document.querySelector('.search-clear');
     var searchInput = document.querySelector('.search-input');
     var searchResults = document.querySelector('.search-results');
@@ -39,11 +38,10 @@ function SearchCode() {
         }
     }
 
-    // 开始获取根目录下 feed.xml 文件内的数据
+    // 开始获取 index.xml 文件内的数据
     xhr.open('get', '/Sub/Blog/index.xml', true);
     xhr.send();
 
-    searchBtn.onclick = searchConfirm;
 
     // 清空按钮点击函数
     searchClear.onclick = function () {
@@ -146,7 +144,6 @@ function SearchCode() {
         // 在新标签页面打开链接的代码，与上面二者只能取一个，自行决定
         // window.open(href);
     }
-
 }
 
 
@@ -170,9 +167,9 @@ function SearchBox(time) {
 
     var SearchInput = $('<input type="text" class="search-input" placeholder="请输入..." />');
     SearchInput.appendTo(SearchArea);
-    var ClearSearch = $('<span class="search-clear">clear</span>')
+    var ClearSearch =$('<span class="search-clear">clear</span>')
     ClearSearch.appendTo(SearchArea);
-    var SearchResults = $('<div class="search-results"></div>')
+    var SearchResults =$('<div class="search-results"></div>')
     SearchResults.appendTo(SearchArea);
 
     // <span class="search-clear">clear</span>
@@ -206,7 +203,7 @@ function SearchClick() {
         SearchCode();
 
     });
-
+    
 }
 $(GetEl)
 $(SearchClick)
