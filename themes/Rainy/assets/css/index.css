@@ -671,14 +671,20 @@ table thead th {
 	overflow: auto;
 	border-radius: var(--Ri);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	background-color: var(--BrightCl);
+
 }
 /* 匹配到的文章项目 */
 .search .search-results .result-item {
-	background: var(--BrightCl);
+	background-color: var(--BrightCl);
 	font-size: 1.4rem;
 	padding: 0.8rem;
 	box-sizing: border-box;
 	border: 0.01rem solid #e7e7e7;
+	cursor: pointer;
+}
+.search .search-results .result-item:hover {
+	background-color: var(--BtnRipple);
 }
 
 /* 匹配到的字符高亮 */

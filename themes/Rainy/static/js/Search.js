@@ -15,7 +15,7 @@ var searchValue = '',
     indexItem = [],
     itemLength = 0;
 var tmpDiv = document.createElement('div');
-tmpDiv.className = 'result-item';
+tmpDiv.className = 'result-item TransitionOne';
 
 // ajax 的兼容写法
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
@@ -62,7 +62,7 @@ function searchConfirm() {
         // 检测输入值全是空白的情况
         searchInit();
         var itemDiv = tmpDiv.cloneNode(true);
-        itemDiv.innerText = '请输入有效内容...';
+        itemDiv.innerText = '请输入关键字...';
         searchResults.appendChild(itemDiv);
     } else {
         // 合法输入值的情况
@@ -114,7 +114,7 @@ function searchMatching(arr1, arr2, input) {
     // 未匹配到内容的情况
     if (indexItem.length == 0) {
         var itemDiv = tmpDiv.cloneNode(true);
-        itemDiv.innerText = '未匹配到内容...';
+        itemDiv.innerText = '未检索到相关文章...';
         searchResults.appendChild(itemDiv);
     }
 
@@ -122,7 +122,7 @@ function searchMatching(arr1, arr2, input) {
     for (i = 0; i < arrResults.length; i++) {
         var itemDiv = tmpDiv.cloneNode(true);
         itemDiv.innerHTML = '<strong>' + arrTitles[indexItem[i]] +
-            '</strong><br/>' + arrResults[i] + '...';
+            '</strong><br/>' + arrResults[i];
         itemDiv.setAttribute('onclick', 'changeHref(arrLinks[indexItem[' + i + ']])');
         searchResults.appendChild(itemDiv);
     }
@@ -173,11 +173,15 @@ function SearchBox(time) {
 
     // 对话框效果
     var SearchDialog = $('.SearchDialogBox');
-    var SearchDialogMask = $('.SearchDialogMask');
     SearchDialog.fadeIn(time);
     $('.SearchDialogBox .CloseBox').click(function () {
+        // 清空搜索框内容
+        searchInput.value = '';
+        searchResults.style.display = 'none';
+        // 关闭搜索框和遮罩
         Box.fadeOut(time);
         Mask.fadeOut(time);
+
     });
     Box.css({
         display: 'none',
