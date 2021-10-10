@@ -49,7 +49,12 @@
 
   {{ with resources.Get "css/Animista.css" | minify }}
   <style>{{ .Content | safeCSS }}</style>
-{{ end }}
+  {{ end }}
+
+  {{ with resources.Get "css/Hover.css" | minify }}
+  <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+
 
   {{ range .Site.Params.extraCSSFiles -}}
   <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">

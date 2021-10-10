@@ -34,7 +34,7 @@
 }
 
 .MinWidth {
-	min-width: 320px;
+	min-width: 300px;
 }
 
 .BorderBox {
@@ -107,8 +107,12 @@ a {
 	html {
 		font-size: 8px;
 	}
-	/* 文章目录隐藏 */
+	/* 搜索框 */
+	.SearchDialogBox {
+		width: 80%;
+	}
 
+	/* 文章目录隐藏 */
 	#tab-of-content-area {
 		display: none;
 	}
