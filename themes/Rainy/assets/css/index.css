@@ -625,6 +625,7 @@ table thead th {
 	height: 88%;
 	font-size: 1.5rem;
 }
+
 .SearchDialogBox .CloseBox {
 	position: relative;
 	z-index: 4;
@@ -657,10 +658,10 @@ table thead th {
 	box-sizing: border-box;
 	background: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
 }
 
 .search .search-results {
-	display: block;
 	z-index: 1;
 	position: absolute;
 	top: 5.6rem;
@@ -673,6 +674,7 @@ table thead th {
 	background-color: var(--BrightCl);
 
 }
+
 /* 匹配到的文章项目 */
 .search .search-results .result-item {
 	background-color: var(--BrightCl);
@@ -684,6 +686,12 @@ table thead th {
 }
 .search .search-results .result-item:hover {
 	background-color: var(--BtnRipple);
+}
+
+.search .result-item:nth-child(1):hover{
+	background-color: var(--BrightCl);
+	cursor: auto;
+
 }
 
 /* 匹配到的字符高亮 */

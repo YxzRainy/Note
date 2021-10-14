@@ -56,6 +56,9 @@
   </article>
 
   {{ partial "scripts.html" . }}
+  <script src="../../js/copycode.js"></script>
+
+
   {{ if .Site.Params.extraBody }}
   {{ .Site.Params.extraBody | safeHTML }}
   {{ end }}
