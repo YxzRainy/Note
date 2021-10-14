@@ -662,6 +662,7 @@ table thead th {
 }
 
 .search .search-results {
+	display: none;
 	z-index: 1;
 	position: absolute;
 	top: 5.6rem;
