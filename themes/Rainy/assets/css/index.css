@@ -13,7 +13,6 @@
 	position: absolute;
 	overflow-y: scroll;
 	background-color: var(--BrightCl);
-	position: relative;
 }
 .MainTitle {
 	font-size: 3.9rem;
@@ -49,6 +48,8 @@
 	font-weight: normal;
 }
 
+
+
 /* posts list */
 .Articles {
 	height: 100%;
@@ -59,7 +60,7 @@
 /* 文章项目列表 */
 .posts-line {
 	position: relative;
-	padding: 3rem 2rem;
+	padding: 1.6rem 2rem;
 	font-size: 1.5rem;
 	width: 100%;
 	margin: 3rem auto 0 auto;
@@ -88,7 +89,7 @@ h1 + .posts-line {
 	transform: translateY(-50%);
 }
 .TagTitle {
-	padding-left: 10%;
+	margin-left: 10%;
 }
 
 .col-xs-11 a,
@@ -98,30 +99,11 @@ h1 + .posts-line {
 	transition: all var(--TmOne);
 }
 
-.col-xs-11 a:before,
-.TagTitle a:before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	bottom: -0.2rem;
-	width: 0;
-	height: 0.15rem;
-	transition: all var(--TmOne);
-	background-color: var(--RainyCl);
-}
 
 .col-xs-11 a:hover,
 .TagTitle a:hover {
 	color: var(--RainyCl);
 }
-
-.col-xs-11 a:hover:before,
-.TagTitle a:hover:before {
-	width: 100%;
-	left: 0;
-	right: 0;
-}
-
 .posts-categories {
 	font-size: 0.8rem;
 	margin: auto;
@@ -169,24 +151,25 @@ h1 + .posts-line {
 .articles {
 	padding: 3rem 3rem 3rem 3rem;
 	max-width: 70%;
-	margin: 3rem 0 3rem 9%;
+	margin: 3rem 0 3rem 8%;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
+/* 文章页目录 */
 #TableOfContents {
 	position: fixed;
-	right: 5%;
-	top: 3rem;
-	border-radius: var(--Ri);
+	right: 7%;
+	top: 5%;
+	z-index: 3;
 	width: 20rem;
-	margin-left: 3rem;
+	border-radius: var(--Ri);
 	background-color: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 #TableOfContents ul {
 	font-size: 1.6rem;
-	padding: 1.5rem 2rem;
+	padding: 1rem 2rem;
 }
 
 #TableOfContents ul a {
@@ -197,6 +180,7 @@ h1 + .posts-line {
 	padding: 0;
 	padding-left: 2rem;
 	font-size: 1.4rem;
+	
 }
 
 #TableOfContents li {
@@ -204,11 +188,9 @@ h1 + .posts-line {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+
 }
 
-#tab-of-content-button {
-	float: right;
-}
 
 .post-content img {
 	max-width: 100%;
@@ -216,6 +198,7 @@ h1 + .posts-line {
 	margin-right: auto;
 	margin-top: 1.2rem;
 }
+
 /* 隐藏源文章中的一级标题 */
 .post-content h1 {
 	display: none;
@@ -351,7 +334,7 @@ ol {
 }
 
 .related-content li {
-	margin: 5px 0;
+	margin: 0.5rem 0;
 }
 
 /* gallery */

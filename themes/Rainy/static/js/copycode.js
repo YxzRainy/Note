@@ -34,6 +34,7 @@
         selection.removeAllRanges();
 
         flashCopyMessage(copyBtn, 'Copied!')
+
       } catch (e) {
         console && console.log(e);
         flashCopyMessage(copyBtn, 'Failed :\'(')
@@ -49,7 +50,8 @@
 })();
 
 
-
-
-
-
+// if(document.getElementById("XXX")){ 
+//   //存在 
+//   } 
+// var Directory= $('#TableOfContents')
+// // if()

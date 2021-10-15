@@ -2,7 +2,7 @@
 <html lang="en">
 {{ partial "head.html" . }}
 <!-- 文章页 -->
-<body class="Wrap text-focus-in" >
+<body class="Wrap" >
   <article class="post articles BorderBox {{ .Site.Language.LanguageName }} " id="article">
     <div class="row">
       <div class="col-xs-12">
@@ -21,9 +21,7 @@
           {{ end }}
         </header>
 
-        <div id="tab-of-content-area">
           {{ .TableOfContents }}
-        </div>
 
         <div class="post-content">
           {{ .Site.Params.postHeaderContent | safeHTML }}
