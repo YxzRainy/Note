@@ -469,7 +469,7 @@ hr {
 
 /* 代码块横向滚动条颜色 */
 .highlight pre::-webkit-scrollbar-thumb {
-	background-color: #999;
+	background-color: rgb(202, 202, 202);
 }
 
 .post-content li {
