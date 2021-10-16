@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-xs-12">
         <header class="post-header">
-          <h1 class="post-title">{{ .Title }}</h1>
+          <h1 id="Title" class="post-title">{{ .Title }}</h1>
           {{ if in .Site.Params.mainSections .Type }}
           <div class="row post-desc">
             <div class="col-xs-6">
@@ -18,11 +18,13 @@
               {{ end }}
             </div>
           </div>
+
           {{ end }}
         </header>
-
+          <!-- 目录 -->
           {{ .TableOfContents }}
-
+      
+          
         <div class="post-content">
           {{ .Site.Params.postHeaderContent | safeHTML }}
           {{ .Content }}
@@ -52,6 +54,7 @@
       </div>
     </div>
   </article>
+  {{ partial "footer.html" . }}
 
   {{ partial "scripts.html" . }}
   <script src="../../js/copycode.js"></script>

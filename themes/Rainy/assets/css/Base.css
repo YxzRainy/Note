@@ -5,9 +5,12 @@
 	--TmOne: 0.3s;
 	--TmTwo: 1.5s;
 	--Ri: 0.3rem;
+	--LinkCl: #3fa4e7;
 	--CodeCl: #135046;
 	--BtnRipple: rgba(0, 0, 0, 0.05);
 }
+
+
 
 .Icon {
 	width: 3rem;
@@ -15,7 +18,7 @@
 	cursor: pointer;
 	overflow: hidden;
 	fill: currentColor;
-	vertical-align: -0.15em;
+	vertical-align: -0.65rem;
 }
 
 .Icon:active {
@@ -47,6 +50,24 @@
 
 .SerifFont {
 	font-family: serif;
+}
+/* 滚动条 */
+/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width:1rem;
+    background-color:#F5F5F5;
+}
+/*定义滚动条轨道：内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    background-color:var(--BrightCl);
+}
+/*定义滑块：内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius:var(--Ri);
+    background-color:#999;
 }
 
 * {
@@ -111,31 +132,43 @@ a {
 	.SearchDialogBox {
 		width: 80%;
 	}
-
-	/* 文章目录隐藏 */
-	#TableOfContents  {
-		display: none;
-	}
-
 	.BoxShadow {
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	}
-
-	.Area {
-		width: 100%;
-		left: 0%;
-		top: 0%;
-		height: 100%;
+	.Wrap{
+	padding: 0rem 1%;
 	}
 
-	.posts {
-		width: 100%;
-		padding: 0 2rem;
-	}
-
+	/* 文章页区域 */
 	.articles {
-		max-width: 100% !important;
-		margin: 3rem 0 1rem 0 !important;
+		min-height: 100vh;
 		box-shadow: none;
 	}
+	/* 主页文章区域 */
+	#posts-list{
+		box-shadow: none;
+	}
+	/* 主页区域 */
+	.posts {
+		width: 100%;
+		padding-bottom: 1rem;
+	}
+
+
+}
+
+
+@media screen and (max-width: 1300px) {
+		/* 文章目录隐藏 */
+		#TableOfContents {
+			position: static;
+			margin-top: 2rem;
+			width: 100%;
+			box-shadow: none;
+			border-left: 0.5rem solid var(--BtnRipple);
+		}
+		
+		.post-content {
+			margin-top: 3rem;
+		}
 }

@@ -3,117 +3,107 @@
 	height: 100%;
 	position: relative;
 }
-
-.Area {
-	width: 80%;
-	height: 100%;
-	left: 0;
-	z-index: 2;
-	top: 0%;
-	position: absolute;
-	overflow-y: scroll;
-	background-color: var(--BrightCl);
-}
-.MainTitle {
-	font-size: 3.9rem;
-	margin-top: 2rem;
-	text-align: center;
-}
-.OneGeometry {
-	left: 5.5%;
-	top: 7%;
-	width: 77%;
-	z-index: 1;
-	height: 85%;
-	position: absolute;
-	background-color: var(--BrightCl);
-}
-/* 主页文章 */
+/* 主页区域 */
 .posts {
-	width: 65rem;
-	padding: 0 2rem;
+	width: 70rem;
 	margin: 0 auto;
-}
+	padding-bottom: 5rem;
 
-/* header */
-.taxonomy-term {
-	font-size: 3rem;
+}
+/* 主页标题 */
+.MainTitle {
+	font-size: 3.6rem;
+	margin: 2rem 0;
 	text-align: center;
-	margin-top: 2.5rem;
-}
-/* 年日期 */
-.site-date-catalog {
-	font-size: 2.4rem;
-	margin: 2.5rem 0 1.5rem 1rem;
-	font-weight: normal;
+
 }
 
-
-
-/* posts list */
-.Articles {
-	height: 100%;
-}
+/* 主页文章区域 */
 #posts-list {
-	min-height: 100%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	padding: 1.5rem 2rem 1rem 2rem;
 }
-/* 文章项目列表 */
-.posts-line {
+/* 主页文章日期 */
+.PostsArea {
 	position: relative;
-	padding: 1.6rem 2rem;
-	font-size: 1.5rem;
-	width: 100%;
-	margin: 3rem auto 0 auto;
-	min-width: 33rem;
+	padding: 0.5rem 1rem;
+}
+
+/* 搜索按钮 */
+#SearchBox {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 1.7rem;
+	transform: translateY(-50%);
+}
+
+#SearchBox .Search {
+	border-radius: 50%;
+	padding: 0.5rem;
+	background-color: var(--BrightCl);
+}
+
+#SearchBox .Search:hover {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
-h1 + .posts-line {
-	margin-top: 1.5rem;
-}
-/* 日期 */
-.posts-date,
-.col-xs-2 {
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	font-size: 1.5rem;
-	transform: translateY(-50%);
-}
-/* 文章页和标签页的文章标题 */
-.col-xs-11,
-.TagTitle {
-	position: absolute;
-	top: 50%;
-	font-size: 1.6rem;
-	left: 25%;
-	transform: translateY(-50%);
-}
-.TagTitle {
-	margin-left: 10%;
+
+/* 搜索对话框 */
+.SearchDialogMask {
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(0.5rem);
 }
 
-.col-xs-11 a,
-.TagTitle a {
-	display: inline-block;
+.SearchDialogBox {
+	top: 40%;
+	left: 50%;
+	z-index: 5;
+	width: 50%;
+	height: 50rem;
+	padding-top: 5rem;
+	box-sizing: border-box;
+	border-radius: var(--Ri);
+	background-color: var(--BrightCl);
+	background-color: transparent;
+	transform: translate(-50%, -50%);
+}
+.SearchDialogBox .Content {
 	position: relative;
+	z-index: 4;
+	width: 100%;
+	height: 88%;
+	font-size: 1.5rem;
+}
+
+.SearchDialogBox .CloseBox {
+	position: relative;
+	z-index: 4;
+	width: 100%;
+	height: 12%;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: var(--Ri);
+}
+.SearchDialogBox .Close {
+	z-index: 5;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	width: 2.5rem;
 	transition: all var(--TmOne);
 }
 
-
-.col-xs-11 a:hover,
-.TagTitle a:hover {
-	color: var(--RainyCl);
-}
-.posts-categories {
-	font-size: 0.8rem;
-	margin: auto;
-	text-align: center;
-}
-/* 标签 */
+/* 主页文章项目标签 */
 .posts-category {
 	position: absolute;
 	top: 50%;
-	right: 3%;
+	right: 0;
 	transform: translateY(-50%);
 	font-size: 1.35rem;
 }
@@ -130,6 +120,57 @@ h1 + .posts-line {
 	background-color: var(--BtnRipple);
 }
 
+/* 文章项目日期 */
+.posts-date {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	font-size: 1.5rem;
+	transform: translateY(-50%);
+}
+/* 文章页和标签页的文章标题 */
+.PostTitle{
+	position: absolute;
+	top: 50%;
+	font-size: 1.6rem;
+	left: 13rem;
+	transform: translateY(-50%);
+}
+.PostTitle a{
+	font-weight: bold;
+	display: inline-block;
+	position: relative;
+	transition: all var(--TmOne);
+}
+
+/* 标签页 */
+
+/* 年日期 */
+.site-date-catalog {
+	font-size: 2.4rem;
+	font-weight: normal;
+	display: inline-block;
+}
+
+/* 文章项目列表项 */
+.posts-line {
+	position: relative;
+	padding: 1.6rem 2rem;
+	font-size: 1.5rem;
+	width: 100%;
+	min-width: 33rem;
+
+}
+
+h1 + .posts-line {
+	margin-top: 1.5rem;
+}
+
+.PostTitle a:hover,
+.TagTitle a:hover {
+	color: var(--RainyCl);
+}
+
 /* 底部备案号 */
 .site-footer {
 	width: 100%;
@@ -141,46 +182,53 @@ h1 + .posts-line {
 	color: var(--RainyCl);
 }
 
-/* post */
+
 
 /* 文章页 */
 .Wrap {
 	padding-bottom: 1rem;
 	height: auto !important;
+	padding: 5rem 6%;
 }
 .articles {
-	padding: 3rem 3rem 3rem 3rem;
-	max-width: 70%;
-	margin: 3rem 0 3rem 8%;
+	padding: 3rem;
+	max-width: 83%;
+	min-height: 86vh;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 /* 文章页目录 */
 #TableOfContents {
 	position: fixed;
-	right: 7%;
-	top: 5%;
+	right: 5%;
+	top: 6%;
 	z-index: 3;
 	width: 20rem;
+	color: var(--LinkCl);
 	border-radius: var(--Ri);
 	background-color: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 #TableOfContents ul {
-	font-size: 1.6rem;
-	padding: 1rem 2rem;
+	font-size: 1.4rem;
+	padding: 0.8rem 1.5rem;
 }
 
 #TableOfContents ul a {
 	color: inherit;
+	padding: 0.3rem 0.5rem;
+	transition: all var(--TmOne);
+	border-radius: var(--Ri);
+}
+#TableOfContents ul a:hover {
+	background-color: var(--BtnRipple);
 }
 
 #TableOfContents ul ul {
 	padding: 0;
 	padding-left: 2rem;
 	font-size: 1.4rem;
-	
 }
 
 #TableOfContents li {
@@ -188,9 +236,18 @@ h1 + .posts-line {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-
 }
-
+/* 回到主页 */
+#ToTheTop {
+	z-index: 3;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	padding: 1.2rem;
+	border-radius: 50%;
+	background-color: var(--BrightCl);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
 
 .post-content img {
 	max-width: 100%;
@@ -199,16 +256,16 @@ h1 + .posts-line {
 	margin-top: 1.2rem;
 }
 
-/* 隐藏源文章中的一级标题 */
-.post-content h1 {
-	display: none;
-}
-
-
-/* 文章页 一级标题 */
+/* 文章页 */
+/* 一级标题 */
 .articles .post-title {
 	font-size: 3.6rem;
 	text-align: center;
+}
+
+/* 隐藏源文章中的一级标题 */
+.post-content h1 {
+	display: none;
 }
 .articles .post-title:after {
 	content: '';
@@ -219,13 +276,13 @@ h1 + .posts-line {
 	border-bottom: 0.2rem solid var(--RainyCl);
 }
 .articles h2 {
-	font-size: 2.8rem;
+	font-size: 2.6rem;
 	padding-left: 1rem;
 	border-bottom: 0.16rem solid var(--RainyCl);
 	font-weight: bold;
 	margin-top: 5rem;
 	margin-bottom: 2rem;
-	border-left: 0.7rem solid var(--RainyCl);
+	border-left: 0.3rem solid var(--RainyCl);
 }
 .articles h3 {
 	font-size: 2.3rem;
@@ -245,9 +302,7 @@ h1 + .posts-line {
 .articles h5 {
 	font-size: 1.8rem;
 }
-.articles h6 {
-	font-size: 1.5rem;
-}
+
 p {
 	font-size: 1.7rem;
 }
@@ -271,9 +326,11 @@ p {
 }
 
 /* 文章页日期  */
+.col-xs-6 {
+	text-align: right;
+}
 .post-date {
-	float: right;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-style: italic;
 	margin-top: 1rem;
 }
@@ -283,7 +340,7 @@ p {
 }
 
 .post-content {
-	margin-top: 6.6rem;
+	margin-top: 2.5rem;
 	font-size: 1.5rem;
 }
 
@@ -374,39 +431,45 @@ ol {
 
 /* 代码块 */
 .highlight {
-	margin: 2rem 0;
 	position: relative;
 }
 /* 代码块中的一行行的代码 */
 .post-content pre > code {
+	margin: 0;
 	padding: 0;
 	background: transparent;
+	font-family: Arial, sans-serif;
 }
 
 .post-content pre > code .ln {
 	user-select: none;
 }
 
-.highlight pre::-webkit-scrollbar {
-	width: 0.2rem;
+/* 水平分割线 */
+hr {
+	margin: 2rem 1rem;
+	height: 0.2rem;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	box-sizing: content-box;
+	background-color: #e2e2e2;
 }
-/* 代码块横向滚动条背景颜色 */
 
+/* 代码块滚动条 */
+.highlight pre::-webkit-scrollbar {
+	height: 1rem;
+}
+
+/* 代码块横向滚动条背景颜色 */
 .highlight pre::-webkit-scrollbar-track-piece {
+	height: 0.1rem;
 	background-color: var(--BrightCl);
 }
 
-.highlight pre::-webkit-scrollbar-track {
-	background-color: rgb(131, 15, 15);
-}
 /* 代码块横向滚动条颜色 */
 .highlight pre::-webkit-scrollbar-thumb {
-	background-color: #ddd;
-}
-
-.highlight pre::-webkit-scrollbar-button {
-	background-color: rgb(160, 17, 17);
-	display: none;
+	background-color: #999;
 }
 
 .post-content li {
@@ -448,17 +511,18 @@ table thead th {
 	vertical-align: middle;
 }
 
+/* 代码块边框 */
 .post-content pre {
 	display: block;
 	-webkit-overflow-scrolling: touch;
-	border-radius: 0.3rem;
-	padding: 2.5rem 1rem;
-	margin-top: 3rem;
-	margin-bottom: 3rem;
-	font-size: 1.4rem;
-	border: 0.1rem solid rgb(177, 177, 177);
 	border-radius: var(--Ri);
-	letter-spacing: 0.3rem;
+	padding: 0rem 1rem;
+	padding-top: 1rem;
+	margin: 3rem 0;
+	font-size: 1.4rem;
+	border: 0.1rem solid rgba(0, 0, 0, 0.11);
+	border-radius: var(--Ri);
+	letter-spacing: 0.2rem;
 	overflow-x: scroll;
 	background-color: var(--BrightCl) !important;
 }
@@ -566,66 +630,6 @@ table thead th {
 	content: ' ';
 	opacity: 0;
 }
-/* 搜索按钮 */
-#Footer .Search {
-	position: absolute;
-	bottom: 10%;
-	right: 10%;
-	padding: 1rem;
-	border-radius: 50%;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
-
-/* 搜索对话框 */
-.SearchDialogMask {
-	top: 0;
-	left: 0;
-	z-index: 3;
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	background-color: rgba(0, 0, 0, 0.2);
-	backdrop-filter: blur(0.5rem);
-}
-
-.SearchDialogBox {
-	top: 40%;
-	left: 50%;
-	z-index: 5;
-	width: 50%;
-	height: 50rem;
-	padding-top: 5rem;
-	box-sizing: border-box;
-	border-radius: var(--Ri);
-	background-color: var(--BrightCl);
-	background-color: transparent;
-	transform: translate(-50%, -50%);
-}
-.SearchDialogBox .Content {
-	position: relative;
-	z-index: 4;
-	width: 100%;
-	height: 88%;
-	font-size: 1.5rem;
-}
-
-.SearchDialogBox .CloseBox {
-	position: relative;
-	z-index: 4;
-	width: 100%;
-	height: 12%;
-	text-align: center;
-	margin: 0 auto;
-	border-radius: var(--Ri);
-}
-.SearchDialogBox .Close {
-	z-index: 5;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	width: 2.5rem;
-	transition: all var(--TmOne);
-}
 
 .search {
 	position: relative;
@@ -641,7 +645,6 @@ table thead th {
 	box-sizing: border-box;
 	background: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-
 }
 
 .search .search-results {
@@ -656,7 +659,6 @@ table thead th {
 	border-radius: var(--Ri);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	background-color: var(--BrightCl);
-
 }
 
 /* 匹配到的文章项目 */
@@ -672,10 +674,9 @@ table thead th {
 	background-color: var(--BtnRipple);
 }
 
-.search .result-item:nth-child(1):hover{
+.search .result-item:nth-child(1):hover {
 	background-color: var(--BrightCl);
 	cursor: auto;
-
 }
 
 /* 匹配到的字符高亮 */

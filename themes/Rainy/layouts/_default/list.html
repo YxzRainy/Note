@@ -4,30 +4,34 @@
 <!-- 标签页 -->
 <body>
   <article id="Blog">
-    <div class="Area BoxShadow BorderRi BorderBox HideScroll">
   <article class="posts BorderBox">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="">
         {{ partial "header.html" . }}
-        <h1 class="taxonomy-term">{{.Data.Term}}</h1>
+        <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
 
         <div id="posts-list">
           {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
           <section>
+            <div class="PostsArea">
             <h1 class="site-date-catalog">{{ .Key }}</h1>
+            <div id="SearchBox">
+              <svg class="Search Icon TransitionOne" aria-hidden="true">
+                  <use href="#Icon-Search"></use>
+              </svg>
+      </div>
+            </div>
 
             {{ range .Pages }}
             <div class="row posts-line BorderBox BorderRi">
-              <div class="posts-date col-xs-2">
+              <div class="posts-date ">
                 <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
               </div>
-              <div class="posts-title col-xs-10">
                 <div class="row ">
-                  <div class="col-xs-12 TagTitle hvr-underline-from-center">
+                  <div class="PostTitle hvr-underline-from-center">
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                   </div>
                 </div>
-              </div>
             </div>
             {{ end }}
           </section>
@@ -36,11 +40,11 @@
       </div>
     </div>
   </article>
-    </div>
-			<div class="OneGeometry BoxShadow BorderRi bounce-in-right"></div>
+    {{ partial "footer.html" . }}
   </article>
 
   {{ partial "scripts.html" . }}
+  <script src="../../js/Search.js"></script>
 
 
 </body>

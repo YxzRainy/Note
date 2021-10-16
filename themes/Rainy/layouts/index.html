@@ -2,49 +2,46 @@
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
 {{ partial "head.html" . }}
 
-<body class="HideScroll MinWidth">
+<body class="MinWidth">
   <article id="Blog">
-    <div class="Area BoxShadow BorderRi BorderBox HideScroll">
-  <article class="posts BorderBox HideScroll">
-    <div class="row">
-  <div class="col-xs-12">
-    <h1 class="MainTitle">Blog</h1>
-        {{ partial "header.html" . }}
-        <div id="posts-list">
-          {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-          <section>
+    <article class="posts BorderBox">
+      <h1 id="Title" class="MainTitle">Blog</h1>
+      {{ partial "header.html" . }}
+
+      <div id="posts-list">
+        {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
+        <section>
+
+          <div class="PostsArea">
             <h1 class="site-date-catalog">{{ .Key }}</h1>
-            {{ range .Pages }}
-            <div class="row posts-line BorderRi BorderBox">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10 hvr-underline-from-center">
-                    <a href="{{ .RelPermalink }}" >{{ .Title }}</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    {{ range .Params.categories }}
-                    <div class="posts-category">
-                      <a href="/Sub/Blog/categories/{{ lower . }}/" >{{ . }}</a>
-                    </div>
-                    {{ end }}
-                  </div>
-                </div>
-              </div>
+            <div id="SearchBox">
+              <svg class="Search Icon TransitionOne" aria-hidden="true">
+                <use href="#Icon-Search"></use>
+              </svg>
+            </div>
+          </div>
+
+          {{ range .Pages }}
+          <div class=" posts-line BorderRi BorderBox">
+            <div class="posts-date">
+              <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
+            </div>
+
+            <div class="PostTitle hvr-underline-from-center">
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </div>
+            {{ range .Params.categories }}
+            <div class="posts-category">
+              <a href="/Sub/Blog/categories/{{ lower . }}/">{{ . }}</a>
             </div>
             {{ end }}
-          </section>
+          </div>
           {{ end }}
-        </div>
-
-        {{ partial "footer.html" . }}
+        </section>
+        {{ end }}
       </div>
-    </div>
-  </article>
-    </div>
-			<div class="OneGeometry BoxShadow BorderRi bounce-in-right"></div>
+      {{ partial "footer.html" . }}
+    </article>
   </article>
 
   {{ partial "scripts.html" . }}

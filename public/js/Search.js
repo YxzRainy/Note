@@ -205,7 +205,7 @@ function SearchBox(time) {
 }
 // 点击按钮弹出对话框
 function GetEl() {
-    Search = $('#Footer .Search');
+    Search = $('#SearchBox .Search');
 }
 
 function SearchClick() {

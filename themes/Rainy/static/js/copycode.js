@@ -50,8 +50,11 @@
 })();
 
 
-// if(document.getElementById("XXX")){ 
-//   //存在 
-//   } 
-// var Directory= $('#TableOfContents')
-// // if()
+var Articles = $('.articles')
+
+var Directory = $('#TableOfContents')
+if (Directory.height() == 0 || Directory.css('position') == 'static') {
+  Articles.css({
+    'max-width': '100%',
+  })
+}

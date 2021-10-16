@@ -34,6 +34,7 @@
         selection.removeAllRanges();
 
         flashCopyMessage(copyBtn, 'Copied!')
+
       } catch (e) {
         console && console.log(e);
         flashCopyMessage(copyBtn, 'Failed :\'(')
@@ -49,7 +50,11 @@
 })();
 
 
+var Articles = $('.articles')
 
-
-
-
+var Directory = $('#TableOfContents')
+if (Directory.height() == 0 || Directory.css('position') == 'static') {
+  Articles.css({
+    'max-width': '100%',
+  })
+}
