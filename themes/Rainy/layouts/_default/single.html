@@ -1,69 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-{{ partial "head.html" . }}
-<!-- 文章页 -->
-<body class="Wrap" >
-  <article class="post articles BorderBox {{ .Site.Language.LanguageName }} " id="article">
-    <div class="row">
-      <div class="col-xs-12">
-        <header class="post-header">
-          <h1 id="Title" class="post-title">{{ .Title }}</h1>
-          {{ if in .Site.Params.mainSections .Type }}
-          <div class="row post-desc">
-            <div class="col-xs-6">
-              {{ if .Date }}
-              <time class="post-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">
-                {{ .Date.Format "2006.01.02" }}
-              </time>
-              {{ end }}
-            </div>
-          </div>
-
-          {{ end }}
-        </header>
-          <!-- 目录 -->
-          {{ .TableOfContents }}
-      
-          
-        <div class="post-content">
-          {{ .Site.Params.postHeaderContent | safeHTML }}
-          {{ .Content }}
-        </div>
-
-        <div class="row middle-xs">
-          <div class="col-xs-12">
-            {{ range .Params.tags }}
-            <div class="post-tags">
-              <a href="{{ site.LanguagePrefix }}/Sub/Blog/tags/{{ lower . | urlize }}/">
-                {{ . }}
-              </a>
-            </div>
-            {{ end }}
-          </div>
-        </div>
-        
+<html lang="zh-cmn-Hans">
+  {{ partial "head.html" . }}
+  <!-- 文章页 -->
+  <body class="Wrap">
+    <article class="Post BorderBox {{ .Site.Language.LanguageName }} ">
+      <header class="PostHeader">
+        <h1 id="Title" class="post-title">{{ .Title }}</h1>
         {{ if in .Site.Params.mainSections .Type }}
-          <div class="row">
-            <div class="col-xs-12">
-              {{ .Site.Params.postFooterContent | safeHTML }}
-            </div>
-          </div>
-
+        <div class="DateArea">
+          {{ if .Date }}
+          <time class="PostDate" datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">
+            {{ .Date.Format "2006.01.02" }}
+          </time>
+          {{ end }}
+        </div>
         {{ end }}
+      </header>
 
+      <!-- 目录 -->
+      {{ .TableOfContents }}
+
+      <!-- 正文 -->
+      <div class="PostContent">
+        {{ .Site.Params.postHeaderContent | safeHTML }}
+        {{ .Content }}
       </div>
-    </div>
-  </article>
-  {{ partial "footer.html" . }}
+      <!-- 底部标签 -->
+      {{ range .Params.tags }}
+      <div class="PostTag">
+        <a href="{{ site.LanguagePrefix }}/Sub/Blog/tags/{{ lower . | urlize }}/">
+          {{ . }}
+        </a>
+      </div>
+      {{ end }}
 
-  {{ partial "scripts.html" . }}
-  <script src="../../js/copycode.js"></script>
+    {{ partial "footer.html" . }}
+    </article>
 
-
-  {{ if .Site.Params.extraBody }}
-  {{ .Site.Params.extraBody | safeHTML }}
-  {{ end }}
-
-</body>
-
+    {{ partial "scripts.html" . }}
+    <script src="../../js/copycode.js"></script>
+  </body>
 </html>

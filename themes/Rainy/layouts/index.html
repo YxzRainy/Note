@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 
-<body class="MinWidth">
-  <article id="Blog">
-    <article class="posts BorderBox">
+  <body class="MinWidth">
+    <article class="Main BorderBox">
       <h1 id="Title" class="MainTitle">Blog</h1>
-      {{ partial "header.html" . }}
-
-      <div id="posts-list">
+      <div class="PostsArea">
         {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-        <section>
+     
+        {{ partial "header.html" . }}
 
-          <div class="PostsArea">
-            <h1 class="site-date-catalog">{{ .Key }}</h1>
-            <div id="SearchBox">
-              <svg class="Search Icon TransitionOne" aria-hidden="true">
-                <use href="#Icon-Search"></use>
-              </svg>
-            </div>
+        {{ range .Pages }}
+        <div class="PostsLine BorderBox">
+          <div class="PostsDate">
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
           </div>
 
-          {{ range .Pages }}
-          <div class=" posts-line BorderRi BorderBox">
-            <div class="posts-date">
-              <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
-            </div>
-
-            <div class="PostTitle hvr-underline-from-center">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </div>
-            {{ range .Params.categories }}
-            <div class="posts-category">
-              <a href="/Sub/Blog/categories/{{ lower . }}/">{{ . }}</a>
-            </div>
-            {{ end }}
+          <div class="PostTitle hvr-underline-from-center">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </div>
+          {{ range .Params.categories }}
+          <div class="PostsCategory">
+            <a href="/Sub/Blog/categories/{{ lower . }}/">{{ . }}</a>
           </div>
           {{ end }}
-        </section>
+        </div>
+        {{ end }}
         {{ end }}
       </div>
       {{ partial "footer.html" . }}
     </article>
-  </article>
 
-  {{ partial "scripts.html" . }}
-  <script src="./js/Search.js"></script>
-
-</body>
-
+    {{ partial "scripts.html" . }}
+    <script src="./js/Search.js"></script>
+  </body>
 </html>

@@ -1,33 +1,38 @@
-#Blog {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
+
 /* 主页区域 */
-.posts {
+.Main{
 	width: 70rem;
 	margin: 0 auto;
-	padding-bottom: 5rem;
-
+	padding: 3rem 0 5rem 0;
 }
-/* 主页标题 */
-.MainTitle {
+
+/* 标题 */
+.Main .MainTitle {
 	font-size: 3.6rem;
-	margin: 2rem 0;
 	text-align: center;
-
+	margin-bottom: 3rem;
 }
 
-/* 主页文章区域 */
-#posts-list {
+/* 文章区域 */
+.Main .PostsArea {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	padding: 1.5rem 2rem 1rem 2rem;
 }
-/* 主页文章日期 */
-.PostsArea {
+
+/* 顶部区域 */
+.MainHeader {
 	position: relative;
 	padding: 0.5rem 1rem;
 }
+
+
+/* 年 */
+.MainYear {
+	font-size: 2.4rem;
+	font-weight: normal;
+	display: inline-block;
+}
+
 
 /* 搜索按钮 */
 #SearchBox {
@@ -99,61 +104,8 @@
 	transition: all var(--TmOne);
 }
 
-/* 主页文章项目标签 */
-.posts-category {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	font-size: 1.35rem;
-}
-.posts-category a {
-	margin-right: 1rem;
-	color: var(--RainyCl);
-	padding: 0.3rem 0.8rem;
-	box-sizing: border-box;
-	transition: all var(--TmOne);
-	border: 0.1rem solid #ccc;
-	border-radius: var(--Ri);
-}
-.posts-category a:hover {
-	background-color: var(--BtnRipple);
-}
-
-/* 文章项目日期 */
-.posts-date {
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	font-size: 1.5rem;
-	transform: translateY(-50%);
-}
-/* 文章页和标签页的文章标题 */
-.PostTitle{
-	position: absolute;
-	top: 50%;
-	font-size: 1.6rem;
-	left: 13rem;
-	transform: translateY(-50%);
-}
-.PostTitle a{
-	font-weight: bold;
-	display: inline-block;
-	position: relative;
-	transition: all var(--TmOne);
-}
-
-/* 标签页 */
-
-/* 年日期 */
-.site-date-catalog {
-	font-size: 2.4rem;
-	font-weight: normal;
-	display: inline-block;
-}
-
-/* 文章项目列表项 */
-.posts-line {
+/* 文章列表项 */
+.PostsLine {
 	position: relative;
 	padding: 1.6rem 2rem;
 	font-size: 1.5rem;
@@ -162,46 +114,74 @@
 
 }
 
-h1 + .posts-line {
-	margin-top: 1.5rem;
+/* 文章项日期 */
+.PostsDate {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	font-size: 1.5rem;
+	transform: translateY(-50%);
 }
 
-.PostTitle a:hover,
-.TagTitle a:hover {
+
+/* 文章项标题 */
+.PostTitle{
+	position: absolute;
+	top: 50%;
+	font-size: 1.6rem;
+	left: 13rem;
+	transform: translateY(-50%);
+
+}
+.PostTitle a{
+	font-weight: bold;
+	font-family: sans-serif;
+	transition: all var(--TmOne);
+}
+
+.PostTitle a:hover {
 	color: var(--RainyCl);
 }
 
-/* 底部备案号 */
-.site-footer {
-	width: 100%;
-	text-align: center;
-	opacity: 0.2;
+/* 文章项分类 */
+.PostsCategory {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
 }
-.site-footer:hover {
-	opacity: 1;
+.PostsCategory a {
+	margin-right: 1rem;
 	color: var(--RainyCl);
+	padding: 0.3rem 0.8rem;
+	box-sizing: border-box;
+	transition: all var(--TmOne);
 }
-
+.PostsCategory a:hover {
+	background-color: var(--BtnRipple);
+}
 
 
 /* 文章页 */
+
+
 .Wrap {
-	padding-bottom: 1rem;
-	height: auto !important;
+	height: auto;
 	padding: 5rem 6%;
 }
-.articles {
+.Post {
 	padding: 3rem;
 	max-width: 83%;
 	min-height: 86vh;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-/* 文章页目录 */
-#TableOfContents {
+/* 目录 */
+.Post #TableOfContents {
 	position: fixed;
 	right: 5%;
-	top: 6%;
+	top: 8%;
 	z-index: 3;
 	width: 20rem;
 	color: var(--LinkCl);
@@ -210,64 +190,49 @@ h1 + .posts-line {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-#TableOfContents ul {
+.Post #TableOfContents ul {
 	font-size: 1.4rem;
 	padding: 0.8rem 1.5rem;
 }
 
-#TableOfContents ul a {
+.Post #TableOfContents ul a {
 	color: inherit;
 	padding: 0.3rem 0.5rem;
 	transition: all var(--TmOne);
 	border-radius: var(--Ri);
 }
-#TableOfContents ul a:hover {
+.Post #TableOfContents ul a:hover {
 	background-color: var(--BtnRipple);
 }
 
-#TableOfContents ul ul {
+.Post #TableOfContents ul ul {
 	padding: 0;
 	padding-left: 2rem;
 	font-size: 1.4rem;
 }
 
-#TableOfContents li {
+.Post #TableOfContents li {
 	padding: 0.5rem 0.3rem;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-/* 回到主页 */
-#ToTheTop {
-	z-index: 3;
-	position: fixed;
-	right: 5%;
-	bottom: 5%;
-	padding: 1.2rem;
-	border-radius: 50%;
-	background-color: var(--BrightCl);
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
 
-.post-content img {
-	max-width: 100%;
-	display: block;
-	margin-right: auto;
-	margin-top: 1.2rem;
-}
-
-/* 文章页 */
-/* 一级标题 */
-.articles .post-title {
-	font-size: 3.6rem;
-	text-align: center;
-}
 
 /* 隐藏源文章中的一级标题 */
-.post-content h1 {
+.PostContent h1 {
 	display: none;
 }
-.articles .post-title:after {
+
+/* 一级标题 */
+.Post .PostHeader .post-title {
+	font-size: 3.6rem;
+	text-align: center;
+	font-weight: bold;
+	font-family: sans-serif;
+
+}
+.Post .PostHeader .post-title:after {
 	content: '';
 	display: block;
 	margin: 0.2rem auto 0;
@@ -275,7 +240,20 @@ h1 + .posts-line {
 	height: 0.2rem;
 	border-bottom: 0.2rem solid var(--RainyCl);
 }
-.articles h2 {
+
+/*文章的日期区域*/
+.Post .PostHeader .DateArea {
+	text-align: right;
+}
+/* 标题右下角的日期 */
+.Post .PostHeader .PostDate {
+	font-size: 1.8rem;
+	font-style: italic;
+	margin-top: 1rem;
+}
+
+
+.Post .PostContent h2 {
 	font-size: 2.6rem;
 	padding-left: 1rem;
 	border-bottom: 0.16rem solid var(--RainyCl);
@@ -284,95 +262,56 @@ h1 + .posts-line {
 	margin-bottom: 2rem;
 	border-left: 0.3rem solid var(--RainyCl);
 }
-.articles h3 {
+.Post .PostContent h3 {
 	font-size: 2.3rem;
 	margin-top: 2rem;
 }
-.articles h3::before {
+.Post .PostContent h3::before {
 	content: '#' !important;
 	margin-right: 0.5rem;
 	color: var(--RainyCl);
 }
-.articles h4 {
+.Post .PostContent h4 {
 	font-size: 2rem;
 	margin-top: 1rem;
 	display: inline-block;
 	box-sizing: border-box;
 }
-.articles h5 {
+.Post .PostContent h5 {
 	font-size: 1.8rem;
 }
-
-p {
+.Post .PostContent  h6 {
 	font-size: 1.7rem;
 }
 
-/* 文章页标签 */
-.post-tags a {
-	display: inline-block;
-	margin-right: 1rem;
-	font-size: 1.4rem;
-	margin-top: 2rem;
-	color: var(--RainyCl);
-	padding: 0.3rem 0.8rem;
-	box-sizing: border-box;
-	transition: all var(--TmOne);
-	border: 0.1rem solid #ccc;
-	border-radius: var(--Ri);
-}
 
-.post-tags a:hover {
-	background-color: var(--BtnRipple);
-}
 
-/* 文章页日期  */
-.col-xs-6 {
-	text-align: right;
-}
-.post-date {
-	font-size: 1.8rem;
-	font-style: italic;
-	margin-top: 1rem;
-}
-
-.page-content {
-	min-height: 60%;
-}
-
-.post-content {
+/* 正文区域 */
+.PostContent {
 	margin-top: 2.5rem;
 	font-size: 1.5rem;
 }
-
-.post-content p {
-	hyphens: auto;
+/* 正文段落 */
+.PostContent p {
+	font-size: 1.7rem;
 	margin-bottom: 0.5rem;
+	font-family: sans-serif;
 }
 
-/* picture */
-img {
-	transition: all var(--TmOne);
+/* Picture */
+.PostContent img {
 	width: 50%;
+	display: block;
+	text-align: center;
+	transition: all var(--TmOne);
 	border-radius: var(--Ri);
 }
-img:hover {
+.PostContent img:hover {
 	cursor: pointer;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-/* 列表 */
-li > ol,
-li > ul {
-	font-size: 1.5rem;
-	line-height: 1.6;
-}
-
-ul,
-ol {
-	padding-left: 2rem;
-}
-
-.post-content blockquote {
+/* 引用块 */
+.PostContent blockquote {
 	border-left: 0.36rem solid #ddd;
 	color: #6b6b6b;
 	padding: 1rem 1rem 1rem 2rem;
@@ -381,69 +320,6 @@ ol {
 	border-radius: 0.3rem;
 }
 
-.related-content {
-	border-width: 3px;
-	border-style: solid;
-	border-color: #000;
-	padding: 0 10px;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-
-.related-content li {
-	margin: 0.5rem 0;
-}
-
-/* gallery */
-
-.gallery-img {
-	text-align: center;
-}
-
-.gallery-img span {
-	text-align: center;
-}
-
-.gallery-img-desc {
-	font-size: 0.8em;
-	font-weight: 800;
-}
-
-/* disqus */
-
-#disqus_thread {
-	position: relative;
-}
-
-#disqus_thread:after {
-	content: '';
-	display: block;
-	height: 55px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	background: white;
-}
-
-#cusdis_thread .w-full {
-	border-color: #000;
-}
-
-/* 代码块 */
-.highlight {
-	position: relative;
-}
-/* 代码块中的一行行的代码 */
-.post-content pre > code {
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	font-family: Arial, sans-serif;
-}
-
-.post-content pre > code .ln {
-	user-select: none;
-}
 
 /* 水平分割线 */
 hr {
@@ -456,53 +332,92 @@ hr {
 	background-color: #e2e2e2;
 }
 
-/* 代码块滚动条 */
+
+/* 代码块 */
+.highlight {
+	position: relative;
+}
+/* 单行代码 */
+.PostContent pre > code {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	font-family: Arial, sans-serif;
+}
+
+
+
+/* 代码块横向滚动条 */
 .highlight pre::-webkit-scrollbar {
 	height: 1rem;
 }
 
-/* 代码块横向滚动条背景颜色 */
+/* 轨道背景颜色 */
 .highlight pre::-webkit-scrollbar-track-piece {
 	height: 0.1rem;
 	background-color: var(--BrightCl);
 }
 
-/* 代码块横向滚动条颜色 */
+/* 滚动条颜色 */
 .highlight pre::-webkit-scrollbar-thumb {
 	background-color: rgb(202, 202, 202);
 }
 
-.post-content li {
-	line-height: 1.8;
-	font-size: 1.5rem;
-	margin-top: 1.2rem;
+/* 列表 */
+.PostContent ul,
+.PostContent ol{
+	margin: 1rem 0;
+	padding-left: 2rem;
+
 }
 
-.post-content a {
+.PostContent li {
+	line-height: 1.8;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+li > ol,
+li > ul {
+	font-size: 1.5rem;
+	line-height: 1.6;
+
+}
+
+
+/* 超链接 */
+.PostContent a {
 	color: var(--LinkCl);
 	text-decoration: none;
 	margin-top: 1rem;
 	border-bottom: 0.1rem solid var(--LinkCl);
 	transition: all var(--Tm);
 }
-.post-content a:hover {
+
+.PostContent a:hover {
 	color: var(--RainyCl);
 }
 
-.page-content strong {
+.PostContent strong {
 	margin: 0 0.15rem;
 	font-weight: bold;
+	border: 1px solid #000;
 }
+
 /* 表格 */
-#write table {
-	margin-bottom: 5rem;
+table {
+	margin: rem 0;
 	font-size: 1.6rem;
+	border-collapse: collapse;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
 }
+
 table th,
 table td {
 	padding: 1rem;
 	vertical-align: middle;
-	border: 0.1rem solid #ddd;
+	border: 0.1rem solid #ccc;
 }
 table th {
 	font-weight: bold;
@@ -512,7 +427,7 @@ table thead th {
 }
 
 /* 代码块边框 */
-.post-content pre {
+.PostContent pre {
 	display: block;
 	-webkit-overflow-scrolling: touch;
 	border-radius: var(--Ri);
@@ -527,15 +442,15 @@ table thead th {
 	background-color: var(--BrightCl) !important;
 }
 /* 行内代码块 */
-.post-content code {
+.PostContent code {
+	margin: 0 1rem;
 	padding: 0.2rem 0.5rem;
 	border-radius: 0.2rem;
 	color: var(--CodeCl);
-	margin: 0 1rem;
 	background-color: #008c8c2f;
 }
 
-/* 代码复制按钮  */
+/* 代码块复制按钮  */
 .highlight-copy-btn {
 	position: absolute;
 	top: 1rem;
@@ -556,80 +471,8 @@ table thead th {
 	color: var(--RainyCl);
 }
 
-/* 脚注 */
-.doc-endnote {
-	font-size: 1.3rem;
-}
 
-/* 任务选择器 */
-.task-list {
-	padding-left: 0;
-}
-/* task font */
-.md-task-list-item {
-	padding-left: 3.4rem;
-}
 
-.md-task-list-item > input {
-	width: 1.25rem;
-	height: 1.25rem;
-	display: block;
-	-webkit-appearance: initial;
-	top: -0.2rem;
-	margin-left: -1.6em;
-	margin-top: calc(1rem - 0.7rem);
-	border: none;
-	margin-top: 0.8rem;
-	background-color: transparent;
-}
-
-.md-task-list-item > input:focus {
-	outline: none;
-	box-shadow: none;
-}
-
-.md-task-list-item > input:before {
-	border: 0.1rem solid #555;
-	border-radius: var(--Ri);
-	width: 1.5rem;
-	height: 1.5rem;
-	content: ' ';
-	transition: background-color 200ms ease-in-out;
-	display: block;
-}
-
-.md-task-list-item > input:checked:before,
-.md-task-list-item > input[checked]:before {
-	background: #333;
-	border-width: 0.2rem;
-	display: inline-block;
-	transition: background-color 200ms ease-in-out;
-}
-
-.md-task-list-item > input:checked:after,
-.md-task-list-item > input[checked]:after {
-	opacity: 1;
-}
-
-.md-task-list-item > input:after {
-	opacity: 1;
-	-webkit-transition: opacity 0.05s ease-in-out;
-	-moz-transition: opacity 0.05s ease-in-out;
-	transition: opacity 0.05s ease-in-out;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	position: absolute;
-	top: 0.4375rem;
-	left: 0.28125rem;
-	width: 0.9375rem;
-	height: 0.5rem;
-	border: 0.3rem solid #fff;
-	border-top: 0;
-	border-right: 0;
-	content: ' ';
-	opacity: 0;
-}
 
 .search {
 	position: relative;
@@ -679,8 +522,41 @@ table thead th {
 	cursor: auto;
 }
 
-/* 匹配到的字符高亮 */
+/* 检索匹配到的字符高亮 */
 mark {
 	background: var(--RainyCl);
 	color: var(--BrightCl);
+}
+
+
+/* 文章页底部的标签 */
+.PostTag a {
+	display: inline-block;
+	margin-right: 1rem;
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	color: var(--RainyCl);
+	padding: 0.3rem 0.8rem;
+	box-sizing: border-box;
+	transition: all var(--TmOne);
+	border: 0.1rem solid #ccc;
+	border-radius: var(--Ri);
+}
+
+.PostTag a:hover {
+	background-color: var(--BtnRipple);
+}
+
+
+
+/* 回到主页 */
+#ToTheTop {
+	z-index: 3;
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+	padding: 1.2rem;
+	border-radius: 50%;
+	background-color: var(--BrightCl);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
