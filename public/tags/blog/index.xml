@@ -8,13 +8,15 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 01 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello</title>
-      <link>https://yxzi.xyz/Sub/Blog/article/hello-world/</link>
+      <title>嗨咯</title>
+      <link>https://yxzi.xyz/Sub/Blog/posts/hello-world/</link>
       <pubDate>Fri, 01 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/article/hello-world/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/posts/hello-world/</guid>
       <description>Hello World 2021 年 10 月 1 日，我的站点正式发布，
-愿你被世界温柔以待。</description>
+愿你被世界温柔以待。
+1img { 2	transition: all var(--TmOne); 3	width: 50%; 4	border-radius: var(--Ri); 5} 6img:hover { 7	cursor: pointer; 8	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; 9} 10 　Today I shed my old skin which hath, too long, suffered the bruises of failure and the wounds of mediority.
+　Today I am born anew and my birthplace is a vineyard where there is fruit for all.</description>
     </item>
     
   </channel>

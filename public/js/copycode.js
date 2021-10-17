@@ -50,11 +50,11 @@
 })();
 
 
-var Articles = $('.articles')
+// var Post = $('.Post')
 
-var Directory = $('#TableOfContents')
-if (Directory.height() == 0 || Directory.css('position') == 'static') {
-  Articles.css({
-    'max-width': '100%',
-  })
-}
+// var Directory = $('#TableOfContents')
+// if (Directory.height() == 0 || Directory.css('position') == 'static') {
+//   Post.css({
+//     'max-width': '100%',
+//   })
+// }

@@ -29,7 +29,7 @@ theme = "Rainy"
   homepage = "https://yxzi.xyz"
 
 [params]
-  mainSections = ["article"]
+  mainSections = ["posts"]
   favicon = 'https://yxzi.xyz/Logo.ico'
 
 
