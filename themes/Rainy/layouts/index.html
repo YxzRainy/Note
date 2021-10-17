@@ -7,7 +7,7 @@
       <h1 id="Title" class="MainTitle">Blog</h1>
       <div class="PostsArea">
         {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-     
+
         {{ partial "header.html" . }}
 
         {{ range .Pages }}
@@ -30,8 +30,9 @@
       </div>
       {{ partial "footer.html" . }}
     </article>
-
     {{ partial "scripts.html" . }}
     <script src="./js/Search.js"></script>
+    <script src="./js/Main.js"></script>
   </body>
+
 </html>

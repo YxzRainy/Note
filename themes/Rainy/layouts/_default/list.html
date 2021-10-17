@@ -2,26 +2,23 @@
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
   {{ partial "head.html" . }}
   <!-- 标签页 -->
-
   <body>
     <article class="Main BorderBox">
       <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
       <div class="PostsArea">
         {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-  {{ partial "header.html" . }}
-       
-
-          {{ range .Pages }}
-          <div class="PostsLine BorderBox">
-            <div class="PostsDate ">
-              <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
-            </div>
-
-            <div class="PostTitle hvr-underline-from-center">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </div>
+        {{ partial "header.html" . }}
+        {{ range .Pages }}
+        <div class="PostsLine BorderBox">
+          <div class="PostsDate ">
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
           </div>
-          {{ end }}
+
+          <div class="PostTitle hvr-underline-from-center">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </div>
+        </div>
+        {{ end }}
         {{ end }}
       </div>
     </article>
@@ -29,7 +26,6 @@
 
     {{ partial "scripts.html" . }}
     <script src="../../js/Search.js"></script>
-
 
   </body>
 

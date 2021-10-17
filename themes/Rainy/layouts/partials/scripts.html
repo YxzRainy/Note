@@ -1,12 +1,2 @@
 <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-
-{{ if and .Site.Params.lazyImage (not .IsHome) -}}
-<script src="{{ .Site.Params.staticPrefix }}{{ "js/lazyload.min.js" | relURL }}"></script>
-<script>
-  var lazyImage = new LazyLoad({
-    container: document.getElementById('article')
-  });
-</script>
-{{ end }}
-

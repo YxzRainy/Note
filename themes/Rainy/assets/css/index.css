@@ -15,8 +15,11 @@
 
 /* 文章区域 */
 .Main .PostsArea {
+	margin-top: -1rem;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	padding: 1.5rem 2rem 1rem 2rem;
+	opacity: 0;
+
 }
 
 /* 顶部区域 */
@@ -174,6 +177,8 @@
 	padding: 3rem;
 	max-width: 83%;
 	min-height: 86vh;
+	margin-top: -1rem;
+	opacity: 0;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 

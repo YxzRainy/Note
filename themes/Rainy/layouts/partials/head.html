@@ -1,7 +1,6 @@
 <head>
   <meta charset="utf-8" />
   {{ hugo.Generator }}
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="{{ .Site.Author.name }}" />
@@ -45,10 +44,6 @@
 
   {{ with resources.Get "css/Base.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
-
-  {{ with resources.Get "css/Animista.css" | minify }}
-  <style>{{ .Content | safeCSS }}</style>
   {{ end }}
 
   {{ with resources.Get "css/Hover.css" | minify }}

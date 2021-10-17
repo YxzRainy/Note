@@ -49,12 +49,24 @@
   Array.prototype.forEach.call(highlightBlocks, addCopyButton);
 })();
 
+// 文章页无目录时文章区域的宽度
+  var Post = $('.Post')
+  var Directory = $('#TableOfContents')
+  if (Directory.height() == 0 || Directory.css('position') == 'static') {
+    Post.css({
+      'max-width': '100%',
+    })
+  }
 
-// var Post = $('.Post')
 
-// var Directory = $('#TableOfContents')
-// if (Directory.height() == 0 || Directory.css('position') == 'static') {
-//   Post.css({
-//     'max-width': '100%',
-//   })
-// }
+function Animation() {
+  var Post = $('.Post')
+  Post.animate(
+    {
+      'margin-top': 0,
+      opacity: '1',
+    },
+    1500
+  );
+}
+$(Animation)

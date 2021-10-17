@@ -16,7 +16,6 @@ theme = "Rainy"
     lineNumbersInTable = false
     noClasses = true
     style = "tango"
-  
     tabWidth = 4
     anchorlinenos = false
   [markup.tableOfContents]
