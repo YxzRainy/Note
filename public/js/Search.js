@@ -186,9 +186,6 @@ function SearchBox(time) {
         // 清空搜索框内容
         searchInput.value = '';
         searchResult.fadeOut(300)
-
-
-
         // 关闭搜索框和遮罩
         Box.fadeOut(time);
         Mask.fadeOut(time);
