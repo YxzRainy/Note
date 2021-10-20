@@ -2,10 +2,10 @@ SearchBox(300)
 
 
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
-var searchInput = document.querySelector('.search-input');
-var searchResults = document.querySelector('.search-results');
+var searchInput = document.querySelector('.SearchInput');
+var searchResults = document.querySelector('.SearchResults');
 // 用jq的方法获取元素，并为其设置动画
-var searchResult = $('.search-results')
+var searchResult = $('.SearchResults')
 var seaechItem = document.querySelector('.result-item');
 
 // 申明保存文章的标题、链接、内容的数组变量
@@ -133,6 +133,23 @@ function searchMatching(arr1, arr2, input) {
             '</strong><br/>' + arrResults[i];
         itemDiv.setAttribute('onclick', 'changeHref(arrLinks[indexItem[' + i + ']])');
         searchResults.appendChild(itemDiv);
+        // 点击项目检索结果后关闭搜索框
+        var SearchItems = $('[onclick]')
+        console.log((SearchItems))
+
+        SearchItems.click(function () {
+            // 清空搜索框内容
+            searchInput.value = '';
+            searchResult.fadeOut(300)
+            // 关闭搜索框和遮罩
+            Box.fadeOut(300);
+            Mask.fadeOut(300);
+        });
+
+        // ItemsFirst.click(function () {
+        //     console.log(666666666)
+        // });
+
     }
 }
 
@@ -147,7 +164,11 @@ function changeHref(href) {
 
 
 
+
+
+
 function SearchBox(time) {
+
     // 创建对话框遮罩
     Mask = $('<div></div>');
     var body = $('body');
@@ -162,17 +183,17 @@ function SearchBox(time) {
     Content.attr('class', 'Content');
     Content.appendTo(Box);
     var SearchArea = $('<div></div>');
-    SearchArea.attr('class', 'search');
+    SearchArea.attr('class', 'SearchArea');
     SearchArea.appendTo(Content);
 
-    var SearchInput = $('<input type="text" class="search-input" placeholder="搜索文章" />');
+    var SearchInput = $('<input type="text" class="SearchInput" placeholder="搜索文章" />');
     SearchInput.appendTo(SearchArea);
 
-    var SearchResults = $('<div class="search-results HideScroll"></div>')
+    var SearchResults = $('<div class="SearchResults HideScroll"></div>')
     SearchResults.appendTo(SearchArea);
 
     // 创建关闭按钮框
-    var CloseBox = $('<div class="CloseBox TransitionOne hvr-shutter-out-horizontal"></div>');
+    var CloseBox = $('<div class="CloseBox TransitionOne"></div>');
     CloseBox.appendTo(Box);
     // 创建关闭按钮图标
     var Close = $('<svg class="Icon TransitionOne" aria-hidden="true"><use href="#Icon-Close"></use></svg>');
@@ -189,7 +210,6 @@ function SearchBox(time) {
         // 关闭搜索框和遮罩
         Box.fadeOut(time);
         Mask.fadeOut(time);
-
     });
     Box.css({
         display: 'none',
@@ -212,5 +232,7 @@ function SearchClick() {
     });
 
 }
+
+
 $(GetEl)
 $(SearchClick)

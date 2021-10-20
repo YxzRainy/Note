@@ -98,6 +98,11 @@
 	margin: 0 auto;
 	border-radius: var(--Ri);
 }
+
+.SearchDialogBox .CloseBox:hover{
+	background-color: var(--BtnRipple);
+}
+
 .SearchDialogBox .Close {
 	z-index: 5;
 	position: relative;
@@ -263,7 +268,7 @@
 	padding-left: 1rem;
 	border-bottom: 0.16rem solid var(--RainyCl);
 	font-weight: bold;
-	margin-top: 5rem;
+	margin-top: 3rem;
 	margin-bottom: 2rem;
 	border-left: 0.3rem solid var(--RainyCl);
 }
@@ -479,27 +484,33 @@ table thead th {
 
 
 
-.search {
+.SearchArea {
 	position: relative;
 	height: 100%;
 }
 
-.search .search-input {
+.SearchArea .SearchInput {
 	width: 100%;
-	height: 3.6em;
 	font-size: 1.5rem;
-	padding: 1% 1rem;
-	border-radius: var(--Ri);
+	padding: 1.2rem 0.8rem;
 	box-sizing: border-box;
-	background: var(--BrightCl);
+	background-color: transparent;
+	border-bottom: 0.1rem solid var(--DarkCl);
+	transition: all var(--TmOne) linear;
+
+}
+.SearchArea .SearchInput:focus{
+	border-bottom: none;
+	background-color: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	
 }
 
-.search .search-results {
+.SearchArea .SearchResults {
 	display: none;
 	z-index: 1;
 	position: absolute;
-	top: 5.6rem;
+	top: 4.5rem;
 	left: 0;
 	width: 100%;
 	max-height: 78%;
@@ -510,7 +521,7 @@ table thead th {
 }
 
 /* 匹配到的文章项目 */
-.search .search-results .result-item {
+.SearchArea .SearchResults .result-item {
 	background-color: var(--BrightCl);
 	font-size: 1.4rem;
 	padding: 0.8rem;
@@ -518,11 +529,11 @@ table thead th {
 	border: 0.01rem solid #e7e7e7;
 	cursor: pointer;
 }
-.search .search-results .result-item:hover {
+.SearchArea .SearchResults .result-item:hover {
 	background-color: var(--BtnRipple);
 }
 
-.search .result-item:nth-child(1):hover {
+.SearchArea .result-item:nth-child(1):hover {
 	background-color: var(--BrightCl);
 	cursor: auto;
 }
