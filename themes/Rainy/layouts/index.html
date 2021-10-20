@@ -16,8 +16,8 @@
             <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
           </div>
 
-          <div class="PostTitle hvr-underline-from-center">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="PostTitle">
+            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
           </div>
           {{ range .Params.categories }}
           <div class="PostsCategory">

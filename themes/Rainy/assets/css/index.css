@@ -1,6 +1,5 @@
-
 /* 主页区域 */
-.Main{
+.Main {
 	width: 70rem;
 	margin: 0 auto;
 	padding: 3rem 0 5rem 0;
@@ -19,7 +18,6 @@
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	padding: 1.5rem 2rem 1rem 2rem;
 	opacity: 0;
-
 }
 
 /* 顶部区域 */
@@ -28,14 +26,12 @@
 	padding: 0.5rem 1rem;
 }
 
-
 /* 年 */
 .MainYear {
 	font-size: 2.4rem;
 	font-weight: normal;
 	display: inline-block;
 }
-
 
 /* 搜索按钮 */
 #SearchBox {
@@ -99,7 +95,7 @@
 	border-radius: var(--Ri);
 }
 
-.SearchDialogBox .CloseBox:hover{
+.SearchDialogBox .CloseBox:hover {
 	background-color: var(--BtnRipple);
 }
 
@@ -115,12 +111,13 @@
 /* 文章列表项 */
 .PostsLine {
 	position: relative;
-	padding: 1.6rem 2rem;
+	padding: 2.8rem 2rem;
 	font-size: 1.5rem;
 	width: 100%;
 	min-width: 33rem;
-
 }
+
+
 
 /* 文章项日期 */
 .PostsDate {
@@ -131,20 +128,18 @@
 	transform: translateY(-50%);
 }
 
-
 /* 文章项标题 */
-.PostTitle{
+.PostTitle {
 	position: absolute;
 	top: 50%;
 	font-size: 1.6rem;
 	left: 13rem;
 	transform: translateY(-50%);
-
 }
-.PostTitle a{
+.PostTitle a {
 	font-weight: bold;
 	font-family: sans-serif;
-	transition: all var(--TmOne);
+	transition: all var(--TmOne) linear;
 }
 
 .PostTitle a:hover {
@@ -170,9 +165,7 @@
 	background-color: var(--BtnRipple);
 }
 
-
 /* 文章页 */
-
 
 .Wrap {
 	height: auto;
@@ -204,7 +197,6 @@
 
 .Post #TableOfContents ul {
 	font-size: 1.5rem;
-
 }
 
 .Post #TableOfContents ul a {
@@ -232,7 +224,6 @@
 	text-overflow: ellipsis;
 }
 
-
 /* 隐藏源文章中的一级标题 */
 .PostContent h1 {
 	display: none;
@@ -244,7 +235,6 @@
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif;
-
 }
 .Post .PostHeader .post-title:after {
 	content: '';
@@ -265,7 +255,6 @@
 	font-style: italic;
 	margin-top: 1rem;
 }
-
 
 .Post .PostContent h2 {
 	font-size: 2.6rem;
@@ -294,11 +283,9 @@
 .Post .PostContent h5 {
 	font-size: 1.8rem;
 }
-.Post .PostContent  h6 {
+.Post .PostContent h6 {
 	font-size: 1.7rem;
 }
-
-
 
 /* 正文区域 */
 .PostContent {
@@ -334,7 +321,6 @@
 	border-radius: 0.3rem;
 }
 
-
 /* 水平分割线 */
 hr {
 	margin: 2rem 1rem;
@@ -345,7 +331,6 @@ hr {
 	box-sizing: content-box;
 	background-color: #e2e2e2;
 }
-
 
 /* 代码块 */
 .highlight {
@@ -358,8 +343,6 @@ hr {
 	background: transparent;
 	font-family: Arial, sans-serif;
 }
-
-
 
 /* 代码块横向滚动条 */
 .highlight pre::-webkit-scrollbar {
@@ -379,10 +362,9 @@ hr {
 
 /* 列表 */
 .PostContent ul,
-.PostContent ol{
+.PostContent ol {
 	margin: 1rem 0;
 	padding-left: 2rem;
-
 }
 
 .PostContent li {
@@ -395,9 +377,7 @@ li > ol,
 li > ul {
 	font-size: 1.5rem;
 	line-height: 1.6;
-
 }
-
 
 /* 超链接 */
 .PostContent a {
@@ -423,7 +403,6 @@ table {
 	font-size: 1.6rem;
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-
 }
 
 table th,
@@ -484,9 +463,6 @@ table thead th {
 	color: var(--RainyCl);
 }
 
-
-
-
 .SearchArea {
 	position: relative;
 	height: 100%;
@@ -500,13 +476,11 @@ table thead th {
 	background-color: transparent;
 	border-bottom: 0.1rem solid var(--DarkCl);
 	transition: all var(--TmOne) linear;
-
 }
-.SearchArea .SearchInput:focus{
+.SearchArea .SearchInput:focus {
 	border-bottom: none;
 	background-color: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-	
 }
 
 .SearchArea .SearchResults {
@@ -547,15 +521,18 @@ mark {
 	color: var(--BrightCl);
 }
 
-
 /* 文章页底部的标签 */
+.PostTag {
+	display: inline-block;
+	margin-top: 2rem;
+	margin-right: 1rem;
+}
+
 .PostTag a {
 	display: inline-block;
-	margin-right: 1rem;
 	font-size: 1.4rem;
-	margin-top: 2rem;
-	color: var(--RainyCl);
 	padding: 0.3rem 0.8rem;
+	color: var(--RainyCl);
 	box-sizing: border-box;
 	transition: all var(--TmOne);
 	border: 0.1rem solid #ccc;
@@ -565,8 +542,6 @@ mark {
 .PostTag a:hover {
 	background-color: var(--BtnRipple);
 }
-
-
 
 /* 回到主页 */
 #ToTheTop {
