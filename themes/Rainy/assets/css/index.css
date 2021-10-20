@@ -179,7 +179,7 @@
 	padding: 5rem 6%;
 }
 .Post {
-	padding: 3rem;
+	padding: 3rem 5rem;
 	max-width: 83%;
 	min-height: 86vh;
 	margin-top: -1rem;
@@ -197,17 +197,20 @@
 	color: var(--LinkCl);
 	border-radius: var(--Ri);
 	background-color: var(--BrightCl);
+	padding: 0.8rem 1rem;
+
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .Post #TableOfContents ul {
-	font-size: 1.4rem;
-	padding: 0.8rem 1.5rem;
+	font-size: 1.5rem;
+
 }
 
 .Post #TableOfContents ul a {
 	color: inherit;
 	padding: 0.3rem 0.5rem;
+	margin: 0;
 	transition: all var(--TmOne);
 	border-radius: var(--Ri);
 }
@@ -217,12 +220,13 @@
 
 .Post #TableOfContents ul ul {
 	padding: 0;
+	margin-top: 0.3rem;
 	padding-left: 2rem;
 	font-size: 1.4rem;
 }
 
 .Post #TableOfContents li {
-	padding: 0.5rem 0.3rem;
+	padding: 0 0.3rem;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -269,12 +273,12 @@
 	border-bottom: 0.16rem solid var(--RainyCl);
 	font-weight: bold;
 	margin-top: 3rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	border-left: 0.3rem solid var(--RainyCl);
 }
 .Post .PostContent h3 {
 	font-size: 2.3rem;
-	margin-top: 2rem;
+	margin-top: 1.5rem;
 }
 .Post .PostContent h3::before {
 	content: '#' !important;
@@ -283,7 +287,7 @@
 }
 .Post .PostContent h4 {
 	font-size: 2rem;
-	margin-top: 1rem;
+	margin-top: 0.8rem;
 	display: inline-block;
 	box-sizing: border-box;
 }
@@ -324,8 +328,8 @@
 .PostContent blockquote {
 	border-left: 0.36rem solid #ddd;
 	color: #6b6b6b;
-	padding: 1rem 1rem 1rem 2rem;
-	margin: 3rem 0;
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	margin: 1.5rem 0;
 	font-size: 1.5rem;
 	border-radius: 0.3rem;
 }
