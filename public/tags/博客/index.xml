@@ -6,7 +6,37 @@
     <description>Recent content in 博客 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 01 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>对博客的理解</title>
+      <link>https://yxzi.xyz/Sub/Blog/posts/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <pubDate>Sat, 02 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/posts/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <description>对博客的理解 博客是什么？ 博客说白了就是个人网站、或者个人的网络笔记本。别人也可以去看、但是需要别人很主动的去看。
+朋友圈和空间都是基于社交圈子的，在 QQ 和微信有如此多的用户情况下，
+它就像一个喇叭，大声告诉别人：”我今天去九寨沟拍了个照又回来了。&amp;quot;
+总是希望别人看到，总是想要有点存在感的，
+这一点，博客却很难满足。但朋友圈和空间却可以实现。
+随便写一句话，我居然还得想一个标题？Oh No ！这鬼东西我不用了。
+我觉得是这样的。人有这么一个需求——表达自己。怎么表达呢？表达给谁看呢？谁可以表达呢？这就是社交平台该做的。为什么博客会死？
+博客的出发点就是写文章、表达方式太死板、门槛太高、不亲民、普通用户、写完了就石沉大海。假如朋友圈你发状态从来没人回、你还发吗？假如你发每条状态都得取个名字、你还发吗？假如发每条状态规定你写 500 字你还发吗？嗯、为什么会一个活、一个死、就是因为后来者更好的解决了人本身的表达需求。
+为什么会写博客 学习笔记 码代码嘛，肯定是会遇到 bug 的，之后肯定得通过某些渠道来解决bug，比如 Google。
+最终，你花了大半天的时间找到了解决办法，但你并没有记录解决这个问题的过程。
+过了一段时间，当你再遇到同样的问题，你还得花上大半天的时间去 Google
+这时候你就会想，要是当时自己记录了这个问题的解决过程就好了。
+换句话说，第一次接触某个新知识或新问题，你在各种论坛，学习+实践+总结，完成过后。再把这些过程都记录下来。未来如果需要用到，看你自己的笔记就行了，哪还需要去搜索引擎中大海捞针？
+将笔记公开，成为博客，能帮助到需要的人。
+我一直相信，我的笔记做的越多，我就越强。
+因为我的笔记都是学习 + 实践总结出来的，而不是胡乱搬运过来充数量的。
+生活的感悟 每个人不免会在生活中产生一些对人生的一些感触和觉悟。
+我也一样，有时，我可能会因一篇文章、一本书、一部电影、一个人、或生活中的某个细节，而触动我。
+我珍惜这些东西，想把这些东西用文字表述出来。
+最后用在其他博客上看到的一句话来总结一下：
+ 对任何渴望进步的人来说，写博客/文章/回答，对自己的成长帮助都是巨大的。频率和数量不必过分强求，有话要说就写写，没事就歇歇，随意点。因为在开始写作的那一刻起，你就已经开始受益。”
+ </description>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>https://yxzi.xyz/Sub/Blog/posts/hello-world/</link>
