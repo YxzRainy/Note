@@ -2,6 +2,7 @@
 <html lang="zh-cmn-Hans">
   {{ partial "head.html" . }}
   <!-- 文章页 -->
+
   <body class="Wrap">
     <article class="Post BorderBox {{ .Site.Language.LanguageName }} ">
       <header class="PostHeader">
@@ -33,10 +34,107 @@
         </a>
       </div>
       {{ end }}
-    {{ partial "footer.html" . }}
+      {{ partial "footer.html" . }}
     </article>
 
     {{ partial "scripts.html" . }}
-    <script src="../../js/CopyBtn.js"></script>
+    <script src="https://yxzi.xyz/Js/Sub/Main.js"></script>
+    <script src="https://yxzi.xyz/Js/Sub/CopyBtn.js"></script>
+
+    <script>
+      // main 
+      var PostsArea = $('.Main .PostsArea')
+      function Animation() {
+        PostsArea.animate(
+          {
+            'margin-top': 0,
+            opacity: '1',
+          },
+          1500
+        );
+      }
+      $(Animation)
+    </script>
+
+
+    <script>
+        (function () {
+          'use strict';
+
+          if (!document.queryCommandSupported('copy')) {
+            return;
+          }
+
+          function flashCopyMessage(el, msg) {
+            el.textContent = msg;
+            setTimeout(function () {
+              el.textContent = "Copy";
+            }, 1000);
+          }
+
+          function selectText(node) {
+            var selection = window.getSelection();
+            var range = document.createRange();
+            range.selectNodeContents(node);
+            selection.removeAllRanges();
+            selection.addRange(range);
+            return selection;
+          }
+
+          function addCopyButton(containerEl) {
+            var copyBtn = document.createElement("button");
+            copyBtn.className = "highlight-copy-btn";
+            copyBtn.textContent = "Copy";
+
+            var codeEl = containerEl.firstElementChild;
+            copyBtn.addEventListener('click', function () {
+              try {
+                var selection = selectText(codeEl);
+                document.execCommand('copy');
+                selection.removeAllRanges();
+
+                flashCopyMessage(copyBtn, 'Copied!')
+
+              } catch (e) {
+                console && console.log(e);
+                flashCopyMessage(copyBtn, 'Failed :\'(')
+              }
+            });
+
+            containerEl.appendChild(copyBtn);
+          }
+
+          // Add copy button to code blocks
+          var highlightBlocks = document.getElementsByClassName('highlight');
+          Array.prototype.forEach.call(highlightBlocks, addCopyButton);
+        })();
+
+      // 鏂囩珷椤垫棤鐩綍鏃舵枃绔犲尯鍩熺殑瀹藉害
+      var Post = $('.Post')
+      var Directory = $('#TableOfContents')
+      if (Directory.height() == 0 || Directory.css('position') == 'static') {
+        Post.css({
+          'max-width': '100%',
+        })
+      }
+
+
+      function Animation() {
+        var Post = $('.Post')
+        Post.animate(
+          {
+            'margin-top': 0,
+            opacity: '1',
+          },
+          1500
+        );
+      }
+      $(Animation)
+
+
+
+    </script>
+
   </body>
+
 </html>

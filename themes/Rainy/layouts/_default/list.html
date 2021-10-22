@@ -6,20 +6,25 @@
     <article class="Main BorderBox">
       <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
       <div class="PostsArea">
-        {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
+       
         {{ partial "header.html" . }}
-        {{ range .Pages }}
+        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+        {{ range $paginator.Pages }}
+
         <div class="PostsLine BorderBox">
-          <div class="PostsDate ">
-            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
+          <div class="PostsDate">
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ dateFormat "2006-01-02" .Date }}</time>
           </div>
 
-          <div class="PostTitle hvr-underline-from-center">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="PostTitle">
+            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{.Title}}</a>
           </div>
+          
         </div>
         {{ end }}
-        {{ end }}
+        {{ template "partials/paginator.html" . }}
+
       </div>
     </article>
     {{ partial "footer.html" . }}

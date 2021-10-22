@@ -3,21 +3,23 @@
   {{ partial "head.html" . }}
 
   <body class="MinWidth">
+
     <article class="Main BorderBox">
       <h1 id="Title" class="MainTitle">Blog</h1>
       <div class="PostsArea">
-        {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
 
         {{ partial "header.html" . }}
+        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+        {{ range $paginator.Pages }}
 
-        {{ range .Pages }}
         <div class="PostsLine BorderBox">
           <div class="PostsDate">
-            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ dateFormat "2006-01-02" .Date }}</time>
           </div>
 
           <div class="PostTitle">
-            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{.Title}}</a>
           </div>
           {{ range .Params.categories }}
           <div class="PostsCategory">
@@ -26,9 +28,14 @@
           {{ end }}
         </div>
         {{ end }}
-        {{ end }}
+        {{ template "partials/paginator.html" . }}
+
       </div>
+
+
+
       {{ partial "footer.html" . }}
+
     </article>
     {{ partial "scripts.html" . }}
     <script src="./js/Search.js"></script>

@@ -50,16 +50,16 @@
 	font-family: serif;
 }
 /* 滚动条 */
-/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/
+/*整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
 	width: 1rem;
 	background-color: #f5f5f5;
 }
-/*定义滚动条轨道：内阴影+圆角*/
+/*滚动条的滚动轨道：内阴影+圆角*/
 ::-webkit-scrollbar-track {
 	background-color: var(--BrightCl);
 }
-/*定义滑块：内阴影+圆角*/
+/*滑块：内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
 	border-radius: var(--Ri);
 	background-color: rgb(202, 202, 202);
@@ -80,7 +80,7 @@ html {
 	font-size: 10px;
 	line-height: 1.8;
 	color: var(--DarkCl);
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 	font-family: 'Microsoft YaHei', Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;

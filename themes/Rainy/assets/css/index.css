@@ -1,6 +1,6 @@
 /* 主页区域 */
 .Main {
-	width: 70rem;
+	width: 80rem;
 	margin: 0 auto;
 	padding: 3rem 0 5rem 0;
 }
@@ -14,10 +14,8 @@
 
 /* 文章区域 */
 .Main .PostsArea {
-	margin-top: -1rem;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 	padding: 1.5rem 2rem 1rem 2rem;
-	opacity: 0;
 }
 
 /* 顶部区域 */
@@ -111,12 +109,11 @@
 /* 文章列表项 */
 .PostsLine {
 	position: relative;
-	padding: 2.8rem 2rem;
+	padding: 3.6rem 2rem;
 	font-size: 1.5rem;
 	width: 100%;
 	min-width: 33rem;
 }
-
 
 
 /* 文章项日期 */
@@ -124,7 +121,7 @@
 	position: absolute;
 	top: 50%;
 	left: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	transform: translateY(-50%);
 }
 
@@ -133,12 +130,11 @@
 	position: absolute;
 	top: 50%;
 	font-size: 1.6rem;
-	left: 13rem;
+	left: 20%;
 	transform: translateY(-50%);
 }
 .PostTitle a {
 	font-weight: bold;
-	font-family: sans-serif;
 	transition: all var(--TmOne) linear;
 }
 
@@ -296,7 +292,6 @@
 .PostContent p {
 	font-size: 1.7rem;
 	margin-bottom: 0.5rem;
-	font-family: sans-serif;
 }
 
 /* Picture */
@@ -323,7 +318,7 @@
 
 /* 水平分割线 */
 hr {
-	margin: 2rem 1rem;
+	margin: 3rem 1rem;
 	height: 0.2rem;
 	padding: 0;
 	border: 0 none;
@@ -553,4 +548,35 @@ mark {
 	border-radius: 50%;
 	background-color: var(--BrightCl);
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+
+
+.pagination {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    text-align: center;
+}
+
+.pagination li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.pagination li a {
+    display: block;
+    color: #000;
+    background: #ddd;
+    width: 40px;
+    height: 34px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
