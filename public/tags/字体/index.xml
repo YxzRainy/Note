@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>字体 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%97%E4%BD%93/</link>
+    <description>Recent content in 字体 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%AD%97%E4%BD%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Css 字体</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</link>
+      <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</guid>
+      <description>字体 参考线 当制作文字时，会出现几根参考线。不同的文字类型，参考线位置、距离都不一样，同一种文字类型，参考线一致。
+组成
+ text_top ascent，顶线 super，上基线 baseline，基线 sub，下基线 text_bottom descent，底线  决定因素
+ font-family：定义参考线的相对距离。 font-size：定义参考线之间的距离。 line-height：定义参考线的顶部空隙与底部空隙。  元素的基线 img：基线位置位于 img 的下外边距的最底边。
+from：基线位于其内容的底边。
+行块盒：父元素内部包含行块盒（高度自适应） ，会因为行块盒最后一行有 line-box，则会导致行块盒用最后一行的基线作为整个父元素的基线。若父元素中没有行盒，则使用父元素的下外边距作为基线。
+font-size 用该属性设置字体大小时，改变的是文字的相对大小，也叫字体框大小。
+制作文字时，文字外面会有一个字体框，不同的文字的字体框，大小也不一样；即设置文字的小大，本质改变的是文字的相对大小。
+相对大小
+若一个文字的相对大小（字体框大小）为 2048 时，那么它顶线到基线的距离为 1884，底线到基线的距离为 514，则顶线到底线的距离为 1884 + 514 = 2398。（可以拙见为一个字体的高为 2048，那么该字体占的实际区域是 2390，因此某些字体会有默认边距）
+文字顶线到底线的距离，叫做文字的实际大小（content-area），也叫内容区。即行盒的背景，填充的是文字的实际大小。因此当我们给行盒设置背景时，会导致行盒上下有留白。即上部分留白 + 行盒背景 + 下部分留白 = 文字的相对大小。
+line-height 用于设置多行元素的空间量。
+top：文字顶线向上延申的空间。
+bottom：文字底线向下延申的空间。
+空隙  这两个空间（top 与 bottom）的空间量一定相等，这两个空间叫做空隙（line gap）。 通常，空隙是字体设计者决定的，因此有些字体没有空隙，但有的字体有空隙，有的字体空隙是负数。  虚拟区  top 到 botoom 的距离，叫做虚拟区（virtual-area），有的虚拟区和内容区相等，有的虚拟区比内容区小，但大部分虚拟区都比内容区大；因此设置行高大小就等于设置虚假区的大小。 因为虚拟区上下两边都相等，所以字体的实际大小在虚拟区之间。  line-box  line-box（行框）是承载文字内容的必要条件，如果没有行框，文字将无法显示。 当有多行行盒排列时，每一行的区域就叫做 line-box，line-box 的顶边是该行所有行盒的最顶边，底边是该行行盒的最低底边。即一个行盒的实际占用高度是通过 line-box 计算的。  不生成 line-box 的情况</description>
+    </item>
+    
+  </channel>
+</rss>

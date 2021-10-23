@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/javascript/</link>
+    <description>Recent content in JavaScript on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客添加搜索功能</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>博客添加搜索功能 HTML代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
+1&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; 2 &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; 3 &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; 4 &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; 5	&amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 6&amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
+CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 5 line-height: 30px; 6 padding-right: 10px; 7} 8 9.search .search-icon { 10 float: right; 11 height: 100%; 12 margin: 0 10px; 13 line-height: 30px; 14 cursor: pointer; 15 user-select: none; 16} 17 18.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript arguments</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
+arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
+注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
+arguments 对象不是一个 Array ；但它类似于 Array，但除了有 length 属性和索引的特性之外没有任何其他 Array 属性。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript DOM</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</guid>
+      <description>DOM DOM（文档对象模型），它就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
+使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Function</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
+全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
+Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+1function demo(name, age) { 2	this.name = name; 3	this.age = age; 4	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 5	// 所以这里相当于 test.name 与 test.age 6} 7var a = new demo(&amp;#39;zxy&amp;#39;, 100); 8var test = {}; 9demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript isNaN</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</guid>
+      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回false。
+如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
+返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</guid>
+      <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
+引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
+计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
+在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持52位，就会出现运算精度不准的问题。
+1000000000000001 + 1000000000000001 = 2000000000000002，即在 JavaScript 中，可正常计算范围在小数点前 16 位与后 16 位。
+1function One() { 2	for (var c = 0; c &amp;lt; 18; c++) { 3	var d = Math.random().toFixed(2) * 100; 4	// 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 5	var e = Math.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript new</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</guid>
+      <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
+调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Number</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</guid>
+      <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
+Number 的方法 toString() NumObj.toString(radix)
+ 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 1var a = 1971; 2var b = 10; 3var c = 16; 4var d = parseInt(a, b); 5// 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 6var e = d.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Object</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</guid>
+      <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
+创建 Object 的方式 对象字面量 1var n = &amp;#39;世雨&amp;#39;; 2var a = &amp;#39;&amp;#39;; 3var object = { 4	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 5	b: &amp;#39;臣&amp;#39;, 6	// b 为属性名，臣为属性值 7	c: n, 8}; 9a = object.b + object.c; 10// 用变量 a 接收对象 object 的属性 b 与 c 的值。 11console.log(a); 12// 返回臣世雨 工厂模式 1function ThreeOne(color) { 2	this.color = color; 3	// color为可选参数 4	this.name = &amp;#39;bird&amp;#39;; 5	this.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parseFloat</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</guid>
+      <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parselnt</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</guid>
+      <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
+将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
+当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
+若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
+1// n 进制转十进制-------------------------------------------------- 2var n = 10010; 3var c = 2; 4// 变量 n 可为 8，16，32。 5var a = parseInt(n, c); 6// 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 7console.log(a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript return</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
+字符串转数字 1var n = &amp;#39;18&amp;#39;; 2function demo(n) { 3	return +n; 4	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 5} 6var a = demo(n); 7console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript this</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</guid>
+      <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
+通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Window 对象</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</guid>
+      <description>Window 对象 Window 对象表示浏览器中打开的窗口。
+如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
+Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
+setTimeout() 使函数或代码在经过一段指定的时间才开始执行。
+clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript XMLHttpRequest</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</guid>
+      <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
+状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
+responseText 当一个请求被发送后，该属性会返回服务器端的文本。
+onreadystatechange 该属性会在属性 readyState 发生改变的时候被调用。
+XMLHttpRequest 的方法 open 用于初始化一个请求。
+send 用于向服务端发送一个 HTTP 请求。
+注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 作用域</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
+每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
+父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
+作用域都是独立的 声明多个同级函数时，这些函数的作用域链都是独立的，即每个同级函数中的局部变量不可以公用，但它们都可以使用全局中的变量；这些作用域链会随着对应函数的执行完毕而依次释放。
+全局作用域 在全局作用域（GO 对象）中的变量为全局变量，全局变量的的作用域为整个脚本，这类变量在脚本中的任何地方（包括函数内部）能被调用。
+它们通常指在全局中定义的变量或没有使用 var 声明的暗示全局变量。
+这些变量都在全局作用域中：  函数外声明的变量。 函数中没有使用 var 声明的变量。  局部作用域 局部作用域（AO 对象）中的变量为局部变量，局部变量的作用域仅限于某个特定的函数，这类变量可以在特定的函数中调用。
+每个函数内部都会创建一个局部作用域，当一个函数（父函数）中包含另一个函数（子函数），则父函数不能调用子函数的变量，但子函数可以调用父函数的变量；并且两个独立且同级的函数中的局部变量不能公用，只能各用各的局部变量。
+这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 1function One() { 2	var b = 0; 3	function Two() { 4	b++; 5	console.log(b); 6	} 7	a = Two; 8	// 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two 9} 10One(); 11//调用函数 One，使暗示全局变量 a 可以执行 12a(); 13// 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 14a(); 15a(); 作用域链 1function One() { 2	// 声明函数 One 时，系统会隐式创建 One.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
+每一个函数其实都是一个 Function 类型的对象。
+函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
+声明方式 基本方式 直接通过 function 关键字进行声明。
+1function demo(a, b) { 2	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 3	console.log(a + b); 4	// 返回形参 a 与 b 的和 3。 5} 6demo(1, 2); 7// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） 8var c = demo.name; 9// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， 10// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 11console.log(c); 12// 返回函数 demo 的函数名 13 14//匿名函数方式-------------------------------------------------- 15var demo = function () { 16	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数的参数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
+在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
+函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
+函数运行结束的时候形参被释放，而实参内容不会改变。
+实参 实际参数，是在调用函数时传递给函数的参数， 实参可以是常量、变量、表达式、函数等， 无论实参是何种类型的量，在进行函数调用时，它们都必须具有确定的值， 以便把这些值传送给形参， 因此应预先用赋值，输入等办法使实参获得确定值。
+1function demo(a, b) { 2	// 定义两个形参。 3	var f, 4	g = &amp;#39;&amp;#39;; 5	for (var e = 0; e &amp;lt; arguments.length; e++) { 6	// arguments 对象的属性 length 表示实参（实参列表）的数量。 7	f = arguments[e]; 8	// 遍历所有实参 9	console.log(&amp;#39;遍历的实参:&amp;#39; + f); 10	} 11	g = arguments.length; 12	// 返回实参的数量 13	// arguments 对象类似数组，但却不是数组。 14	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 分支与循环</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <description>分支与循环 if 单一的 if 语句 1if (条件) { 2	要执行的语句块; 3} if else 语句 1if (条件) { 2	要执行的语句块; 3} else { 4	要执行的语句块; 5} 多重 if 语句嵌套 1if (条件) { 2	要执行的语句块; 3} else if (条件) { 4	要执行的语句块; 5} else { 6	要执行的语句块; 7} 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+另外，可以用函数表达式定义函数？
+switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
+1n = &amp;#39;老虎&amp;#39;; 2switch (n) { 3	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 4	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 5	// 可以使用 break 语句终止执行该代码块之后代码块。 6	case &amp;#39;老虎&amp;#39;: 7	case &amp;#39;虎&amp;#39;: 8	case &amp;#39;白虎&amp;#39;: 9	case &amp;#39;母老虎&amp;#39;: 10	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 包装类</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
+因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
+Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
+数字类型的对象可以进行学运算，但运算的结果，这个对象会变回原始类型的数值。
+String 将原始类型的字符串，转换为 String 对象，它的原型是 String.prototyp。
+当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete删掉，所以最终将属性 length 的值返回。
+Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是 Boolean.prototyp。
+注意 因为 Number、String、boolean 它们本身重写了（用一个同名不同功能的方法覆盖系统自带的方法）一个 xxx.prototype.toString 方法，所以它们不会用原型上 Object.prototype 的 toString 方法。
+1var a = new Number(123); 2var b = new String(&amp;#39;yxz&amp;#39;); 3var c = new Boolean(&amp;#39;true&amp;#39;); 4console.log(typeof a); 5console.log(typeof b); 6console.log(typeof c); 7// 返回三个 object 数值包装类运算 1var num = new Number(123); 2//原始值 num 被进行包装类，因此它变成了 对象 123。 3console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 区分对象与数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>区分对象与数组 Constructor 1var arr = []; 2var obj = {}; 3var a = arr.constructor; 4console.log(a); 5// 返回数组。 6var b = obj.constructor; 7console.log(b); 8// 返回对象。 Instanceof 1var arr = []; 2 3var obj = {}; 4 5var a = arr instanceof Array; 6console.log(a); 7// 返回 true，因为变量 arr 是一个数组。 8var a = arr instanceof Object; 9console.log(a); 10// 返回 true，因为变量 arr 是一个数组类对象。 11var b = obj instanceof Array; 12console.log(b); 13// 返回 flase，因为变量 obj 不是一个数组。 14var b = obj instanceof Object; 15console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</guid>
+      <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
+__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
+原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
+1// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） 2// 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； 3// Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; 4// Demo.prototype.size = &amp;#34;500&amp;#34;; 5// Demo.prototype.height = &amp;#34;1400&amp;#34;; 6// Demo.prototype.width = &amp;#34;800&amp;#34;; 7//上面代码可以简化为： 8Demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型链</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
+几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
+可以使用对象的属性 proto 实现继承。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原始值和引用值</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
+原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
+Number 数值，用整数或浮点数表示，它允许任意位的小数。
+String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
+与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
+Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
+Symbol 符号，它是唯一的并且是不可修改的。
+undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
+Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
+原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 变量的声明方式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
+var var 可以声明局部变量与全局变量。
+使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
+若用 var 声明一个变量，但没有进行赋值，则变量的默认值为 undefined。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 命名空间</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
+简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
+作用 私有化变量 1function Demo() { 2	var healthy = 0; 3	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 4	// 不能直接作为对象的属性或变量进行调用。 5	this.cure = function () { 6	healthy++; 7	}; 8 9	this.injured = function () { 10	healthy--; 11	}; 12 13	this.view = function () { 14	console.log(healthy); 15	}; 16} 17 18var demo = new Demo(); 19 20demo.view(); 21// 返回 0，调用构造函数的属性 view。 22demo.cure(); 23// 调用构造函数的属性 cure。，使变量 healthy 自增 1。 24demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 字符串截取</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
+      <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 属性调用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
+1var demo = { 2	wife1: { name: &amp;#39;lei&amp;#39; }, 3	wife2: { name: &amp;#39;zheng&amp;#39; }, 4	wife3: { name: &amp;#39;xing&amp;#39; }, 5	wife4: { name: &amp;#39;zhu&amp;#39; }, 6	fun: function (num) { 7	var a = [&amp;#39;wife&amp;#39; + num]; 8	console.log(a); 9	return this[&amp;#39;wife&amp;#39; + num]; 10	// 看不太懂 11	}, 12}; 13 14demo.fun(1); 15demo.fun(2); 16demo.fun(3); 17demo.fun(4); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 开发原则</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与CSS 与 JavaScript 代码之外。
+平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
+向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
+性能考虑 减少访问 DOM 的和文档中标记的元素；过多的页面元素只会增大 DOM 树的规模。
+将多个 JavaScript 文件合并为一个；减少加载页面时发送的请求数量。
+压缩已完成的 JavaScript 脚本；将文件中的不必要的字节（空格、注释、回车符）统统删除，从而减少整体文件大小。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 立即执行函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
+只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
+多个 IIFE 之间要加分号。
+1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a + b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 继承方式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
+1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 节点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</guid>
+      <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
+元素节点 指文档中的元素。
+文本节点 指文档中元素所包含着的文本。
+属性节点 指文档中元素的属性；属性都被包含在元素中。
+节点的属性 childNodes 返回一个指定节点所包含的所有子节点的集合。
+nodeValue 返回或设置当前节点的值。
+注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
+nodeName 返回指定节点的大写字母形式的节点名。
+nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 运算符</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
+操作数前置或后置
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&amp;ndash; a&amp;ndash; 或 &amp;ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+操作数前置或后置
+若位于数值的之后（a&amp;ndash;），则会递减之前返回数值。
+若位于数值的之前（&amp;ndash;a），则会递减之后返回数值。
+比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
+对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
+对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
+对于关系运算符（ &amp;lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
+原始值比较的是值，引用值比较的是引用地址。
+In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
+Instanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。
+2 &amp;gt; 3 &amp;lt; 1
+先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 递归</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
+缺点：影响程序的效率与性能。
+递归实现阶乘 1var n = 5; 2function OneOne(n) { 3	if (n == 1) { 4	//将当 n 等于 1 时作为结束条件 5	return 1; 6	// 返回值为 1 7	} 8	return (n = n * OneOne(n - 1)); 9	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 10	// 使用递归计算 5 的阶乘的过程： 11	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 12	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 13	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 14	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 15	// OneOne(1); 当 n 等于 1 时，直接返回 1; 16} 17console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 链式调用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <description>链式调用 模仿一个 jQuery 链式调用的方式。
+1var demo = { 2	a: function () { 3	console.log(123); 4	return this; 5	// 将函数自身返回。 6	}, 7 8	b: function () { 9	console.log(456); 10	return this; 11	// 将函数自身返回。 12	}, 13 14	c: function () { 15	console.log(789); 16	return this; 17	//将函数自身返回。 18	}, 19}; 20demo.a().b().c(); 21// 呈链式(连续)的调用对象 demo 的属性。 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 闭包</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</guid>
+      <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
+生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
+闭包的优缺点 优点 避免全局变量的污染。
+使变量长期储存在内存中。
+缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
+1function demo() { 2	function test() { 3	var d = 345; 4	console.log(c); 5	// 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 6	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 7	} 8	var c = 123; 9	return test; 10	// 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 11	// 使的函数 demo 可以使用函数 test 的 AO 12} 13var e = demo(); 14// 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO 15e(); 16// 调用变量 e，即相当于执行函数 demo 的返回值 17// 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， 18// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 1function demo() { 2	var b = &amp;#39;apple&amp;#39;; 3	var obj = { 4	c: function () { 5	// 给对象 obj 添加一个属性 c ，属性值为一个函数 6	if (b !</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 预编译</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
+预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
+函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。
+变量声明提升 使用 var 声明的变量，不管在这之前还是之后调用该变量，并不会报错，会返回 undefined。
+暗示全局变量 暗示全局变量（imply global），一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性； 任何全局变量，都是 window 的属性，即可以通过 window 对象调用全局变量。window 就是全局的域，它包括了全局变量和全局函数。
+暗示全局变量不会进行变量声明提升。
+1a = 10; 2// 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 3// 相当于 4window.a = 10; 5// 相当于 6window = { 7	a: 10, 8}; 9 10//一切声明了的全局变量，都是 window 的属性 11var b = 20; 12// 相当于 13window.b = 20; 14// 相当于 15window = { 16	b: 20, 17}; 18// 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -30,7 +30,7 @@ paginate = 12
   homepage = "https://yxzi.xyz"
 
 [params]
-  mainSections = ["MyNote"]
+  mainSections = ["mynote"]
 
   favicon = 'https://yxzi.xyz/Logo.ico'
 

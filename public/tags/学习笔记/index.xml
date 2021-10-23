@@ -1,0 +1,2572 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 学习笔记 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco SSH 取代 Telnet</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
+      <description>shh 取代 telnet command
+输入密码，链接
+保护密码
+进特权
+保存
+进全局模式，加密密码 Serverce password-encryption
+ssh加密通信 ip domian-name username
+ip ssh version 2
+crypto key generate rsa</description>
+    </item>
+    
+    <item>
+      <title>Cisco Trunk 和 Access</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</guid>
+      <description>Trunk 和 Access trunk 运行通过多个VLAN。
+access，只允许通通过单个VLAN。</description>
+    </item>
+    
+    <item>
+      <title>Cisco vlan 相关操作</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/vlan-%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/vlan-%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
+      <description>vlan 相关操作 删除vlan分配
+conf t
+interface f 0/18
+no switchport access vlan
+接入模式 等于下行模式
+interface f 0/18
+switchport mode access
+switchport mode access
+验证端口状态
+删除vlan
+no vlan 20
+show vlan summary，
+show vlan brief，
+show interface vlan 20
+show interface f0-/18 switchport
+进全局
+vlan 10
+name student
+exit
+interface f0/12
+switchport acces vlan 10 （指定删除10，不加10相当于删除全部？）
+end
+show vlan brief
+确定划分完成
+interface 0/12
+no switchport vlan 10</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置中继</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
+      <description>配置中继 进交换机的全局
+interface 需要配置的接口
+switchport mode trunk
+switchport trunk native vlan 99</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置交换机端口安全</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
+      <description>配置交换机端口安全 进全局模式
+interface f 0/1
+switchport mode access
+switch port-security
+exit
+interface f 0/2
+switchport mode access
+switch port-security
+exit
+interface f 0/1
+switchport port-security maximum 1
+exit
+interface f 0/2
+switchport port-security maximum 1
+exit
+interface f 0/1
+switchport port-security mac-address sticky
+no shutdown
+exit
+interface f 0/2
+switchport port-security mac-address sticky
+no shutdown
+exit
+interface range f 0/1-10
+no shutdown
+exit
+interface f 0/1
+switchport port-security violation restrict</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置单臂路由</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
+      <description>配置单臂路由 三个 pc，一个交换机在中间，一个路由器在交换机上面
+分别将交换机和路由器连起来
+配置交换机 进入交换机
+进全局，改名 S1
+创建vlan vlan 10 ，退出
+vlan 20，退出
+vlan30，退出
+将指定 access 端口分配给指定 vlan interface f 0/3
+switchport acces vlan 20
+exit
+interface f 0/2
+switchport acces vlan 10
+exit
+interface f 0/4
+switchport acces vlan 30
+exit
+将二层端口配置成 trunk 端口 interface g 0/1
+switchport mode trunk
+配置路由器 进路由器
+进全局，改名 R1
+interface g 0/0.1
+enc dot1Q 10
+ip address 192.168.2.2（pc的默认网关）255.255.255.0
+exit
+interface g 0/0.2
+enc dot1Q 20</description>
+    </item>
+    
+    <item>
+      <title>Hugo 命令</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</guid>
+      <description>Hugo 命令 hugo new site MyBlog 创建一个新的站点文件夹
+hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</description>
+    </item>
+    
+    <item>
+      <title>Hugo 安装</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%AE%89%E8%A3%85/</guid>
+      <description>Hugo 安装 源码编译安装，首先安装好依赖的工具
+ Git Mercurial Go 1.3+ (Go 1.4+ on Windows)  我的环境是windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
+ 用管理员身份打开windows中的Windows PowerShell（命令提示符）。（windows中搜索powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  1Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入choco，查看是否安装成功。 复制下方代码，然后执行  1choco install hugo -confirm </description>
+    </item>
+    
+    <item>
+      <title>SHH 密钥登录</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
+      <description>SHH 密钥登录 用 xshell 生成密钥 新建用户密钥生成向导
+输入密钥长度，比如 2024，下一步
+输入密钥名称、密码，下一步
+将公钥保存为文件，完成
+将公钥上传到服务器 我这里用的服务器是 Linux，以及宝塔面板。
+进入服务器的**/root/.ssh**路径，在这个文件夹中新建**authorized_keys**文件，并将之前保存的公钥中的文件内容复制到新建的**authorized_keys**文件中。
+配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
+核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
+注意，一下内容前面的注释符号**#**请删掉。
+1AuthorizedKeysFile .ssh/authorized_keys2PasswordAuthentication no</description>
+    </item>
+    
+    <item>
+      <title>Vs Code 使用 Git</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</guid>
+      <description>Vs Code 使用 Git 注意本地密钥是否和远程的密钥一样。</description>
+    </item>
+    
+    <item>
+      <title>Vs Code 插件</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</guid>
+      <description>Vs Code 插件 Bracket Pair Colorizer 给匹配的括号着色
+Path Intellisense 自动完成文件名
+Material Icon Theme 好看的文件图标
+Prettier - Code formatter 更优雅的代码格式化。vscode 里比较优秀的一个格式化插件。
+VS Code Counter 统计代码总行数、注释行数、空白行数，以及使用的语言。
+使用方法：右键需要统计的文件夹—Count lines in directory
+Power Mode 一款超级炫酷的编辑代码的插
+HTML Snippets 非常实用的 HTML 代码片段以及提示
+Atuo Rename Tag 修改 html 标签，自动帮你完成尾部闭合标签的同步修改
+Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等</description>
+    </item>
+    
+    <item>
+      <title>WinSCP  SSH 密钥登录</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
+      <description>WinSCP SSH 密钥登录 WinSCP -&amp;gt; 高级 -&amp;gt; SSH -&amp;gt; 验证 -&amp;gt; 密钥文件</description>
+    </item>
+    
+    <item>
+      <title>制作光晕</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</guid>
+      <description>制作光晕  新建透明图层。 将该图层填充为纯黑色。 菜单栏——滤镜——渲染——镜头光晕——调整参数——确定。  </description>
+    </item>
+    
+    <item>
+      <title>制作剪影</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</guid>
+      <description>制作剪影  导入图像。 工具栏——快速选择工具。 建立选区。 属性栏——创建或调整选区——调整参数——输出设置——输出到：图层蒙版——确定。 图层面板——创建新的填充或调整图层——纯色——选择颜色——确定。 将纯色图层作为图像的背景。 复制一次图像层——Ctrl + J。 选择位于下方的图像层。 图层面板——添加图层样式——颜色叠加——调整颜色——确定。 移动工具——将位于下方的图像层调整到合适的位置。  </description>
+    </item>
+    
+    <item>
+      <title>制作灰度图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</guid>
+      <description>制作灰度图  新建——颜色模式——灰度。 工具栏——渐变工具——黑白渐变。 调整渐变样式。  </description>
+    </item>
+    
+    <item>
+      <title>博客添加搜索功能</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <description>博客添加搜索功能 HTML代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
+1&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; 2 &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; 3 &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; 4 &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; 5	&amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 6&amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
+CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 5 line-height: 30px; 6 padding-right: 10px; 7} 8 9.search .search-icon { 10 float: right; 11 height: 100%; 12 margin: 0 10px; 13 line-height: 30px; 14 cursor: pointer; 15 user-select: none; 16} 17 18.</description>
+    </item>
+    
+    <item>
+      <title>双重曝光</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</guid>
+      <description>双重曝光  导入绿幕抠像后的素材与背景 素材。 将背景素材放到抠像绿幕素材的下面。 背景素材——轨道遮罩—Alpha。  </description>
+    </item>
+    
+    <item>
+      <title>域服务器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>域服务器 父域一
+父域二
+子域三
+成员四
+9 月 30 号 vmware
+One
+大规模联网用域
+小规模联网用组
+更大的规模用林
+打开 one，和 two，three，fou
+更改计算机属性 - 重命名计算机名
+设置密码和用户名
+设置ipv4属性
+One
+ip 192.168.10.1，255.255.255.0，192.168.10.1
+Dns 127.0.0.1，变为 192.168.10.1
+Two
+ip地址 192.168.10.2，255.255.255.0，192.168.10.1
+Dns 192.168.10.1 变为 192.168.10.2 备用dns 192.168.10.1
+Three
+ip 192.168.10.3，255.255.255.0，192.168.10.1
+Dns 192.168.10.1
+Four
+ip 192.168.10.4，255.255.255.0，192.168.10.1
+Dns 192.168.10.1
+选择 one
+服务器管理 - 添加角色 - 服务器角色
+勾选 dns服务器 和 active directory 服务，安装完成后重启
+管理工具
+本地安全策略 账户策略 密码策略 密码必须符合复杂性要求 禁用
+虚拟机命令行输入
+net user userName /passwordreq:yes</description>
+    </item>
+    
+    <item>
+      <title>域服务器的基本操作</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>域服务器的基本操作 克隆2008
+打开 ad 01
+新建用户
+点击新建的用户
+隶属于
+添加一个
+将2012升级为域控
+添加一个子用户，但无法使用这个用户名登录域服务器
+设置
+192.168.1.1
+255.255.255.0
+网关 192.168.1.1
+配置2008
+控制面板
+网络链接
+设置ip
+192.168.1.50
+255.255.255.0
+192.168.1.1
+192.168.1.1
+更改计算机名字
+加入域
+yxzi\user02（2012域控上添加的用户）
+在2008上面用user02这个用户名登录到域控
+打开 ad 01
+user 02属性
+账户，登录时间
+新建 用户 user03
+选择 user03 属性
+配置登录名和密码
+指定计算机才能登录
+登录到，输入ad 02的计算机名
+ad1 新建组 ts01
+添加到组，选择 user02
+选择 user03，隶属于，
+ts 属性 用户，即可看到
+新建 组织单位 danwei
+组织单位的属性 防止意外删除</description>
+    </item>
+    
+    <item>
+      <title>安装 Hyper V</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%AE%89%E8%A3%85-hyper-v/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
+      <description>安装 Hyper V 安装 hyper v
+在第一台上链接第二台虚拟计算机
+启动 nat模式 8
+关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
+第一太 ping 第二台计算机的ip地址，成功即可
+查询
+开远程权限
+新建虚拟机
+位置和名称
+指定代数，32位系统选第一代64位系统选第二代
+分配内存，1024
+网络连接，intel 8257
+大小，25gb
+以后安装操作系统
+最后链接虚拟机
+右击虚拟机
+检查点
+将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
+安装操作系统
+文件，设置 ，固件，dvd放到第一个，安装完成后，关机再将硬盘放到第一个。
+关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
+hyper v设置，实时迁移，启用迁移
+移动虚拟机，将虚拟机移动到新建的磁盘上即可
+允许链接共享
+在hyper v上新建磁盘，固定大小动态扩展，下一步，完成</description>
+    </item>
+    
+    <item>
+      <title>登录宝塔</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
+      <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
+轻量云服务器 CentOS 7.6 64bit
+Putty 用于Windows从本地登陆到远程 Linux 服务器
+宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击open，进入到 Putty 的运行界面，提示 login as.
+  在login as后输入用户名，一般都是 root，按 Enter。
+  输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
+  登陆完成。
+  安装宝塔 Centos 系统直接在登陆后 Putty 界面输入以下命令安装。</description>
+    </item>
+    
+    <item>
+      <title>绿幕抠像</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</guid>
+      <description>绿幕抠像  导入图像。 新建合成——右击图层中的图像——效果——Keying——Keylight(1.2)。 Screen Color——吸管——点击图像中的绿色部分——关闭切换透明网格。 View——下拉框 Screen-Matte——增加 Screen Gain。 Screen-Matte——调整 Clip black/Clip White（使图像中的黑色和白色更加纯粹）。 View——下拉框 Final Result。 消除图像边缘的锯齿。 右击图层中的图像——效果——遮罩——简单阻塞工具——调整阻塞遮罩（使图像边缘的锯齿消除）。  </description>
+    </item>
+    
+    <item>
+      <title>裁剪图形</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</guid>
+      <description>裁剪图形  导入图像。 解锁当前图像所在的图层。 菜单栏——图像——画布大小——调整参数——确定。 调整图像将要被被保留的部分。  </description>
+    </item>
+    
+    <item>
+      <title>English A4 纸泛背单词法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</guid>
+      <description>A4 纸泛背法 适用于在短时间内记住某个单词的中文翻译等。
+开始  在一张空白 A4 纸的任意地方写出这个单词 看着单词并默念五遍其翻译 接着找一个空白处写出下一个单词，执行步骤 2 回到上一个单词，执行步骤 2，相当于将上一个单词复习一遍 根据自身情况可以改变单词默念的次数以及复习的次数  核心 快速的记忆，多次的重复。
+睡前复习一次旧单词，醒来复习一次旧单词，日常复习一次旧单词，并背当天的 新单词
+每次背单词注意力一定要高度集中，努力去看单词长啥样。
+缺点 大概率不会读也不会写，但你在阅读中碰见了能知道它的意思。
+艾宾浩斯记忆周期</description>
+    </item>
+    
+    <item>
+      <title>English How</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</guid>
+      <description>How how +形容词/副词 + 主语 + 谓语
+How careful he is！（他多细心啊！)
+How fast he runs！（他跑得多快啊！）
+how + 形容词 + 冠词(a、an) + 可数名词的单数 + 主语 + 谓语
+How cute a dog it is!(它是多么可爱的一只狗啊！)</description>
+    </item>
+    
+    <item>
+      <title>English What</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</guid>
+      <description>What what + 冠词（a、an） + 形容词 + 可数名词的单数 + 主语 + 谓语
+What a beautiful photo it is!（这照片它多美啊！）
+what + 形容词 + 不可数名词/名词复数 + 主语 + 谓语
+What cleanly water it is!（多干净的水啊！）
+What brilliant dogs they are!（多聪明的狗啊！）</description>
+    </item>
+    
+    <item>
+      <title>English 一般疑问句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <description>一般疑问句 可以用 yes、no 回答。
+一般疑问句通常是由陈述句变过来的，下面列举陈述句变一般疑问句的几种方式。
+提前系动词（be 动词、感官动词） 主 + 系 + 表 ——&amp;gt; 系 + 主 + 表
+陈述句：You are an idiot.（你是个笨蛋）
+一般疑问句：Are you an idiot?（你是不是个笨蛋？）
+回答：Yes,i am./No,i am not.
+提前助动词（do、have、shall等） 主 + 谓 +（宾）——&amp;gt; 助动词 + 主 + 动词原形 + 其他
+陈述句：You（have got light bulbs.（你有灯泡）
+一般疑问句：（Have）you got light bulbs?（你有灯泡吗？）
+回答：Yes,i have./No,i have not.
+提前情态动词（can、may、will） 主 + 情态动词 + 动词原形 + 其他 ——&amp;gt; 情态动词 + 主+ 动词原形 + 其他
+陈述句：You (can) play football.</description>
+    </item>
+    
+    <item>
+      <title>English 两大句型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</guid>
+      <description>两大句型 在英语中，主谓宾和主系表结构不能混用。
+主谓宾 You apeak good English.
+主系表 Your english is very good.</description>
+    </item>
+    
+    <item>
+      <title>English 主系表</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <description>主系表 主语 ＋ 系动词 ＋ 表语（形容主语）
+系动词用于链接前面的主语和后面的表语。
+系动词 = be 动词（is、are、am） + 感官动词（看、听、闻、尝、感觉、似乎、抱持、证明）
+系动词后面大部分是表语。
+例句  The food is delicious. They are students. He fell asleep She is rich now. i am in Chinese now.  </description>
+    </item>
+    
+    <item>
+      <title>English 主语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</guid>
+      <description>主语 一个句子的主体，也可以说是一句话主要叙述的对象或者这句话主要讲的内容。
+大部分代词都可以作主语，尤其是人称代词的主格，宾格不能作主语。
+例句  I like watching TV Chinese is hard.  </description>
+    </item>
+    
+    <item>
+      <title>English 主谓</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</guid>
+      <description>主谓 主语 ＋ 不及物动词。
+ The universe remains. I can draw. He likes singing. I work every day. I run every day.  </description>
+    </item>
+    
+    <item>
+      <title>English 主谓双宾</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</guid>
+      <description>主谓双宾 主语 ＋ 谓语（双及物动词） + 间宾 ＋直宾。
+双宾的特点是两个宾语都能承受这个动作（双及物动词），以及两个宾语都能被作为主语。如果不能都被作为主语，那这个句子就是宾补。
+一个句子中的间宾和直宾都能被作为被动语态主语，且双宾必须是一个人一个物，那么这个句子就是双宾，否则是宾补。
+ I give you money. Her father bought her a dictionary. I gave her a book yesterday.  </description>
+    </item>
+    
+    <item>
+      <title>English 主谓宾</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <description>主谓宾 主体 ＋ 谓语（单及物动词） ＋ 动作的承受者。
+ I love you. He took his bag and left. I read English every morning.  </description>
+    </item>
+    
+    <item>
+      <title>English 主谓宾宾补</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</guid>
+      <description>主谓宾宾补 主语 + 谓语（少数特定的及物动词） ＋ 宾语 + 宾语补足语。
+为什么要跟一个宾补，因为如果不跟宾补的话，句子的意思会不完整。
+宾补中的宾语和宾补都是指同一个人或同一个事物，它们通常是同位语关系。
+ I call her Mary. They ordered hamburger their lunch. I made her happy yesterday.  </description>
+    </item>
+    
+    <item>
+      <title>English 介词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/</guid>
+      <description>介词 用于表示位置，方向等，使句子形成结构，且没有实际意义的词。
+例句 I ate three apple with chopsticks</description>
+    </item>
+    
+    <item>
+      <title>English 代词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</guid>
+      <description>代词 用于代替名词的词，而避免重复名词。
+例句 I am person
+人称代词 用于指代人，有些人称代词页可以指代事物
+i、it、you、he、she、we、they 等等都是人称代词。
+它有主格和宾格，以及有第一人称（我）、第二人称、（你）第三人称（他）
+主格 作主语的格式，主格才可以作主语，宾格不行。
+人称代词的主格只有：i、we、you、she、he、it、they.
+在句子里做主语或者表语
+ They are students. He is very handsome. It is cheap.  It is you.
+宾格 作宾格的格式，宾格才可以作宾语。
+做及物动词或者介词之后的宾语
+I tell her my name.
+我告诉她我的名字
+I should apologize to her.
+我应该向她道歉
+句子书写顺序 第二人称（你）——&amp;gt; 第三人称（他）——&amp;gt; 第一人称（我）
+You and he
+你和他
+He an me
+他和我
+You and he and me are all students.
+你和他还有我都是学生
+it 可以表示 天气 It is cloudy.</description>
+    </item>
+    
+    <item>
+      <title>English 冠词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</guid>
+      <description>冠词 用于说明名词，通常在名词前后，形成特指或泛指的作用，简称 art.
+比如 a、an、the 等单词都是冠词。
+在 Rainy is a person 中，a 是冠词。
+定冠词 表示这个或那个，特指某个名词，后面跟单数/ 复数名词，不可数名词。
+使用场景 表示上文提过的人和物 This car is popular, but the car isn’t cheap（这车很热门，但是这车不便宜）
+表示地理位置用 We are based in the Beijing（我们的总部设在北京）
+表示江河湖海用 The Yellow River（黄河）
+唯一存在的事物用 The earth（地球）
+表示最高级的时候前用 This is the best cup of coffee（这个最好的一杯咖啡）
+表示强调某种东西时候前用 Beijing is the capital of China（北京是中国的首都）
+乐器之前用 I like to play the piano（我喜欢弹钢琴）
+不定冠词 泛指人和物，表示一个，后面加单数可数名词，辅音发音前面加 a，元音发音前面加 an。
+使用场景 第一次提到的人和物 it’s a cat（这个一只猫）</description>
+    </item>
+    
+    <item>
+      <title>English 副词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/</guid>
+      <description>副词 用于修饰动词或形容词。
+ I ate two apple quickly  </description>
+    </item>
+    
+    <item>
+      <title>English 动词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/</guid>
+      <description>动词 表示动的行为或心理活动的词。
+谓语动词  它是谓语的一部分，用于表达动作的时间、状态、语气、否定、可能性、必须性等，但想发挥这些作用，需要用到助动词。 前五种谓语动词，对应了五种简单句，同时也囊括了五种句子成分。  实义动词 表示有实际意义的动词。
+不及物动词  可以独立完成的动词叫做不及物动词，动词后面不需要有“物”。 Rainy sleeping。 句型一般为：主语 + 不及物动词。  单及物动词 只有一个动作承受者，动词后面一定要有“物”。
+例句  Rainy like you。  双及物动词  有两个动作承受者，即动词后有两个“物”，一个“动物”，一个“物体”。 Rainy teaches you English。 一般句型为：主语 + 双及物动词 + 间接宾语 + 直接宾语。  复杂及物动词  只有一个动作承受者，动词后面要有一个“物”，这个物后面还要有一个对这个“物”的补充说明。 Rainy consider you smart。 一般句型为：主语 + 复杂及物动词 + 宾语 + 宾补。  复合动词 由动词和另一个单词或几个单词所构成的词组。
+动词短语虽然由几个词构成，但实际上它只表示一个动作。
+ Look after Look forward to Look at Git up  非实义动词 系动词 不单是动作，将动词之后的信息赋给在动词之前信息，也叫连系动词，连系表语的词。</description>
+    </item>
+    
+    <item>
+      <title>English 反义疑问句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <description>反义疑问句 可以用 yes，no 回答。
+前肯后否，前否后肯 陈述句部分是肯定，疑问句部分用否定句 He is your teacher, isn‘t he？(他是你的老师，不是吗？)
+根据事实回答：Yes, he is
+陈述句部分是否定，反义疑问句用肯定句 He isn‘t your teacher, is he？(他不是你的老师，是吗？)
+根据事实回答：No, he isn’t
+有祈使句的情况 用 will you和won’t you
+Open the door, won’t you?
+打开开门，不好吗？
+Don’t open the door, will you?
+不打开门，好吗？
+不管否定肯定，let’s开头结尾就是shall we，Let us开头结尾就是will you
+肯定：Let‘s go to school, shall we? Let us go outside, will you?
+否定：Let‘s don’t go out, shall we? Don&amp;rsquo;t let us go there, will you?</description>
+    </item>
+    
+    <item>
+      <title>English 同位语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</guid>
+      <description>同位语 用于将主语或宾语重新说一遍。即两个不同的词语都表示同一个事物或人。
+ Rainy,an english teacher,is very strict.  </description>
+    </item>
+    
+    <item>
+      <title>English 名词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/</guid>
+      <description>名词 表示人或物的名称。
+ Rainy is a personRainy  专有名词 专有名词（大多数是不可数名词，在某些情况下可以复数使用，或者转换为普通名词，（单数/复数使用）
+专有名词的首字母必须大写。
+ Rainy is student. Beijing is beautiful China is so large. FBI is very famous  一个可数名词的单数是不能单独再句子或短语里面出现的，需要加限定词（形容词性物主代词，指示代词、数词等等）、冠词或变直接复数。比如 she is teacher这句话就是不对的，应该改为 she is a teacher 或者she is my teacher或 She is Nick&amp;rsquo;s teacher
+特殊的 当Mother的首字母大写后，它表示称呼语，相当于一个专有名词，可以单独使用；如果是小写的mother，那么则表示可数名词单数，不能单独使用
+普通名词 除了专业名词以外的词都是普通名词。
+专有名词复数使用，专业名词转换普通名词 There are two Jacks in our class
+我们班有两个杰克
+Millions of Lei Fengs have emerged in China
+中国出现了数百万的活雷锋
+Hey, Tom, have a Mrs. Carl is waiting for you</description>
+    </item>
+    
+    <item>
+      <title>English 命令、警告</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</guid>
+      <description>命令、警告 Get out！（滚！）
+Be quiet, please.（请安静）
+Be careful（小心）</description>
+    </item>
+    
+    <item>
+      <title>English 复合句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</guid>
+      <description>复合句 表示用简单句所组成的从属关系的句子；也就是表示一个句子套另一个句子，这两个句子分别叫做主句和从句。</description>
+    </item>
+    
+    <item>
+      <title>English 定语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</guid>
+      <description>定语 用于修饰名词或代词，也可以说定语是广义的形容词，定语是跟名词有关系。
+定语可以将名词具体化，缩小名词 的范围，比如你去帮我买香蕉，这句话不具体，因为你没有说买多少个香蕉，或者买什么香蕉，因此需要加上一些具体的词，这些词就是定语。
+在英语中，普通名词才能用定语修饰 ，专有名词是不能用定语修饰的，特殊情况除外。
+同一个普通名词，可以有多个定语修饰。
+ The little white rabbit ate a large carrot. One book a bottle of water Two beautiful girls  前置定语
+后置定语
+ </description>
+    </item>
+    
+    <item>
+      <title>English 定语从句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</guid>
+      <description>名词性从句 名词性从句 主语从句 将简单句修改，使它可以充当另一个句子的主语。
+宾语从句 将简单句修改，使它可以充当另一个句子的宾语。
+表语从句 将简单句修改，使它可以充当另一个句子的表语。
+同位语从句 将简单句修改，使他可以充当另一个句子的同位语。</description>
+    </item>
+    
+    <item>
+      <title>English 定语从句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
+      <description>定语从句 将简单句修改，使它成为另一个句子的定语。</description>
+    </item>
+    
+    <item>
+      <title>English 宾补</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</guid>
+      <description>宾补 对宾语进行补充说明，使得句子意思完整。
+宾补只跟宾语有关系，跟主语没关系。
+例句  He made the English class funny I call her Mary   </description>
+    </item>
+    
+    <item>
+      <title>English 宾语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</guid>
+      <description>宾语 指动作（谓语）的承受者。
+能作主语的词都可以作宾语，不能作主语的，也不能作宾语。但要注意的是，如果是人称代词作宾语，则必须用宾格，不能用主格。
+ I buy a book every year You believe us I want two  间宾 一般来说， 我们把表示人的称为间接宾语。
+间宾和直宾的位置是可以换的，如果间宾放直宾的后面，那么要在间宾的前面＋ to.
+ Rainy teaches you English I gave a book to her I gave them books  直宾 我们把表示物的称为直接宾语。
+例句  Rainy teaches you English  与宾补的区别 主语 + 及物动词 + 宾语 + 名词（作宾语）
+主语 + 及物动词 + 宾语 + 名词（作宾补）
+I gave her a book.
+I call her Mary.</description>
+    </item>
+    
+    <item>
+      <title>English 形容词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</guid>
+      <description>形容词 用于修饰名词的词，简称 adj.
+在 I am smart person 中，smart 是形容词。
+Good、fast、hot 等单词都是形容词</description>
+    </item>
+    
+    <item>
+      <title>English 感叹词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</guid>
+      <description>感叹词 用于表示感叹或发出某种情感，通常处于句子的最前面或最后面，一般与句子本身没有实际的直接联系，简称 int.
+比如 What、yum、blah 等都是叹词。
+在 Ah，the apple is tasty 中，Ah 是叹词。</description>
+    </item>
+    
+    <item>
+      <title>English 数词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</guid>
+      <description>数词 用于表示数量、数字、第几的词.
+例句  The first is important. Eight is a number  基数词 表示数量的数词，比如一、二、三。
+100 ~ 999 一 = one
+十 = ten
+百 = hundred
+千 = thousand
+万 = ten thousand
+十万 = one hundred
+百万 = one million
+一亿 = one hundred million
+十亿 = one billion
+百亿 = ten billion
+千亿 = myriads
+特点 作数词时候，前面可以加数词，后面不能加s，two thousand，three thousands（错）
+如果数词用作名词时候，意思是好几…的时候，前面可以加 some、many、several 这种词或者加数词，后面可以加 of
+hundreds of（好几百）
+five hundreds of（五百左右）</description>
+    </item>
+    
+    <item>
+      <title>English 特殊疑问句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <description>特殊疑问句 不可以用 yes、no 回答。
+特殊疑问句是对句子中的某个句子成分提问，用特殊疑问词开头，下面列举一些特殊疑问词。
+特殊疑问词 Who 提问人：Who’s next？（谁下一个？）
+Whose 提问所属：Whose car is this？（这是谁的车？）
+Whom 提问宾格人：Whom did you choose for our them leader?（你选谁当我们队长？）
+What 提问事情属性：What time is it？（几点了？）
+When 提问时间：When can we start working？（我们什么时候可以开始工作？）
+Where 提问地点：Where is the bathroom？（卫生间在哪里？）
+Why 提问原因：Why did he do it？（他为什么做这个事？）
+How 提问方式数量：How heavy is it？（它有多重？）
+How much/many 多少：How much longer？（有多远？）
+Which 提问选择：Which is your choice？（你选哪个？）</description>
+    </item>
+    
+    <item>
+      <title>English 状语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</guid>
+      <description>状语 用于修饰谓语动词，它只跟谓语有关系。
+xxx的执行某个动作，xxx就是状语。
+一句话里面可以同时出现多个状语。
+ The rabbit ate quickly I teach English in Beijing I am happy in Guizhou I am happy today I am busy now I will buy a book tomorrow I speak English slowly  </description>
+    </item>
+    
+    <item>
+      <title>English 状语从句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
+      <description>状语从句 将简单句修改，使它成为另一个句子的状语。</description>
+    </item>
+    
+    <item>
+      <title>English 简单</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</guid>
+      <description>简单句 陈述句 肯定式 i have money
+肯定式边否定式，助动词（do）后面，加否定词（not）
+否定式 i don’t have money
+疑问句 感叹句 祈使句 </description>
+    </item>
+    
+    <item>
+      <title>English 表语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</guid>
+      <description>表语 说明主语怎么怎么样，是谓语的一部分。
+表语和系动词不能分开使用，没有系动词就没有表语，没有表语就没有系动词，因此，系动词后面的词大部分都是表语。
+例句 I am rich
+You are my friend
+We are in the classroom</description>
+    </item>
+    
+    <item>
+      <title>English 语气词 &#43; 感叹号</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</guid>
+      <description>语气词 + 感叹号 Wow! That’s totally awesome!
+哇！真是厉害！
+Oh! You’re Peter！
+哇！你是皮特！</description>
+    </item>
+    
+    <item>
+      <title>English 请求、祝愿</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</guid>
+      <description>请求、祝愿 Have a good day（祝你有美好的一天）
+Let me help you（让我帮你）</description>
+    </item>
+    
+    <item>
+      <title>English 谓语</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</guid>
+      <description>谓语 一般在主语之后，用于说明主语的动作、状态、特征和行为。
+动作型谓语 用于说明主语做什么。
+一般由谓语动词构成。
+例句  I eat an apple everyday  简单谓语 由实义动词或复合动词构成。
+例句  I wrok every day. I run every run. I love you. She looks after her brother. I git up at six  复合谓语 由简单谓语 + 其他词语，共同作谓语的情况。
+情态动词 + 实义动词/复合动词的原形  I can speak Cantonese I can look after her  助动词 ＋ 实义动词/复合动词的原形  I will buy a new book tomorrow. I will get up early tomorrow.</description>
+    </item>
+    
+    <item>
+      <title>English 连词</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</guid>
+      <description>连词 用来连接词与词、词组与词组、句子与句子，使得形成某种逻辑关系或语法结构的词。简称 conj.
+连词可以表并列、承接、转折、因果、选择、假设、比较、让步等关系</description>
+    </item>
+    
+    <item>
+      <title>English 选择疑问句</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <description>选择疑问句 不可以用 yes，no 回答
+选择疑问句用 or 连接，一般是提问两个以上的句子内容，我们选择其中一个进行回答。
+选择疑问句：Do you like to play football or basketball?（你喜欢踢球还是打篮球？）
+回答：I like to play football./I like to play basketball.</description>
+    </item>
+    
+    <item>
+      <title>Git git add</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</guid>
+      <description>git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
+git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
+git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
+添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add 1git add FileName1 2git add FileName2 3git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</description>
+    </item>
+    
+    <item>
+      <title>Git git add</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</guid>
+      <description>git branch 一般用于对分支的操作，比如创建分支，查看分支等等，
+git branch 不带参数：列出本地已经存在的分支，并且在当前分支的前面用*****标记
+一个新的本地仓库，必须在git add且git commit之后，再使用git branch命令，才能显示出本地分支master。
+git branch BranchName 创建名为BranchName的分支，创建分支时需要是最新（当前分支的代码已经git commit）的环境，并且创建分支后依然停留在当前分支。
+git branch -d BranchName 删除名为BranchName的分支，如果在分支中有一些未merge的提交，那么会删除分支失败，此时可以使用git branch -D BranchName强制删除名为BranchName的分支
+git branch &amp;ndash;set-upstream-to=origin/dev LocalDev 将名为LocalDev的本地分支与名为origin/dev的远程分支相关联。</description>
+    </item>
+    
+    <item>
+      <title>Git git checkout</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</guid>
+      <description>git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
+$ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
+git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
+git checkout -b BranchName -b 参数相当于以下两条命令
+1git branch BranchName 2git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
+这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</description>
+    </item>
+    
+    <item>
+      <title>Git git cherry-pick</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</guid>
+      <description>git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
+这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。
+git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。</description>
+    </item>
+    
+    <item>
+      <title>Git git clone</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</guid>
+      <description>git clone 拷贝一个远程库到本地，让自己能够查看该项目，或者进行修改。
+git clone RemoteAddress 克一个RemoteAddress到本地。</description>
+    </item>
+    
+    <item>
+      <title>Git git commit</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
+      <description>git commit 将暂存区中的内容添加到本地仓库，相当于确认提交暂存区中的内容。
+每次使用git commit命令我们都会在本地版本库生成一个 40 位的哈希值，这个哈希值也叫 commit-id， commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过与git reset的组合命令回到这里.
+git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。</description>
+    </item>
+    
+    <item>
+      <title>Git git config alias</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
+      <description>git config alias git config alias.ShorthandName OriginalName 将git OriginalName命令修改（通常为简写）为git ShorthandName，且只对当前 Git 仓库有效，配置文件在当前仓库的**.git/config**中。
+git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在C盘用户目录下的一个**.gitconfig**文件中。</description>
+    </item>
+    
+    <item>
+      <title>Git git config user</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</guid>
+      <description>git config user git config user.name &amp;ldquo;UserName&amp;rdquo; git config user.email &amp;ldquo;Email&amp;rdquo; 对当前仓库设置名为UserName的用户名和名为Email的邮箱。
+git config &amp;ndash;global user.name &amp;ldquo;UserName&amp;rdquo; git config &amp;ndash;global user.email &amp;ldquo;Email&amp;rdquo; git config命令的–global参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对不同的仓库指定不同的用户名和 Email 地址。</description>
+    </item>
+    
+    <item>
+      <title>Git git diff</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</guid>
+      <description>git diff git diff 比较暂存区与工作区中文件之间的差异，可以让我们知道这些文件具体修改了些什么。</description>
+    </item>
+    
+    <item>
+      <title>Git git log</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
+      <description>git log 可以让我们查看从最近到最远所有的历史提交日志，每条日志中有对应的版本号，这个版本号可以让我们回退到指定版本号的那个版本。
+git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b向上翻页 q退出
+git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。</description>
+    </item>
+    
+    <item>
+      <title>Git git merge</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</guid>
+      <description>git merge 用于合并指定分支到当前分支
+git merge BranchName 将名为 BranchName 的分支合并到当前分支。
+git merge &amp;ndash;no-ff -m &amp;ldquo;merge with no-ff&amp;rdquo; BranchName 合并名为 BranchName 的分支到当前分支，并创建一个新的 commit，所以加上-m参数，将 commit 的描述写进去。</description>
+    </item>
+    
+    <item>
+      <title>Git git pull</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</guid>
+      <description>git pull 用于从远程获取代码并合并本地。
+git pull origin master:dev 将远程仓库origin的master分支拉取过来，与本地的dev分支合并。
+git pull origin master 如果远程分支是与当前分支合并，则冒号后面的部分可以省略。
+将远程仓库 master 分支中的内容同步到本地仓库 master 分支中</description>
+    </item>
+    
+    <item>
+      <title>Git git push</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</guid>
+      <description>git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
+git push的一般形式为git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt; &amp;lt;远程分支名&amp;gt;，例如git push origin master：refs/for/master，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
+git push origin master 将本地master分支内容推送到远程库origin的master分支上，这里的master表示是远程服务器上的master分支和本地分支重名后的简写。
+git push -u origin master. -u 表示 Git 不但会将本地 master 分支内容推送到远程库 origin 的 master 分支上，还会把本地的master分支和远程的master分支关联起来，在以后推送内容时就可以直接使用git push命令了，即可以省略origin master。
+git push origin ：refs/for/master 如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支，等同于git push origin –delete master
+git push origin TagName 推送名为TagName的标签到远程库。
+git push origin :refs/tags/TagName 删除名为TagName的远程标签。
+git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签。</description>
+    </item>
+    
+    <item>
+      <title>Git git rebase</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
+      <description>git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
+rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
+git rebase BranchName git rebase会把当前分支master的每个commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
+当master分支更新之后，它会指向原来BranchName分支上的commit，而那些原本在自己身上的commit已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。
+因为原本在master分支上的commit被丢弃了，因此，这时候的分支就变为了一条直线，
+与 git merge 的区别 当我们使用Git log来参看commit时，其commit的顺序也有所不同。</description>
+    </item>
+    
+    <item>
+      <title>Git git reflog</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</guid>
+      <description>git reflog 可以查看所有分支的所有操作记录（包括已经被删除的git commit记录和git reset的操作）</description>
+    </item>
+    
+    <item>
+      <title>Git git remote</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</guid>
+      <description>git remote git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 将一个已有的本地仓库与远程库相关联。
+git remote -v 查看远程库信息</description>
+    </item>
+    
+    <item>
+      <title>Git git reset</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</guid>
+      <description>git reset 用于回退版本。
+git reset &amp;ndash;hard VersionNumber 可以指定回退到某一次提交后的版本号上，VersionNumber 为commit id
+git reset HEAD FileNmae 将 FileName 在暂存区的修改回退到工作区，即把 FileNmae 在暂存区中删除。这里的 HEAD 表示 FileNmae 最新的版本。
+git reset &amp;ndash;hard HEAD^ 在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较不方便，所以我们写成**HEAD~100**。</description>
+    </item>
+    
+    <item>
+      <title>Git git show</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</guid>
+      <description>git show 查看最新的 commit 提交。
+git show TagName 查看标签名为TagName的 commit 提交。</description>
+    </item>
+    
+    <item>
+      <title>Git git stash</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</guid>
+      <description>git stash 将当前工作区的文件先暂存起来，等 bug 修改完成后，再将暂存的工作区文件内容拿出来继续工作。
+git stash apply 恢复后，stash内容并不删除，你需要用git stash drop来删除；
+git stash pop 恢复的同时把stash内容也删了。
+git stash list 查看将前被暂存的工作区。</description>
+    </item>
+    
+    <item>
+      <title>Git git switch</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</guid>
+      <description>git switch 用于切换分支。与git checkout命令的区别在于，使用新的git switch命令，比git checkout要更容易理解。
+git switch -c Dev 创建并切换到新的Dev分支。
+git switch Dev 直接切换到名为Dev的分支。</description>
+    </item>
+    
+    <item>
+      <title>Git git tag</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</guid>
+      <description>git tag 用于查看本地仓库的所有标签。tag 是 git 版本库的一个标记，指向某个 commit 提交的指针，它比commit id方便我们记忆。
+git tag TagName 给当前分支上的HEAD打上名为TagName的标签。
+git tag TagName CommitId 给 commit id 为CommitId的提交打上名为TagName的标签。
+git tag -a TagName -m &amp;ldquo;Instruction&amp;rdquo; CommitId 给 commit id 为CommitId的提交打上名为TagName的标签，并添加说明文字Instruction。
+git tag -d TagName 删除名为TagName的本地标签。</description>
+    </item>
+    
+    <item>
+      <title>Git 与 Github</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</guid>
+      <description>Git 与 Github Git Git 是一款免费、开源、并且是目前世界上最先进的分布式版本控制系统。
+它是 Linus 花了两周时间自己用 C 写了一个分布式版本控制系统，这就是 Git！一个月之内，Linux 系统的源码已经由 Git 管理了！何为大佬？
+Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，GitHub 网站上线了，Github 是一个 Git 做版本控制的代码托管平台，Github 为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括 jQuery，PHP，Ruby 等等。
+历史就是这么偶然，如果不是当年 BitMover 公司威胁 Linux 社区，可能现在我们就没有免费而超级好用的 Git了。</description>
+    </item>
+    
+    <item>
+      <title>Git 临时分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</guid>
+      <description>临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？
+这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。
+暂存当前的工作进度 git stash我们当前处于dev分支上，在这个分支上暂存工作进度
+创建临时分支 1git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。
+合并到主分支 git switch mastergit merge --no-ff -m &amp;quot;merged bug fix 101&amp;quot; issue-101切换回主分支master，再将临时分支合并到主分支，合并完成后你可以删除临时分支。
+恢复工作进度 1git switch dev 2git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。
+另一种恢复 git cherry-pick 4c805e2也可以使用git cherry-pick命令恢复到指定的commitHash提交到当前分支，这样就可以避免多余的操作了。</description>
+    </item>
+    
+    <item>
+      <title>Git 什么是分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</guid>
+      <description>什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
+当两个平行宇宙互不干扰时，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了 Git 又学会了 SVN！
+分支有什么用 假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了 50% 的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人无法干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
+现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。</description>
+    </item>
+    
+    <item>
+      <title>Git 什么是版本控制系统</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <description>什么是版本控制系统 所有的版本控制系统，其实 只能跟踪文本文件的改动，比如 TXT 文件，HTML，所有的程序代码文档等等，Git 也不例外。版本控制系统可以告诉你每次的改动，比如在第 5 行加了一个单词 Linux ，在第 8 行删了一个单词 Windows 。
+而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件内容（二进制编码）的变化，只能把二进制文件每次改动串起来，也就是只知道图片从 100KB 改成了 120KB，但具体改了啥，在文件的哪里作了修改，版本控制系统并不知道，也没法知道。这里值得注意的是，Microsoft 的 Word 格式是二进制格式，因此，版本控制系统是没法跟踪 Word 文件的改动的。
+因此，我这里比较推荐使用 markdown 作为文本编辑的格式，以及我个人比较喜欢使用 Typora 编辑 markdown 文件，之后再用 Vs code + git，推送到 GitHub 上，非常的方便。</description>
+    </item>
+    
+    <item>
+      <title>Git 克隆远程库</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <description>克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
+克隆远程库 接下来我们使用git clone RemoteAddress命令将我们刚刚创建的远程库克隆到本地。
+1git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
+使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用ssh协议而只能用https。</description>
+    </item>
+    
+    <item>
+      <title>Git 分支是如何工作的</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
+      <description>分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
+commit 后分支的变化 每次提交，master都会向前进一个版本，这样，随着你不断提交，master的线也越来越长。
+当我们新建一个dev分支，指向与master相同的提交，再把HEAD指向dev，就表示我们当前在dev上工作。
+新增分支 从现在开始，对工作区的修改和提交就是在dev分支上了，比如再一次提交后，dev分支就往前进一个版本，而master分支不变。
+合并分支 现在，我们在dev上的工作完成了，可以把dev合并到master上，直接把master指向dev的当前版本，就完成了合并。
+删除分支 合并分支后，你可以删掉dev分支，删掉后，我们就只剩下master分支。</description>
+    </item>
+    
+    <item>
+      <title>Git 分支管理策略</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</guid>
+      <description>分支管理策略 在实际开发中，我们应该按照几个基本原则进行分支管理：
+首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+所以，团队合作的分支看起来就像这样：</description>
+    </item>
+    
+    <item>
+      <title>Git 创建并合并分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</guid>
+      <description>创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
+我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。
+提交文件 我们需要在maser分支上进行一次提交，以确保我们在默认分支下是进行过提交的。
+1git add ReadMe.txt 2git commit -m &amp;#34;这是第二个分支&amp;#34; 创建分支 接下来创建另一个dev分支。
+1git branch dev 切换分支 切换到刚才新建的dev分支。
+1 git checkout dev 修改文件并提交 我们在新创建的dev分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“这是第二个分支”。
+1git add ReadMe.txt 2git commit -m &amp;#34;这是第二个分支&amp;#34; 再次切换分支 现在我们已经再dev分支上完成了工作，现在我们需要切换辉原分支master
+git checkout master重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
+合并分支 Fast Forward 模式合并分支 现在，我们将刚刚在dev分支上的工作成果（文件中加上文本内容：“这是第二个分支”。）合并到master分支上。
+git merge dev再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
+no Fast Forward 模式合并分支 通常，合并分支时，Git 会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
+如果要强制禁用Fast forward模式，Git 就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+1git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完成后，就可以放心地删除dev分支了</description>
+    </item>
+    
+    <item>
+      <title>Git 创建标签</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</guid>
+      <description>创建标签 切换到需要打标签的分支上
+git checkout master使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
+1git tag v1.0 可以用命令git tag查看所有标签
+git tag忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
+方法是找到历史提交的commit id，然后打上对应标签就可以了。
+git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的标签 1git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
+标签总是和某个commit id挂钩。如果这个commit id既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。</description>
+    </item>
+    
+    <item>
+      <title>Git 创建版本库</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</guid>
+      <description>创建版本库 什么是版本库 版本库又名仓库（Repository），你可以简单理解成一个目录，这个目录里面的所有文件都可以被 Git 管理起来，每个文件的修改、删除，Git 都能跟踪，以便任何时刻都可以追踪历史，并且以后随时回退到某个历史版本。
+初始化 Git 目录 我们创建一个文件夹 GitFolder（文件名随意），并进入到这个文件夹，然后在命令行输入git init命令将这个目录变成可以用 Git 来管理的仓库。
+1git init 当目录中出现一个 .git 文件夹，就说明你的 Git 仓库初始化完成了。
+这个目录是 Git 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。
+如果你没有看到 .git 目录，那是因为这个目录默认是隐藏的，在当前文件夹输入ls -ah命令就可以看见，或者直接打开显示隐藏文件的选项。
+把文件添加到版本库 现在我们编写一个 Readme.txt 文件，内容如下：
+1Git is a version control system. 2Git is free software. 一定要放到你刚才目录下创建的文件夹 GitFolder 中，子目录也行，因为这是一个 Git 仓库，放到其他地方 Git 再厉害也找不到这个文件。
+把文件添加到暂存区 用命令git add告诉 Git，把文件添加到暂存区
+git add readme.txt执行上面的命令，没有任何显示，这就对了，Unix 的哲学是：没有消息就是好消息，说明文件已经成功添加到暂存区了。
+提交暂存区的文件 接下来，我们用命令git commit告诉 Git，把文件提交到本地仓库
+1git commit -m &amp;#34;Description of this submission&amp;#34; 执行成功后，大概率会出现类似下面的提示</description>
+    </item>
+    
+    <item>
+      <title>Git 合并冲突</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</guid>
+      <description>合并冲突 有时候，我们在使用git merge命令进行合并的时候，会出现以下提示。
+1Auto-merging Rainy.txt 2CONFLICT (content): Merge conflict in Rainy.txt 3Automatic merge failed; fix conflicts and then commit the result. 会发现使用git merge自动合并失败了，git 提示我们需要手动 修复冲突，然后提交结果。
+如何解决冲突 我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容，再git commit即可。</description>
+    </item>
+    
+    <item>
+      <title>Git 工作区与暂存区</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</guid>
+      <description>工作区与暂存区 工作区 工作区就是你在电脑中看到的一个文件夹。它包括你实际更改的文件和当前修改但未使用git add存入暂存区的文件。
+这个文件夹中有一个隐藏的目录**.git**，这个不算是工作区，它只是 Git 的**版本库**。
+这个版本库 .git 里存了许多东西，其中最重要的就是我们的暂存区和一个 Git 自动为我们创建的第一个分支 master，以及指向这个master的一个指针HEAD。
+暂存区 暂存区是一个名为 index 的文件，当我们使用git add命令添加文件的时候，实际上就是将我们的文件添加到暂存区。
+接着再用git commit提交文件时，实际上就是吧暂存区里的所有文件提交到当前分支，默认这个分支为 master.
+因此，当我们git commit时，就是将暂存区中的文件添加到 master 上。
+你可以简单理解为，将需要提交的文件修改通通先放到暂存区，然后，再一次性提交暂存区的所有修改到分支上。
+一旦提交后，如果你提交后又没有对工作区做任何修改，那么工作区就是“干净”的。
+执行git status.
+1On branch master 2nothing to commit, working tree clean </description>
+    </item>
+    
+    <item>
+      <title>Git 忽略特殊文件</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</guid>
+      <description>忽略特殊文件 在某些情况下，我们不想某些在工作区中的文件被提交，也就是不被git add .命令添加到暂存区，就非常有要将这些文件忽略掉（让 Git 对他们视而不见）。
+我们可以在 Git 工作区的根目录下创建一个特殊的**.gitignore**文件，然后把要忽略的文件名填进去，Git 就会在git add的时候忽略这些文件。
+.gitignore文件可以放到版本库里，这样可以对**.gitignore**做版本管理。
+忽略文件的原则  忽略操作系统自动生成的文件，比如缩略图等； 忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如 Java 编译产生的.class文件； 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。  编写 .gitignore 规则 1# Windows: 2Thumbs.db 3ehthumbs.db 4Desktop.ini 5 6# Python: 7*.py[cod] 8*.so 9*.egg 10*.egg-info 11dist 12build 13 14# My configurations: 15db.ini 16deploy_key_rsa 编写完成后，最后就是把**.gitignore**也提交到Git，就完成了！当然检验**.gitignore**的标准是使用git status命令会不会提示**working directory clean**。
+无法添加文件 有些时候，你想添加一个文件到 Git，但发现添加不了，原因是这个文件被**.gitignore**忽略了：
+git add Rainy.classThe following paths are ignored by one of your .gitignore files:Rainy.classUse -f if you really want to add them.</description>
+    </item>
+    
+    <item>
+      <title>Git 推送分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</guid>
+      <description>推送分支 添加文件并提交 1git add . 2git commit -m &amp;#34;提交信息&amp;#34; 拉取分支 git pull origin master为什么要先拉取分支呢？是因为远程库的最新提交和你试图推送的本地库不同步所导致的，因此需要先用git pull把最新的提交从origin/master上拉取到本地即可。
+分支名的问题 在使用git pull origin master命令将本地分支与远程分支同步，结果出现下面的报错信息：
+1fatal: couldn&amp;#39;t find remote ref master 大致意思就是找不到 master 这个远程分支。
+解决 只需要到你的 GitHub 上，查看仓库的默认分支即可，比如我的是main，所以我只需要将命令修改为git pull origin main即可，最后在git pull origin master，就可以将本地分支的内容推送到远程分支master上了。
+合并冲突 这时候使用git pull 后合并有冲突，我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容就可以解决冲突，再git commit即可。
+推送分支 git push origin master将本地库master分支上的内容推送到远程库master上去，用git push命令。
+推送成功后，可以立刻在 GitHub 页面中看到远程库的内容已经和本地的一模一样了。
+推送失败 有时候，当我们在用git push origin master命令时，会出现以下错误信息，通常是因为远程库的最新提交和你试图推送的本地库不同步所导致的。
+master master (fetch first)Updates were rejected because the remote contains work that you donot have locally.</description>
+    </item>
+    
+    <item>
+      <title>Git 撤销修改</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</guid>
+      <description>撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
+这个时候，你可以直接使用git checkout -- FileName 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况
+文件未被添加到暂存区 对文件FileName进行修改后，但还没有将它添加到暂存区，我们这个时候使用git checkout -- FileName，FileName就会回到修改前的状态。
+文件被添加到了暂存区 对文件FileName进行第一次修改后，并且将它添加到了暂存区（这个时候的状态为被添加到暂存区后），接着再次对FileName进行修改，我们这个时候使用git checkout -- FileName，FileName就会回到被添加到暂存区后的状态。
+总之，git checkout -- FileName就是让文件 FileName 回到最近一次git commit或git add时的状态。</description>
+    </item>
+    
+    <item>
+      <title>Git 操作标签</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</guid>
+      <description>操作标签 删除标签 git tag -d v0.1因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
+如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除，然后，从远程删除。
+1git push origin :refs/tags/v0.9 要看看是否真的从远程库删除了标签，可以登陆GitHub 查看。
+推送标签 推送指定标签到远程库。
+1git push origin v1.0 推送全部尚未推送到远程的本地标签到远程库。
+ git push origin --tags</description>
+    </item>
+    
+    <item>
+      <title>Git 标签管理</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</guid>
+      <description>标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。
+Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是6a5819e&amp;hellip;
+一串乱七八糟的数字不好找！
+如果换一个办法：
+请把上周一的那个版本打包发布，版本号是 v1.2
+“好的，按照 tag v1.2 查找 commit 就行！”
+所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。</description>
+    </item>
+    
+    <item>
+      <title>Git 添加第一个远程库</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <description>添加第一个远程库 什么是远程仓库 当我们需要多个人协助开发时，必然会遇到一个问题，就是双方的信息如何进行传递同步。 这个时候，就需要搭建一个远程服务器，每个人都从这个远程服务器克隆一份到自己的电脑上，并且把自己需要提交推送到服务器仓库里，也可以从服务器仓库中拉取别人的提交。
+创建远程库 注册一个 Github 账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名随意， 。
+关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
+1git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 远程库的名字就是origin，这是默认的名字，你也可以将它改成别的。
+将 Git 与 Github 关联 下载并安装 Git 配置个人信息 1git config --global user.name &amp;#34;Your UserName&amp;#34; 2git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
+1ssh-keygen -t rsa -C &amp;#34;1971438937@qq.com&amp;#34; 输入后，三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的id_rsa.pub文件中的密钥，将其中内容全部复制。
+new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</description>
+    </item>
+    
+    <item>
+      <title>Git 添加第二个远程库</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <description>添加第二个远程库 创建远程库 在GitHub上创建一个远程库。
+关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
+git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git添加文件并提交 git add .git commit -m &amp;quot;提交信息&amp;quot;推送分支 git push origin master将本地库master分支上的内容推送到远程库master上去，用git push命令。
+推送成功后，可以立刻在 GitHub 页面中看到远程库的内容已经和本地的一模一样了。</description>
+    </item>
+    
+    <item>
+      <title>Git 清空远程分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</guid>
+      <description>清空远程分支 将清空后的本地分支推送到远程分支，以达到清空远程分支的目的。
+删除全部文件 打开本地仓库文件夹，删除不需要的文件，仅保留 .git 文件夹和 ReadMe.md 文件.
+输入命令 1git add . 2git commit -m &amp;#39;清空远程仓库&amp;#39; 3git push origin master </description>
+    </item>
+    
+    <item>
+      <title>Git 版本回退</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</guid>
+      <description>版本回退 类似存档 现在我们新建一个文件text.txt，并对这个文件进行第一次修改和提交，得到text.txt 1.0 版本。
+ 重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。
+这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。
+Git 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。
+在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。
+回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。
+1git reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。
+这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？
+回退的指定版本 这个操作需要知道指定版本的版本号，比如想回退到指定版本 3.0的版本号为1098b，那么使用git reset --hard commit id
+1git reset --hard commit id 版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。
+这时候再查看text.txt的内容，你会发现我们的版本 3.0又回来了。
+Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的HEAD 指针，HEAD指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了版本 3.0.</description>
+    </item>
+    
+    <item>
+      <title>Git 管理修改</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</guid>
+      <description>管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。
+第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：
+修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
+1git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本
+git commit ReadMe.txt接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
+这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。
+ 也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。
+修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
+git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</description>
+    </item>
+    
+    <item>
+      <title>Git 配置别名</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</guid>
+      <description>配置别名 命令简写 1$ git config --global alias.st status 2$ git config --global alias.co checkout 3$ git config --global alias.ci commit 4$ git config --global alias.br branch 以上命令将：
+git status简写为git st；
+git checkout简写为git co；
+git commit简写为git ci
+git branch简写为git br
+以后提交就可以输入：
+1$ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
+配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git/config文件中：
+[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下</description>
+    </item>
+    
+    <item>
+      <title>Git 配置用户信息</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</guid>
+      <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
+git config --global user.name &amp;quot;YxzRainy&amp;quot;git config --global user.email &amp;quot;1@qq.com&amp;quot;查看配置 配置好之后可以使用git config -l查看配置：
+git config -l</description>
+    </item>
+    
+    <item>
+      <title>Git 重命名远程库后</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
+      <description>重命名远程库后 1git branch -m master Web 2git fetch origin 3git branch -u origin/Web Web 4git remote set-head origin -a </description>
+    </item>
+    
+    <item>
+      <title>Git 集中式与分布式的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>集中式与分布式的区别 前言 集中式版本控制系统最大的毛病就是必须联网才能工作，如果网速快还好，上传的也快，可当遇到网速慢的时候，可能提交一个 10M 的文件就需要 5 分钟，这还不得把人给憋死啊。
+联网性 首先，分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件 A，你的同事也在他的电脑上改了文件 A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。
+安全性 与集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。
+分布式的优点 分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而 SVN 在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript arguments</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
+arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
+注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
+arguments 对象不是一个 Array ；但它类似于 Array，但除了有 length 属性和索引的特性之外没有任何其他 Array 属性。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript DOM</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</guid>
+      <description>DOM DOM（文档对象模型），它就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
+使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Function</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
+全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
+Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+1function demo(name, age) { 2	this.name = name; 3	this.age = age; 4	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 5	// 所以这里相当于 test.name 与 test.age 6} 7var a = new demo(&amp;#39;zxy&amp;#39;, 100); 8var test = {}; 9demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript isNaN</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</guid>
+      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回false。
+如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
+返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</guid>
+      <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
+引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
+计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
+在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持52位，就会出现运算精度不准的问题。
+1000000000000001 + 1000000000000001 = 2000000000000002，即在 JavaScript 中，可正常计算范围在小数点前 16 位与后 16 位。
+1function One() { 2	for (var c = 0; c &amp;lt; 18; c++) { 3	var d = Math.random().toFixed(2) * 100; 4	// 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 5	var e = Math.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript new</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</guid>
+      <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
+调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Number</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</guid>
+      <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
+Number 的方法 toString() NumObj.toString(radix)
+ 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 1var a = 1971; 2var b = 10; 3var c = 16; 4var d = parseInt(a, b); 5// 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 6var e = d.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Object</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</guid>
+      <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
+创建 Object 的方式 对象字面量 1var n = &amp;#39;世雨&amp;#39;; 2var a = &amp;#39;&amp;#39;; 3var object = { 4	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 5	b: &amp;#39;臣&amp;#39;, 6	// b 为属性名，臣为属性值 7	c: n, 8}; 9a = object.b + object.c; 10// 用变量 a 接收对象 object 的属性 b 与 c 的值。 11console.log(a); 12// 返回臣世雨 工厂模式 1function ThreeOne(color) { 2	this.color = color; 3	// color为可选参数 4	this.name = &amp;#39;bird&amp;#39;; 5	this.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parseFloat</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</guid>
+      <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parselnt</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</guid>
+      <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
+将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
+当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
+若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
+1// n 进制转十进制-------------------------------------------------- 2var n = 10010; 3var c = 2; 4// 变量 n 可为 8，16，32。 5var a = parseInt(n, c); 6// 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 7console.log(a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript return</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
+字符串转数字 1var n = &amp;#39;18&amp;#39;; 2function demo(n) { 3	return +n; 4	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 5} 6var a = demo(n); 7console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript this</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</guid>
+      <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
+通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Window 对象</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</guid>
+      <description>Window 对象 Window 对象表示浏览器中打开的窗口。
+如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
+Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
+setTimeout() 使函数或代码在经过一段指定的时间才开始执行。
+clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript XMLHttpRequest</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</guid>
+      <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
+状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
+responseText 当一个请求被发送后，该属性会返回服务器端的文本。
+onreadystatechange 该属性会在属性 readyState 发生改变的时候被调用。
+XMLHttpRequest 的方法 open 用于初始化一个请求。
+send 用于向服务端发送一个 HTTP 请求。
+注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 作用域</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
+每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
+父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
+作用域都是独立的 声明多个同级函数时，这些函数的作用域链都是独立的，即每个同级函数中的局部变量不可以公用，但它们都可以使用全局中的变量；这些作用域链会随着对应函数的执行完毕而依次释放。
+全局作用域 在全局作用域（GO 对象）中的变量为全局变量，全局变量的的作用域为整个脚本，这类变量在脚本中的任何地方（包括函数内部）能被调用。
+它们通常指在全局中定义的变量或没有使用 var 声明的暗示全局变量。
+这些变量都在全局作用域中：  函数外声明的变量。 函数中没有使用 var 声明的变量。  局部作用域 局部作用域（AO 对象）中的变量为局部变量，局部变量的作用域仅限于某个特定的函数，这类变量可以在特定的函数中调用。
+每个函数内部都会创建一个局部作用域，当一个函数（父函数）中包含另一个函数（子函数），则父函数不能调用子函数的变量，但子函数可以调用父函数的变量；并且两个独立且同级的函数中的局部变量不能公用，只能各用各的局部变量。
+这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 1function One() { 2	var b = 0; 3	function Two() { 4	b++; 5	console.log(b); 6	} 7	a = Two; 8	// 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two 9} 10One(); 11//调用函数 One，使暗示全局变量 a 可以执行 12a(); 13// 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 14a(); 15a(); 作用域链 1function One() { 2	// 声明函数 One 时，系统会隐式创建 One.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
+每一个函数其实都是一个 Function 类型的对象。
+函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
+声明方式 基本方式 直接通过 function 关键字进行声明。
+1function demo(a, b) { 2	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 3	console.log(a + b); 4	// 返回形参 a 与 b 的和 3。 5} 6demo(1, 2); 7// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） 8var c = demo.name; 9// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， 10// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 11console.log(c); 12// 返回函数 demo 的函数名 13 14//匿名函数方式-------------------------------------------------- 15var demo = function () { 16	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数的参数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
+在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
+函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
+函数运行结束的时候形参被释放，而实参内容不会改变。
+实参 实际参数，是在调用函数时传递给函数的参数， 实参可以是常量、变量、表达式、函数等， 无论实参是何种类型的量，在进行函数调用时，它们都必须具有确定的值， 以便把这些值传送给形参， 因此应预先用赋值，输入等办法使实参获得确定值。
+1function demo(a, b) { 2	// 定义两个形参。 3	var f, 4	g = &amp;#39;&amp;#39;; 5	for (var e = 0; e &amp;lt; arguments.length; e++) { 6	// arguments 对象的属性 length 表示实参（实参列表）的数量。 7	f = arguments[e]; 8	// 遍历所有实参 9	console.log(&amp;#39;遍历的实参:&amp;#39; + f); 10	} 11	g = arguments.length; 12	// 返回实参的数量 13	// arguments 对象类似数组，但却不是数组。 14	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 分支与循环</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <description>分支与循环 if 单一的 if 语句 1if (条件) { 2	要执行的语句块; 3} if else 语句 1if (条件) { 2	要执行的语句块; 3} else { 4	要执行的语句块; 5} 多重 if 语句嵌套 1if (条件) { 2	要执行的语句块; 3} else if (条件) { 4	要执行的语句块; 5} else { 6	要执行的语句块; 7} 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+另外，可以用函数表达式定义函数？
+switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
+1n = &amp;#39;老虎&amp;#39;; 2switch (n) { 3	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 4	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 5	// 可以使用 break 语句终止执行该代码块之后代码块。 6	case &amp;#39;老虎&amp;#39;: 7	case &amp;#39;虎&amp;#39;: 8	case &amp;#39;白虎&amp;#39;: 9	case &amp;#39;母老虎&amp;#39;: 10	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 包装类</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
+因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
+Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
+数字类型的对象可以进行学运算，但运算的结果，这个对象会变回原始类型的数值。
+String 将原始类型的字符串，转换为 String 对象，它的原型是 String.prototyp。
+当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete删掉，所以最终将属性 length 的值返回。
+Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是 Boolean.prototyp。
+注意 因为 Number、String、boolean 它们本身重写了（用一个同名不同功能的方法覆盖系统自带的方法）一个 xxx.prototype.toString 方法，所以它们不会用原型上 Object.prototype 的 toString 方法。
+1var a = new Number(123); 2var b = new String(&amp;#39;yxz&amp;#39;); 3var c = new Boolean(&amp;#39;true&amp;#39;); 4console.log(typeof a); 5console.log(typeof b); 6console.log(typeof c); 7// 返回三个 object 数值包装类运算 1var num = new Number(123); 2//原始值 num 被进行包装类，因此它变成了 对象 123。 3console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 区分对象与数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>区分对象与数组 Constructor 1var arr = []; 2var obj = {}; 3var a = arr.constructor; 4console.log(a); 5// 返回数组。 6var b = obj.constructor; 7console.log(b); 8// 返回对象。 Instanceof 1var arr = []; 2 3var obj = {}; 4 5var a = arr instanceof Array; 6console.log(a); 7// 返回 true，因为变量 arr 是一个数组。 8var a = arr instanceof Object; 9console.log(a); 10// 返回 true，因为变量 arr 是一个数组类对象。 11var b = obj instanceof Array; 12console.log(b); 13// 返回 flase，因为变量 obj 不是一个数组。 14var b = obj instanceof Object; 15console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</guid>
+      <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
+__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
+原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
+1// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） 2// 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； 3// Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; 4// Demo.prototype.size = &amp;#34;500&amp;#34;; 5// Demo.prototype.height = &amp;#34;1400&amp;#34;; 6// Demo.prototype.width = &amp;#34;800&amp;#34;; 7//上面代码可以简化为： 8Demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型链</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
+几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
+可以使用对象的属性 proto 实现继承。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原始值和引用值</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
+原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
+Number 数值，用整数或浮点数表示，它允许任意位的小数。
+String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
+与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
+Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
+Symbol 符号，它是唯一的并且是不可修改的。
+undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
+Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
+原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 变量的声明方式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
+var var 可以声明局部变量与全局变量。
+使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
+若用 var 声明一个变量，但没有进行赋值，则变量的默认值为 undefined。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 命名空间</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
+简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
+作用 私有化变量 1function Demo() { 2	var healthy = 0; 3	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 4	// 不能直接作为对象的属性或变量进行调用。 5	this.cure = function () { 6	healthy++; 7	}; 8 9	this.injured = function () { 10	healthy--; 11	}; 12 13	this.view = function () { 14	console.log(healthy); 15	}; 16} 17 18var demo = new Demo(); 19 20demo.view(); 21// 返回 0，调用构造函数的属性 view。 22demo.cure(); 23// 调用构造函数的属性 cure。，使变量 healthy 自增 1。 24demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 字符串截取</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
+      <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 属性调用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
+1var demo = { 2	wife1: { name: &amp;#39;lei&amp;#39; }, 3	wife2: { name: &amp;#39;zheng&amp;#39; }, 4	wife3: { name: &amp;#39;xing&amp;#39; }, 5	wife4: { name: &amp;#39;zhu&amp;#39; }, 6	fun: function (num) { 7	var a = [&amp;#39;wife&amp;#39; + num]; 8	console.log(a); 9	return this[&amp;#39;wife&amp;#39; + num]; 10	// 看不太懂 11	}, 12}; 13 14demo.fun(1); 15demo.fun(2); 16demo.fun(3); 17demo.fun(4); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 开发原则</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与CSS 与 JavaScript 代码之外。
+平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
+向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
+性能考虑 减少访问 DOM 的和文档中标记的元素；过多的页面元素只会增大 DOM 树的规模。
+将多个 JavaScript 文件合并为一个；减少加载页面时发送的请求数量。
+压缩已完成的 JavaScript 脚本；将文件中的不必要的字节（空格、注释、回车符）统统删除，从而减少整体文件大小。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 立即执行函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
+只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
+多个 IIFE 之间要加分号。
+1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a + b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 继承方式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
+1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 节点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</guid>
+      <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
+元素节点 指文档中的元素。
+文本节点 指文档中元素所包含着的文本。
+属性节点 指文档中元素的属性；属性都被包含在元素中。
+节点的属性 childNodes 返回一个指定节点所包含的所有子节点的集合。
+nodeValue 返回或设置当前节点的值。
+注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
+nodeName 返回指定节点的大写字母形式的节点名。
+nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 运算符</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
+操作数前置或后置
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&amp;ndash; a&amp;ndash; 或 &amp;ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+操作数前置或后置
+若位于数值的之后（a&amp;ndash;），则会递减之前返回数值。
+若位于数值的之前（&amp;ndash;a），则会递减之后返回数值。
+比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
+对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
+对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
+对于关系运算符（ &amp;lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
+原始值比较的是值，引用值比较的是引用地址。
+In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
+Instanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。
+2 &amp;gt; 3 &amp;lt; 1
+先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 递归</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
+缺点：影响程序的效率与性能。
+递归实现阶乘 1var n = 5; 2function OneOne(n) { 3	if (n == 1) { 4	//将当 n 等于 1 时作为结束条件 5	return 1; 6	// 返回值为 1 7	} 8	return (n = n * OneOne(n - 1)); 9	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 10	// 使用递归计算 5 的阶乘的过程： 11	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 12	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 13	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 14	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 15	// OneOne(1); 当 n 等于 1 时，直接返回 1; 16} 17console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 链式调用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <description>链式调用 模仿一个 jQuery 链式调用的方式。
+1var demo = { 2	a: function () { 3	console.log(123); 4	return this; 5	// 将函数自身返回。 6	}, 7 8	b: function () { 9	console.log(456); 10	return this; 11	// 将函数自身返回。 12	}, 13 14	c: function () { 15	console.log(789); 16	return this; 17	//将函数自身返回。 18	}, 19}; 20demo.a().b().c(); 21// 呈链式(连续)的调用对象 demo 的属性。 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 闭包</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</guid>
+      <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
+生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
+闭包的优缺点 优点 避免全局变量的污染。
+使变量长期储存在内存中。
+缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
+1function demo() { 2	function test() { 3	var d = 345; 4	console.log(c); 5	// 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 6	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 7	} 8	var c = 123; 9	return test; 10	// 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 11	// 使的函数 demo 可以使用函数 test 的 AO 12} 13var e = demo(); 14// 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO 15e(); 16// 调用变量 e，即相当于执行函数 demo 的返回值 17// 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， 18// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 1function demo() { 2	var b = &amp;#39;apple&amp;#39;; 3	var obj = { 4	c: function () { 5	// 给对象 obj 添加一个属性 c ，属性值为一个函数 6	if (b !</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 预编译</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
+预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
+函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。
+变量声明提升 使用 var 声明的变量，不管在这之前还是之后调用该变量，并不会报错，会返回 undefined。
+暗示全局变量 暗示全局变量（imply global），一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性； 任何全局变量，都是 window 的属性，即可以通过 window 对象调用全局变量。window 就是全局的域，它包括了全局变量和全局函数。
+暗示全局变量不会进行变量声明提升。
+1a = 10; 2// 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 3// 相当于 4window.a = 10; 5// 相当于 6window = { 7	a: 10, 8}; 9 10//一切声明了的全局变量，都是 window 的属性 11var b = 20; 12// 相当于 13window.b = 20; 14// 相当于 15window = { 16	b: 20, 17}; 18// 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
+    </item>
+    
+    <item>
+      <title>一次函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
+      <description>一次函数 解析式 $ y = kx + b$（$k$ 与 $b$ 为常数 $k \neq 0$），当 $b$ 等于 $0$ 时，这个函数为正比例函数。
+图像  一次函数的图像都是一条直线，因此只需要两点就可以画出。 $ y = kx + b$ 的图像可以由 $y = kx$ 向上或向下平移 |b| 个单位得到，当 $b$ 大于 0 则向上；小于 0 则向下。  与方程、不等式的关系  因为任何一个一元一次方程都可以变为 $ax + b = 0$ 的形式，所以解这个一元一次方程，相当于求与这个一元一次方程对应的 $y = ax + b$ 的函数值为 $0$ 时，自变量 $x$ 的值；例如： $3x + 5 = 6 =&amp;gt; 3x + 5 - 6$。 每个一含有 $x$ 和 $y$ 的二元一次方程都对应一个一次函数，同样也对应一条在坐标系中的直线，因此这条线上的每一个点（$x$，$y$）都是这个二元一次方程的解。 二元一次方程组则对应两个一次函数，同时也对应两条在坐标系中的直线，因此解这个二元一次方程组，相当于找出这两条直线在坐标系中的交点的坐标。  </description>
+    </item>
+    
+    <item>
+      <title>二次函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
+      <description>二次函数 解析式 一般式：$y = ax^2 + bx + c$
+顶点式：$y = a(x - h)^2 + k$
+从 $y = ax^2$ 的图像可以看出  当 $a &amp;gt; 0$ 时，开口向上；当 $a &amp;lt; 0$ 时，开口向下，$|a|$越大，则图像的开口越小。 如果 $a &amp;gt; 0$ ，当 $x &amp;lt; 0$ 时，$y$ 随 $x$ 的增大而减小，当 $x &amp;gt; 0$ 时，$y$ 随 $x$ 的增大而增大；如果 $a &amp;lt; 0$ 时，当 $x &amp;gt; 0$ 时，$y$ 随 $x$ 的增大而减小。  从 $y = ax^2 + k$ 的图像可以看出 当 $k &amp;gt; 0$ 时，图像向上平移 $k$ 个单位；当 $k &amp;lt; 0$，图像则向下平移 $|k|$ 个单位长度。</description>
+    </item>
+    
+    <item>
+      <title>反比例函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
+      <description>反比例函数 解析式 $y = \frac{k}{x}$
+图像 当 $k$ &amp;gt; 0，时，图像位于一、三象限，且 $y$ 随 $x$ 增大而减小。
+当 $k$ &amp;lt; 0，时，图像位于二、四象限，且 $y$ 随 $x$ 增大而增大。</description>
+    </item>
+    
+    <item>
+      <title>安装 Git</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</guid>
+      <description>安装 Git 官网下载并安装 Git (git-scm.com)，下载完成后，默认选项安装即可。
+安装完成后，右击后在菜单中选择 Git Bash ，蹦出一个类似命令行窗口的东西，就说明 Git 安装成功了！
+1Rainy@Rainy MINGW64 /e/Rainy 配置个人信息 因为 Git 是分布式版本控制系统，所以，每台设备都必须自报家门，也就是在命令行输入你的 Github 用户名和 Email 地址。
+首先，找一个合适的文件夹，右击 Git Bash，在命令行输入
+1git config --global user name &amp;#34;Your Github UserName&amp;#34; 2git config --global user email &amp;#34;Your Github Email&amp;#34; 注意git config命令的--global参数，用了这个参数，表示你这台设备上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的 UserName 和 Email 地址。</description>
+    </item>
+    
+    <item>
+      <title>正比例函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
+      <description>正比例函数 解析式 $y = kx$（$k$ 为常数，$k$ ≠ $0$），其中 $k$ 叫做比例系数。</description>
+    </item>
+    
+    <item>
+      <title>Css 实现居中</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</link>
+      <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
+      <description>实现居中 绝对定位 兼容性不错的主流css绝对定位居中的用法：
+1.conter{ 2 width: 600px; height: 400px; 3 position: absolute; left: 50%; top: 50%; 4 margin-top: -200px; /* 高度的一半 */ 5 margin-left: -300px; /* 宽度的一半 */ 6} 绝对定位 css3的出现，使得有了更好的解决方法，就是使用transform代替margin. transform中translate偏移的百分比值是相对于自身大小的，可以这样实现css绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+1position: absolute; 2left:50%; 3top:50%; 4transform:translate(-50%,-50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
+1display: flex; 2flex-direction: row; 3justify-content: center; 4align-items: center; 1display: flex; 2flex-direction: column; 3justify-content: center; 4align-items: center; 文本实现垂直居中 1display: flex; 2align-items: center; </description>
+    </item>
+    
+    <item>
+      <title>Css 盒子类型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</guid>
+      <description>盒子类型 行盒   display 属性为 inline 的元素是行盒，也叫行级元素；如 span、strong、button、em、a、img、video、audio。
+  文字一定是行盒（文字会产生匿名行盒将其包裹）。
+  内部产生参考线：一个元素中包含行盒，通常会给行盒设置 vertical-align:baseline，这会导致两个元素的参考线对齐。
+  同一个包含块中，连续多个行盒水平依次排列，剩余空间排列不下，才会换行。
+  行盒不能包含块盒（a 元素除外）。
+  设置 width 和 height 无效；调整行盒的 width 与 height 应使用字体大小、行高、字体类型等间接调整。
+  产生空白合并：代码中的连续空白字符，在页面显示时，会被合并为一个空格。
+  设置内外边距及边框，水平方向有效，垂直方向只会影响元素的背景，不会影响其他盒子。
+  内部包含行块盒或可替换元素，行盒的高度只和文字内容的字体大小有关系，和行块盒或可替换元素无关。
+  块盒  display 属性为 block 的元素，也叫块级元素；如 div、h1~h6、pre、ul、li、p。 同一个包含块中，每个块盒独占一行。 p 元素不能包含 div 元素。  行块盒  display 属性为 inline-block 的元素，也叫行块级元素；没有默认值为 inline-block 的元素。 同一个包含块中，连续的多个行块盒水平依次排列。 行块盒内部一定会产生参考线。 产生空白合并  </description>
+    </item>
+    
+    <item>
+      <title>Css 高斯模糊</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</link>
+      <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
+      <description>高斯模糊 1 backdrop-filter:blur(0.5rem); </description>
+    </item>
+    
+    <item>
+      <title>Css 字体</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</link>
+      <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</guid>
+      <description>字体 参考线 当制作文字时，会出现几根参考线。不同的文字类型，参考线位置、距离都不一样，同一种文字类型，参考线一致。
+组成
+ text_top ascent，顶线 super，上基线 baseline，基线 sub，下基线 text_bottom descent，底线  决定因素
+ font-family：定义参考线的相对距离。 font-size：定义参考线之间的距离。 line-height：定义参考线的顶部空隙与底部空隙。  元素的基线 img：基线位置位于 img 的下外边距的最底边。
+from：基线位于其内容的底边。
+行块盒：父元素内部包含行块盒（高度自适应） ，会因为行块盒最后一行有 line-box，则会导致行块盒用最后一行的基线作为整个父元素的基线。若父元素中没有行盒，则使用父元素的下外边距作为基线。
+font-size 用该属性设置字体大小时，改变的是文字的相对大小，也叫字体框大小。
+制作文字时，文字外面会有一个字体框，不同的文字的字体框，大小也不一样；即设置文字的小大，本质改变的是文字的相对大小。
+相对大小
+若一个文字的相对大小（字体框大小）为 2048 时，那么它顶线到基线的距离为 1884，底线到基线的距离为 514，则顶线到底线的距离为 1884 + 514 = 2398。（可以拙见为一个字体的高为 2048，那么该字体占的实际区域是 2390，因此某些字体会有默认边距）
+文字顶线到底线的距离，叫做文字的实际大小（content-area），也叫内容区。即行盒的背景，填充的是文字的实际大小。因此当我们给行盒设置背景时，会导致行盒上下有留白。即上部分留白 + 行盒背景 + 下部分留白 = 文字的相对大小。
+line-height 用于设置多行元素的空间量。
+top：文字顶线向上延申的空间。
+bottom：文字底线向下延申的空间。
+空隙  这两个空间（top 与 bottom）的空间量一定相等，这两个空间叫做空隙（line gap）。 通常，空隙是字体设计者决定的，因此有些字体没有空隙，但有的字体有空隙，有的字体空隙是负数。  虚拟区  top 到 botoom 的距离，叫做虚拟区（virtual-area），有的虚拟区和内容区相等，有的虚拟区比内容区小，但大部分虚拟区都比内容区大；因此设置行高大小就等于设置虚假区的大小。 因为虚拟区上下两边都相等，所以字体的实际大小在虚拟区之间。  line-box  line-box（行框）是承载文字内容的必要条件，如果没有行框，文字将无法显示。 当有多行行盒排列时，每一行的区域就叫做 line-box，line-box 的顶边是该行所有行盒的最顶边，底边是该行行盒的最低底边。即一个行盒的实际占用高度是通过 line-box 计算的。  不生成 line-box 的情况</description>
+    </item>
+    
+    <item>
+      <title>Git 删除文件</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</guid>
+      <description>删除文件 git rm FileName 命令git rm用于删除一个文件。
+如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容
+删错文件怎么办 有时候，你误删了一个文件 FileName，但因为版本库里还有，所以可以使用git checkout -- FileName把误删的文件恢复到最新版本
+git checkout -- FileName</description>
+    </item>
+    
+    <item>
+      <title>Css 文本溢出处理</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</link>
+      <pubDate>Wed, 13 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
+      <description>文本溢出处理 实现单行文本的溢出显示省略号可以直接用 text-overflow:ellipsis 属性来实现，当然还需要加宽度width属来兼容部分浏览。
+1overflow: hidden; 2text-overflow:ellipsis; 3white-space: nowrap; </description>
+    </item>
+    
+    <item>
+      <title>Css 媒体查询</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
+      <description>媒体查询 1@media screen and (min-width: 720px) { 2	/* 当浏览器宽度大于 value 时所应用的样式 */ 3} 4 5@media screen and (max-width: value) { 6	/* 当浏览器宽度小于 value 时所应用的样式*/ 7} </description>
+    </item>
+    
+    <item>
+      <title>Css 渐变</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</link>
+      <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</guid>
+      <description>渐变 1background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
+    </item>
+    
+    <item>
+      <title>Git git status</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</link>
+      <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</guid>
+      <description>git status 查看当前 git 的状态，即查看工作区代码相对于暂存区的差别。比如哪些文件还在工作区（还没git add）、哪些文件还在暂存区（还没git commit）等等，及时了解当前的 git 状态可以避免一些误操作。
+但git status并不能让我们知道这些文件具体修改了什么内容。</description>
+    </item>
+    
+    <item>
+      <title>Css table 空隙</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</link>
+      <pubDate>Mon, 11 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</guid>
+      <description>table 空隙 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
+1border-collapse: collapse; </description>
+    </item>
+    
+    <item>
+      <title>Css 修改网页滚动条样式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
+      <pubDate>Sun, 10 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
+      <description>修改网页滚动条样式 属性描述 1/* 整个滚动条*/ 2::-webkit-scrollbar { 3} 4 5/* 滚动条两端的按钮 */ 6::-webkit-scrollbar-button { 7} 8 9/* 滚动条的滚动轨道 */ 10::-webkit-scrollbar-track { 11} 12 13/* 内层轨道 */ 14::-webkit-scrollbar-track-piece { 15} 16 17/* 滑块 */ 18::-webkit-scrollbar-thumb { 19} 20 21/* 边角 */ 22::-webkit-scrollbar-corner { 23} 24 25/* 右下角拖动块的样式 */ 26::-webkit-resizer { 27} 使用 一般我们这样设置这几个主要属性就OK了。
+1/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ 2::-webkit-scrollbar 3{ 4 width:10px; 5 background-color:#F5F5F5; 6} 7/*定义滚动条轨道：内阴影 + 圆角*/ 8::-webkit-scrollbar-track 9{ 10 background-color:#F5F5F5; 11} 12/*定义滑块：内阴影 + 圆角*/ 13::-webkit-scrollbar-thumb 14{ 15 border-radius:10px; 16 background-color:#555; 17} 更多相关属性 1:horizontal //水平方向的滚动条 2:vertical //垂直 方向的滚动条 3:decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) 4:increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) 5:start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 6:end //类似于start伪类，标识对象是否放到滑块的后面。 7:double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 8:single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 9:no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 10:corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 11:window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
+    </item>
+    
+    <item>
+      <title>Css Body 背景图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</link>
+      <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</guid>
+      <description>Body 背景图 画布 它是一块区域，也叫视口（可视窗口）。
+它的最小宽度为视口宽度，最小高度为视口高度。
+Html 的背景图 该元素的背景覆盖画布。即给该元素设置背景，相当于设置画布的背景。
+Body 的背景图 若根元素有背景，body 元素的背景正常显示。
+若根元素没有设置背景，则 body 元素的背景覆盖画布，则会出现不正常的现象，原因为若没有这个规则，就无法给整个网页设置背景。
+背景图覆盖画布时 高度：纵向位置百分比、预设值，相对于根元素高度。
+宽度：横向位置百分比、预设值，相对于视口。</description>
+    </item>
+    
+    <item>
+      <title>Css 语法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Fri, 08 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</guid>
+      <description>语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
+声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
+声明块：由属性与属性值组成。
+1.selector { 2	color: #000; 3} 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
+内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
+外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
+优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。</description>
+    </item>
+    
+    <item>
+      <title>Css 块格式化上下文</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <pubDate>Thu, 07 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <description>块格式化上下文 格式化上下文（Block Formatting Context），它是一块 独立的渲染区域，它规定了在该区域中，普通流块盒的布局。
+触发 BFC 的元素  根元素 html，该元素创建的 BFC 覆盖了文档中的所有元素。 浮动元素，float 的值不为 none 的元素。 绝对定位元素，position 的值为 absolute 或 fixed 的元素。 overflow 的值不为 visible 的块盒。 行块盒，display 的值为 inline-block 的元素。 表格单元格，display 的值为 table-cell 的元素，表格单元格默认为该值。 表格标题，display 的值为 table-caption 的元素，表格标题默认为该值。  正常布局流块盒的渲染区域  每个块盒都会参与块格式化上下文的创建。 不同的 BFC，它们进行渲染时互不干扰。 创建 BFC 的元素，隔绝了它内部和外部的联系，内部的渲染不会影响到外部区域。 创建 BFC 的元素，它的所有内容都会被包含在它所创建的 BFC 中  BFC 的作用 解决高度塌陷
+创建 BFC 的元素，它的自动高度会计算浮动元素；若只是为了创建 BFC 一般使用副作用最小的方式：设置块盒的 overflow 的属性值为 hidden。仅仅是为了解决高度坍塌，建议使用伪元素 after。
+原理：因为它要隔绝内部与外部的关系，而高度坍塌会使元素不在其包含块内，所以它的自动高度必须计算浮动元素，因此创建 BFC 可以解决高度坍塌的问题。
+解决浮动流脱离文档流</description>
+    </item>
+    
+    <item>
+      <title>Css 盒子模型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Wed, 06 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</guid>
+      <description>盒子模型 前言 在 CSS 中，每一个元素都可以看作是一个盒子，这个盒子由以下几个方面组成。目前常用的有两种盒模型，分别是标准盒模型和怪异盒模型。
+一个盒子的组成  内容（content） 内边距（padding） 边框（border） 外边距（margin）  标准盒模型 box-sizing 的值为 content-box 的元素；且浏览器将采用标准模式解析。
+盒子总宽度 = width + padding（左右）+ border（左右）+ margin（左右）。
+盒子总高度 = height + padding（上下）+ border（上下）+ margin（上下。
+怪异盒模型 box-sizing 的值为 border-box 的元素；且浏览器将采用怪异模式（兼容模式）解析，也叫 IE 盒模型。
+盒子总宽度 = width + margin（左右），其 width 包含了 padding（左右）和 border（左右）的宽度。
+盒子总高度 = width + margin（上下），其 height 包含了 padding（上下）和 border（上下）的高度。</description>
+    </item>
+    
+    <item>
+      <title>Css 层叠上下文</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <pubDate>Tue, 05 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <description>层叠上下文 它是一块区域，它由某个元素创建，它规定了该区域中的内容在 Z 轴上排列的先后顺序。
+它是一种 三维概念。所有的 HTML 元素都根据其元素的属性按照优先级顺序占据这个空间。
+规则 只有定位元素设置 z-index 有效。
+设置 z-index 值为负数的元素，会被正常流、浮动流覆盖。
+z-index 的值，该值越大，则越靠近用户。
+所有元素都处于 html 元素的层叠上下文中。
+如遇到 z-index 一样的层叠上下文，则比较元素的书写顺序。
+层叠上下文的元素，它本身永远被父级包含内，哪怕该元素设置了 z-index:-9999，它也只能包含于自身父元素的层叠上下文中。
+每一个层叠上下文的元素，它们都完全独立于同级的元素，当处理层叠上下文时只会考虑自己的子元素。
+创建层叠上下文的元素  根元素（html）。 Position 值为 absolute 或 relative 且 z-index 值不为 auto 的元素。 Opacity 的值小于 1 的元素。  优先级  同一个层叠上下文中，元素从底部到顶部的优先级 创建层叠上下文元素的背景和边框。 z-index 的值为负的层叠上下文元素。 常规流非定位元素的块盒。 非定位的浮动流。 常规流非定位行盒。 任何 z-index 属性值为 auto 的定位子元素，以及 z-index 为 0 的元素。 z-index 的值为正的元素。  </description>
+    </item>
+    
+    <item>
+      <title>Css 层叠</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0/</link>
+      <pubDate>Mon, 04 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0/</guid>
+      <description>层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。
+确定声明值 找出样式表中没有冲突的声明，并应用到 CSS 属性，样式声明不冲突则不会发生层叠。
+层叠 对样式表中有冲突（同一个元素在样式表中设置了多个相同的属性）的声明使用层叠规则。
+比较重要性
+ 重要性由高到低为 样式表中的 !imliortant 样式（尽量不使用）。 样式表中的普通样式（内联式 &amp;gt; 内嵌式 &amp;gt; 外链式）。 浏览器中的默认样式。  比较优先级
+ 选择器选中的范围越窄，优先级越高。 通过选择器，计算出一个四位数（xxxx），该四位数越大越则优先级越高。这个四位数的进制为逢 256 进一。  四位数的取值
+  千位：内联样式，记作 1，否则记为 0。
+  百位：所有 id 选择器的数量。
+  十位：所有类选择器、属性选择器、伪类选择器的数量。
+  个位：元素选择器、伪元素选择器的数量。
+  零：通配符选择器。
+  比较源次序
+CSS 样式书写靠后的属性最终会应用到元素。
+继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况，跟文字内容相关的属性都能被继承。），则继承其父元素的属性。
+当元素的属性有默认值时，该元素一般不会继承父元素的属性。
+使用默认值 每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。</description>
+    </item>
+    
+    <item>
+      <title>C break</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/break/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/break/</guid>
+      <description>break 用于终止循环或退出 switch.
+不能直接用于if，除非if是循环的一个子句。</description>
+    </item>
+    
+    <item>
+      <title>C printf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/printf/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/printf/</guid>
+      <description>printf 用于将变量的内容输出到显示器.
+直接输出 1printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) 1int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 2printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符1 输出控制符2&amp;rdquo;,参数1,参数2) 1 int a = 10; 2 int i = 15; 3 printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) 1int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 2printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+    </item>
+    
+    <item>
+      <title>C scanf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/scanf/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/scanf/</guid>
+      <description>scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) 1int i; 2scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 3printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) 1int i; 2scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 3printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
+    </item>
+    
+    <item>
+      <title>C 循环控制</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
+      <description>循环控制 某些代码被重复执行。
+for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
+1for(1; 2; 3) 2{ 3 A; 4} 其中 1 只执行一次。
+3 执行完后才意味着一次 for 循环执行完毕。
+3 执行完后一定会再执行一次 2，且不管表达式2的结果为 true 或 false 都会执行一次 2。
+1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	int sum = 0; 4	for (int i = 1;i &amp;lt; 10;i++) 5	printf(&amp;#34;%d\n&amp;#34;, i); 6	//0 - 10 的自然数。 7} 1 - 10 所有奇数之和 1#include &amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>C 自增与自减</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <description>自增与自减 前自增**++i**与后自增**i++**.
+异同 相同 最终都会使 i 的值加 1.
+不同 i++ 返回原来的值，
+++i 返回加 1 后的值。
+1#include &amp;lt;stdio.h&amp;gt;2 3int main() 4{ 5 int a,b,c,d; 6 a = b = 3; 7 c = a++; 8 // return 3 9 d = ++b; 10 // return 4 11 printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d); 12 return 0; 13} </description>
+    </item>
+    
+    <item>
+      <title>C 运算符</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 三目运算符 a ? b : c
+相当于 if 语句
+1 if (a) 2 b; 3 else 4 c 5 return 0; 逗号表达式 (a,b,c,d)
+从左向右执行，表达式最终的值是d 的值。
+1 int i; 2 int c = 2; 3 i = (c++, ++c, c + 2, c - 3); 4 // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2， 5 // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4， 6 // 再 c - 3，则 i = 1.</description>
+    </item>
+    
+    <item>
+      <title>C 选择控制</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
+      <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
+if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
+如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
+1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (1) 4	A； 5} 1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (2 &amp;gt; 1) 4	printf(&amp;#34;if 语句为 true\n&amp;#34;); 5} if 语句默认只能控制 A，不能控制B（即无论 1 为 true 还是 false， B 都会执行）。
+1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (1) 4	A; 5	B; 6} 1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (2 &amp;gt; 1) 4	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 5	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); 6} if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+    </item>
+    
+    <item>
+      <title>C 顺序控制</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
+      <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
+    </item>
+    
+    <item>
+      <title>C 预备知识</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
+因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
+CPU 再对内存中的数据进行处理。
+因为 CPU、内存、显卡（控制显示器的正确显示）、硬盘都是安装在主板上的，因此主板是一个组织它们如何有效运行的硬件。
+程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。
+软件不能直接控制硬件。
+什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。
+1int a; 2//调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 3a = 3; 4//将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
+垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC++ 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。
+软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
+一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
+当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
+进制 B 表示二进制、O 表示八进制、D 表示十进制、H 表示十六进制。
+N 进制表示逢 N 进一。
+用几种不同的进制表示同一个数，虽然使用的进制不一样，但都表示的同一个数，只是外部的表现形式不一样而已。
+二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。</description>
+    </item>
+    
+    <item>
+      <title>Css 布局</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B8%83%E5%B1%80/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B8%83%E5%B1%80/</guid>
+      <description>布局 正常流布局  默认情况下，所有元素都属于正常流。 块盒独占一行。 行盒水平依次排列。 包含块：每个盒子都有它的包含块，包含块决定了该盒子的排列范围。 在正常布局流中，元素的包含块，都是该元素父元素的内容盒。  常见问题 Margin 合并
+多个同级且相邻的正常布局流块盒，当它们的上下外边距相邻，会合并为一个外边距，两个外边距值都是正数，则取较大值；两个值都是负数，则取较大值；一正一负则取两个值的和，该情况抗可以触发 BFC 解决。
+Margin 塌陷
+正常布局流中的呈父子关系的块盒，如果父元素没有设置上下内边距或上下边框，子元素的上下边距就会和父元素的上边距重合，两个外边距值都是正数，则取较大值；两个值都是负数，则取较大值；一正一负则取两个值的和，该情况抗可以触发 BFC 解决。
+浮动流布局  使元素向左上或向右上排列。 通常情况，浮动元素会无视正常布局元素，它会将正常布局元素覆盖。 在一行浮动元素中，若父元素装不下所有的浮动元素，则多余的浮动元素会自动向下移动，直到具备足够的空间能容纳这些多余的浮动元素，才向左或向右移动。 行盒在排列时，默认会避开浮动元素（单独的文字也是行盒，因为浏览器会自动生成一个行盒包裹单独的文字，该行盒为匿名行盒）。 浮动元素一定是块盒。 不会发生 margin 合并。 脱离正常布局流。  常见问题 高度塌陷 正常布局流元素高度自适应，它的子元素浮动后，该元素在计算高度时，不会考虑浮动后的子元素的高度，则会导致该元素高度为 0，这种情况称为高度塌陷。
+解决方式： 利用伪元素 after 清除浮动即可解决。
+定位流布局 使一个元素从它原本在正常布局流中应该在的位置移动到另一个位置。
+相对定位   使元素在原来位置上进行偏移；若没有设置偏移量，对元素本身没有任何影响。
+  提升元素层级（z-index）。
+  盒子的偏移不会对其他盒子造成任何影响。
+  脱离正常布局流。
+  尽管元素被偏移了，但它仍然占据着它没偏移前的空间。
+  绝对定位   它相对于 static 定位以外的第一个父元素进行定位；若没有，则它的包含块为整个网页（初始化包含块），原位置不会被保留。
+  一定是块盒且不是浮动元素。
+  提升元素层级。</description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/github/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/github/</guid>
+      <description>Github Github 不但可以是一个个人的免费仓库，它还是一个开源协作社区，通过 GitHub ，既可以让别人参与你的开源项目，也可以参与别人的开源项目。
+参与一个的开源项目 克隆他人的开源项目 访问该项目的主页。
+点击Fork先克隆这个的项目到自己的远程仓库中。
+使用git clone将这个项目从自己的远程仓库中clone到本地。
+git clone git@github.com:YxzRainy/YxzRainy.github.io.git一定要从自己的账号下 clone 仓库，这样你才能推送修改。如果从别人的仓库地址克隆，你将不能推送修改，因为你没有权限。
+如果你想修复这个开源的一个 bug，或者新增一个功能，立刻就可以开始干活，干完后，往自己的仓库推送。</description>
+    </item>
+    
+    <item>
+      <title>Html img 的常见问题</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>img 的常见问题 关于无法设置宽高 如果该元素的图像链接失效，则该元素的特性会与行盒一样，无法设置宽高；如果想要图像链接失效后仍具有宽高，可以将该元素设置为块盒或者行块盒。
+关于图像底部的留白 当任何一个元素（例如 div）内包含行盒（例如 img）时，该 img 行盒就会在这个 div 元素的内部创建参考线，即这个 div 元素在没有设置下外边距的情况下，img 元素的基线（下外边距的底部）会与父元素的基线对齐（即留白部分就是 img 元素的下外边距），因此导致图像底部有留白。
+解决方法：
+ 第一种是将父元素的字体大小设置为零，则父元素的内部就不会产生参考线。 第二种是将 img 元素设置为块盒，因此其父元素的内部就没有包含行盒，因此不会在其父元素内部产生参考线。  </description>
+    </item>
+    
+    <item>
+      <title>Html 元素语义化</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
+      <description>元素语义化 前言 在 HTML 5 中，新增了许多元素，这些不同的元素都有不同的含义，因此语义化指的是用最合理、最恰当的元素来标记网页内容，使得机器也可以知道页面中有哪些元素，比如，文章、标题、或是段落。
+语义化的优点  使文档在没有 CSS 样式的条件下，也能很好地呈现出内容结构。 使文档结构变的清晰，更具可读性，且利于后期的代码维护。 方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备等）。 有利于 SEO。  </description>
+    </item>
+    
+    <item>
+      <title>Issus</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/issus/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/issus/</guid>
+      <description>Issus 你可以提出 issue，供看到这个问题的任何人参与解决、讨论这个 issue，当 issue 得到解决时，仓库的所有者与 issue 的所有者就可以将这个 issue 关闭了。</description>
+    </item>
+    
+    <item>
+      <title>Java 冒泡排序</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 1public static void main(String[] args) { 2 //定义数组 3 int[] arr = {6, 4, 8, 2, 9}; 4 System.out.println(&amp;#34;排序前：&amp;#34;); 5 //打印排序前的数组元素 6 printArray(arr); 7 //数组排序的方法 8 bubbleSort(arr); 9 System.out.println(&amp;#34;排序后：&amp;#34;); 10 //打印排序后的数组元素 11 printArray(arr); 12 } 13 //定义打印数组中所有元素的方法 14 public static void printArray(int[] arr) { 15 for (int i = 0; i &amp;lt; arr.length; i++) { 16 //返回当前数组中所有的元素 17 System.out.print(arr[i] + &amp;#34;&amp;#34;); 18 } 19 System.out.println(&amp;#34;\n&amp;#34;); 20 // 返回后换行 21 } 22 //定义冒泡排序的方法 23 public static void bubbleSort(int[] arr) { 24 // arr.</description>
+    </item>
+    
+    <item>
+      <title>Java 基础</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</guid>
+      <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
+赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
+赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
+至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
+至于继承，还不知道。
+void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
+1void Show1() { 2 int a = 123; 3} 4 5int Show2() { 6 int a = 123; 7 return a; 8} public、protected、default（什么都不写）、private，表示访问控制的权限
+1private void Show1() { 2 int a = 123; 3} 4 5// 相当于 default int Show2() 6int Show2() { 7 int a = 123; 8 return a; 9} </description>
+    </item>
+    
+    <item>
+      <title>Pull Requests</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/</guid>
+      <description>Pull Requests 简单来说就是：我改进了你的代码，你拉回去看看吧
+当你想改进一个别人的项目 ，或想为别人的项目做贡献时，你将要走以下几个流程
+ Fork 别人的仓库，相当于拷贝一份，毕竟不可能有人让你直接修改他的原仓库的。 将拷贝过来的仓库clone到本地分支，做一些修复，比如git clone git@github.com:YxzRainy/YxzRainy.github.io.git。 改进完成后，你希望仓库所有者接受你的修改，那么你需要在 Github 上创建一个Pull Request给原仓库所有者，意思是请求原仓库所有者合并你的分支。 原仓库所有者审查你做的这些修复后，如果它同意的话，就会将你做的修改合并到他自己的项目中，这样你就为他的这个项目做了贡献。 到这一步，整个Pull Request的过程就结束了。  </description>
+    </item>
+    
+    <item>
+      <title>Repository</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/repository/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/repository/</guid>
+      <description>Repository 一个在 GitHub 的 repository 的地址路径一般由 **GitHub 的域名 + 仓库主人 + 仓库本身的名字 **组成，并且你可以通过这个地址访问一个已存在的公开库 。比如 https://github.com/YxzRainy/YxzRainy.github.io
+在这个仓库中，你可以上传文件或添加文件，并且可以直接编辑部分文档文件，比如 html、txt 等等，当你每次对这个仓库中的内容进行修改时，你都可以提交修改信息，比如你这次对文件做了哪些修改等等，这类似与备注。</description>
+    </item>
+    
+    <item>
+      <title>Vs Code 配置 Java</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
+  属性
+  高级系统设置
+  高级选项卡
+  环境变量
+  系统变量
+  新建 JAVA_HOME 变量  变量名：JAVA_HOME。 值为：Java JDK 的安装路径。 确定  找到已存在的名为 Path 的变量  编辑 新建 输入：%JAVA_HOME%\jre\bin，确定 再新建，输入：%JAVA_HOME%\bin，确定 保存即可  新建 Classpath 变量   变量名：Classpath，
+  值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+  测试环境配置是否成功 快捷键 Win + R，搜索 cmd 并 Enter，然后在命令行输入java以及javac.
+安装 vs code 扩展 java extension pack。</description>
+    </item>
+    
+  </channel>
+</rss>

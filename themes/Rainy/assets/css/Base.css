@@ -156,15 +156,10 @@ a {
 }
 
 @media screen and (max-width: 1300px) {
-	/* 文章页目录 */
-	.Post #TableOfContents {
-		position: static;
-		margin-top: 2rem;
-		width: 100%;
-		box-shadow: none;
-		border-left: 0.5rem solid var(--BtnRipple);
+	/* 隐藏文章页目录 */
+	#TableOfContents {
+		display: none;
 	}
-
 	/* 文章页总宽度 */
 	.Post {
 		min-width: 100%;

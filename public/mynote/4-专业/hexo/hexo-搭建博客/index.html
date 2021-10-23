@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.88.1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Rainy" />
+  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" />
+  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+
+  <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Hexo 搭建博客",
+	    "headline" : "Hexo 搭建博客",
+	    "description" : "Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。\n将 Git 与 Github 关联 下载并安装Git 配置个人信息 1git config --global user.name \u0026#34;Your UserName\u0026#34; 2git config --global user.email \u0026#34;YourEmail@qq.com\u0026#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥\n1ssh-keygen -t rsa -C \u0026#34;Your GitHub 的邮箱\u0026#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制\nnew SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/hexo\/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2\/",
+	    "keywords" : [ "Github","Hexo","Git","博客", ]
+	}
+</script>
+<title>Hexo 搭建博客</title>
+  <meta property="og:title" content="Hexo 搭建博客" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
+将 Git 与 Github 关联 下载并安装Git 配置个人信息 1git config --global user.name &amp;#34;Your UserName&amp;#34; 2git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
+1ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
+new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。" />
+  <meta name="description" content="Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
+将 Git 与 Github 关联 下载并安装Git 配置个人信息 1git config --global user.name &amp;#34;Your UserName&amp;#34; 2git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
+1ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
+new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。" />
+  <meta property="og:locale" content="zh-cn" />
+
+  
+    <style>.Main{width:80rem;margin:0 auto;padding:3rem 0 5rem}.Main .MainTitle{font-size:3.6rem;text-align:center;margin-bottom:3rem}.Main .PostsArea{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;padding:1.5rem 2rem 1rem}.PostsArea,.Post{animation-name:posts;animation-duration:1.5s}@keyframes posts{0%{transform:translateY(-30px);-webkit-transform:translateY(-30px);-moz-transform:translateY(-30px);-ms-transform:translateY(-30px);-o-transform:translateY(-30px);opacity:0}100%{transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);opacity:1}}.MainHeader{position:relative;padding:.6rem .5rem}.Name{font-size:2.4rem;font-weight:700;display:inline-block}#SearchBox{display:inline-block;position:absolute;top:50%;right:2rem;transform:translateY(-50%)}#SearchBox .Search{border-radius:50%;padding:.5rem;background-color:var(--BrightCl)}#SearchBox .Search:hover{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.SearchDialogMask{top:0;left:0;z-index:3;width:100vw;height:100vh;position:fixed;background-color:rgba(0,0,0,.2);backdrop-filter:blur(.5rem)}.SearchDialogBox{top:40%;left:50%;z-index:5;width:50%;height:50rem;padding-top:5rem;box-sizing:border-box;border-radius:var(--Ri);background-color:var(--BrightCl);background-color:transparent;transform:translate(-50%,-50%)}.SearchDialogBox .Content{position:relative;z-index:4;width:100%;height:88%;font-size:1.5rem}.SearchDialogBox .CloseBox{position:relative;z-index:4;width:100%;height:12%;text-align:center;margin:0 auto;border-radius:var(--Ri)}.SearchDialogBox .CloseBox:hover{background-color:var(--BtnRipple)}.SearchDialogBox .Close{z-index:5;position:relative;width:100%;height:100%;width:2.5rem;transition:all var(--TmOne)}.PostsLine{position:relative;padding:1rem .5rem;font-size:1.5rem;width:100%;min-width:33rem;display:flex}.PostsDate{display:flex;align-items:center;font-size:1.5rem;text-align:center}.PostTitle{display:flex;align-items:center;flex-grow:1;display:inline-block;font-size:1.6rem;margin-left:10%}.PostTitle a{font-weight:700;transition:all var(--TmOne)linear}.PostTitle a:hover{color:var(--RainyCl)}.PostsCategory{text-align:center;display:inline-block;font-size:1.5rem}.PostsCategory a{display:flex;align-items:center;color:var(--RainyCl);padding:.3rem .6rem;box-sizing:border-box;transition:all var(--TmOne)}.PostsCategory a:hover{background-color:var(--BtnRipple)}.Wrap{height:auto;padding:5rem 6%}.Post{padding:3rem 5rem;max-width:83%;min-height:86vh;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}#TableOfContents{position:fixed;right:5%;top:8%;z-index:3;width:20rem;color:var(--LinkCl);border-radius:var(--Ri);background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}#TableOfContents ul{font-size:1.5rem;padding:.8rem 1rem}#TableOfContents ul a{color:inherit;padding:.3rem .5rem;margin:0;transition:all var(--TmOne);border-radius:var(--Ri)}#TableOfContents ul a:hover{background-color:var(--BtnRipple)}#TableOfContents ul ul{padding:0;margin-top:.3rem;padding-left:2rem;font-size:1.4rem}#TableOfContents li{padding:0 .3rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.PostContent h1{display:none}.Post .PostHeader .post-title{font-size:3rem;text-align:center;font-weight:700;font-family:sans-serif}.Post .PostHeader .post-title:after{content:'';display:block;margin:.2rem auto 0;width:8rem;height:.2rem;border-bottom:.2rem solid var(--RainyCl)}.Post .PostHeader .DateArea{text-align:right}.Post .PostHeader .PostDate{font-size:1.8rem;font-style:italic;margin-top:1rem}.PostsLines{position:relative;padding:1.2rem .5rem;font-size:1.5rem;width:100%;min-width:33rem;display:flex}.PostTitles{display:flex;align-items:center;flex-grow:1;display:inline-block;font-size:1.6rem}.PostTitles a{font-weight:700;transition:all var(--TmOne)linear}.PostTitles a:hover{color:var(--RainyCl)}.PostsDates{display:flex;align-items:center;font-size:1.5rem;text-align:center}.Post .PostContent h2{font-size:2.6rem;padding-left:1rem;border-bottom:.16rem solid var(--RainyCl);font-weight:700;margin-top:3rem;margin-bottom:1.5rem;border-left:.3rem solid var(--RainyCl)}.Post .PostContent h3{font-size:2.3rem;margin-top:1.5rem}.Post .PostContent h3::before{content:'#'!important;margin-right:.5rem;color:var(--RainyCl)}.Post .PostContent h4{font-size:2rem;margin-top:.8rem;display:inline-block;box-sizing:border-box}.Post .PostContent h5{font-size:1.8rem}.Post .PostContent h6{font-size:1.7rem}.PostContent{margin-top:2.5rem;font-size:1.5rem}.PostContent p{font-size:1.7rem;margin-bottom:.5rem}.PostContent img{width:50%;display:block;text-align:center;transition:all var(--TmOne);border-radius:var(--Ri)}.PostContent img:hover{cursor:pointer}.PostContent blockquote{border-left:.36rem solid #ddd;color:#6b6b6b;padding:.5rem .5rem .5rem 1rem;margin:1.5rem 0;font-size:1.5rem;border-radius:.3rem}hr{margin:3rem 1rem;height:.2rem;padding:0;border:0;overflow:hidden;box-sizing:content-box;background-color:#e2e2e2}.highlight{position:relative}.PostContent pre>code{margin:0;padding:0;background:0 0;font-family:Arial,sans-serif}.highlight pre::-webkit-scrollbar{height:1rem}.highlight pre::-webkit-scrollbar-track-piece{height:.1rem;background-color:var(--BrightCl)}.highlight pre::-webkit-scrollbar-thumb{background-color:#cacaca}.PostContent ul,.PostContent ol{margin:1rem 0;padding-left:2rem}.PostContent li{line-height:1.8;font-size:1.5rem;margin-top:1rem}li>ol,li>ul{font-size:1.5rem;line-height:1.6}.PostContent a{color:var(--LinkCl);text-decoration:none;margin-top:1rem;border-bottom:.1rem solid var(--LinkCl);transition:all var(--Tm)}.PostContent a:hover{color:var(--RainyCl)}.PostContent strong{margin:0 .15rem;font-weight:700}table{margin:0;font-size:1.6rem;border-collapse:collapse;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}table th,table td{padding:1rem;vertical-align:middle;border:.1rem solid #ccc}table th{font-weight:700}table thead th{vertical-align:middle}.PostContent pre{display:block;-webkit-overflow-scrolling:touch;border-radius:var(--Ri);padding:0 1rem;padding-top:1rem;margin:3rem 0;font-size:1.4rem;border:.1rem solid rgba(0,0,0,.11);border-radius:var(--Ri);letter-spacing:.2rem;overflow-x:scroll;background-color:var(--BrightCl)!important}.PostContent code{margin:0 1rem;padding:.2rem .5rem;border-radius:.2rem;color:var(--CodeCl);background-color:#008c8c2f}.highlight-copy-btn{position:absolute;top:1rem;right:1rem;border-radius:var(--Ri);padding:.5rem 0;font-size:1.3rem;color:var(--DarkCl);background-color:var(--BrightCl);min-width:5rem;text-align:center;transition:all var(--TmOne);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.highlight-copy-btn:hover{cursor:pointer;color:var(--RainyCl)}.SearchArea{position:relative;height:100%}.SearchArea .SearchInput{width:100%;font-size:1.5rem;padding:1.2rem .8rem;box-sizing:border-box;background-color:transparent;border-bottom:.1rem solid var(--DarkCl);transition:all var(--TmOne)linear}.SearchArea .SearchInput:focus{border-bottom:none;background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.SearchArea .SearchResults{display:none;z-index:1;position:absolute;top:4.5rem;left:0;width:100%;max-height:78%;overflow:auto;border-radius:var(--Ri);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;background-color:var(--BrightCl)}.SearchArea .SearchResults .result-item{background-color:var(--BrightCl);font-size:1.4rem;padding:.8rem;box-sizing:border-box;border:.01rem solid #e7e7e7;cursor:pointer}.SearchArea .SearchResults .result-item:hover{background-color:var(--BtnRipple)}.SearchArea .result-item:nth-child(1):hover{background-color:var(--BrightCl);cursor:auto}mark{background:var(--RainyCl);color:var(--BrightCl)}.PostTag{display:inline-block;margin-top:2rem;margin-right:1rem}.PostTag a{display:inline-block;font-size:1.4rem;padding:.3rem .8rem;color:var(--RainyCl);box-sizing:border-box;transition:all var(--TmOne);border:.1rem solid #ccc;border-radius:var(--Ri)}.PostTag a:hover{background-color:var(--BtnRipple)}#ToTheTop{z-index:3;position:fixed;right:5%;bottom:5%;padding:1.2rem;border-radius:50%;background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.pagination{margin:2rem 0;text-align:center}.pagination li{list-style:none;display:inline-block;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;margin:1rem .3%}.pagination li a{display:block;color:var(--DarkCl);background:var(--BrightCl);width:3.6rem;height:3.6rem;border-radius:var(--Ri);display:flex;justify-content:center;align-items:center;transition:all var(--TmOne)linear}.pagination li a:hover{background-color:var(--BtnRipple)}</style>
+  
+
+  
+    <style>:root{--RainyCl:#008c8cdc;--BrightCl:#eee;--DarkCl:#555;--TmOne:0.3s;--TmTwo:1.5s;--Ri:0.3rem;--LinkCl:#3fa4e7;--CodeCl:#135046;--BtnRipple:rgba(0, 0, 0, 0.05)}.Icon{width:3rem;height:3rem;cursor:pointer;overflow:hidden;fill:currentColor;vertical-align:-.65rem}.Icon:active{transform:scale(.9,.9)}.Icon:hover{color:var(--RainyCl)}.TransitionOne{transition:all var(--TmOne)linear}.TransitionTwo{transition:all var(--TmTwo)linear}.MinWidth{min-width:300px}.BorderBox{box-sizing:border-box}.BorderRi{border-radius:var(--Ri)}.SerifFont{font-family:serif}::-webkit-scrollbar{width:1rem;background-color:#f5f5f5}::-webkit-scrollbar-track{background-color:var(--BrightCl)}::-webkit-scrollbar-thumb{border-radius:var(--Ri);background-color:#cacaca}*{margin:0;padding:0;border:none;outline:none;-webkit-tap-highlight-color:transparent}html{width:100%;height:100%;font-size:10px;line-height:1.8;color:var(--DarkCl);letter-spacing:.1rem;font-family:microsoft yahei,Arial,sans-serif;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}body{width:100%;height:100%;box-sizing:border-box;background-color:var(--BrightCl)}audio,canvas,video,img{display:inline-block}a{color:var(--DarkCl);text-decoration:none;cursor:pointer}.HideScroll::-webkit-scrollbar{display:none}@media screen and (min-width:720px){.BoxShadow{box-shadow:.5rem .875rem 2.375rem rgba(39,44,49,.15),.0625rem .1875rem .5rem rgba(39,44,49,3%)}}@media screen and (max-width:720px){html{font-size:8px}.Main{width:100%}.Main .PostsArea{box-shadow:none}.Wrap{padding:0}.Post{padding:3rem 2rem;min-height:100vh;box-shadow:none}.SearchDialogBox{width:80%}.BoxShadow{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}}@media screen and (max-width:1300px){#TableOfContents{display:none}.Post{min-width:100%}}</style>
+  
+
+  
+  <style>.hvr-underline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px)translateZ(0);transform:perspective(1px)translateZ(0);position:relative;overflow:hidden}.hvr-underline-from-center:before{content:"";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:var(--RainyCl);height:.2rem;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-underline-from-center:hover:before,.hvr-underline-from-center:focus:before,.hvr-underline-from-center:active:before{left:0;right:0}.hvr-icon-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px)translateZ(0);transform:perspective(1px)translateZ(0);box-shadow:0 0 1px transparent;-webkit-transition-duration:.3s;transition-duration:.3s}.hvr-icon-float .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-icon-float:hover .hvr-icon,.hvr-icon-float:focus .hvr-icon,.hvr-icon-float:active .hvr-icon{-webkit-transform:translateY(-4px);transform:translateY(-4px)}</style>
+  
+
+
+  
+
+  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
+    title="Rainy · Blog">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  <script>
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+
+  
+
+  <body class="Wrap">
+    <article class="Post BorderBox  ">
+      <header class="PostHeader">
+        <h1 id="Title" class="post-title">Hexo 搭建博客</h1>
+        
+        <div class="DateArea">
+          
+          <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
+            2021.10.03
+          </time>
+          
+        </div>
+        
+      </header>
+
+      
+      <div class="PostContent">
+        
+        <h1 id="hexo-搭建博客">Hexo 搭建博客</h1>
+<h2 id="创建-github-仓库">创建 Github 仓库</h2>
+<h3 id="注册一个githubgithubhttpsgithubcom账号">注册一个<a href="%5BGitHub%5D(https://github.com/)">Github</a>账号</h3>
+<h3 id="创建-github-repository">创建 Github Repository</h3>
+<p>在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。</p>
+<h2 id="将-git-与-github-关联">将 Git 与 Github 关联</h2>
+<h3 id="下载并安装githttpsgit-scmcom">下载并安装<a href="https://git-scm.com/">Git</a></h3>
+<h3 id="配置个人信息">配置个人信息</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>git config --global user.name <span style="color:#4e9a06">&#34;Your UserName&#34;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>git config --global user.email <span style="color:#4e9a06">&#34;YourEmail@qq.com&#34;</span>
+</code></pre></div><h3 id="生成-ssh-密钥文件">生成 ssh 密钥文件</h3>
+<p>hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span>ssh-keygen -t rsa -C <span style="color:#4e9a06">&#34;Your GitHub 的邮箱&#34;</span>
+</code></pre></div><p>复制 id_rsa pub 文件中的密钥
+三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制</p>
+<h3 id="new-ssh-key">new SSH Key</h3>
+<p>打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</p>
+<h3 id="检测-github-公钥设置是否成功">检测 GitHub 公钥设置是否成功</h3>
+<pre><code>ssh git@github com
+</code></pre>
+<h3 id="设置-github-密钥原因">设置 GitHub 密钥原因</h3>
+<p>因为 GitHub 需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而 Git 支持 SSH 协议，所以，GitHub 只要知道了你电脑上的私钥，就可以确认只有你自己才能推送。</p>
+<p>当然，GitHub 允许你添加多个 公钥。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的公钥都添加到 GitHub，就可以在每台电脑上往 GitHub 推送了。</p>
+<p>当你推送的时候，git 就会匹电脑上的私钥跟 GitHub 上面的公钥是否是配对的，若是匹配就认为你是合法用户，则允许推送。</p>
+<h2 id="安装-node-js-和-hexo">安装 Node js 和 Hexo</h2>
+<h3 id="安装-node-jshttpsnodejsorgzh-cn">安装 <a href="https://nodejsorg/zh-cn/">Node js</a></h3>
+<h3 id="检测-nodejs-和-nmp-是否安装成功">检测 Node.js 和 nmp 是否安装成功</h3>
+<pre><code>noed -v
+nmp - v
+</code></pre>
+<p>到这一步，说明你已经将安装 Hexo 的环境搭建完成了</p>
+<h3 id="使用-nmp-命令安装-hexo">使用 nmp 命令安装 Hexo</h3>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+<p>Hexo 安装完成后，初始化我们的博客</p>
+<pre><code>hexo init [folder name]
+</code></pre>
+<p>这时候你会得到一个文件夹，这个文件夹是你刚刚初始化博客时指定的文件夹名</p>
+<h3 id="本地预览网页">本地预览网页</h3>
+<p>执行以下命令后，在浏览器地址栏中输入 localhost:4000 即可在本地查看你的网站</p>
+<pre><code>hexo new my blog
+hexo g
+hexo s
+</code></pre>
+<p><code>hexo new my blog</code>，新建一篇文章，文章标题为 my blog.</p>
+<p><code>hexo g</code> 生成静态文件。</p>
+<p><code>hexo s</code>启动本地预览网页，</p>
+<h2 id="配置-github">配置 GitHub</h2>
+<h3 id="将-hexo-生成的博客上传到-github-仓库">将 Hexo 生成的博客上传到 Github 仓库</h3>
+<p>打开站点的配置文件``_config yml```，将 deploy 下的内容编辑为以下内容后保存，编辑配置文件的目其实就是给 hexo d 这个命令做相应的配置，让 hexo 知道你要把你的本地博客文件部署在哪个位置，很显然，我们要将我们的博客部署在我们 GitHub 的仓库里。</p>
+<h3 id="开启仓库的-github-pages">开启仓库的 GitHub Pages</h3>
+<p>在仓库 主页选择 Settings，然后选择 pages，在 Source 选项下，选择一个分支，比如 master，最后点击 save 即可，这样你就可以通过 Your site is published at 后面的域名来访问你的博客</p>
+<h2 id="将本地网站部署到-github-服务器">将本地网站部署到 Github 服务器</h2>
+<h3 id="安装-git-部署插件">安装 Git 部署插件</h3>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+<h3 id="将本地博客部署到远程仓库">将本地博客部署到远程仓库</h3>
+<p>清除缓存文件 (db json) 和已生成的静态文件 (public)，再重新生成的静态文件并将静态文件推送到远程仓库</p>
+<pre><code>Hexo clean
+hexo g
+hexo d
+</code></pre>
+<p>到这一步，你就可以再浏览器地址栏输入 UserName github io 即可访问你的博客，但因为网址是 GitHub 提供的 xxxx github io，显然不太能突出咱们网站的个性，这时候就需要绑定我们自己的域名。</p>
+<h2 id="个性化域名">个性化域名</h2>
+<h3 id="绑定域名">绑定域名</h3>
+<p>来到你的域名管理界面，选择解析，再选择添加记录
+这里需要注意的是记录值为你的 GitHub 仓库名 UserName github io，比如我这里是 yxzrainy github io.</p>
+<p>之后到你的 Github 上，进入放博客文件的仓库，选择 Settings，再选择左侧菜单栏中的 Pages，找到 GitHub Pages 下的 Custom domain（自定义域名），输入你的域名，然后点击 Save 即可</p>
+<p>接下来进入本地博客文件夹 ，进入 blog/source 目录下，创建一个记事本文件，输入你的域名，只要写进你自己的域名即可。如果带有 www，那么以后访问的时候必须带有 www 完整的域名才可以访问，但如果不带有 www，以后访问的时候带不带 www 都可以访问，所以建议，不要带有 www，最后保存，命名为 CNAME ，注意保存成所有文件而不是带后缀的 txt 文件或其他文件。
+最后再次依次执行清空缓存文件，生成静态文件，将静态博客文件部署到远程仓库</p>
+<pre><code>hexo clean
+hexo g
+hexo d
+</code></pre>
+<p>现在你就可以通过你的域名访问到你的博客页了！</p>
+
+      </div>
+      
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/github/">
+          Github
+        </a>
+      </div>
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/hexo/">
+          Hexo
+        </a>
+      </div>
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/git/">
+          Git
+        </a>
+      </div>
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/">
+          博客
+        </a>
+      </div>
+      
+    </article>
+          
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#创建-github-仓库">创建 Github 仓库</a>
+      <ul>
+        <li><a href="#注册一个githubgithubhttpsgithubcom账号">注册一个<a href="%5BGitHub%5D(https://github.com/)">Github</a>账号</a></li>
+        <li><a href="#创建-github-repository">创建 Github Repository</a></li>
+      </ul>
+    </li>
+    <li><a href="#将-git-与-github-关联">将 Git 与 Github 关联</a>
+      <ul>
+        <li><a href="#下载并安装githttpsgit-scmcom">下载并安装<a href="https://git-scm.com/">Git</a></a></li>
+        <li><a href="#配置个人信息">配置个人信息</a></li>
+        <li><a href="#生成-ssh-密钥文件">生成 ssh 密钥文件</a></li>
+        <li><a href="#new-ssh-key">new SSH Key</a></li>
+        <li><a href="#检测-github-公钥设置是否成功">检测 GitHub 公钥设置是否成功</a></li>
+        <li><a href="#设置-github-密钥原因">设置 GitHub 密钥原因</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装-node-js-和-hexo">安装 Node js 和 Hexo</a>
+      <ul>
+        <li><a href="#安装-node-jshttpsnodejsorgzh-cn">安装 <a href="https://nodejsorg/zh-cn/">Node js</a></a></li>
+        <li><a href="#检测-nodejs-和-nmp-是否安装成功">检测 Node.js 和 nmp 是否安装成功</a></li>
+        <li><a href="#使用-nmp-命令安装-hexo">使用 nmp 命令安装 Hexo</a></li>
+        <li><a href="#本地预览网页">本地预览网页</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置-github">配置 GitHub</a>
+      <ul>
+        <li><a href="#将-hexo-生成的博客上传到-github-仓库">将 Hexo 生成的博客上传到 Github 仓库</a></li>
+        <li><a href="#开启仓库的-github-pages">开启仓库的 GitHub Pages</a></li>
+      </ul>
+    </li>
+    <li><a href="#将本地网站部署到-github-服务器">将本地网站部署到 Github 服务器</a>
+      <ul>
+        <li><a href="#安装-git-部署插件">安装 Git 部署插件</a></li>
+        <li><a href="#将本地博客部署到远程仓库">将本地博客部署到远程仓库</a></li>
+      </ul>
+    </li>
+    <li><a href="#个性化域名">个性化域名</a>
+      <ul>
+        <li><a href="#绑定域名">绑定域名</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+		<use href="#Icon-ToTheTop"></use>
+	</svg>
+</a>
+
+
+
+    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+
+
+
+
+  </body>
+
+</html>

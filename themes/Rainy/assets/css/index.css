@@ -18,16 +18,42 @@
 	padding: 1.5rem 2rem 1rem 2rem;
 }
 
+.PostsArea,
+.Post {
+	animation-name: posts;
+	animation-duration: 1.5s;
+}
+
+@keyframes posts {
+	0% {
+		transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		-moz-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		-o-transform: translateY(-30px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 /* 顶部区域 */
 .MainHeader {
 	position: relative;
-	padding: 0.5rem 1rem;
+	padding: 0.6rem 0.5rem;
 }
 
 /* 年 */
-.MainYear {
+.Name {
 	font-size: 2.4rem;
-	font-weight: normal;
+	font-weight: bold;
 	display: inline-block;
 }
 
@@ -36,7 +62,7 @@
 	display: inline-block;
 	position: absolute;
 	top: 50%;
-	right: 1.7rem;
+	right: 2rem;
 	transform: translateY(-50%);
 }
 
@@ -109,33 +135,35 @@
 /* 文章列表项 */
 .PostsLine {
 	position: relative;
-	padding: 3.6rem 2rem;
+	padding: 1rem 0.5rem;
 	font-size: 1.5rem;
 	width: 100%;
 	min-width: 33rem;
+	display: flex;
 }
-
 
 /* 文章项日期 */
 .PostsDate {
-	position: absolute;
-	top: 50%;
-	left: 1rem;
-	font-size: 1.3rem;
-	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 /* 文章项标题 */
 .PostTitle {
-	position: absolute;
-	top: 50%;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	display: inline-block;
 	font-size: 1.6rem;
-	left: 20%;
-	transform: translateY(-50%);
+	margin-left: 10%;
+
 }
 .PostTitle a {
 	font-weight: bold;
 	transition: all var(--TmOne) linear;
+
 }
 
 .PostTitle a:hover {
@@ -144,16 +172,15 @@
 
 /* 文章项分类 */
 .PostsCategory {
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
+	text-align: center;
+	display: inline-block;
 	font-size: 1.5rem;
 }
 .PostsCategory a {
-	margin-right: 1rem;
+	display: flex;
+	align-items: center;
 	color: var(--RainyCl);
-	padding: 0.3rem 0.8rem;
+	padding: 0.3rem 0.6rem;
 	box-sizing: border-box;
 	transition: all var(--TmOne);
 }
@@ -171,13 +198,11 @@
 	padding: 3rem 5rem;
 	max-width: 83%;
 	min-height: 86vh;
-	margin-top: -1rem;
-	opacity: 0;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 /* 目录 */
-.Post #TableOfContents {
+#TableOfContents {
 	position: fixed;
 	right: 5%;
 	top: 8%;
@@ -186,34 +211,33 @@
 	color: var(--LinkCl);
 	border-radius: var(--Ri);
 	background-color: var(--BrightCl);
-	padding: 0.8rem 1rem;
-
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.Post #TableOfContents ul {
+#TableOfContents ul {
 	font-size: 1.5rem;
+	padding: 0.8rem 1rem;
 }
 
-.Post #TableOfContents ul a {
+#TableOfContents ul a {
 	color: inherit;
 	padding: 0.3rem 0.5rem;
 	margin: 0;
 	transition: all var(--TmOne);
 	border-radius: var(--Ri);
 }
-.Post #TableOfContents ul a:hover {
+#TableOfContents ul a:hover {
 	background-color: var(--BtnRipple);
 }
 
-.Post #TableOfContents ul ul {
+#TableOfContents ul ul {
 	padding: 0;
 	margin-top: 0.3rem;
 	padding-left: 2rem;
 	font-size: 1.4rem;
 }
 
-.Post #TableOfContents li {
+#TableOfContents li {
 	padding: 0 0.3rem;
 	white-space: nowrap;
 	overflow: hidden;
@@ -227,7 +251,7 @@
 
 /* 一级标题 */
 .Post .PostHeader .post-title {
-	font-size: 3.6rem;
+	font-size: 3rem;
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif;
@@ -250,6 +274,40 @@
 	font-size: 1.8rem;
 	font-style: italic;
 	margin-top: 1rem;
+}
+
+/* 文章页项目列表 */
+.PostsLines {
+	position: relative;
+	padding: 1.2rem 0.5rem;
+	font-size: 1.5rem;
+	width: 100%;
+	min-width: 33rem;
+	display: flex;
+}
+/* 文章页项目的标题 */
+.PostTitles {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	display: inline-block;
+	font-size: 1.6rem;
+}
+.PostTitles a {
+	font-weight: bold;
+	transition: all var(--TmOne) linear;
+}
+
+.PostTitles a:hover {
+	color: var(--RainyCl);
+}
+
+/* 文章页项目的日期 */
+.PostsDates {
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 .Post .PostContent h2 {
@@ -394,7 +452,7 @@ li > ul {
 
 /* 表格 */
 table {
-	margin: rem 0;
+	margin: 0 0;
 	font-size: 1.6rem;
 	border-collapse: collapse;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -550,33 +608,31 @@ mark {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-
-
 .pagination {
-    margin: 0;
-    margin-bottom: 10px;
-    text-align: left;
-    text-align: center;
+	margin: 2rem 0;
+	text-align: center;
 }
 
 .pagination li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 2px;
+	list-style: none;
+	display: inline-block;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	margin: 1rem 0.3%;
 }
 
 .pagination li a {
-    display: block;
-    color: #000;
-    background: #ddd;
-    width: 40px;
-    height: 34px;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: block;
+	color: var(--DarkCl);
+	background: var(--BrightCl);
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: var(--Ri);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all var(--TmOne) linear;
+}
+
+.pagination li a:hover {
+	background-color: var(--BtnRipple);
 }

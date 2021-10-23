@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/java/</link>
+    <description>Recent content in Java on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 03 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 冒泡排序</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 1public static void main(String[] args) { 2 //定义数组 3 int[] arr = {6, 4, 8, 2, 9}; 4 System.out.println(&amp;#34;排序前：&amp;#34;); 5 //打印排序前的数组元素 6 printArray(arr); 7 //数组排序的方法 8 bubbleSort(arr); 9 System.out.println(&amp;#34;排序后：&amp;#34;); 10 //打印排序后的数组元素 11 printArray(arr); 12 } 13 //定义打印数组中所有元素的方法 14 public static void printArray(int[] arr) { 15 for (int i = 0; i &amp;lt; arr.length; i++) { 16 //返回当前数组中所有的元素 17 System.out.print(arr[i] + &amp;#34;&amp;#34;); 18 } 19 System.out.println(&amp;#34;\n&amp;#34;); 20 // 返回后换行 21 } 22 //定义冒泡排序的方法 23 public static void bubbleSort(int[] arr) { 24 // arr.</description>
+    </item>
+    
+    <item>
+      <title>Java 基础</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</guid>
+      <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
+赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
+赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
+至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
+至于继承，还不知道。
+void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
+1void Show1() { 2 int a = 123; 3} 4 5int Show2() { 6 int a = 123; 7 return a; 8} public、protected、default（什么都不写）、private，表示访问控制的权限
+1private void Show1() { 2 int a = 123; 3} 4 5// 相当于 default int Show2() 6int Show2() { 7 int a = 123; 8 return a; 9} </description>
+    </item>
+    
+    <item>
+      <title>Vs Code 配置 Java</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
+  属性
+  高级系统设置
+  高级选项卡
+  环境变量
+  系统变量
+  新建 JAVA_HOME 变量  变量名：JAVA_HOME。 值为：Java JDK 的安装路径。 确定  找到已存在的名为 Path 的变量  编辑 新建 输入：%JAVA_HOME%\jre\bin，确定 再新建，输入：%JAVA_HOME%\bin，确定 保存即可  新建 Classpath 变量   变量名：Classpath，
+  值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+  测试环境配置是否成功 快捷键 Win + R，搜索 cmd 并 Enter，然后在命令行输入java以及javac.
+安装 vs code 扩展 java extension pack。</description>
+    </item>
+    
+  </channel>
+</rss>

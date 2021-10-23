@@ -15,7 +15,7 @@
 
         <div class="PostsLine BorderBox">
           <div class="PostsDate">
-            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ dateFormat "2006-01-02" .Date }}</time>
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "Jan 02"}}</time>
           </div>
 
           <div class="PostTitle">
@@ -38,8 +38,7 @@
 
     </article>
     {{ partial "scripts.html" . }}
-    <script src="./js/Search.js"></script>
-    <script src="./js/Main.js"></script>
+
   </body>
 
 </html>

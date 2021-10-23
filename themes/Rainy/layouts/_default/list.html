@@ -6,25 +6,22 @@
     <article class="Main BorderBox">
       <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
       <div class="PostsArea">
-       
         {{ partial "header.html" . }}
-        {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-        {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-        {{ range $paginator.Pages }}
-
-        <div class="PostsLine BorderBox">
-          <div class="PostsDate">
-            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ dateFormat "2006-01-02" .Date }}</time>
+        {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
+        {{ range .Pages }}
+        <div class="PostsLines BorderBox">
+          <div class="PostTitles">
+            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
           </div>
 
-          <div class="PostTitle">
-            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{.Title}}</a>
+
+          <div class="PostsDates">
+            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "2006/01/02" }}</time>
           </div>
-          
         </div>
         {{ end }}
-        {{ template "partials/paginator.html" . }}
-
+        {{ end }}
+       
       </div>
     </article>
     {{ partial "footer.html" . }}
@@ -32,6 +29,7 @@
     {{ partial "scripts.html" . }}
     <script src="../../js/Search.js"></script>
     <script src="../../js/Main.js"></script>
+    
 
   </body>
 

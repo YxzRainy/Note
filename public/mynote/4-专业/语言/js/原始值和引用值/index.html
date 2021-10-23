@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.88.1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Rainy" />
+  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" />
+  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+
+  <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 原始值和引用值",
+	    "headline" : "JavaScript 原始值和引用值",
+	    "description" : "原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。\n原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。\nNumber 数值，用整数或浮点数表示，它允许任意位的小数。\nString 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。\n与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。\nBoolean 布尔，表示一个逻辑值，只有true 或 false 两个值。\nBigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。\nSymbol 符号，它是唯一的并且是不可修改的。\nundefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数\nNull 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。\n原始值的储存原理 1a = 10; 2\/\/ 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3\/\/ 栈内存： 4\/\/ a ： 10 5var b = a; 6\/\/ 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7\/\/ 栈内存： 8\/\/ a ：10 9\/\/ 拷贝变量 10 10\/\/ b ：10 11a = 20; 12\/\/ 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13\/\/ 栈内存： 14\/\/ a ：10（已关闭） 15\/\/ b ：10 16\/\/ a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC\/",
+	    "keywords" : [ "学习笔记","JavaScript", ]
+	}
+</script>
+<title>JavaScript 原始值和引用值</title>
+  <meta property="og:title" content="JavaScript 原始值和引用值" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
+原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
+Number 数值，用整数或浮点数表示，它允许任意位的小数。
+String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
+与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
+Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
+Symbol 符号，它是唯一的并且是不可修改的。
+undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
+Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
+原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。" />
+  <meta name="description" content="原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
+原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
+Number 数值，用整数或浮点数表示，它允许任意位的小数。
+String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
+与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
+Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
+Symbol 符号，它是唯一的并且是不可修改的。
+undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
+Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
+原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。" />
+  <meta property="og:locale" content="zh-cn" />
+
+  
+    <style>.Main{width:80rem;margin:0 auto;padding:3rem 0 5rem}.Main .MainTitle{font-size:3.6rem;text-align:center;margin-bottom:3rem}.Main .PostsArea{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;padding:1.5rem 2rem 1rem}.PostsArea,.Post{animation-name:posts;animation-duration:1.5s}@keyframes posts{0%{transform:translateY(-30px);-webkit-transform:translateY(-30px);-moz-transform:translateY(-30px);-ms-transform:translateY(-30px);-o-transform:translateY(-30px);opacity:0}100%{transform:translateY(0);-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);opacity:1}}.MainHeader{position:relative;padding:.6rem .5rem}.Name{font-size:2.4rem;font-weight:700;display:inline-block}#SearchBox{display:inline-block;position:absolute;top:50%;right:2rem;transform:translateY(-50%)}#SearchBox .Search{border-radius:50%;padding:.5rem;background-color:var(--BrightCl)}#SearchBox .Search:hover{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.SearchDialogMask{top:0;left:0;z-index:3;width:100vw;height:100vh;position:fixed;background-color:rgba(0,0,0,.2);backdrop-filter:blur(.5rem)}.SearchDialogBox{top:40%;left:50%;z-index:5;width:50%;height:50rem;padding-top:5rem;box-sizing:border-box;border-radius:var(--Ri);background-color:var(--BrightCl);background-color:transparent;transform:translate(-50%,-50%)}.SearchDialogBox .Content{position:relative;z-index:4;width:100%;height:88%;font-size:1.5rem}.SearchDialogBox .CloseBox{position:relative;z-index:4;width:100%;height:12%;text-align:center;margin:0 auto;border-radius:var(--Ri)}.SearchDialogBox .CloseBox:hover{background-color:var(--BtnRipple)}.SearchDialogBox .Close{z-index:5;position:relative;width:100%;height:100%;width:2.5rem;transition:all var(--TmOne)}.PostsLine{position:relative;padding:1rem .5rem;font-size:1.5rem;width:100%;min-width:33rem;display:flex}.PostsDate{display:flex;align-items:center;font-size:1.5rem;text-align:center}.PostTitle{display:flex;align-items:center;flex-grow:1;display:inline-block;font-size:1.6rem;margin-left:10%}.PostTitle a{font-weight:700;transition:all var(--TmOne)linear}.PostTitle a:hover{color:var(--RainyCl)}.PostsCategory{text-align:center;display:inline-block;font-size:1.5rem}.PostsCategory a{display:flex;align-items:center;color:var(--RainyCl);padding:.3rem .6rem;box-sizing:border-box;transition:all var(--TmOne)}.PostsCategory a:hover{background-color:var(--BtnRipple)}.Wrap{height:auto;padding:5rem 6%}.Post{padding:3rem 5rem;max-width:83%;min-height:86vh;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}#TableOfContents{position:fixed;right:5%;top:8%;z-index:3;width:20rem;color:var(--LinkCl);border-radius:var(--Ri);background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}#TableOfContents ul{font-size:1.5rem;padding:.8rem 1rem}#TableOfContents ul a{color:inherit;padding:.3rem .5rem;margin:0;transition:all var(--TmOne);border-radius:var(--Ri)}#TableOfContents ul a:hover{background-color:var(--BtnRipple)}#TableOfContents ul ul{padding:0;margin-top:.3rem;padding-left:2rem;font-size:1.4rem}#TableOfContents li{padding:0 .3rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.PostContent h1{display:none}.Post .PostHeader .post-title{font-size:3rem;text-align:center;font-weight:700;font-family:sans-serif}.Post .PostHeader .post-title:after{content:'';display:block;margin:.2rem auto 0;width:8rem;height:.2rem;border-bottom:.2rem solid var(--RainyCl)}.Post .PostHeader .DateArea{text-align:right}.Post .PostHeader .PostDate{font-size:1.8rem;font-style:italic;margin-top:1rem}.PostsLines{position:relative;padding:1.2rem .5rem;font-size:1.5rem;width:100%;min-width:33rem;display:flex}.PostTitles{display:flex;align-items:center;flex-grow:1;display:inline-block;font-size:1.6rem}.PostTitles a{font-weight:700;transition:all var(--TmOne)linear}.PostTitles a:hover{color:var(--RainyCl)}.PostsDates{display:flex;align-items:center;font-size:1.5rem;text-align:center}.Post .PostContent h2{font-size:2.6rem;padding-left:1rem;border-bottom:.16rem solid var(--RainyCl);font-weight:700;margin-top:3rem;margin-bottom:1.5rem;border-left:.3rem solid var(--RainyCl)}.Post .PostContent h3{font-size:2.3rem;margin-top:1.5rem}.Post .PostContent h3::before{content:'#'!important;margin-right:.5rem;color:var(--RainyCl)}.Post .PostContent h4{font-size:2rem;margin-top:.8rem;display:inline-block;box-sizing:border-box}.Post .PostContent h5{font-size:1.8rem}.Post .PostContent h6{font-size:1.7rem}.PostContent{margin-top:2.5rem;font-size:1.5rem}.PostContent p{font-size:1.7rem;margin-bottom:.5rem}.PostContent img{width:50%;display:block;text-align:center;transition:all var(--TmOne);border-radius:var(--Ri)}.PostContent img:hover{cursor:pointer}.PostContent blockquote{border-left:.36rem solid #ddd;color:#6b6b6b;padding:.5rem .5rem .5rem 1rem;margin:1.5rem 0;font-size:1.5rem;border-radius:.3rem}hr{margin:3rem 1rem;height:.2rem;padding:0;border:0;overflow:hidden;box-sizing:content-box;background-color:#e2e2e2}.highlight{position:relative}.PostContent pre>code{margin:0;padding:0;background:0 0;font-family:Arial,sans-serif}.highlight pre::-webkit-scrollbar{height:1rem}.highlight pre::-webkit-scrollbar-track-piece{height:.1rem;background-color:var(--BrightCl)}.highlight pre::-webkit-scrollbar-thumb{background-color:#cacaca}.PostContent ul,.PostContent ol{margin:1rem 0;padding-left:2rem}.PostContent li{line-height:1.8;font-size:1.5rem;margin-top:1rem}li>ol,li>ul{font-size:1.5rem;line-height:1.6}.PostContent a{color:var(--LinkCl);text-decoration:none;margin-top:1rem;border-bottom:.1rem solid var(--LinkCl);transition:all var(--Tm)}.PostContent a:hover{color:var(--RainyCl)}.PostContent strong{margin:0 .15rem;font-weight:700}table{margin:0;font-size:1.6rem;border-collapse:collapse;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}table th,table td{padding:1rem;vertical-align:middle;border:.1rem solid #ccc}table th{font-weight:700}table thead th{vertical-align:middle}.PostContent pre{display:block;-webkit-overflow-scrolling:touch;border-radius:var(--Ri);padding:0 1rem;padding-top:1rem;margin:3rem 0;font-size:1.4rem;border:.1rem solid rgba(0,0,0,.11);border-radius:var(--Ri);letter-spacing:.2rem;overflow-x:scroll;background-color:var(--BrightCl)!important}.PostContent code{margin:0 1rem;padding:.2rem .5rem;border-radius:.2rem;color:var(--CodeCl);background-color:#008c8c2f}.highlight-copy-btn{position:absolute;top:1rem;right:1rem;border-radius:var(--Ri);padding:.5rem 0;font-size:1.3rem;color:var(--DarkCl);background-color:var(--BrightCl);min-width:5rem;text-align:center;transition:all var(--TmOne);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.highlight-copy-btn:hover{cursor:pointer;color:var(--RainyCl)}.SearchArea{position:relative;height:100%}.SearchArea .SearchInput{width:100%;font-size:1.5rem;padding:1.2rem .8rem;box-sizing:border-box;background-color:transparent;border-bottom:.1rem solid var(--DarkCl);transition:all var(--TmOne)linear}.SearchArea .SearchInput:focus{border-bottom:none;background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.SearchArea .SearchResults{display:none;z-index:1;position:absolute;top:4.5rem;left:0;width:100%;max-height:78%;overflow:auto;border-radius:var(--Ri);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;background-color:var(--BrightCl)}.SearchArea .SearchResults .result-item{background-color:var(--BrightCl);font-size:1.4rem;padding:.8rem;box-sizing:border-box;border:.01rem solid #e7e7e7;cursor:pointer}.SearchArea .SearchResults .result-item:hover{background-color:var(--BtnRipple)}.SearchArea .result-item:nth-child(1):hover{background-color:var(--BrightCl);cursor:auto}mark{background:var(--RainyCl);color:var(--BrightCl)}.PostTag{display:inline-block;margin-top:2rem;margin-right:1rem}.PostTag a{display:inline-block;font-size:1.4rem;padding:.3rem .8rem;color:var(--RainyCl);box-sizing:border-box;transition:all var(--TmOne);border:.1rem solid #ccc;border-radius:var(--Ri)}.PostTag a:hover{background-color:var(--BtnRipple)}#ToTheTop{z-index:3;position:fixed;right:5%;bottom:5%;padding:1.2rem;border-radius:50%;background-color:var(--BrightCl);box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}.pagination{margin:2rem 0;text-align:center}.pagination li{list-style:none;display:inline-block;box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px;margin:1rem .3%}.pagination li a{display:block;color:var(--DarkCl);background:var(--BrightCl);width:3.6rem;height:3.6rem;border-radius:var(--Ri);display:flex;justify-content:center;align-items:center;transition:all var(--TmOne)linear}.pagination li a:hover{background-color:var(--BtnRipple)}</style>
+  
+
+  
+    <style>:root{--RainyCl:#008c8cdc;--BrightCl:#eee;--DarkCl:#555;--TmOne:0.3s;--TmTwo:1.5s;--Ri:0.3rem;--LinkCl:#3fa4e7;--CodeCl:#135046;--BtnRipple:rgba(0, 0, 0, 0.05)}.Icon{width:3rem;height:3rem;cursor:pointer;overflow:hidden;fill:currentColor;vertical-align:-.65rem}.Icon:active{transform:scale(.9,.9)}.Icon:hover{color:var(--RainyCl)}.TransitionOne{transition:all var(--TmOne)linear}.TransitionTwo{transition:all var(--TmTwo)linear}.MinWidth{min-width:300px}.BorderBox{box-sizing:border-box}.BorderRi{border-radius:var(--Ri)}.SerifFont{font-family:serif}::-webkit-scrollbar{width:1rem;background-color:#f5f5f5}::-webkit-scrollbar-track{background-color:var(--BrightCl)}::-webkit-scrollbar-thumb{border-radius:var(--Ri);background-color:#cacaca}*{margin:0;padding:0;border:none;outline:none;-webkit-tap-highlight-color:transparent}html{width:100%;height:100%;font-size:10px;line-height:1.8;color:var(--DarkCl);letter-spacing:.1rem;font-family:microsoft yahei,Arial,sans-serif;-webkit-font-smoothing:antialiased;scroll-behavior:smooth}body{width:100%;height:100%;box-sizing:border-box;background-color:var(--BrightCl)}audio,canvas,video,img{display:inline-block}a{color:var(--DarkCl);text-decoration:none;cursor:pointer}.HideScroll::-webkit-scrollbar{display:none}@media screen and (min-width:720px){.BoxShadow{box-shadow:.5rem .875rem 2.375rem rgba(39,44,49,.15),.0625rem .1875rem .5rem rgba(39,44,49,3%)}}@media screen and (max-width:720px){html{font-size:8px}.Main{width:100%}.Main .PostsArea{box-shadow:none}.Wrap{padding:0}.Post{padding:3rem 2rem;min-height:100vh;box-shadow:none}.SearchDialogBox{width:80%}.BoxShadow{box-shadow:rgba(0,0,0,.1)0 1px 3px,rgba(0,0,0,6%)0 1px 2px}}@media screen and (max-width:1300px){#TableOfContents{display:none}.Post{min-width:100%}}</style>
+  
+
+  
+  <style>.hvr-underline-from-center{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px)translateZ(0);transform:perspective(1px)translateZ(0);position:relative;overflow:hidden}.hvr-underline-from-center:before{content:"";position:absolute;z-index:-1;left:51%;right:51%;bottom:0;background:var(--RainyCl);height:.2rem;-webkit-transition-property:left,right;transition-property:left,right;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-underline-from-center:hover:before,.hvr-underline-from-center:focus:before,.hvr-underline-from-center:active:before{left:0;right:0}.hvr-icon-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px)translateZ(0);transform:perspective(1px)translateZ(0);box-shadow:0 0 1px transparent;-webkit-transition-duration:.3s;transition-duration:.3s}.hvr-icon-float .hvr-icon{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-icon-float:hover .hvr-icon,.hvr-icon-float:focus .hvr-icon,.hvr-icon-float:active .hvr-icon{-webkit-transform:translateY(-4px);transform:translateY(-4px)}</style>
+  
+
+
+  
+
+  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
+    title="Rainy · Blog">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  <script>
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script>
+
+  
+  
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</head>
+
+  
+
+  <body class="Wrap">
+    <article class="Post BorderBox  ">
+      <header class="PostHeader">
+        <h1 id="Title" class="post-title">JavaScript 原始值和引用值</h1>
+        
+        <div class="DateArea">
+          
+          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+            2021.10.21
+          </time>
+          
+        </div>
+        
+      </header>
+
+      
+      <div class="PostContent">
+        
+        <h1 id="原始值和引用值">原始值和引用值</h1>
+<p>在 ECMAScript 中，变量有两种类型的值，即<strong>原始值</strong>和<strong>引用值</strong>。</p>
+<h2 id="原始值">原始值</h2>
+<p>一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是<strong>不可改变</strong>的。</p>
+<h3 id="number">Number</h3>
+<p>数值，用整数或浮点数表示，它允许任意位的小数。</p>
+<h3 id="string">String</h3>
+<p>字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。</p>
+<p>与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。</p>
+<h3 id="boolean">Boolean</h3>
+<p>布尔，表示一个逻辑值，只有true 或 false 两个值。</p>
+<h3 id="bigint">BigInt</h3>
+<p>任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。</p>
+<h3 id="symbol">Symbol</h3>
+<p>符号，它是唯一的并且是不可修改的。</p>
+<h3 id="undefined">undefined</h3>
+<p>未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数</p>
+<h3 id="null">Null</h3>
+<p>空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。</p>
+<h3 id="原始值的储存原理">原始值的储存原理</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#8f5902;font-style:italic">// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#8f5902;font-style:italic">// a ： 10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#8f5902;font-style:italic">// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#8f5902;font-style:italic">// a ：10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#8f5902;font-style:italic">// 拷贝变量 10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#8f5902;font-style:italic">// b ：10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#8f5902;font-style:italic">// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#8f5902;font-style:italic">// a ：10（已关闭）
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span style="color:#8f5902;font-style:italic">// b ：10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#8f5902;font-style:italic">// a ：20 （新的变量 a）
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#8f5902;font-style:italic"></span>
+</code></pre></div><h2 id="引用值">引用值</h2>
+<p>引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</p>
+<h3 id="array">Array</h3>
+<p>数组，用于构造数组的全局对象，它是类似于列表的高阶对象。</p>
+<h3 id="function">Function</h3>
+<p>函数，所有的函数都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。</p>
+<h3 id="object">Object</h3>
+<p>对象，Object 构造函数用于创建一个对象包装器。</p>
+<h3 id="regexp">RegExp</h3>
+<p>用于将文本与一个模式匹配。</p>
+<h3 id="data">Data</h3>
+<p>日期，用于呈现时间中的某一时刻。</p>
+<h3 id="原始值的储存原理-1">原始值的储存原理</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#8f5902;font-style:italic">// 储存模式--------------------------------------------------
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">];</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#8f5902;font-style:italic">// 在栈内存的第一层中创建一个 变量 arr，然后在变量 arr 中放一个指向堆内存第一层的链接地址，
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#8f5902;font-style:italic">// 再将数组 [1 , 2] 放到堆内存的第一层中。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#8f5902;font-style:italic">// arr：指向 [1, 2] 的地址          [ 1 , 2 ]
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">brr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">;</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#8f5902;font-style:italic">// 在栈内存第二层中创建一个变量 brr，然后将栈内存第一层中变量 arr 中的链接地址拷贝到变量 brr 中，
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#8f5902;font-style:italic">// 则变量 brr 与 变量 arr 中的链接地址都指向堆内存第一层中的数组[ 1 , 2 ]。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#8f5902;font-style:italic">// arr：指向 [ 1 , 2 ] 的地址       [ 1 , 2 ]
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#8f5902;font-style:italic">//         ? 拷贝
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#8f5902;font-style:italic">// brr：指向 [ 1 , 2 ] 的地址
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">push</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span style="color:#8f5902;font-style:italic">// 通过栈内存第一层的变量 arr 中的链接地址找到堆内存的第一层中的数组 [1 , 2]，
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#8f5902;font-style:italic">// 然后向这个数组中添加一个数值 3，则堆内存第一层中的的数组变为了 [ 1 , 2 , 3 ]。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#8f5902;font-style:italic">// 因此栈内存第一层的 变量 arr 与第二层的变量 brr 中的链接地址都指向堆内存第一层中的数组 [1,2,3]。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#8f5902;font-style:italic">// arr：指向[1 , 2 ,3]的地址        [1 , 2 ,3]
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span style="color:#8f5902;font-style:italic">// brr：指向[1 , 2 ,3]的地址
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
+<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span style="color:#8f5902;font-style:italic">// 找到栈内存第一层中的 变量 arr，将该变量中的链接地址改为指向堆内存第二层中的数组 [4 , 5] 的地址，
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span style="color:#8f5902;font-style:italic">// 再将数组 [ 4 , 5 ] 放到堆内存第二层中。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span style="color:#8f5902;font-style:italic">// 此时变量 arr 中链接地址指向的是堆内存第二层中的数组[ 4 , 5 ]，
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span style="color:#8f5902;font-style:italic">// 但变量 brr 中的链接地址依旧指向堆内存第一层中的数组 [ 1 , 2 , 3 ]。
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#8f5902;font-style:italic">// arr：指向[ 4, 5 ]的地址         [ 1 , 2 , 3 ]
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span style="color:#8f5902;font-style:italic">// brr：指向[ 1 , 2 ,3 ]的地址       [4 , 5]
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span style="color:#8f5902;font-style:italic"></span>
+</code></pre></div>
+      </div>
+      
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+          学习笔记
+        </a>
+      </div>
+      
+      <div class="PostTag">
+        <a href="/Sub/Blog/tags/javascript/">
+          JavaScript
+        </a>
+      </div>
+      
+    </article>
+          
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#原始值">原始值</a>
+      <ul>
+        <li><a href="#number">Number</a></li>
+        <li><a href="#string">String</a></li>
+        <li><a href="#boolean">Boolean</a></li>
+        <li><a href="#bigint">BigInt</a></li>
+        <li><a href="#symbol">Symbol</a></li>
+        <li><a href="#undefined">undefined</a></li>
+        <li><a href="#null">Null</a></li>
+        <li><a href="#原始值的储存原理">原始值的储存原理</a></li>
+      </ul>
+    </li>
+    <li><a href="#引用值">引用值</a>
+      <ul>
+        <li><a href="#array">Array</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#object">Object</a></li>
+        <li><a href="#regexp">RegExp</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#原始值的储存原理-1">原始值的储存原理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    
+    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+		<use href="#Icon-ToTheTop"></use>
+	</svg>
+</a>
+
+
+
+    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+
+
+
+
+  </body>
+
+</html>
