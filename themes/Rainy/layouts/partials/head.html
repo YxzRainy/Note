@@ -38,17 +38,11 @@
   <meta property="og:image" content="{{ .Params.album }}" />
   {{ end }}
 
-  {{ with resources.Get "css/index.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/index.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Base.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Hover.css">
 
-  {{ with resources.Get "css/Base.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
 
-  {{ with resources.Get "css/Hover.css" | minify }}
-  <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
 
 
   {{ range .Site.Params.extraCSSFiles -}}

@@ -14,7 +14,6 @@
             <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
           </div>
 
-
           <div class="PostsDates">
             <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "2006/01/02" }}</time>
           </div>
@@ -27,9 +26,6 @@
     {{ partial "footer.html" . }}
 
     {{ partial "scripts.html" . }}
-    <script src="../../js/Search.js"></script>
-    <script src="../../js/Main.js"></script>
-    
 
   </body>
 

@@ -1520,6 +1520,16 @@ git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</descript
     </item>
     
     <item>
+      <title>Git 远程库更改默认分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
+      <description>远程库更改默认分支 我们在Github上更改仓库的默认分支后，或更改了分支名后，我们需要在本地库下执行以下代码
+1git branch -m master Diary 2git fetch origin 3git branch -u origin/Diary Diary 4git remote set-head origin -a </description>
+    </item>
+    
+    <item>
       <title>Git 配置别名</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
@@ -1545,15 +1555,6 @@ git branch简写为git br
       <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
 git config --global user.name &amp;quot;YxzRainy&amp;quot;git config --global user.email &amp;quot;1@qq.com&amp;quot;查看配置 配置好之后可以使用git config -l查看配置：
 git config -l</description>
-    </item>
-    
-    <item>
-      <title>Git 重命名远程库后</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
-      <description>重命名远程库后 1git branch -m master Web 2git fetch origin 3git branch -u origin/Web Web 4git remote set-head origin -a </description>
     </item>
     
     <item>

@@ -1635,17 +1635,6 @@ SO&amp;hellip;&amp;hellip;
     </item>
     
     <item>
-      <title>爽文的价值</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E7%88%BD%E6%96%87%E7%9A%84%E4%BB%B7%E5%80%BC/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E7%88%BD%E6%96%87%E7%9A%84%E4%BB%B7%E5%80%BC/</guid>
-      <description>爽文的价值 一个爽文套路，我们把他的背景换一下，完全可以构造出不同的观感。
-假如更加彻底的改动，但是保留套路呢？
-能不能摇身一变变成严肃文学</description>
-    </item>
-    
-    <item>
       <title>登录宝塔</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -1826,7 +1815,7 @@ Putty 用于Windows从本地登陆到远程 Linux 服务器
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E9%98%85%E8%AF%BB%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      <description>阅读是什么 我上大学去买烧烤，烧烤摊老板说，现在的大学生，不知道学了这么久都学了什么。每天有饭吃有学上，图书馆那么大，还动不动觉得生活没意义，我看还是游戏打的太多。
+      <description>阅读是什么 不久前，网上看到的一个答案，我觉得非常不错。 我上大学去买烧烤，烧烤摊老板说，现在的大学生，不知道学了这么久都学了什么。每天有饭吃有学上，图书馆那么大，还动不动觉得生活没意义，我看还是游戏打的太多。
 我就微笑了一下。
 他说，你还别不信，你看过唐吉诃德么？
 我说，看过啊。
@@ -2989,6 +2978,16 @@ git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</descript
     </item>
     
     <item>
+      <title>Git 远程库更改默认分支</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
+      <description>远程库更改默认分支 我们在Github上更改仓库的默认分支后，或更改了分支名后，我们需要在本地库下执行以下代码
+1git branch -m master Diary 2git fetch origin 3git branch -u origin/Diary Diary 4git remote set-head origin -a </description>
+    </item>
+    
+    <item>
       <title>Git 配置别名</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
@@ -3014,15 +3013,6 @@ git branch简写为git br
       <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
 git config --global user.name &amp;quot;YxzRainy&amp;quot;git config --global user.email &amp;quot;1@qq.com&amp;quot;查看配置 配置好之后可以使用git config -l查看配置：
 git config -l</description>
-    </item>
-    
-    <item>
-      <title>Git 重命名远程库后</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
-      <description>重命名远程库后 1git branch -m master Web 2git fetch origin 3git branch -u origin/Web Web 4git remote set-head origin -a </description>
     </item>
     
     <item>
@@ -3970,6 +3960,17 @@ z-index 的值，该值越大，则越靠近用户。
 层叠上下文的元素，它本身永远被父级包含内，哪怕该元素设置了 z-index:-9999，它也只能包含于自身父元素的层叠上下文中。
 每一个层叠上下文的元素，它们都完全独立于同级的元素，当处理层叠上下文时只会考虑自己的子元素。
 创建层叠上下文的元素  根元素（html）。 Position 值为 absolute 或 relative 且 z-index 值不为 auto 的元素。 Opacity 的值小于 1 的元素。  优先级  同一个层叠上下文中，元素从底部到顶部的优先级 创建层叠上下文元素的背景和边框。 z-index 的值为负的层叠上下文元素。 常规流非定位元素的块盒。 非定位的浮动流。 常规流非定位行盒。 任何 z-index 属性值为 auto 的定位子元素，以及 z-index 为 0 的元素。 z-index 的值为正的元素。  </description>
+    </item>
+    
+    <item>
+      <title>爽文的价值</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E7%88%BD%E6%96%87%E7%9A%84%E4%BB%B7%E5%80%BC/</link>
+      <pubDate>Tue, 05 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E7%88%BD%E6%96%87%E7%9A%84%E4%BB%B7%E5%80%BC/</guid>
+      <description>爽文的价值 一个爽文套路，我们把他的背景换一下，完全可以构造出不同的观感。
+假如更加彻底的改动，但是保留套路呢？
+能不能摇身一变变成严肃文学</description>
     </item>
     
     <item>
