@@ -9,18 +9,14 @@
 
   {{- if .Site.Params.staticPrefix -}}
   <link rel="dns-prefetch" href="{{ .Site.Params.staticPrefix }}" />
-  {{- end -}}
-
-  {{- if .Site.Params.favicon -}}
+  {{- end -}} {{- if .Site.Params.favicon -}}
   <link rel="apple-touch-icon" href="{{ .Site.Params.favicon }}" />
   <link rel="icon" href="{{ .Site.Params.favicon }}" />
   <link rel="shortcut" href="{{ .Site.Params.favicon }}" />
   {{- end -}}
-  <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}index.xml" title="{{ .Site.Title }}">
+  <link rel="alternate" type="application/atom+xml" href="{{.Site.BaseURL}}index.xml" title="{{ .Site.Title }}" />
 
-  {{ partial "seo" . }}
-
-  {{- if .IsHome -}}
+  {{ partial "seo" . }} {{- if .IsHome -}}
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:type" content="website" />
@@ -38,34 +34,28 @@
   <meta property="og:image" content="{{ .Params.album }}" />
   {{ end }}
 
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/index.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Base.css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Hover.css">
-
-
-
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/index.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Base.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/Hover.css" />
 
   {{ range .Site.Params.extraCSSFiles -}}
-  <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}">
+  <link rel="stylesheet" href="{{ $.Site.Params.staticPrefix }}{{ . | relURL }}" />
   {{- end }}
-
-  <link href="{{ .Site.Params.staticPrefix }}{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml"
-    title="{{ .Site.Title }}">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+  <link href="{{ .Site.Params.staticPrefix }}{{ " index.xml" | relURL }}" rel="alternate" type="application/rss+xml"
+          title="{{ .Site.Title }}">
   <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+    (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
   </script>
 
   {{ if .Site.Params.TwitterCards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
   {{ .Site.Params.extraHead | safeHTML }}
   <script>
     var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
+    (function () {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+      var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(hm, s);
     })();
-    </script>
+  </script>
 </head>

@@ -27,11 +27,9 @@ paginate = 12
 
 [author]
   name = "Rainy"
-  homepage = "https://yxzi.xyz"
 
 [params]
   mainSections = ["mynote"]
-
   favicon = 'https://yxzi.xyz/Logo.ico'
 
 
