@@ -93,7 +93,7 @@ Python
 
 ## Dev++
 
-C 
+C
 
 ## [Win SCP](https://winscp.en.softonic.com/)
 
@@ -102,4 +102,3 @@ C
 ## [Xshell](https://xshell.en.softonic.com/)
 
 服务器终端，登录 Linux 虚拟服务器
-

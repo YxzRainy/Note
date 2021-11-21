@@ -13,15 +13,12 @@
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>shh 取代 telnet command
-输入密码，链接
+      <description>ssh 取代 telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
+输入密码并登录。
 保护密码
-进特权
-保存
-进全局模式，加密密码 Serverce password-encryption
-ssh加密通信 ip domian-name username
-ip ssh version 2
-crypto key generate rsa</description>
+进入特权模式，保存
+加密密码 在全局模式下：
+Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa</description>
     </item>
     
     <item>
@@ -39,7 +36,7 @@ crypto key generate rsa</description>
 配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
 核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
 注意，一下内容前面的注释符号**#**请删掉。
-1AuthorizedKeysFile .ssh/authorized_keys2PasswordAuthentication no</description>
+AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     </item>
     
     <item>

@@ -11,14 +11,11 @@ tags:
         - 学习笔记
 ---
 
-
 # Vs Code 插件
 
 ## Bracket Pair Colorizer
 
 给匹配的括号着色
-
-
 
 ## Path Intellisense
 
@@ -53,3 +50,11 @@ tags:
 ## Code Runner
 
 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等
+
+## Easy LESS
+
+保存less文件后，自动生成css文件到当前路径
+
+## px to rem & rpx
+
+实现 px 和 rem 单位之间转换，并支持 WXSS。

@@ -13,25 +13,12 @@
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>shh 取代 telnet command
-输入密码，链接
+      <description>ssh 取代 telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
+输入密码并登录。
 保护密码
-进特权
-保存
-进全局模式，加密密码 Serverce password-encryption
-ssh加密通信 ip domian-name username
-ip ssh version 2
-crypto key generate rsa</description>
-    </item>
-    
-    <item>
-      <title>Cisco Trunk 和 Access</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</guid>
-      <description>Trunk 和 Access trunk 运行通过多个VLAN。
-access，只允许通通过单个VLAN。</description>
+进入特权模式，保存
+加密密码 在全局模式下：
+Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa</description>
     </item>
     
     <item>
@@ -40,32 +27,7 @@ access，只允许通通过单个VLAN。</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/vlan-%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
-      <description>vlan 相关操作 删除vlan分配
-conf t
-interface f 0/18
-no switchport access vlan
-接入模式 等于下行模式
-interface f 0/18
-switchport mode access
-switchport mode access
-验证端口状态
-删除vlan
-no vlan 20
-show vlan summary，
-show vlan brief，
-show interface vlan 20
-show interface f0-/18 switchport
-进全局
-vlan 10
-name student
-exit
-interface f0/12
-switchport acces vlan 10 （指定删除10，不加10相当于删除全部？）
-end
-show vlan brief
-确定划分完成
-interface 0/12
-no switchport vlan 10</description>
+      <description>vlan 相关操作 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 ip enable interface vlan 1 S1(config-if)#ip address 192.168.10.1 255.255.255.0 </description>
     </item>
     
     <item>
@@ -75,9 +37,7 @@ no switchport vlan 10</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
       <description>配置中继 进交换机的全局
-interface 需要配置的接口
-switchport mode trunk
-switchport trunk native vlan 99</description>
+interface f 0/1 switchport mode trunk switchport trunk native vlan 99 </description>
     </item>
     
     <item>
@@ -86,34 +46,7 @@ switchport trunk native vlan 99</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
-      <description>配置交换机端口安全 进全局模式
-interface f 0/1
-switchport mode access
-switch port-security
-exit
-interface f 0/2
-switchport mode access
-switch port-security
-exit
-interface f 0/1
-switchport port-security maximum 1
-exit
-interface f 0/2
-switchport port-security maximum 1
-exit
-interface f 0/1
-switchport port-security mac-address sticky
-no shutdown
-exit
-interface f 0/2
-switchport port-security mac-address sticky
-no shutdown
-exit
-interface range f 0/1-10
-no shutdown
-exit
-interface f 0/1
-switchport port-security violation restrict</description>
+      <description>配置交换机端口安全 进入全局模式 enable configure terminal 配置端口模式 interface f 0/1 switchport mode access //将端口的工作模式设置为 access。 打开端口的安全模式 switch port-security //开启f0/1端口的安全功能 switchport port-security maximum 1 // 配置该端口的最大连接数为 1（最大能配置为128 switch） switchport port-security mac-address sticky // 让交换机口主动记下最先插入设备的 MAC 地址。 switchport port-security violation restrict //针对不合法的MAC地址连接该端口，配置端口的处理模式为：（protect[丢弃数据包，不发警告] | restrict[丢弃数据包，在 console 发警告] | shutdown[关]） no shutdown 、 exit </description>
     </item>
     
     <item>
@@ -122,32 +55,22 @@ switchport port-security violation restrict</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置单臂路由 三个 pc，一个交换机在中间，一个路由器在交换机上面
-分别将交换机和路由器连起来
-配置交换机 进入交换机
-进全局，改名 S1
-创建vlan vlan 10 ，退出
-vlan 20，退出
-vlan30，退出
-将指定 access 端口分配给指定 vlan interface f 0/3
-switchport acces vlan 20
-exit
-interface f 0/2
-switchport acces vlan 10
-exit
-interface f 0/4
-switchport acces vlan 30
-exit
-将二层端口配置成 trunk 端口 interface g 0/1
-switchport mode trunk
-配置路由器 进路由器
-进全局，改名 R1
-interface g 0/0.1
-enc dot1Q 10
-ip address 192.168.2.2（pc的默认网关）255.255.255.0
-exit
-interface g 0/0.2
-enc dot1Q 20</description>
+      <description>配置单臂路由 拓扑图 三台 pc
+中间一台交换机
+一台路由器在交换机上方
+将交换机与路由器连起来
+配置交换机 进全局模式 enable configure terminal 修改交换机的名字 hostname S1 创建 Vlan vlan 10exitvlan 20exitvlan 30exit将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk配置路由器 进入全局模式进全局，并改名
+enableconfigure terminalhostname R1配置虚拟子端口 interface g 0/0.</description>
+    </item>
+    
+    <item>
+      <title>思科交换机相关概念</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E6%80%9D%E7%A7%91%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E6%80%9D%E7%A7%91%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</guid>
+      <description>思科交换机相关概念 Trunk 和 Access trunk 行通过多个 VLAN。
+access 只允许通通过单个 VLAN。</description>
     </item>
     
   </channel>

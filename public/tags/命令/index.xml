@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 命令</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</guid>
       <description>Hugo 命令 hugo new site MyBlog 创建一个新的站点文件夹
 hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</description>
     </item>
@@ -26,7 +26,7 @@ hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</descript
       <description>git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
 git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
 git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
-添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add 1git add FileName1 2git add FileName2 3git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</description>
+添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add git add FileName1 git add FileName2 git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ git branch &amp;ndash;set-upstream-to=origin/dev LocalDev 将名为LocalDev的�
 $ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
 git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
-1git branch BranchName 2git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
+git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</description>
     </item>
     
@@ -86,7 +86,10 @@ git clone RemoteAddress 克一个RemoteAddress到本地。</description>
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
       <description>git commit 将暂存区中的内容添加到本地仓库，相当于确认提交暂存区中的内容。
 每次使用git commit命令我们都会在本地版本库生成一个 40 位的哈希值，这个哈希值也叫 commit-id， commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过与git reset的组合命令回到这里.
-git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。</description>
+git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。
+常见错误 用 git 提交的时候，报错:
+pathspec &amp;#39;commit&amp;#39;&amp;#39; did not match any file(s) known to git 后来发现用单引号提交报错，改成双引号就成功了
+git commit -m &amp;#34;first commit&amp;#34; </description>
     </item>
     
     <item>
@@ -96,7 +99,7 @@ git commit -m ‘message’ -m 参数表示可以直接输入后面的 “messag
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
       <description>git config alias git config alias.ShorthandName OriginalName 将git OriginalName命令修改（通常为简写）为git ShorthandName，且只对当前 Git 仓库有效，配置文件在当前仓库的**.git/config**中。
-git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在C盘用户目录下的一个**.gitconfig**文件中。</description>
+git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在 C 盘用户目录下的一个**.gitconfig**文件中。</description>
     </item>
     
     <item>
@@ -125,7 +128,7 @@ git config &amp;ndash;global user.name &amp;ldquo;UserName&amp;rdquo; git config
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
       <description>git log 可以让我们查看从最近到最远所有的历史提交日志，每条日志中有对应的版本号，这个版本号可以让我们回退到指定版本号的那个版本。
-git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b向上翻页 q退出
+git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b 向上翻页 q 退出
 git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。</description>
     </item>
     
@@ -176,9 +179,9 @@ git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
       <description>git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
-git rebase BranchName git rebase会把当前分支master的每个commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
+git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
 当master分支更新之后，它会指向原来BranchName分支上的commit，而那些原本在自己身上的commit已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。
-因为原本在master分支上的commit被丢弃了，因此，这时候的分支就变为了一条直线，
+因为原本在master分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，
 与 git merge 的区别 当我们使用Git log来参看commit时，其commit的顺序也有所不同。</description>
     </item>
     

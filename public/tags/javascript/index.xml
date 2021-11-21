@@ -6,16 +6,18 @@
     <description>Recent content in JavaScript on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>博客添加搜索功能</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      <title>var 和 let 的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
-      <description>博客添加搜索功能 HTML代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
-1&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; 2 &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; 3 &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; 4 &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; 5	&amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 6&amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
-CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 5 line-height: 30px; 6 padding-right: 10px; 7} 8 9.search .search-icon { 10 float: right; 11 height: 100%; 12 margin: 0 10px; 13 line-height: 30px; 14 cursor: pointer; 15 user-select: none; 16} 17 18.</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
+在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
+而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
+let 不能在定义之前访问该变量，但是 var 可以。 let 必须先声明，在使用。而 var 先使用后声明也行，只不过直接使用但没有定义的时候，其值是 undefined。var 有一个变量提升的过程，当整个函数作用域被创建的时候，实际上 var 定义的变量都会被创建，并且如果此时没有初始化的话，则默认为初始化一个 undefined
+let 不能被重新定义，但是 var 是可以的 </description>
     </item>
     
     <item>
@@ -51,7 +53,7 @@ arguments 对象不是一个 Array ；但它类似于 Array，但除了有 lengt
 Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
 注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
 该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
-1function demo(name, age) { 2	this.name = name; 3	this.age = age; 4	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 5	// 所以这里相当于 test.name 与 test.age 6} 7var a = new demo(&amp;#39;zxy&amp;#39;, 100); 8var test = {}; 9demo.</description>
+function demo(name, age) { this.name = name; this.age = age; // 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.</description>
     </item>
     
     <item>
@@ -60,7 +62,7 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</guid>
-      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回false。
+      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
 如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
 返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
     </item>
@@ -74,9 +76,9 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
 引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
 计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
-在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持52位，就会出现运算精度不准的问题。
+在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754 标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持 52 位，就会出现运算精度不准的问题。
 1000000000000001 + 1000000000000001 = 2000000000000002，即在 JavaScript 中，可正常计算范围在小数点前 16 位与后 16 位。
-1function One() { 2	for (var c = 0; c &amp;lt; 18; c++) { 3	var d = Math.random().toFixed(2) * 100; 4	// 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 5	var e = Math.</description>
+function One() { for (var c = 0; c &amp;lt; 18; c++) { var d = Math.random().toFixed(2) * 100; // 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 	var e = Math.</description>
     </item>
     
     <item>
@@ -97,7 +99,7 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</guid>
       <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
- 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 1var a = 1971; 2var b = 10; 3var c = 16; 4var d = parseInt(a, b); 5// 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 6var e = d.</description>
+ 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
     </item>
     
     <item>
@@ -107,7 +109,7 @@ Number 的方法 toString() NumObj.toString(radix)
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</guid>
       <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
-创建 Object 的方式 对象字面量 1var n = &amp;#39;世雨&amp;#39;; 2var a = &amp;#39;&amp;#39;; 3var object = { 4	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 5	b: &amp;#39;臣&amp;#39;, 6	// b 为属性名，臣为属性值 7	c: n, 8}; 9a = object.b + object.c; 10// 用变量 a 接收对象 object 的属性 b 与 c 的值。 11console.log(a); 12// 返回臣世雨 工厂模式 1function ThreeOne(color) { 2	this.color = color; 3	// color为可选参数 4	this.name = &amp;#39;bird&amp;#39;; 5	this.</description>
+创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { //var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, // b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { this.color = color; // color为可选参数 	this.name = &amp;#39;bird&amp;#39;; this.width = &amp;#39;500&amp;#39;; this.</description>
     </item>
     
     <item>
@@ -129,7 +131,7 @@ Number 的方法 toString() NumObj.toString(radix)
 将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
 当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
 若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
-1// n 进制转十进制-------------------------------------------------- 2var n = 10010; 3var c = 2; 4// 变量 n 可为 8，16，32。 5var a = parseInt(n, c); 6// 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 7console.log(a); </description>
+// n 进制转十进制-------------------------------------------------- var n = 10010; var c = 2; // 变量 n 可为 8，16，32。 var a = parseInt(n, c); // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 console.log(a); </description>
     </item>
     
     <item>
@@ -139,7 +141,7 @@ Number 的方法 toString() NumObj.toString(radix)
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</guid>
       <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
-字符串转数字 1var n = &amp;#39;18&amp;#39;; 2function demo(n) { 3	return +n; 4	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 5} 6var a = demo(n); 7console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
+字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { return +n; // 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
     </item>
     
     <item>
@@ -195,7 +197,7 @@ send 用于向服务端发送一个 HTTP 请求。
 它们通常指在全局中定义的变量或没有使用 var 声明的暗示全局变量。
 这些变量都在全局作用域中：  函数外声明的变量。 函数中没有使用 var 声明的变量。  局部作用域 局部作用域（AO 对象）中的变量为局部变量，局部变量的作用域仅限于某个特定的函数，这类变量可以在特定的函数中调用。
 每个函数内部都会创建一个局部作用域，当一个函数（父函数）中包含另一个函数（子函数），则父函数不能调用子函数的变量，但子函数可以调用父函数的变量；并且两个独立且同级的函数中的局部变量不能公用，只能各用各的局部变量。
-这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 1function One() { 2	var b = 0; 3	function Two() { 4	b++; 5	console.log(b); 6	} 7	a = Two; 8	// 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two 9} 10One(); 11//调用函数 One，使暗示全局变量 a 可以执行 12a(); 13// 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 14a(); 15a(); 作用域链 1function One() { 2	// 声明函数 One 时，系统会隐式创建 One.</description>
+这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 function One() { var b = 0; function Two() { b++; console.log(b); } a = Two; // 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two } One(); //调用函数 One，使暗示全局变量 a 可以执行 a(); // 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 a(); a(); 作用域链 function One() { // 声明函数 One 时，系统会隐式创建 One.</description>
     </item>
     
     <item>
@@ -208,7 +210,7 @@ send 用于向服务端发送一个 HTTP 请求。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
 声明方式 基本方式 直接通过 function 关键字进行声明。
-1function demo(a, b) { 2	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 3	console.log(a + b); 4	// 返回形参 a 与 b 的和 3。 5} 6demo(1, 2); 7// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） 8var c = demo.name; 9// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， 10// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 11console.log(c); 12// 返回函数 demo 的函数名 13 14//匿名函数方式-------------------------------------------------- 15var demo = function () { 16	console.</description>
+function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a + b); // 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { console.</description>
     </item>
     
     <item>
@@ -222,7 +224,7 @@ send 用于向服务端发送一个 HTTP 请求。
 函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
 函数运行结束的时候形参被释放，而实参内容不会改变。
 实参 实际参数，是在调用函数时传递给函数的参数， 实参可以是常量、变量、表达式、函数等， 无论实参是何种类型的量，在进行函数调用时，它们都必须具有确定的值， 以便把这些值传送给形参， 因此应预先用赋值，输入等办法使实参获得确定值。
-1function demo(a, b) { 2	// 定义两个形参。 3	var f, 4	g = &amp;#39;&amp;#39;; 5	for (var e = 0; e &amp;lt; arguments.length; e++) { 6	// arguments 对象的属性 length 表示实参（实参列表）的数量。 7	f = arguments[e]; 8	// 遍历所有实参 9	console.log(&amp;#39;遍历的实参:&amp;#39; + f); 10	} 11	g = arguments.length; 12	// 返回实参的数量 13	// arguments 对象类似数组，但却不是数组。 14	console.</description>
+function demo(a, b) { // 定义两个形参。 	var f, g = &amp;#39;&amp;#39;; for (var e = 0; e &amp;lt; arguments.length; e++) { // arguments 对象的属性 length 表示实参（实参列表）的数量。 	f = arguments[e]; // 遍历所有实参 	console.log(&amp;#39;遍历的实参:&amp;#39; + f); } g = arguments.length; // 返回实参的数量 	// arguments 对象类似数组，但却不是数组。 	console.log(&amp;#39;实参数量：&amp;#39; + g); } demo(10, 20, 30, 40); // 传入四个实参  实参的和 fjdkaj</description>
     </item>
     
     <item>
@@ -231,10 +233,10 @@ send 用于向服务端发送一个 HTTP 请求。
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
-      <description>分支与循环 if 单一的 if 语句 1if (条件) { 2	要执行的语句块; 3} if else 语句 1if (条件) { 2	要执行的语句块; 3} else { 4	要执行的语句块; 5} 多重 if 语句嵌套 1if (条件) { 2	要执行的语句块; 3} else if (条件) { 4	要执行的语句块; 5} else { 6	要执行的语句块; 7} 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+      <description>分支与循环 if 单一的 if 语句 if (条件) { 要执行的语句块; } if else 语句 if (条件) { 要执行的语句块; } else { 要执行的语句块; } 多重 if 语句嵌套 if (条件) { 要执行的语句块; } else if (条件) { 要执行的语句块; } else { 要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
 另外，可以用函数表达式定义函数？
 switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
-1n = &amp;#39;老虎&amp;#39;; 2switch (n) { 3	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 4	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 5	// 可以使用 break 语句终止执行该代码块之后代码块。 6	case &amp;#39;老虎&amp;#39;: 7	case &amp;#39;虎&amp;#39;: 8	case &amp;#39;白虎&amp;#39;: 9	case &amp;#39;母老虎&amp;#39;: 10	console.</description>
+n = &amp;#39;老虎&amp;#39;; switch (n) { // 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 	// 可以使用 break 语句终止执行该代码块之后代码块。 	case &amp;#39;老虎&amp;#39;: case &amp;#39;虎&amp;#39;: case &amp;#39;白虎&amp;#39;: case &amp;#39;母老虎&amp;#39;: console.</description>
     </item>
     
     <item>
@@ -248,10 +250,10 @@ switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配�
 Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
 数字类型的对象可以进行学运算，但运算的结果，这个对象会变回原始类型的数值。
 String 将原始类型的字符串，转换为 String 对象，它的原型是 String.prototyp。
-当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete删掉，所以最终将属性 length 的值返回。
+当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete 删掉，所以最终将属性 length 的值返回。
 Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是 Boolean.prototyp。
 注意 因为 Number、String、boolean 它们本身重写了（用一个同名不同功能的方法覆盖系统自带的方法）一个 xxx.prototype.toString 方法，所以它们不会用原型上 Object.prototype 的 toString 方法。
-1var a = new Number(123); 2var b = new String(&amp;#39;yxz&amp;#39;); 3var c = new Boolean(&amp;#39;true&amp;#39;); 4console.log(typeof a); 5console.log(typeof b); 6console.log(typeof c); 7// 返回三个 object 数值包装类运算 1var num = new Number(123); 2//原始值 num 被进行包装类，因此它变成了 对象 123。 3console.</description>
+var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new Boolean(&amp;#39;true&amp;#39;); console.log(typeof a); console.log(typeof b); console.log(typeof c); // 返回三个 object 数值包装类运算 var num = new Number(123); //原始值 num 被进行包装类，因此它变成了 对象 123。 console.</description>
     </item>
     
     <item>
@@ -260,7 +262,7 @@ Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
-      <description>区分对象与数组 Constructor 1var arr = []; 2var obj = {}; 3var a = arr.constructor; 4console.log(a); 5// 返回数组。 6var b = obj.constructor; 7console.log(b); 8// 返回对象。 Instanceof 1var arr = []; 2 3var obj = {}; 4 5var a = arr instanceof Array; 6console.log(a); 7// 返回 true，因为变量 arr 是一个数组。 8var a = arr instanceof Object; 9console.log(a); 10// 返回 true，因为变量 arr 是一个数组类对象。 11var b = obj instanceof Array; 12console.log(b); 13// 返回 flase，因为变量 obj 不是一个数组。 14var b = obj instanceof Object; 15console.</description>
+      <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = []; var obj = {}; var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
     </item>
     
     <item>
@@ -270,10 +272,10 @@ Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</guid>
       <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
-__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
 声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
 原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
-1// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） 2// 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； 3// Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; 4// Demo.prototype.size = &amp;#34;500&amp;#34;; 5// Demo.prototype.height = &amp;#34;1400&amp;#34;; 6// Demo.prototype.width = &amp;#34;800&amp;#34;; 7//上面代码可以简化为： 8Demo.</description>
+// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） // 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； // Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; // Demo.prototype.size = &amp;#34;500&amp;#34;; // Demo.prototype.height = &amp;#34;1400&amp;#34;; // Demo.prototype.width = &amp;#34;800&amp;#34;; //上面代码可以简化为： Demo.</description>
     </item>
     
     <item>
@@ -298,12 +300,12 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
 Number 数值，用整数或浮点数表示，它允许任意位的小数。
 String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
 与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
-Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+Boolean 布尔，表示一个逻辑值，只有 true 或 false 两个值。
 BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
 Symbol 符号，它是唯一的并且是不可修改的。
 undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
 Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
-原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
+原始值的储存原理 a = 10; // 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 // 栈内存： // a ： 10 var b = a; // 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 // 栈内存： // a ：10 // 拷贝变量 10 // b ：10 a = 20; // 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 // 栈内存： // a ：10（已关闭） // b ：10 // a ：20 （新的变量 a） 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
     </item>
     
     <item>
@@ -326,7 +328,7 @@ var var 可以声明局部变量与全局变量。
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
       <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
 简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
-作用 私有化变量 1function Demo() { 2	var healthy = 0; 3	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 4	// 不能直接作为对象的属性或变量进行调用。 5	this.cure = function () { 6	healthy++; 7	}; 8 9	this.injured = function () { 10	healthy--; 11	}; 12 13	this.view = function () { 14	console.log(healthy); 15	}; 16} 17 18var demo = new Demo(); 19 20demo.view(); 21// 返回 0，调用构造函数的属性 view。 22demo.cure(); 23// 调用构造函数的属性 cure。，使变量 healthy 自增 1。 24demo.</description>
+作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy++; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this.</description>
     </item>
     
     <item>
@@ -345,7 +347,7 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
       <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
-1var demo = { 2	wife1: { name: &amp;#39;lei&amp;#39; }, 3	wife2: { name: &amp;#39;zheng&amp;#39; }, 4	wife3: { name: &amp;#39;xing&amp;#39; }, 5	wife4: { name: &amp;#39;zhu&amp;#39; }, 6	fun: function (num) { 7	var a = [&amp;#39;wife&amp;#39; + num]; 8	console.log(a); 9	return this[&amp;#39;wife&amp;#39; + num]; 10	// 看不太懂 11	}, 12}; 13 14demo.fun(1); 15demo.fun(2); 16demo.fun(3); 17demo.fun(4); </description>
+var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; + num]; console.log(a); return this[&amp;#39;wife&amp;#39; + num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
     </item>
     
     <item>
@@ -354,7 +356,7 @@ var var 可以声明局部变量与全局变量。
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
-      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与CSS 与 JavaScript 代码之外。
+      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
 平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
 向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
 性能考虑 减少访问 DOM 的和文档中标记的元素；过多的页面元素只会增大 DOM 树的规模。
@@ -369,11 +371,11 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
       <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
-用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
 只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
 多个 IIFE 之间要加分号。
-1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a + b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console.</description>
+var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Number(a); b = Number(b); var c = (a + b) * 10; // 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; // 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { // 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console.</description>
     </item>
     
     <item>
@@ -383,7 +385,7 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
       <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
-1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console.</description>
+Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son.</description>
     </item>
     
     <item>
@@ -401,6 +403,15 @@ nodeValue 返回或设置当前节点的值。
 注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
 nodeName 返回指定节点的大写字母形式的节点名。
 nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 获取当前时间</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -438,7 +449,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
       <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
 缺点：影响程序的效率与性能。
-递归实现阶乘 1var n = 5; 2function OneOne(n) { 3	if (n == 1) { 4	//将当 n 等于 1 时作为结束条件 5	return 1; 6	// 返回值为 1 7	} 8	return (n = n * OneOne(n - 1)); 9	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 10	// 使用递归计算 5 的阶乘的过程： 11	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 12	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 13	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 14	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 15	// OneOne(1); 当 n 等于 1 时，直接返回 1; 16} 17console.</description>
+递归实现阶乘 var n = 5; function OneOne(n) { if (n == 1) { //将当 n 等于 1 时作为结束条件 	return 1; // 返回值为 1 	} return (n = n * OneOne(n - 1)); // 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
     </item>
     
     <item>
@@ -448,7 +459,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
       <description>链式调用 模仿一个 jQuery 链式调用的方式。
-1var demo = { 2	a: function () { 3	console.log(123); 4	return this; 5	// 将函数自身返回。 6	}, 7 8	b: function () { 9	console.log(456); 10	return this; 11	// 将函数自身返回。 12	}, 13 14	c: function () { 15	console.log(789); 16	return this; 17	//将函数自身返回。 18	}, 19}; 20demo.a().b().c(); 21// 呈链式(连续)的调用对象 demo 的属性。 </description>
+var demo = { a: function () { console.log(123); return this; // 将函数自身返回。 	}, b: function () { console.log(456); return this; // 将函数自身返回。 	}, c: function () { console.log(789); return this; //将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
     </item>
     
     <item>
@@ -462,7 +473,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 闭包的优缺点 优点 避免全局变量的污染。
 使变量长期储存在内存中。
 缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
-1function demo() { 2	function test() { 3	var d = 345; 4	console.log(c); 5	// 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 6	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 7	} 8	var c = 123; 9	return test; 10	// 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 11	// 使的函数 demo 可以使用函数 test 的 AO 12} 13var e = demo(); 14// 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO 15e(); 16// 调用变量 e，即相当于执行函数 demo 的返回值 17// 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， 18// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 1function demo() { 2	var b = &amp;#39;apple&amp;#39;; 3	var obj = { 4	c: function () { 5	// 给对象 obj 添加一个属性 c ，属性值为一个函数 6	if (b !</description>
+function demo() { function test() { var d = 345; console.log(c); // 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 	} var c = 123; return test; // 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 	// 使的函数 demo 可以使用函数 test 的 AO } var e = demo(); // 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO e(); // 调用变量 e，即相当于执行函数 demo 的返回值 // 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， // 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 function demo() { var b = &amp;#39;apple&amp;#39;; var obj = { c: function () { // 给对象 obj 添加一个属性 c ，属性值为一个函数 	if (b !</description>
     </item>
     
     <item>
@@ -477,7 +488,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 变量声明提升 使用 var 声明的变量，不管在这之前还是之后调用该变量，并不会报错，会返回 undefined。
 暗示全局变量 暗示全局变量（imply global），一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性； 任何全局变量，都是 window 的属性，即可以通过 window 对象调用全局变量。window 就是全局的域，它包括了全局变量和全局函数。
 暗示全局变量不会进行变量声明提升。
-1a = 10; 2// 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 3// 相当于 4window.a = 10; 5// 相当于 6window = { 7	a: 10, 8}; 9 10//一切声明了的全局变量，都是 window 的属性 11var b = 20; 12// 相当于 13window.b = 20; 14// 相当于 15window = { 16	b: 20, 17}; 18// 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
+a = 10; // 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 // 相当于 window.a = 10; // 相当于 window = { a: 10, }; //一切声明了的全局变量，都是 window 的属性 var b = 20; // 相当于 window.b = 20; // 相当于 window = { b: 20, }; // 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
     </item>
     
   </channel>

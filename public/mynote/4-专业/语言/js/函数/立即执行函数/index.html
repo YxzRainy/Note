@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -22,7 +22,7 @@
 	    "articleSection" : "mynote",
 	    "name" : "JavaScript 立即执行函数",
 	    "headline" : "JavaScript 立即执行函数",
-	    "description" : "立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。\n用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。\n它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。\n只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。\n多个 IIFE 之间要加分号。\n1var demo = (function (a, b) { 2\t\/\/ 用变量 demo 接收 IIFE 的返回值 3\ta = Number(a); 4\tb = Number(b); 5\tvar c = (a \u002b b) * 10; 6\t\/\/ 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7\treturn c; 8\t\/\/ 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10\/\/ 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2\t\/\/ 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3\t\/\/ 因此再次调用变量 a 会返回 undefined 4\tconsole.",
+	    "description" : "立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。\n用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。\n它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。\n只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。\n多个 IIFE 之间要加分号。\nvar demo = (function (a, b) { \/\/ 用变量 demo 接收 IIFE 的返回值 \ta = Number(a); b = Number(b); var c = (a \u002b b) * 10; \/\/ 将变量 a 与 b 的和乘 10 的结果赋给变量 c \treturn c; \/\/ 将变量 c 作为该 IIFE 的返回值 })(10, 20); \/\/ 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { \/\/ 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined \t\/\/ 因此再次调用变量 a 会返回 undefined \tconsole.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -35,119 +35,111 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/%E5%87%BD%E6%95%B0\/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0\/",
 	    "keywords" : [ "学习笔记","JavaScript", ]
 	}
-</script>
-<title>JavaScript 立即执行函数</title>
-  <meta property="og:title" content="JavaScript 立即执行函数" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
-用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+</script><title>JavaScript 立即执行函数</title>
+    <meta property="og:title" content="JavaScript 立即执行函数" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
 只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
 多个 IIFE 之间要加分号。
-1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a &#43; b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console." />
-  <meta name="description" content="立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
-用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Number(a); b = Number(b); var c = (a &#43; b) * 10; // 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; // 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { // 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console." />
+    <meta name="description" content="立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
 只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
 多个 IIFE 之间要加分号。
-1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a &#43; b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console." />
-  <meta property="og:locale" content="zh-cn" />
+var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Number(a); b = Number(b); var c = (a &#43; b) * 10; // 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; // 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { // 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console." />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 立即执行函数</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">JavaScript 立即执行函数</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="立即执行函数">立即执行函数</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="立即执行函数">立即执行函数</h1>
 <p>立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。</p>
-<p>用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。</p>
+<p>用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，<strong>用于避免变量污染和命名冲突</strong>。</p>
 <p>它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。</p>
 <p>只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。</p>
 <p>多个 IIFE 之间要加分号。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>	<span style="color:#8f5902;font-style:italic">// 用变量 demo 接收 IIFE 的返回值
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Number</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span>	<span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Number</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span>	<span style="color:#8f5902;font-style:italic">// 将变量 a 与 b 的和乘 10 的结果赋给变量 c
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#8f5902;font-style:italic">// 将变量 c 作为该 IIFE 的返回值
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">})(</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#8f5902;font-style:italic">// 10 与 20 为实参
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#8f5902;font-style:italic">// 用变量 demo 接收 IIFE 的返回值
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Number</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Number</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 将变量 a 与 b 的和乘 10 的结果赋给变量 c
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 将变量 c 作为该 IIFE 的返回值
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">})(</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 10 与 20 为实参
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">);</span>
 </code></pre></div><h4 id="iife-的立即释放的特性">IIFE 的立即释放的特性</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span>	<span style="color:#8f5902;font-style:italic">// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 因此再次调用变量 a 会返回 undefined
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;函数的第一次调用&#39;</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span style="color:#000;font-weight:bold">})();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span style="color:#8f5902;font-style:italic">// 使用执行符 () 执行这个函数表达式，使得这个函数变为 IIFE。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;函数的第二次调用:&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span style="color:#8f5902;font-style:italic">// 因为变量 a 的值在执行一次后被释放了，所以再次调用变量 a 会返回 undefined
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#8f5902;font-style:italic">// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 因此再次调用变量 a 会返回 undefined
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;函数的第一次调用&#39;</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#000;font-weight:bold">})();</span>
+<span style="color:#8f5902;font-style:italic">// 使用执行符 () 执行这个函数表达式，使得这个函数变为 IIFE。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;函数的第二次调用:&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 因为变量 a 的值在执行一次后被释放了，所以再次调用变量 a 会返回 undefined
 </span></code></pre></div>
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/javascript/">
-          JavaScript
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -156,23 +148,18 @@
     </li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

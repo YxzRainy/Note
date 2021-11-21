@@ -10,6 +10,7 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git checkout
 
 ## $ git checkout --File
@@ -30,7 +31,7 @@ $ git checkout -- ReadMe.txt
 to track remote branch 'BranchName' from 'origin'.
 ```
 
-将当前分支切换到名为**BranchName**的分支 
+将当前分支切换到名为**BranchName**的分支
 
 ## git checkout -b BranchName
 
@@ -46,4 +47,3 @@ git checkout BranchName
 在本地创建一个名为**LocalBranch**的分支，并创建一个名为**RemoteBranch**的远程分支。
 
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。
-

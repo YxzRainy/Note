@@ -8,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # parselnt
 
 parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
@@ -27,4 +28,3 @@ var a = parseInt(n, c);
 // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。
 console.log(a);
 ```
-

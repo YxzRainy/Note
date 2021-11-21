@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  {{ partial "head.html" . }}
-  <!-- 文章页 -->
+    {{ partial "head.html" . }}
+    <!-- 文章页 -->
 
-  <body class="Wrap">
-    <article class="Post BorderBox {{ .Site.Language.LanguageName }} ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">{{ .Title }}</h1>
-        {{ if in .Site.Params.mainSections .Type }}
-        <div class="DateArea">
-          {{ if .Date }}
-          <time class="PostDate" datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">
-            {{ .Date.Format "2006.01.02" }}
-          </time>
-          {{ end }}
-        </div>
-        {{ end }}
-      </header>
+    <body class="Wrap">
+        <article class="Post BorderBox {{ .Site.Language.LanguageName }} ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">{{ .Title }}</h1>
+                {{ if in .Site.Params.mainSections .Type }}
+                <div class="DateArea">
+                    {{ if .Date }}
+                    <time class="PostDate" datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">
+                        {{ .Date.Format "2006-01-02" }}
+                    </time>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </header>
 
-      <!-- 正文 -->
-      <div class="PostContent">
-        {{ .Site.Params.postHeaderContent | safeHTML }}
-        {{ .Content }}
-      </div>
-      <!-- 底部标签 -->
-      {{ range .Params.tags }}
-      <div class="PostTag">
-        <a href="{{ site.LanguagePrefix }}/Sub/Blog/tags/{{ lower . | urlize }}/">
-          {{ . }}
-        </a>
-      </div>
-      {{ end }}
-    </article>
-          <!-- 目录 -->
-    {{ .TableOfContents }}
-    
-    {{ partial "footer.html" . }}
+            <!-- 正文 -->
+            <div class="PostContent">
+                {{ .Site.Params.postHeaderContent | safeHTML }}
+                {{ .Content }}
+            </div>
+            <!-- 底部标签 -->
+            {{ range .Params.tags }}
+            <div class="PostTag">
+                <a href="{{ site.LanguagePrefix }}/Sub/Blog/tags/{{ lower . | urlize }}/">
+                    {{ . }}
+                </a>
+            </div>
+            {{ end }}
+        </article>
+        <!-- 目录 -->
+        {{ .TableOfContents }}
 
-    {{ partial "scripts.html" . }}
+        {{ partial "footer.html" . }}
 
-  </body>
+        {{ partial "scripts.html" . }}
+    </body>
 
 </html>

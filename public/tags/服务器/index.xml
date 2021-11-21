@@ -22,7 +22,7 @@
 配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
 核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
 注意，一下内容前面的注释符号**#**请删掉。
-1AuthorizedKeysFile .ssh/authorized_keys2PasswordAuthentication no</description>
+AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     </item>
     
     <item>
@@ -33,8 +33,8 @@
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
       <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
-Putty 用于Windows从本地登陆到远程 Linux 服务器
-宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击open，进入到 Putty 的运行界面，提示 login as.
+Putty 用于 Windows 从本地登陆到远程 Linux 服务器
+宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击 open，进入到 Putty 的运行界面，提示 login as.
   在login as后输入用户名，一般都是 root，按 Enter。
   输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
   登陆完成。

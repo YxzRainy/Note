@@ -22,7 +22,9 @@ VS Code Counter 统计代码总行数、注释行数、空白行数，以及使�
 Power Mode 一款超级炫酷的编辑代码的插
 HTML Snippets 非常实用的 HTML 代码片段以及提示
 Atuo Rename Tag 修改 html 标签，自动帮你完成尾部闭合标签的同步修改
-Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等</description>
+Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等
+Easy LESS 保存less文件后，自动生成css文件到当前路径
+px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。</description>
     </item>
     
     <item>

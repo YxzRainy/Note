@@ -10,6 +10,7 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git add
 
 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用`git commit`命令进行提交了。
@@ -39,4 +40,3 @@ git add FileName3
 ## git add -f
 
 `git add .`不会添加被**.gitignore**忽略的文件，而`git add -f .` 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。
-

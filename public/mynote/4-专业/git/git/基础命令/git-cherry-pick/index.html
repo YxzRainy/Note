@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,125 +35,112 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-cherry-pick\/",
 	    "keywords" : [ "Git","命令","Github","学习笔记", ]
 	}
-</script>
-<title>Git git cherry-pick</title>
-  <meta property="og:title" content="Git git cherry-pick" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
+</script><title>Git git cherry-pick</title>
+    <meta property="og:title" content="Git git cherry-pick" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。
 git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。" />
-  <meta name="description" content="git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
+    <meta name="description" content="git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。
 git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。" />
-  <meta property="og:locale" content="zh-cn" />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git git cherry-pick</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">Git git cherry-pick</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="git-cherry-pick">git cherry-pick</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="git-cherry-pick">git cherry-pick</h1>
 <p>对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。</p>
 <p>这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（<code>git merge</code>）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。</p>
 <h2 id="git-cherry-pick-commithash">git cherry-pick commitHash</h2>
 <p>将指定的<strong>commitHash</strong>，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。</p>
 
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/git/">
-          Git
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
-          命令
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/github/">
-          Github
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
+                    命令
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#git-cherry-pick-commithash">git cherry-pick commitHash</a></li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

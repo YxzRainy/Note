@@ -19,7 +19,7 @@ tags:
 
 给当前分支上的**HEAD**打上名为**TagName**的标签。
 
-##  git tag TagName CommitId
+## git tag TagName CommitId
 
 给 commit id 为**CommitId**的提交打上名为**TagName**的标签。
 
@@ -30,4 +30,3 @@ tags:
 ## git tag -d TagName
 
 删除名为**TagName**的本地标签。
-

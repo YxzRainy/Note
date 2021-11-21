@@ -9,6 +9,7 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # 安装 Git
 
 ## 官网下载并安装
@@ -33,4 +34,3 @@ git config --global user email "Your Github Email"
 ```
 
 注意`git config`命令的`--global`参数，用了这个参数，表示你这台设备上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的 UserName 和 Email 地址。
-

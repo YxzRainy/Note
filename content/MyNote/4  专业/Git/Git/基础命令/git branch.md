@@ -10,13 +10,14 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git branch
 
 一般用于对分支的操作，比如创建分支，查看分支等等，
 
 ## git branch
 
-不带参数：列出本地已经存在的分支，并且在当前分支的前面用*****标记
+不带参数：列出本地已经存在的分支，并且在当前分支的前面用**\***标记
 
 一个新的本地仓库，必须在`git add`且`git commit`之后，再使用`git branch`命令，才能显示出本地分支`master`。
 
@@ -31,4 +32,3 @@ tags:
 ## git branch --set-upstream-to=origin/dev LocalDev
 
 将名为**LocalDev**的本地分支与名为**origin/dev**的远程分支相关联。
-

@@ -1,14 +1,15 @@
 ---
 title: Vs Code 配置 Java
 date: 2021-10-03 6:00:00
-updated: 2021-10-23 19:32:00
+updated: 2021-10-23 6:00:00
 categories:
         - 编程技术
 tags:
         - Java
         - 学习笔记
 ---
-#  Vs Code 配置 Java
+
+# Vs Code 配置 Java
 
 ## 安装 vscode
 
@@ -27,7 +28,6 @@ tags:
 5. 环境变量
 
 6. 系统变量
-
 
 ### 新建 JAVA_HOME 变量
 
@@ -49,9 +49,6 @@ tags:
 
 2. 值为：**.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;**
 
-
-
-
 ### 测试环境配置是否成功
 
 快捷键 Win + R，搜索 cmd 并 Enter，然后在命令行输入**java**以及**javac**.
@@ -70,11 +67,8 @@ Extension Pack for Java。
 
 Maven for Java
 
-
-
-## 创建一个java项目并运行
+## 创建一个 java 项目并运行
 
 1. 接下来打开 Vs Code，快捷键 Ctrl + shift + p，然后输入**create**，选择**No build tools**.
 2. 选择项目位置
 3. 在顶部对话框输入项目名称
-

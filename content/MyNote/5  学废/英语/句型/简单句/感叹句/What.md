@@ -11,13 +11,12 @@ tags:
         - 感叹句
         - 学习笔记
 ---
+
 # What
 
 what + 冠词（a、an） + 形容词 + 可数名词的单数 + 主语 + 谓语
 
 What a beautiful photo it is!（这照片它多美啊！）
-
-
 
 what + 形容词 + 不可数名词/名词复数 + 主语 + 谓语
 

@@ -8,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # Window 对象
 
 Window 对象表示浏览器中打开的窗口。

@@ -158,12 +158,10 @@
 	display: inline-block;
 	font-size: 1.6rem;
 	margin-left: 10%;
-
 }
 .PostTitle a {
 	font-weight: bold;
 	transition: all var(--TmOne) linear;
-
 }
 
 .PostTitle a:hover {
@@ -254,7 +252,6 @@
 	font-size: 3rem;
 	text-align: center;
 	font-weight: bold;
-	font-family: sans-serif;
 }
 .Post .PostHeader .post-title:after {
 	content: '';
@@ -478,13 +475,14 @@ table thead th {
 	border-radius: var(--Ri);
 	padding: 0rem 1rem;
 	padding-top: 1rem;
-	margin: 3rem 0;
+	margin: 2.5rem 0;
 	font-size: 1.4rem;
 	border: 0.1rem solid rgba(0, 0, 0, 0.11);
 	border-radius: var(--Ri);
 	letter-spacing: 0.2rem;
 	overflow-x: scroll;
 	background-color: var(--BrightCl) !important;
+	max-height: 100rem;
 }
 /* 行内代码块 */
 .PostContent code {

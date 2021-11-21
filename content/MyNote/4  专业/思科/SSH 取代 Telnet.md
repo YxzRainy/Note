@@ -12,37 +12,31 @@ tags:
         - 路由器
         - 学习笔记
 ---
-# shh 取代 telnet
 
-command
+# ssh 取代 telnet
 
+## 远程登录
 
+进入 PC 的 Desktop，选择 Command Prompt，
 
-输入密码，链接
-
-
+输入密码并登录。
 
 保护密码
 
+进入特权模式，保存
 
+## 加密密码
 
-进特权
+在全局模式下：
 
+```txt
+Serverce password-encryption
+```
 
+## SSH 加密通信
 
-保存
-
-
-
-进全局模式，加密密码 Serverce password-encryption
-
-
-
-## ssh加密通信
-
+```
 ip domian-name username
-
 ip ssh version 2
-
 crypto key generate rsa
-
+```

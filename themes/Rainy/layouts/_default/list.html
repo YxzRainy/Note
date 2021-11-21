@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
-  {{ partial "head.html" . }}
-  <!-- 标签页 -->
-  <body>
-    <article class="Main BorderBox">
-      <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
-      <div class="PostsArea">
-        {{ partial "header.html" . }}
-        {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
-        {{ range .Pages }}
-        <div class="PostsLines BorderBox">
-          <div class="PostTitles">
-            <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </div>
+    {{ partial "head.html" . }}
+    <!-- 标签页 -->
 
-          <div class="PostsDates">
-            <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST" }}">{{ .Date.Format "2006/01/02" }}</time>
-          </div>
-        </div>
-        {{ end }}
-        {{ end }}
-       
-      </div>
-    </article>
-    {{ partial "footer.html" . }}
+    <body>
+        <article class="Main BorderBox">
+            <h1 id="Title" class="MainTitle">{{.Data.Term}}</h1>
+            <div class="PostsArea">
+                {{ partial "header.html" . }}
+                {{ range (where .Data.Pages "Type" "in" site.Params.mainSections).GroupByDate "2006" -}}
+                {{ range .Pages }}
+                <div class="PostsLines BorderBox">
+                    <div class="PostTitles">
+                        <a class="hvr-underline-from-center" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </div>
 
-    {{ partial "scripts.html" . }}
+                    <div class="PostsDates">
+                        <time datetime="{{ .Date.Format " 2006-01-02 15:04:05 MST"
+                                }}">{{ .Date.Format "2006/01/02" }}</time>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
 
-  </body>
+            </div>
+        </article>
+        {{ partial "footer.html" . }}
+
+        {{ partial "scripts.html" . }}
+
+    </body>
 
 </html>

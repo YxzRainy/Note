@@ -10,6 +10,7 @@ tags:
         - 网络安全
         - 学习笔记
 ---
-# WinSCP  SSH 密钥登录
+
+# WinSCP SSH 密钥登录
 
 WinSCP -> 高级 -> SSH -> 验证 -> 密钥文件

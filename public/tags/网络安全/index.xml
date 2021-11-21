@@ -22,7 +22,7 @@
 配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
 核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
 注意，一下内容前面的注释符号**#**请删掉。
-1AuthorizedKeysFile .ssh/authorized_keys2PasswordAuthentication no</description>
+AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     </item>
     
     <item>

@@ -10,15 +10,16 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git config user
 
-## git config user.name "UserName" 
+## git config user.name "UserName"
 
 ## git config user.email "Email"
 
 对当前仓库设置名为**UserName**的用户名和名为**Email**的邮箱。
 
-## git config --global user.name "UserName" 
+## git config --global user.name "UserName"
 
 ## git config --global user.email "Email"
 

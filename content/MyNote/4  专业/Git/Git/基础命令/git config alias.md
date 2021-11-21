@@ -10,6 +10,7 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git config alias
 
 ## git config alias.ShorthandName OriginalName
@@ -18,5 +19,4 @@ tags:
 
 ## git config --global alias.ShorthandName OriginalName
 
-加上`--global`参数可以对当前用户下的所有仓库起作用，配置文件在C盘用户目录下的一个**.gitconfig**文件中。
-
+加上`--global`参数可以对当前用户下的所有仓库起作用，配置文件在 C 盘用户目录下的一个**.gitconfig**文件中。

@@ -13,10 +13,10 @@
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
-      <description>实现居中 绝对定位 兼容性不错的主流css绝对定位居中的用法：
-1.conter{ 2 width: 600px; height: 400px; 3 position: absolute; left: 50%; top: 50%; 4 margin-top: -200px; /* 高度的一半 */ 5 margin-left: -300px; /* 宽度的一半 */ 6} 绝对定位 css3的出现，使得有了更好的解决方法，就是使用transform代替margin. transform中translate偏移的百分比值是相对于自身大小的，可以这样实现css绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
-1position: absolute; 2left:50%; 3top:50%; 4transform:translate(-50%,-50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
-1display: flex; 2flex-direction: row; 3justify-content: center; 4align-items: center; 1display: flex; 2flex-direction: column; 3justify-content: center; 4align-items: center; 文本实现垂直居中 1display: flex; 2align-items: center; </description>
+      <description>实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
+.conter { width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
+display: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; </description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
-      <description>高斯模糊 1 backdrop-filter:blur(0.5rem); </description>
+      <description>高斯模糊 backdrop-filter: blur(0.5rem); </description>
     </item>
     
   </channel>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -22,7 +22,7 @@
 	    "articleSection" : "mynote",
 	    "name" : "Git 标签管理",
 	    "headline" : "Git 标签管理",
-	    "description" : "标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。\nGit 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。\nGit 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是6a5819e\u0026hellip;\n一串乱七八糟的数字不好找！\n如果换一个办法：\n请把上周一的那个版本打包发布，版本号是 v1.2\n“好的，按照 tag v1.2 查找 commit 就行！”\n所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。",
+	    "description" : "标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。\nGit 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。\nGit 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是 6a5819e\u0026hellip;\n一串乱七八糟的数字不好找！\n如果换一个办法：\n请把上周一的那个版本打包发布，版本号是 v1.2\n“好的，按照 tag v1.2 查找 commit 就行！”\n所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -35,134 +35,121 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script>
-<title>Git 标签管理</title>
-  <meta property="og:title" content="Git 标签管理" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+</script><title>Git 标签管理</title>
+    <meta property="og:title" content="Git 标签管理" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。
-Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是6a5819e&amp;hellip;
+Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是 6a5819e&amp;hellip;
 一串乱七八糟的数字不好找！
 如果换一个办法：
 请把上周一的那个版本打包发布，版本号是 v1.2
 “好的，按照 tag v1.2 查找 commit 就行！”
 所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。" />
-  <meta name="description" content="标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
+    <meta name="description" content="标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。
-Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是6a5819e&amp;hellip;
+Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是 6a5819e&amp;hellip;
 一串乱七八糟的数字不好找！
 如果换一个办法：
 请把上周一的那个版本打包发布，版本号是 v1.2
 “好的，按照 tag v1.2 查找 commit 就行！”
 所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。" />
-  <meta property="og:locale" content="zh-cn" />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git 标签管理</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">Git 标签管理</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="标签管理">标签管理</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="标签管理">标签管理</h1>
 <p>发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。</p>
 <p>Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。</p>
 <h2 id="git-有-commit为什么还要引入-tag">Git 有 commit，为什么还要引入 tag？</h2>
-<p>请把上周一的那个版本打包发布，commit 号是6a5819e&hellip;</p>
+<p>请把上周一的那个版本打包发布，commit 号是 6a5819e&hellip;</p>
 <p>一串乱七八糟的数字不好找！</p>
 <p>如果换一个办法：</p>
 <p>请把上周一的那个版本打包发布，版本号是 v1.2</p>
 <p>“好的，按照 tag v1.2 查找 commit 就行！”</p>
 <p>所以，tag 就是一个让人容易记住的有意义的名字，它跟某个 commit 绑在一起。</p>
 
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/git/">
-          Git
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/github/">
-          Github
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#git-有-commit为什么还要引入-tag">Git 有 commit，为什么还要引入 tag？</a></li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

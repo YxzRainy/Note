@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,11 +35,10 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/xmlhttprequest\/",
 	    "keywords" : [ "学习笔记","JavaScript", ]
 	}
-</script>
-<title>JavaScript XMLHttpRequest</title>
-  <meta property="og:title" content="JavaScript XMLHttpRequest" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+</script><title>JavaScript XMLHttpRequest</title>
+    <meta property="og:title" content="JavaScript XMLHttpRequest" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
 XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
 状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
 responseText 当一个请求被发送后，该属性会返回服务器端的文本。
@@ -47,7 +46,7 @@ onreadystatechange 该属性会在属性 readyState 发生改变的时候被调�
 XMLHttpRequest 的方法 open 用于初始化一个请求。
 send 用于向服务端发送一个 HTTP 请求。
 注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。" />
-  <meta name="description" content="XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+    <meta name="description" content="XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
 XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
 状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
 responseText 当一个请求被发送后，该属性会返回服务器端的文本。
@@ -55,59 +54,52 @@ onreadystatechange 该属性会在属性 readyState 发生改变的时候被调�
 XMLHttpRequest 的方法 open 用于初始化一个请求。
 send 用于向服务端发送一个 HTTP 请求。
 注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。" />
-  <meta property="og:locale" content="zh-cn" />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript XMLHttpRequest</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">JavaScript XMLHttpRequest</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="xmlhttprequest">XMLHttpRequest</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="xmlhttprequest">XMLHttpRequest</h1>
 <p>该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。</p>
 <h2 id="xmlhttprequest-的属性">XMLHttpRequest 的属性</h2>
 <h3 id="readystate">readyState</h3>
@@ -130,28 +122,28 @@ send 用于向服务端发送一个 HTTP 请求。
 <h3 id="open">open</h3>
 <p>用于初始化一个请求。</p>
 <h3 id="send">send</h3>
-<p>用于向服务端发送一个  HTTP 请求。</p>
+<p>用于向服务端发送一个 HTTP 请求。</p>
 <h4 id="注意">注意</h4>
 <p>如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。</p>
 
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/javascript/">
-          JavaScript
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#xmlhttprequest-的属性">XMLHttpRequest 的属性</a>
       <ul>
@@ -169,23 +161,18 @@ send 用于向服务端发送一个 HTTP 请求。
     </li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

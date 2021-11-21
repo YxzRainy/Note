@@ -16,23 +16,31 @@ tags:
 
 ## 重命名 Vlan
 
-```yaml
-enable 
-configure terminal 
-vlan 10 
+```txt
+enable
+configure terminal
+vlan 10
 name MyVlan
 ```
 
-## 删除vlan分配
+## 删除 Vlan 分配
 
-```
+```txt
 configure terminal
 interface f 0/18
-no switchport access vlan 
+no switchport access vlan
 ```
 
-## 删除vlan
+## 删除 Vlan
 
+```txt
+no vlan 20
 ```
- no vlan 20
+
+## 配置 Vlan 的 ip
+
+```txt
+enable
+interface vlan 1
+S1(config-if)#ip address 192.168.10.1 255.255.255.0
 ```

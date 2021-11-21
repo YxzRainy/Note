@@ -8,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # return
 
 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
@@ -23,4 +24,3 @@ function demo(n) {
 var a = demo(n);
 console.log(typeof a + ':' + a);
 ```
-

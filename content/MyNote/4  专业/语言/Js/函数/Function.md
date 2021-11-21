@@ -8,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # Function
 
 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
@@ -124,4 +125,3 @@ function Car(size, style, color, comfort, length, width, height, type) {
 }
 var Lamborghini = new Car(50, '线性', 'black', '真皮', 1.7, 2.5, 5.2, 'SuperRun');
 ```
-

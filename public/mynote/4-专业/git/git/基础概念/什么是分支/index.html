@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,122 +35,109 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script>
-<title>Git 什么是分支</title>
-  <meta property="og:title" content="Git 什么是分支" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
+</script><title>Git 什么是分支</title>
+    <meta property="og:title" content="Git 什么是分支" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
 当两个平行宇宙互不干扰时，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了 Git 又学会了 SVN！
 分支有什么用 假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了 50% 的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人无法干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
 现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。" />
-  <meta name="description" content="什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
+    <meta name="description" content="什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
 当两个平行宇宙互不干扰时，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了 Git 又学会了 SVN！
 分支有什么用 假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了 50% 的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人无法干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
 现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。" />
-  <meta property="og:locale" content="zh-cn" />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git 什么是分支</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">Git 什么是分支</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="什么是分支">什么是分支</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="什么是分支">什么是分支</h1>
 <p>分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。</p>
 <p>当两个平行宇宙互不干扰时，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了 Git 又学会了 SVN！</p>
 <h2 id="分支有什么用">分支有什么用</h2>
 <p>假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了 50% 的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人无法干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。</p>
 <p>现在有了分支，就不用怕了。你创建了一个属于你自己的分支，别人看不到，还继续在原来的分支上正常工作，而你在自己的分支上干活，想提交就提交，直到开发完毕后，再一次性合并到原来的分支上，这样，既安全，又不影响别人工作。</p>
 
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/git/">
-          Git
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/github/">
-          Github
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#分支有什么用">分支有什么用</a></li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

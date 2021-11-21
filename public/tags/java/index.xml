@@ -13,7 +13,7 @@
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 1public static void main(String[] args) { 2 //定义数组 3 int[] arr = {6, 4, 8, 2, 9}; 4 System.out.println(&amp;#34;排序前：&amp;#34;); 5 //打印排序前的数组元素 6 printArray(arr); 7 //数组排序的方法 8 bubbleSort(arr); 9 System.out.println(&amp;#34;排序后：&amp;#34;); 10 //打印排序后的数组元素 11 printArray(arr); 12 } 13 //定义打印数组中所有元素的方法 14 public static void printArray(int[] arr) { 15 for (int i = 0; i &amp;lt; arr.length; i++) { 16 //返回当前数组中所有的元素 17 System.out.print(arr[i] + &amp;#34;&amp;#34;); 18 } 19 System.out.println(&amp;#34;\n&amp;#34;); 20 // 返回后换行 21 } 22 //定义冒泡排序的方法 23 public static void bubbleSort(int[] arr) { 24 // arr.</description>
+      <description>冒泡排序 public static void main(String[] args) { //定义数组  int[] arr = {6, 4, 8, 2, 9}; System.out.println(&amp;#34;排序前：&amp;#34;); //打印排序前的数组元素  printArray(arr); //数组排序的方法  bubbleSort(arr); System.out.println(&amp;#34;排序后：&amp;#34;); //打印排序后的数组元素  printArray(arr); } //定义打印数组中所有元素的方法  public static void printArray(int[] arr) { for (int i = 0; i &amp;lt; arr.length; i++) { //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;); } System.out.println(&amp;#34;\n&amp;#34;); // 返回后换行  } //定义冒泡排序的方法  public static void bubbleSort(int[] arr) { // arr.length - 1，即 5 - 1 = 4，  // 这里的循环控制的是总共进行 n 轮排序，这里只进行四轮排序  // 为什么只进行四轮，因为通过推算，进行 4 轮排序后就可以得出最终结果。  for (int i = 0; i &amp;lt; arr.</description>
     </item>
     
     <item>
@@ -29,8 +29,8 @@
 至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
 至于继承，还不知道。
 void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
-1void Show1() { 2 int a = 123; 3} 4 5int Show2() { 6 int a = 123; 7 return a; 8} public、protected、default（什么都不写）、private，表示访问控制的权限
-1private void Show1() { 2 int a = 123; 3} 4 5// 相当于 default int Show2() 6int Show2() { 7 int a = 123; 8 return a; 9} </description>
+void Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2() { int a = 123; return a; } </description>
     </item>
     
     <item>

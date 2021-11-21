@@ -1,6 +1,5 @@
 SearchBox(300)
 
-
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
 var searchInput = document.querySelector('.SearchInput');
 var searchResults = document.querySelector('.SearchResults');

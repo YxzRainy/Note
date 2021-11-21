@@ -6,16 +6,137 @@
     <description>Recent content in 前端 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Echarts 文字样式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
+      <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
+      <description>文字样式 fontSize: 11, color: &amp;#34;#eee&amp;#34;, textShadowColor: &amp;#34;rgba(0, 0, 0, 1)&amp;#34;, textShadowBlur: 10, textShadowOffsetX: 1, textShadowOffsetY: 1, 图形样式 barBorderRadius: 2, shadowColor: &amp;#34;rgba(0, 0 0, 0.3)&amp;#34;, shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1, </description>
+    </item>
+    
+    <item>
+      <title>快速使用 Echarts</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
+      <description>快速使用 Echarts // 快速使用 Echcarts (function () { // 1. 实例化对象  var myChart = echarts.init(document.querySelector(&amp;#34;&amp;#34;)); // 2.配置  // 3. 把配置给实例对象  myChart.setOption(option); // 4. 让图表跟随屏幕自动的去适应  window.addEventListener(&amp;#34;resize&amp;#34;, function () { myChart.resize(); }); })(); </description>
+    </item>
+    
+    <item>
+      <title>使用 Echarts 时遇到的错误</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <description>使用 Echarts 时遇到的错误 今天使用Echarts绘制地图时，浏览器控制台出现以下错误：
+Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. // 中国地图
+(function () {
+var myChart = echarts.init(document.querySelector(&amp;quot;.Map .Chart&amp;quot;));
+myChart.setOption(option);
+// 监听浏览器缩放，图表对象调用缩放resize函数
+window.addEventListener(&amp;ldquo;resize&amp;rdquo;, function () {
+​ myChart.resize();
+});
+})();</description>
+    </item>
+    
+    <item>
+      <title>Echarts 地图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</link>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</guid>
+      <description>地图 常用配置 地图样式 配置**option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
+normal: { //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;, // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;, //区域分界线  borderWidth: 1 }, </description>
+    </item>
+    
+    <item>
+      <title>Echarts 折线图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <description>Echarts 折线图 图表类型 在series下配置type.
+type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
+在series下配置markArea
+markArea: { data: [ [ { xAxis: &amp;#39;李宁&amp;#39; }, { xAxis: &amp;#39;安踏&amp;#39; } ], [ { xAxis: &amp;#39;耐克&amp;#39; }, { xAxis: &amp;#39;阿迪&amp;#39; } ], ], }, 线条是否平滑显示 在series下配置smooth
+smooth: true, 线条样式 在series下配置lineStyle
+lineStyle: { color: &amp;#39;red&amp;#39;, type: &amp;#39;dashed&amp;#39; } 线条区域样式 在series下配置areaStyle
+areaStyle: { color: &amp;#39;green&amp;#39; } </description>
+    </item>
+    
+    <item>
+      <title>Echarts 柱状图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
+      <description>Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
+通过柱状图，可以很清晰的看出每个分类数据的排名情况。
+基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); var xArr = [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;耐克&amp;#39;] var yArr = [30, 25, 55] var option = { title: { text: &amp;#39;运动品牌科技水平&amp;#39;, link: &amp;#39;https://yxzi.xyz/&amp;#39; }, }; myChart.setOption(option) X 轴数据 在option下配置 X 轴类型和数据。
+xAxis: { type: &amp;#39;category&amp;#39;, data: xArr }, Y 轴数据 在option下配置 Y 轴的类型。
+yAxis: { type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type.
+柱状图 type: &amp;#39;bar&amp;#39;, 常用配置 最大与最小值值 在series下配置markPoint.</description>
+    </item>
+    
+    <item>
+      <title>Echarts 通用配置</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>Echarts 通用配置 title 图表的标题。
+标题的样式 在title下配置textStyle、
+textStyle: { color: &amp;#39;#008c8c&amp;#39;, }, 标题的边框 在title下配置：
+borderWidth: 5, borderColor: &amp;#39;#008c8c&amp;#39;, borderRadius: 3, 标题的位置 在title下配置：
+left: 10, top: 20, tooltip 提示框组件
+用于配置鼠标滑过或点击图表时的提示框。
+显示框的触发范围 在tooltip下配置trigger
+trigger: &amp;#39;axis&amp;#39;, 显示框触发方式 在tooltip下配置triggerOn
+triggerOn: &amp;#39;click &amp;#39;, 自定义提示框内容 字符串模板
+formatter: &amp;#39;{b} 的科技水平是 {c}&amp;#39; 回调函数
+formatter: function (arg) { return arg[0].name + &amp;#39;的运动科技水平是&amp;#39; + arg[0].data } toolbox 图表的工具栏。
+打开工具栏配置项 feature: {} 导出图片 以图片的形式导出图表
+saveAsImage: {}, 数据视图工具 可以展现当前图表所用的数据，编辑后可以动态更新。
+dataView: {}, 还原所有配置项 restore: {},数据区域的缩放 dataZoom: {}, 图表类型的动态切换 magicType: { type: [&amp;#39;bar&amp;#39;, &amp;#39;line&amp;#39;] } legend 图表的图例组件。它展现了不同系列所对应不同的颜色和名字。可以通过点击某个图例来控制对应的系列显示与否。</description>
+    </item>
+    
+    <item>
+      <title>Echarts 基本配置</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <description>初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
+var option = {} 标题 title: { text: &amp;#39;运动品牌科技水平&amp;#39;, //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: { // 轴类型为类目轴  type: &amp;#39;category&amp;#39;, // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: { // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
+series: [ { // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;, // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;, // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40] } ] 将配置项设置给 Echarts 实例对象 myChart.</description>
+    </item>
+    
+    <item>
+      <title>Echarts 是什么</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>Echarts 是什么 ECharts 是一个使用 JavaScript 实现的开源可视化库，兼容性强，
+底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
+使用 Echarts 的时候，只需要更改配置项即可。</description>
+    </item>
+    
     <item>
       <title>博客添加搜索功能</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
-      <description>博客添加搜索功能 HTML代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
-1&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; 2 &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; 3 &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; 4 &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; 5	&amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 6&amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
-CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 5 line-height: 30px; 6 padding-right: 10px; 7} 8 9.search .search-icon { 10 float: right; 11 height: 100%; 12 margin: 0 10px; 13 line-height: 30px; 14 cursor: pointer; 15 user-select: none; 16} 17 18.</description>
+      <description>博客添加搜索功能 HTML 代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
+&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; &amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
+CSS 代码 .search { position: relative; height: 30px; text-align: right; line-height: 30px; padding-right: 10px; } .search .search-icon { float: right; height: 100%; margin: 0 10px; line-height: 30px; cursor: pointer; user-select: none; } .search .search-input { float: right; width: 30%; height: 30px; line-height: 30px; margin: 0; border: 2px solid #ddd; border-radius: 10px; box-sizing: border-box; } .</description>
     </item>
     
     <item>
@@ -24,10 +145,10 @@ CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
-      <description>实现居中 绝对定位 兼容性不错的主流css绝对定位居中的用法：
-1.conter{ 2 width: 600px; height: 400px; 3 position: absolute; left: 50%; top: 50%; 4 margin-top: -200px; /* 高度的一半 */ 5 margin-left: -300px; /* 宽度的一半 */ 6} 绝对定位 css3的出现，使得有了更好的解决方法，就是使用transform代替margin. transform中translate偏移的百分比值是相对于自身大小的，可以这样实现css绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
-1position: absolute; 2left:50%; 3top:50%; 4transform:translate(-50%,-50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
-1display: flex; 2flex-direction: row; 3justify-content: center; 4align-items: center; 1display: flex; 2flex-direction: column; 3justify-content: center; 4align-items: center; 文本实现垂直居中 1display: flex; 2align-items: center; </description>
+      <description>实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
+.conter { width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
+display: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; </description>
     </item>
     
     <item>
@@ -54,7 +175,7 @@ CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
-      <description>高斯模糊 1 backdrop-filter:blur(0.5rem); </description>
+      <description>高斯模糊 backdrop-filter: blur(0.5rem); </description>
     </item>
     
     <item>
@@ -87,7 +208,7 @@ bottom：文字底线向下延申的空间。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
       <description>文本溢出处理 实现单行文本的溢出显示省略号可以直接用 text-overflow:ellipsis 属性来实现，当然还需要加宽度width属来兼容部分浏览。
-1overflow: hidden; 2text-overflow:ellipsis; 3white-space: nowrap; </description>
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; </description>
     </item>
     
     <item>
@@ -96,7 +217,7 @@ bottom：文字底线向下延申的空间。
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
-      <description>媒体查询 1@media screen and (min-width: 720px) { 2	/* 当浏览器宽度大于 value 时所应用的样式 */ 3} 4 5@media screen and (max-width: value) { 6	/* 当浏览器宽度小于 value 时所应用的样式*/ 7} </description>
+      <description>媒体查询 @media screen and (min-width: 720px) { /* 当浏览器宽度大于 value 时所应用的样式 */ } @media screen and (max-width: value) { /* 当浏览器宽度小于 value 时所应用的样式*/ } </description>
     </item>
     
     <item>
@@ -105,7 +226,7 @@ bottom：文字底线向下延申的空间。
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</guid>
-      <description>渐变 1background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
+      <description>渐变 background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
     </item>
     
     <item>
@@ -115,7 +236,7 @@ bottom：文字底线向下延申的空间。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</guid>
       <description>table 空隙 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
-1border-collapse: collapse; </description>
+border-collapse: collapse; </description>
     </item>
     
     <item>
@@ -124,8 +245,8 @@ bottom：文字底线向下延申的空间。
       <pubDate>Sun, 10 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
-      <description>修改网页滚动条样式 属性描述 1/* 整个滚动条*/ 2::-webkit-scrollbar { 3} 4 5/* 滚动条两端的按钮 */ 6::-webkit-scrollbar-button { 7} 8 9/* 滚动条的滚动轨道 */ 10::-webkit-scrollbar-track { 11} 12 13/* 内层轨道 */ 14::-webkit-scrollbar-track-piece { 15} 16 17/* 滑块 */ 18::-webkit-scrollbar-thumb { 19} 20 21/* 边角 */ 22::-webkit-scrollbar-corner { 23} 24 25/* 右下角拖动块的样式 */ 26::-webkit-resizer { 27} 使用 一般我们这样设置这几个主要属性就OK了。
-1/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ 2::-webkit-scrollbar 3{ 4 width:10px; 5 background-color:#F5F5F5; 6} 7/*定义滚动条轨道：内阴影 + 圆角*/ 8::-webkit-scrollbar-track 9{ 10 background-color:#F5F5F5; 11} 12/*定义滑块：内阴影 + 圆角*/ 13::-webkit-scrollbar-thumb 14{ 15 border-radius:10px; 16 background-color:#555; 17} 更多相关属性 1:horizontal //水平方向的滚动条 2:vertical //垂直 方向的滚动条 3:decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) 4:increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) 5:start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 6:end //类似于start伪类，标识对象是否放到滑块的后面。 7:double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 8:single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 9:no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 10:corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 11:window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
+      <description>修改网页滚动条样式 属性描述 /* 整个滚动条*/ ::-webkit-scrollbar { } /* 滚动条两端的按钮 */ ::-webkit-scrollbar-button { } /* 滚动条的滚动轨道 */ ::-webkit-scrollbar-track { } /* 内层轨道 */ ::-webkit-scrollbar-track-piece { } /* 滑块 */ ::-webkit-scrollbar-thumb { } /* 边角 */ ::-webkit-scrollbar-corner { } /* 右下角拖动块的样式 */ ::-webkit-resizer { } 使用 一般我们这样设置这几个主要属性就 OK 了。
+/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ ::-webkit-scrollbar { width: 10px; background-color: #f5f5f5; } /*定义滚动条轨道：内阴影 + 圆角*/ ::-webkit-scrollbar-track { background-color: #f5f5f5; } /*定义滑块：内阴影 + 圆角*/ ::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #555; } 更多相关属性 :horizontal //水平方向的滚动条 :vertical //垂直 方向的滚动条 :decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) :increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) :start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 :end //类似于start伪类，标识对象是否放到滑块的后面。 :double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 :single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 :no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 :corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 :window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
     </item>
     
     <item>
@@ -144,6 +265,16 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
     </item>
     
     <item>
+      <title>Css keyframes</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</link>
+      <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</guid>
+      <description>Css keyframes 持续旋转 选中文档中的元素。
+.map2 { width: 8.0375rem; height: 8.0375rem; background-image: url(../images/lbx.png); opacity: 0.6; animation: rotate 15s linear infinite; z-index: 2; } keyframes @keyframes rotate { /* 从 0° 开始旋转 */ from { transform: translate(-50%, -50%) rotate(0deg); } /* 旋转到 360 ° */ to { transform: translate(-50%, -50%) rotate(360deg); } } </description>
+    </item>
+    
+    <item>
       <title>Css 语法</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Fri, 08 Oct 2021 06:00:00 +0000</pubDate>
@@ -152,7 +283,7 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
       <description>语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
-1.selector { 2	color: #000; 3} 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
+.selector { color: #000; } 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
 内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
 外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
 优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。</description>

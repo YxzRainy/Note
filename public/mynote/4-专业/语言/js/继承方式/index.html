@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -22,7 +22,7 @@
 	    "articleSection" : "mynote",
 	    "name" : "JavaScript 继承方式",
 	    "headline" : "JavaScript 继承方式",
-	    "description" : "继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的\n1Grand.prototype.blue = \u0026#39;blue\u0026#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9\tthis.red = \u0026#39;red\u0026#39;; 10\tthis.money = { 11\tcard: \u0026#39;pencil\u0026#39;, 12\t}; 13\tthis.value = \u0026#39;100\u0026#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21\tthis.orange = \u0026#39;orange\u0026#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26\/\/ 返回 orange。 27console.",
+	    "description" : "继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的\nGrand.prototype.blue = \u0026#39;blue\u0026#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = \u0026#39;red\u0026#39;; this.money = { card: \u0026#39;pencil\u0026#39;, }; this.value = \u0026#39;100\u0026#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = \u0026#39;orange\u0026#39;; } var son = new Son(); console.log(son.orange); \/\/ 返回 orange。 console.log(son.red); \/\/ 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); \/\/ 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， \/\/ 但原型 father 的原型 grand 上有属性 blue。 son.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -35,115 +35,107 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F\/",
 	    "keywords" : [ "学习笔记","JavaScript", ]
 	}
-</script>
-<title>JavaScript 继承方式</title>
-  <meta property="og:title" content="JavaScript 继承方式" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
-1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console." />
-  <meta name="description" content="继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
-1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console." />
-  <meta property="og:locale" content="zh-cn" />
+</script><title>JavaScript 继承方式</title>
+    <meta property="og:title" content="JavaScript 继承方式" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
+Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son." />
+    <meta name="description" content="继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
+Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son." />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 继承方式</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">JavaScript 继承方式</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-            2021.10.21
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="继承方式">继承方式</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="继承方式">继承方式</h1>
 <h2 id="原型链继承">原型链继承</h2>
 <h3 id="缺点">缺点</h3>
 <p>会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">blue</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;blue&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">grandfather</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#000">Father</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">grandfather</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Father</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">red</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;red&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>		<span style="color:#000">card</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;pencil&#39;</span><span style="color:#000;font-weight:bold">,</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#000;font-weight:bold">};</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;100&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">father</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Father</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#000">Son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">father</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Son</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">orange</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;orange&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">son</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Son</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">orange</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span style="color:#8f5902;font-style:italic">// 返回 orange。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">red</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span style="color:#8f5902;font-style:italic">// 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">blue</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span style="color:#8f5902;font-style:italic">// 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span style="color:#8f5902;font-style:italic">// 但原型 father 的原型 grand 上有属性 blue。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">box</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;bear&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span style="color:#8f5902;font-style:italic">// 通过调用对象 son 给原型对象 father 的属性 money（money 的值必须是引用值）增加一个引用值 box。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">box</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span><span style="color:#8f5902;font-style:italic">// 返回 bear。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span style="color:#8f5902;font-style:italic">// 先将原型对象 father 的属性 value 拷贝给自身（son），然后拿着拷贝过来的属性 value 进行自增。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span><span style="color:#8f5902;font-style:italic">// 因此这里的自增并不会影响原型对象 father 的属性 value。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span style="color:#8f5902;font-style:italic">// 返回 102，因为自增了两次。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">father</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span style="color:#8f5902;font-style:italic">// 因为原型对象 father 将其自身的属性 value 拷贝给了对象 son，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span style="color:#8f5902;font-style:italic">// 然后对象 son 拿着拷贝过来的属性 value 进行的自增，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span><span style="color:#8f5902;font-style:italic">// 因此对象 father 的属性 value 并没有发生改变。
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">blue</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;blue&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">grandfather</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Grand</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">Father</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">grandfather</span><span style="color:#000;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Father</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">red</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;red&#39;</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">card</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;pencil&#39;</span><span style="color:#000;font-weight:bold">,</span>
+	<span style="color:#000;font-weight:bold">};</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;100&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">father</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Father</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">Son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">father</span><span style="color:#000;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Son</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">orange</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;orange&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">son</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Son</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">orange</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 orange。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">red</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">blue</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性，
+</span><span style="color:#8f5902;font-style:italic">// 但原型 father 的原型 grand 上有属性 blue。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">box</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;bear&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 通过调用对象 son 给原型对象 father 的属性 money（money 的值必须是引用值）增加一个引用值 box。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">money</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">box</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 bear。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 先将原型对象 father 的属性 value 拷贝给自身（son），然后拿着拷贝过来的属性 value 进行自增。
+</span><span style="color:#8f5902;font-style:italic">// 因此这里的自增并不会影响原型对象 father 的属性 value。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">son</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 102，因为自增了两次。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">father</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 因为原型对象 father 将其自身的属性 value 拷贝给了对象 son，
+</span><span style="color:#8f5902;font-style:italic">// 然后对象 son 拿着拷贝过来的属性 value 进行的自增，
+</span><span style="color:#8f5902;font-style:italic">// 因此对象 father 的属性 value 并没有发生改变。
 </span></code></pre></div><h2 id="借用构造函数继承">借用构造函数继承</h2>
 <p>使用 call 与 apply 实现继承（伪造对象），即借用其他构造函数的属性。</p>
 <p>有需求时可以使用该方法实现继承。</p>
@@ -155,111 +147,111 @@
 <p>将一个函数的原型指向共享给另一个函数的原型，使这个两个原型都指向同一个原型（即它们都继承自同一个原型），即这两个函数的原型共用一个原型。</p>
 <h3 id="缺点-2">缺点</h3>
 <p>不能单独给其中一个函数的原型添加私有属性，即添加一个函数的原型的属性时，另一个函数的原型也可以调用这个属性。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;windy&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span style="color:#8f5902;font-style:italic">// 函数 Demo 与函数 Test 的共有原型对象 Demo.prototype。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;tiger&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span>	<span style="color:#8f5902;font-style:italic">// 用函数 inherit 封装一个有继承功能的函数，相当于 Test.prototype = Demo.prototype ，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 也就是将函数 Demo 的原型地址赋给函数 Test，即将函数 Demo 的原型共享给函数 Test ,
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 使这两个函数共用一个原型。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;boy&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span style="color:#8f5902;font-style:italic">// 单独给函数 Test 的原型添加属性 male，但因为该函数与函数 Demo 的原型指向都指向同一个原型，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span style="color:#8f5902;font-style:italic">// 因此会导致这个属性 male 依旧为这两个函数的共有属性。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span style="color:#8f5902;font-style:italic">// 返回 tiger。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span style="color:#8f5902;font-style:italic">//返回 18。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span style="color:#8f5902;font-style:italic">// 返回 boy。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span style="color:#8f5902;font-style:italic">// 返回 boy。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span style="color:#8f5902;font-style:italic">// 因为这两个对象的原型指向都指向同一个原型对象，因此调用这两个对象的属性 male 都会返回 body。
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;windy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 函数 Demo 与函数 Test 的共有原型对象 Demo.prototype。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;tiger&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 用函数 inherit 封装一个有继承功能的函数，相当于 Test.prototype = Demo.prototype ，
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 也就是将函数 Demo 的原型地址赋给函数 Test，即将函数 Demo 的原型共享给函数 Test ,
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 使这两个函数共用一个原型。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">);</span>
+
+<span style="color:#000">Test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;boy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 单独给函数 Test 的原型添加属性 male，但因为该函数与函数 Demo 的原型指向都指向同一个原型，
+</span><span style="color:#8f5902;font-style:italic">// 因此会导致这个属性 male 依旧为这两个函数的共有属性。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 tiger。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//返回 18。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 boy。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回 boy。
+</span><span style="color:#8f5902;font-style:italic">// 因为这两个对象的原型指向都指向同一个原型对象，因此调用这两个对象的属性 male 都会返回 body。
 </span></code></pre></div><h2 id="圣杯模式继承">圣杯模式继承</h2>
 <p>用来继承已有原型对象（A.prototype）中的成员（主要是公用方法），同时根据自己的需求修改原型对象（A.prototype），以定制符合我们要求的构造函数 B，这个修改对已有的实例（a1，a2，…）不会产生影响。</p>
 <p><strong>基本没有缺点</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span>	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span>	<span style="color:#8f5902;font-style:italic">// 用函数 Rain 作为中间层
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span>	<span style="color:#8f5902;font-style:italic">// 相当于将函数 Demo 的原型地址共享给函数 Rain 的原型，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 也就是将函数 Demo 的原型共享给函数 Rain 的原型。使这两个函数的原型共用一个原型
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span>	<span style="color:#8f5902;font-style:italic">// 使用原型链形成了继承关系，现在改 Test.prototype 就不会影响 Demo.prototype
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">constructor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span>	<span style="color:#8f5902;font-style:italic">//  默认对象 test 的属性 construction 的指向为函数 Demo，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 这里将对象 test 的属性 construction 的指向改为 test 本身。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uber</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span>	<span style="color:#8f5902;font-style:italic">// 使构造出的对象 test 可以寻找到自己的超类（超级父级），
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 即可以知道该对象真正继承的是哪一个函数
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span style="color:#8f5902;font-style:italic">// 但建议使用这种写法：
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">inherits</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span>	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span>	<span style="color:#8f5902;font-style:italic">// 函数 Rain 为私有化变量，用作于中间层
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span>		<span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span>		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span>		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">constructor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span>		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uber</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span>	<span style="color:#000;font-weight:bold">};</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span style="color:#000;font-weight:bold">})();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;windy&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;tiger&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34</span><span style="color:#000;font-weight:bold">}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38</span><span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;boy&#39;</span><span style="color:#000;font-weight:bold">;</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41</span><span style="color:#8f5902;font-style:italic">// 给函数 Test 添加属性 male，则属性 male 是该函数的私有属性，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42</span><span style="color:#8f5902;font-style:italic">// 即该函数的属性 male 不会共享给函数 Demo。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">();</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46</span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47</span><span style="color:#8f5902;font-style:italic">// 返回，boy。
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
-<span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49</span><span style="color:#8f5902;font-style:italic">//返回 undefined，调用对象 demo 的属性 male，但因为该属性没有被对象 test 共享给对象 demo，
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50</span><span style="color:#8f5902;font-style:italic">// 因此这里相当于调用一个对象没有的属性。
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+	<span style="color:#8f5902;font-style:italic">// 用函数 Rain 作为中间层
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 相当于将函数 Demo 的原型地址共享给函数 Rain 的原型，
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 也就是将函数 Demo 的原型共享给函数 Rain 的原型。使这两个函数的原型共用一个原型
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">();</span>
+	<span style="color:#8f5902;font-style:italic">// 使用原型链形成了继承关系，现在改 Test.prototype 就不会影响 Demo.prototype
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">constructor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">//  默认对象 test 的属性 construction 的指向为函数 Demo，
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 这里将对象 test 的属性 construction 的指向改为 test 本身。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uber</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 使构造出的对象 test 可以寻找到自己的超类（超级父级），
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 即可以知道该对象真正继承的是哪一个函数
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#8f5902;font-style:italic">// 但建议使用这种写法：
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">inherits</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+	<span style="color:#8f5902;font-style:italic">// 函数 Rain 为私有化变量，用作于中间层
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
+		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Rain</span><span style="color:#000;font-weight:bold">();</span>
+		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">constructor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+		<span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">uber</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">})();</span>
+
+<span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;windy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;tiger&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{}</span>
+
+<span style="color:#000">inherit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">);</span>
+
+<span style="color:#000">Test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;boy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 给函数 Test 添加属性 male，则属性 male 是该函数的私有属性，
+</span><span style="color:#8f5902;font-style:italic">// 即该函数的属性 male 不会共享给函数 Demo。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Test</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">// 返回，boy。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">male</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//返回 undefined，调用对象 demo 的属性 male，但因为该属性没有被对象 test 共享给对象 demo，
+</span><span style="color:#8f5902;font-style:italic">// 因此这里相当于调用一个对象没有的属性。
 </span></code></pre></div>
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/javascript/">
-          JavaScript
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents">
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#原型链继承">原型链继承</a>
       <ul>
@@ -279,23 +271,18 @@
     <li><a href="#圣杯模式继承">圣杯模式继承</a></li>
   </ul>
 </nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

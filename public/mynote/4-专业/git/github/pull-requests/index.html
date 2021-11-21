@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-  <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.88.1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Rainy" />
-  <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/" />
-  <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-  <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/github/pull-requests/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,69 +35,61 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/github\/pull-requests\/",
 	    "keywords" : [ "Github","学习笔记", ]
 	}
-</script>
-<title>Pull Requests</title>
-  <meta property="og:title" content="Pull Requests" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="Pull Requests 简单来说就是：我改进了你的代码，你拉回去看看吧
+</script><title>Pull Requests</title>
+    <meta property="og:title" content="Pull Requests" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Pull Requests 简单来说就是：我改进了你的代码，你拉回去看看吧
 当你想改进一个别人的项目 ，或想为别人的项目做贡献时，你将要走以下几个流程
  Fork 别人的仓库，相当于拷贝一份，毕竟不可能有人让你直接修改他的原仓库的。 将拷贝过来的仓库clone到本地分支，做一些修复，比如git clone git@github.com:YxzRainy/YxzRainy.github.io.git。 改进完成后，你希望仓库所有者接受你的修改，那么你需要在 Github 上创建一个Pull Request给原仓库所有者，意思是请求原仓库所有者合并你的分支。 原仓库所有者审查你做的这些修复后，如果它同意的话，就会将你做的修改合并到他自己的项目中，这样你就为他的这个项目做了贡献。 到这一步，整个Pull Request的过程就结束了。  " />
-  <meta name="description" content="Pull Requests 简单来说就是：我改进了你的代码，你拉回去看看吧
+    <meta name="description" content="Pull Requests 简单来说就是：我改进了你的代码，你拉回去看看吧
 当你想改进一个别人的项目 ，或想为别人的项目做贡献时，你将要走以下几个流程
  Fork 别人的仓库，相当于拷贝一份，毕竟不可能有人让你直接修改他的原仓库的。 将拷贝过来的仓库clone到本地分支，做一些修复，比如git clone git@github.com:YxzRainy/YxzRainy.github.io.git。 改进完成后，你希望仓库所有者接受你的修改，那么你需要在 Github 上创建一个Pull Request给原仓库所有者，意思是请求原仓库所有者合并你的分支。 原仓库所有者审查你做的这些修复后，如果它同意的话，就会将你做的修改合并到他自己的项目中，这样你就为他的这个项目做了贡献。 到这一步，整个Pull Request的过程就结束了。  " />
-  <meta property="og:locale" content="zh-cn" />
+    <meta property="og:locale" content="zh-cn" />
 
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css">
-  <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css">
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
 
-
-
-  
-
-  <link href="/Sub/Blog/index.xml" rel="alternate" type="application/rss+xml"
-    title="Rainy · Blog">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  <script>
-    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
-
-  
-  
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+    
 
-  
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Pull Requests</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
+                        2021-10-03
+                    </time>
+                    
+                </div>
+                
+            </header>
 
-  <body class="Wrap">
-    <article class="Post BorderBox  ">
-      <header class="PostHeader">
-        <h1 id="Title" class="post-title">Pull Requests</h1>
-        
-        <div class="DateArea">
-          
-          <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
-            2021.10.03
-          </time>
-          
-        </div>
-        
-      </header>
-
-      
-      <div class="PostContent">
-        
-        <h1 id="pull-requests">Pull Requests</h1>
+            
+            <div class="PostContent">
+                
+                <h1 id="pull-requests">Pull Requests</h1>
 <p>简单来说就是：<strong>我改进了你的代码，你拉回去看看吧</strong></p>
 <p>当你想改进一个别人的项目 ，或想为别人的项目做贡献时，你将要走以下几个流程</p>
 <ul>
@@ -108,41 +100,36 @@
 <li>到这一步，整个<strong>Pull Request</strong>的过程就结束了。</li>
 </ul>
 
-      </div>
-      
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/github/">
-          Github
-        </a>
-      </div>
-      
-      <div class="PostTag">
-        <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-          学习笔记
-        </a>
-      </div>
-      
-    </article>
-          
-    <nav id="TableOfContents"></nav>
-    
-    <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-	<svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-		<use href="#Icon-ToTheTop"></use>
-	</svg>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
 </a>
 
-
-
-    <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-
-
-
-
-  </body>
+    </body>
 
 </html>

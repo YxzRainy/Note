@@ -8,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # Object
 
 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
@@ -69,7 +70,7 @@ console.log(b.health);
 
 ### 使用 Object.create() 方法
 
-Object.create()方法是 ECMAScript 5中新增的方法，这个方法用于创建一个新对象。被创建的对象继承另一个对象的原型，在创建新对象时可以指定一些属性。
+Object.create()方法是 ECMAScript 5 中新增的方法，这个方法用于创建一个新对象。被创建的对象继承另一个对象的原型，在创建新对象时可以指定一些属性。
 
 **注意**
 
@@ -81,9 +82,9 @@ Object.create()方法是 ECMAScript 5中新增的方法，这个方法用于创�
 
 toString() 方法用于返回一个表示该对象的字符串。
 
-每个对象都有 toString() 方法，但 undefined 与 null 没有，因为它们不是对象。 
+每个对象都有 toString() 方法，但 undefined 与 null 没有，因为它们不是对象。
 
-当 number、string、boolean 原值类型的数据调用 toString() 方法时，都会先进行包装类。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（因为 Number 对象将 toString 方法重写了），所以它不继承自 Object.prototype.toString()。 
+当 number、string、boolean 原值类型的数据调用 toString() 方法时，都会先进行包装类。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（因为 Number 对象将 toString 方法重写了），所以它不继承自 Object.prototype.toString()。
 
 另外，document.write() 方法，它也使用了 toString() 方法。
 
@@ -116,7 +117,7 @@ document.write(obj);
 
 该方法创建一个新对象， () 中可以指定这个新创建的对象的原型对象，即可以为 object 或 null，但不能为原始值。
 
-使用 null 作为原型对象的对象，该对象没有原型（即没有属性 __proto__ ），但它也是一个对象。
+使用 null 作为原型对象的对象，该对象没有原型（即没有属性 **proto** ），但它也是一个对象。
 
 #### 重写 toSrting 方法
 
@@ -136,7 +137,7 @@ var b = Object.create(a);
 
 当一个构造函数创建一个对象实例后，这个对象默认为空对象，但这个对象其中有一个系统隐式的属性 constructor，该属性表示该对象是用哪一个构造函数所创建的，这个属性的指向是可以更改的。
 
-```JavaScript 
+```JavaScript
 function peen() {}
 Demo.prototype = {
 	constructor: peen,
@@ -147,4 +148,3 @@ var apple = new Demo();
 console.log(apple.constructor);
 // 返回函数 peen。
 ```
-

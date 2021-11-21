@@ -10,6 +10,7 @@ tags:
         - Github
         - 学习笔记
 ---
+
 # git cherry-pick
 
 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
@@ -19,4 +20,3 @@ tags:
 ## git cherry-pick commitHash
 
 将指定的**commitHash**，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。
-

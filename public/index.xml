@@ -6,15 +6,362 @@
     <description>Recent content on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Echarts 文字样式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
+      <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
+      <description>文字样式 fontSize: 11, color: &amp;#34;#eee&amp;#34;, textShadowColor: &amp;#34;rgba(0, 0, 0, 1)&amp;#34;, textShadowBlur: 10, textShadowOffsetX: 1, textShadowOffsetY: 1, 图形样式 barBorderRadius: 2, shadowColor: &amp;#34;rgba(0, 0 0, 0.3)&amp;#34;, shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1, </description>
+    </item>
+    
+    <item>
+      <title>快速使用 Echarts</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
+      <description>快速使用 Echarts // 快速使用 Echcarts (function () { // 1. 实例化对象  var myChart = echarts.init(document.querySelector(&amp;#34;&amp;#34;)); // 2.配置  // 3. 把配置给实例对象  myChart.setOption(option); // 4. 让图表跟随屏幕自动的去适应  window.addEventListener(&amp;#34;resize&amp;#34;, function () { myChart.resize(); }); })(); </description>
+    </item>
+    
+    <item>
+      <title>使用 Echarts 时遇到的错误</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <description>使用 Echarts 时遇到的错误 今天使用Echarts绘制地图时，浏览器控制台出现以下错误：
+Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. // 中国地图
+(function () {
+var myChart = echarts.init(document.querySelector(&amp;quot;.Map .Chart&amp;quot;));
+myChart.setOption(option);
+// 监听浏览器缩放，图表对象调用缩放resize函数
+window.addEventListener(&amp;ldquo;resize&amp;rdquo;, function () {
+​ myChart.resize();
+});
+})();</description>
+    </item>
+    
+    <item>
+      <title>Echarts 地图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</link>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</guid>
+      <description>地图 常用配置 地图样式 配置**option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
+normal: { //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;, // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;, //区域分界线  borderWidth: 1 }, </description>
+    </item>
+    
+    <item>
+      <title>Less &amp; 符号</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
+&amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
+如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
+Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}}解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } </description>
+    </item>
+    
+    <item>
+      <title>Echarts 折线图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <description>Echarts 折线图 图表类型 在series下配置type.
+type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
+在series下配置markArea
+markArea: { data: [ [ { xAxis: &amp;#39;李宁&amp;#39; }, { xAxis: &amp;#39;安踏&amp;#39; } ], [ { xAxis: &amp;#39;耐克&amp;#39; }, { xAxis: &amp;#39;阿迪&amp;#39; } ], ], }, 线条是否平滑显示 在series下配置smooth
+smooth: true, 线条样式 在series下配置lineStyle
+lineStyle: { color: &amp;#39;red&amp;#39;, type: &amp;#39;dashed&amp;#39; } 线条区域样式 在series下配置areaStyle
+areaStyle: { color: &amp;#39;green&amp;#39; } </description>
+    </item>
+    
+    <item>
+      <title>Echarts 柱状图</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
+      <description>Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
+通过柱状图，可以很清晰的看出每个分类数据的排名情况。
+基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); var xArr = [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;耐克&amp;#39;] var yArr = [30, 25, 55] var option = { title: { text: &amp;#39;运动品牌科技水平&amp;#39;, link: &amp;#39;https://yxzi.xyz/&amp;#39; }, }; myChart.setOption(option) X 轴数据 在option下配置 X 轴类型和数据。
+xAxis: { type: &amp;#39;category&amp;#39;, data: xArr }, Y 轴数据 在option下配置 Y 轴的类型。
+yAxis: { type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type.
+柱状图 type: &amp;#39;bar&amp;#39;, 常用配置 最大与最小值值 在series下配置markPoint.</description>
+    </item>
+    
+    <item>
+      <title>Echarts 通用配置</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <description>Echarts 通用配置 title 图表的标题。
+标题的样式 在title下配置textStyle、
+textStyle: { color: &amp;#39;#008c8c&amp;#39;, }, 标题的边框 在title下配置：
+borderWidth: 5, borderColor: &amp;#39;#008c8c&amp;#39;, borderRadius: 3, 标题的位置 在title下配置：
+left: 10, top: 20, tooltip 提示框组件
+用于配置鼠标滑过或点击图表时的提示框。
+显示框的触发范围 在tooltip下配置trigger
+trigger: &amp;#39;axis&amp;#39;, 显示框触发方式 在tooltip下配置triggerOn
+triggerOn: &amp;#39;click &amp;#39;, 自定义提示框内容 字符串模板
+formatter: &amp;#39;{b} 的科技水平是 {c}&amp;#39; 回调函数
+formatter: function (arg) { return arg[0].name + &amp;#39;的运动科技水平是&amp;#39; + arg[0].data } toolbox 图表的工具栏。
+打开工具栏配置项 feature: {} 导出图片 以图片的形式导出图表
+saveAsImage: {}, 数据视图工具 可以展现当前图表所用的数据，编辑后可以动态更新。
+dataView: {}, 还原所有配置项 restore: {},数据区域的缩放 dataZoom: {}, 图表类型的动态切换 magicType: { type: [&amp;#39;bar&amp;#39;, &amp;#39;line&amp;#39;] } legend 图表的图例组件。它展现了不同系列所对应不同的颜色和名字。可以通过点击某个图例来控制对应的系列显示与否。</description>
+    </item>
+    
+    <item>
+      <title>var 和 let 的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
+在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
+而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
+let 不能在定义之前访问该变量，但是 var 可以。 let 必须先声明，在使用。而 var 先使用后声明也行，只不过直接使用但没有定义的时候，其值是 undefined。var 有一个变量提升的过程，当整个函数作用域被创建的时候，实际上 var 定义的变量都会被创建，并且如果此时没有初始化的话，则默认为初始化一个 undefined
+let 不能被重新定义，但是 var 是可以的 </description>
+    </item>
+    
+    <item>
+      <title>为什么人们不喜欢被批评</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E4%BB%AC%E4%B8%8D%E5%96%9C%E6%AC%A2%E8%A2%AB%E6%89%B9%E8%AF%84/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E4%BB%AC%E4%B8%8D%E5%96%9C%E6%AC%A2%E8%A2%AB%E6%89%B9%E8%AF%84/</guid>
+      <description>为什么人们不喜欢被批评 这不是剂量问题，这是性质问题。
+批评有一条细细的、意识几乎难以觉察、人常常不愿接受的红线——
+批评只能给逻辑、给疑问、给论证，不可以讽刺，不可以定罪，更不可以用作构陷的工具。
+有人给车换轮胎没放好千斤顶。
+“换胎必须先把千斤顶放好，否则会 xxx”、“放好千斤顶的标准是 xxxx，你这样做在 x 个方面不达标，这会违反合同”。
+这是批评（criticize）。
+“修车都不放好千斤顶，你真是蠢到家了”
+“你哪个师傅教的？”
+“你是不是说明书都看不懂？”
+——这就不是批评，而是借批评为名的攻击和侮辱（assault）。
+“你不放好千斤顶是不是想制造事故压死修车工？”——这是入人以罪（criminalize）。
+面向大众拿大喇叭广播——“ta 不放好千斤顶就是为了制造事故压死人”，这是构陷（defame）。
+很多人把批评分为“善意批评”和“恶意批评”，这个说法本身其实是错的。
+批评（criticize）必须也只能是善意的。
+没有善意，哪怕一个脏词都不带，扯尽了天下正义大旗，本质亦为迫害。
+侮辱、入罪、构陷，都是化妆成批评，利用了人们不得不对批评给予的宽容而得逞的恶行。
+心里就没有这些界限意识的人，根本做不到有效批评。
+人不是不欢迎批评，而是批评是一门高度复杂和敏感，有无数红线，需要极强的原则性、高度自我克制、清醒的动机自觉的技能。
+绝大多数人所以为是批评并且本能厌恶和抗拒的东西，其实根本就不是批评，只是乔装打扮、深深寄生在人的恶意本能中的迫害。
+一个真正懂得批评是什么的人，可以用批评造就常人难以想象的杰出人物，可以成就照耀后人的伟业。
+这些批评是贵如黄金，甚至可遇而不可求的。
+求之且不得，何谈厌恶？
+很多人呼吁写细一点，那么就写细一点吧，批评的法则的确也是一个很要害的问题。这种能力学好了、用好了，的确是一种强大的白魔法，
+首先我们谈批评的标准操作。
+第一步，是要分析自己的批评冲动本身。
+你想要这个批评造成哪些净改变？
+你要把这些诉求全面的列出来，确保这些诉求是批评所可以达到的、可以合法追求的结果。
+一般来说，人们通过名为批评的行为要达到的几种典型的诉求包括：
+a）补偿自己的不满情绪。
+b）以最低的代价（也就是避免自己需要追加投入或做出改变）终止和预防自己因该被事务连累而遭受的持续损失
+c）破坏对方的自信，软化对方的立场，使对方变得更易接受安排
+d）破坏对方在组织或社会中的地位和影响力，使其失去威胁
+e）帮助对方认识到自身的问题，提高达成其自身目标的成功率。
+你要检查一下你自己的批评冲动里包含了哪些诉求。然后对这些诉求做一下梳理。
+这些诉求是正当或者不正当撇开不谈，从纯功利的角度来说，首先你要想清楚的问题是——它们是否适合用“批评”这个手段来需求解决？
+这个问题没有看上去这么简单——当然，批评是可以在早期起到这些效果的，但是代价就是一旦作了这些用途，你的批评权就会磨损。多做几次，就会磨损殆尽。
+你要充分的意识到，这是一种对批评权的损耗，眼下这件事是否值得用磨损批评权为代价来解决？
+你是要把你的批评权用在报复 ta 考了低分让你丢脸上、用在自我吹嘘、榨取崇拜上，还是用在劝阻 ta 和明显危险的人的来往、选择不可持续的职业生涯上？
+如果你把批评权用在批评所不该担当的任务上，并且长期这样做，那么你的批评权就会取消。于是在真正重大而要害的事情上你就会失去批评权——倒不见得你没有说话的权利，只是对方可以（并且也会）置若罔闻。
+信不信由你——到时候你会发现就那一件事，就足够抵过一切你自认为达成的成就还有余，以至于使得那些所谓的指正显得微不足道、可悲甚至可笑。
+就像教孩子开车，把你的影响力全浪费在了让 ta 学会了怎么开空调却没有教会 ta 踩刹车、打方向盘一样。
+所谓正确的批评和错误的批评，真正的分界线就在于这一项批评的行为是会磨损还是会增厚你的批评权。错误的批评，越批评越要加大音量，直到加无可加、只能眼睁睁的看着它渐渐变得毫无效果。正确的批评，则不需要做这样的挣扎，受这种折磨。
+而正确和错误之间的分界线，就在于你让批评承担了不该批评承担的任务。
+那么什么样的任务是不该批评来承担的呢？
+先看平复自己的情绪问题。
+你的情绪受伤，就不应该用批评来表达。情绪受伤，如果你认为应该表达，那么就坦白的表达——“这些行为让我的感情受到了伤害，如果我的感情受到伤害对你来说是一种损失的话，我们应该商量一个成本最低的手段来合作避免它再发生，并且讨论一下我们如何分担这份成本”。
+你的感情受伤，这是一个 problem，一个 issue，一个现象、一个待解决的中性的事务；不是一种罪行、一种失败、一种待偿付的债务，这并没有给你任何神奇的审判权和暴力免责权。你的受伤现象有机制、有规律，解决它有方法、有成本，如此而已。
+解决感情受伤问题的过程，应该是一个探寻机制和规律，寻找方法、处理成本的问题。
+而且这个成本理所应当在你这一边，对方是出于爱才会存在分担的诉求。
+你是没有任何义务为不伤害我的感情而付出任何成本的。完全是因为你爱我，所以我的痛苦才会成为你的损失。我相信你爱我，所以我才可能开口把你邀请到这个讨论中来。
+我们讨论的基础，是如何合作避免我们双方的损失，不是为了避免我的损失。
+不清楚我的感情敏感点，不是一种过错——因为连我自己也要疼了才知道哪里会疼。
+无过错可言，又何来“报复”可言？
+这种感情受伤的特殊机制，是没有行业标准的、没有自然常数、一致设定的，这就使得“批评”在此不能适用。因为批评必须基于共同承认或接受的一致的逻辑前提。</description>
+    </item>
+    
+    <item>
+      <title>为什么人很难被说服</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E5%BE%88%E9%9A%BE%E8%A2%AB%E8%AF%B4%E6%9C%8D/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E5%BE%88%E9%9A%BE%E8%A2%AB%E8%AF%B4%E6%9C%8D/</guid>
+      <description>为什么人很难被说服 归根结底一句话： 因为世界上没有任何一个人，无论他是皇帝还是乞丐，不管她是圣徒还是妓女，会轻易地认为自己的思想竟然是错的。
+【题引】： 有一天，王阳明的弟子问：
+“老师，我犯过许多错误，可你为什么不提醒我？” 王阳明反问：
+“我没提醒你，你怎么知道自己犯了错误？” 弟子答：
+“我学习后才知道。” 王阳明说：
+“所以我教导你学习啊。” 弟子有点疑惑：
+“我的意思是说，你应该帮助我改正错误。” 王阳明笑道：
+“你自己的错误，别人怎么改正得了？只有你自己，才能改正自己的错误。” 其实这个心理，可以用《道德经》里的两句话来概括。
+第一句：㊣不自是，故彰； 1、
+公元 200 年，中国历史上爆发了一场著名的战役叫“官渡之战”。
+最终，曹操以三万兵马击败袁绍十几万大军，从此拉开了历史新序幕。
+可是这场战役，不仅袁绍自己后悔不已，就连后世无数的历史学家也为之扼腕痛惜。
+为什么？
+因为袁绍本来不会失败，如果当初他采纳了田丰提出的“持久战+游击战”建议的话。 那么按照常理：
+失败后的袁绍一定会痛定思痛，亲自去监狱里给田丰松绑，并且赔礼道歉，重新启用。 还别说，在“官渡之战”失败后，真就有一个狱卒向田丰提前道喜。
+然而，田丰却仰天长叹道：
+“他若胜了，我或许能活；如今败了，我必死无疑。” 【备注】：《三国志•袁绍传》：丰曰：“若军有利，吾必全，今军败，吾其死矣。” 果然，袁绍回来的第一件事，就是将田丰“杀人灭口”。
+2、
+不过，田丰之死虽然可惜，还是很有教育意义的。
+起码他临死前的这一叹，就向我们透露了一个人性的天大秘密。
+这个秘密就是：
+正常的人，是不会认错的。 什么？让一个人认错真的有这么难？
+对！不仅难，而且难于上青天。
+3、
+美国著名的心理学家艾略特·阿伦森为了研究这个现象，还专门写过一本书来探讨。书的名字就叫《谁会认错》，他在书里收集整理了数不胜数的真实案例：
+从总统到平民；从明星到穷人； 上至国会议员，下到企业职工； 无论是高教育的大学教授，还是低文化的街头小贩。 几乎无一例外，全体国民统统都是“死不认错”的代言人。
+这究竟是为什么呢？我觉得可以用一些形象的比喻来解释：
+因为当一个人承认自己错误的时候，就等于是从大脑中强行卸载掉旧的思维，同时再安装一套新观念。而在新旧交替的过程中，往往会引发大脑信息短路，从而造成思想系统的紊乱。 这可并不是我空口无凭，一时臆想，而是有着实实在在的心理学和脑神经学双重依据。
+我上面描述的那种现象，在心理学上被称为：
+“认知失调”。 这个概念是美国社会心理学家利昂·费斯廷格在 1956 年首次在《当预言失灵》一书中提出来的：
+因为他发现那些所谓的末日邪教派成员们，有一种不可思议的信仰坚持。哪怕他们的教主关于地球灭亡的预言失败了，他们也不会认为教主在欺骗。但是，毕竟这种“预期落空”引发了他们认知上的不协调，那怎么办呢？ 指望他们知错就改，回头是岸？公开承认自己蠢？别开玩笑了。
+认错这么反人性的事情，世界上从古至今就没有多少人能够做得到。 声明一下：
+这里的”认错“是指发自内心的认为自己的思维是错的，不是那种勉强装出来的面子功夫。 所以，基本上所有的信徒为了解决这种认知失调的办法不是承认错误，而是去接受一个新的预言：
+外星人已经因为他们的虔诚信仰而饶恕了这个星球。 也就是说：
+当人们在遇到一个跟自己认知不匹配的新观念的时候，第一反应不是接受并改正，而是找出支持旧观念的其他理由，哪怕这个理由荒唐至极。 4、
+值得一提的是，美国神经科学家德鲁·威斯顿通过核磁共振技术，扫描人类在处理信息时的脑电图表明：
+当人面对令自己认知失调的信息时，大脑主管理性的区域就会突然“断电”，停止工作；而当恢复了协调时，大脑的情绪区域就会突然“亮灯”，兴奋异常。——艾略特·阿伦森《谁会认错·第一章》 也就是说：
+当人在面对自己错误那一刻，是没有理性的，所以是不可能认错的。 除非等大脑适应了那一套新的、正确的思维程序，人才会恢复理性，改过自新。
+所以，我们在生活中即使听到一个人说“对不起”的时候，也往往是几天，或者是几个月，甚至几年以后。</description>
+    </item>
+    
+    <item>
+      <title>二开车撞人后怎么处理最理智</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</guid>
+      <description>开车撞人后怎么处理最理智 一位资深警察的微信，有车的朋友一定要存！(从此理直气壮） 1:出了事故不要害怕,立刻打 110 和保险公司.对方伤重请直接播 120,你留在现场等交警. 2:不要垫付,如果交警要扣车,你就让他扣,所有他需要的资料都给他.自己步行或者打车上下班,15 个工作日你直接去交警 大队要验车报告.不给你,你就立刻即刻马上不要迟疑的到交警同一栋办公楼找到一个叫&amp;quot;行政科&amp;quot;的地方提出行政复议.然后拿着验车报告去提车.停车场 1 分钱 都不要给他,拿着验车报告你直接就可以拿车,如果对方不给你车,你直接打 110,说有人非法扣车.(验车和停车是不要钱的.国家有财拨专门用于这一部分. 而且 100%的停车场都不是交警自己的,都是外包的.他们都是和交警同穿一条裤子)这一部分你要是担心自己的新车扣了以后被损,你就提前自己拍照,然后弄 一个车衣去盖起来. 3:拿到车该上班就上班,不上班你就休息,千万不要紧张.现在你要做的事情就是不要去医院找打,也不要主动打电话调解.你 等他们联系你,或者交警通知你处理事故.任何关于医院的费用你说我没钱,请和我的保险公司联系.如果告我的话,请连我的保险公司一起告.你连面都不用出, 保险公司就请非常专业的讼棍帮你打官司.最后要赔多少,完全不用自己管. 4:现在你要考虑怎么拿回自己的行驶证.经过第三点,这个时候对方要嘛接受调解愿意接受交警认责比例,把发票给你,你去报 销,然后签字.你拿回行驶证.经过第三点,对方不愿意调解, 那就告.你放心大胆的开车,有人查你就说有官司在身,行驶证抵押了.时间一长,要么保险公司答应赔,要么伤者自己接受调解.法院一判下来,你就可以直接拿 判决书去找交警,约对方一起去,签字拿回东西.对方不去,你直接找交警,时间长了不给你行驶证你就去行政科闹一下. 5:修车部分很简单,该修的地方.保险勘探现场的时候会有一张现场单,你拿去 4S,其他他们会搞定. 6:营养部分,误工部分,你不要私下答应,当地有一份很完整的赔偿标准,对方拿出所有的发票和证明后交警开具调解书,你拿去保险公司都能报.三不一没有原则 ：不垫付、 不探望 、不调解，没有钱</description>
+    </item>
+    
+    <item>
+      <title>喜欢上一个人的本质是什么</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>喜欢上一个人的本质是什么 这世上所有的感情，其实都是一种“富兰克林效应”。 题引： 一个人爱上另一个人的根本原因是什么？
+是因为对方的外貌？对方的品格？对方的地位？对方的名声？对方的财富？ 统统都不是！那究竟是为什么呢？
+1、
+先讲一个著名的故事：
+二战时期，犹太人遭到德国纳粹的迫害。 有两个犹太兄弟商量着该向谁寻求帮助，二人的意见发生了分歧。 弟弟主张向父亲曾经资助过的一个银行家求助，而且这名银行家曾多次表示有机会一定要报恩。 哥哥则认为，应该向曾经资助他们家族起步的另一位木材商求助。 两人谁也说服不了谁，于是分头行动，从此失去联系。
+多年后，由木材商冒死相助逃到日本的哥哥回国寻找弟弟，发现弟弟全家早已惨死在奥斯威辛集中营。
+后来哥哥从纳粹档案中找到了举报弟弟藏匿处的电话记录，打电话的人——正是那位银行家。
+哥哥仰天长叹：
+曾经帮助过你的人，比你所帮助过的人，更可靠。 2、
+现代的营销学里的有一个非常经典的案例，上个世纪美国有一家吸尘器公司的推销冠军。
+他在退休前一天对其他的员工们说：
+你们这些笨蛋，推销业务时只会敲开门问：“太太您好！能不能给我三分钟介绍我们公司的一个产品。”每次话还没说完，“啪”的一声就吃了闭门羹。你说你们这不是赤裸裸的骚扰吗？顾客没报警已经是客气的了。” 于是这些员工们就好奇的地问：“那您是如何向顾客推销的？”
+这位退休的老员工回答道：
+“我会说，太太您好！我是一个路过的推销员，口渴了。您能不能给我一杯水喝呢？” 于是，我走进顾客的家，先观察一下环境。
+然后在顾客给我准备水的时间里，轻描淡写地唠一唠家长里短，然后旁敲侧击地说几句自己所推销的“吸尘器”。
+顾客没有压力，自然就会接话。
+如此一来，产品推销的成功率可以提高百分之六七十。 其他的员工们听了如梦方醒，纷纷给这位老员工鼓掌。
+其实这个案例，有一个心理学的名词，叫做：
+“富兰克林效应。”
+2、
+这个效应是根据 18 世纪美国的国父之一的本杰明•富兰克林所说的一句话发展而来的。
+富兰克林曾说：
+相比那些被你帮助过的人，那些曾经帮助过你的人会更愿意再帮你一次。 他为什么会这么说呢？因为他曾经做过一件影响了世界心理学的事情。
+这个故事最早是记录在卡耐基的《人性的弱点》一书中，后来在 1993 年，美国著名的心理学家艾略特•阿伦森，又将这个故事写进了他的《社会心理学》。
+故事大体是这样的：
+1736 年，有一天富兰克林在宾夕法尼亚的议院发表演讲。 另一位议员完全反对他的观点，于是也发表了一篇演讲，十分激烈地批评了富兰克林。 富兰克林有点措手不及，但是又想争取这位议员的同意。 怎么办呢？
+他无意中打听到这位议员的家里正好有一套非常稀有的图书。
+于是他十分恭敬地写了一封信，厚着脸皮向这个议员借书。
+没想到这个议员竟然同意了，过了一段时间，富兰克林在还书的同时郑重地表达了谢意。
+几天后当他们再次在议会厅见面时，富兰克林是这样描写的：
+“他竟然主动跟我打招呼（以前从来没有过），后来我们谈话，他还表示，任何时候都愿意为我效劳。” 从此他们两人化敌为友，终生保持着友谊。
+所以后世的心理学家们人得出一个结论：
+让别人喜欢你的最好方法不是去帮助他们，而是让他们来帮助你。 这就是著名的“富兰克林”效应的由来。
+3、
+一个世纪以后，美国的另一位总统林肯就深受“富兰克林效应“的启发。
+有一次，林肯准备让一位政敌帮个小忙。 一位议员批评道：“你为什么要试图跟政敌做朋友呢？你应当消灭他们。” 林肯却温和的回答道：“难道我不是在消灭我的敌人吗？特别是当我们变成朋友的时候。” 让一个敌人帮你一个小忙，就能化敌为友，化干戈为玉帛。
+这个套路，真的可信吗？真的可行吗？
+4、
+1969 年，心理学家琼•杰克和戴维•兰迪决定亲自上阵，检验一下这个有二百年历史的“富兰克林效应”在 20 世纪是否已经过期。
+于是他们安排了一次知识竞赛，让所有的参与者赢了一笔小钱。 竞赛结束后，一名研究人员向其中三分之一的参与者们表示： “他是用自己的钱来组织的竞赛，现在他没钱了，能否请他们把钱退还给他。“ 一名秘书向另一组三分之一的参与者们表示： ”这是由心理学实验室赞助的竞赛，现在实验室资金短缺，能否请他们把钱退还。“ 实验过后，所有的参与者们都被要求填写了一项问卷调查，分别给研究人员和秘书打分。</description>
+    </item>
+    
+    <item>
+      <title>如何应对点菜时人人都说「随便点」的尴尬局面</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B0%B4%E5%B0%AC%E5%B1%80%E9%9D%A2/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B0%B4%E5%B0%AC%E5%B1%80%E9%9D%A2/</guid>
+      <description>如何应对点菜时人人都说「随便点」的尴尬局面 讲真，多年点菜的经验让我明白一点：凡是点菜时说随便的人，其意往往并非是字面意义上的“随便”。而是告诉你：他们要的不是选择权，而是决定权。
+领导们说“随便”，实在是因为点菜这种事是做下属的分内之事，不需要领导亲力亲为；并不代表着你可以权纲独断，代替领导拍板。好比说，部门工作上出了问题，负责拿出具体解决方案的人是你，而领导负责在你拿出的 ABCD 解决方案中挑选并拍板。
+朋友们说“随便”，实在是因为他们不愿意为点菜这件事耗费脑细胞，不想在密密麻麻的菜单中费神，他们只是希望可以将一切简化为行和不行两个选项，就像做判断题一样打勾打叉就好。一言以蔽之，选择恐惧症。他们真的对吃什么不在意吗？点菜前说随便，点好了又反对，这种情况难道你们没有碰到过？
+所以，遇到这种点菜说“随便”的领导/长辈/朋友，你的正确做法就是：将厚厚的一本菜单按照一定次序缩减到数个选项，然后让他们挑选并拍板。
+具体步骤如下：
+第一步，高声叫来服务员，询问：“你们这有什么特色菜？”。之后，服务员当着全席报出 ABCDEF 数个选项。此时，若坐主位的领导长辈们插话：“A 不错！”，点 A；若无人插话，进入第二步。
+第二步，对应服务员报出的 ABCDEF 选项，自己斟酌或进一步询问服务员（如问卖的最好的是什么之类），选出两到三个，向主位的领导或长辈询问：“领导/长辈，我觉得这个 A 还有 B 啊 C 啊挺不错的，您觉得呢？”。此时，若坐主位的领导长辈们说：“A 不错！”，点 A；若对方回答：“随便！都行！”，进入第三步。
+第三步，继续斟酌缩小范围到一个，对着主位并兼顾全席说：“那就点这个 A 吧，听说这边做得挺好的/卖的挺不错的/蛮有特色的。”。此时，若坐主位的领导长辈们说：“好好好/随便随便/都行都行”或不答言，点 A；若有人异议，则将 A 换成其他，循环此步骤至无人异议。此时，第一道菜点完。
+第四步，继续询问服务员：“你们这里主菜/蔬菜/汤/主食有什么推荐没？”重复以上一到三步，将剩余的菜点完。点菜具体类别次序另说，这里不赘述。
+牢记三句话：知情权在全席；选择权在你；决定权在主位。
+以上是和领导长辈们，和朋友之间就可轻松一点，不用叫服务员自己确定选项也行，也可自己做主点一两道。总之，关键点在于：不断缩小选择范围，让对方只用选择“是”或者“否”，尽量简化对方思考内容，同时给予对方决定权。这个原则可不仅适用于点菜，凡是在生活工作中扔给你一句“随便”的人，皆可按此原则处理。
+人际交往之间，重要的就是要有个能以小见大，见微知著的心。</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置默认网关</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</link>
+      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</guid>
+      <description>配置默认网关 进入全局使用一下命令配置即可。
+enableconfigure terminalip default-gateway 192.168.10.1</description>
+    </item>
+    
+    <item>
+      <title>Echarts 基本配置</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <description>初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
+var option = {} 标题 title: { text: &amp;#39;运动品牌科技水平&amp;#39;, //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: { // 轴类型为类目轴  type: &amp;#39;category&amp;#39;, // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: { // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
+series: [ { // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;, // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;, // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40] } ] 将配置项设置给 Echarts 实例对象 myChart.</description>
+    </item>
+    
+    <item>
+      <title>Echarts 是什么</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>Echarts 是什么 ECharts 是一个使用 JavaScript 实现的开源可视化库，兼容性强，
+底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
+使用 Echarts 的时候，只需要更改配置项即可。</description>
+    </item>
+    
     <item>
       <title>当我见过太多的生离死别后</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/%E5%BD%93%E6%88%91%E8%A7%81%E8%BF%87%E5%A4%AA%E5%A4%9A%E7%9A%84%E7%94%9F%E7%A6%BB%E6%AD%BB%E5%88%AB%E5%90%8E/</link>
       <pubDate>Sat, 23 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/%E5%BD%93%E6%88%91%E8%A7%81%E8%BF%87%E5%A4%AA%E5%A4%9A%E7%9A%84%E7%94%9F%E7%A6%BB%E6%AD%BB%E5%88%AB%E5%90%8E/</guid>
-      <description>当我见过太多的生离死别后 之前在网上看到过这样一句话，对我触动非常大：
- 当我见过太多的生离死别后，不自觉的，就对未来没有那么笃定了；不自觉的，就开始珍惜自己的时间，珍惜自己身边的亲人朋友。想谁了，立刻就想让他知道。喜欢谁了，恨不得天天跟他表白。突然某一天想念起多年不联系的老友，也顾不得疏不疏远，没话找话也要联系人家跟人家聊几句。不知道哪一次见面就是永别，不知道哪一句话就是最后一句
+      <description>当我见过太多的生离死别后 之前在网上看到过这样一句话，对我触动挺大的：
+ 当我见过太多的生离死别后，不自觉的，就对未来没有那么笃定了；
+不自觉的，就开始珍惜自己的时间，珍惜自己身边的亲人朋友。
+想谁了，立刻就想让他知道。
+喜欢谁了，恨不得天天跟他表白。
+突然某一天想念起多年不联系的老友，也顾不得疏不疏远，没话找话也要联系人家跟人家聊几句。
+不知道哪一次见面就是永别，不知道哪一句话就是最后一句。
  </description>
     </item>
     
@@ -24,25 +371,12 @@
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>shh 取代 telnet command
-输入密码，链接
+      <description>ssh 取代 telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
+输入密码并登录。
 保护密码
-进特权
-保存
-进全局模式，加密密码 Serverce password-encryption
-ssh加密通信 ip domian-name username
-ip ssh version 2
-crypto key generate rsa</description>
-    </item>
-    
-    <item>
-      <title>Cisco Trunk 和 Access</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/trunk-%E5%92%8C-access-/</guid>
-      <description>Trunk 和 Access trunk 运行通过多个VLAN。
-access，只允许通通过单个VLAN。</description>
+进入特权模式，保存
+加密密码 在全局模式下：
+Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa</description>
     </item>
     
     <item>
@@ -51,32 +385,7 @@ access，只允许通通过单个VLAN。</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/vlan-%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</guid>
-      <description>vlan 相关操作 删除vlan分配
-conf t
-interface f 0/18
-no switchport access vlan
-接入模式 等于下行模式
-interface f 0/18
-switchport mode access
-switchport mode access
-验证端口状态
-删除vlan
-no vlan 20
-show vlan summary，
-show vlan brief，
-show interface vlan 20
-show interface f0-/18 switchport
-进全局
-vlan 10
-name student
-exit
-interface f0/12
-switchport acces vlan 10 （指定删除10，不加10相当于删除全部？）
-end
-show vlan brief
-确定划分完成
-interface 0/12
-no switchport vlan 10</description>
+      <description>vlan 相关操作 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 ip enable interface vlan 1 S1(config-if)#ip address 192.168.10.1 255.255.255.0 </description>
     </item>
     
     <item>
@@ -86,9 +395,7 @@ no switchport vlan 10</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
       <description>配置中继 进交换机的全局
-interface 需要配置的接口
-switchport mode trunk
-switchport trunk native vlan 99</description>
+interface f 0/1 switchport mode trunk switchport trunk native vlan 99 </description>
     </item>
     
     <item>
@@ -97,34 +404,7 @@ switchport trunk native vlan 99</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
-      <description>配置交换机端口安全 进全局模式
-interface f 0/1
-switchport mode access
-switch port-security
-exit
-interface f 0/2
-switchport mode access
-switch port-security
-exit
-interface f 0/1
-switchport port-security maximum 1
-exit
-interface f 0/2
-switchport port-security maximum 1
-exit
-interface f 0/1
-switchport port-security mac-address sticky
-no shutdown
-exit
-interface f 0/2
-switchport port-security mac-address sticky
-no shutdown
-exit
-interface range f 0/1-10
-no shutdown
-exit
-interface f 0/1
-switchport port-security violation restrict</description>
+      <description>配置交换机端口安全 进入全局模式 enable configure terminal 配置端口模式 interface f 0/1 switchport mode access //将端口的工作模式设置为 access。 打开端口的安全模式 switch port-security //开启f0/1端口的安全功能 switchport port-security maximum 1 // 配置该端口的最大连接数为 1（最大能配置为128 switch） switchport port-security mac-address sticky // 让交换机口主动记下最先插入设备的 MAC 地址。 switchport port-security violation restrict //针对不合法的MAC地址连接该端口，配置端口的处理模式为：（protect[丢弃数据包，不发警告] | restrict[丢弃数据包，在 console 发警告] | shutdown[关]） no shutdown 、 exit </description>
     </item>
     
     <item>
@@ -133,53 +413,33 @@ switchport port-security violation restrict</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置单臂路由 三个 pc，一个交换机在中间，一个路由器在交换机上面
-分别将交换机和路由器连起来
-配置交换机 进入交换机
-进全局，改名 S1
-创建vlan vlan 10 ，退出
-vlan 20，退出
-vlan30，退出
-将指定 access 端口分配给指定 vlan interface f 0/3
-switchport acces vlan 20
-exit
-interface f 0/2
-switchport acces vlan 10
-exit
-interface f 0/4
-switchport acces vlan 30
-exit
-将二层端口配置成 trunk 端口 interface g 0/1
-switchport mode trunk
-配置路由器 进路由器
-进全局，改名 R1
-interface g 0/0.1
-enc dot1Q 10
-ip address 192.168.2.2（pc的默认网关）255.255.255.0
-exit
-interface g 0/0.2
-enc dot1Q 20</description>
+      <description>配置单臂路由 拓扑图 三台 pc
+中间一台交换机
+一台路由器在交换机上方
+将交换机与路由器连起来
+配置交换机 进全局模式 enable configure terminal 修改交换机的名字 hostname S1 创建 Vlan vlan 10exitvlan 20exitvlan 30exit将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk配置路由器 进入全局模式进全局，并改名
+enableconfigure terminalhostname R1配置虚拟子端口 interface g 0/0.</description>
     </item>
     
     <item>
       <title>Hugo 命令</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</guid>
       <description>Hugo 命令 hugo new site MyBlog 创建一个新的站点文件夹
 hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</description>
     </item>
     
     <item>
       <title>Hugo 安装</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%AE%89%E8%A3%85/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%AE%89%E8%A3%85-hugo-/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/hugo-%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%AE%89%E8%A3%85-hugo-/</guid>
       <description>Hugo 安装 源码编译安装，首先安装好依赖的工具
- Git Mercurial Go 1.3+ (Go 1.4+ on Windows)  我的环境是windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
- 用管理员身份打开windows中的Windows PowerShell（命令提示符）。（windows中搜索powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  1Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入choco，查看是否安装成功。 复制下方代码，然后执行  1choco install hugo -confirm </description>
+ Git Mercurial Go 1.3+ (Go 1.4+ on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
+ 用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm </description>
     </item>
     
     <item>
@@ -197,7 +457,7 @@ hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</descript
 配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
 核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
 注意，一下内容前面的注释符号**#**请删掉。
-1AuthorizedKeysFile .ssh/authorized_keys2PasswordAuthentication no</description>
+AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     </item>
     
     <item>
@@ -224,7 +484,9 @@ VS Code Counter 统计代码总行数、注释行数、空白行数，以及使�
 Power Mode 一款超级炫酷的编辑代码的插
 HTML Snippets 非常实用的 HTML 代码片段以及提示
 Atuo Rename Tag 修改 html 标签，自动帮你完成尾部闭合标签的同步修改
-Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等</description>
+Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等
+Easy LESS 保存less文件后，自动生成css文件到当前路径
+px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。</description>
     </item>
     
     <item>
@@ -272,6 +534,24 @@ end</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E9%98%85%E8%AF%BB/%E5%B0%8F%E8%AF%B4/%E4%B8%89%E4%BD%93%E9%BB%91%E6%9A%97%E6%A3%AE%E6%9E%97/</guid>
       <description>《三体·黑暗森林》 </description>
+    </item>
+    
+    <item>
+      <title>《人体内旅行》</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E8%A7%82%E5%BD%B1/%E7%BA%AA%E5%BD%95%E7%89%87/%E4%BA%BA%E4%BD%93%E5%86%85%E6%97%85%E8%A1%8C/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E8%A7%82%E5%BD%B1/%E7%BA%AA%E5%BD%95%E7%89%87/%E4%BA%BA%E4%BD%93%E5%86%85%E6%97%85%E8%A1%8C/</guid>
+      <description>《人体内旅行》 第一次看《人体内旅行》这部纪录片。
+看完后，很是让我感受到了人体的精密，得天独厚的同时，但又不堪一击。
+不得不使我开始思考一个问题——我明明有着如此神秘且奇妙的人体结构，为什么我还是如此的平凡且普通？
+亦或者是我没有发现我的独特之处？
+还是像我这样拥有神秘人体结构的人太多了？
+我发现，这个时代似乎很少人珍惜自己的身体健康，似乎这样说也不准确，而应该说，
+珍惜身体健康的人越来越珍惜，不珍惜的人越来越不珍惜。
+这种两级分化的现象很让我不解，但又似乎不可避免。
+是因为内心不重视吗？但我想没人会不重视自己的身体吧。
+或者只是因为这该死的生活压力，无法让人抽出空闲时间来思考这些问题罢。</description>
     </item>
     
     <item>
@@ -520,7 +800,7 @@ end</description>
       <description>《流浪地球》 太阳正在急速老化持续膨胀，一百年后，太阳会膨胀到吞没震哥个地球。
 三百年后，太阳系将不复存在。
 面对灾难，人类异常团结，人类决定，将整个地球推离太阳系，为人类寻找新家园，人类在地球上建造了一万个行星发动机，为飞离太阳系提供动力，这个计划叫做流浪地球计划。
-在飞离太阳系之前，由于地球表面的环境的不断恶化 零下80+℃，导致人类无法在地球表面生存，为此，人类在每个行星发动机下面都建造了地下城，使得人类可以继续生活。
+在飞离太阳系之前，由于地球表面的环境的不断恶化 零下 80+℃，导致人类无法在地球表面生存，为此，人类在每个行星发动机下面都建造了地下城，使得人类可以继续生活。
 刘启带着韩朵朵偷偷来到了地面上。
 刘培强在空间站工作了十七年，在地球也飞到木星的位置后，终于离职了
 因木星引力太大，地球上的部分行星发动机遭到其引力的影响，导致四千七百多座星发动机出现停机故障。
@@ -530,18 +810,18 @@ end</description>
 运送火石的过程中，遭到了第二次强震，韩子昂与另一个成员牺牲了。
 刘启、韩朵朵和 Tim 与运送火石的大部队分离，这里充分的体现了你有用才留着你，没用了没人会管你。
 刘启找到一辆运输车之后，遇到了李一一，同时接到新任务，将火石送到苏拉威西，重新组织 CN171-11 救援队一起救援苏拉威西。
-行星发动机大部分重启完毕，在众人都以为地球已经脱离危险的时候，空间站的莫斯说出了真相：“在救援行动启动后的0.42秒，莫斯就已经推演本次救援的结果，联合政府虽早已知晓，但仍竭尽全力组织救援，但这注定是一场徒劳的救援，空间站的撤离，就代表着救援行动的失败。”
+行星发动机大部分重启完毕，在众人都以为地球已经脱离危险的时候，空间站的莫斯说出了真相：“在救援行动启动后的 0.42 秒，莫斯就已经推演本次救援的结果，联合政府虽早已知晓，但仍竭尽全力组织救援，但这注定是一场徒劳的救援，空间站的撤离，就代表着救援行动的失败。”
 这时候的木星的引力远远超过地球上的发动机的总推力。
 地球上的人类被放弃了， 这种世界末日将要来临的感觉，我不知道那是一种怎么样的绝望。
 不知道为什么，我现在很兴奋，这种前所未有的感觉令我的血液在燃烧。
 在这关键的石刻，刘启突然想到了小时候与父亲的对话，最后想到了一个方法——点燃木星，让木星的冲击波冲向地球，使得地球被冲击波推理木星的引力范围。
 说实话，一个小屁孩能想到的科学知识，为毛那些世界顶尖科学家想不到&amp;hellip;.可能这就是剧情需要吧。
-之后才知道这个救援方案已经被以色列的顶尖科学家提出过，但救援成功的概率为0.
+之后才知道这个救援方案已经被以色列的顶尖科学家提出过，但救援成功的概率为 0.
 但刘培强并没有放弃，最终让韩朵朵获得了在世界广播的能力，说了几句比较啰嗦的话之后&amp;hellip;&amp;hellip;
 所有的车辆开始往苏拉威西发动机方向赶，说实话，这里让人挺震撼的。
 我虽然不相信人类的人性真会这样做，但我希望它可以这样做
 老何为了找到那啥牺牲了。
-tim为了将刘启从那啥拉回来也在鬼门关走了一走
+tim 为了将刘启从那啥拉回来也在鬼门关走了一走
 在只剩下最后十五分钟的时候，其他人来帮忙了——推那啥玩意
 最后还是差五千公里&amp;hellip;..
 刘培强在这个时候决定牺牲空间站，空间站上的燃料可以达到五千公里，刚好可以点燃木星，原本我以为他会带着空间站上休眠仓一起赴死，没想到这玩意还可以解体&amp;hellip;..
@@ -579,7 +859,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
 安德鲁把别人的乐谱弄丢了，但他背过谱子，他上了，他们获得了第一名。
 坦纳你来干嘛了今天是核心排练没时间调教替补，弗莱彻说。留下坦纳一脸懵逼。
 弗莱彻全看表现，今天你行，你就取代他上，明天他行，他就取代你。
-我宁愿酗酒吸毒34岁就家破人亡，成为人们晚餐桌上的话题，也不愿意腰缠万贯满面红光的活到9 0岁，但是没人记得我
+我宁愿酗酒吸毒 34 岁就家破人亡，成为人们晚餐桌上的话题，也不愿意腰缠万贯满面红光的活到 9 0 岁，但是没人记得我
 安德鲁以为他是核心乐手，没想到再弗莱彻心中不过是个临时核心。现在弗莱彻找到了另一个也会安德鲁所会的双倍慢摇，弗莱彻为了让音乐会达到最高水准，让他们竞争，并选出最适合的乐手，但安德鲁却慌了，他怕康纳利会取代他。他输了，他被替代了，他不服
 安德鲁决定和女友妮可分手，为了他那梦想。
 疯子吧，这弗莱彻，压迫式训练。
@@ -593,7 +873,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
 他一直都是我用来激发你动力的而已。弗莱彻回答
 看到这里我已经开始觉得这光头还真不错，虽然之前我就已经觉得有着一方面的考虑，但当他真说出目的的时候，还是觉得弗莱彻的教育理念从某个方面讲，确实有用。
 安德鲁答应了弗莱彻，并邀请前女友妮可观看他的爵士乐表演，但现在的妮可已经有男朋友了。哈哈哈哈，看到这我直接心情愉悦，这部活该吗？有些人，一旦错过，就不在了。
-音乐节来了，演出开始，但谱子确实错的，弗莱彻原来早已知道谁让他失去了职位，早已开始报复，演出结束过后，安德鲁到休息室拥抱父亲，父亲让他回家， 但他转身便来到了台上，直接无视弗莱彻，开始solo，中途弗莱彻说了一句：“我把你眼球挖出来”，被安德鲁用那啥打了一下，这一下真痛快！
+音乐节来了，演出开始，但谱子确实错的，弗莱彻原来早已知道谁让他失去了职位，早已开始报复，演出结束过后，安德鲁到休息室拥抱父亲，父亲让他回家， 但他转身便来到了台上，直接无视弗莱彻，开始 solo，中途弗莱彻说了一句：“我把你眼球挖出来”，被安德鲁用那啥打了一下，这一下真痛快！
 安德鲁继续即兴，越来越快，弗莱彻这次真的震惊了。
 最后一刻，弗莱彻和安德鲁相视一笑。在他们的眼神对望和表情变化中，我看到了对音乐执着追求的狂热和艺术上不受任何干扰的默契。这种过程，非常短暂，短到让人无法相信，但是这，可能就是艺术的魅力吧。</description>
     </item>
@@ -722,17 +1002,25 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
     
     <item>
       <title>《苏菲的世界》</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E9%98%85%E8%AF%BB/%E5%93%B2%E5%AD%A6/%E8%AF%BB%E5%90%8E%E6%84%9F/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E9%98%85%E8%AF%BB/%E5%93%B2%E5%AD%A6/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E9%98%85%E8%AF%BB/%E5%93%B2%E5%AD%A6/%E8%AF%BB%E5%90%8E%E6%84%9F/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
-      <description>《苏菲的世界》 主要内容 苏菲在某一天接到了一封神秘人的来信，这个神秘人是个哲学家，名叫艾伯特，这个神秘人教苏菲哲学，并在苏菲生日的前一天，告诉苏菲：”我们生活的这个世界，实际上只是席德父亲的想法罢了，他可以操控我们所在的世界，这个世界的一切都已经早已被他安排好，我们只是席德父亲创造出来的人物，好作为他女儿的消遣“。
-苏菲对此感到很难过——生命不过是南柯一梦。这个人会将这些想法写成一本书，这本书将会被当作礼物送给这个人的女儿席德当作她生日礼物。
-席德的生日来临了，他收到了父亲给他的生日礼物，是一本书，名叫《苏菲的世界》，她读了很多，决定帮助苏菲和艾伯特逃离书中这个世界。
-感想 当看到苏菲和艾伯特原来只是生活在一个别人构建的世界之后，我突然很恐惧，是否我也生活在一个虚幻的世界呢？但我和苏菲不同的是，我至今还没有发现。
-佳句  追寻真理的过程就像准备破解一场犯罪案件的过程，有人认为安德森是凶手，有人则认为尼博尔或法布克才是。有时警方可以侦破案件，但也可能永远无法查出真相（虽然这个真相一定存在于某个地方，但是它一定不会自己跳出来告诉你：“我是真相”。 哲学家们在成长的过程中不能习惯这世界上的一切（将世间一切当作理所当然），因为他们需要时刻保持一颗好奇心（这是极为重要的一项能力）。 大多数人都忙于日常生活的琐事，这些人对于世界的好奇心大多都受到了生活的压抑，直到生活将他们的好奇心磨灭殆尽。 神话存在的意义是为了解释当时时代人们所不了解、不理解的事物。 你知晓的一切，都不是事物本身的模样，只是大多数人所以为的模样。 在某个期间，哲学乃是男人的专利，一个妇女无论如何有思想都只能对男人俯首听命，因此许多宝贵经验就这样丧失了。 当时的人并没有现代的各种高科技电子设备可以利用，他们唯一的工具就是自己的心灵。 真正的知识来自内心，而不是得自别人的传授；唯有出自内心的知识，才能使人拥有真正的智慧。 智者是有智慧的人，而哲学家则是追求智慧的人。 诡辩家是自以为无所不知的人，而哲学家是明白自己一无所知的人。 大部分人不是太过笃定，就是漠不关心。 人只要有正确的见解，就会采取正确的行动。 一个人之所以犯错，是因为这个人不知道何者是对的。 如果你做一些自己深知不对的事，你还会活得很快乐吗？ 哲学家们对永远“真”，永远“善”，永远“美”的事物感兴趣。 对于那些不断改变的事物不可能会有真正的认识。 人既不能懦弱，也不能太过鲁莽，而要勇敢（不够勇敢就是懦弱，太过勇敢就变成鲁莽）；既不能吝啬，也不能挥霍，而要慷慨（不够慷概就是吝啬，太过慷概就变成挥霍）；饮食也是如此，既不能吃太少，也不能吃太多（吃的太少会导致太瘦，吃的太多会导致太胖）。 运用理智使自己不受当时主流思想的影响。 上帝不是一切，一切都在上帝之中。 一个人可能宁愿整个地球遭到毁灭，也不愿意直接的手指被割到。 一个人可以完全随心所欲的以自己的方式诠释生命。 万一你睡着了呢？万一你在睡眠时做梦了呢？万一你在梦中到了天堂，在那儿采下了一朵奇异而美丽的花？万一你醒来时，花儿正在手中？啊，那时你要如何呢？ “死亡和我们没有关系”，因为“只要我们存在一天，死亡就不会来临，而当死亡来临的那一刻，我们也不在存在了”；毕竟，我们好像从未听说某人得了“死亡”这种疾病。 神不足惧，死不足忧，祸苦易忍，福乐易求 所有的自然现象，比如生病与死亡，都只是遵守大自然不变的法则而已，因此他们认为人们必须学会接受自己的命运。 没有任何事情是偶然发生的，每一件事物发生都有其必要 当人在追求较短暂的快乐时，必须考虑是否还有其他方式可以获得更大、更持久或更强烈的快乐。 当我们考量一个行动是否有乐趣时，必须同时斟酌它可能会带来的副作用。 我们心中很”理所当然“的看法也不一定经得起时间的考验。 你可能知道一个人是否爱你，你只能相信他爱你，或者，希望他爱你  精彩片段 这次他们走过所有关于超自然现象的书，停在书店最里面一个看起来不甚牢固的架子前。架子的上方挂着一块很小的牌子，上面写着：哲学类。艾伯特指着架上的一本书。苏菲看到书名时不禁吓了一跳。上面写着：苏菲的世界。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-%E8%A7%82%E6%84%9F/%E9%98%85%E8%AF%BB/%E5%93%B2%E5%AD%A6/%E8%8B%8F%E8%8F%B2%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
+      <description>《苏菲的世界》 凌晨，初次看完《苏菲的世界》这本书。
+这本书真是越到后面越有趣，小说与哲学科普的完美结合；并且充满了悬疑的情节和有趣的脑洞。
+作者让小说中的苏菲发现了自己只是书中的一个虚拟人物后，非常的接受不了，并和她的哲学老师密谋逃脱这个虚拟世界。
+而更有意思的是，这本书中还有一个女孩叫席德，她处于苏菲世界之外的世界，她的父亲将《苏菲的世界》当作生日的礼物送给了她，席德读了这本书后，决定帮助苏菲他们逃脱书中的世界，在她所处的世界阻拦着自己的父亲。
+站在我的维度来看，席德和他父亲也是我手中这本书的作者虚构的。
+这不得不让人陷入沉思：作为读者的我们，是否也是别人虚构的人物呢？
+我们是否也像他们那样完全没有发现自己是被虚构的？
+或者是有人已经发现了，并且像苏菲和她的哲学老师那样逃出了他们以为的“书中世界”，
+实际上也只是进入了另一个虚构的世界罢了。
+我无法回答，这个世界上也许也没有人能回答，但肯定有人发现，也许是那些大哲学家，比如尼采、叔本华、柏拉图。
+自认为比较精彩的片段  这次他们走过所有关于超自然现象的书，停在书店最里面一个看起来不甚牢固的架子前。架子的上方挂着一块很小的牌子，上面写着：哲学类。艾伯特指着架上的一本书。苏菲看到书名时不禁吓了一跳。上面写着：苏菲的世界。
 “你要不要我买一本送给你？”
-“我不太敢看耶！”</description>
+“我不太敢看耶！”
+ 这一段我自认为是比较让人浮想联翩的，作为当事人的苏菲，又有多么的恐惧呢。
+自认为书中的佳句  追寻真理的过程就像准备破解一场犯罪案件的过程，有人认为安德森是凶手，有人则认为尼博尔或法布克才是。有时警方可以侦破案件，但也可能永远无法查出真相（虽然这个真相一定存在于某个地方，但是它一定不会自己跳出来告诉你：“我是真相”。 哲学家们在成长的过程中不能习惯这世界上的一切（将世间一切当作理所当然），因为他们需要时刻保持一颗好奇心（这是极为重要的一项能力）。 大多数人都忙于日常生活的琐事，这些人对于世界的好奇心大多都受到了生活的压抑，直到生活将他们的好奇心磨灭殆尽。 神话存在的意义是为了解释当时时代人们所不了解、不理解的事物。 你知晓的一切，都不是事物本身的模样，只是大多数人所以为的模样。 在某个期间，哲学乃是男人的专利，一个妇女无论如何有思想都只能对男人俯首听命，因此许多宝贵经验就这样丧失了。 当时的人并没有现代的各种高科技电子设备可以利用，他们唯一的工具就是自己的心灵。 真正的知识来自内心，而不是得自别人的传授；唯有出自内心的知识，才能使人拥有真正的智慧。 智者是有智慧的人，而哲学家则是追求智慧的人。 诡辩家是自以为无所不知的人，而哲学家是明白自己一无所知的人。 大部分人不是太过笃定，就是漠不关心。 人只要有正确的见解，就会采取正确的行动。 一个人之所以犯错，是因为这个人不知道何者是对的。 如果你做一些自己深知不对的事，你还会活得很快乐吗？ 哲学家们对永远“真”，永远“善”，永远“美”的事物感兴趣。 对于那些不断改变的事物不可能会有真正的认识。 人既不能懦弱，也不能太过鲁莽，而要勇敢（不够勇敢就是懦弱，太过勇敢就变成鲁莽）；既不能吝啬，也不能挥霍，而要慷慨（不够慷概就是吝啬，太过慷概就变成挥霍）；饮食也是如此，既不能吃太少，也不能吃太多（吃的太少会导致太瘦，吃的太多会导致太胖）。 运用理智使自己不受当时主流思想的影响。 上帝不是一切，一切都在上帝之中。 一个人可能宁愿整个地球遭到毁灭，也不愿意直接的手指被割到。 一个人可以完全随心所欲的以自己的方式诠释生命。 万一你睡着了呢？万一你在睡眠时做梦了呢？万一你在梦中到了天堂，在那儿采下了一朵奇异而美丽的花？万一你醒来时，花儿正在手中？啊，那时你要如何呢？ “死亡和我们没有关系”，因为“只要我们存在一天，死亡就不会来临，而当死亡来临的那一刻，我们也不在存在了”；毕竟，我们好像从未听说某人得了“死亡”这种疾病。 神不足惧，死不足忧，祸苦易忍，福乐易求 所有的自然现象，比如生病与死亡，都只是遵守大自然不变的法则而已，因此他们认为人们必须学会接受自己的命运。 没有任何事情是偶然发生的，每一件事物发生都有其必要 当人在追求较短暂的快乐时，必须考虑是否还有其他方式可以获得更大、更持久或更强烈的快乐。 当我们考量一个行动是否有乐趣时，必须同时斟酌它可能会带来的副作用。 我们心中很”理所当然“的看法也不一定经得起时间的考验。 你不可能知道一个人是否爱你，你只能相信他爱你，或者，希望他爱你  </description>
     </item>
     
     <item>
@@ -757,7 +1045,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
 但加州时间并没有变慢。
 有人 22 岁就毕业了，
 但等了五年才找到好的工作！
-有人 25 岁就当上CEO，
+有人 25 岁就当上 CEO，
 却在 50 岁去世。
 也有人迟到 50 岁才当上 CEO，
 然后活到 90 岁。
@@ -913,7 +1201,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
 看见了吗？
 本质上，人免于审判的自由是天授的，是先在的，必须经由本人的行使或者放弃，才转为可被审判的状态。
 只有你接受了对方的审判权，对方才拥有了审判你的审判权。对方的审判结果，对你才不仅仅只是一种暴力优势的结果，而同时是你对自己的自由的尊重。
-“我认可这个判断者关于我的特定范围行为的正义性的判断高于我自己的判断，我接受ta来替代我自己执行这一判断权，直到我自己取消这一授权。”——这就是伦理关系的本质。
+“我认可这个判断者关于我的特定范围行为的正义性的判断高于我自己的判断，我接受 ta 来替代我自己执行这一判断权，直到我自己取消这一授权。”——这就是伦理关系的本质。
 我再说一遍——这就是伦理关系的本质。
 我们不是在谈“关联”，不是在谈“交互影响”，而是在谈真正的“关系”，那种可以被识别为敌我、亲疏、向背的伦理关系。
 任何两个人，只要建立了这样的自觉的、清醒的“交出/代理判断权”的关联，他们就不再是任何意义上的无关的陌生人了，他们之间就有了无可否认的紧密关系。
@@ -1001,7 +1289,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%8A%AA%E5%8A%9B/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8A%AA%E5%8A%9B/</guid>
       <description>人为什么要努力 人之所以持续不断的努力，并不完全是被正能量驱使，而是被恐惧驱动的。
-人这一生不是要努力，是要先努力。 先努力，你会早一些看到，自己在24小时连轴转最最努力的情况下，能成就什么。
+人这一生不是要努力，是要先努力。 先努力，你会早一些看到，自己在 24 小时连轴转最最努力的情况下，能成就什么。
 而后你才能知道，哪些东西是自己可以去博一博的，哪些东西是只可远观万万不可亵玩的。
 先努力，你会早一些看到，自己在豁出了命去努力、非常努力、相当努力、比较努力、不太努力、太不努力、豁出了命不努力的情况下，分别会得到什么同时又失去什么。
 而后你才能判断，阶段性的目标值得自己投入多少、什么时候该给自己放假、哪些情况下需要再加把力、哪些情况下该见好就收见不好割肉止损也得收。每次给自己换挡后，都能坦然的面对即将到来的得失。
@@ -1013,15 +1301,15 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
 一步天堂一步地狱，不多迈几步，怎么能知道哪步是这一步？
 在足球场上，有这么一种人，他们开赛后先频频犯规，一次比一次尺度大，一次比一次口味重。当他们通过一系列试探了解到当值裁判的尺度之后，会把侵犯对手当成常规性的防守手段，比赛屡屡因他们被吹停，但他们却很少得牌，还经常引得对手被红牌罚下。
 少拉一秒口头警告多给一脚追加停赛，不当着裁判的面拍拍对方的菊花以示友好，怎么能知道裁判最大的宽容在哪里？
-先努力了，你才可以找出一个性价比高的姿势。从头到尾都死死抱住扶手、从头到尾都跟着对手狂奔，确实，你够努力、你更努力、你可tmd的努力呢，但是，活的那么苦，结果还不好，除了感动中国，谁都打动不了。
+先努力了，你才可以找出一个性价比高的姿势。从头到尾都死死抱住扶手、从头到尾都跟着对手狂奔，确实，你够努力、你更努力、你可 tmd 的努力呢，但是，活的那么苦，结果还不好，除了感动中国，谁都打动不了。
 下车了才发现隔壁车厢在拍摄维秘外景的比基尼展示环节，而你在薄薄的人墙之外和狐臭男斗争了一个小时，哭不哭？
 比赛结束了才明白原来只要不扯掉对手的球裤别的什么都能干，谁都能干，扳手可以带，少林功夫可以用，后不后悔？
-有一个朋友，刚毕业去了我们那个年代500强外企的代表，宝洁，当管理培训生。三年后突然辞职考公务员，问其原因，她说她受不了自己回到家里都习惯性的用祈使句和父母说话，这份工作让她的性格扭曲到自己都不喜欢自己了。复习几个月后，她考上了。几年后我再次去广州出差，得知她已经辞掉了公务员的工作去了我们那个年代著名的养老外企，壳牌。我问她为什么的时候她没有再开口，但我能感觉出，那时她的笑容，是最接近大学时期的。
+有一个朋友，刚毕业去了我们那个年代 500 强外企的代表，宝洁，当管理培训生。三年后突然辞职考公务员，问其原因，她说她受不了自己回到家里都习惯性的用祈使句和父母说话，这份工作让她的性格扭曲到自己都不喜欢自己了。复习几个月后，她考上了。几年后我再次去广州出差，得知她已经辞掉了公务员的工作去了我们那个年代著名的养老外企，壳牌。我问她为什么的时候她没有再开口，但我能感觉出，那时她的笑容，是最接近大学时期的。
 现在她依然是壳牌的员工，在朋友圈里从来不抱怨、不艳羡、不秀恩爱、不晒幸福、不鸡汤、不鸡血、不锦鲤、不不转不是中国人。
 先排除了最不适合自己的，剩下的，都是足够滋润的。
 要是先不努力呢？伟大的无产阶级革命家列宁同志曾经教导过我们：少壮不努力，老大徒伤悲；老二造暗器，老三当总理。
 年轻时得过且过还是以后优哉游哉，自己选咯。
-人最宝贵的是生命，每个人的生命只有一次。我希望我的一生可以这样度过：当我回首往事时不因少复习一个知识点而懊悔不已，也不因多苦逼的学习一分钟而愧对自己，在我临死的时侯能够说：“我这一辈子不多不少不偏不倚的得了60分，值！”
+人最宝贵的是生命，每个人的生命只有一次。我希望我的一生可以这样度过：当我回首往事时不因少复习一个知识点而懊悔不已，也不因多苦逼的学习一分钟而愧对自己，在我临死的时侯能够说：“我这一辈子不多不少不偏不倚的得了 60 分，值！”
 其实，当你明白人要先努力那天起，你就不需要再努力了，以后的，都是生活。</description>
     </item>
     
@@ -1032,10 +1320,10 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E4%BA%BA%E5%AF%B9%E4%BA%8B%E7%89%A9%E7%9A%84%E6%84%9F%E5%8F%97%E7%A8%8B%E5%BA%A6%E4%B8%8D%E4%B8%80%E6%A0%B7/</guid>
       <description>人对事物的感受程度不一样 我从读高中起就一直有一个疑问，就是：**不同人对于快乐和痛苦的感受度会否不一样呢？**譬如说同样患有急性肠胃炎，有没有可能一个人的疼痛感是另一个人的 1000 倍呢？
-急性肠胃炎带给A的痛苦感相当于用刀割肉一般，但对于B来说只是如同被捏了一下而已。如果这是真的，很多成功人士们标榜自己可以承受苦难，其实只是一个他们自己都没有意识到的谎言。
-情况也许只是，面对同样的苦，这些成功人士比我们大多数人天生对苦的感受度要低很多而已。也就是说，那些叫你坚持、叫你努力、叫你吃苦的成功学鸡汤可能卵用都没有，因为人和人的体质天生不一样，坚持做一件事给A带来的苦只是 1 Unit，给B带来的苦却是 1000 unit。
+急性肠胃炎带给 A 的痛苦感相当于用刀割肉一般，但对于 B 来说只是如同被捏了一下而已。如果这是真的，很多成功人士们标榜自己可以承受苦难，其实只是一个他们自己都没有意识到的谎言。
+情况也许只是，面对同样的苦，这些成功人士比我们大多数人天生对苦的感受度要低很多而已。也就是说，那些叫你坚持、叫你努力、叫你吃苦的成功学鸡汤可能卵用都没有，因为人和人的体质天生不一样，坚持做一件事给 A 带来的苦只是 1 Unit，给 B 带来的苦却是 1000 unit。
 对于成功人士体质的人来说，早起读书给他们带来的苦只是 1 unit，对于我们可能是 1000 unit 啊！艹，怎么能说我们不早起就是意志力薄弱呢！
-我一开始以为只有我一个人这样想，后来发现原来早在1911年就有一个经济学家和我抱有同样的疑问。这个经济学家叫斯坦利.耶方斯（Stanley Jevons），他说：……在所有的例子中，从来没有人试图把一个心灵中的感觉强度与另一个心灵的感觉强度做比较。据我们所知，一个心灵的敏感度可能比另一个心灵强1000倍。然而，如果敏感度的差异在各方面上比例相同，则我们将永远无法发现这些差异。这样，每个人的心灵对于其他任何人来说都是不可测量的，看来不可能存在一个共同的标准。 我观察社会，我越发觉得这是极有可能的。我有个朋友常年冒着丁丁会长椰菜花的危险，定期孜孜不倦的去做大保健。我想肯定是性高潮给他带来的快感是我们一般人的1000倍，而长椰菜花带来的痛苦可能只有我们的1000分之一。那些努力攀登权力顶峰的人肯定是握有权力给他们带来的快感比我们常人要多1000倍，不然实在想不到为什么有好好的王爷不做，偏要去造反。再想到学校里的学霸，起早贪黑的学习，肯定是分数带来的快感是我们常人的1000倍，而低分带来的痛苦感也是我们的1000倍。再想下去我就有点小恐慌了。因为如果这个猜想是真的，那么每个人的人生都是命定的。上帝在塑造我们的时候，只需要对不同人的快乐和痛苦两个感受度进行数值上的调整，那么不同人就会因着不同的感受度而做不同的取舍，最后走上完全不一样的人生。</description>
+我一开始以为只有我一个人这样想，后来发现原来早在 1911 年就有一个经济学家和我抱有同样的疑问。这个经济学家叫斯坦利.耶方斯（Stanley Jevons），他说：……在所有的例子中，从来没有人试图把一个心灵中的感觉强度与另一个心灵的感觉强度做比较。据我们所知，一个心灵的敏感度可能比另一个心灵强 1000 倍。然而，如果敏感度的差异在各方面上比例相同，则我们将永远无法发现这些差异。这样，每个人的心灵对于其他任何人来说都是不可测量的，看来不可能存在一个共同的标准。 我观察社会，我越发觉得这是极有可能的。我有个朋友常年冒着丁丁会长椰菜花的危险，定期孜孜不倦的去做大保健。我想肯定是性高潮给他带来的快感是我们一般人的 1000 倍，而长椰菜花带来的痛苦可能只有我们的 1000 分之一。那些努力攀登权力顶峰的人肯定是握有权力给他们带来的快感比我们常人要多 1000 倍，不然实在想不到为什么有好好的王爷不做，偏要去造反。再想到学校里的学霸，起早贪黑的学习，肯定是分数带来的快感是我们常人的 1000 倍，而低分带来的痛苦感也是我们的 1000 倍。再想下去我就有点小恐慌了。因为如果这个猜想是真的，那么每个人的人生都是命定的。上帝在塑造我们的时候，只需要对不同人的快乐和痛苦两个感受度进行数值上的调整，那么不同人就会因着不同的感受度而做不同的取舍，最后走上完全不一样的人生。</description>
     </item>
     
     <item>
@@ -1045,7 +1333,7 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E6%97%B6%E9%97%B4%E6%B5%81%E9%80%9D%E7%9A%84%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%BF%AB/</guid>
       <description>时间流逝的越来越快 作者：Brian Chen 链接：https://www.zhihu.com/question/37374497/answer/82795819 来源：知乎 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-我从读高中起就一直有一个疑问，就是：不同人对于快乐和痛苦的感受度会否不一样呢？譬如说同样患有急性肠胃炎，有没有可能一个人的疼痛感是另一个人的1000倍呢？急性肠胃炎带给A的痛苦感相当于用刀割肉一般，但对于B来说只是如同被捏了一下而已。如果这是真的，很多成功人士们标榜自己可以承受苦难，其实只是一个他们自己都没有意识到的谎言。情况也许只是，面对同样的苦，这些成功人士比我们大多数人天生对苦的感受度要低很多而已。也就是说，那些叫你坚持、叫你努力、叫你吃苦的成功学鸡汤可能卵用都没有，因为人和人的体质天生不一样，坚持做一件事给A带来的苦只是1 unit，给B带来的苦却是1000 unit。对于成功人士体质的人来说，早起读书给他们带来的苦只是1 unit，对于我们可能是1000 unit啊！艹，怎么能说我们不早起就是意志力薄弱呢！我一开始以为只有我一个人这样想，后来发现原来早在1911年就有一个经济学家和我抱有同样的疑问。这个经济学家叫斯坦利.耶方斯（Stanley Jevons），他说：……在所有的例子中，从来没有人试图把一个心灵中的感觉强度与另一个心灵的感觉强度做比较。据我们所知，一个心灵的敏感度可能比另一个心灵强1000倍。然而，如果敏感度的差异在各方面上比例相同，则我们将永远无法发现这些差异。这样，每个人的心灵对于其他任何人来说都是不可测量的，看来不可能存在一个共同的标准。 我观察社会，我越发觉得这是极有可能的。我有个朋友常年冒着丁丁会长椰菜花的危险，定期孜孜不倦的去做大保健。我想肯定是性高潮给他带来的快感是我们一般人的1000倍，而长椰菜花带来的痛苦可能只有我们的1000分之一。那些努力攀登权力顶峰的人肯定是握有权力给他们带来的快感比我们常人要多1000倍，不然实在想不到为什么有好好的王爷不做，偏要去造反。再想到学校里的学霸，起早贪黑的学习，肯定是分数带来的快感是我们常人的1000倍，而低分带来的痛苦感也是我们的1000倍。再想下去我就有点小恐慌了。因为如果这个猜想是真的，那么每个人的人生都是命定的。上帝在塑造我们的时候，只需要对不同人的快乐和痛苦两个感受度进行数值上的调整，那么不同人就会因着不同的感受度而做不同的取舍，最后走上完全不一样的人生。</description>
+我从读高中起就一直有一个疑问，就是：不同人对于快乐和痛苦的感受度会否不一样呢？譬如说同样患有急性肠胃炎，有没有可能一个人的疼痛感是另一个人的 1000 倍呢？急性肠胃炎带给 A 的痛苦感相当于用刀割肉一般，但对于 B 来说只是如同被捏了一下而已。如果这是真的，很多成功人士们标榜自己可以承受苦难，其实只是一个他们自己都没有意识到的谎言。情况也许只是，面对同样的苦，这些成功人士比我们大多数人天生对苦的感受度要低很多而已。也就是说，那些叫你坚持、叫你努力、叫你吃苦的成功学鸡汤可能卵用都没有，因为人和人的体质天生不一样，坚持做一件事给 A 带来的苦只是 1 unit，给 B 带来的苦却是 1000 unit。对于成功人士体质的人来说，早起读书给他们带来的苦只是 1 unit，对于我们可能是 1000 unit 啊！艹，怎么能说我们不早起就是意志力薄弱呢！我一开始以为只有我一个人这样想，后来发现原来早在 1911 年就有一个经济学家和我抱有同样的疑问。这个经济学家叫斯坦利.耶方斯（Stanley Jevons），他说：……在所有的例子中，从来没有人试图把一个心灵中的感觉强度与另一个心灵的感觉强度做比较。据我们所知，一个心灵的敏感度可能比另一个心灵强 1000 倍。然而，如果敏感度的差异在各方面上比例相同，则我们将永远无法发现这些差异。这样，每个人的心灵对于其他任何人来说都是不可测量的，看来不可能存在一个共同的标准。 我观察社会，我越发觉得这是极有可能的。我有个朋友常年冒着丁丁会长椰菜花的危险，定期孜孜不倦的去做大保健。我想肯定是性高潮给他带来的快感是我们一般人的 1000 倍，而长椰菜花带来的痛苦可能只有我们的 1000 分之一。那些努力攀登权力顶峰的人肯定是握有权力给他们带来的快感比我们常人要多 1000 倍，不然实在想不到为什么有好好的王爷不做，偏要去造反。再想到学校里的学霸，起早贪黑的学习，肯定是分数带来的快感是我们常人的 1000 倍，而低分带来的痛苦感也是我们的 1000 倍。再想下去我就有点小恐慌了。因为如果这个猜想是真的，那么每个人的人生都是命定的。上帝在塑造我们的时候，只需要对不同人的快乐和痛苦两个感受度进行数值上的调整，那么不同人就会因着不同的感受度而做不同的取舍，最后走上完全不一样的人生。</description>
     </item>
     
     <item>
@@ -1079,16 +1367,16 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
       <description>信息茧房 由于社交网络和智能推送的发展，在这个信息爆炸的年代，反而让人变得更加闭塞，而且每个人都在变得更加极端，人与人间的包容性正在变得越来越差。
 互联网巨头近乎掌握了控制人心的能力。
 因为你所接触的一切网站和 APP，都会在后台埋点计算你的行为，描画你的性格，捕捉你的需求，然后精准推送，满足你的需求。
-从今日头条，到UC，到各种新闻 APP，甚至知乎，都有着精密的喜好算法，全天在向你推送你感兴趣的内容，号称千人千面精准推送，实则让人只能活在自己喜好的世界里，因为只会给你推送你乐意点开的内容，毕竟推送机构自己都有阅读量 KPI。
+从今日头条，到 UC，到各种新闻 APP，甚至知乎，都有着精密的喜好算法，全天在向你推送你感兴趣的内容，号称千人千面精准推送，实则让人只能活在自己喜好的世界里，因为只会给你推送你乐意点开的内容，毕竟推送机构自己都有阅读量 KPI。
 长此以往，每个人都会只活在自己的世界里，并且以为自己看到的就是整个世界。
-知乎上多数年轻人都受过比较良好的教育，向往或者生存在北上广深，希望或者正在互联网or金融领域工作，考虑买房或背负房贷。
+知乎上多数年轻人都受过比较良好的教育，向往或者生存在北上广深，希望或者正在互联网 or 金融领域工作，考虑买房或背负房贷。
 所以你们日常的关注点自然就在北上广深的生活，在金融工作和互联网工作，在超一线城市的房价，如何成为男神女神，情感撕逼，所以你们接收到的推送信息往往都只是相关信息，所以你才会有现在中国房价上天，金融互联网高大上，身边都是三观不正的人，自己长相中上其实是女神的错觉，并且没有人能告诉你你是错的，因为为了引起的你注意，所有的信息都会按照你的喜好的推。
 你是皇帝，但确是一个无法接收到真正信息，只能看大臣奏折的皇帝。
 你喜欢看情感撕逼，就会一直给你推情感撕逼，你就会觉得这个世界就是这样的，每个人都靠不住，渣男绿茶天天都是；
 你喜欢同性恋，就会一直给你推同性恋，你就会觉得这个世界对于同性恋特别包含，大家都特别开明，同性恋就是正义；
 你喜欢看屌丝逆袭，就会一直给你推毒鸡汤，你就会认为这个世界只要努力就没有办不成的事情。
 你喜欢看国富民强，就一直给你推什么虽远必诛，你就会认为我国已经成为世界第一强国，一切事情背后都有一步大棋。
-哪怕你喜欢群P，喜欢SM，喜欢各种小众文化，喜欢各种反大众常规道德的东西，也会一直给你推送相关资讯，让你时刻认为自己已在主流圈里吾道不孤。
+哪怕你喜欢群 P，喜欢 SM，喜欢各种小众文化，喜欢各种反大众常规道德的东西，也会一直给你推送相关资讯，让你时刻认为自己已在主流圈里吾道不孤。
 等等等等无数案例。
 你喜欢，你觉得，你认为，你见到的，就是整个世界。
 很可惜，不是。
@@ -1182,9 +1470,9 @@ tim为了将刘启从那啥拉回来也在鬼门关走了一走
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
-      <description>博客添加搜索功能 HTML代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
-1&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; 2 &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; 3 &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; 4 &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; 5	&amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; 6&amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
-CSS代码 1.search { 2 position: relative; 3 height: 30px; 4 text-align: right; 5 line-height: 30px; 6 padding-right: 10px; 7} 8 9.search .search-icon { 10 float: right; 11 height: 100%; 12 margin: 0 10px; 13 line-height: 30px; 14 cursor: pointer; 15 user-select: none; 16} 17 18.</description>
+      <description>博客添加搜索功能 HTML 代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
+&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; &amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
+CSS 代码 .search { position: relative; height: 30px; text-align: right; line-height: 30px; padding-right: 10px; } .search .search-icon { float: right; height: 100%; margin: 0 10px; line-height: 30px; cursor: pointer; user-select: none; } .search .search-input { float: right; width: 30%; height: 30px; line-height: 30px; margin: 0; border: 2px solid #ddd; border-radius: 10px; box-sizing: border-box; } .</description>
     </item>
     
     <item>
@@ -1214,13 +1502,13 @@ One
 打开 one，和 two，three，fou
 更改计算机属性 - 重命名计算机名
 设置密码和用户名
-设置ipv4属性
+设置 ipv4 属性
 One
 ip 192.168.10.1，255.255.255.0，192.168.10.1
 Dns 127.0.0.1，变为 192.168.10.1
 Two
-ip地址 192.168.10.2，255.255.255.0，192.168.10.1
-Dns 192.168.10.1 变为 192.168.10.2 备用dns 192.168.10.1
+ip 地址 192.168.10.2，255.255.255.0，192.168.10.1
+Dns 192.168.10.1 变为 192.168.10.2 备用 dns 192.168.10.1
 Three
 ip 192.168.10.3，255.255.255.0，192.168.10.1
 Dns 192.168.10.1
@@ -1229,11 +1517,9 @@ ip 192.168.10.4，255.255.255.0，192.168.10.1
 Dns 192.168.10.1
 选择 one
 服务器管理 - 添加角色 - 服务器角色
-勾选 dns服务器 和 active directory 服务，安装完成后重启
+勾选 dns 服务器 和 active directory 服务，安装完成后重启
 管理工具
-本地安全策略 账户策略 密码策略 密码必须符合复杂性要求 禁用
-虚拟机命令行输入
-net user userName /passwordreq:yes</description>
+本地安全策略 账户策略 密码策略 密码必须符合复杂性要求 禁用</description>
     </item>
     
     <item>
@@ -1242,44 +1528,43 @@ net user userName /passwordreq:yes</description>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
-      <description>域服务器的基本操作 克隆2008
+      <description>域服务器的基本操作 克隆 2008
 打开 ad 01
 新建用户
 点击新建的用户
 隶属于
 添加一个
-将2012升级为域控
+将 2012 升级为域控
 添加一个子用户，但无法使用这个用户名登录域服务器
 设置
 192.168.1.1
 255.255.255.0
 网关 192.168.1.1
-配置2008
+配置 2008
 控制面板
 网络链接
-设置ip
+设置 ip
 192.168.1.50
 255.255.255.0
 192.168.1.1
 192.168.1.1
 更改计算机名字
 加入域
-yxzi\user02（2012域控上添加的用户）
-在2008上面用user02这个用户名登录到域控
+yxzi\user02（2012 域控上添加的用户）
+在 2008 上面用 user02 这个用户名登录到域控
 打开 ad 01
-user 02属性
+user 02 属性
 账户，登录时间
 新建 用户 user03
 选择 user03 属性
 配置登录名和密码
 指定计算机才能登录
-登录到，输入ad 02的计算机名
+登录到，输入 ad 02 的计算机名
 ad1 新建组 ts01
 添加到组，选择 user02
 选择 user03，隶属于，
 ts 属性 用户，即可看到
-新建 组织单位 danwei
-组织单位的属性 防止意外删除</description>
+新建 组织单位 danwei</description>
     </item>
     
     <item>
@@ -1353,14 +1638,14 @@ Ta 喜欢上了
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
       <description>安装 Hyper V 安装 hyper v
 在第一台上链接第二台虚拟计算机
-启动 nat模式 8
+启动 nat 模式 8
 关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
-第一太 ping 第二台计算机的ip地址，成功即可
+第一太 ping 第二台计算机的 ip 地址，成功即可
 查询
 开远程权限
 新建虚拟机
 位置和名称
-指定代数，32位系统选第一代64位系统选第二代
+指定代数，32 位系统选第一代 64 位系统选第二代
 分配内存，1024
 网络连接，intel 8257
 大小，25gb
@@ -1370,12 +1655,12 @@ Ta 喜欢上了
 检查点
 将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
 安装操作系统
-文件，设置 ，固件，dvd放到第一个，安装完成后，关机再将硬盘放到第一个。
+文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。
 关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
-hyper v设置，实时迁移，启用迁移
+hyper v 设置，实时迁移，启用迁移
 移动虚拟机，将虚拟机移动到新建的磁盘上即可
 允许链接共享
-在hyper v上新建磁盘，固定大小动态扩展，下一步，完成</description>
+在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成</description>
     </item>
     
     <item>
@@ -1385,13 +1670,13 @@ hyper v设置，实时迁移，启用迁移
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E9%98%85%E8%AF%BB/%E5%AE%B3%E6%80%95%E9%98%85%E8%AF%BB%E7%9A%84%E4%BA%BA/</guid>
       <description>害怕阅读的人  不知何时开始，我害怕阅读的人。就像我们不知道冬天从哪天开始，只会感觉夜的黑越来越漫长。
-我害怕阅读的人。一跟他们谈话，我就像一个透明的人，苍白的脑袋无法隐藏。我所拥有的内涵是什么？不就是人人能脱口而出，游荡在空气中最通俗的认知吗？像心脏在身体的左边。春天之后是夏天。美国总统是世界上最有权力的人。但阅读的人在知识里遨游，能从食谱论及管理学，八卦周刊讲到社会趋势，甚至空中跃下的猫，都能让他们对建筑防震理论侃侃而谈。相较之下，我只是一台在MP3世代的录音机；过气、无法调整。我最引以为傲的论述，恐怕只是他多年前书架上某本书里的某段文字，而且，还是不被荧光笔画线注记的那一段。
+我害怕阅读的人。一跟他们谈话，我就像一个透明的人，苍白的脑袋无法隐藏。我所拥有的内涵是什么？不就是人人能脱口而出，游荡在空气中最通俗的认知吗？像心脏在身体的左边。春天之后是夏天。美国总统是世界上最有权力的人。但阅读的人在知识里遨游，能从食谱论及管理学，八卦周刊讲到社会趋势，甚至空中跃下的猫，都能让他们对建筑防震理论侃侃而谈。相较之下，我只是一台在 MP3 世代的录音机；过气、无法调整。我最引以为傲的论述，恐怕只是他多年前书架上某本书里的某段文字，而且，还是不被荧光笔画线注记的那一段。
 我害怕阅读的人。当他们阅读时，脸就藏匿在书后面。书一放下，就以贵族王者的形象在我面前闪耀。举手投足都是自在风采。让我明了，阅读不只是知识，更是魔力。他们是懂美学的牛顿。懂人类学的梵谷。懂孙子兵法的甘地。血液里充满答案，越来越少的问题能让他们恐惧。彷佛站在巨人的肩牓上，习惯俯视一切。那自信从容，是这世上最好看的一张脸。 我害怕阅读的人。因为他们很幸运；当众人拥抱孤独、或被寂寞拥抱时，他们的生命却毫不封闭，不缺乏朋友的忠实、不缺少安慰者的温柔，甚至连互相较劲的对手，都不至匮乏。他们一翻开书，有时会因心有灵犀，而大声赞叹，有时又会因立场不同而陷入激辨，有时会获得劝导或慰藉。这一切毫无保留，又不带条件，是带亲情的爱情，是热恋中的友谊。一本一本的书，就像一节节的脊椎，稳稳的支持着阅读的人。你看，书一打开，就成为一个拥抱的姿式。这一切，不正是我们毕生苦苦找寻的？
 我害怕阅读的人，他们总是不知足。有人说，女人学会阅读，世界上才冒出妇女问题，也因为她们开始有了问题，女人更加读书。就连爱因斯坦；这个世界上智者中的最聪明者，临终前都曾说：「我看我自己，就像一个在海边玩耍的孩子，找到一块光滑的小石头，就觉得开心。后来我才知道自己面对的，还有一片真理的大海，那没有尽头」。读书人总是低头看书，忙着浇灌自己的饥渴，他们让自己是敞开的桶子，随时准备装入更多、更多、更多。而我呢？手中抓住小石头，只为了无聊地打水漂而已。有个笑话这样说：人每天早上起床，只要强迫自己吞一只蟾蜍，不管发生什么，都不再害怕。我想，我快知道蟾蜍的味道。
 我害怕阅读的人。我祈祷他们永远不知道我的不安，免得他们会更轻易击垮我，甚至连打败我的意愿都没有。我如此害怕阅读的人，因为他们的榜样是伟人，就算做不到，退一步也还是一个，我远不及的成功者。我害怕阅读的人，他们知道「无知」在小孩身上才可爱，而我已经是一个成年的人。我害怕阅读的人，因为大家都喜欢有智慧人。我害怕阅读的人，他们能避免我要经历的失败。我害怕阅读的人，他们懂得生命太短，人总是聪明得太迟。我害怕阅读的人，他们的一小时，就是我的一生。 我害怕阅读的人，尤其是，还在阅读的人。
  这篇文章是台湾奥美给天下文化做的长文案，在网上广为流传。文字很震撼，把不读书人的内心的怯懦写了出来，不知你有什么反应，但我看完后有一种读书的迫切感，害怕那些阅读的人把我越落越远。
 “一跟他们谈话，我就像一个透明的人，苍白的脑袋无从隐藏。”
-我对这种感受有切身体会。我一度自认为也算涉猎极广的人，但是因为工作原因，难免会和不同领域的高手对招。有次聊合作，自己深度备课的谈资在那些高人眼里，不过是初阶小白掌握的东西，而且结合到事情上还往往张冠李戴。当他们质问的眼神盯着我，“我就像一个透明的人，苍白的脑袋无从隐藏”。也许，不读书造成的这种无地自容的情形在生活中也有很多，只不过和我们对话的那些阅读的人不会像领导或专家一样咄咄逼人，Ta们只会在内心中暗暗鄙视：原来这是个不学无术的家伙；而我们自己反而不觉，仍然在那里滔滔不绝地暴露自己的无知。
+我对这种感受有切身体会。我一度自认为也算涉猎极广的人，但是因为工作原因，难免会和不同领域的高手对招。有次聊合作，自己深度备课的谈资在那些高人眼里，不过是初阶小白掌握的东西，而且结合到事情上还往往张冠李戴。当他们质问的眼神盯着我，“我就像一个透明的人，苍白的脑袋无从隐藏”。也许，不读书造成的这种无地自容的情形在生活中也有很多，只不过和我们对话的那些阅读的人不会像领导或专家一样咄咄逼人，Ta 们只会在内心中暗暗鄙视：原来这是个不学无术的家伙；而我们自己反而不觉，仍然在那里滔滔不绝地暴露自己的无知。
 其实你在生活中戴着面具表演的时候，深知自己口中说出的那些话连自己都不知道是什么东西，内心深处尚存那么一丝的怯懦和心虚，说明你还没有在虚伪的生活里完全迷失。
 而读书，则是可以帮你走出这种困扰的唯一途径。</description>
     </item>
@@ -1407,7 +1692,7 @@ hyper v设置，实时迁移，启用迁移
 我在网上找了一些解释，有一个说法比较有趣：
  “五岁的时候人的记忆有五年，这时候过一年，到六岁时，记忆增加了五分之一。六岁到七岁，记忆增加了六分之一。七岁到八岁记忆就只增加了七分之一。以此类推，到了二十岁的时候，过多一年，记忆便只增加二十分之一。这一年的时光虽然没变，但是参照物变了。所以大家就感觉时间过得快了。可能等你六十岁的的时候，过一年记忆只增加六十分之一，那时时间就过得更快了。”
  这个说法有一定的道理，如果你仔细回忆一下，会发现童年的课间十分钟休息足够你从楼上跑下去玩儿点什么；但现在你坐在公司电脑前，才喝了杯热饮，吧东西摊开准备干活，啥都没干呢一个小时就没了。小时候两个月的暑假特别漫长，现在的一个月不就是四个星期，一眨眼就没了。
-如果用记忆增量理论来解释，那就说明我们在成年后的工作和生活都是在简单重复，所以大脑中的“总数据”并没有像儿时那样处在迅猛增长的阶段，大脑处理今天的24小时，只需要动用几年前就已经存好的索引，驾轻就熟，总信息量几乎没有增加，你主观上感受到的“新东西”当然就少，而体验“新东西”恰恰是放慢主观时间的命门。
+如果用记忆增量理论来解释，那就说明我们在成年后的工作和生活都是在简单重复，所以大脑中的“总数据”并没有像儿时那样处在迅猛增长的阶段，大脑处理今天的 24 小时，只需要动用几年前就已经存好的索引，驾轻就熟，总信息量几乎没有增加，你主观上感受到的“新东西”当然就少，而体验“新东西”恰恰是放慢主观时间的命门。
 套用知乎上“舒适区”的说法，要解决时空扭曲的问题，我们必须走出“熟悉区”，熟悉区是时空黑洞，会不断加速消耗，吞噬你的时间。如果你走出办公室，去陌生的国度一个月，就会发现这一个月并没有像办公室里那样，星期三过完就差不多能指望星期天了，而是觉得比在办公室两个星期都要多，这便是对抗时空扭曲的一个例子。并不是只有旅游才能有这样的效果，你如果在自己身上多试验，会发现能找到很多适用于你个人的手段，但前提是你要有“摆脱熟悉区”的意识。
 这是我认为人的一生所需要掌握的最重要能力之一，掌握了对抗时空扭曲的本领，你就能延长主观生命。</description>
     </item>
@@ -1441,6 +1726,16 @@ hyper v设置，实时迁移，启用迁移
 我们将我们所见、所经验的一切事物都贮存在我们意识深处的某个地方，而这些印象可能会再度浮现。有时我们会突然‘脑中一片空白’，然后过了一会，‘差点就想起来了’，然后再度‘猛然想起’
 合理化 意思就是说，我们自己不愿意承认，也不愿意告诉别人我们做某一件事的真正动机，因为这个动机是让人无法接受的
 投射 它会将把我们内心试图压抑的特点转移到别人身上。譬如说一个很吝啬的人会说别人斤斤计较，而一个不愿承认自己满脑子想着性的人可能愈容易对别人成天想着性的样子感到愤怒</description>
+    </item>
+    
+    <item>
+      <title>思科交换机相关概念</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E6%80%9D%E7%A7%91%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/%E6%80%9D%E7%A7%91%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%A6%82%E5%BF%B5/</guid>
+      <description>思科交换机相关概念 Trunk 和 Access trunk 行通过多个 VLAN。
+access 只允许通通过单个 VLAN。</description>
     </item>
     
     <item>
@@ -1551,12 +1846,12 @@ SO&amp;hellip;&amp;hellip;
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E6%AF%8F%E4%B8%AA%E4%BA%BA%E7%9C%BC%E4%B8%AD%E7%9A%84%E4%B8%96%E7%95%8C%E9%83%BD%E4%B8%8D%E4%B8%80%E6%A0%B7/</guid>
       <description>每个人眼中的世界都不一样 我说个你们正常人一辈子不会有的体验，让你们感受下什么叫世界观崩塌。
-我天生左眼失明，但我居然在7岁才发现这一点。而之前无论我还是其他人都没意识到我有什么不正常。
+我天生左眼失明，但我居然在 7 岁才发现这一点。而之前无论我还是其他人都没意识到我有什么不正常。
 你们知道这意味着多恐怖的事情吗？这件事彻底刷新了我的世界观！因为&amp;quot;所有人没有意识到有什么不正常&amp;quot;本身就是最大的不正常。
 这意味着我们各自认知到的世界有可能根本就是完全不同的，而我们却没有察觉到这一点。我们虽然能“感觉”到同一个东西，但是这个东西在我们的认知中可能并不相同。
 普通人可能以为这种认知差别最多也就是红绿色盲和普通人的差别。而事实是这个差别可能大到人类无法想象的程度，而我们却意识不到。比如我左眼什么都看不到，但因为天生就如此，所以就把这种设定当作理所当然的事情接受了，而没有感到任何不妥！
 更进一步。如果这种个体世界观的差异不影响这个世界逻辑自洽性。我们可能一辈子都生活在“人生而平等”的错觉中而没法发现，就像很多红绿色盲一辈子没意识到自己的认知有问题。我们以为其他人认知中的世界和自己认知中的世界一样。然而事实是，如果我们不一样你也不一定意识得到。而且即便我们意识到了我们各自的脑内世界不同，我们也没法沟通到底有哪里不同。我在知乎上提问过“两只眼睛看世界是什么体验？”，然而你们的回答我都看不太懂。
-我7岁以前一直以为我看到的世界就是你们看到的世界。直到我7岁第一次测视力，别人突然告诉我，你一直看到的认为理所当然的世界和别人看到的世界根本不是一回事！
+我 7 岁以前一直以为我看到的世界就是你们看到的世界。直到我 7 岁第一次测视力，别人突然告诉我，你一直看到的认为理所当然的世界和别人看到的世界根本不是一回事！
 还有比这更细思恐极的吗？</description>
     </item>
     
@@ -1566,8 +1861,8 @@ SO&amp;hellip;&amp;hellip;
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E6%B0%B8%E7%94%9F%E6%98%AF%E9%85%B7%E5%88%91/</guid>
-      <description>永生是酷刑 不要用非永生的大脑，去思考永生后的烦恼。你看蝙蝠，目不能视，近乎于盲，何其可怜；蝙蝠看你，不闻超波，近乎于聋，何其不幸。你看燕雀，孱孱弱体寄人篱下，一根竹竿宰其生死；鸽燕看你，体胖臃肿不能翱翔，徘徊地面哪得自由。你看猫狗，生命区区十余载，每日受困屋房中，只是人类一玩伴；猫狗看你，终日奔波不得闲，喂食铲屎不敢忘，只是喵汪一奴仆。**生命的意义是时间的尺度决定的。**在只能活三个季的蚱蜢眼里，秋季就是生命的尽头，后面是地狱般的寒冬，活着定是无尽的痛苦。在只能活一天的蜉蝣眼里，池塘之大就是彼之沧海，朝生暮死，不知晦朔，世间值得已全部看尽。五岁的孩童哭闹，因为错过了30分钟的动画，对她来说，那是她生命中有意义的。十七岁的少女苦恼，因为错付了30天的爱情，对她来说，那是她生命中有意义的。三十岁的中年忧虑，因为错失了30月的工作，对她来说，那是她生命中有意义的。五十岁的知命烦懑，因为蹉跎了30年的韶华，对她来说，那是她生命中有意义的。八十岁的耄耋懊恼，只因为今日大风，没能如往常一样坐于廊前，看天空云卷云舒，看庭前花开花落，咀嚼岁月如常，对她来说，用生命品味时间就很有意义。**我们觉得永生是酷刑，因为思考这个问题的，是非永生的大脑。**我们很难设想以亿万年计的生命要去思考什么，见证什么，尝试什么，他们做事意义在哪里，带来的收获是什么，感动和喜悦的又是什么。只有当生命真到了这个维度，我们可能才会逐渐寻找新的愉悦和感动。可能是发出一束光，等待4.24年看到另一个星系的回应，那是人马座的时间。可能是洒下一片生命种子，过35亿年看看会进化出什么生物，那是生命的时间。可能是见证一个瞬间，用140亿年看看万物从无到有，从坍塌到膨胀，那是宇宙的时间。总之，用有限生命的头脑，可能无法设想永生生物的快乐。就像处男做春梦，到了关键时刻总是编不下去醒来的。
-感谢大家的喜爱和赞。说一点回答以外的废话。有朋友留言，说这是不是已经脱离现实上升到哲学的论述了。其实，思维是指导行为的。小时候曾经有过一次，因上课不听话被老师叫到走廊罚站了整日。到了晚上奶奶来接我，我说今日站在走廊经历同学走过议论，太丢脸了，不想再去学校了。奶奶笑着告诉我，现在我看是天大的事情，但等长大一些，今天不过是记忆中的一件小事罢了。“永生是否是一种酷刑”，很像现代年轻人偶尔会陷入的悲观焦虑。有时候一件小事，在当时看来，是足以毁灭自己的，前途没了光明。其实，等你走到未来，发现还有无限可能。前几天安慰一位妈妈，她说知道不对，但放不下对孩子每次考试成绩的焦虑。我劝她不妨试着将目标放大，将结果放小去看，或许有用。目标放大，想象孩子25岁成年工作、结婚的样子。孩子的这一次考试还是否还那么重要？结果放小，体会你与孩子的每一次学习、玩耍的瞬间，他是不是努力、快乐、感到幸福？如果你也有不开心的时候，感觉生命无法迈过的时刻，不妨也想象在更长的时间里，在宇宙的维度下，这烦恼不过是一瞬的烟云。认真把握每个精彩的时刻，过好每一个陪伴亲人的瞬间。不要为没发生的事情而烦恼。“不悔既往，不负当下，不惧未来”，宇宙的安排都是完美的。</description>
+      <description>永生是酷刑 不要用非永生的大脑，去思考永生后的烦恼。你看蝙蝠，目不能视，近乎于盲，何其可怜；蝙蝠看你，不闻超波，近乎于聋，何其不幸。你看燕雀，孱孱弱体寄人篱下，一根竹竿宰其生死；鸽燕看你，体胖臃肿不能翱翔，徘徊地面哪得自由。你看猫狗，生命区区十余载，每日受困屋房中，只是人类一玩伴；猫狗看你，终日奔波不得闲，喂食铲屎不敢忘，只是喵汪一奴仆。**生命的意义是时间的尺度决定的。**在只能活三个季的蚱蜢眼里，秋季就是生命的尽头，后面是地狱般的寒冬，活着定是无尽的痛苦。在只能活一天的蜉蝣眼里，池塘之大就是彼之沧海，朝生暮死，不知晦朔，世间值得已全部看尽。五岁的孩童哭闹，因为错过了 30 分钟的动画，对她来说，那是她生命中有意义的。十七岁的少女苦恼，因为错付了 30 天的爱情，对她来说，那是她生命中有意义的。三十岁的中年忧虑，因为错失了 30 月的工作，对她来说，那是她生命中有意义的。五十岁的知命烦懑，因为蹉跎了 30 年的韶华，对她来说，那是她生命中有意义的。八十岁的耄耋懊恼，只因为今日大风，没能如往常一样坐于廊前，看天空云卷云舒，看庭前花开花落，咀嚼岁月如常，对她来说，用生命品味时间就很有意义。**我们觉得永生是酷刑，因为思考这个问题的，是非永生的大脑。**我们很难设想以亿万年计的生命要去思考什么，见证什么，尝试什么，他们做事意义在哪里，带来的收获是什么，感动和喜悦的又是什么。只有当生命真到了这个维度，我们可能才会逐渐寻找新的愉悦和感动。可能是发出一束光，等待 4.24 年看到另一个星系的回应，那是人马座的时间。可能是洒下一片生命种子，过 35 亿年看看会进化出什么生物，那是生命的时间。可能是见证一个瞬间，用 140 亿年看看万物从无到有，从坍塌到膨胀，那是宇宙的时间。总之，用有限生命的头脑，可能无法设想永生生物的快乐。就像处男做春梦，到了关键时刻总是编不下去醒来的。
+感谢大家的喜爱和赞。说一点回答以外的废话。有朋友留言，说这是不是已经脱离现实上升到哲学的论述了。其实，思维是指导行为的。小时候曾经有过一次，因上课不听话被老师叫到走廊罚站了整日。到了晚上奶奶来接我，我说今日站在走廊经历同学走过议论，太丢脸了，不想再去学校了。奶奶笑着告诉我，现在我看是天大的事情，但等长大一些，今天不过是记忆中的一件小事罢了。“永生是否是一种酷刑”，很像现代年轻人偶尔会陷入的悲观焦虑。有时候一件小事，在当时看来，是足以毁灭自己的，前途没了光明。其实，等你走到未来，发现还有无限可能。前几天安慰一位妈妈，她说知道不对，但放不下对孩子每次考试成绩的焦虑。我劝她不妨试着将目标放大，将结果放小去看，或许有用。目标放大，想象孩子 25 岁成年工作、结婚的样子。孩子的这一次考试还是否还那么重要？结果放小，体会你与孩子的每一次学习、玩耍的瞬间，他是不是努力、快乐、感到幸福？如果你也有不开心的时候，感觉生命无法迈过的时刻，不妨也想象在更长的时间里，在宇宙的维度下，这烦恼不过是一瞬的烟云。认真把握每个精彩的时刻，过好每一个陪伴亲人的瞬间。不要为没发生的事情而烦恼。“不悔既往，不负当下，不惧未来”，宇宙的安排都是完美的。</description>
     </item>
     
     <item>
@@ -1612,7 +1907,7 @@ SO&amp;hellip;&amp;hellip;
 你会怎么办？
 你但凡超过八岁，会算不过来这个帐吗？会不懂有多少钱才能花多少钱这个道理吗？
 你只要智力正常情感正常，都会知道再闹着问父母要钱一点用都没有，一来因为钱就这么多，二来因为你知道自己也是家庭的一份子。
-你会因为只有 200 块午饭钱自卑吗？有可能会，但这不会困扰你太久。当你认识到现实之后，你会意识到自卑也什么用都没有，还不如好好想办法怎么把这200块花到刀刃上，甚至开源节流自己想办法赚些钱铺贴家用。
+你会因为只有 200 块午饭钱自卑吗？有可能会，但这不会困扰你太久。当你认识到现实之后，你会意识到自卑也什么用都没有，还不如好好想办法怎么把这 200 块花到刀刃上，甚至开源节流自己想办法赚些钱铺贴家用。
 这是正常人的思维方式。
 你会痛苦，是因为你不知道自己父母真实的意图是什么。
 可能你会发现父母收入差不多的同事家的孩子有新衣服穿，你却只能穿旧衣服。你发现当自己想要一个什么东西的时候，父母总是说没钱，但是转头他们又支出了大笔非必要的开销。
@@ -1623,7 +1918,7 @@ SO&amp;hellip;&amp;hellip;
 但这也是很有效的行为。你的父母总对你哭穷，那么当你向父母索取任何东西的时候，你自己都会承担非常大的心理压力。这样你的父母就可以节省掉很多抚养成本，还能向别人炫耀自己家的孩子懂事儿，从来不乱要东西。
 因为这个方法真的很有效，所以在中国父母间广泛流传。
 这个方法的核心秘诀在于，大多数向子女哭穷的中国父母，并不是面向解决问题的。
-比方说你想要一双一千块的新鞋。如果你的父母对你说，咱们家的经济状况不好，所以每个月只能给你 200 块午餐钱，如果你每个月能省100块出来，那攒10个月你就能买这双鞋了。或者你可以去麦当劳打工，一个小时十几块，攒上三个月你就有钱买这双鞋了。你要考虑以下自己是不是要为了一双鞋就付出这么多努力，或者买双便宜一点的也可以。
+比方说你想要一双一千块的新鞋。如果你的父母对你说，咱们家的经济状况不好，所以每个月只能给你 200 块午餐钱，如果你每个月能省 100 块出来，那攒 10 个月你就能买这双鞋了。或者你可以去麦当劳打工，一个小时十几块，攒上三个月你就有钱买这双鞋了。你要考虑以下自己是不是要为了一双鞋就付出这么多努力，或者买双便宜一点的也可以。
 这叫面向解决问题。智力和情感正常的子女都会自己做选择。
 实际上这些父母会说，我们这么辛辛苦苦挣钱省钱，每分钱赚的都不容易，你居然还要买一千块的鞋。你怎么这么不知道体谅父母，你这是不孝，是道德败坏。
 当诉诸道德的时候，问题本身就不重要了。而因为在面对未成年子女的时候，父母天生就占据了权力高位，对道德问题拥有绝对解释权，所以父母可以不需要解决任何实际问题。
@@ -1642,8 +1937,8 @@ SO&amp;hellip;&amp;hellip;
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
       <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
-Putty 用于Windows从本地登陆到远程 Linux 服务器
-宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击open，进入到 Putty 的运行界面，提示 login as.
+Putty 用于 Windows 从本地登陆到远程 Linux 服务器
+宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击 open，进入到 Putty 的运行界面，提示 login as.
   在login as后输入用户名，一般都是 root，按 Enter。
   输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
   登陆完成。
@@ -1682,7 +1977,7 @@ Putty 用于Windows从本地登陆到远程 Linux 服务器
 这一张彩票的成本说低不低，起码得十月怀胎，不过一旦开出好的一注，收益率就会很高。特别是每一个人买彩票都会觉得自己能中五百万，这是人之常情，对于精神层面与物质层面越贫乏的人来说，他们对于这种“一注赌票、一飞冲天”的渴求就更高。
 尤其是这一份彩票的投资还可以经过“人力”来控制：
 对于底子不好的，一眼就知道她是箩底橙，只需要给最低的资源，尝试将她转化成“低成本的劳动力”；或者干脆将她抛了，不要计较沉没成本，还能继续搏下一注。
-对于底子好的，可以多给一些资源，培养成换嫁妆的好货色，这就是稳赚不赔了。草窝生的金凤凰是500万，贪心不得，不过憨厚的养老保险好弄。尤其是当整个社会都处于被封建儒教的规矩桎梏的环境下，更是有着地利人和的培养条件。
+对于底子好的，可以多给一些资源，培养成换嫁妆的好货色，这就是稳赚不赔了。草窝生的金凤凰是 500 万，贪心不得，不过憨厚的养老保险好弄。尤其是当整个社会都处于被封建儒教的规矩桎梏的环境下，更是有着地利人和的培养条件。
 古代人物质条件那么差为什么还愿意生孩子？其实现在也有很多人愿意生孩子，只不过你看不到罢了。
 为什么有钱的国家生育率都很低？因为他们的人终于意识到了自己是在生孩子，而不是买彩票。
 当然有一点是很重要的，必须要提出来，姑且称之为“大事惯性问题”。就是说大部分古代人其实既没有思考、也没有选择，只能随波逐流，伴随着一种“大家都在生，我也要生”的状况。这其实就是时代因素影响的一个体现了，这当然是非常重要的。
@@ -1774,7 +2069,7 @@ Putty 用于Windows从本地登陆到远程 Linux 服务器
       <description>行到极处便是知，知到极处便是行 当你感觉自己知道的很多，却都做不到的时候，这不是因为你知道得太多，而是因为你知道的不够多——你没能从心智模式、思维习惯、适用情境等各个方面真正深入透彻地理解一件事情。你没有理解到极致的事情，怎么可能做得到呢？这也是王阳明先生所说：“知到极处便是行，行到极处便是知。”
 每个人都说“知道那么多大道理，却仍然过不好一生”，反过来想想，也许正是因为我们知道的大道理既不够多、也不够深，才让我们无法再思想中融会贯通，形成一套自己的思维习惯和行为习惯，从而在自相矛盾的道理中无法前行。
 当你不能采取积极的行动去学习，说明你根本就没有真正懂得学习对你的重要性
-就像，你知道自己应该早起，需要早起。然后你订了一个5点起床的计划，无法执行。于是你很难过。一个透彻地知道早起的人，应该深入细致地了解自己的睡眠习惯，了解自己的常态睡眠方式，然后深刻地了解自己怎么样一步一步地把起床时间慢慢向前拨，更重要的是配合分析自己 24 小时中的精力状况，饮食、运动和情绪状况，才能找到真正适合自己又能保证精力充沛的5点起床方案。想一想，这中间需要投入多少知识，和多少努力，才能做到？
+就像，你知道自己应该早起，需要早起。然后你订了一个 5 点起床的计划，无法执行。于是你很难过。一个透彻地知道早起的人，应该深入细致地了解自己的睡眠习惯，了解自己的常态睡眠方式，然后深刻地了解自己怎么样一步一步地把起床时间慢慢向前拨，更重要的是配合分析自己 24 小时中的精力状况，饮食、运动和情绪状况，才能找到真正适合自己又能保证精力充沛的 5 点起床方案。想一想，这中间需要投入多少知识，和多少努力，才能做到？
 相反地，每当我们责怪自己不能“践行”，或是“执行力”不佳的时候，我们其实就掉入了“用蛮干代替策略”的思维模式。须知，大多数相对复杂的事情，都得靠顺着性子的策略来，而不是一蹴而就地蛮干就能成。
 任何需要比较复杂的认知系统的事情，都不是靠“执行力”实现的。当你觉得自己执行力不足的时候，一定要反过来思考：明白道理只是第一步，后面两步叫做：取势（认识对自己而言的客观规律）、优术（后期不断优化执行方式）。
 很多道理人类都是共通的，关键是执行力，对道理的思考和超强的执行力，才是人与人存在差距 的原因</description>
@@ -1796,7 +2091,7 @@ Putty 用于Windows从本地登陆到远程 Linux 服务器
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E8%A6%81%E7%90%86%E8%A7%A3%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%9C%80%E6%B1%82%E5%90%8E%E6%89%8D%E5%8E%BB%E5%8A%AA%E5%8A%9B/</guid>
       <description>要理解真正的需求后才去努力 在你努力做出东西，抛出鱼饵之前，你很难理解真正的需求。而这世界上有很多需求，全部是被创造者自己创造出来的。
-如果你去问人们需要什么，他们会说需要一匹更快的马。” 这是用户研究界的经典故事，譬如电灯发明以前，关于照明，人们会说自己需要更长更大的蜡烛。那些简单浅显的需求，确实是可以一次性就理解的。就如同在乔布斯之前，永远没有人会告诉你，我需要一部iPhone，而今天，我们已经完全无法离开iPhone。有意思吧？</description>
+如果你去问人们需要什么，他们会说需要一匹更快的马。” 这是用户研究界的经典故事，譬如电灯发明以前，关于照明，人们会说自己需要更长更大的蜡烛。那些简单浅显的需求，确实是可以一次性就理解的。就如同在乔布斯之前，永远没有人会告诉你，我需要一部 iPhone，而今天，我们已经完全无法离开 iPhone。有意思吧？</description>
     </item>
     
     <item>
@@ -1835,9 +2130,9 @@ Putty 用于Windows从本地登陆到远程 Linux 服务器
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E6%80%9D%E7%BB%B4/%E9%98%88%E5%80%BC%E8%87%AA%E6%8E%A7%E6%84%8F%E8%AF%86/</guid>
       <description>阈值自控意识 阈值又叫临界值，指释放一个行为反应所需要的最小刺激强度。
 我大概六七年在网上发过一篇文章，可能很多人以前都看过了，这里引用其中一段：
-“A片害了无数正常的男青年。没有A片的岁月里，男孩子满脑邪念充盈。可是在这个网络色情泛滥的当今，他们居然对生活中的女人没了想法，这不能不成为信息时代人类异化的经典案例。何以至此？阈值使然。也就是不断的持续刺激，抬高了男人们欲望的触发点。上个世纪初女人旗袍坐下时偶尔可一瞥的白花花大腿就可以触发老夫子们的欲念；可是100年后，看着满屏的器官进出，很多人居然会叹上一句：没意思。这就是时代的变迁，使得阈值不断上升的最好例证。
+“A 片害了无数正常的男青年。没有 A 片的岁月里，男孩子满脑邪念充盈。可是在这个网络色情泛滥的当今，他们居然对生活中的女人没了想法，这不能不成为信息时代人类异化的经典案例。何以至此？阈值使然。也就是不断的持续刺激，抬高了男人们欲望的触发点。上个世纪初女人旗袍坐下时偶尔可一瞥的白花花大腿就可以触发老夫子们的欲念；可是 100 年后，看着满屏的器官进出，很多人居然会叹上一句：没意思。这就是时代的变迁，使得阈值不断上升的最好例证。
 举个极端的例子，释迦牟尼本是个迦毗罗卫国的王子，很早就过着锦衣玉食的生活。其父为其修筑春、夏、冬三幢宫殿。但他活的很厌世。其父为其选来印度最妖艳美丽的女子来取悦他。但是美酒美女对他的边际效用已经小到忽略，食欲肉欲的一切无法使他获得更高的满足，只有离开世俗创造佛教去了。他一出生就享受物质的极大满足，导致他的阈值高到普通人难以想象的程度，最后凡是物质都无法使他快活。中国的例子是贾宝玉，从小活在女人堆里，最后也做和尚去了。反而自小出家的人却未必能忘俗。所以施耐庵会有和尚最淫一说，潘巧云与裴如海那一段有很精妙的点评。盖因自幼出家的人，从未享受过世俗的快感，所以阈值很低，一点就着。能大彻大悟的慧根人士，往往反而是富家子弟，也就不奇怪了。
-女人亦然。泛滥的韩剧将正常的女生活生生逼成大龄剩女，归根到底也是阈值作怪。本来少女看见年轻男子怀春，是老天爷安排的正常心理活动。现在这个自然的程序被突然打断，横插10部韩剧，部部男一号多金英俊完美，还有若干男二男三争抢。电视机前的女人们于是看傻了，爱情阈值被活生生地抬到天上，身边的男人自然再也看不上。”
+女人亦然。泛滥的韩剧将正常的女生活生生逼成大龄剩女，归根到底也是阈值作怪。本来少女看见年轻男子怀春，是老天爷安排的正常心理活动。现在这个自然的程序被突然打断，横插 10 部韩剧，部部男一号多金英俊完美，还有若干男二男三争抢。电视机前的女人们于是看傻了，爱情阈值被活生生地抬到天上，身边的男人自然再也看不上。”
 当你深刻理解了阈值对个人幸福与快乐的影响后，你就知道这个概念不仅用在性和爱情上，更可以推广到人生幸福的方方面面。了解边际效用递减的规律，并学会一定程度的禁欲和自控，是防止阈值升高的不二法门，这绝对是需要在人生早期就要着力培养和锻炼的素质与意识，尤其对于男性。
 顺便提下。频繁观看色情片造成的过度刺激，会抑制大脑内对性刺激做出神经反应的奖赏机制，与药物成瘾相似，这种神经抑制会促使强迫的色情成瘾行为，并对正常的性意愿和性欲造成影响。可惜，对于有些人，这些话来的有点晚了：）</description>
     </item>
@@ -1935,12 +2230,11 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
 陈述句：You are an idiot.（你是个笨蛋）
 一般疑问句：Are you an idiot?（你是不是个笨蛋？）
 回答：Yes,i am./No,i am not.
-提前助动词（do、have、shall等） 主 + 谓 +（宾）——&amp;gt; 助动词 + 主 + 动词原形 + 其他
+提前助动词（do、have、shall 等） 主 + 谓 +（宾）——&amp;gt; 助动词 + 主 + 动词原形 + 其他
 陈述句：You（have got light bulbs.（你有灯泡）
 一般疑问句：（Have）you got light bulbs?（你有灯泡吗？）
 回答：Yes,i have./No,i have not.
-提前情态动词（can、may、will） 主 + 情态动词 + 动词原形 + 其他 ——&amp;gt; 情态动词 + 主+ 动词原形 + 其他
-陈述句：You (can) play football.</description>
+提前情态动词（can、may、will） 主 + 情态动词 + 动词原形 + 其他 ——&amp;gt; 情态动词 + 主+ 动词原形 + 其他</description>
     </item>
     
     <item>
@@ -2119,14 +2413,14 @@ it 可以表示 天气 It is cloudy.</description>
 根据事实回答：Yes, he is
 陈述句部分是否定，反义疑问句用肯定句 He isn‘t your teacher, is he？(他不是你的老师，是吗？)
 根据事实回答：No, he isn’t
-有祈使句的情况 用 will you和won’t you
+有祈使句的情况 用 will you 和 won’t you
 Open the door, won’t you?
 打开开门，不好吗？
 Don’t open the door, will you?
 不打开门，好吗？
-不管否定肯定，let’s开头结尾就是shall we，Let us开头结尾就是will you
+不管否定肯定，let’s 开头结尾就是 shall we，Let us 开头结尾就是 will you
 肯定：Let‘s go to school, shall we? Let us go outside, will you?
-否定：Let‘s don’t go out, shall we? Don&amp;rsquo;t let us go there, will you?</description>
+否定：Let‘s don’t go out, shall we?</description>
     </item>
     
     <item>
@@ -2189,8 +2483,7 @@ Be careful（小心）</description>
 在英语中，普通名词才能用定语修饰 ，专有名词是不能用定语修饰的，特殊情况除外。
 同一个普通名词，可以有多个定语修饰。
  The little white rabbit ate a large carrot. One book a bottle of water Two beautiful girls  前置定语
-后置定语
- </description>
+后置定语</description>
     </item>
     
     <item>
@@ -2222,7 +2515,7 @@ Be careful（小心）</description>
       <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</guid>
       <description>宾补 对宾语进行补充说明，使得句子意思完整。
 宾补只跟宾语有关系，跟主语没关系。
-例句  He made the English class funny I call her Mary   </description>
+例句  He made the English class funny I call her Mary  </description>
     </item>
     
     <item>
@@ -2283,7 +2576,7 @@ Good、fast、hot 等单词都是形容词</description>
 十亿 = one billion
 百亿 = ten billion
 千亿 = myriads
-特点 作数词时候，前面可以加数词，后面不能加s，two thousand，three thousands（错）
+特点 作数词时候，前面可以加数词，后面不能加 s，two thousand，three thousands（错）
 如果数词用作名词时候，意思是好几…的时候，前面可以加 some、many、several 这种词或者加数词，后面可以加 of
 hundreds of（好几百）
 five hundreds of（五百左右）</description>
@@ -2316,7 +2609,7 @@ Which 提问选择：Which is your choice？（你选哪个？）</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E8%8B%B1%E8%AF%AD/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</guid>
       <description>状语 用于修饰谓语动词，它只跟谓语有关系。
-xxx的执行某个动作，xxx就是状语。
+xxx 的执行某个动作，xxx 就是状语。
 一句话里面可以同时出现多个状语。
  The rabbit ate quickly I teach English in Beijing I am happy in Guizhou I am happy today I am busy now I will buy a book tomorrow I speak English slowly  </description>
     </item>
@@ -2422,7 +2715,7 @@ Let me help you（让我帮你）</description>
       <description>git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
 git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
 git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
-添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add 1git add FileName1 2git add FileName2 3git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</description>
+添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add git add FileName1 git add FileName2 git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</description>
     </item>
     
     <item>
@@ -2449,7 +2742,7 @@ git branch &amp;ndash;set-upstream-to=origin/dev LocalDev 将名为LocalDev的�
 $ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
 git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
-1git branch BranchName 2git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
+git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</description>
     </item>
     
@@ -2482,7 +2775,10 @@ git clone RemoteAddress 克一个RemoteAddress到本地。</description>
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
       <description>git commit 将暂存区中的内容添加到本地仓库，相当于确认提交暂存区中的内容。
 每次使用git commit命令我们都会在本地版本库生成一个 40 位的哈希值，这个哈希值也叫 commit-id， commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过与git reset的组合命令回到这里.
-git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。</description>
+git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。
+常见错误 用 git 提交的时候，报错:
+pathspec &amp;#39;commit&amp;#39;&amp;#39; did not match any file(s) known to git 后来发现用单引号提交报错，改成双引号就成功了
+git commit -m &amp;#34;first commit&amp;#34; </description>
     </item>
     
     <item>
@@ -2492,7 +2788,7 @@ git commit -m ‘message’ -m 参数表示可以直接输入后面的 “messag
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
       <description>git config alias git config alias.ShorthandName OriginalName 将git OriginalName命令修改（通常为简写）为git ShorthandName，且只对当前 Git 仓库有效，配置文件在当前仓库的**.git/config**中。
-git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在C盘用户目录下的一个**.gitconfig**文件中。</description>
+git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在 C 盘用户目录下的一个**.gitconfig**文件中。</description>
     </item>
     
     <item>
@@ -2521,7 +2817,7 @@ git config &amp;ndash;global user.name &amp;ldquo;UserName&amp;rdquo; git config
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
       <description>git log 可以让我们查看从最近到最远所有的历史提交日志，每条日志中有对应的版本号，这个版本号可以让我们回退到指定版本号的那个版本。
-git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b向上翻页 q退出
+git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b 向上翻页 q 退出
 git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。</description>
     </item>
     
@@ -2572,9 +2868,9 @@ git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
       <description>git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
-git rebase BranchName git rebase会把当前分支master的每个commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
+git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
 当master分支更新之后，它会指向原来BranchName分支上的commit，而那些原本在自己身上的commit已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。
-因为原本在master分支上的commit被丢弃了，因此，这时候的分支就变为了一条直线，
+因为原本在master分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，
 与 git merge 的区别 当我们使用Git log来参看commit时，其commit的顺序也有所不同。</description>
     </item>
     
@@ -2664,7 +2960,7 @@ git tag -d TagName 删除名为TagName的本地标签。</description>
       <description>Git 与 Github Git Git 是一款免费、开源、并且是目前世界上最先进的分布式版本控制系统。
 它是 Linus 花了两周时间自己用 C 写了一个分布式版本控制系统，这就是 Git！一个月之内，Linux 系统的源码已经由 Git 管理了！何为大佬？
 Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，GitHub 网站上线了，Github 是一个 Git 做版本控制的代码托管平台，Github 为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括 jQuery，PHP，Ruby 等等。
-历史就是这么偶然，如果不是当年 BitMover 公司威胁 Linux 社区，可能现在我们就没有免费而超级好用的 Git了。</description>
+历史就是这么偶然，如果不是当年 BitMover 公司威胁 Linux 社区，可能现在我们就没有免费而超级好用的 Git 了。</description>
     </item>
     
     <item>
@@ -2676,9 +2972,9 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
       <description>临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？
 这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。
 暂存当前的工作进度 git stash我们当前处于dev分支上，在这个分支上暂存工作进度
-创建临时分支 1git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。
+创建临时分支 git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。
 合并到主分支 git switch mastergit merge --no-ff -m &amp;quot;merged bug fix 101&amp;quot; issue-101切换回主分支master，再将临时分支合并到主分支，合并完成后你可以删除临时分支。
-恢复工作进度 1git switch dev 2git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。
+恢复工作进度 git switch dev git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。
 另一种恢复 git cherry-pick 4c805e2也可以使用git cherry-pick命令恢复到指定的commitHash提交到当前分支，这样就可以避免多余的操作了。</description>
     </item>
     
@@ -2713,7 +3009,7 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
       <description>克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
 克隆远程库 接下来我们使用git clone RemoteAddress命令将我们刚刚创建的远程库克隆到本地。
-1git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
+git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用ssh协议而只能用https。</description>
     </item>
     
@@ -2753,16 +3049,16 @@ commit 后分支的变化 每次提交，master都会向前进一个版本，这
       <description>创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
 我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。
 提交文件 我们需要在maser分支上进行一次提交，以确保我们在默认分支下是进行过提交的。
-1git add ReadMe.txt 2git commit -m &amp;#34;这是第二个分支&amp;#34; 创建分支 接下来创建另一个dev分支。
-1git branch dev 切换分支 切换到刚才新建的dev分支。
-1 git checkout dev 修改文件并提交 我们在新创建的dev分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“这是第二个分支”。
-1git add ReadMe.txt 2git commit -m &amp;#34;这是第二个分支&amp;#34; 再次切换分支 现在我们已经再dev分支上完成了工作，现在我们需要切换辉原分支master
+git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 创建分支 接下来创建另一个dev分支。
+git branch dev 切换分支 切换到刚才新建的dev分支。
+git checkout dev 修改文件并提交 我们在新创建的dev分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“这是第二个分支”。
+git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 再次切换分支 现在我们已经再dev分支上完成了工作，现在我们需要切换辉原分支master
 git checkout master重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
 合并分支 Fast Forward 模式合并分支 现在，我们将刚刚在dev分支上的工作成果（文件中加上文本内容：“这是第二个分支”。）合并到master分支上。
 git merge dev再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
 no Fast Forward 模式合并分支 通常，合并分支时，Git 会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
 如果要强制禁用Fast forward模式，Git 就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
-1git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完成后，就可以放心地删除dev分支了</description>
+git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完成后，就可以放心地删除dev分支了</description>
     </item>
     
     <item>
@@ -2773,10 +3069,10 @@ no Fast Forward 模式合并分支 通常，合并分支时，Git 会用Fast for
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</guid>
       <description>创建标签 切换到需要打标签的分支上
 git checkout master使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
-1git tag v1.0 可以用命令git tag查看所有标签
+git tag v1.0 可以用命令git tag查看所有标签
 git tag忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
 方法是找到历史提交的commit id，然后打上对应标签就可以了。
-git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的标签 1git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
+git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的标签 git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
 标签总是和某个commit id挂钩。如果这个commit id既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。</description>
     </item>
     
@@ -2788,15 +3084,15 @@ git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</guid>
       <description>创建版本库 什么是版本库 版本库又名仓库（Repository），你可以简单理解成一个目录，这个目录里面的所有文件都可以被 Git 管理起来，每个文件的修改、删除，Git 都能跟踪，以便任何时刻都可以追踪历史，并且以后随时回退到某个历史版本。
 初始化 Git 目录 我们创建一个文件夹 GitFolder（文件名随意），并进入到这个文件夹，然后在命令行输入git init命令将这个目录变成可以用 Git 来管理的仓库。
-1git init 当目录中出现一个 .git 文件夹，就说明你的 Git 仓库初始化完成了。
+git init 当目录中出现一个 .git 文件夹，就说明你的 Git 仓库初始化完成了。
 这个目录是 Git 来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把 Git 仓库给破坏了。
 如果你没有看到 .git 目录，那是因为这个目录默认是隐藏的，在当前文件夹输入ls -ah命令就可以看见，或者直接打开显示隐藏文件的选项。
 把文件添加到版本库 现在我们编写一个 Readme.txt 文件，内容如下：
-1Git is a version control system. 2Git is free software. 一定要放到你刚才目录下创建的文件夹 GitFolder 中，子目录也行，因为这是一个 Git 仓库，放到其他地方 Git 再厉害也找不到这个文件。
+Git is a version control system. Git is free software. 一定要放到你刚才目录下创建的文件夹 GitFolder 中，子目录也行，因为这是一个 Git 仓库，放到其他地方 Git 再厉害也找不到这个文件。
 把文件添加到暂存区 用命令git add告诉 Git，把文件添加到暂存区
 git add readme.txt执行上面的命令，没有任何显示，这就对了，Unix 的哲学是：没有消息就是好消息，说明文件已经成功添加到暂存区了。
 提交暂存区的文件 接下来，我们用命令git commit告诉 Git，把文件提交到本地仓库
-1git commit -m &amp;#34;Description of this submission&amp;#34; 执行成功后，大概率会出现类似下面的提示</description>
+git commit -m &amp;#34;Description of this submission&amp;#34; 执行成功后，大概率会出现类似下面的提示</description>
     </item>
     
     <item>
@@ -2806,7 +3102,7 @@ git add readme.txt执行上面的命令，没有任何显示，这就对了，U
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</guid>
       <description>合并冲突 有时候，我们在使用git merge命令进行合并的时候，会出现以下提示。
-1Auto-merging Rainy.txt 2CONFLICT (content): Merge conflict in Rainy.txt 3Automatic merge failed; fix conflicts and then commit the result. 会发现使用git merge自动合并失败了，git 提示我们需要手动 修复冲突，然后提交结果。
+Auto-merging Rainy.txt CONFLICT (content): Merge conflict in Rainy.txt Automatic merge failed; fix conflicts and then commit the result. 会发现使用git merge自动合并失败了，git 提示我们需要手动 修复冲突，然后提交结果。
 如何解决冲突 我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容，再git commit即可。</description>
     </item>
     
@@ -2825,7 +3121,7 @@ git add readme.txt执行上面的命令，没有任何显示，这就对了，U
 你可以简单理解为，将需要提交的文件修改通通先放到暂存区，然后，再一次性提交暂存区的所有修改到分支上。
 一旦提交后，如果你提交后又没有对工作区做任何修改，那么工作区就是“干净”的。
 执行git status.
-1On branch master 2nothing to commit, working tree clean </description>
+On branch master nothing to commit, working tree clean </description>
     </item>
     
     <item>
@@ -2837,7 +3133,7 @@ git add readme.txt执行上面的命令，没有任何显示，这就对了，U
       <description>忽略特殊文件 在某些情况下，我们不想某些在工作区中的文件被提交，也就是不被git add .命令添加到暂存区，就非常有要将这些文件忽略掉（让 Git 对他们视而不见）。
 我们可以在 Git 工作区的根目录下创建一个特殊的**.gitignore**文件，然后把要忽略的文件名填进去，Git 就会在git add的时候忽略这些文件。
 .gitignore文件可以放到版本库里，这样可以对**.gitignore**做版本管理。
-忽略文件的原则  忽略操作系统自动生成的文件，比如缩略图等； 忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如 Java 编译产生的.class文件； 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。  编写 .gitignore 规则 1# Windows: 2Thumbs.db 3ehthumbs.db 4Desktop.ini 5 6# Python: 7*.py[cod] 8*.so 9*.egg 10*.egg-info 11dist 12build 13 14# My configurations: 15db.ini 16deploy_key_rsa 编写完成后，最后就是把**.gitignore**也提交到Git，就完成了！当然检验**.gitignore**的标准是使用git status命令会不会提示**working directory clean**。
+忽略文件的原则  忽略操作系统自动生成的文件，比如缩略图等； 忽略编译生成的中间文件、可执行文件等，也就是如果一个文件是通过另一个文件自动生成的，那自动生成的文件就没必要放进版本库，比如 Java 编译产生的.class文件； 忽略你自己的带有敏感信息的配置文件，比如存放口令的配置文件。  编写 .gitignore 规则 # Windows: Thumbs.db ehthumbs.db Desktop.ini # Python: *.py[cod] *.so *.egg *.egg-info dist build # My configurations: db.ini deploy_key_rsa 编写完成后，最后就是把**.gitignore**也提交到 Git，就完成了！当然检验**.gitignore**的标准是使用git status命令会不会提示**working directory clean**。
 无法添加文件 有些时候，你想添加一个文件到 Git，但发现添加不了，原因是这个文件被**.gitignore**忽略了：
 git add Rainy.classThe following paths are ignored by one of your .gitignore files:Rainy.classUse -f if you really want to add them.</description>
     </item>
@@ -2848,9 +3144,9 @@ git add Rainy.classThe following paths are ignored by one of your .gitignore fi
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</guid>
-      <description>推送分支 添加文件并提交 1git add . 2git commit -m &amp;#34;提交信息&amp;#34; 拉取分支 git pull origin master为什么要先拉取分支呢？是因为远程库的最新提交和你试图推送的本地库不同步所导致的，因此需要先用git pull把最新的提交从origin/master上拉取到本地即可。
+      <description>推送分支 添加文件并提交 git add . git commit -m &amp;#34;提交信息&amp;#34; 拉取分支 git pull origin master为什么要先拉取分支呢？是因为远程库的最新提交和你试图推送的本地库不同步所导致的，因此需要先用git pull把最新的提交从origin/master上拉取到本地即可。
 分支名的问题 在使用git pull origin master命令将本地分支与远程分支同步，结果出现下面的报错信息：
-1fatal: couldn&amp;#39;t find remote ref master 大致意思就是找不到 master 这个远程分支。
+fatal: couldn&amp;#39;t find remote ref master 大致意思就是找不到 master 这个远程分支。
 解决 只需要到你的 GitHub 上，查看仓库的默认分支即可，比如我的是main，所以我只需要将命令修改为git pull origin main即可，最后在git pull origin master，就可以将本地分支的内容推送到远程分支master上了。
 合并冲突 这时候使用git pull 后合并有冲突，我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容就可以解决冲突，再git commit即可。
 推送分支 git push origin master将本地库master分支上的内容推送到远程库master上去，用git push命令。
@@ -2880,9 +3176,9 @@ master master (fetch first)Updates were rejected because the remote contains wo
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</guid>
       <description>操作标签 删除标签 git tag -d v0.1因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
 如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除，然后，从远程删除。
-1git push origin :refs/tags/v0.9 要看看是否真的从远程库删除了标签，可以登陆GitHub 查看。
+git push origin :refs/tags/v0.9 要看看是否真的从远程库删除了标签，可以登陆 GitHub 查看。
 推送标签 推送指定标签到远程库。
-1git push origin v1.0 推送全部尚未推送到远程的本地标签到远程库。
+git push origin v1.0 推送全部尚未推送到远程的本地标签到远程库。
  git push origin --tags</description>
     </item>
     
@@ -2894,7 +3190,7 @@ master master (fetch first)Updates were rejected because the remote contains wo
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</guid>
       <description>标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。
-Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是6a5819e&amp;hellip;
+Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是 6a5819e&amp;hellip;
 一串乱七八糟的数字不好找！
 如果换一个办法：
 请把上周一的那个版本打包发布，版本号是 v1.2
@@ -2904,26 +3200,26 @@ Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打�
     
     <item>
       <title>Git 添加第一个远程库</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%B8%80%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
       <description>添加第一个远程库 什么是远程仓库 当我们需要多个人协助开发时，必然会遇到一个问题，就是双方的信息如何进行传递同步。 这个时候，就需要搭建一个远程服务器，每个人都从这个远程服务器克隆一份到自己的电脑上，并且把自己需要提交推送到服务器仓库里，也可以从服务器仓库中拉取别人的提交。
 创建远程库 注册一个 Github 账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名随意， 。
 关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
-1git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 远程库的名字就是origin，这是默认的名字，你也可以将它改成别的。
-将 Git 与 Github 关联 下载并安装 Git 配置个人信息 1git config --global user.name &amp;#34;Your UserName&amp;#34; 2git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
-1ssh-keygen -t rsa -C &amp;#34;1971438937@qq.com&amp;#34; 输入后，三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的id_rsa.pub文件中的密钥，将其中内容全部复制。
+git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 远程库的名字就是origin，这是默认的名字，你也可以将它改成别的。
+将 Git 与 Github 关联 下载并安装 Git 配置个人信息 git config --global user.name &amp;#34;Your UserName&amp;#34; git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
+ssh-keygen -t rsa -C &amp;#34;1971438937@qq.com&amp;#34; 输入后，三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的id_rsa.pub文件中的密钥，将其中内容全部复制。
 new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</description>
     </item>
     
     <item>
       <title>Git 添加第二个远程库</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
-      <description>添加第二个远程库 创建远程库 在GitHub上创建一个远程库。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <description>添加第二个远程库 创建远程库 在 GitHub 上创建一个远程库。
 关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
 git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git添加文件并提交 git add .git commit -m &amp;quot;提交信息&amp;quot;推送分支 git push origin master将本地库master分支上的内容推送到远程库master上去，用git push命令。
 推送成功后，可以立刻在 GitHub 页面中看到远程库的内容已经和本地的一模一样了。</description>
@@ -2937,7 +3233,7 @@ git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git添加文�
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</guid>
       <description>清空远程分支 将清空后的本地分支推送到远程分支，以达到清空远程分支的目的。
 删除全部文件 打开本地仓库文件夹，删除不需要的文件，仅保留 .git 文件夹和 ReadMe.md 文件.
-输入命令 1git add . 2git commit -m &amp;#39;清空远程仓库&amp;#39; 3git push origin master </description>
+输入命令 git add . git commit -m &amp;#39;清空远程仓库&amp;#39; git push origin master </description>
     </item>
     
     <item>
@@ -2952,10 +3248,10 @@ git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git添加文�
 Git 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。
 在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。
 回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。
-1git reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。
+git reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。
 这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？
 回退的指定版本 这个操作需要知道指定版本的版本号，比如想回退到指定版本 3.0的版本号为1098b，那么使用git reset --hard commit id
-1git reset --hard commit id 版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。
+git reset --hard commit id 版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。
 这时候再查看text.txt的内容，你会发现我们的版本 3.0又回来了。
 Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的HEAD 指针，HEAD指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了版本 3.0.</description>
     </item>
@@ -2969,7 +3265,7 @@ Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版�
       <description>管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。
 第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
-1git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本
+git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本
 git commit ReadMe.txt接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
 这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。
  也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。
@@ -2983,8 +3279,8 @@ git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</descript
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
-      <description>远程库更改默认分支 我们在Github上更改仓库的默认分支后，或更改了分支名后，我们需要在本地库下执行以下代码
-1git branch -m master Diary 2git fetch origin 3git branch -u origin/Diary Diary 4git remote set-head origin -a </description>
+      <description>远程库更改默认分支 我们在 Github 上更改仓库的默认分支后，或更改了分支名后，我们需要在本地库下执行以下代码
+git branch -m master Diary git fetch origin git branch -u origin/Diary Diary git remote set-head origin -a </description>
     </item>
     
     <item>
@@ -2993,13 +3289,13 @@ git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</descript
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</guid>
-      <description>配置别名 命令简写 1$ git config --global alias.st status 2$ git config --global alias.co checkout 3$ git config --global alias.ci commit 4$ git config --global alias.br branch 以上命令将：
+      <description>配置别名 命令简写 $ git config --global alias.st status $ git config --global alias.co checkout $ git config --global alias.ci commit $ git config --global alias.br branch 以上命令将：
 git status简写为git st；
 git checkout简写为git co；
 git commit简写为git ci
 git branch简写为git br
 以后提交就可以输入：
-1$ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
+$ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
 配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git/config文件中：
 [core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下</description>
     </item>
@@ -3010,7 +3306,7 @@ git branch简写为git br
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</guid>
-      <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
+      <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为 Git 是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
 git config --global user.name &amp;quot;YxzRainy&amp;quot;git config --global user.email &amp;quot;1@qq.com&amp;quot;查看配置 配置好之后可以使用git config -l查看配置：
 git config -l</description>
     </item>
@@ -3060,7 +3356,7 @@ arguments 对象不是一个 Array ；但它类似于 Array，但除了有 lengt
 Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
 注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
 该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
-1function demo(name, age) { 2	this.name = name; 3	this.age = age; 4	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 5	// 所以这里相当于 test.name 与 test.age 6} 7var a = new demo(&amp;#39;zxy&amp;#39;, 100); 8var test = {}; 9demo.</description>
+function demo(name, age) { this.name = name; this.age = age; // 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.</description>
     </item>
     
     <item>
@@ -3069,7 +3365,7 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</guid>
-      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回false。
+      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
 如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
 返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
     </item>
@@ -3083,9 +3379,9 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
 引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
 计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
-在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持52位，就会出现运算精度不准的问题。
+在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754 标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持 52 位，就会出现运算精度不准的问题。
 1000000000000001 + 1000000000000001 = 2000000000000002，即在 JavaScript 中，可正常计算范围在小数点前 16 位与后 16 位。
-1function One() { 2	for (var c = 0; c &amp;lt; 18; c++) { 3	var d = Math.random().toFixed(2) * 100; 4	// 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 5	var e = Math.</description>
+function One() { for (var c = 0; c &amp;lt; 18; c++) { var d = Math.random().toFixed(2) * 100; // 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 	var e = Math.</description>
     </item>
     
     <item>
@@ -3106,7 +3402,7 @@ Function 的方法 call() 该方法用于调用一个构造函数并改变该函
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</guid>
       <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
- 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 1var a = 1971; 2var b = 10; 3var c = 16; 4var d = parseInt(a, b); 5// 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 6var e = d.</description>
+ 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
     </item>
     
     <item>
@@ -3116,7 +3412,7 @@ Number 的方法 toString() NumObj.toString(radix)
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</guid>
       <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
-创建 Object 的方式 对象字面量 1var n = &amp;#39;世雨&amp;#39;; 2var a = &amp;#39;&amp;#39;; 3var object = { 4	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 5	b: &amp;#39;臣&amp;#39;, 6	// b 为属性名，臣为属性值 7	c: n, 8}; 9a = object.b + object.c; 10// 用变量 a 接收对象 object 的属性 b 与 c 的值。 11console.log(a); 12// 返回臣世雨 工厂模式 1function ThreeOne(color) { 2	this.color = color; 3	// color为可选参数 4	this.name = &amp;#39;bird&amp;#39;; 5	this.</description>
+创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { //var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, // b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { this.color = color; // color为可选参数 	this.name = &amp;#39;bird&amp;#39;; this.width = &amp;#39;500&amp;#39;; this.</description>
     </item>
     
     <item>
@@ -3138,7 +3434,7 @@ Number 的方法 toString() NumObj.toString(radix)
 将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
 当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
 若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
-1// n 进制转十进制-------------------------------------------------- 2var n = 10010; 3var c = 2; 4// 变量 n 可为 8，16，32。 5var a = parseInt(n, c); 6// 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 7console.log(a); </description>
+// n 进制转十进制-------------------------------------------------- var n = 10010; var c = 2; // 变量 n 可为 8，16，32。 var a = parseInt(n, c); // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 console.log(a); </description>
     </item>
     
     <item>
@@ -3148,7 +3444,7 @@ Number 的方法 toString() NumObj.toString(radix)
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</guid>
       <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
-字符串转数字 1var n = &amp;#39;18&amp;#39;; 2function demo(n) { 3	return +n; 4	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 5} 6var a = demo(n); 7console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
+字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { return +n; // 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
     </item>
     
     <item>
@@ -3204,7 +3500,7 @@ send 用于向服务端发送一个 HTTP 请求。
 它们通常指在全局中定义的变量或没有使用 var 声明的暗示全局变量。
 这些变量都在全局作用域中：  函数外声明的变量。 函数中没有使用 var 声明的变量。  局部作用域 局部作用域（AO 对象）中的变量为局部变量，局部变量的作用域仅限于某个特定的函数，这类变量可以在特定的函数中调用。
 每个函数内部都会创建一个局部作用域，当一个函数（父函数）中包含另一个函数（子函数），则父函数不能调用子函数的变量，但子函数可以调用父函数的变量；并且两个独立且同级的函数中的局部变量不能公用，只能各用各的局部变量。
-这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 1function One() { 2	var b = 0; 3	function Two() { 4	b++; 5	console.log(b); 6	} 7	a = Two; 8	// 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two 9} 10One(); 11//调用函数 One，使暗示全局变量 a 可以执行 12a(); 13// 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 14a(); 15a(); 作用域链 1function One() { 2	// 声明函数 One 时，系统会隐式创建 One.</description>
+这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 function One() { var b = 0; function Two() { b++; console.log(b); } a = Two; // 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two } One(); //调用函数 One，使暗示全局变量 a 可以执行 a(); // 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 a(); a(); 作用域链 function One() { // 声明函数 One 时，系统会隐式创建 One.</description>
     </item>
     
     <item>
@@ -3217,7 +3513,7 @@ send 用于向服务端发送一个 HTTP 请求。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
 声明方式 基本方式 直接通过 function 关键字进行声明。
-1function demo(a, b) { 2	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 3	console.log(a + b); 4	// 返回形参 a 与 b 的和 3。 5} 6demo(1, 2); 7// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） 8var c = demo.name; 9// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， 10// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 11console.log(c); 12// 返回函数 demo 的函数名 13 14//匿名函数方式-------------------------------------------------- 15var demo = function () { 16	console.</description>
+function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a + b); // 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { console.</description>
     </item>
     
     <item>
@@ -3231,7 +3527,7 @@ send 用于向服务端发送一个 HTTP 请求。
 函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
 函数运行结束的时候形参被释放，而实参内容不会改变。
 实参 实际参数，是在调用函数时传递给函数的参数， 实参可以是常量、变量、表达式、函数等， 无论实参是何种类型的量，在进行函数调用时，它们都必须具有确定的值， 以便把这些值传送给形参， 因此应预先用赋值，输入等办法使实参获得确定值。
-1function demo(a, b) { 2	// 定义两个形参。 3	var f, 4	g = &amp;#39;&amp;#39;; 5	for (var e = 0; e &amp;lt; arguments.length; e++) { 6	// arguments 对象的属性 length 表示实参（实参列表）的数量。 7	f = arguments[e]; 8	// 遍历所有实参 9	console.log(&amp;#39;遍历的实参:&amp;#39; + f); 10	} 11	g = arguments.length; 12	// 返回实参的数量 13	// arguments 对象类似数组，但却不是数组。 14	console.</description>
+function demo(a, b) { // 定义两个形参。 	var f, g = &amp;#39;&amp;#39;; for (var e = 0; e &amp;lt; arguments.length; e++) { // arguments 对象的属性 length 表示实参（实参列表）的数量。 	f = arguments[e]; // 遍历所有实参 	console.log(&amp;#39;遍历的实参:&amp;#39; + f); } g = arguments.length; // 返回实参的数量 	// arguments 对象类似数组，但却不是数组。 	console.log(&amp;#39;实参数量：&amp;#39; + g); } demo(10, 20, 30, 40); // 传入四个实参  实参的和 fjdkaj</description>
     </item>
     
     <item>
@@ -3240,10 +3536,10 @@ send 用于向服务端发送一个 HTTP 请求。
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
-      <description>分支与循环 if 单一的 if 语句 1if (条件) { 2	要执行的语句块; 3} if else 语句 1if (条件) { 2	要执行的语句块; 3} else { 4	要执行的语句块; 5} 多重 if 语句嵌套 1if (条件) { 2	要执行的语句块; 3} else if (条件) { 4	要执行的语句块; 5} else { 6	要执行的语句块; 7} 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+      <description>分支与循环 if 单一的 if 语句 if (条件) { 要执行的语句块; } if else 语句 if (条件) { 要执行的语句块; } else { 要执行的语句块; } 多重 if 语句嵌套 if (条件) { 要执行的语句块; } else if (条件) { 要执行的语句块; } else { 要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
 另外，可以用函数表达式定义函数？
 switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
-1n = &amp;#39;老虎&amp;#39;; 2switch (n) { 3	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 4	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 5	// 可以使用 break 语句终止执行该代码块之后代码块。 6	case &amp;#39;老虎&amp;#39;: 7	case &amp;#39;虎&amp;#39;: 8	case &amp;#39;白虎&amp;#39;: 9	case &amp;#39;母老虎&amp;#39;: 10	console.</description>
+n = &amp;#39;老虎&amp;#39;; switch (n) { // 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 	// 可以使用 break 语句终止执行该代码块之后代码块。 	case &amp;#39;老虎&amp;#39;: case &amp;#39;虎&amp;#39;: case &amp;#39;白虎&amp;#39;: case &amp;#39;母老虎&amp;#39;: console.</description>
     </item>
     
     <item>
@@ -3257,10 +3553,10 @@ switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配�
 Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
 数字类型的对象可以进行学运算，但运算的结果，这个对象会变回原始类型的数值。
 String 将原始类型的字符串，转换为 String 对象，它的原型是 String.prototyp。
-当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete删掉，所以最终将属性 length 的值返回。
+当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete 删掉，所以最终将属性 length 的值返回。
 Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是 Boolean.prototyp。
 注意 因为 Number、String、boolean 它们本身重写了（用一个同名不同功能的方法覆盖系统自带的方法）一个 xxx.prototype.toString 方法，所以它们不会用原型上 Object.prototype 的 toString 方法。
-1var a = new Number(123); 2var b = new String(&amp;#39;yxz&amp;#39;); 3var c = new Boolean(&amp;#39;true&amp;#39;); 4console.log(typeof a); 5console.log(typeof b); 6console.log(typeof c); 7// 返回三个 object 数值包装类运算 1var num = new Number(123); 2//原始值 num 被进行包装类，因此它变成了 对象 123。 3console.</description>
+var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new Boolean(&amp;#39;true&amp;#39;); console.log(typeof a); console.log(typeof b); console.log(typeof c); // 返回三个 object 数值包装类运算 var num = new Number(123); //原始值 num 被进行包装类，因此它变成了 对象 123。 console.</description>
     </item>
     
     <item>
@@ -3269,7 +3565,7 @@ Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
-      <description>区分对象与数组 Constructor 1var arr = []; 2var obj = {}; 3var a = arr.constructor; 4console.log(a); 5// 返回数组。 6var b = obj.constructor; 7console.log(b); 8// 返回对象。 Instanceof 1var arr = []; 2 3var obj = {}; 4 5var a = arr instanceof Array; 6console.log(a); 7// 返回 true，因为变量 arr 是一个数组。 8var a = arr instanceof Object; 9console.log(a); 10// 返回 true，因为变量 arr 是一个数组类对象。 11var b = obj instanceof Array; 12console.log(b); 13// 返回 flase，因为变量 obj 不是一个数组。 14var b = obj instanceof Object; 15console.</description>
+      <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = []; var obj = {}; var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
     </item>
     
     <item>
@@ -3279,10 +3575,10 @@ Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</guid>
       <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
-__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
 声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
 原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
-1// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） 2// 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； 3// Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; 4// Demo.prototype.size = &amp;#34;500&amp;#34;; 5// Demo.prototype.height = &amp;#34;1400&amp;#34;; 6// Demo.prototype.width = &amp;#34;800&amp;#34;; 7//上面代码可以简化为： 8Demo.</description>
+// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） // 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； // Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; // Demo.prototype.size = &amp;#34;500&amp;#34;; // Demo.prototype.height = &amp;#34;1400&amp;#34;; // Demo.prototype.width = &amp;#34;800&amp;#34;; //上面代码可以简化为： Demo.</description>
     </item>
     
     <item>
@@ -3307,12 +3603,12 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
 Number 数值，用整数或浮点数表示，它允许任意位的小数。
 String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
 与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
-Boolean 布尔，表示一个逻辑值，只有true 或 false 两个值。
+Boolean 布尔，表示一个逻辑值，只有 true 或 false 两个值。
 BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
 Symbol 符号，它是唯一的并且是不可修改的。
 undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
 Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
-原始值的储存原理 1a = 10; 2// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 3// 栈内存： 4// a ： 10 5var b = a; 6// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 7// 栈内存： 8// a ：10 9// 拷贝变量 10 10// b ：10 11a = 20; 12// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 13// 栈内存： 14// a ：10（已关闭） 15// b ：10 16// a ：20 （新的变量 a） 17 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
+原始值的储存原理 a = 10; // 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 // 栈内存： // a ： 10 var b = a; // 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 // 栈内存： // a ：10 // 拷贝变量 10 // b ：10 a = 20; // 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 // 栈内存： // a ：10（已关闭） // b ：10 // a ：20 （新的变量 a） 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
     </item>
     
     <item>
@@ -3335,7 +3631,7 @@ var var 可以声明局部变量与全局变量。
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
       <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
 简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
-作用 私有化变量 1function Demo() { 2	var healthy = 0; 3	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 4	// 不能直接作为对象的属性或变量进行调用。 5	this.cure = function () { 6	healthy++; 7	}; 8 9	this.injured = function () { 10	healthy--; 11	}; 12 13	this.view = function () { 14	console.log(healthy); 15	}; 16} 17 18var demo = new Demo(); 19 20demo.view(); 21// 返回 0，调用构造函数的属性 view。 22demo.cure(); 23// 调用构造函数的属性 cure。，使变量 healthy 自增 1。 24demo.</description>
+作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy++; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this.</description>
     </item>
     
     <item>
@@ -3354,7 +3650,7 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
       <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
-1var demo = { 2	wife1: { name: &amp;#39;lei&amp;#39; }, 3	wife2: { name: &amp;#39;zheng&amp;#39; }, 4	wife3: { name: &amp;#39;xing&amp;#39; }, 5	wife4: { name: &amp;#39;zhu&amp;#39; }, 6	fun: function (num) { 7	var a = [&amp;#39;wife&amp;#39; + num]; 8	console.log(a); 9	return this[&amp;#39;wife&amp;#39; + num]; 10	// 看不太懂 11	}, 12}; 13 14demo.fun(1); 15demo.fun(2); 16demo.fun(3); 17demo.fun(4); </description>
+var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; + num]; console.log(a); return this[&amp;#39;wife&amp;#39; + num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
     </item>
     
     <item>
@@ -3363,7 +3659,7 @@ var var 可以声明局部变量与全局变量。
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
-      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与CSS 与 JavaScript 代码之外。
+      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
 平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
 向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
 性能考虑 减少访问 DOM 的和文档中标记的元素；过多的页面元素只会增大 DOM 树的规模。
@@ -3378,11 +3674,11 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
       <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
-用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到（即避免「变量污染」）。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
 只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
 多个 IIFE 之间要加分号。
-1var demo = (function (a, b) { 2	// 用变量 demo 接收 IIFE 的返回值 3	a = Number(a); 4	b = Number(b); 5	var c = (a + b) * 10; 6	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 7	return c; 8	// 将变量 c 作为该 IIFE 的返回值 9})(10, 20); 10// 10 与 20 为实参 11console.log(demo); IIFE 的立即释放的特性 1var a = (function demo() { 2	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 3	// 因此再次调用变量 a 会返回 undefined 4	console.</description>
+var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Number(a); b = Number(b); var c = (a + b) * 10; // 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; // 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { // 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console.</description>
     </item>
     
     <item>
@@ -3392,7 +3688,7 @@ var var 可以声明局部变量与全局变量。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
       <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
-1Grand.prototype.blue = &amp;#39;blue&amp;#39;; 2function Grand() {} 3 4var grandfather = new Grand(); 5 6Father.prototype = grandfather; 7 8function Father() { 9	this.red = &amp;#39;red&amp;#39;; 10	this.money = { 11	card: &amp;#39;pencil&amp;#39;, 12	}; 13	this.value = &amp;#39;100&amp;#39;; 14} 15 16var father = new Father(); 17 18Son.prototype = father; 19 20function Son() { 21	this.orange = &amp;#39;orange&amp;#39;; 22} 23var son = new Son(); 24 25console.log(son.orange); 26// 返回 orange。 27console.</description>
+Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son.</description>
     </item>
     
     <item>
@@ -3410,6 +3706,15 @@ nodeValue 返回或设置当前节点的值。
 注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
 nodeName 返回指定节点的大写字母形式的节点名。
 nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 获取当前时间</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -3447,7 +3752,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
       <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
 缺点：影响程序的效率与性能。
-递归实现阶乘 1var n = 5; 2function OneOne(n) { 3	if (n == 1) { 4	//将当 n 等于 1 时作为结束条件 5	return 1; 6	// 返回值为 1 7	} 8	return (n = n * OneOne(n - 1)); 9	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 10	// 使用递归计算 5 的阶乘的过程： 11	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 12	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 13	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 14	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 15	// OneOne(1); 当 n 等于 1 时，直接返回 1; 16} 17console.</description>
+递归实现阶乘 var n = 5; function OneOne(n) { if (n == 1) { //将当 n 等于 1 时作为结束条件 	return 1; // 返回值为 1 	} return (n = n * OneOne(n - 1)); // 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
     </item>
     
     <item>
@@ -3457,7 +3762,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
       <description>链式调用 模仿一个 jQuery 链式调用的方式。
-1var demo = { 2	a: function () { 3	console.log(123); 4	return this; 5	// 将函数自身返回。 6	}, 7 8	b: function () { 9	console.log(456); 10	return this; 11	// 将函数自身返回。 12	}, 13 14	c: function () { 15	console.log(789); 16	return this; 17	//将函数自身返回。 18	}, 19}; 20demo.a().b().c(); 21// 呈链式(连续)的调用对象 demo 的属性。 </description>
+var demo = { a: function () { console.log(123); return this; // 将函数自身返回。 	}, b: function () { console.log(456); return this; // 将函数自身返回。 	}, c: function () { console.log(789); return this; //将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
     </item>
     
     <item>
@@ -3471,7 +3776,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 闭包的优缺点 优点 避免全局变量的污染。
 使变量长期储存在内存中。
 缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
-1function demo() { 2	function test() { 3	var d = 345; 4	console.log(c); 5	// 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 6	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 7	} 8	var c = 123; 9	return test; 10	// 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 11	// 使的函数 demo 可以使用函数 test 的 AO 12} 13var e = demo(); 14// 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO 15e(); 16// 调用变量 e，即相当于执行函数 demo 的返回值 17// 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， 18// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 1function demo() { 2	var b = &amp;#39;apple&amp;#39;; 3	var obj = { 4	c: function () { 5	// 给对象 obj 添加一个属性 c ，属性值为一个函数 6	if (b !</description>
+function demo() { function test() { var d = 345; console.log(c); // 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 	} var c = 123; return test; // 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 	// 使的函数 demo 可以使用函数 test 的 AO } var e = demo(); // 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO e(); // 调用变量 e，即相当于执行函数 demo 的返回值 // 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， // 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 function demo() { var b = &amp;#39;apple&amp;#39;; var obj = { c: function () { // 给对象 obj 添加一个属性 c ，属性值为一个函数 	if (b !</description>
     </item>
     
     <item>
@@ -3486,7 +3791,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 变量声明提升 使用 var 声明的变量，不管在这之前还是之后调用该变量，并不会报错，会返回 undefined。
 暗示全局变量 暗示全局变量（imply global），一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性； 任何全局变量，都是 window 的属性，即可以通过 window 对象调用全局变量。window 就是全局的域，它包括了全局变量和全局函数。
 暗示全局变量不会进行变量声明提升。
-1a = 10; 2// 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 3// 相当于 4window.a = 10; 5// 相当于 6window = { 7	a: 10, 8}; 9 10//一切声明了的全局变量，都是 window 的属性 11var b = 20; 12// 相当于 13window.b = 20; 14// 相当于 15window = { 16	b: 20, 17}; 18// 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
+a = 10; // 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 // 相当于 window.a = 10; // 相当于 window = { a: 10, }; //一切声明了的全局变量，都是 window 的属性 var b = 20; // 相当于 window.b = 20; // 相当于 window = { b: 20, }; // 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
     </item>
     
     <item>
@@ -3522,6 +3827,17 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     </item>
     
     <item>
+      <title>同时推送到Gtihub和Gitee</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</guid>
+      <description>同时推送到Gtihub和Gitee 修改 Git 的配置文件config
+找到**[remote &amp;ldquo;origin&amp;rdquo;]**下的**url**
+增加需要添加的远程库url即可</description>
+    </item>
+    
+    <item>
       <title>如何学习历史</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E5%8E%86%E5%8F%B2/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
@@ -3540,9 +3856,9 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</guid>
       <description>安装 Git 官网下载并安装 Git (git-scm.com)，下载完成后，默认选项安装即可。
 安装完成后，右击后在菜单中选择 Git Bash ，蹦出一个类似命令行窗口的东西，就说明 Git 安装成功了！
-1Rainy@Rainy MINGW64 /e/Rainy 配置个人信息 因为 Git 是分布式版本控制系统，所以，每台设备都必须自报家门，也就是在命令行输入你的 Github 用户名和 Email 地址。
+Rainy@Rainy MINGW64 /e/Rainy 配置个人信息 因为 Git 是分布式版本控制系统，所以，每台设备都必须自报家门，也就是在命令行输入你的 Github 用户名和 Email 地址。
 首先，找一个合适的文件夹，右击 Git Bash，在命令行输入
-1git config --global user name &amp;#34;Your Github UserName&amp;#34; 2git config --global user email &amp;#34;Your Github Email&amp;#34; 注意git config命令的--global参数，用了这个参数，表示你这台设备上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的 UserName 和 Email 地址。</description>
+git config --global user name &amp;#34;Your Github UserName&amp;#34; git config --global user email &amp;#34;Your Github Email&amp;#34; 注意git config命令的--global参数，用了这个参数，表示你这台设备上所有的 Git 仓库都会使用这个配置，当然也可以对某个仓库指定不同的 UserName 和 Email 地址。</description>
     </item>
     
     <item>
@@ -3607,10 +3923,10 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>对博客的理解</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</link>
       <pubDate>Wed, 20 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3/</guid>
       <description>对博客的理解 博客是什么？ 博客说白了就是个人网站、或者个人的网络笔记本。别人也可以去看、但是需要别人很主动的去看。
 朋友圈和空间都是基于社交圈子的，在 QQ 和微信有如此多的用户情况下，
 它就像一个喇叭，大声告诉别人：”我今天去九寨沟拍了个照又回来了。&amp;quot;
@@ -3619,7 +3935,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 随便写一句话，我居然还得想一个标题？Oh No ！这鬼东西我不用了。
 我觉得是这样的。人有这么一个需求——表达自己。怎么表达呢？表达给谁看呢？谁可以表达呢？这就是社交平台该做的。为什么博客会死？
 博客的出发点就是写文章、表达方式太死板、门槛太高、不亲民、普通用户、写完了就石沉大海。假如朋友圈你发状态从来没人回、你还发吗？假如你发每条状态都得取个名字、你还发吗？假如发每条状态规定你写 500 字你还发吗？嗯、为什么会一个活、一个死、就是因为后来者更好的解决了人本身的表达需求。
-为什么会写博客 学习笔记 码代码嘛，肯定是会遇到 bug 的，之后肯定得通过某些渠道来解决bug，比如 Google。
+为什么会写博客 学习笔记 码代码嘛，肯定是会遇到 bug 的，之后肯定得通过某些渠道来解决 bug，比如 Google。
 最终，你花了大半天的时间找到了解决办法，但你并没有记录解决这个问题的过程。
 过了一段时间，当你再遇到同样的问题，你还得花上大半天的时间去 Google
 这时候你就会想，要是当时自己记录了这个问题的解决过程就好了。
@@ -3686,7 +4002,7 @@ Xshell 服务器终端，登录 Linux 虚拟服务器</description>
       <pubDate>Mon, 18 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E9%83%A8%E5%88%86%E4%BA%BA%E6%8F%90%E5%80%A1%E7%A6%81%E6%AD%A2%E6%B8%B8%E6%88%8F/</guid>
-      <description>如何看待部分人提倡禁止游戏 因为我不xx，所以可以禁xx 支持禁止游戏的人，都是不玩游戏的人。
+      <description>如何看待部分人提倡禁止游戏 因为我不 xx，所以可以禁 xx 支持禁止游戏的人，都是不玩游戏的人。
 我支持禁止抽烟，因为我不抽烟。
 我支持禁止喝酒，因为我不喝酒
 将教育的失败的责任推给游戏 孩子学习不好，父母没有和他一起找原因，而是骂你为什么不好好学习。
@@ -3708,7 +4024,15 @@ Xshell 服务器终端，登录 Linux 虚拟服务器</description>
       <pubDate>Mon, 18 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/%E8%BF%9B%E5%8E%82%E5%90%8E/</guid>
-      <description>进厂后 每天做着重复且机械的工作，好不容易熬到下班，换上了自己喜欢的衣服，吃完饭便回到宿舍，推开门，扑面而来的是一股浓浓的烟味，这让你不得不捏着鼻子，你望着昏暗腐朽的寝室，想开灯，但却怕打扰的室友休息。角落里的两个室友，一个对着手机痴痴的笑着，好似着了魔，另一个在睡觉，像死猪一般。你想打个招呼，但却不知什么原因止住了。你太累了，躺在床上，望着脏兮兮的天花板，不禁开始怀念曾经在学校的生活&amp;hellip;</description>
+      <description>进厂后 每天做着重复且机械的工作，好不容易熬到下班，
+换上了自己喜欢的衣服，吃完饭便回到宿舍，
+推开门，扑面而来的是一股浓浓的烟味，让你不得不捂住鼻子，
+你望着昏暗腐朽的宿舍，想开灯，但却怕打扰舍友休息。
+角落里的两个室友，一个对着手机痴迷的笑着，跟着魔了似的，
+另一个正在睡觉，睡得像死猪一般。
+你想跟那个玩手机的舍友打个招呼，但却不知什么原因止住了。
+你太累了，躺在床上，
+望着脏兮兮的天花板，不禁开始怀念曾经在学校的生活&amp;hellip;</description>
     </item>
     
     <item>
@@ -3718,13 +4042,13 @@ Xshell 服务器终端，登录 Linux 虚拟服务器</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/2-%E8%A7%82%E7%82%B9/%E7%8E%AF%E5%A2%83%E7%9A%84%E5%BD%B1%E5%93%8D/</guid>
       <description>环境的影响 对大多数人而言，环境对人的影响都很大
-环境影响的是人的三观，确切的说是影响人对于好、一般和坏的判断阈值。 当你你周围的人都是早上10点才起床的时候，你就会觉得9点起床很早了，而如果你周围都是早上7点就起的，你就会觉得8点已经很晚了。
+环境影响的是人的三观，确切的说是影响人对于好、一般和坏的判断阈值。 当你你周围的人都是早上 10 点才起床的时候，你就会觉得 9 点起床很早了，而如果你周围都是早上 7 点就起的，你就会觉得 8 点已经很晚了。
 你没有必要也没有能力说服所有人都和你观点一样，而且你的观点也并不一定就是正确的，所以你要接受有人观点和你不同这个客观事实 3.只和那些愿意和你交流，你也愿意和他交流的人交流，否则就是浪费时间
 保持谦卑，注意反思，不断进步， 保持谦卑——永远记得你不是最牛的，只是你不知道有人比你牛而已 注意反思——时刻反问自己，你认为的就一定是对的么 不断进步——不要为自己的停滞不前找借口，你只是不想进步了而已
 基本归因谬论 为什么当别人抱怨一件事情的时候，我们总觉得问题出在他们自身？
 然而，为什么当我们自己遇到不如意的时候，我们却觉得错的是他人或是环境？
 这种现象叫做基本归因谬论（fundamental attribution error），它普遍地存在于大多数人身上。我们倾向于用内因解释他人的行为，而忽略环境的影响。但是当我们尝试理解自身行为的时候，外因变得格外明显，因此我们会过分强调环境的影响而忽视自身的因素——这就是所谓的行动者-观察者偏误（actor-observer bias）。
-Jones and Harris在1967年做了一个实验。他们找了一群学生，让学生们读一篇反对或是支持菲德尔卡斯特罗（古巴前领导人）的文章，然后评价文章作者对卡斯特罗的态度。第一组学生被告知文章的作者是自由选择文章的立场，这组学生很自然地认为支持卡斯特罗的文章作者对卡斯特罗的态度更正面。第二组学生被告知文章作者的立场是由抛硬币决定的，换而言之，文章的立场与作者本人的态度无关。遵循逻辑来说，这第二组的学生应该无法判断作者的态度，可是实验结果却显示，学生们依旧认为由抛硬币决定撰写支持卡斯特罗立场的文章作者对卡斯特罗抱有更加正面的态度。
+Jones and Harris 在 1967 年做了一个实验。他们找了一群学生，让学生们读一篇反对或是支持菲德尔卡斯特罗（古巴前领导人）的文章，然后评价文章作者对卡斯特罗的态度。第一组学生被告知文章的作者是自由选择文章的立场，这组学生很自然地认为支持卡斯特罗的文章作者对卡斯特罗的态度更正面。第二组学生被告知文章作者的立场是由抛硬币决定的，换而言之，文章的立场与作者本人的态度无关。遵循逻辑来说，这第二组的学生应该无法判断作者的态度，可是实验结果却显示，学生们依旧认为由抛硬币决定撰写支持卡斯特罗立场的文章作者对卡斯特罗抱有更加正面的态度。
 为什么会有这种现象？并不是因为我们都是自私爱推脱责任的坏人，只是我们的注意力有局限罢了。当我们观察和分析他人的时候，我们的注意力集中在那个人身上，很容易会忽视周围的环境。而当我们自己做一件事的时候，一定会有更多地注意力放在周围的环境上。因此我们在给行为归因的时候，就倾向于选择我们注意力关注到的一方。
 另外，我们在对待他人的事情上，是相当懒惰的。由于我们的认知系统会自动地用内因解释他人的行为，纵使我们意识到了他人行为受到环境的限制，我们的认知系统还需要清醒地商榷调整之前所做的解释。尤其是在认知系统非常繁忙的情况下，我们没有足够的认知资源去为他人的行为辩解。
 最后一个原因，或许有些人听说过——正义世界现象（Just-world Phenomenon）。我们更愿意相信自己生存的世界是正义的、是我们能够掌控的，只要我们努力就能得到我们想要的。如果我们把他人的失败归因于其自身，那么这个无法改变也无法控制的世界在我们眼中便还是好的、公正的。相信世界是好的，失败都是因为他人自己的过错，这样的想法满足了我们内心底的安全感。
@@ -3737,10 +4061,10 @@ Jones and Harris在1967年做了一个实验。他们找了一群学生，让学
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
-      <description>实现居中 绝对定位 兼容性不错的主流css绝对定位居中的用法：
-1.conter{ 2 width: 600px; height: 400px; 3 position: absolute; left: 50%; top: 50%; 4 margin-top: -200px; /* 高度的一半 */ 5 margin-left: -300px; /* 宽度的一半 */ 6} 绝对定位 css3的出现，使得有了更好的解决方法，就是使用transform代替margin. transform中translate偏移的百分比值是相对于自身大小的，可以这样实现css绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
-1position: absolute; 2left:50%; 3top:50%; 4transform:translate(-50%,-50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
-1display: flex; 2flex-direction: row; 3justify-content: center; 4align-items: center; 1display: flex; 2flex-direction: column; 3justify-content: center; 4align-items: center; 文本实现垂直居中 1display: flex; 2align-items: center; </description>
+      <description>实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
+.conter { width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
+display: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; </description>
     </item>
     
     <item>
@@ -3767,7 +4091,7 @@ Jones and Harris在1967年做了一个实验。他们找了一群学生，让学
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
-      <description>高斯模糊 1 backdrop-filter:blur(0.5rem); </description>
+      <description>高斯模糊 backdrop-filter: blur(0.5rem); </description>
     </item>
     
     <item>
@@ -3835,7 +4159,7 @@ git checkout -- FileName</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
       <description>文本溢出处理 实现单行文本的溢出显示省略号可以直接用 text-overflow:ellipsis 属性来实现，当然还需要加宽度width属来兼容部分浏览。
-1overflow: hidden; 2text-overflow:ellipsis; 3white-space: nowrap; </description>
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; </description>
     </item>
     
     <item>
@@ -3844,7 +4168,7 @@ git checkout -- FileName</description>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
-      <description>媒体查询 1@media screen and (min-width: 720px) { 2	/* 当浏览器宽度大于 value 时所应用的样式 */ 3} 4 5@media screen and (max-width: value) { 6	/* 当浏览器宽度小于 value 时所应用的样式*/ 7} </description>
+      <description>媒体查询 @media screen and (min-width: 720px) { /* 当浏览器宽度大于 value 时所应用的样式 */ } @media screen and (max-width: value) { /* 当浏览器宽度小于 value 时所应用的样式*/ } </description>
     </item>
     
     <item>
@@ -3853,7 +4177,7 @@ git checkout -- FileName</description>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</guid>
-      <description>渐变 1background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
+      <description>渐变 background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
     </item>
     
     <item>
@@ -3873,7 +4197,7 @@ git checkout -- FileName</description>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</guid>
       <description>table 空隙 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
-1border-collapse: collapse; </description>
+border-collapse: collapse; </description>
     </item>
     
     <item>
@@ -3882,8 +4206,8 @@ git checkout -- FileName</description>
       <pubDate>Sun, 10 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
-      <description>修改网页滚动条样式 属性描述 1/* 整个滚动条*/ 2::-webkit-scrollbar { 3} 4 5/* 滚动条两端的按钮 */ 6::-webkit-scrollbar-button { 7} 8 9/* 滚动条的滚动轨道 */ 10::-webkit-scrollbar-track { 11} 12 13/* 内层轨道 */ 14::-webkit-scrollbar-track-piece { 15} 16 17/* 滑块 */ 18::-webkit-scrollbar-thumb { 19} 20 21/* 边角 */ 22::-webkit-scrollbar-corner { 23} 24 25/* 右下角拖动块的样式 */ 26::-webkit-resizer { 27} 使用 一般我们这样设置这几个主要属性就OK了。
-1/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ 2::-webkit-scrollbar 3{ 4 width:10px; 5 background-color:#F5F5F5; 6} 7/*定义滚动条轨道：内阴影 + 圆角*/ 8::-webkit-scrollbar-track 9{ 10 background-color:#F5F5F5; 11} 12/*定义滑块：内阴影 + 圆角*/ 13::-webkit-scrollbar-thumb 14{ 15 border-radius:10px; 16 background-color:#555; 17} 更多相关属性 1:horizontal //水平方向的滚动条 2:vertical //垂直 方向的滚动条 3:decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) 4:increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) 5:start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 6:end //类似于start伪类，标识对象是否放到滑块的后面。 7:double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 8:single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 9:no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 10:corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 11:window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
+      <description>修改网页滚动条样式 属性描述 /* 整个滚动条*/ ::-webkit-scrollbar { } /* 滚动条两端的按钮 */ ::-webkit-scrollbar-button { } /* 滚动条的滚动轨道 */ ::-webkit-scrollbar-track { } /* 内层轨道 */ ::-webkit-scrollbar-track-piece { } /* 滑块 */ ::-webkit-scrollbar-thumb { } /* 边角 */ ::-webkit-scrollbar-corner { } /* 右下角拖动块的样式 */ ::-webkit-resizer { } 使用 一般我们这样设置这几个主要属性就 OK 了。
+/*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ ::-webkit-scrollbar { width: 10px; background-color: #f5f5f5; } /*定义滚动条轨道：内阴影 + 圆角*/ ::-webkit-scrollbar-track { background-color: #f5f5f5; } /*定义滑块：内阴影 + 圆角*/ ::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #555; } 更多相关属性 :horizontal //水平方向的滚动条 :vertical //垂直 方向的滚动条 :decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) :increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) :start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 :end //类似于start伪类，标识对象是否放到滑块的后面。 :double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 :single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 :no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 :corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 :window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
     </item>
     
     <item>
@@ -3902,6 +4226,16 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
     </item>
     
     <item>
+      <title>Css keyframes</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</link>
+      <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</guid>
+      <description>Css keyframes 持续旋转 选中文档中的元素。
+.map2 { width: 8.0375rem; height: 8.0375rem; background-image: url(../images/lbx.png); opacity: 0.6; animation: rotate 15s linear infinite; z-index: 2; } keyframes @keyframes rotate { /* 从 0° 开始旋转 */ from { transform: translate(-50%, -50%) rotate(0deg); } /* 旋转到 360 ° */ to { transform: translate(-50%, -50%) rotate(360deg); } } </description>
+    </item>
+    
+    <item>
       <title>Css 语法</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Fri, 08 Oct 2021 06:00:00 +0000</pubDate>
@@ -3910,7 +4244,7 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
       <description>语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
-1.selector { 2	color: #000; 3} 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
+.selector { color: #000; } 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
 内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
 外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
 优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。</description>
@@ -4004,7 +4338,7 @@ CSS 样式书写靠后的属性最终会应用到元素。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/break/</guid>
       <description>break 用于终止循环或退出 switch.
-不能直接用于if，除非if是循环的一个子句。</description>
+不能直接用于 if，除非 if 是循环的一个子句。</description>
     </item>
     
     <item>
@@ -4014,7 +4348,7 @@ CSS 样式书写靠后的属性最终会应用到元素。
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/printf/</guid>
       <description>printf 用于将变量的内容输出到显示器.
-直接输出 1printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) 1int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 2printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符1 输出控制符2&amp;rdquo;,参数1,参数2) 1 int a = 10; 2 int i = 15; 3 printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) 1int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 2printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
     </item>
     
     <item>
@@ -4027,7 +4361,7 @@ CSS 样式书写靠后的属性最终会应用到元素。
 将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
 使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
 scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
-scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) 1int i; 2scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 3printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) 1int i; 2scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 3printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
     </item>
     
     <item>
@@ -4038,10 +4372,10 @@ scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) 1int i; 2scanf(&amp;#3
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
       <description>循环控制 某些代码被重复执行。
 for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
-1for(1; 2; 3) 2{ 3 A; 4} 其中 1 只执行一次。
+for(1; 2; 3) { A; } 其中 1 只执行一次。
 3 执行完后才意味着一次 for 循环执行完毕。
-3 执行完后一定会再执行一次 2，且不管表达式2的结果为 true 或 false 都会执行一次 2。
-1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	int sum = 0; 4	for (int i = 1;i &amp;lt; 10;i++) 5	printf(&amp;#34;%d\n&amp;#34;, i); 6	//0 - 10 的自然数。 7} 1 - 10 所有奇数之和 1#include &amp;lt;stdio.</description>
+3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { int sum = 0; for (int i = 1;i &amp;lt; 10;i++) printf(&amp;#34;%d\n&amp;#34;, i); //0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
     </item>
     
     <item>
@@ -4054,7 +4388,7 @@ for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，�
 异同 相同 最终都会使 i 的值加 1.
 不同 i++ 返回原来的值，
 ++i 返回加 1 后的值。
-1#include &amp;lt;stdio.h&amp;gt;2 3int main() 4{ 5 int a,b,c,d; 6 a = b = 3; 7 c = a++; 8 // return 3 9 d = ++b; 10 // return 4 11 printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d); 12 return 0; 13} </description>
+#include &amp;lt;stdio.h&amp;gt; int main() { int a,b,c,d; a = b = 3; c = a++; // return 3  d = ++b; // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d); return 0; } </description>
     </item>
     
     <item>
@@ -4065,9 +4399,9 @@ for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，�
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 三目运算符 a ? b : c
 相当于 if 语句
-1 if (a) 2 b; 3 else 4 c 5 return 0; 逗号表达式 (a,b,c,d)
-从左向右执行，表达式最终的值是d 的值。
-1 int i; 2 int c = 2; 3 i = (c++, ++c, c + 2, c - 3); 4 // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2， 5 // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4， 6 // 再 c - 3，则 i = 1.</description>
+if (a) b; else c return 0; 逗号表达式 (a,b,c,d)
+从左向右执行，表达式最终的值是 d 的值。
+int i; int c = 2; i = (c++, ++c, c + 2, c - 3); // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.  printf(&amp;#34;%d&amp;#34;, i); // return 1  return 0; </description>
     </item>
     
     <item>
@@ -4079,8 +4413,8 @@ for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，�
       <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
 if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
 如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
-1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (1) 4	A； 5} 1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (2 &amp;gt; 1) 4	printf(&amp;#34;if 语句为 true\n&amp;#34;); 5} if 语句默认只能控制 A，不能控制B（即无论 1 为 true 还是 false， B 都会执行）。
-1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (1) 4	A; 5	B; 6} 1#include &amp;lt;stdio.h&amp;gt;2int main(void) { 3	if (2 &amp;gt; 1) 4	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 5	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); 6} if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+#include &amp;lt;stdio.h&amp;gt;int main(void) { if (1) A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { if (2 &amp;gt; 1) printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { if (1) A; B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { if (2 &amp;gt; 1) printf(&amp;#34;被 if 语句控制\n&amp;#34;); printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
     </item>
     
     <item>
@@ -4105,7 +4439,7 @@ CPU 再对内存中的数据进行处理。
 程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。
 软件不能直接控制硬件。
 什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。
-1int a; 2//调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 3a = 3; 4//将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
+int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
 垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC++ 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。
 软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
 一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
@@ -4155,42 +4489,42 @@ git clone git@github.com:YxzRainy/YxzRainy.github.io.git一定要从自己的�
     
     <item>
       <title>Hexo 将博客作为站点子页面</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
       <description>Hexo 将博客作为站点子页面 前言 如果你想如何在 GitHub 的 repository 中上传自己写的网页作为首页，hexo 生成的博客页作为其子页？即自己写的页面作为 UserName.github.io 的页面，将 hexo 博客放在 UserName.github.io/blog 上，那么，这个教程也许可以帮到你。
 本教程的前提是你已经用 hexo 将博客搭建在 UserName.github.io 的仓库上了。
 新建仓库 在 github 上新建一个仓库，名字随意，我的是 Blog。
 然后本地初始化一个 master 分支，并且将原仓库 clone 到本地分支，并且 开启仓库的 GitHub Pages.，需要注意的是，这里的本地分支目前是没有 CNAME 文件 的。
 修改 Hexo 的配置文件 打开配置文件 _config.yml，找到 #URL 下的 url 和 root，将 url 修改为https:// UesrName.github.io/新建的仓库名（我这里是 Blog），然后将 root 修改为**/新建的仓库名/**。
-1# URL2## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;3url:https://YxzRainy.github.io/Blog4root:/Blog/再下滑找到 deploy:下的 repo，将地址改为你新建的 Clone 地址。</description>
+# URL## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;url:https://YxzRainy.github.io/Blogroot:/Blog/再下滑找到 deploy:下的 repo，将地址改为你新建的 Clone 地址。</description>
     </item>
     
     <item>
       <title>Hexo 搭建博客</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
-将 Git 与 Github 关联 下载并安装Git 配置个人信息 1git config --global user.name &amp;#34;Your UserName&amp;#34; 2git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
-1ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
+将 Git 与 Github 关联 下载并安装Git 配置个人信息 git config --global user.name &amp;#34;Your UserName&amp;#34; git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
+ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
 new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</description>
     </item>
     
     <item>
       <title>Hexo 更改博客主题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/hexo-%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
       <description>Hexo 更改博客主题 前言 配置完了 Hexo，你是否对自带的主题不满意呢？本篇文章将教你如何更改及美化 Hexo 主题。
 下载主题 去 Hexo 的Hexo Themes下载一个你认为不错的主题。这里推荐 Next主题
 更改基本站点信息 在你的博客根目录下打开**_config.yml**，将 Site 下的信息改为你自己的
-1# Site2title:Rainy 的梦呓3subtitle:&amp;#39;至简&amp;#39;4description:&amp;#39;My Blog And Note to sum up&amp;#39;5keywords:Blog note6author:Yxz7language:zh-CN8timezone:&amp;#39;Asia/Shanghai&amp;#39;同时 记得将 URL 下的 url 改为你自己的站点地址
-1# URL2## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;3url:https://YxzRainy.github.io/Blog切换到 Next 主题 在你的博客根目录下打开**_config.yml**，将 Extensions，下的 theme 改为 next。
-1# Extensions2## Plugins: https://hexo.io/plugins/3## Themes: https://hexo.io/themes/4theme:next安装主题 在博客根目录新建一个 themes/next 文件夹。
+# Sitetitle:Rainy 的梦呓subtitle:&amp;#39;至简&amp;#39;description:&amp;#39;My Blog And Note to sum up&amp;#39;keywords:Blog noteauthor:Yxzlanguage:zh-CNtimezone:&amp;#39;Asia/Shanghai&amp;#39;同时 记得将 URL 下的 url 改为你自己的站点地址
+# URL## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;url:https://YxzRainy.github.io/Blog切换到 Next 主题 在你的博客根目录下打开**_config.yml**，将 Extensions，下的 theme 改为 next。
+# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme:next安装主题 在博客根目录新建一个 themes/next 文件夹。
 将刚才下载好的主题文件夹中的配置文件复制到新建的 themes/next 中，并将 themes/next/config.yml 复制到你的博客根目录，最后重命名为config.</description>
     </item>
     
@@ -4231,7 +4565,7 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 1public static void main(String[] args) { 2 //定义数组 3 int[] arr = {6, 4, 8, 2, 9}; 4 System.out.println(&amp;#34;排序前：&amp;#34;); 5 //打印排序前的数组元素 6 printArray(arr); 7 //数组排序的方法 8 bubbleSort(arr); 9 System.out.println(&amp;#34;排序后：&amp;#34;); 10 //打印排序后的数组元素 11 printArray(arr); 12 } 13 //定义打印数组中所有元素的方法 14 public static void printArray(int[] arr) { 15 for (int i = 0; i &amp;lt; arr.length; i++) { 16 //返回当前数组中所有的元素 17 System.out.print(arr[i] + &amp;#34;&amp;#34;); 18 } 19 System.out.println(&amp;#34;\n&amp;#34;); 20 // 返回后换行 21 } 22 //定义冒泡排序的方法 23 public static void bubbleSort(int[] arr) { 24 // arr.</description>
+      <description>冒泡排序 public static void main(String[] args) { //定义数组  int[] arr = {6, 4, 8, 2, 9}; System.out.println(&amp;#34;排序前：&amp;#34;); //打印排序前的数组元素  printArray(arr); //数组排序的方法  bubbleSort(arr); System.out.println(&amp;#34;排序后：&amp;#34;); //打印排序后的数组元素  printArray(arr); } //定义打印数组中所有元素的方法  public static void printArray(int[] arr) { for (int i = 0; i &amp;lt; arr.length; i++) { //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;); } System.out.println(&amp;#34;\n&amp;#34;); // 返回后换行  } //定义冒泡排序的方法  public static void bubbleSort(int[] arr) { // arr.length - 1，即 5 - 1 = 4，  // 这里的循环控制的是总共进行 n 轮排序，这里只进行四轮排序  // 为什么只进行四轮，因为通过推算，进行 4 轮排序后就可以得出最终结果。  for (int i = 0; i &amp;lt; arr.</description>
     </item>
     
     <item>
@@ -4247,8 +4581,8 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
 至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
 至于继承，还不知道。
 void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
-1void Show1() { 2 int a = 123; 3} 4 5int Show2() { 6 int a = 123; 7 return a; 8} public、protected、default（什么都不写）、private，表示访问控制的权限
-1private void Show1() { 2 int a = 123; 3} 4 5// 相当于 default int Show2() 6int Show2() { 7 int a = 123; 8 return a; 9} </description>
+void Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2() { int a = 123; return a; } </description>
     </item>
     
     <item>
@@ -4298,6 +4632,25 @@ void 的作用 void 表示一个方法中没有 return 任何数据类型，如�
       <guid>https://yxzi.xyz/Sub/Blog/mynote/1-%E9%9A%8F%E7%AC%94/hello-world/</guid>
       <description>Hello World 2021 年 10 月 1 日，我的站点正式发布。
 愿你被世界温柔以待。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/untitled/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/italic-%E5%92%8C-oblique/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/italic-%E5%92%8C-oblique/</guid>
+      <description>italic：浏览器会显示一个斜体的字体样式。 oblique：浏览器会显示一个倾斜的字体样式。
+可以发现关键之处为斜体和倾斜。Italic是使用了文字本身的斜体属性，oblique是让没有斜体属性的文字做倾斜处理。因为有少量的不常用字体没有斜体的属性，如果我们使用Italic就会没有效果，只能Oblique使用才能使文字倾斜。</description>
     </item>
     
   </channel>
