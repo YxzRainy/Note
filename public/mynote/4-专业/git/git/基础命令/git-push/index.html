@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,10 +41,11 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-push\/",
 	    "keywords" : [ "Git","命令","Github","学习笔记", ]
 	}
-</script><title>Git git push</title>
-    <meta property="og:title" content="Git git push" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
+</script>
+        <title>Git git push</title>
+        <meta property="og:title" content="Git git push" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
 git push的一般形式为git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt; &amp;lt;远程分支名&amp;gt;，例如git push origin master：refs/for/master，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
 git push origin master 将本地master分支内容推送到远程库origin的master分支上，这里的master表示是远程服务器上的master分支和本地分支重名后的简写。
 git push -u origin master. -u 表示 Git 不但会将本地 master 分支内容推送到远程库 origin 的 master 分支上，还会把本地的master分支和远程的master分支关联起来，在以后推送内容时就可以直接使用git push命令了，即可以省略origin master。
@@ -46,7 +53,7 @@ git push origin ：refs/for/master 如果省略本地分支名，则表示删除
 git push origin TagName 推送名为TagName的标签到远程库。
 git push origin :refs/tags/TagName 删除名为TagName的远程标签。
 git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签。" />
-    <meta name="description" content="git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
+        <meta name="description" content="git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
 git push的一般形式为git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt; &amp;lt;远程分支名&amp;gt;，例如git push origin master：refs/for/master，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
 git push origin master 将本地master分支内容推送到远程库origin的master分支上，这里的master表示是远程服务器上的master分支和本地分支重名后的简写。
 git push -u origin master. -u 表示 Git 不但会将本地 master 分支内容推送到远程库 origin 的 master 分支上，还会把本地的master分支和远程的master分支关联起来，在以后推送内容时就可以直接使用git push命令了，即可以省略origin master。
@@ -54,122 +61,127 @@ git push origin ：refs/for/master 如果省略本地分支名，则表示删除
 git push origin TagName 推送名为TagName的标签到远程库。
 git push origin :refs/tags/TagName 删除名为TagName的远程标签。
 git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git git push</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="git-push">git push</h1>
-<p>在使用<code>git commit</code>命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。</p>
-<p><code>git push</code>的一般形式为<code>git push &lt;远程主机名&gt; &lt;本地分支名&gt; &lt;远程分支名&gt;</code>，例如<code>git push origin master：refs/for/master</code>，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。</p>
-<h3 id="git-push-origin-master">git push origin master</h3>
-<p>将本地<strong>master</strong>分支内容推送到远程库<strong>origin</strong>的<strong>master</strong>分支上，这里的<strong>master</strong>表示是远程服务器上的<strong>master</strong>分支和本地分支重名后的简写。</p>
-<h3 id="git-push--u-origin-master">git push -u origin master.</h3>
-<p>-u 表示 Git 不但会将本地 master 分支内容推送到远程库 origin 的 master 分支上，还会把本地的<strong>master</strong>分支和远程的<strong>master</strong>分支关联起来，在以后推送内容时就可以直接使用<code>git push</code>命令了，即可以省略<strong>origin master</strong>。</p>
-<h3 id="git-push-origin-refsformaster">git push origin ：refs/for/master</h3>
-<p>如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支，等同于<code>git push origin –delete master</code></p>
-<h3 id="git-push-origin-tagname">git push origin TagName</h3>
-<p>推送名为<strong>TagName</strong>的标签到远程库。</p>
-<h3 id="git-push-origin-refstagstagname">git push origin :refs/tags/TagName</h3>
-<p>删除名为<strong>TagName</strong>的远程标签。</p>
-<h3 id="git-push-origin---tags">git push origin &ndash;tags</h3>
-<p>推送全部未推送到远程库的本地标签。</p>
+                <p>在使用<code>git commit</code>命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。</p>
+                <p><code>git push</code>的一般形式为<code>git push &lt;远程主机名&gt; &lt;本地分支名&gt; &lt;远程分支名&gt;</code>，例如<code>git push origin master：refs/for/master</code>，即是将本地的
+                    master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
+                </p>
+                <h3 id="git-push-origin-master">git push origin master</h3>
+                <p>将本地<strong>master</strong>分支内容推送到远程库<strong>origin</strong>的<strong>master</strong>分支上，这里的<strong>master</strong>表示是远程服务器上的<strong>master</strong>分支和本地分支重名后的简写。
+                </p>
+                <h3 id="git-push--u-origin-master">git push -u origin master.</h3>
+                <p>-u 表示 Git 不但会将本地 master 分支内容推送到远程库 origin 的 master
+                    分支上，还会把本地的<strong>master</strong>分支和远程的<strong>master</strong>分支关联起来，在以后推送内容时就可以直接使用<code>git push</code>命令了，即可以省略<strong>origin
+                        master</strong>。</p>
+                <h3 id="git-push-origin-refsformaster">git push origin ：refs/for/master</h3>
+                <p>如果省略本地分支名，则表示删除指定的远程分支，因为这等同于推送一个空的本地分支到远程分支，等同于<code>git push origin –delete master</code></p>
+                <h3 id="git-push-origin-tagname">git push origin TagName</h3>
+                <p>推送名为<strong>TagName</strong>的标签到远程库。</p>
+                <h3 id="git-push-origin-refstagstagname">git push origin :refs/tags/TagName</h3>
+                <p>删除名为<strong>TagName</strong>的远程标签。</p>
+                <h3 id="git-push-origin---tags">git push origin &ndash;tags</h3>
+                <p>推送全部未推送到远程库的本地标签。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
                     命令
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#git-push-origin-master">git push origin master</a></li>
-        <li><a href="#git-push--u-origin-master">git push -u origin master.</a></li>
-        <li><a href="#git-push-origin-refsformaster">git push origin ：refs/for/master</a></li>
-        <li><a href="#git-push-origin-tagname">git push origin TagName</a></li>
-        <li><a href="#git-push-origin-refstagstagname">git push origin :refs/tags/TagName</a></li>
-        <li><a href="#git-push-origin---tags">git push origin &ndash;tags</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li>
+                    <ul>
+                        <li><a href="#git-push-origin-master">git push origin master</a></li>
+                        <li><a href="#git-push--u-origin-master">git push -u origin master.</a></li>
+                        <li><a href="#git-push-origin-refsformaster">git push origin ：refs/for/master</a></li>
+                        <li><a href="#git-push-origin-tagname">git push origin TagName</a></li>
+                        <li><a href="#git-push-origin-refstagstagname">git push origin :refs/tags/TagName</a></li>
+                        <li><a href="#git-push-origin---tags">git push origin &ndash;tags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

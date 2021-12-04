@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,133 +41,145 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-checkout\/",
 	    "keywords" : [ "Git","命令","Github","学习笔记", ]
 	}
-</script><title>Git git checkout</title>
-    <meta property="og:title" content="Git git checkout" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
-$ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
-git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
+</script>
+        <title>Git git checkout</title>
+        <meta property="og:title" content="Git git checkout" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
+$ git checkout -- ReadMe.txt
+git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
+git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.
+将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
 git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。" />
-    <meta name="description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
-$ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
-git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
+        <meta name="description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
+$ git checkout -- ReadMe.txt
+git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
+git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.
+将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
 git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git git checkout</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="git-checkout">git checkout</h1>
-<h2 id="-git-checkout---file">$ git checkout &ndash;File</h2>
-<p>清空名为<strong>File</strong>文件的修改，注意不要忘记中间的 &ndash;，，如果不加 &ndash;，就变成了切换到 FileName 分支的命令。</p>
-<pre tabindex="0"><code>$ git checkout -- ReadMe.txt
-</code></pre><h2 id="git-checkout-">git checkout .</h2>
-<p>清空在<strong>工作区中</strong>，对文件所作的所有修改，**.**表示当前目录的所有文件夹。</p>
-<h2 id="git-checkout-branch">git checkout Branch</h2>
-<pre tabindex="0"><code>to track remote branch 'BranchName' from 'origin'.
-</code></pre><p>将当前分支切换到名为<strong>BranchName</strong>的分支</p>
-<h2 id="git-checkout--b-branchname">git checkout -b BranchName</h2>
-<p>-b 参数相当于以下两条命令</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch BranchName
+                <h2 id="-git-checkout---file">$ git checkout &ndash;File</h2>
+                <p>清空名为<strong>File</strong>文件的修改，注意不要忘记中间的 &ndash;，，如果不加 &ndash;，就变成了切换到 FileName 分支的命令。</p>
+                <pre tabindex="0"><code>$ git checkout -- ReadMe.txt
+</code></pre>
+                <h2 id="git-checkout-">git checkout .</h2>
+                <p>清空在<strong>工作区中</strong>，对文件所作的所有修改，**.**表示当前目录的所有文件夹。</p>
+                <h2 id="git-checkout-branch">git checkout Branch</h2>
+                <pre tabindex="0"><code>to track remote branch 'BranchName' from 'origin'.
+</code></pre>
+                <p>将当前分支切换到名为<strong>BranchName</strong>的分支</p>
+                <h2 id="git-checkout--b-branchname">git checkout -b BranchName</h2>
+                <p>-b 参数相当于以下两条命令</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch BranchName
 git checkout BranchName
-</code></pre></div><h2 id="git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch origin/RemoteBranch</h2>
-<p>在本地创建一个名为<strong>LocalBranch</strong>的分支，并创建一个名为<strong>RemoteBranch</strong>的远程分支。</p>
-<p>这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</p>
+</code></pre>
+                </div>
+                <h2 id="git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch origin/RemoteBranch
+                </h2>
+                <p>在本地创建一个名为<strong>LocalBranch</strong>的分支，并创建一个名为<strong>RemoteBranch</strong>的远程分支。</p>
+                <p>这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
                     命令
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#-git-checkout---file">$ git checkout &ndash;File</a></li>
-    <li><a href="#git-checkout-">git checkout .</a></li>
-    <li><a href="#git-checkout-branch">git checkout Branch</a></li>
-    <li><a href="#git-checkout--b-branchname">git checkout -b BranchName</a></li>
-    <li><a href="#git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch origin/RemoteBranch</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#-git-checkout---file">$ git checkout &ndash;File</a></li>
+                <li><a href="#git-checkout-">git checkout .</a></li>
+                <li><a href="#git-checkout-branch">git checkout Branch</a></li>
+                <li><a href="#git-checkout--b-branchname">git checkout -b BranchName</a></li>
+                <li><a href="#git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch
+                        origin/RemoteBranch</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+                <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        </a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_wxipf99wp4j.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

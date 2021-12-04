@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,10 +41,11 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/linux\/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94\/",
 	    "keywords" : [ "Linux","服务器","宝塔","Putty","Windows","学习笔记", ]
 	}
-</script><title>登录宝塔</title>
-    <meta property="og:title" content="登录宝塔" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
+</script>
+        <title>登录宝塔</title>
+        <meta property="og:title" content="登录宝塔" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
 Putty 用于 Windows 从本地登陆到远程 Linux 服务器
 宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击 open，进入到 Putty 的运行界面，提示 login as.
@@ -46,7 +53,7 @@ Putty 用于 Windows 从本地登陆到远程 Linux 服务器
   输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
   登陆完成。
   安装宝塔 Centos 系统直接在登陆后 Putty 界面输入以下命令安装。" />
-    <meta name="description" content="登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
+        <meta name="description" content="登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
 Putty 用于 Windows 从本地登陆到远程 Linux 服务器
 宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击 open，进入到 Putty 的运行界面，提示 login as.
@@ -54,169 +61,177 @@ Putty 用于 Windows 从本地登陆到远程 Linux 服务器
   输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
   登陆完成。
   安装宝塔 Centos 系统直接在登陆后 Putty 界面输入以下命令安装。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">登录宝塔</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
                         2021-10-22
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="登录宝塔">登录宝塔</h1>
-<h2 id="前言">前言</h2>
-<p>本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。</p>
-<h3 id="轻量云服务器">轻量云服务器</h3>
-<p>CentOS 7.6 64bit</p>
-<h3 id="putty">Putty</h3>
-<p>用于 Windows 从本地登陆到远程 Linux 服务器</p>
-<h3 id="宝塔">宝塔</h3>
-<h2 id="下载-puttyhttpswwwchiarkgreenendorguksgtathamputtylatesthtml">下载 <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a></h2>
-<h2 id="用-putty-登陆到-linux">用 Putty 登陆到 Linux</h2>
-<h3 id="配置-putty">配置 Putty</h3>
-<ul>
-<li>Host Name（IP address）：轻量应用服务器的<strong>公网 IP</strong></li>
-<li>Port：轻量应用服务器的连接端口，必须设置为<strong>22</strong>。</li>
-<li>Connect type：选择<strong>SSH</strong>.</li>
-<li>Saved Sessions：填写会话名称，例如 Rainy。
-配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。</li>
-</ul>
-<h3 id="输入用户名和密码">输入用户名和密码</h3>
-<ol>
-<li>
-<p>填写完成后<strong>单击 open</strong>，进入到 Putty 的运行界面，提示 login as.</p>
-</li>
-<li>
-<p>在<strong>login as</strong>后输入用户名，一般都是 <strong>root</strong>，按 <strong>Enter</strong>。</p>
-</li>
-<li>
-<p>输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 <strong>Enter</strong>.</p>
-</li>
-<li>
-<p>登陆完成。</p>
-</li>
-</ol>
-<h2 id="安装宝塔">安装宝塔</h2>
-<p>Centos 系统直接在登陆后 Putty 界面输入以下命令安装。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">yum install -y wget <span style="color:#000;font-weight:bold">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install.sh <span style="color:#000;font-weight:bold">&amp;&amp;</span> sh install.sh
-</code></pre></div><p>接下来会出现如图所示</p>
-<p><img src="https://pic4.zhimg.com/v2-0c501b9300235e3f002e2fd07ed9dd57_b.png" alt=""></p>
-<p>输入 y，并回车，等待几分钟即可。</p>
-<p>安装完毕后，我们会得到登录宝塔面板的 url，账号和密码。</p>
-<p><img src="%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94.assets/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%AF%95.png" alt="安装完毕"></p>
-<p>查看用户名和密码，输入<code>bt default</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Bt-Panel: http://IP:8888
+                <h2 id="前言">前言</h2>
+                <p>本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。</p>
+                <h3 id="轻量云服务器">轻量云服务器</h3>
+                <p>CentOS 7.6 64bit</p>
+                <h3 id="putty">Putty</h3>
+                <p>用于 Windows 从本地登陆到远程 Linux 服务器</p>
+                <h3 id="宝塔">宝塔</h3>
+                <h2 id="下载-puttyhttpswwwchiarkgreenendorguksgtathamputtylatesthtml">下载 <a
+                            href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a></h2>
+                <h2 id="用-putty-登陆到-linux">用 Putty 登陆到 Linux</h2>
+                <h3 id="配置-putty">配置 Putty</h3>
+                <ul>
+                    <li>Host Name（IP address）：轻量应用服务器的<strong>公网 IP</strong></li>
+                    <li>Port：轻量应用服务器的连接端口，必须设置为<strong>22</strong>。</li>
+                    <li>Connect type：选择<strong>SSH</strong>.</li>
+                    <li>Saved Sessions：填写会话名称，例如 Rainy。
+                        配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。</li>
+                </ul>
+                <h3 id="输入用户名和密码">输入用户名和密码</h3>
+                <ol>
+                    <li>
+                        <p>填写完成后<strong>单击 open</strong>，进入到 Putty 的运行界面，提示 login as.</p>
+                    </li>
+                    <li>
+                        <p>在<strong>login as</strong>后输入用户名，一般都是 <strong>root</strong>，按 <strong>Enter</strong>。</p>
+                    </li>
+                    <li>
+                        <p>输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 <strong>Enter</strong>.</p>
+                    </li>
+                    <li>
+                        <p>登陆完成。</p>
+                    </li>
+                </ol>
+                <h2 id="安装宝塔">安装宝塔</h2>
+                <p>Centos 系统直接在登陆后 Putty 界面输入以下命令安装。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">yum install -y wget <span style="color:#000;font-weight:bold">&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install.sh <span style="color:#000;font-weight:bold">&amp;&amp;</span> sh install.sh
+</code></pre>
+                </div>
+                <p>接下来会出现如图所示</p>
+                <p><img src="https://pic4.zhimg.com/v2-0c501b9300235e3f002e2fd07ed9dd57_b.png" alt=""></p>
+                <p>输入 y，并回车，等待几分钟即可。</p>
+                <p>安装完毕后，我们会得到登录宝塔面板的 url，账号和密码。</p>
+                <p><img src="%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94.assets/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%AF%95.png"
+                            alt="安装完毕"></p>
+                <p>查看用户名和密码，输入<code>bt default</code></p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Bt-Panel: http://IP:8888
 username: k5jlmsoc
 password: 63f4ace0
-</code></pre></div>
+</code></pre>
+                </div>
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/linux/">
                     Linux
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
                     服务器
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AE%9D%E5%A1%94/">
                     宝塔
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/putty/">
                     Putty
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/windows/">
                     Windows
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#前言">前言</a>
-      <ul>
-        <li><a href="#轻量云服务器">轻量云服务器</a></li>
-        <li><a href="#putty">Putty</a></li>
-        <li><a href="#宝塔">宝塔</a></li>
-      </ul>
-    </li>
-    <li><a href="#下载-puttyhttpswwwchiarkgreenendorguksgtathamputtylatesthtml">下载 <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a></a></li>
-    <li><a href="#用-putty-登陆到-linux">用 Putty 登陆到 Linux</a>
-      <ul>
-        <li><a href="#配置-putty">配置 Putty</a></li>
-        <li><a href="#输入用户名和密码">输入用户名和密码</a></li>
-      </ul>
-    </li>
-    <li><a href="#安装宝塔">安装宝塔</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#前言">前言</a>
+                    <ul>
+                        <li><a href="#轻量云服务器">轻量云服务器</a></li>
+                        <li><a href="#putty">Putty</a></li>
+                        <li><a href="#宝塔">宝塔</a></li>
+                    </ul>
+                </li>
+                <li><a href="#下载-puttyhttpswwwchiarkgreenendorguksgtathamputtylatesthtml">下载 <a
+                                href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">Putty</a></a></li>
+                <li><a href="#用-putty-登陆到-linux">用 Putty 登陆到 Linux</a>
+                    <ul>
+                        <li><a href="#配置-putty">配置 Putty</a></li>
+                        <li><a href="#输入用户名和密码">输入用户名和密码</a></li>
+                    </ul>
+                </li>
+                <li><a href="#安装宝塔">安装宝塔</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

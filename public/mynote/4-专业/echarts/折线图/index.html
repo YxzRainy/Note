@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,77 +41,81 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/echarts\/%E6%8A%98%E7%BA%BF%E5%9B%BE\/",
 	    "keywords" : [ "前端","图表","可视化","学习笔记","Echarts", ]
 	}
-</script><title>Echarts 折线图</title>
-    <meta property="og:title" content="Echarts 折线图" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Echarts 折线图 图表类型 在series下配置type.
+</script>
+        <title>Echarts 折线图</title>
+        <meta property="og:title" content="Echarts 折线图" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Echarts 折线图 图表类型 在series下配置type.
 type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
 在series下配置markArea
 markArea: { data: [ [ { xAxis: &amp;#39;李宁&amp;#39; }, { xAxis: &amp;#39;安踏&amp;#39; } ], [ { xAxis: &amp;#39;耐克&amp;#39; }, { xAxis: &amp;#39;阿迪&amp;#39; } ], ], }, 线条是否平滑显示 在series下配置smooth
 smooth: true, 线条样式 在series下配置lineStyle
 lineStyle: { color: &amp;#39;red&amp;#39;, type: &amp;#39;dashed&amp;#39; } 线条区域样式 在series下配置areaStyle
 areaStyle: { color: &amp;#39;green&amp;#39; } " />
-    <meta name="description" content="Echarts 折线图 图表类型 在series下配置type.
+        <meta name="description" content="Echarts 折线图 图表类型 在series下配置type.
 type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
 在series下配置markArea
 markArea: { data: [ [ { xAxis: &amp;#39;李宁&amp;#39; }, { xAxis: &amp;#39;安踏&amp;#39; } ], [ { xAxis: &amp;#39;耐克&amp;#39; }, { xAxis: &amp;#39;阿迪&amp;#39; } ], ], }, 线条是否平滑显示 在series下配置smooth
 smooth: true, 线条样式 在series下配置lineStyle
 lineStyle: { color: &amp;#39;red&amp;#39;, type: &amp;#39;dashed&amp;#39; } 线条区域样式 在series下配置areaStyle
 areaStyle: { color: &amp;#39;green&amp;#39; } " />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Echarts 折线图</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-30 06:00:00 UTC">
                         2021-10-30
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="echarts-折线图">Echarts 折线图</h1>
-<h2 id="图表类型">图表类型</h2>
-<p>在<strong>series</strong>下配置<code>type</code>.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;line&#39;</span><span style="color:#000;font-weight:bold">,</span>
-</code></pre></div><h2 id="常用配置">常用配置</h2>
-<h3 id="标注图表区域">标注图表区域</h3>
-<p>标记图表中某个范围的数据。</p>
-<p>在<strong>series</strong>下配置<code>markArea</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">markArea</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+                <h2 id="图表类型">图表类型</h2>
+                <p>在<strong>series</strong>下配置<code>type</code>.</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;line&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</code></pre>
+                </div>
+                <h2 id="常用配置">常用配置</h2>
+                <h3 id="标注图表区域">标注图表区域</h3>
+                <p>标记图表中某个范围的数据。</p>
+                <p>在<strong>series</strong>下配置<code>markArea</code></p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">markArea</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
         <span style="color:#000;font-weight:bold">[</span>
             <span style="color:#000;font-weight:bold">{</span>
@@ -126,81 +136,92 @@ areaStyle: { color: &amp;#39;green&amp;#39; } " />
         <span style="color:#000;font-weight:bold">],</span>
     <span style="color:#000;font-weight:bold">],</span>
 <span style="color:#000;font-weight:bold">},</span>
-</code></pre></div><h3 id="线条是否平滑显示">线条是否平滑显示</h3>
-<p>在<strong>series</strong>下配置<code>smooth</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000">smooth</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
-</code></pre></div><h3 id="线条样式">线条样式</h3>
-<p>在<strong>series</strong>下配置<code>lineStyle</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">lineStyle</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="线条是否平滑显示">线条是否平滑显示</h3>
+                <p>在<strong>series</strong>下配置<code>smooth</code></p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#000">smooth</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
+</code></pre>
+                </div>
+                <h3 id="线条样式">线条样式</h3>
+                <p>在<strong>series</strong>下配置<code>lineStyle</code></p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">lineStyle</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;red&#39;</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;dashed&#39;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h3 id="线条区域样式">线条区域样式</h3>
-<p>在<strong>series</strong>下配置<code>areaStyle</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">areaStyle</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="线条区域样式">线条区域样式</h3>
+                <p>在<strong>series</strong>下配置<code>areaStyle</code></p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">areaStyle</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#000">color</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;green&#39;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
+</code></pre>
+                </div>
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
                     前端
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%9B%BE%E8%A1%A8/">
                     图表
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
                     可视化
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/echarts/">
                     Echarts
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#图表类型">图表类型</a></li>
-    <li><a href="#常用配置">常用配置</a>
-      <ul>
-        <li><a href="#标注图表区域">标注图表区域</a></li>
-        <li><a href="#线条是否平滑显示">线条是否平滑显示</a></li>
-        <li><a href="#线条样式">线条样式</a></li>
-        <li><a href="#线条区域样式">线条区域样式</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#图表类型">图表类型</a></li>
+                <li><a href="#常用配置">常用配置</a>
+                    <ul>
+                        <li><a href="#标注图表区域">标注图表区域</a></li>
+                        <li><a href="#线条是否平滑显示">线条是否平滑显示</a></li>
+                        <li><a href="#线条样式">线条样式</a></li>
+                        <li><a href="#线条区域样式">线条区域样式</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

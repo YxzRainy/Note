@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,72 +41,77 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/number\/",
 	    "keywords" : [ "学习笔记","JavaScript", ]
 	}
-</script><title>JavaScript Number</title>
-    <meta property="og:title" content="JavaScript Number" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
+</script>
+        <title>JavaScript Number</title>
+        <meta property="og:title" content="JavaScript Number" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description"
+                content="Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
  将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d." />
-    <meta name="description" content="Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
+        <meta name="description"
+                content="Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
  将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d." />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">JavaScript Number</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="number">Number</h1>
-<p>该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。</p>
-<h2 id="number-的方法">Number 的方法</h2>
-<h3 id="tostring">toString()</h3>
-<p><strong>NumObj.toString(radix)</strong></p>
-<ul>
-<li>将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。</li>
-<li>当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。</li>
-<li>因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。</li>
-</ul>
-<h4 id="十进制转十六进制">十进制转十六进制</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1971</span><span style="color:#000;font-weight:bold">;</span>
+                <p>该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。</p>
+                <h2 id="number-的方法">Number 的方法</h2>
+                <h3 id="tostring">toString()</h3>
+                <p><strong>NumObj.toString(radix)</strong></p>
+                <ul>
+                    <li>将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定
+                        radix 参数，则默认值为 10。</li>
+                    <li>当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。</li>
+                    <li>因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自
+                        Object.prototype.toString()。</li>
+                </ul>
+                <h4 id="十进制转十六进制">十进制转十六进制</h4>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1971</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">16</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">d</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">parseInt</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
@@ -109,9 +120,12 @@ Number 的方法 toString() NumObj.toString(radix)
 <span style="color:#8f5902;font-style:italic">// 将变量 d 转换为 c 进制的数。
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">f</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">e</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">f</span><span style="color:#000;font-weight:bold">);</span>
-</code></pre></div><h3 id="numbermix">Number(mix)</h3>
-<p>将 mix 显式转换为 number 类型的数值；若 mix 无法被转换为数字，则返回 number 类型的 NaN。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#8f5902;font-style:italic">// 字符串转 number--------------------------------------------------
+</code></pre>
+                </div>
+                <h3 id="numbermix">Number(mix)</h3>
+                <p>将 mix 显式转换为 number 类型的数值；若 mix 无法被转换为数字，则返回 number 类型的 NaN。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#8f5902;font-style:italic">// 字符串转 number--------------------------------------------------
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">n</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;18&#39;</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#8f5902;font-style:italic">// 这是一个字符串 18。
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">Number</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#000;font-weight:bold">);</span>
@@ -120,46 +134,48 @@ Number 的方法 toString() NumObj.toString(radix)
 <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
 <span style="color:#8f5902;font-style:italic">// 返回变量 a 的数据类型和变量 a 的值。
 </span><span style="color:#8f5902;font-style:italic"></span>
-</code></pre></div>
+</code></pre>
+                </div>
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/javascript/">
                     JavaScript
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#number-的方法">Number 的方法</a>
-      <ul>
-        <li><a href="#tostring">toString()</a></li>
-        <li><a href="#numbermix">Number(mix)</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#number-的方法">Number 的方法</a>
+                    <ul>
+                        <li><a href="#tostring">toString()</a></li>
+                        <li><a href="#numbermix">Number(mix)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

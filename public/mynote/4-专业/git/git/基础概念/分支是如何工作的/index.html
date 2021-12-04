@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,128 +41,139 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script><title>Git 分支是如何工作的</title>
-    <meta property="og:title" content="Git 分支是如何工作的" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
+</script>
+        <title>Git 分支是如何工作的</title>
+        <meta property="og:title" content="Git 分支是如何工作的" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
 commit 后分支的变化 每次提交，master都会向前进一个版本，这样，随着你不断提交，master的线也越来越长。
 当我们新建一个dev分支，指向与master相同的提交，再把HEAD指向dev，就表示我们当前在dev上工作。
 新增分支 从现在开始，对工作区的修改和提交就是在dev分支上了，比如再一次提交后，dev分支就往前进一个版本，而master分支不变。
 合并分支 现在，我们在dev上的工作完成了，可以把dev合并到master上，直接把master指向dev的当前版本，就完成了合并。
 删除分支 合并分支后，你可以删掉dev分支，删掉后，我们就只剩下master分支。" />
-    <meta name="description" content="分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
+        <meta name="description" content="分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
 commit 后分支的变化 每次提交，master都会向前进一个版本，这样，随着你不断提交，master的线也越来越长。
 当我们新建一个dev分支，指向与master相同的提交，再把HEAD指向dev，就表示我们当前在dev上工作。
 新增分支 从现在开始，对工作区的修改和提交就是在dev分支上了，比如再一次提交后，dev分支就往前进一个版本，而master分支不变。
 合并分支 现在，我们在dev上的工作完成了，可以把dev合并到master上，直接把master指向dev的当前版本，就完成了合并。
 删除分支 合并分支后，你可以删掉dev分支，删掉后，我们就只剩下master分支。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git 分支是如何工作的</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="分支是如何工作的">分支是如何工作的</h1>
-<h2 id="主分支">主分支</h2>
-<p>在 Git 里，有一个默认的主分支，即<strong>master</strong>。<strong>HEAO</strong>严格来说并不是指向当前版本，而是指向的<strong>master</strong>，<strong>master</strong>才是指向当前版本的。所以，<strong>HEAD</strong>指向的就是当前分支，而当前分支的指针就是指向的当前版本。</p>
-<p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF2.png" alt="分支1"></p>
-<h2 id="commit-后分支的变化">commit 后分支的变化</h2>
-<p>每次提交，<strong>master</strong>都会向前进一个版本，这样，随着你不断提交，<strong>master</strong>的线也越来越长。</p>
-<p>当我们新建一个<strong>dev</strong>分支，指向与<strong>master</strong>相同的提交，再把<strong>HEAD</strong>指向<strong>dev</strong>，就表示我们当前在<strong>dev</strong>上工作。</p>
-<p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF2-16290157265281.png" alt="分支2"></p>
-<h2 id="新增分支">新增分支</h2>
-<p>从现在开始，对工作区的修改和提交就是在<strong>dev</strong>分支上了，比如再一次提交后，<strong>dev</strong>分支就往前进一个版本，而<strong>master</strong>分支不变。</p>
-<p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF3.png" alt="分支3"></p>
-<h2 id="合并分支">合并分支</h2>
-<p>现在，我们在<strong>dev</strong>上的工作完成了，可以把<strong>dev</strong>合并到<strong>master</strong>上，直接把<strong>master</strong>指向<strong>dev</strong>的当前版本，就完成了合并。</p>
-<p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF4.png" alt="分支4"></p>
-<h2 id="删除分支">删除分支</h2>
-<p>合并分支后，你可以删掉<strong>dev</strong>分支，删掉后，我们就只剩下<strong>master</strong>分支。</p>
-<p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF7.png" alt="分支7"></p>
+                <h2 id="主分支">主分支</h2>
+                <p>在 Git
+                    里，有一个默认的主分支，即<strong>master</strong>。<strong>HEAO</strong>严格来说并不是指向当前版本，而是指向的<strong>master</strong>，<strong>master</strong>才是指向当前版本的。所以，<strong>HEAD</strong>指向的就是当前分支，而当前分支的指针就是指向的当前版本。
+                </p>
+                <p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF2.png"
+                            alt="分支1"></p>
+                <h2 id="commit-后分支的变化">commit 后分支的变化</h2>
+                <p>每次提交，<strong>master</strong>都会向前进一个版本，这样，随着你不断提交，<strong>master</strong>的线也越来越长。</p>
+                <p>当我们新建一个<strong>dev</strong>分支，指向与<strong>master</strong>相同的提交，再把<strong>HEAD</strong>指向<strong>dev</strong>，就表示我们当前在<strong>dev</strong>上工作。
+                </p>
+                <p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF2-16290157265281.png"
+                            alt="分支2"></p>
+                <h2 id="新增分支">新增分支</h2>
+                <p>从现在开始，对工作区的修改和提交就是在<strong>dev</strong>分支上了，比如再一次提交后，<strong>dev</strong>分支就往前进一个版本，而<strong>master</strong>分支不变。
+                </p>
+                <p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF3.png"
+                            alt="分支3"></p>
+                <h2 id="合并分支">合并分支</h2>
+                <p>现在，我们在<strong>dev</strong>上的工作完成了，可以把<strong>dev</strong>合并到<strong>master</strong>上，直接把<strong>master</strong>指向<strong>dev</strong>的当前版本，就完成了合并。
+                </p>
+                <p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF4.png"
+                            alt="分支4"></p>
+                <h2 id="删除分支">删除分支</h2>
+                <p>合并分支后，你可以删掉<strong>dev</strong>分支，删掉后，我们就只剩下<strong>master</strong>分支。</p>
+                <p><img src="%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84.assets/%E5%88%86%E6%94%AF7.png"
+                            alt="分支7"></p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#主分支">主分支</a></li>
-    <li><a href="#commit-后分支的变化">commit 后分支的变化</a></li>
-    <li><a href="#新增分支">新增分支</a></li>
-    <li><a href="#合并分支">合并分支</a></li>
-    <li><a href="#删除分支">删除分支</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#主分支">主分支</a></li>
+                <li><a href="#commit-后分支的变化">commit 后分支的变化</a></li>
+                <li><a href="#新增分支">新增分支</a></li>
+                <li><a href="#合并分支">合并分支</a></li>
+                <li><a href="#删除分支">删除分支</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

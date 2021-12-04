@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,118 +41,122 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script><title>Git 撤销修改</title>
-    <meta property="og:title" content="Git 撤销修改" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
+</script>
+        <title>Git 撤销修改</title>
+        <meta property="og:title" content="Git 撤销修改" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
 这个时候，你可以直接使用git checkout -- FileName 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况
 文件未被添加到暂存区 对文件FileName进行修改后，但还没有将它添加到暂存区，我们这个时候使用git checkout -- FileName，FileName就会回到修改前的状态。
 文件被添加到了暂存区 对文件FileName进行第一次修改后，并且将它添加到了暂存区（这个时候的状态为被添加到暂存区后），接着再次对FileName进行修改，我们这个时候使用git checkout -- FileName，FileName就会回到被添加到暂存区后的状态。
 总之，git checkout -- FileName就是让文件 FileName 回到最近一次git commit或git add时的状态。" />
-    <meta name="description" content="撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
+        <meta name="description" content="撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
 这个时候，你可以直接使用git checkout -- FileName 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况
 文件未被添加到暂存区 对文件FileName进行修改后，但还没有将它添加到暂存区，我们这个时候使用git checkout -- FileName，FileName就会回到修改前的状态。
 文件被添加到了暂存区 对文件FileName进行第一次修改后，并且将它添加到了暂存区（这个时候的状态为被添加到暂存区后），接着再次对FileName进行修改，我们这个时候使用git checkout -- FileName，FileName就会回到被添加到暂存区后的状态。
 总之，git checkout -- FileName就是让文件 FileName 回到最近一次git commit或git add时的状态。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git 撤销修改</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="撤销修改">撤销修改</h1>
-<p>人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？</p>
-<p>这个时候，你可以直接使用<code>git checkout -- FileName</code> 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况</p>
-<h3 id="文件未被添加到暂存区">文件未被添加到暂存区</h3>
-<p>对文件<strong>FileName</strong>进行修改后，但还没有将它添加到暂存区，我们这个时候使用<code>git checkout -- FileName</code>，<strong>FileName</strong>就会回到修改前的状态。</p>
-<h3 id="文件被添加到了暂存区">文件被添加到了暂存区</h3>
-<p>对文件<strong>FileName</strong>进行第一次修改后，并且将它添加到了暂存区（<strong>这个时候的状态为被添加到暂存区后</strong>），接着再次对<strong>FileName</strong>进行修改，我们这个时候使用<code>git checkout -- FileName</code>，<strong>FileName</strong>就会回到被添加到暂存区后的状态。</p>
-<p>总之，<code>git checkout -- FileName</code>就是让文件 FileName 回到最近一次<code>git commit</code>或<code>git add</code>时的状态。</p>
+                <p>人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？</p>
+                <p>这个时候，你可以直接使用<code>git checkout -- FileName</code> 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况</p>
+                <h3 id="文件未被添加到暂存区">文件未被添加到暂存区</h3>
+                <p>对文件<strong>FileName</strong>进行修改后，但还没有将它添加到暂存区，我们这个时候使用<code>git checkout -- FileName</code>，<strong>FileName</strong>就会回到修改前的状态。
+                </p>
+                <h3 id="文件被添加到了暂存区">文件被添加到了暂存区</h3>
+                <p>对文件<strong>FileName</strong>进行第一次修改后，并且将它添加到了暂存区（<strong>这个时候的状态为被添加到暂存区后</strong>），接着再次对<strong>FileName</strong>进行修改，我们这个时候使用<code>git checkout -- FileName</code>，<strong>FileName</strong>就会回到被添加到暂存区后的状态。
+                </p>
+                <p>总之，<code>git checkout -- FileName</code>就是让文件 FileName
+                    回到最近一次<code>git commit</code>或<code>git add</code>时的状态。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#文件未被添加到暂存区">文件未被添加到暂存区</a></li>
-        <li><a href="#文件被添加到了暂存区">文件被添加到了暂存区</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li>
+                    <ul>
+                        <li><a href="#文件未被添加到暂存区">文件未被添加到暂存区</a></li>
+                        <li><a href="#文件被添加到了暂存区">文件被添加到了暂存区</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

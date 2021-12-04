@@ -1,5 +1,6 @@
 SearchBox(300)
 
+
 // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
 var searchInput = document.querySelector('.SearchInput');
 var searchResults = document.querySelector('.SearchResults');
@@ -134,7 +135,6 @@ function searchMatching(arr1, arr2, input) {
         searchResults.appendChild(itemDiv);
         // 点击项目检索结果后关闭搜索框
         var SearchItems = $('[onclick]')
-        console.log((SearchItems))
 
         SearchItems.click(function () {
             // 清空搜索框内容

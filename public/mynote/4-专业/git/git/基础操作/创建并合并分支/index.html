@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,170 +41,197 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script><title>Git 创建并合并分支</title>
-    <meta property="og:title" content="Git 创建并合并分支" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
+</script>
+        <title>Git 创建并合并分支</title>
+        <meta property="og:title" content="Git 创建并合并分支" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
 我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。
 提交文件 我们需要在maser分支上进行一次提交，以确保我们在默认分支下是进行过提交的。
 git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 创建分支 接下来创建另一个dev分支。
 git branch dev 切换分支 切换到刚才新建的dev分支。
 git checkout dev 修改文件并提交 我们在新创建的dev分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“这是第二个分支”。
 git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 再次切换分支 现在我们已经再dev分支上完成了工作，现在我们需要切换辉原分支master
-git checkout master重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
+git checkout master
+重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
 合并分支 Fast Forward 模式合并分支 现在，我们将刚刚在dev分支上的工作成果（文件中加上文本内容：“这是第二个分支”。）合并到master分支上。
-git merge dev再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
+git merge dev
+再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
 no Fast Forward 模式合并分支 通常，合并分支时，Git 会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
 如果要强制禁用Fast forward模式，Git 就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
 git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完成后，就可以放心地删除dev分支了" />
-    <meta name="description" content="创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
+        <meta name="description" content="创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
 我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。
 提交文件 我们需要在maser分支上进行一次提交，以确保我们在默认分支下是进行过提交的。
 git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 创建分支 接下来创建另一个dev分支。
 git branch dev 切换分支 切换到刚才新建的dev分支。
 git checkout dev 修改文件并提交 我们在新创建的dev分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“这是第二个分支”。
 git add ReadMe.txt git commit -m &amp;#34;这是第二个分支&amp;#34; 再次切换分支 现在我们已经再dev分支上完成了工作，现在我们需要切换辉原分支master
-git checkout master重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
+git checkout master
+重新查看文件 这时候会发现在master分支上，ReadMe.txt 文件中并没有文本：“这是第二个分支”。
 合并分支 Fast Forward 模式合并分支 现在，我们将刚刚在dev分支上的工作成果（文件中加上文本内容：“这是第二个分支”。）合并到master分支上。
-git merge dev再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
+git merge dev
+再查看 readme.txt 的内容，就可以看到，当前maser分支上的内容和dev分支的最新提交是完全一样的。
 no Fast Forward 模式合并分支 通常，合并分支时，Git 会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。
 如果要强制禁用Fast forward模式，Git 就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
 git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完成后，就可以放心地删除dev分支了" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git 创建并合并分支</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="创建并合并分支">创建并合并分支</h1>
-<h2 id="创建文件">创建文件</h2>
-<p>目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。</p>
-<p>我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。</p>
-<h2 id="提交文件">提交文件</h2>
-<p>我们需要在<strong>maser</strong>分支上进行一次提交，以确保我们在默认分支下是进行过提交的。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add ReadMe.txt
+                <h2 id="创建文件">创建文件</h2>
+                <p>目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。</p>
+                <p>我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。</p>
+                <h2 id="提交文件">提交文件</h2>
+                <p>我们需要在<strong>maser</strong>分支上进行一次提交，以确保我们在默认分支下是进行过提交的。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add ReadMe.txt
 git commit -m <span style="color:#4e9a06">&#34;这是第二个分支&#34;</span>
-</code></pre></div><h2 id="创建分支">创建分支</h2>
-<p>接下来创建另一个<strong>dev</strong>分支。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch dev
-</code></pre></div><h2 id="切换分支">切换分支</h2>
-<p>切换到刚才新建的<strong>dev</strong>分支。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"> git checkout dev
-</code></pre></div><h2 id="修改文件并提交">修改文件并提交</h2>
-<p>我们在新创建的<strong>dev</strong>分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“<strong>这是第二个分支</strong>”。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add ReadMe.txt
+</code></pre>
+                </div>
+                <h2 id="创建分支">创建分支</h2>
+                <p>接下来创建另一个<strong>dev</strong>分支。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch dev
+</code></pre>
+                </div>
+                <h2 id="切换分支">切换分支</h2>
+                <p>切换到刚才新建的<strong>dev</strong>分支。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"> git checkout dev
+</code></pre>
+                </div>
+                <h2 id="修改文件并提交">修改文件并提交</h2>
+                <p>我们在新创建的<strong>dev</strong>分支上工作，修改 ReadMe.txt，在文件中加上文本内容：“<strong>这是第二个分支</strong>”。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add ReadMe.txt
 git commit -m <span style="color:#4e9a06">&#34;这是第二个分支&#34;</span>
-</code></pre></div><h2 id="再次切换分支">再次切换分支</h2>
-<p>现在我们已经再<strong>dev</strong>分支上完成了工作，现在我们需要切换辉原分支<strong>master</strong></p>
-<pre tabindex="0"><code>git checkout master
-</code></pre><h2 id="重新查看文件">重新查看文件</h2>
-<p>这时候会发现在<strong>master</strong>分支上，ReadMe.txt 文件中并没有文本：“<strong>这是第二个分支</strong>”。</p>
-<h2 id="合并分支">合并分支</h2>
-<h4 id="fast-forward-模式合并分支">Fast Forward 模式合并分支</h4>
-<p>现在，我们将刚刚在<strong>dev</strong>分支上的工作成果（文件中加上文本内容：“<strong>这是第二个分支</strong>”。）合并到<strong>master</strong>分支上。</p>
-<pre tabindex="0"><code>git merge dev
-</code></pre><p>再查看 readme.txt 的内容，就可以看到，当前<strong>maser</strong>分支上的内容和<strong>dev</strong>分支的最新提交是完全一样的。</p>
-<h4 id="no-fast-forward-模式合并分支">no Fast Forward 模式合并分支</h4>
-<p>通常，合并分支时，Git 会用<strong>Fast forward</strong>模式，但这种模式下，删除分支后，会丢掉分支信息。</p>
-<p>如果要强制禁用<strong>Fast forward</strong>模式，Git 就会在<strong>merge</strong>时生成一个新的<strong>commit</strong>，这样，从分支历史上就可以看出分支信息。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git merge --no-ff -m <span style="color:#4e9a06">&#34;merge describe&#34;</span> dev
-</code></pre></div><h2 id="删除分支">删除分支</h2>
-<p>合并完成后，就可以放心地删除<strong>dev</strong>分支了</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch -d dev
-</code></pre></div><h2 id="no-fast-forward-模式合并分支-1">no Fast Forward 模式合并分支</h2>
+</code></pre>
+                </div>
+                <h2 id="再次切换分支">再次切换分支</h2>
+                <p>现在我们已经再<strong>dev</strong>分支上完成了工作，现在我们需要切换辉原分支<strong>master</strong></p>
+                <pre tabindex="0"><code>git checkout master
+</code></pre>
+                <h2 id="重新查看文件">重新查看文件</h2>
+                <p>这时候会发现在<strong>master</strong>分支上，ReadMe.txt 文件中并没有文本：“<strong>这是第二个分支</strong>”。</p>
+                <h2 id="合并分支">合并分支</h2>
+                <h4 id="fast-forward-模式合并分支">Fast Forward 模式合并分支</h4>
+                <p>现在，我们将刚刚在<strong>dev</strong>分支上的工作成果（文件中加上文本内容：“<strong>这是第二个分支</strong>”。）合并到<strong>master</strong>分支上。
+                </p>
+                <pre tabindex="0"><code>git merge dev
+</code></pre>
+                <p>再查看 readme.txt 的内容，就可以看到，当前<strong>maser</strong>分支上的内容和<strong>dev</strong>分支的最新提交是完全一样的。</p>
+                <h4 id="no-fast-forward-模式合并分支">no Fast Forward 模式合并分支</h4>
+                <p>通常，合并分支时，Git 会用<strong>Fast forward</strong>模式，但这种模式下，删除分支后，会丢掉分支信息。</p>
+                <p>如果要强制禁用<strong>Fast forward</strong>模式，Git
+                    就会在<strong>merge</strong>时生成一个新的<strong>commit</strong>，这样，从分支历史上就可以看出分支信息。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git merge --no-ff -m <span style="color:#4e9a06">&#34;merge describe&#34;</span> dev
+</code></pre>
+                </div>
+                <h2 id="删除分支">删除分支</h2>
+                <p>合并完成后，就可以放心地删除<strong>dev</strong>分支了</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch -d dev
+</code></pre>
+                </div>
+                <h2 id="no-fast-forward-模式合并分支-1">no Fast Forward 模式合并分支</h2>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#创建文件">创建文件</a></li>
-    <li><a href="#提交文件">提交文件</a></li>
-    <li><a href="#创建分支">创建分支</a></li>
-    <li><a href="#切换分支">切换分支</a></li>
-    <li><a href="#修改文件并提交">修改文件并提交</a></li>
-    <li><a href="#再次切换分支">再次切换分支</a></li>
-    <li><a href="#重新查看文件">重新查看文件</a></li>
-    <li><a href="#合并分支">合并分支</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#删除分支">删除分支</a></li>
-    <li><a href="#no-fast-forward-模式合并分支-1">no Fast Forward 模式合并分支</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#创建文件">创建文件</a></li>
+                <li><a href="#提交文件">提交文件</a></li>
+                <li><a href="#创建分支">创建分支</a></li>
+                <li><a href="#切换分支">切换分支</a></li>
+                <li><a href="#修改文件并提交">修改文件并提交</a></li>
+                <li><a href="#再次切换分支">再次切换分支</a></li>
+                <li><a href="#重新查看文件">重新查看文件</a></li>
+                <li><a href="#合并分支">合并分支</a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </li>
+                <li><a href="#删除分支">删除分支</a></li>
+                <li><a href="#no-fast-forward-模式合并分支-1">no Fast Forward 模式合并分支</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+                <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        </a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_wxipf99wp4j.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

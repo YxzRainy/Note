@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,76 +41,79 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/js\/%E9%97%AD%E5%8C%85\/",
 	    "keywords" : [ "学习笔记","JavaScript", ]
 	}
-</script><title>JavaScript 闭包</title>
-    <meta property="og:title" content="JavaScript 闭包" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
+</script>
+        <title>JavaScript 闭包</title>
+        <meta property="og:title" content="JavaScript 闭包" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description"
+                content="闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
 生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
 闭包的优缺点 优点 避免全局变量的污染。
 使变量长期储存在内存中。
 缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
 function demo() { function test() { var d = 345; console.log(c); // 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 	} var c = 123; return test; // 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 	// 使的函数 demo 可以使用函数 test 的 AO } var e = demo(); // 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO e(); // 调用变量 e，即相当于执行函数 demo 的返回值 // 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， // 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 function demo() { var b = &amp;#39;apple&amp;#39;; var obj = { c: function () { // 给对象 obj 添加一个属性 c ，属性值为一个函数 	if (b !" />
-    <meta name="description" content="闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
+        <meta name="description"
+                content="闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
 生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
 闭包的优缺点 优点 避免全局变量的污染。
 使变量长期储存在内存中。
 缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
 function demo() { function test() { var d = 345; console.log(c); // 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 	} var c = 123; return test; // 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 	// 使的函数 demo 可以使用函数 test 的 AO } var e = demo(); // 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO e(); // 调用变量 e，即相当于执行函数 demo 的返回值 // 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， // 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 function demo() { var b = &amp;#39;apple&amp;#39;; var obj = { c: function () { // 给对象 obj 添加一个属性 c ，属性值为一个函数 	if (b !" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">JavaScript 闭包</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="闭包">闭包</h1>
-<p>在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。</p>
-<p>生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。</p>
-<h2 id="闭包的优缺点">闭包的优缺点</h2>
-<h3 id="优点">优点</h3>
-<p>避免全局变量的污染。</p>
-<p>使变量长期储存在内存中。</p>
-<h3 id="缺点">缺点</h3>
-<p>使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+                <p>在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。</p>
+                <p>生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。</p>
+                <h2 id="闭包的优缺点">闭包的优缺点</h2>
+                <h3 id="优点">优点</h3>
+                <p>避免全局变量的污染。</p>
+                <p>使变量长期储存在内存中。</p>
+                <h3 id="缺点">缺点</h3>
+                <p>使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">d</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">345</span><span style="color:#000;font-weight:bold">;</span>
 		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">);</span>
@@ -122,7 +131,10 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 <span style="color:#8f5902;font-style:italic">// 调用变量 e，即相当于执行函数 demo 的返回值
 </span><span style="color:#8f5902;font-style:italic">// 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来，
 </span><span style="color:#8f5902;font-style:italic">// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123
-</span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></code></pre>
+                </div>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;apple&#39;</span><span style="color:#000;font-weight:bold">;</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">obj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#000">c</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
@@ -157,8 +169,11 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">f</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">();</span>
 <span style="color:#8f5902;font-style:italic">// 返回空字符串。
 </span><span style="color:#8f5902;font-style:italic"></span>
-</code></pre></div><h3 id="闭包实现累加器">闭包实现累加器</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="闭包实现累加器">闭包实现累加器</h3>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
 	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#000">a</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
@@ -176,8 +191,11 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">b</span><span style="color:#000;font-weight:bold">();</span>
 <span style="color:#8f5902;font-style:italic">// 返回 3。
 </span><span style="color:#8f5902;font-style:italic"></span>
-</code></pre></div><p>共同作用域</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <p>共同作用域</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">;</span>
 	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
@@ -198,8 +216,11 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 <span style="color:#8f5902;font-style:italic">// 使变量 b 自减之后变为 100，调用数组 arr 中下标为 1 的值，相当于执行一次函数 d。
 </span><span style="color:#8f5902;font-style:italic">// 因为函数 c 与 d 都可以使用函数 demo 的 AO，所以函数 d 的自减会在函数 c 自增后的结果上进行运算。
 </span><span style="color:#8f5902;font-style:italic"></span>
-</code></pre></div><h3 id="闭包的内存泄露问题">闭包的内存泄露问题</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="闭包的内存泄露问题">闭包的内存泄露问题</h3>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[];</span>
 	<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span>
 		<span style="color:#8f5902;font-style:italic">// 用 for 语句往数组 arr 中添加 10 个函数，该循环结束后变量 i 为 10。
@@ -220,8 +241,11 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 </span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 因此这里的循环会返回 10 个 10，造成这样的结果就叫做内存泄露。
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
 
-</code></pre></div><h3 id="使用立即执行函数解决内存泄露的问题">使用立即执行函数解决内存泄露的问题</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="使用立即执行函数解决内存泄露的问题">使用立即执行函数解决内存泄露的问题</h3>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[];</span>
 	<span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
 		<span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
@@ -258,49 +282,51 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
 	<span style="color:#8f5902;font-style:italic">// 返回 0 到 9，因为这个数组被包含在立即执行函数之中，所以 for 循环每执行一次，
 </span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 其中的立即执行函数也会执行一次，在这之中的语句 console.log 也会返回一次结果，
 </span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
+</code></pre>
+                </div>
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/javascript/">
                     JavaScript
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#闭包的优缺点">闭包的优缺点</a>
-      <ul>
-        <li><a href="#优点">优点</a></li>
-        <li><a href="#缺点">缺点</a></li>
-        <li><a href="#闭包实现累加器">闭包实现累加器</a></li>
-        <li><a href="#闭包的内存泄露问题">闭包的内存泄露问题</a></li>
-        <li><a href="#使用立即执行函数解决内存泄露的问题">使用立即执行函数解决内存泄露的问题</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#闭包的优缺点">闭包的优缺点</a>
+                    <ul>
+                        <li><a href="#优点">优点</a></li>
+                        <li><a href="#缺点">缺点</a></li>
+                        <li><a href="#闭包实现累加器">闭包实现累加器</a></li>
+                        <li><a href="#闭包的内存泄露问题">闭包的内存泄露问题</a></li>
+                        <li><a href="#使用立即执行函数解决内存泄露的问题">使用立即执行函数解决内存泄露的问题</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,110 +41,117 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script><title>Git 克隆远程库</title>
-    <meta property="og:title" content="Git 克隆远程库" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
+</script>
+        <title>Git 克隆远程库</title>
+        <meta property="og:title" content="Git 克隆远程库" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
 克隆远程库 接下来我们使用git clone RemoteAddress命令将我们刚刚创建的远程库克隆到本地。
 git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用ssh协议而只能用https。" />
-    <meta name="description" content="克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
+        <meta name="description" content="克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
 克隆远程库 接下来我们使用git clone RemoteAddress命令将我们刚刚创建的远程库克隆到本地。
 git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用ssh协议而只能用https。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git 克隆远程库</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="克隆远程库">克隆远程库</h1>
-<p>通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地</p>
-<h2 id="克隆远程库-1">克隆远程库</h2>
-<p>接下来我们使用<code>git clone RemoteAddress</code>命令将我们刚刚创建的远程库克隆到本地。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git clone git@github.com:YxzRainy/YxzRainy.github.io.git
-</code></pre></div><p>GitHub 给出的克隆地址不止一个，还可以用<strong><a href="https://github.com/michaelliao/gitskills.git">https://github.com/michaelliao/gitskills.git</a></strong>这样的地址。实际上，Git 支持多种协议，默认的<strong>git://<strong>使用 ssh，但也可以使用</strong>https</strong>等其他协议。</p>
-<p>使用<strong>https</strong>除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用<strong>ssh</strong>协议而只能用<strong>https</strong>。</p>
+                <p>通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地</p>
+                <h2 id="克隆远程库-1">克隆远程库</h2>
+                <p>接下来我们使用<code>git clone RemoteAddress</code>命令将我们刚刚创建的远程库克隆到本地。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git clone git@github.com:YxzRainy/YxzRainy.github.io.git
+</code></pre>
+                </div>
+                <p>GitHub 给出的克隆地址不止一个，还可以用<strong><a
+                                href="https://github.com/michaelliao/gitskills.git">https://github.com/michaelliao/gitskills.git</a></strong>这样的地址。实际上，Git
+                    支持多种协议，默认的<strong>git://<strong>使用 ssh，但也可以使用</strong>https</strong>等其他协议。</p>
+                <p>使用<strong>https</strong>除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http
+                    端口的公司内部就无法使用<strong>ssh</strong>协议而只能用<strong>https</strong>。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#克隆远程库-1">克隆远程库</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#克隆远程库-1">克隆远程库</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

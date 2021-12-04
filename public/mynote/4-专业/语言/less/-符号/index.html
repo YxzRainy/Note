@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,69 +41,99 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/less\/-%E7%AC%A6%E5%8F%B7\/",
 	    "keywords" : [ "Css","Less","学习笔记", ]
 	}
-</script><title>Less &amp; 符号</title>
-    <meta property="og:title" content="Less &amp; 符号" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
+</script>
+        <title>Less &amp; 符号</title>
+        <meta property="og:title" content="Less &amp; 符号" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description"
+                content="Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
-Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}}解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } " />
-    <meta name="description" content="Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
+Less 代码 .mainbox {
+display: flex;
+min-width: 1024px;
+max-width: 1920px;
+margin: 0 auto;
+padding: 0.125rem 0 0.125rem 0;
+.column {
+background-color: yellowgreen;
+flex: 3;
+&amp;amp;:nth-child(2) {
+flex: 5;
+}
+}
+}
+解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } " />
+        <meta name="description"
+                content="Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
-Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}}解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } " />
-    <meta property="og:locale" content="zh-cn" />
+Less 代码 .mainbox {
+display: flex;
+min-width: 1024px;
+max-width: 1920px;
+margin: 0 auto;
+padding: 0.125rem 0 0.125rem 0;
+.column {
+background-color: yellowgreen;
+flex: 3;
+&amp;amp;:nth-child(2) {
+flex: 5;
+}
+}
+}
+解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } " />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Less &amp; 符号</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-11-02 06:00:00 UTC">
                         2021-11-02
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="less--符号">Less &amp; 符号</h1>
-<p>在类前面添加了&amp;之后，编译之后的css变为且的关系，而没有使用&amp;的css是父子的关系</p>
-<p>&amp; 符号可以表示对父选择器的引用。
-在一个内层选择器的前面，如果没有 &amp; 符号，则这个内层选择器会被解析为父选择器的后代。</p>
-<p>如果内层选择器前面有一个 &amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。</p>
-<h2 id="less-代码">Less 代码</h2>
-<pre tabindex="0"><code class="language-less" data-lang="less">
+                <p>在类前面添加了&amp;之后，编译之后的css变为且的关系，而没有使用&amp;的css是父子的关系</p>
+                <p>&amp; 符号可以表示对父选择器的引用。
+                    在一个内层选择器的前面，如果没有 &amp; 符号，则这个内层选择器会被解析为父选择器的后代。</p>
+                <p>如果内层选择器前面有一个 &amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。</p>
+                <h2 id="less-代码">Less 代码</h2>
+                <pre tabindex="0"><code class="language-less" data-lang="less">
 .mainbox {
 	display: flex;
 	min-width: 1024px;
@@ -112,60 +148,67 @@ Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;marg
 		}
 	}
 }
-</code></pre><h3 id="解析后的-css-代码">解析后的 Css 代码</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">mainbox</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">column</span><span style="color:#000;font-weight:bold">:</span><span style="color:#5c35cc;font-weight:bold">nth-child</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">2</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                <h3 id="解析后的-css-代码">解析后的 Css 代码</h3>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">mainbox</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">column</span><span style="color:#000;font-weight:bold">:</span><span style="color:#5c35cc;font-weight:bold">nth-child</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">2</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
   <span style="color:#204a87;font-weight:bold">flex</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h3 id="去掉--后的-css-代码">去掉 &amp; 后的 Css 代码</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">mainbox</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">column</span> <span style="color:#000;font-weight:bold">:</span><span style="color:#5c35cc;font-weight:bold">nth-child</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">2</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</code></pre>
+                </div>
+                <h3 id="去掉--后的-css-代码">去掉 &amp; 后的 Css 代码</h3>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">mainbox</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">column</span> <span style="color:#000;font-weight:bold">:</span><span style="color:#5c35cc;font-weight:bold">nth-child</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">2</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
   <span style="color:#204a87;font-weight:bold">flex</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
+</code></pre>
+                </div>
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/css/">
                     Css
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/less/">
                     Less
                 </a>
-            </div>
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                    学习笔记
-                </a>
-            </div>
-            
+                <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+
+                <div class="PostTag">
+                    <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                        学习笔记
+                    </a>
+                </div>
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#less-代码">Less 代码</a>
-      <ul>
-        <li><a href="#解析后的-css-代码">解析后的 Css 代码</a></li>
-        <li><a href="#去掉--后的-css-代码">去掉 &amp; 后的 Css 代码</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#less-代码">Less 代码</a>
+                    <ul>
+                        <li><a href="#解析后的-css-代码">解析后的 Css 代码</a></li>
+                        <li><a href="#去掉--后的-css-代码">去掉 &amp; 后的 Css 代码</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_wxipf99wp4j.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

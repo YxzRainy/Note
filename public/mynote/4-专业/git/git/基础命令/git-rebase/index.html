@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,128 +41,132 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-rebase\/",
 	    "keywords" : [ "Git","命令","Github","学习笔记", ]
 	}
-</script><title>Git git rebase</title>
-    <meta property="og:title" content="Git git rebase" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
+</script>
+        <title>Git git rebase</title>
+        <meta property="og:title" content="Git git rebase" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
 当master分支更新之后，它会指向原来BranchName分支上的commit，而那些原本在自己身上的commit已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。
 因为原本在master分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，
 与 git merge 的区别 当我们使用Git log来参看commit时，其commit的顺序也有所不同。" />
-    <meta name="description" content="git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
+        <meta name="description" content="git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
 当master分支更新之后，它会指向原来BranchName分支上的commit，而那些原本在自己身上的commit已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。
 因为原本在master分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，
 与 git merge 的区别 当我们使用Git log来参看commit时，其commit的顺序也有所不同。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git git rebase</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="git-rebase">git rebase</h1>
-<p>用于把一个分支的所有修改（commit）合并到当前分支。</p>
-<p>rebase 操作可以把本地未 push 的分叉提交历史整理成直线；</p>
-<h2 id="git-rebase-branchname">git rebase BranchName</h2>
-<p><code>git rebase</code>会把当前分支<strong>master</strong>的每个 commit 丢弃掉，并且把它们临时保存为<strong>patch</strong>(这些<strong>patch</strong>放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。</p>
-<p>当<strong>master</strong>分支更新之后，它会指向原来<strong>BranchName</strong>分支上的<strong>commit</strong>，而那些原本在自己身上的<strong>commit</strong>已经被丢弃了。如果运行垃圾收集命令, 这些被丢弃的提交就会删除。</p>
-<p>因为原本在<strong>master</strong>分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，</p>
-<h3 id="与-git-merge-的区别">与 git merge 的区别</h3>
-<p><img src="https://img-my.csdn.net/uploads/201206/14/1339683149_4793.jpg" alt="img"></p>
-<p><img src="https://img-my.csdn.net/uploads/201206/14/1339683149_4793.jpg" alt="img"></p>
-<p>当我们使用<code>Git log</code>来参看<strong>commit</strong>时，其<strong>commit</strong>的顺序也有所不同。</p>
+                <p>用于把一个分支的所有修改（commit）合并到当前分支。</p>
+                <p>rebase 操作可以把本地未 push 的分叉提交历史整理成直线；</p>
+                <h2 id="git-rebase-branchname">git rebase BranchName</h2>
+                <p><code>git rebase</code>会把当前分支<strong>master</strong>的每个 commit
+                    丢弃掉，并且把它们临时保存为<strong>patch</strong>(这些<strong>patch</strong>放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
+                </p>
+                <p>当<strong>master</strong>分支更新之后，它会指向原来<strong>BranchName</strong>分支上的<strong>commit</strong>，而那些原本在自己身上的<strong>commit</strong>已经被丢弃了。如果运行垃圾收集命令,
+                    这些被丢弃的提交就会删除。</p>
+                <p>因为原本在<strong>master</strong>分支上的 commit 被丢弃了，因此，这时候的分支就变为了一条直线，</p>
+                <h3 id="与-git-merge-的区别">与 git merge 的区别</h3>
+                <p><img src="https://img-my.csdn.net/uploads/201206/14/1339683149_4793.jpg" alt="img"></p>
+                <p><img src="https://img-my.csdn.net/uploads/201206/14/1339683149_4793.jpg" alt="img"></p>
+                <p>当我们使用<code>Git log</code>来参看<strong>commit</strong>时，其<strong>commit</strong>的顺序也有所不同。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
                     命令
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#git-rebase-branchname">git rebase BranchName</a>
-      <ul>
-        <li><a href="#与-git-merge-的区别">与 git merge 的区别</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#git-rebase-branchname">git rebase BranchName</a>
+                    <ul>
+                        <li><a href="#与-git-merge-的区别">与 git merge 的区别</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

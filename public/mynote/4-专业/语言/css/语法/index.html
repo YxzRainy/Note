@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,123 +41,127 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/css\/%E8%AF%AD%E6%B3%95\/",
 	    "keywords" : [ "Css","前端","学习笔记", ]
 	}
-</script><title>Css 语法</title>
-    <meta property="og:title" content="Css 语法" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
+</script>
+        <title>Css 语法</title>
+        <meta property="og:title" content="Css 语法" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
 .selector { color: #000; } 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
 内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
 外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
 优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。" />
-    <meta name="description" content="语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
+        <meta name="description" content="语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
 .selector { color: #000; } 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
 内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
 外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
 优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Css 语法</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-08 06:00:00 UTC">
                         2021-10-08
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="语法">语法</h1>
-<h2 id="选择器的组成">选择器的组成</h2>
-<p>选择器：位于语法开始，用于选中 HTML 文档中的元素。</p>
-<p>声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。</p>
-<p>声明块：由属性与属性值组成。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">selector</span> <span style="color:#000;font-weight:bold">{</span>
+                <h2 id="选择器的组成">选择器的组成</h2>
+                <p>选择器：位于语法开始，用于选中 HTML 文档中的元素。</p>
+                <p>声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。</p>
+                <p>声明块：由属性与属性值组成。</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#000;font-weight:bold">.</span><span style="color:#000">selector</span> <span style="color:#000;font-weight:bold">{</span>
 	<span style="color:#204a87;font-weight:bold">color</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">#000</span><span style="color:#000;font-weight:bold">;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><h2 id="调用方法">调用方法</h2>
-<p>内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。</p>
-<p>内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。</p>
-<p>外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。</p>
-<p>优先级：<strong>内联式 &gt; 内嵌式 &gt; 外链式</strong>。</p>
+</code></pre>
+                </div>
+                <h2 id="调用方法">调用方法</h2>
+                <p>内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。</p>
+                <p>内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。</p>
+                <p>外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。</p>
+                <p>优先级：<strong>内联式 &gt; 内嵌式 &gt; 外链式</strong>。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/css/">
                     Css
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
                     前端
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#选择器的组成">选择器的组成</a></li>
-    <li><a href="#调用方法">调用方法</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#选择器的组成">选择器的组成</a></li>
+                <li><a href="#调用方法">调用方法</a></li>
+            </ul>
+        </nav>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

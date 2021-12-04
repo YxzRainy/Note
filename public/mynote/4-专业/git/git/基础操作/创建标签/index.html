@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
-    <script type="application/ld+json">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Hugo 0.88.1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Rainy" />
+        <meta property="og:url"
+                content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/" />
+        <link rel="canonical"
+                href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/" />
+        <link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" />
+        <link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml"
+                title="Rainy · Blog" />
+
+        <script type="application/ld+json">
 	{
 	    "@context" : "http://schema.org",
 	    "@type" : "BlogPosting",
@@ -35,126 +41,145 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
-</script><title>Git 创建标签</title>
-    <meta property="og:title" content="Git 创建标签" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="创建标签 切换到需要打标签的分支上
-git checkout master使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
+</script>
+        <title>Git 创建标签</title>
+        <meta property="og:title" content="Git 创建标签" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="创建标签 切换到需要打标签的分支上
+git checkout master
+使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
 git tag v1.0 可以用命令git tag查看所有标签
-git tag忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
+git tag
+忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
 方法是找到历史提交的commit id，然后打上对应标签就可以了。
-git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的标签 git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
+git log --pretty=oneline --abbrev-commit
+git tag v2.0 c0e9bf4
+创建带说明的标签 git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
 标签总是和某个commit id挂钩。如果这个commit id既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。" />
-    <meta name="description" content="创建标签 切换到需要打标签的分支上
-git checkout master使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
+        <meta name="description" content="创建标签 切换到需要打标签的分支上
+git checkout master
+使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
 git tag v1.0 可以用命令git tag查看所有标签
-git tag忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
+git tag
+忘记打标签 有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？
 方法是找到历史提交的commit id，然后打上对应标签就可以了。
-git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4创建带说明的标签 git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
+git log --pretty=oneline --abbrev-commit
+git tag v2.0 c0e9bf4
+创建带说明的标签 git tag -a v0.1 -m &amp;#34;version 0.1 &amp;#34; 1094adb -a指定标签名，-m指定说明文字。
 标签总是和某个commit id挂钩。如果这个commit id既出现在master分支，又出现在dev分支，那么在这两个分支上都可以看到这个标签。" />
-    <meta property="og:locale" content="zh-cn" />
+        <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+        <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
 
-    
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-    
+        <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml" title="Rainy · Blog">
+        <script>
+            (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+        </script>
+
+
+
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement('script');
+                hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+
 
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
                 <h1 id="Title" class="post-title">Git 创建标签</h1>
-                
+
                 <div class="DateArea">
-                    
+
                     <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
                         2021-10-21
                     </time>
-                    
+
                 </div>
-                
+
             </header>
 
-            
+
             <div class="PostContent">
-                
+
                 <h1 id="创建标签">创建标签</h1>
-<p>切换到需要打标签的分支上</p>
-<pre tabindex="0"><code>git checkout master
-</code></pre><p>使用命令<code>git tag &lt;name&gt;</code>就可以打一个新标签：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git tag v1.0
-</code></pre></div><p>可以用命令<code>git tag</code>查看所有标签</p>
-<pre tabindex="0"><code>git tag
-</code></pre><h2 id="忘记打标签">忘记打标签</h2>
-<p>有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？</p>
-<p>方法是找到历史提交的<strong>commit id</strong>，然后打上对应标签就可以了。</p>
-<pre tabindex="0"><code>git log --pretty=oneline --abbrev-commit
+                <p>切换到需要打标签的分支上</p>
+                <pre tabindex="0"><code>git checkout master
+</code></pre>
+                <p>使用命令<code>git tag &lt;name&gt;</code>就可以打一个新标签：</p>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git tag v1.0
+</code></pre>
+                </div>
+                <p>可以用命令<code>git tag</code>查看所有标签</p>
+                <pre tabindex="0"><code>git tag
+</code></pre>
+                <h2 id="忘记打标签">忘记打标签</h2>
+                <p>有时候，如果忘了打标签，比如，现在已经是周五了，但应该在周一打的标签没有打，怎么办？</p>
+                <p>方法是找到历史提交的<strong>commit id</strong>，然后打上对应标签就可以了。</p>
+                <pre tabindex="0"><code>git log --pretty=oneline --abbrev-commit
 git tag v2.0 c0e9bf4
-</code></pre><h2 id="创建带说明的标签">创建带说明的标签</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git tag -a v0.1 -m <span style="color:#4e9a06">&#34;version 0.1 &#34;</span> 1094adb
-</code></pre></div><p><code>-a</code>指定标签名，<code>-m</code>指定说明文字。</p>
-<p>标签总是和某个<strong>commit id</strong>挂钩。如果这个<strong>commit id</strong>既出现在<strong>master</strong>分支，又出现在<strong>dev</strong>分支，那么在这两个分支上都可以看到这个标签。</p>
+</code></pre>
+                <h2 id="创建带说明的标签">创建带说明的标签</h2>
+                <div class="highlight">
+                    <pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git tag -a v0.1 -m <span style="color:#4e9a06">&#34;version 0.1 &#34;</span> 1094adb
+</code></pre>
+                </div>
+                <p><code>-a</code>指定标签名，<code>-m</code>指定说明文字。</p>
+                <p>标签总是和某个<strong>commit id</strong>挂钩。如果这个<strong>commit
+                        id</strong>既出现在<strong>master</strong>分支，又出现在<strong>dev</strong>分支，那么在这两个分支上都可以看到这个标签。</p>
 
             </div>
-            
-            
+
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/git/">
                     Git
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/github/">
                     Github
                 </a>
             </div>
-            
+
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
                     学习笔记
                 </a>
             </div>
-            
+
         </article>
-        
+
         <nav id="TableOfContents">
-  <ul>
-    <li><a href="#忘记打标签">忘记打标签</a></li>
-    <li><a href="#创建带说明的标签">创建带说明的标签</a></li>
-  </ul>
-</nav>
+            <ul>
+                <li><a href="#忘记打标签">忘记打标签</a></li>
+                <li><a href="#创建带说明的标签">创建带说明的标签</a></li>
+            </ul>
+        </nav>
+        <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
 
         <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTheTop"></use>
-    </svg>
-</a>
+            <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+                <use href="#Icon-ToTheTop"></use>
+            </svg>
+        </a>
 
-        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
-<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="//at.alicdn.com/t/font_2643512_wxipf99wp4j.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+        <script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>
