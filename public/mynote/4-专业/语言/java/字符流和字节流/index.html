@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Java 字符流和字节流",
+	    "headline" : "Java 字符流和字节流",
+	    "description" : "字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\java\\\\File.txt\u0026#34;); \/\/ 字节输入流  FileInputStream wj = new FileInputStream(file); \/\/ 字节输出流  FileOutputStream outinput = new FileOutputStream(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\java\\\\副本.txt\u0026#34;); \/\/ 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { \/\/ String data = new String(arr); \/\/\/\/ System.out.println(data);  len = wj.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-11-20 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-11-20 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-%E4%B8%93%E4%B8%9A\/%E8%AF%AD%E8%A8%80\/java\/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81\/",
+	    "keywords" : [ "Java","学习笔记", ]
+	}
+</script><title>Java 字符流和字节流</title>
+    <meta property="og:title" content="Java 字符流和字节流" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file); // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;); // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { // String data = new String(arr); //// System.out.println(data);  len = wj." />
+    <meta name="description" content="字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file); // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;); // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { // String data = new String(arr); //// System.out.println(data);  len = wj." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?8516e418a4e3ac3474b3c13bdb4687e7';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Java 字符流和字节流</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-11-20 06:00:00 UTC">
+                        2021-11-20
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="字节流">字节流</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">package</span> <span style="color:#000">yxzi.xyz</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.File</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileInputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileReader</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Rainy</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">Exception</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#000">File</span> <span style="color:#000">file</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\File.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//        字节输入流
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileInputStream</span> <span style="color:#000">wj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileInputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">file</span><span style="color:#ce5c00;font-weight:bold">);</span>
+ <span style="color:#8f5902;font-style:italic">//       字节输出流
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileOutputStream</span> <span style="color:#000">outinput</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">//        创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">byte</span> <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">[]</span>  <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">1024</span><span style="color:#ce5c00;font-weight:bold">];</span>
+        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">wj</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">1</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+<span style="color:#8f5902;font-style:italic">//            String data = new String(arr);
+</span><span style="color:#8f5902;font-style:italic">////            System.out.println(data);
+</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">wj</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+            <span style="color:#000">outinput</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">write</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+            <span style="color:#000">outinput</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">flush</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        <span style="color:#ce5c00;font-weight:bold">}</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h1 id="字符流">字符流</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">package</span> <span style="color:#000">yxzi.xyz</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.File</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileReader</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileWriter</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Rainy</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">Exception</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#000">File</span> <span style="color:#000">file</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\File.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+        <span style="color:#000">File</span> <span style="color:#000">file2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\追加的.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">//        字符输入流
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileReader</span> <span style="color:#000">wj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileReader</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">file</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//        输入追加的
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileReader</span> <span style="color:#000">wj2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileReader</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">file2</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">//        字符输出流
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileWriter</span> <span style="color:#000">wirte</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileWriter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//        输出追加的
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">FileWriter</span> <span style="color:#000">wirte2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileWriter</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+
+<span style="color:#8f5902;font-style:italic">//        创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">char</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87;font-weight:bold">char</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">1024</span><span style="color:#ce5c00;font-weight:bold">];</span>
+<span style="color:#8f5902;font-style:italic">//        創建第二個字符數組
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">char</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">arr2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87;font-weight:bold">char</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">1024</span><span style="color:#ce5c00;font-weight:bold">];</span>
+
+        <span style="color:#000">String</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">wj</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">wj2</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr2</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//第一次写入
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">wirte</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">write</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//        追加写入
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">wirte2</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">write</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">arr2</span><span style="color:#ce5c00;font-weight:bold">);</span>
+<span style="color:#8f5902;font-style:italic">//清除缓存
+</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">wirte</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">flush</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        <span style="color:#000">wirte2</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">flush</span><span style="color:#ce5c00;font-weight:bold">();</span>
+
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/java/">
+                    Java
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTheTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.shuxhan.com/jquery3.6.0.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_poxswsu2ovb.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

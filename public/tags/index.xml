@@ -6,7 +6,70 @@
     <description>Recent content in Tags on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 27 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Npm</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/npm/</link>
+      <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>学习笔记</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>男女关系</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%94%B7%E5%A5%B3%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%94%B7%E5%A5%B3%E5%85%B3%E7%B3%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社交心理</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BA%A4%E5%BF%83%E7%90%86/</link>
+      <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BA%A4%E5%BF%83%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>转载</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E8%BD%AC%E8%BD%BD/</link>
+      <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E8%BD%AC%E8%BD%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/java/</link>
+      <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/java/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Echarts</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/echarts/</link>
@@ -44,15 +107,6 @@
     </item>
     
     <item>
-      <title>学习笔记</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Css</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/css/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
@@ -80,20 +134,20 @@
     </item>
     
     <item>
-      <title>交通</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E4%BA%A4%E9%80%9A/</link>
+      <title>交通事故</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E4%BA%A4%E9%80%9A/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>情感</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F/</link>
+      <title>成长</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%88%90%E9%95%BF/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%88%90%E9%95%BF/</guid>
       <description></description>
     </item>
     
@@ -107,15 +161,6 @@
     </item>
     
     <item>
-      <title>爱情</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B1%E6%83%85/</link>
-      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B1%E6%83%85/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>社交</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BA%A4/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
@@ -125,20 +170,11 @@
     </item>
     
     <item>
-      <title>社会</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A/</link>
+      <title>社会现象</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>转载</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E8%BD%AC%E8%BD%BD/</link>
-      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E8%BD%AC%E8%BD%BD/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</guid>
       <description></description>
     </item>
     
@@ -170,11 +206,20 @@
     </item>
     
     <item>
-      <title>生活</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%94%9F%E6%B4%BB/</link>
+      <title>情感</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F/</link>
       <pubDate>Sat, 23 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社会</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A/</link>
+      <pubDate>Sat, 23 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A/</guid>
       <description></description>
     </item>
     
@@ -305,33 +350,6 @@
     </item>
     
     <item>
-      <title>信息</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E4%BF%A1%E6%81%AF/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E4%BF%A1%E6%81%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>兴趣</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%85%B4%E8%B6%A3/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%85%B4%E8%B6%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>内心</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%86%85%E5%BF%83/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%86%85%E5%BF%83/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>写作</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E5%86%99%E4%BD%9C/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -359,29 +377,11 @@
     </item>
     
     <item>
-      <title>博客</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>命令</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>命运</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E8%BF%90/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E8%BF%90/</guid>
       <description></description>
     </item>
     
@@ -422,20 +422,20 @@
     </item>
     
     <item>
-      <title>学习</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0/</link>
+      <title>好友</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%A5%BD%E5%8F%8B/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%A5%BD%E5%8F%8B/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>孩子</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A9%E5%AD%90/</link>
+      <title>学习方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A9%E5%AD%90/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</guid>
       <description></description>
     </item>
     
@@ -449,20 +449,20 @@
     </item>
     
     <item>
+      <title>家庭教育</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AE%B6%E5%BA%AD%E6%95%99%E8%82%B2/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AE%B6%E5%BA%AD%E6%95%99%E8%82%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>小说</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E5%B0%8F%E8%AF%B4/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%B0%8F%E8%AF%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>思想</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%80%9D%E6%83%B3/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%80%9D%E6%83%B3/</guid>
       <description></description>
     </item>
     
@@ -476,20 +476,20 @@
     </item>
     
     <item>
-      <title>感受</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%84%9F%E5%8F%97/</link>
+      <title>思维方式</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%84%9F%E5%8F%97/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>感情</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%84%9F%E6%83%85/</link>
+      <title>情感困惑</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F%E5%9B%B0%E6%83%91/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%84%9F%E6%83%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F%E5%9B%B0%E6%83%91/</guid>
       <description></description>
     </item>
     
@@ -512,29 +512,11 @@
     </item>
     
     <item>
-      <title>旅行</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E8%A1%8C/</link>
+      <title>旅游</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E6%B8%B8/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E8%A1%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>时间</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%97%B6%E9%97%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>朋友</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%9C%8B%E5%8F%8B/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%9C%8B%E5%8F%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E6%B8%B8/</guid>
       <description></description>
     </item>
     
@@ -548,11 +530,11 @@
     </item>
     
     <item>
-      <title>父母</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B6%E6%AF%8D/</link>
+      <title>爱情</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B1%E6%83%85/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B6%E6%AF%8D/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%88%B1%E6%83%85/</guid>
       <description></description>
     </item>
     
@@ -584,15 +566,6 @@
     </item>
     
     <item>
-      <title>王阳明</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%8E%8B%E9%98%B3%E6%98%8E/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>电影</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E7%94%B5%E5%BD%B1/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -602,38 +575,11 @@
     </item>
     
     <item>
-      <title>知乎</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%A5%E4%B9%8E/</link>
+      <title>短文</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%AD%E6%96%87/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%A5%E4%B9%8E/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>知识</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%A5%E8%AF%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>社会现象</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E7%8E%B0%E8%B1%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>穷人</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A9%B7%E4%BA%BA/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A9%B7%E4%BA%BA/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%9F%AD%E6%96%87/</guid>
       <description></description>
     </item>
     
@@ -665,6 +611,15 @@
     </item>
     
     <item>
+      <title>细思极恐</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%BB%86%E6%80%9D%E6%9E%81%E6%81%90/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%BB%86%E6%80%9D%E6%9E%81%E6%81%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>编辑器</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E7%BC%96%E8%BE%91%E5%99%A8/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -679,15 +634,6 @@
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>职业</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E8%81%8C%E4%B8%9A/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E8%81%8C%E4%B8%9A/</guid>
       <description></description>
     </item>
     
@@ -728,11 +674,11 @@
     </item>
     
     <item>
-      <title>赚钱</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E8%B5%9A%E9%92%B1/</link>
+      <title>贫穷</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E8%B4%AB%E7%A9%B7/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E8%B5%9A%E9%92%B1/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E8%B4%AB%E7%A9%B7/</guid>
       <description></description>
     </item>
     
@@ -890,38 +836,11 @@
     </item>
     
     <item>
-      <title>情感困惑</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F%E5%9B%B0%E6%83%91/</link>
-      <pubDate>Wed, 20 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%83%85%E6%84%9F%E5%9B%B0%E6%83%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>伦理道德</title>
       <link>https://yxzi.xyz/Sub/Blog/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/</link>
       <pubDate>Tue, 19 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>安全感</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AE%89%E5%85%A8%E6%84%9F/</link>
-      <pubDate>Tue, 19 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%AE%89%E5%85%A8%E6%84%9F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>社会学</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</link>
-      <pubDate>Tue, 19 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</guid>
       <description></description>
     </item>
     
@@ -944,11 +863,29 @@
     </item>
     
     <item>
-      <title>成长</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/%E6%88%90%E9%95%BF/</link>
-      <pubDate>Sun, 17 Oct 2021 06:00:00 +0000</pubDate>
+      <title>生活</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E7%94%9F%E6%B4%BB/</link>
+      <pubDate>Mon, 18 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/tags/%E6%88%90%E9%95%BF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E7%94%9F%E6%B4%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>外网</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/</link>
+      <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>啃老</title>
+      <link>https://yxzi.xyz/Sub/Blog/tags/%E5%95%83%E8%80%81/</link>
+      <pubDate>Fri, 15 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/tags/%E5%95%83%E8%80%81/</guid>
       <description></description>
     </item>
     
@@ -985,15 +922,6 @@
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
-      <link>https://yxzi.xyz/Sub/Blog/tags/java/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/tags/java/</guid>
       <description></description>
     </item>
     

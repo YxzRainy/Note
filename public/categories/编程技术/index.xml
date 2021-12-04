@@ -6,7 +6,25 @@
     <description>Recent content in 编程技术 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java 字符流和字节流</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
+      <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
+      <description>字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file); // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;); // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { // String data = new String(arr); //// System.out.println(data);  len = wj.</description>
+    </item>
+    
+    <item>
+      <title>Java 遍历集合</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
+      <description>遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList(); Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23); Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18); Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13); Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11); Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); // 遍历集合方法一 // for(Object obj : arr){ // System.</description>
+    </item>
+    
     <item>
       <title>Less &amp; 符号</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/</link>
@@ -655,10 +673,10 @@ N 进制表示逢 N 进一。
     
     <item>
       <title>Java 基础</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java-%E5%9F%BA%E7%A1%80/</guid>
       <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
 对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
 赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
