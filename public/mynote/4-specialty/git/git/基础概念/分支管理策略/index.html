@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Git 分支管理策略",
+	    "headline" : "Git 分支管理策略",
+	    "description" : "分支管理策略 在实际开发中，我们应该按照几个基本原则进行分支管理：\n首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；\n那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；\n你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。\n所以，团队合作的分支看起来就像这样：",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5\/",
+	    "keywords" : [ "Git","Github","学习笔记", ]
+	}
+</script><title>Git 分支管理策略</title>
+    <meta property="og:title" content="Git 分支管理策略" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="分支管理策略 在实际开发中，我们应该按照几个基本原则进行分支管理：
+首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+所以，团队合作的分支看起来就像这样：" />
+    <meta name="description" content="分支管理策略 在实际开发中，我们应该按照几个基本原则进行分支管理：
+首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+所以，团队合作的分支看起来就像这样：" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git 分支管理策略</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="分支管理策略">分支管理策略</h1>
+<p>在实际开发中，我们应该按照几个基本原则进行分支管理：</p>
+<p>首先，<strong>master</strong>分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；</p>
+<p>那在哪干活呢？干活都在<strong>dev</strong>分支上，也就是说，<strong>dev</strong>分支是不稳定的，到某个时候，比如<strong>1.0</strong>版本发布时，再把<strong>dev</strong>分支合并到<strong>master</strong>上，在<strong>master</strong>分支发布<strong>1.0</strong>版本；</p>
+<p>你和你的小伙伴们每个人都在<strong>dev</strong>分支上干活，每个人都有自己的分支，时不时地往<strong>dev</strong>分支上合并就可以了。</p>
+<p>所以，团队合作的分支看起来就像这样：</p>
+<p><img src="%E5%88%86%E6%94%AF9.png" alt="分支9"></p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

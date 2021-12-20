@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Git git add",
+	    "headline" : "Git git add",
+	    "description" : "git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。\ngit add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。\ngit add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，\n添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3\r多次 git add git add FileName1 git add FileName2 git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-add\/",
+	    "keywords" : [ "Git","命令","Github","学习笔记", ]
+	}
+</script><title>Git git add</title>
+    <meta property="og:title" content="Git git add" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
+git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
+git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
+添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add git add FileName1 git add FileName2 git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。" />
+    <meta name="description" content="git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
+git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
+git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
+添加多个文件时，文件名使用空格分开即可 git add FileName1 FileName2 FileName3多次 git add git add FileName1 git add FileName2 git add FileName3 git add -f git add .不会添加被**.gitignore**忽略的文件，而git add -f . 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git git add</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="git-add">git add</h1>
+<p>将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用<code>git commit</code>命令进行提交了。</p>
+<h2 id="git-add-">git add .</h2>
+<p>添加当前目录所有的文件，. 表示当前目录的所有文件夹。</p>
+<h2 id="git-add-filename">git add FileName</h2>
+<p>添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，</p>
+<h3 id="添加多个文件时文件名使用空格分开即可">添加多个文件时，文件名使用空格分开即可</h3>
+<pre tabindex="0"><code>git add FileName1 FileName2 FileName3
+</code></pre><h3 id="多次-git-add">多次 git add</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add FileName1
+git add FileName2
+git add FileName3
+</code></pre></div><h2 id="git-add--f">git add -f</h2>
+<p><code>git add .</code>不会添加被**.gitignore**忽略的文件，而<code>git add -f .</code> 强制添加所有文件，即使是被**.gitignore**忽略的文件也添加。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/">
+                    命令
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-add-">git add .</a></li>
+    <li><a href="#git-add-filename">git add FileName</a>
+      <ul>
+        <li><a href="#添加多个文件时文件名使用空格分开即可">添加多个文件时，文件名使用空格分开即可</a></li>
+        <li><a href="#多次-git-add">多次 git add</a></li>
+      </ul>
+    </li>
+    <li><a href="#git-add--f">git add -f</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

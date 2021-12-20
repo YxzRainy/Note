@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "域服务器的基本操作",
+	    "headline" : "域服务器的基本操作",
+	    "description" : "域服务器的基本操作 克隆 2008\n打开 ad 01\n新建用户\n点击新建的用户\n隶属于\n添加一个\n将 2012 升级为域控\n添加一个子用户，但无法使用这个用户名登录域服务器\n设置\n192.168.1.1\n255.255.255.0\n网关 192.168.1.1\n配置 2008\n控制面板\n网络链接\n设置 ip\n192.168.1.50\n255.255.255.0\n192.168.1.1\n192.168.1.1\n更改计算机名字\n加入域\nyxzi\\user02（2012 域控上添加的用户）\n在 2008 上面用 user02 这个用户名登录到域控\n打开 ad 01\nuser 02 属性\n账户，登录时间\n新建 用户 user03\n选择 user03 属性\n配置登录名和密码\n指定计算机才能登录\n登录到，输入 ad 02 的计算机名\nad1 新建组 ts01\n添加到组，选择 user02\n选择 user03，隶属于，\nts 属性 用户，即可看到\n新建 组织单位 danwei",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/win-server\/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C\/",
+	    "keywords" : [ "Win Server","虚拟机","域服务器","学习笔记", ]
+	}
+</script><title>域服务器的基本操作</title>
+    <meta property="og:title" content="域服务器的基本操作" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="域服务器的基本操作 克隆 2008
+打开 ad 01
+新建用户
+点击新建的用户
+隶属于
+添加一个
+将 2012 升级为域控
+添加一个子用户，但无法使用这个用户名登录域服务器
+设置
+192.168.1.1
+255.255.255.0
+网关 192.168.1.1
+配置 2008
+控制面板
+网络链接
+设置 ip
+192.168.1.50
+255.255.255.0
+192.168.1.1
+192.168.1.1
+更改计算机名字
+加入域
+yxzi\user02（2012 域控上添加的用户）
+在 2008 上面用 user02 这个用户名登录到域控
+打开 ad 01
+user 02 属性
+账户，登录时间
+新建 用户 user03
+选择 user03 属性
+配置登录名和密码
+指定计算机才能登录
+登录到，输入 ad 02 的计算机名
+ad1 新建组 ts01
+添加到组，选择 user02
+选择 user03，隶属于，
+ts 属性 用户，即可看到
+新建 组织单位 danwei" />
+    <meta name="description" content="域服务器的基本操作 克隆 2008
+打开 ad 01
+新建用户
+点击新建的用户
+隶属于
+添加一个
+将 2012 升级为域控
+添加一个子用户，但无法使用这个用户名登录域服务器
+设置
+192.168.1.1
+255.255.255.0
+网关 192.168.1.1
+配置 2008
+控制面板
+网络链接
+设置 ip
+192.168.1.50
+255.255.255.0
+192.168.1.1
+192.168.1.1
+更改计算机名字
+加入域
+yxzi\user02（2012 域控上添加的用户）
+在 2008 上面用 user02 这个用户名登录到域控
+打开 ad 01
+user 02 属性
+账户，登录时间
+新建 用户 user03
+选择 user03 属性
+配置登录名和密码
+指定计算机才能登录
+登录到，输入 ad 02 的计算机名
+ad1 新建组 ts01
+添加到组，选择 user02
+选择 user03，隶属于，
+ts 属性 用户，即可看到
+新建 组织单位 danwei" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">域服务器的基本操作</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
+                        2021-10-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="域服务器的基本操作">域服务器的基本操作</h1>
+<p>克隆 2008</p>
+<p>打开 ad 01</p>
+<p>新建用户</p>
+<p>点击新建的用户</p>
+<p>隶属于</p>
+<p>添加一个</p>
+<p>将 2012 升级为域控</p>
+<p>添加一个子用户，但无法使用这个用户名登录域服务器</p>
+<p>设置</p>
+<p>192.168.1.1</p>
+<p>255.255.255.0</p>
+<p>网关 192.168.1.1</p>
+<p>配置 2008</p>
+<p>控制面板</p>
+<p>网络链接</p>
+<p>设置 ip</p>
+<p>192.168.1.50</p>
+<p>255.255.255.0</p>
+<p>192.168.1.1</p>
+<p>192.168.1.1</p>
+<p>更改计算机名字</p>
+<p>加入域</p>
+<p>yxzi\user02（2012 域控上添加的用户）</p>
+<p>在 2008 上面用 user02 这个用户名登录到域控</p>
+<p>打开 ad 01</p>
+<p>user 02 属性</p>
+<p>账户，登录时间</p>
+<p>新建 用户 user03</p>
+<p>选择 user03 属性</p>
+<p>配置登录名和密码</p>
+<p>指定计算机才能登录</p>
+<p>登录到，输入 ad 02 的计算机名</p>
+<p>ad1 新建组 ts01</p>
+<p>添加到组，选择 user02</p>
+<p>选择 user03，隶属于，</p>
+<p>ts 属性 用户，即可看到</p>
+<p>新建 组织单位 danwei</p>
+<p>组织单位的属性 防止意外删除</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/win-server/">
+                    Win Server
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+                    虚拟机
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                    域服务器
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

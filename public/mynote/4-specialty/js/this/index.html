@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript this",
+	    "headline" : "JavaScript this",
+	    "description" : "this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。\n通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/js\/this\/",
+	    "keywords" : [ "学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript this</title>
+    <meta property="og:title" content="JavaScript this" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
+通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。" />
+    <meta name="description" content="this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
+通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript this</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="this">this</h1>
+<p>在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。</p>
+<p>通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

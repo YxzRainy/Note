@@ -9,10 +9,10 @@
     <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>域服务器</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>域服务器 父域一
 父域二
 子域三
@@ -47,10 +47,10 @@ Dns 192.168.10.1
     
     <item>
       <title>域服务器的基本操作</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>域服务器的基本操作 克隆 2008
 打开 ad 01
 新建用户

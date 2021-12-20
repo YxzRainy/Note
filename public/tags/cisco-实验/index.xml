@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cisco 实验 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/</link>
+    <description>Recent content in Cisco 实验 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 03 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco 配置 Rip V2</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
+      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</guid>
+      <description>配置 Rip V2 配置 R1 enableconfigure terminalip route 0.0.0.0 0.0.0.0 s0/0/1router ripversion 2no auto-summarynetwork 192.168.1.0network 192.168.2.0passive-interface gig 0/0default-information originate配置 R2 enableconf trouter ripversion 2no auto-summarynetwork 192.168.2.0network 192.168.3.0network 192.168.4.0passive-interface gig 0/0配置 R3 enableconf trouter ripversion 2no auto-summarynetwork 192.168.4.0network 192.168.5.0passive-interface gig 0/0</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置静态路由</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</guid>
+      <description>配置静态路由 配置R1 enableconfigure terminalip route 172.31.0.0 255.255.255.0 172.31.1.193ip route 172.31.1.196 255.255.255.252 172.31.1.193ip route 172.31.1.128 255.255.255.192 172.31.1.193配置R2 enableconfigure terminalip route 172.31.1.0 255.255.255.128 172.31.1.194ip route 172.31.1.0 255.255.255.192 172.31.1.198ip route 172.31.1.128 255.255.255.192 172.31.1.198配置R3 enableconfigure terminalip route 0.0.0.0 0.0.0.0 172.31.1.197</description>
+    </item>
+    
+    <item>
+      <title>Cisco 静态路由故障排除</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</link>
+      <pubDate>Thu, 02 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</guid>
+      <description>配置 R2 进入全局模式
+enableconfigure terminal故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198ip route 172.31.1.0 255.255.255.128 172.31.1.194故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194ip route 172.31.1.128 255.255.255.192 172.31.1.198配置R3 进入全局模式
+enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置中继</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
+      <description>配置中继 进交换机的全局
+interface f 0/1 switchport mode trunk switchport trunk native vlan 99 </description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置交换机端口安全</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
+      <description>配置交换机端口安全 配置 S1
+enable configure terminal 配置端口模式 interface f 0/1 switchport mode access 打开端口的安全模式 switch port-security //开启f0/1端口的安全功能 switchport port-security maximum 1 // 配置该端口的最大连接数为 1（最大能配置为128 switch） switchport port-security mac-address sticky // 让交换机口主动记下最先插入设备的 MAC 地址。 switchport port-security violation restrict //针对不合法的MAC地址连接该端口，配置端口的处理模式为：（protect[丢弃数据包，不发警告] | restrict[丢弃数据包，在 console 发警告] | shutdown[关]） no shutdown 、 exit </description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置单臂路由</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
+      <description>配置单臂路由 拓扑图 三台 PC
+中间一台交换机
+一台路由器在交换机上方
+将交换机与路由器连起来
+配置 S1 进全局模式 enable configure terminal hostname S1 vlan 10 exit vlan 20 exit vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk配置 R1 enableconfigure terminalhostname R1配置虚拟子端口 interface g 0/0.</description>
+    </item>
+    
+  </channel>
+</rss>

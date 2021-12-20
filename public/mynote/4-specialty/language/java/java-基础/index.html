@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Java 基础",
+	    "headline" : "Java 基础",
+	    "description" : "基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。\n对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。\n赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。\n赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。\n至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。\n至于继承，还不知道。\nvoid 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。\nvoid Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限\nprivate void Show1() { int a = 123; } \/\/ 相当于 default int Show2() int Show2() { int a = 123; return a; } ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/java-%E5%9F%BA%E7%A1%80\/",
+	    "keywords" : [ "Java","学习笔记", ]
+	}
+</script><title>Java 基础</title>
+    <meta property="og:title" content="Java 基础" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
+赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
+赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
+至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
+至于继承，还不知道。
+void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
+void Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2() { int a = 123; return a; } " />
+    <meta name="description" content="基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
+赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
+赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
+至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
+至于继承，还不知道。
+void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
+void Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2() { int a = 123; return a; } " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Java 基础</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
+                        2021-10-03
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="基础">基础</h1>
+<h2 id="类对象-属性封装">类、对象 、属性、封装、</h2>
+<p>类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。</p>
+<p>对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。</p>
+<p>赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。</p>
+<p>赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。</p>
+<p>至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。</p>
+<p>至于继承，还不知道。</p>
+<h2 id="void-的作用">void 的作用</h2>
+<p>void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">Show1</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">123</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">Show2</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">123</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">a</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><p>public、protected、default（什么都不写）、private，表示访问控制的权限</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">Show1</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">123</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+
+<span style="color:#8f5902;font-style:italic">//   相当于 default int Show2()
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">Show2</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">123</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">a</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/java/">
+                    Java
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#类对象-属性封装">类、对象 、属性、封装、</a></li>
+    <li><a href="#void-的作用">void 的作用</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

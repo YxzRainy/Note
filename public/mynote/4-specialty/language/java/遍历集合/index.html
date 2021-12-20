@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Java 遍历集合",
+	    "headline" : "Java 遍历集合",
+	    "description" : "遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList \u0026lt;Student\u0026gt; arr = new ArrayList(); Student obj1 = new Student(\u0026#34;小明\u0026#34;, 23); Student obj2 = new Student(\u0026#34;小红\u0026#34;, 18); Student obj3 = new Student(\u0026#34;小花\u0026#34;, 13); Student obj4 = new Student(\u0026#34;小黑\u0026#34;, 11); Student obj5 = new Student(\u0026#34;小白\u0026#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); \/\/ 遍历集合方法一 \/\/ for(Object obj : arr){ \/\/ System.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-11-20 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-11-20 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88\/",
+	    "keywords" : [ "Java","学习笔记", ]
+	}
+</script><title>Java 遍历集合</title>
+    <meta property="og:title" content="Java 遍历集合" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList(); Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23); Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18); Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13); Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11); Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); // 遍历集合方法一 // for(Object obj : arr){ // System." />
+    <meta name="description" content="遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList(); Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23); Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18); Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13); Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11); Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); // 遍历集合方法一 // for(Object obj : arr){ // System." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Java 遍历集合</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-11-20 06:00:00 UTC">
+                        2021-11-20
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="遍历集合">遍历集合</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">package</span> <span style="color:#000">Yxzi</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.util.ArrayList</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.util.HashMap</span><span style="color:#ce5c00;font-weight:bold">;</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.util.Iterator</span><span style="color:#ce5c00;font-weight:bold">;</span>
+
+<span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Test</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">Exception</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#000">ArrayList</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">ArrayList</span><span style="color:#ce5c00;font-weight:bold">();</span>
+
+        <span style="color:#000">Student</span> <span style="color:#000">obj1</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;小明&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">23</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">Student</span> <span style="color:#000">obj2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;小红&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">18</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">Student</span> <span style="color:#000">obj3</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;小花&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">13</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">Student</span> <span style="color:#000">obj4</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;小黑&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">11</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">Student</span> <span style="color:#000">obj5</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Student</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;小白&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span> <span style="color:#000">23</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+        <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">add</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">obj1</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">add</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">obj2</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">add</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">obj3</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">add</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">obj4</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">arr</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">add</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">obj5</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+<span style="color:#8f5902;font-style:italic">//        遍历集合方法一
+</span><span style="color:#8f5902;font-style:italic">//        for(Object obj : arr){
+</span><span style="color:#8f5902;font-style:italic">//            System.out.println(obj);
+</span><span style="color:#8f5902;font-style:italic">//        }
+</span><span style="color:#8f5902;font-style:italic">//        遍历集合方法二
+</span><span style="color:#8f5902;font-style:italic">//        for(int i = 0; i &lt; arr.size(); i++){
+</span><span style="color:#8f5902;font-style:italic">//            System.out.println(&#34;姓名：&#34; +arr.get(i).name + &#34; 年龄：&#34;+ arr.get(i).name);
+</span><span style="color:#8f5902;font-style:italic">//        }
+</span><span style="color:#8f5902;font-style:italic">//        遍历集合方法三
+</span><span style="color:#8f5902;font-style:italic">//        Iterator&lt;Student&gt; it = arr.iterator();
+</span><span style="color:#8f5902;font-style:italic">//        while (it.hasNext()){
+</span><span style="color:#8f5902;font-style:italic">//            try {
+</span><span style="color:#8f5902;font-style:italic">//                System.out.println(&#34;姓名：&#34; + it.next().name + &#34; 年龄：&#34;+ it.next().age);
+</span><span style="color:#8f5902;font-style:italic">//            } catch (Exception e) {
+</span><span style="color:#8f5902;font-style:italic">//                System.out.println(&#34;异常了&#34;);
+</span><span style="color:#8f5902;font-style:italic">//            } finally {
+</span><span style="color:#8f5902;font-style:italic">//            }
+</span><span style="color:#8f5902;font-style:italic">//        }
+</span><span style="color:#8f5902;font-style:italic"></span>
+        <span style="color:#000">HashMap</span> <span style="color:#000">hs</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">HashMap</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        <span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">put</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#4e9a06">&#34;一号位&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">put</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#4e9a06">&#34;二号位&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">put</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;3&#34;</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">null</span><span style="color:#ce5c00;font-weight:bold">);</span>
+        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">get</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;1&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">get</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;2&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">hs</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">get</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;3&#34;</span><span style="color:#ce5c00;font-weight:bold">));</span>
+
+
+
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/java/">
+                    Java
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

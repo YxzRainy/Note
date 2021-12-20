@@ -9,28 +9,28 @@
     <lastBuildDate>Sat, 20 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 字符流和字节流</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
       <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
       <description>字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file); // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;); // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { // String data = new String(arr); //// System.out.println(data);  len = wj.</description>
     </item>
     
     <item>
       <title>Java 遍历集合</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
       <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
       <description>遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList(); Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23); Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18); Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13); Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11); Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); // 遍历集合方法一 // for(Object obj : arr){ // System.</description>
     </item>
     
     <item>
       <title>Less &amp; 符号</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</guid>
       <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
@@ -39,10 +39,10 @@ Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;marg
     
     <item>
       <title>var 和 let 的区别</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
 在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
 而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
@@ -52,10 +52,10 @@ let 不能被重新定义，但是 var 是可以的 </description>
     
     <item>
       <title>JavaScript arguments</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/arguments/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/arguments/</guid>
       <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
 arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
 注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
@@ -64,20 +64,20 @@ arguments 对象不是一个 Array ；但它类似于 Array，但除了有 lengt
     
     <item>
       <title>JavaScript DOM</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/dom/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/dom/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/dom/</guid>
       <description>DOM DOM（文档对象模型），它就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
 使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
     </item>
     
     <item>
       <title>JavaScript Function</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/function/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/function/</guid>
       <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
 全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
 Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
@@ -88,10 +88,10 @@ function demo(name, age) { this.name = name; this.age = age; // 构造函数 dem
     
     <item>
       <title>JavaScript isNaN</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/isnan/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/isnan/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/isnan/</guid>
       <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
 如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
 返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
@@ -99,10 +99,10 @@ function demo(name, age) { this.name = name; this.age = age; // 构造函数 dem
     
     <item>
       <title>JavaScript Math</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/math/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/math/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/math/</guid>
       <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
 引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
 计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
@@ -113,20 +113,20 @@ function One() { for (var c = 0; c &amp;lt; 18; c++) { var d = Math.random().toF
     
     <item>
       <title>JavaScript new</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/new/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/new/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/new/</guid>
       <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
 调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
     </item>
     
     <item>
       <title>JavaScript Number</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/number/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/number/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/number/</guid>
       <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
  将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
@@ -134,29 +134,29 @@ Number 的方法 toString() NumObj.toString(radix)
     
     <item>
       <title>JavaScript Object</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/object/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/object/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/object/</guid>
       <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
 创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { //var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, // b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { this.color = color; // color为可选参数 	this.name = &amp;#39;bird&amp;#39;; this.width = &amp;#39;500&amp;#39;; this.</description>
     </item>
     
     <item>
       <title>JavaScript parseFloat</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parsefloat/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parsefloat/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parsefloat/</guid>
       <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
     </item>
     
     <item>
       <title>JavaScript parselnt</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parselnt/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/parselnt/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parselnt/</guid>
       <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
 将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
 当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
@@ -166,30 +166,30 @@ Number 的方法 toString() NumObj.toString(radix)
     
     <item>
       <title>JavaScript return</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/return/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/return/</guid>
       <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
 字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { return +n; // 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
     </item>
     
     <item>
       <title>JavaScript this</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/this/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/</guid>
       <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
 通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
     </item>
     
     <item>
       <title>JavaScript Window 对象</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/window-%E5%AF%B9%E8%B1%A1/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/window-%E5%AF%B9%E8%B1%A1/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/window-%E5%AF%B9%E8%B1%A1/</guid>
       <description>Window 对象 Window 对象表示浏览器中打开的窗口。
 如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
 Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
@@ -199,10 +199,10 @@ clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</d
     
     <item>
       <title>JavaScript XMLHttpRequest</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/xmlhttprequest/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/xmlhttprequest/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/xmlhttprequest/</guid>
       <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
 XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
 状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
@@ -215,10 +215,10 @@ send 用于向服务端发送一个 HTTP 请求。
     
     <item>
       <title>JavaScript 作用域</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
       <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
 每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
 父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
@@ -232,10 +232,10 @@ send 用于向服务端发送一个 HTTP 请求。
     
     <item>
       <title>JavaScript 函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
@@ -245,10 +245,10 @@ function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形�
     
     <item>
       <title>JavaScript 函数的参数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
       <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
 在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
 函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
@@ -259,10 +259,10 @@ function demo(a, b) { // 定义两个形参。 	var f, g = &amp;#39;&amp;#39;; f
     
     <item>
       <title>JavaScript 分支与循环</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
       <description>分支与循环 if 单一的 if 语句 if (条件) { 要执行的语句块; } if else 语句 if (条件) { 要执行的语句块; } else { 要执行的语句块; } 多重 if 语句嵌套 if (条件) { 要执行的语句块; } else if (条件) { 要执行的语句块; } else { 要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
 另外，可以用函数表达式定义函数？
 switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
@@ -271,10 +271,10 @@ n = &amp;#39;老虎&amp;#39;; switch (n) { // 将表达式 n 与下面的 case �
     
     <item>
       <title>JavaScript 包装类</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
       <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
 因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
 Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
@@ -288,19 +288,19 @@ var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new 
     
     <item>
       <title>JavaScript 区分对象与数组</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
       <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = []; var obj = {}; var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
     </item>
     
     <item>
       <title>JavaScript 原型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B/</guid>
       <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
 __proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
 声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
@@ -310,10 +310,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原型链</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
       <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
 几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
 可以使用对象的属性 proto 实现继承。</description>
@@ -321,10 +321,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原始值和引用值</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
       <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
 原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
 Number 数值，用整数或浮点数表示，它允许任意位的小数。
@@ -340,10 +340,10 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
     
     <item>
       <title>JavaScript 变量的声明方式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
       <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
 var var 可以声明局部变量与全局变量。
 使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
@@ -352,10 +352,10 @@ var var 可以声明局部变量与全局变量。
     
     <item>
       <title>JavaScript 命名空间</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
       <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
 简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
 作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy++; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this.</description>
@@ -363,29 +363,29 @@ var var 可以声明局部变量与全局变量。
     
     <item>
       <title>JavaScript 字符串截取</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
       <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
     </item>
     
     <item>
       <title>JavaScript 属性调用</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
       <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
 var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; + num]; console.log(a); return this[&amp;#39;wife&amp;#39; + num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
     </item>
     
     <item>
       <title>JavaScript 开发原则</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
       <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
 平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
 向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
@@ -396,10 +396,10 @@ var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zhe
     
     <item>
       <title>JavaScript 立即执行函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
       <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
 用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
@@ -410,20 +410,20 @@ var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Nu
     
     <item>
       <title>JavaScript 继承方式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
       <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
 Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son.</description>
     </item>
     
     <item>
       <title>JavaScript 节点</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%8A%82%E7%82%B9/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%8A%82%E7%82%B9/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%8A%82%E7%82%B9/</guid>
       <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
 元素节点 指文档中的元素。
 文本节点 指文档中元素所包含着的文本。
@@ -436,20 +436,11 @@ nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为�
     </item>
     
     <item>
-      <title>JavaScript 获取当前时间</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/javascript-%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E6%97%B6%E9%97%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>JavaScript 运算符</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
 ++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
 操作数前置或后置
@@ -473,10 +464,10 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 递归</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
       <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
 缺点：影响程序的效率与性能。
 递归实现阶乘 var n = 5; function OneOne(n) { if (n == 1) { //将当 n 等于 1 时作为结束条件 	return 1; // 返回值为 1 	} return (n = n * OneOne(n - 1)); // 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
@@ -484,20 +475,20 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 链式调用</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
       <description>链式调用 模仿一个 jQuery 链式调用的方式。
 var demo = { a: function () { console.log(123); return this; // 将函数自身返回。 	}, b: function () { console.log(456); return this; // 将函数自身返回。 	}, c: function () { console.log(789); return this; //将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
     </item>
     
     <item>
       <title>JavaScript 闭包</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%97%AD%E5%8C%85/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%97%AD%E5%8C%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%97%AD%E5%8C%85/</guid>
       <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
 生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
 闭包的优缺点 优点 避免全局变量的污染。
@@ -508,10 +499,10 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
     
     <item>
       <title>JavaScript 预编译</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
       <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
 预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
 函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。
@@ -523,30 +514,30 @@ a = 10; // 一个变量未声明就赋值，那么此变量就是 window（全�
     
     <item>
       <title>C break</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/break/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/break/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
       <description>break 用于终止循环或退出 switch.
 不能直接用于 if，除非 if 是循环的一个子句。</description>
     </item>
     
     <item>
       <title>C printf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/printf/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/printf/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
       <description>printf 用于将变量的内容输出到显示器.
 直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
     </item>
     
     <item>
       <title>C scanf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/scanf/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/scanf/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
       <description>scanf 通过键盘将数据输入到变量中。
 将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
 使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
@@ -556,10 +547,10 @@ scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;
     
     <item>
       <title>C 循环控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
       <description>循环控制 某些代码被重复执行。
 for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
 for(1; 2; 3) { A; } 其中 1 只执行一次。
@@ -570,10 +561,10 @@ for(1; 2; 3) { A; } 其中 1 只执行一次。
     
     <item>
       <title>C 自增与自减</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
       <description>自增与自减 前自增**++i**与后自增**i++**.
 异同 相同 最终都会使 i 的值加 1.
 不同 i++ 返回原来的值，
@@ -583,10 +574,10 @@ for(1; 2; 3) { A; } 其中 1 只执行一次。
     
     <item>
       <title>C 运算符</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 三目运算符 a ? b : c
 相当于 if 语句
 if (a) b; else c return 0; 逗号表达式 (a,b,c,d)
@@ -596,10 +587,10 @@ int i; int c = 2; i = (c++, ++c, c + 2, c - 3); // 执行了 c++ 与 ++c 后，c
     
     <item>
       <title>C 选择控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
       <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
 if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
 如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
@@ -609,19 +600,19 @@ if 在程序当中,并不是所有的语句都是自上而下依次的执行，�
     
     <item>
       <title>C 顺序控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
       <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
     </item>
     
     <item>
       <title>C 预备知识</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
       <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
 因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
 CPU 再对内存中的数据进行处理。
@@ -642,10 +633,10 @@ N 进制表示逢 N 进一。
     
     <item>
       <title>Html img 的常见问题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>img 的常见问题 关于无法设置宽高 如果该元素的图像链接失效，则该元素的特性会与行盒一样，无法设置宽高；如果想要图像链接失效后仍具有宽高，可以将该元素设置为块盒或者行块盒。
 关于图像底部的留白 当任何一个元素（例如 div）内包含行盒（例如 img）时，该 img 行盒就会在这个 div 元素的内部创建参考线，即这个 div 元素在没有设置下外边距的情况下，img 元素的基线（下外边距的底部）会与父元素的基线对齐（即留白部分就是 img 元素的下外边距），因此导致图像底部有留白。
 解决方法：
@@ -654,29 +645,29 @@ N 进制表示逢 N 进一。
     
     <item>
       <title>Html 元素语义化</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
       <description>元素语义化 前言 在 HTML 5 中，新增了许多元素，这些不同的元素都有不同的含义，因此语义化指的是用最合理、最恰当的元素来标记网页内容，使得机器也可以知道页面中有哪些元素，比如，文章、标题、或是段落。
 语义化的优点  使文档在没有 CSS 样式的条件下，也能很好地呈现出内容结构。 使文档结构变的清晰，更具可读性，且利于后期的代码维护。 方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备等）。 有利于 SEO。  </description>
     </item>
     
     <item>
       <title>Java 冒泡排序</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
       <description>冒泡排序 public static void main(String[] args) { //定义数组  int[] arr = {6, 4, 8, 2, 9}; System.out.println(&amp;#34;排序前：&amp;#34;); //打印排序前的数组元素  printArray(arr); //数组排序的方法  bubbleSort(arr); System.out.println(&amp;#34;排序后：&amp;#34;); //打印排序后的数组元素  printArray(arr); } //定义打印数组中所有元素的方法  public static void printArray(int[] arr) { for (int i = 0; i &amp;lt; arr.length; i++) { //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;); } System.out.println(&amp;#34;\n&amp;#34;); // 返回后换行  } //定义冒泡排序的方法  public static void bubbleSort(int[] arr) { // arr.length - 1，即 5 - 1 = 4，  // 这里的循环控制的是总共进行 n 轮排序，这里只进行四轮排序  // 为什么只进行四轮，因为通过推算，进行 4 轮排序后就可以得出最终结果。  for (int i = 0; i &amp;lt; arr.</description>
     </item>
     
     <item>
       <title>Java 基础</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java-%E5%9F%BA%E7%A1%80/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/java-%E5%9F%BA%E7%A1%80/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
       <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
 对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
 赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
@@ -690,10 +681,10 @@ private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2
     
     <item>
       <title>Vs Code 配置 Java</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
       <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
   属性
   高级系统设置

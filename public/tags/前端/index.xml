@@ -9,56 +9,49 @@
     <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Echarts 文字样式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
       <description>文字样式 fontSize: 11, color: &amp;#34;#eee&amp;#34;, textShadowColor: &amp;#34;rgba(0, 0, 0, 1)&amp;#34;, textShadowBlur: 10, textShadowOffsetX: 1, textShadowOffsetY: 1, 图形样式 barBorderRadius: 2, shadowColor: &amp;#34;rgba(0, 0 0, 0.3)&amp;#34;, shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1, </description>
     </item>
     
     <item>
       <title>快速使用 Echarts</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
       <description>快速使用 Echarts // 快速使用 Echcarts (function () { // 1. 实例化对象  var myChart = echarts.init(document.querySelector(&amp;#34;&amp;#34;)); // 2.配置  // 3. 把配置给实例对象  myChart.setOption(option); // 4. 让图表跟随屏幕自动的去适应  window.addEventListener(&amp;#34;resize&amp;#34;, function () { myChart.resize(); }); })(); </description>
     </item>
     
     <item>
-      <title>使用 Echarts 时遇到的错误</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <title>Echarts 遇到的错误</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E4%BD%BF%E7%94%A8-echarts-%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
-      <description>使用 Echarts 时遇到的错误 今天使用Echarts绘制地图时，浏览器控制台出现以下错误：
-Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. // 中国地图
-(function () {
-var myChart = echarts.init(document.querySelector(&amp;quot;.Map .Chart&amp;quot;));
-myChart.setOption(option);
-// 监听浏览器缩放，图表对象调用缩放resize函数
-window.addEventListener(&amp;ldquo;resize&amp;rdquo;, function () {
-​ myChart.resize();
-});
-})();</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <description>遇到的错误 今天使用 Echarts 绘制地图时，浏览器控制台出现以下错误：
+Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. 如何解决
+只需要给需要被绘制的元素设置width和height Css 属性即可。</description>
     </item>
     
     <item>
       <title>Echarts 地图</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E5%9C%B0%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</guid>
       <description>地图 常用配置 地图样式 配置**option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
 normal: { //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;, // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;, //区域分界线  borderWidth: 1 }, </description>
     </item>
     
     <item>
       <title>Echarts 折线图</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
       <description>Echarts 折线图 图表类型 在series下配置type.
 type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
 在series下配置markArea
@@ -70,10 +63,10 @@ areaStyle: { color: &amp;#39;green&amp;#39; } </description>
     
     <item>
       <title>Echarts 柱状图</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
       <description>Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
 通过柱状图，可以很清晰的看出每个分类数据的排名情况。
 基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
@@ -85,10 +78,10 @@ yAxis: { type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type.
     
     <item>
       <title>Echarts 通用配置</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>Echarts 通用配置 title 图表的标题。
 标题的样式 在title下配置textStyle、
 textStyle: { color: &amp;#39;#008c8c&amp;#39;, }, 标题的边框 在title下配置：
@@ -107,10 +100,10 @@ dataView: {}, 还原所有配置项 restore: {},数据区域的缩放 dataZoom:
     
     <item>
       <title>Echarts 基本配置</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
       <description>初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
 var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
 var option = {} 标题 title: { text: &amp;#39;运动品牌科技水平&amp;#39;, //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: { // 轴类型为类目轴  type: &amp;#39;category&amp;#39;, // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: { // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
@@ -119,10 +112,10 @@ series: [ { // 表示下面data中的数据表示的是哪一方面的数据，�
     
     <item>
       <title>Echarts 是什么</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>Echarts 是什么 ECharts 是一个使用 JavaScript 实现的开源可视化库，兼容性强，
 底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
 使用 Echarts 的时候，只需要更改配置项即可。</description>
@@ -130,10 +123,10 @@ series: [ { // 表示下面data中的数据表示的是哪一方面的数据，�
     
     <item>
       <title>博客添加搜索功能</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
       <description>博客添加搜索功能 HTML 代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
 &amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; &amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
 CSS 代码 .search { position: relative; height: 30px; text-align: right; line-height: 30px; padding-right: 10px; } .search .search-icon { float: right; height: 100%; margin: 0 10px; line-height: 30px; cursor: pointer; user-select: none; } .search .search-input { float: right; width: 30%; height: 30px; line-height: 30px; margin: 0; border: 2px solid #ddd; border-radius: 10px; box-sizing: border-box; } .</description>
@@ -141,10 +134,10 @@ CSS 代码 .search { position: relative; height: 30px; text-align: right; line-h
     
     <item>
       <title>Css 实现居中</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
       <description>实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
 .conter { width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
 position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
@@ -153,10 +146,10 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
     
     <item>
       <title>Css 盒子类型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</guid>
       <description>盒子类型 行盒   display 属性为 inline 的元素是行盒，也叫行级元素；如 span、strong、button、em、a、img、video、audio。
   文字一定是行盒（文字会产生匿名行盒将其包裹）。
   内部产生参考线：一个元素中包含行盒，通常会给行盒设置 vertical-align:baseline，这会导致两个元素的参考线对齐。
@@ -171,19 +164,19 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
     
     <item>
       <title>Css 高斯模糊</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
       <description>高斯模糊 backdrop-filter: blur(0.5rem); </description>
     </item>
     
     <item>
       <title>Css 字体</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</link>
       <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AD%97%E4%BD%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</guid>
       <description>字体 参考线 当制作文字时，会出现几根参考线。不同的文字类型，参考线位置、距离都不一样，同一种文字类型，参考线一致。
 组成
  text_top ascent，顶线 super，上基线 baseline，基线 sub，下基线 text_bottom descent，底线  决定因素
@@ -203,58 +196,58 @@ bottom：文字底线向下延申的空间。
     
     <item>
       <title>Css 文本溢出处理</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</link>
       <pubDate>Wed, 13 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
       <description>文本溢出处理 实现单行文本的溢出显示省略号可以直接用 text-overflow:ellipsis 属性来实现，当然还需要加宽度width属来兼容部分浏览。
 overflow: hidden; text-overflow: ellipsis; white-space: nowrap; </description>
     </item>
     
     <item>
       <title>Css 媒体查询</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</link>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
       <description>媒体查询 @media screen and (min-width: 720px) { /* 当浏览器宽度大于 value 时所应用的样式 */ } @media screen and (max-width: value) { /* 当浏览器宽度小于 value 时所应用的样式*/ } </description>
     </item>
     
     <item>
       <title>Css 渐变</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</link>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E6%B8%90%E5%8F%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</guid>
       <description>渐变 background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
     </item>
     
     <item>
       <title>Css table 空隙</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</link>
       <pubDate>Mon, 11 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/table-%E7%A9%BA%E9%9A%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</guid>
       <description>table 空隙 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
 border-collapse: collapse; </description>
     </item>
     
     <item>
       <title>Css 修改网页滚动条样式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
       <pubDate>Sun, 10 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
       <description>修改网页滚动条样式 属性描述 /* 整个滚动条*/ ::-webkit-scrollbar { } /* 滚动条两端的按钮 */ ::-webkit-scrollbar-button { } /* 滚动条的滚动轨道 */ ::-webkit-scrollbar-track { } /* 内层轨道 */ ::-webkit-scrollbar-track-piece { } /* 滑块 */ ::-webkit-scrollbar-thumb { } /* 边角 */ ::-webkit-scrollbar-corner { } /* 右下角拖动块的样式 */ ::-webkit-resizer { } 使用 一般我们这样设置这几个主要属性就 OK 了。
 /*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ ::-webkit-scrollbar { width: 10px; background-color: #f5f5f5; } /*定义滚动条轨道：内阴影 + 圆角*/ ::-webkit-scrollbar-track { background-color: #f5f5f5; } /*定义滑块：内阴影 + 圆角*/ ::-webkit-scrollbar-thumb { border-radius: 10px; background-color: #555; } 更多相关属性 :horizontal //水平方向的滚动条 :vertical //垂直 方向的滚动条 :decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) :increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) :start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 :end //类似于start伪类，标识对象是否放到滑块的后面。 :double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 :single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 :no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 :corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 :window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
     </item>
     
     <item>
       <title>Css Body 背景图</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</guid>
       <description>Body 背景图 画布 它是一块区域，也叫视口（可视窗口）。
 它的最小宽度为视口宽度，最小高度为视口高度。
 Html 的背景图 该元素的背景覆盖画布。即给该元素设置背景，相当于设置画布的背景。
@@ -266,20 +259,20 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
     
     <item>
       <title>Css keyframes</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/keyframes/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</guid>
       <description>Css keyframes 持续旋转 选中文档中的元素。
 .map2 { width: 8.0375rem; height: 8.0375rem; background-image: url(../images/lbx.png); opacity: 0.6; animation: rotate 15s linear infinite; z-index: 2; } keyframes @keyframes rotate { /* 从 0° 开始旋转 */ from { transform: translate(-50%, -50%) rotate(0deg); } /* 旋转到 360 ° */ to { transform: translate(-50%, -50%) rotate(360deg); } } </description>
     </item>
     
     <item>
       <title>italic 和 oblique</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/italic-%E5%92%8C-oblique/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/italic-%E5%92%8C-oblique/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</guid>
       <description>italic 和 oblique italic：浏览器会显示一个斜体的字体样式。
 oblique：浏览器会显示一个倾斜的字体样式。
 可以发现关键之处为斜体和倾斜。
@@ -291,10 +284,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 语法</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Fri, 08 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E8%AF%AD%E6%B3%95/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</guid>
       <description>语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
@@ -306,10 +299,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 块格式化上下文</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
       <pubDate>Thu, 07 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
       <description>块格式化上下文 格式化上下文（Block Formatting Context），它是一块 独立的渲染区域，它规定了在该区域中，普通流块盒的布局。
 触发 BFC 的元素  根元素 html，该元素创建的 BFC 覆盖了文档中的所有元素。 浮动元素，float 的值不为 none 的元素。 绝对定位元素，position 的值为 absolute 或 fixed 的元素。 overflow 的值不为 visible 的块盒。 行块盒，display 的值为 inline-block 的元素。 表格单元格，display 的值为 table-cell 的元素，表格单元格默认为该值。 表格标题，display 的值为 table-caption 的元素，表格标题默认为该值。  正常布局流块盒的渲染区域  每个块盒都会参与块格式化上下文的创建。 不同的 BFC，它们进行渲染时互不干扰。 创建 BFC 的元素，隔绝了它内部和外部的联系，内部的渲染不会影响到外部区域。 创建 BFC 的元素，它的所有内容都会被包含在它所创建的 BFC 中  BFC 的作用 解决高度塌陷
 创建 BFC 的元素，它的自动高度会计算浮动元素；若只是为了创建 BFC 一般使用副作用最小的方式：设置块盒的 overflow 的属性值为 hidden。仅仅是为了解决高度坍塌，建议使用伪元素 after。
@@ -319,10 +312,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 盒子模型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Wed, 06 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</guid>
       <description>盒子模型 前言 在 CSS 中，每一个元素都可以看作是一个盒子，这个盒子由以下几个方面组成。目前常用的有两种盒模型，分别是标准盒模型和怪异盒模型。
 一个盒子的组成  内容（content） 内边距（padding） 边框（border） 外边距（margin）  标准盒模型 box-sizing 的值为 content-box 的元素；且浏览器将采用标准模式解析。
 盒子总宽度 = width + padding（左右）+ border（左右）+ margin（左右）。
@@ -334,10 +327,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 层叠上下文</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
       <pubDate>Tue, 05 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
       <description>层叠上下文 它是一块区域，它由某个元素创建，它规定了该区域中的内容在 Z 轴上排列的先后顺序。
 它是一种 三维概念。所有的 HTML 元素都根据其元素的属性按照优先级顺序占据这个空间。
 规则 只有定位元素设置 z-index 有效。
@@ -352,10 +345,10 @@ z-index 的值，该值越大，则越靠近用户。
     
     <item>
       <title>Css 层叠</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</link>
       <pubDate>Mon, 04 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B1%82%E5%8F%A0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</guid>
       <description>层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。
 确定声明值 找出样式表中没有冲突的声明，并应用到 CSS 属性，样式声明不冲突则不会发生层叠。
 层叠 对样式表中有冲突（同一个元素在样式表中设置了多个相同的属性）的声明使用层叠规则。
@@ -376,10 +369,10 @@ CSS 样式书写靠后的属性最终会应用到元素。
     
     <item>
       <title>Css 布局</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B8%83%E5%B1%80/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%B8%83%E5%B1%80/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</guid>
       <description>布局 正常流布局  默认情况下，所有元素都属于正常流。 块盒独占一行。 行盒水平依次排列。 包含块：每个盒子都有它的包含块，包含块决定了该盒子的排列范围。 在正常布局流中，元素的包含块，都是该元素父元素的内容盒。  常见问题 Margin 合并
 多个同级且相邻的正常布局流块盒，当它们的上下外边距相邻，会合并为一个外边距，两个外边距值都是正数，则取较大值；两个值都是负数，则取较大值；一正一负则取两个值的和，该情况抗可以触发 BFC 解决。
 Margin 塌陷
@@ -399,10 +392,10 @@ Margin 塌陷
     
     <item>
       <title>Html img 的常见问题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
       <description>img 的常见问题 关于无法设置宽高 如果该元素的图像链接失效，则该元素的特性会与行盒一样，无法设置宽高；如果想要图像链接失效后仍具有宽高，可以将该元素设置为块盒或者行块盒。
 关于图像底部的留白 当任何一个元素（例如 div）内包含行盒（例如 img）时，该 img 行盒就会在这个 div 元素的内部创建参考线，即这个 div 元素在没有设置下外边距的情况下，img 元素的基线（下外边距的底部）会与父元素的基线对齐（即留白部分就是 img 元素的下外边距），因此导致图像底部有留白。
 解决方法：
@@ -411,10 +404,10 @@ Margin 塌陷
     
     <item>
       <title>Html 元素语义化</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
       <description>元素语义化 前言 在 HTML 5 中，新增了许多元素，这些不同的元素都有不同的含义，因此语义化指的是用最合理、最恰当的元素来标记网页内容，使得机器也可以知道页面中有哪些元素，比如，文章、标题、或是段落。
 语义化的优点  使文档在没有 CSS 样式的条件下，也能很好地呈现出内容结构。 使文档结构变的清晰，更具可读性，且利于后期的代码维护。 方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备等）。 有利于 SEO。  </description>
     </item>

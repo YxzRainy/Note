@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 属性调用",
+	    "headline" : "JavaScript 属性调用",
+	    "description" : "属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[\u0026ldquo;arr\u0026rdquo;]，因为前者调用更加灵活且简洁。\nvar demo = { wife1: { name: \u0026#39;lei\u0026#39; }, wife2: { name: \u0026#39;zheng\u0026#39; }, wife3: { name: \u0026#39;xing\u0026#39; }, wife4: { name: \u0026#39;zhu\u0026#39; }, fun: function (num) { var a = [\u0026#39;wife\u0026#39; \u002b num]; console.log(a); return this[\u0026#39;wife\u0026#39; \u002b num]; \/\/ 看不太懂 \t}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/js\/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8\/",
+	    "keywords" : [ "学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript 属性调用</title>
+    <meta property="og:title" content="JavaScript 属性调用" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
+var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; &#43; num]; console.log(a); return this[&amp;#39;wife&amp;#39; &#43; num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); " />
+    <meta name="description" content="属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
+var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; &#43; num]; console.log(a); return this[&amp;#39;wife&amp;#39; &#43; num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 属性调用</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="属性调用">属性调用</h1>
+<p>通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&ldquo;arr&rdquo;]，因为前者调用更加灵活且简洁。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#000">wife1</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;lei&#39;</span> <span style="color:#000;font-weight:bold">},</span>
+	<span style="color:#000">wife2</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;zheng&#39;</span> <span style="color:#000;font-weight:bold">},</span>
+	<span style="color:#000">wife3</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;xing&#39;</span> <span style="color:#000;font-weight:bold">},</span>
+	<span style="color:#000">wife4</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;zhu&#39;</span> <span style="color:#000;font-weight:bold">},</span>
+	<span style="color:#000">fun</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">num</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;wife&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#000;font-weight:bold">];</span>
+		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+		<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;wife&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#000;font-weight:bold">];</span>
+		<span style="color:#8f5902;font-style:italic">// 看不太懂
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">},</span>
+<span style="color:#000;font-weight:bold">};</span>
+
+<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">);</span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

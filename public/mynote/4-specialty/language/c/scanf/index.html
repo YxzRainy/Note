@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C scanf",
+	    "headline" : "C scanf",
+	    "description" : "scanf 通过键盘将数据输入到变量中。\n将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。\n使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。\nscanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。\nscanf(\u0026ldquo;输入控制符\u0026rdquo;,输入参数) int i; scanf(\u0026#34;%d\u0026#34;,\u0026amp;i);\/\/i\u0026amp; 表示变量 i 的地址，\u0026amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(\u0026#34;%d\\n\u0026#34;,i); scanf(\u0026ldquo;非输入控制符 输入控制符\u0026rdquo;,输入参数) int i; scanf(\u0026#34;z%d\u0026#34;,\u0026amp;i);\/\/非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(\u0026#34;i = %d\\n\u0026#34;,i); ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/scanf\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C scanf</title>
+    <meta property="og:title" content="C scanf" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); " />
+    <meta name="description" content="scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C scanf</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
+                        2021-10-03
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="scanf">scanf</h1>
+<p>通过键盘将数据输入到变量中。</p>
+<p>将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。</p>
+<p>使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。</p>
+<p>scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。</p>
+<h4 id="scanf输入控制符输入参数">scanf(&ldquo;输入控制符&rdquo;,输入参数)</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//i&amp; 表示变量 i 的地址，&amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span>
+</code></pre></div><h4 id="scanf非输入控制符-输入控制符输入参数">scanf(&ldquo;非输入控制符 输入控制符&rdquo;,输入参数)</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;z%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;i = %d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E8%B7%AF%E7%94%B1/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E8%B7%AF%E7%94%B1/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Cisco 路由",
+	    "headline" : "Cisco 路由",
+	    "description" : "路由 ipv6 unicast-routing 全局开启 IPV6 路由功能\nshow ip route static 显示该路由器路由表中的静态路由\n其他概念 PC 的默认网关必须和路由器对应接口（比如g0\/0和g0\/1）的ip地址相同。\n路由表中没有目标ip，要么丢弃ip，要么发给默认网关\n直连网络 指的是与当前路由器直接相链接的网络。\n远程网络 对于一个路由器来说，除了直连网络之外的网络都是远程网络。\n主机位和网络位 一个 IP 地址的网络位是该地址的前三位。\n一个 IP 地址的主机位是该地址的第四位。\n当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址\n当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址\n下一跳路由 仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由\n直连静态路由 仅指定当前路由器的送出接口的端口号\n默认静态路由 指定下一跳 IP 地址或当前路由器送出接口\nip route 0.0.0.0 0.0.0.0 192.168.1.2 ip route 0.0.0.0 0.0.0.0 s0\/0\/0\r完全指定静态路由 指定下一跳 IP 地址和当前路由器送出接口，\nip route 0.0.0.0 0.0.0.0 192.168.1.2 s0\/0\/1\r末节路由 指的是只有一个与之相连的路由器，",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-12-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-12-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/cisco\/%E8%B7%AF%E7%94%B1\/",
+	    "keywords" : [ "网络","Cisco","学习笔记", ]
+	}
+</script><title>Cisco 路由</title>
+    <meta property="og:title" content="Cisco 路由" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="路由 ipv6 unicast-routing 全局开启 IPV6 路由功能
+show ip route static 显示该路由器路由表中的静态路由
+其他概念 PC 的默认网关必须和路由器对应接口（比如g0/0和g0/1）的ip地址相同。
+路由表中没有目标ip，要么丢弃ip，要么发给默认网关
+直连网络 指的是与当前路由器直接相链接的网络。
+远程网络 对于一个路由器来说，除了直连网络之外的网络都是远程网络。
+主机位和网络位 一个 IP 地址的网络位是该地址的前三位。
+一个 IP 地址的主机位是该地址的第四位。
+当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址
+当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址
+下一跳路由 仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由
+直连静态路由 仅指定当前路由器的送出接口的端口号
+默认静态路由 指定下一跳 IP 地址或当前路由器送出接口
+ip route 0.0.0.0 0.0.0.0 192.168.1.2 ip route 0.0.0.0 0.0.0.0 s0/0/0完全指定静态路由 指定下一跳 IP 地址和当前路由器送出接口，
+ip route 0.0.0.0 0.0.0.0 192.168.1.2 s0/0/1末节路由 指的是只有一个与之相连的路由器，" />
+    <meta name="description" content="路由 ipv6 unicast-routing 全局开启 IPV6 路由功能
+show ip route static 显示该路由器路由表中的静态路由
+其他概念 PC 的默认网关必须和路由器对应接口（比如g0/0和g0/1）的ip地址相同。
+路由表中没有目标ip，要么丢弃ip，要么发给默认网关
+直连网络 指的是与当前路由器直接相链接的网络。
+远程网络 对于一个路由器来说，除了直连网络之外的网络都是远程网络。
+主机位和网络位 一个 IP 地址的网络位是该地址的前三位。
+一个 IP 地址的主机位是该地址的第四位。
+当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址
+当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址
+下一跳路由 仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由
+直连静态路由 仅指定当前路由器的送出接口的端口号
+默认静态路由 指定下一跳 IP 地址或当前路由器送出接口
+ip route 0.0.0.0 0.0.0.0 192.168.1.2 ip route 0.0.0.0 0.0.0.0 s0/0/0完全指定静态路由 指定下一跳 IP 地址和当前路由器送出接口，
+ip route 0.0.0.0 0.0.0.0 192.168.1.2 s0/0/1末节路由 指的是只有一个与之相连的路由器，" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Cisco 路由</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-12-02 06:00:00 UTC">
+                        2021-12-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="路由">路由</h1>
+<h2 id="ipv6-unicast-routing">ipv6 unicast-routing</h2>
+<p>全局开启 IPV6 路由功能</p>
+<h2 id="show-ip-route-static">show ip route static</h2>
+<p>显示该路由器路由表中的静态路由</p>
+<h2 id="其他概念">其他概念</h2>
+<p>PC 的默认网关必须和路由器对应接口（比如g0/0和g0/1）的ip地址相同。</p>
+<p>路由表中没有目标ip，要么丢弃ip，要么发给默认网关</p>
+<h2 id="直连网络">直连网络</h2>
+<p>指的是与当前路由器直接相链接的网络。</p>
+<h2 id="远程网络">远程网络</h2>
+<p>对于一个路由器来说，除了直连网络之外的网络都是远程网络。</p>
+<h2 id="主机位和网络位">主机位和网络位</h2>
+<p>一个 IP 地址的网络位是该地址的前三位。</p>
+<p>一个 IP 地址的主机位是该地址的第四位。</p>
+<p>当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址</p>
+<p>当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址</p>
+<h2 id="下一跳路由">下一跳路由</h2>
+<p>仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由</p>
+<h2 id="直连静态路由">直连静态路由</h2>
+<p>仅指定当前路由器的送出接口的端口号</p>
+<h2 id="默认静态路由">默认静态路由</h2>
+<p>指定下一跳 IP 地址或当前路由器送出接口</p>
+<pre tabindex="0"><code>ip route 0.0.0.0 0.0.0.0 192.168.1.2 
+ip route 0.0.0.0 0.0.0.0 s0/0/0
+</code></pre><h2 id="完全指定静态路由">完全指定静态路由</h2>
+<p>指定下一跳 IP 地址和当前路由器送出接口，</p>
+<pre tabindex="0"><code>ip route 0.0.0.0 0.0.0.0 192.168.1.2 s0/0/1
+</code></pre><h2 id="末节路由">末节路由</h2>
+<p>指的是只有一个与之相连的路由器，</p>
+<p>对于一个末节路由器来说，它的默认静态路由的送出端口和下一跳的接口的 IP 地址是固定不变的。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco/">
+                    Cisco
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ipv6-unicast-routing">ipv6 unicast-routing</a></li>
+    <li><a href="#show-ip-route-static">show ip route static</a></li>
+    <li><a href="#其他概念">其他概念</a></li>
+    <li><a href="#直连网络">直连网络</a></li>
+    <li><a href="#远程网络">远程网络</a></li>
+    <li><a href="#主机位和网络位">主机位和网络位</a></li>
+    <li><a href="#下一跳路由">下一跳路由</a></li>
+    <li><a href="#直连静态路由">直连静态路由</a></li>
+    <li><a href="#默认静态路由">默认静态路由</a></li>
+    <li><a href="#完全指定静态路由">完全指定静态路由</a></li>
+    <li><a href="#末节路由">末节路由</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

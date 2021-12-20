@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 16 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css 实现居中</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/</guid>
       <description>实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
 .conter { width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
 position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
@@ -21,10 +21,10 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
     
     <item>
       <title>Css 盒子类型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E7%B1%BB%E5%9E%8B/</guid>
       <description>盒子类型 行盒   display 属性为 inline 的元素是行盒，也叫行级元素；如 span、strong、button、em、a、img、video、audio。
   文字一定是行盒（文字会产生匿名行盒将其包裹）。
   内部产生参考线：一个元素中包含行盒，通常会给行盒设置 vertical-align:baseline，这会导致两个元素的参考线对齐。
@@ -39,10 +39,10 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
     
     <item>
       <title>Css 高斯模糊</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%AF%AD%E8%A8%80/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%AB%98%E6%96%AF%E6%A8%A1%E7%B3%8A/</guid>
       <description>高斯模糊 backdrop-filter: blur(0.5rem); </description>
     </item>
     

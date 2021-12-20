@@ -8,25 +8,11 @@
     <language>zh-cn</language>
     <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cisco SSH 取代 Telnet</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E6%80%9D%E7%A7%91/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>ssh 取代 telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
-输入密码并登录。
-保护密码
-进入特权模式，保存
-加密密码 在全局模式下：
-Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa</description>
-    </item>
-    
-    <item>
       <title>SHH 密钥登录</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
       <description>SHH 密钥登录 用 xshell 生成密钥 新建用户密钥生成向导
 输入密钥长度，比如 2024，下一步
 输入密钥名称、密码，下一步
@@ -41,10 +27,10 @@ AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     
     <item>
       <title>WinSCP  SSH 密钥登录</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
       <description>WinSCP SSH 密钥登录 WinSCP -&amp;gt; 高级 -&amp;gt; SSH -&amp;gt; 验证 -&amp;gt; 密钥文件</description>
     </item>
     

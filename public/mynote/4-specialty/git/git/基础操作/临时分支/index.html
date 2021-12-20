@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Git 临时分支",
+	    "headline" : "Git 临时分支",
+	    "description" : "临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？\n这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。\n暂存当前的工作进度 git stash\r我们当前处于dev分支上，在这个分支上暂存工作进度\n创建临时分支 git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。\n合并到主分支 git switch master\rgit merge --no-ff -m \u0026quot;merged bug fix 101\u0026quot; issue-101\r切换回主分支master，再将临时分支合并到主分支，合并完成后你可以删除临时分支。\n恢复工作进度 git switch dev git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。\n另一种恢复 git cherry-pick 4c805e2\r也可以使用git cherry-pick命令恢复到指定的commitHash提交到当前分支，这样就可以避免多余的操作了。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF\/",
+	    "keywords" : [ "Git","Github","学习笔记", ]
+	}
+</script><title>Git 临时分支</title>
+    <meta property="og:title" content="Git 临时分支" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？
+这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。
+暂存当前的工作进度 git stash我们当前处于dev分支上，在这个分支上暂存工作进度
+创建临时分支 git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。
+合并到主分支 git switch mastergit merge --no-ff -m &amp;quot;merged bug fix 101&amp;quot; issue-101切换回主分支master，再将临时分支合并到主分支，合并完成后你可以删除临时分支。
+恢复工作进度 git switch dev git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。
+另一种恢复 git cherry-pick 4c805e2也可以使用git cherry-pick命令恢复到指定的commitHash提交到当前分支，这样就可以避免多余的操作了。" />
+    <meta name="description" content="临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？
+这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。
+暂存当前的工作进度 git stash我们当前处于dev分支上，在这个分支上暂存工作进度
+创建临时分支 git checkout -b bug18 创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行commit。
+合并到主分支 git switch mastergit merge --no-ff -m &amp;quot;merged bug fix 101&amp;quot; issue-101切换回主分支master，再将临时分支合并到主分支，合并完成后你可以删除临时分支。
+恢复工作进度 git switch dev git stash pop 切换到 dev 分支，通常用git stash pop命令之前的恢复工作进度。
+另一种恢复 git cherry-pick 4c805e2也可以使用git cherry-pick命令恢复到指定的commitHash提交到当前分支，这样就可以避免多余的操作了。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git 临时分支</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="临时分支">临时分支</h1>
+<p>在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？</p>
+<p>这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。</p>
+<h2 id="暂存当前的工作进度">暂存当前的工作进度</h2>
+<pre tabindex="0"><code>git stash
+</code></pre><p>我们当前处于<strong>dev</strong>分支上，在这个分支上暂存工作进度</p>
+<h2 id="创建临时分支">创建临时分支</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git checkout -b bug18
+</code></pre></div><p>创建一个临时分支，然后我们在这个分支上修复 bug 或开发新功能，完成后进行<strong>commit</strong>。</p>
+<h2 id="合并到主分支">合并到主分支</h2>
+<pre tabindex="0"><code class="language-、" data-lang="、">git switch master
+git merge --no-ff -m &quot;merged bug fix 101&quot; issue-101
+</code></pre><p>切换回主分支<strong>master</strong>，再将临时分支合并到主分支，合并完成后你可以删除临时分支。</p>
+<h2 id="恢复工作进度">恢复工作进度</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git switch dev
+git stash pop
+</code></pre></div><p>切换到 dev 分支，通常用<code>git stash pop</code>命令之前的恢复工作进度。</p>
+<h3 id="另一种恢复">另一种恢复</h3>
+<pre tabindex="0"><code>git cherry-pick 4c805e2
+</code></pre><p>也可以使用<code>git cherry-pick</code>命令恢复到指定的<strong>commitHash</strong>提交到当前分支，这样就可以避免多余的操作了。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#暂存当前的工作进度">暂存当前的工作进度</a></li>
+    <li><a href="#创建临时分支">创建临时分支</a></li>
+    <li><a href="#合并到主分支">合并到主分支</a></li>
+    <li><a href="#恢复工作进度">恢复工作进度</a>
+      <ul>
+        <li><a href="#另一种恢复">另一种恢复</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

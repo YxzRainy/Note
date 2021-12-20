@@ -9,20 +9,20 @@
     <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 命令</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/hugo/%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%91%BD%E4%BB%A4/</guid>
       <description>Hugo 命令 hugo new site MyBlog 创建一个新的站点文件夹
 hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</description>
     </item>
     
     <item>
       <title>Git git add</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</guid>
       <description>git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
 git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
 git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
@@ -31,10 +31,10 @@ git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要�
     
     <item>
       <title>Git git add</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</guid>
       <description>git branch 一般用于对分支的操作，比如创建分支，查看分支等等，
 git branch 不带参数：列出本地已经存在的分支，并且在当前分支的前面用*****标记
 一个新的本地仓库，必须在git add且git commit之后，再使用git branch命令，才能显示出本地分支master。
@@ -45,10 +45,10 @@ git branch &amp;ndash;set-upstream-to=origin/dev LocalDev 将名为LocalDev的�
     
     <item>
       <title>Git git checkout</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</guid>
       <description>git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
 $ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
 git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
@@ -59,10 +59,10 @@ git branch BranchName git checkout BranchName git checkout -b LocalBranch origin
     
     <item>
       <title>Git git cherry-pick</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</guid>
       <description>git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。
 git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。</description>
@@ -70,20 +70,20 @@ git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这�
     
     <item>
       <title>Git git clone</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</guid>
       <description>git clone 拷贝一个远程库到本地，让自己能够查看该项目，或者进行修改。
 git clone RemoteAddress 克一个RemoteAddress到本地。</description>
     </item>
     
     <item>
       <title>Git git commit</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
       <description>git commit 将暂存区中的内容添加到本地仓库，相当于确认提交暂存区中的内容。
 每次使用git commit命令我们都会在本地版本库生成一个 40 位的哈希值，这个哈希值也叫 commit-id， commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过与git reset的组合命令回到这里.
 git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。
@@ -94,39 +94,39 @@ git commit -m &amp;#34;first commit&amp;#34; </description>
     
     <item>
       <title>Git git config alias</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
       <description>git config alias git config alias.ShorthandName OriginalName 将git OriginalName命令修改（通常为简写）为git ShorthandName，且只对当前 Git 仓库有效，配置文件在当前仓库的**.git/config**中。
 git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在 C 盘用户目录下的一个**.gitconfig**文件中。</description>
     </item>
     
     <item>
       <title>Git git config user</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</guid>
       <description>git config user git config user.name &amp;ldquo;UserName&amp;rdquo; git config user.email &amp;ldquo;Email&amp;rdquo; 对当前仓库设置名为UserName的用户名和名为Email的邮箱。
 git config &amp;ndash;global user.name &amp;ldquo;UserName&amp;rdquo; git config &amp;ndash;global user.email &amp;ldquo;Email&amp;rdquo; git config命令的–global参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对不同的仓库指定不同的用户名和 Email 地址。</description>
     </item>
     
     <item>
       <title>Git git diff</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</guid>
       <description>git diff git diff 比较暂存区与工作区中文件之间的差异，可以让我们知道这些文件具体修改了些什么。</description>
     </item>
     
     <item>
       <title>Git git log</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
       <description>git log 可以让我们查看从最近到最远所有的历史提交日志，每条日志中有对应的版本号，这个版本号可以让我们回退到指定版本号的那个版本。
 git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b 向上翻页 q 退出
 git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。</description>
@@ -134,10 +134,10 @@ git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。<
     
     <item>
       <title>Git git merge</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</guid>
       <description>git merge 用于合并指定分支到当前分支
 git merge BranchName 将名为 BranchName 的分支合并到当前分支。
 git merge &amp;ndash;no-ff -m &amp;ldquo;merge with no-ff&amp;rdquo; BranchName 合并名为 BranchName 的分支到当前分支，并创建一个新的 commit，所以加上-m参数，将 commit 的描述写进去。</description>
@@ -145,10 +145,10 @@ git merge &amp;ndash;no-ff -m &amp;ldquo;merge with no-ff&amp;rdquo; BranchName 
     
     <item>
       <title>Git git pull</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</guid>
       <description>git pull 用于从远程获取代码并合并本地。
 git pull origin master:dev 将远程仓库origin的master分支拉取过来，与本地的dev分支合并。
 git pull origin master 如果远程分支是与当前分支合并，则冒号后面的部分可以省略。
@@ -157,10 +157,10 @@ git pull origin master 如果远程分支是与当前分支合并，则冒号后
     
     <item>
       <title>Git git push</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</guid>
       <description>git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
 git push的一般形式为git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt; &amp;lt;远程分支名&amp;gt;，例如git push origin master：refs/for/master，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
 git push origin master 将本地master分支内容推送到远程库origin的master分支上，这里的master表示是远程服务器上的master分支和本地分支重名后的简写。
@@ -173,10 +173,10 @@ git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签
     
     <item>
       <title>Git git rebase</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
       <description>git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase**目录中)，然后将**BranchName**分支上的**commit**更新到**master**分支上，最后把保存的这些补丁应用到更新后的**master**分支上。
@@ -187,29 +187,29 @@ git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃�
     
     <item>
       <title>Git git reflog</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</guid>
       <description>git reflog 可以查看所有分支的所有操作记录（包括已经被删除的git commit记录和git reset的操作）</description>
     </item>
     
     <item>
       <title>Git git remote</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</guid>
       <description>git remote git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 将一个已有的本地仓库与远程库相关联。
 git remote -v 查看远程库信息</description>
     </item>
     
     <item>
       <title>Git git reset</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</guid>
       <description>git reset 用于回退版本。
 git reset &amp;ndash;hard VersionNumber 可以指定回退到某一次提交后的版本号上，VersionNumber 为commit id
 git reset HEAD FileNmae 将 FileName 在暂存区的修改回退到工作区，即把 FileNmae 在暂存区中删除。这里的 HEAD 表示 FileNmae 最新的版本。
@@ -218,20 +218,20 @@ git reset &amp;ndash;hard HEAD^ 在 Git 中，用HEAD表示当前版本，上一
     
     <item>
       <title>Git git show</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</guid>
       <description>git show 查看最新的 commit 提交。
 git show TagName 查看标签名为TagName的 commit 提交。</description>
     </item>
     
     <item>
       <title>Git git stash</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</guid>
       <description>git stash 将当前工作区的文件先暂存起来，等 bug 修改完成后，再将暂存的工作区文件内容拿出来继续工作。
 git stash apply 恢复后，stash内容并不删除，你需要用git stash drop来删除；
 git stash pop 恢复的同时把stash内容也删了。
@@ -240,10 +240,10 @@ git stash list 查看将前被暂存的工作区。</description>
     
     <item>
       <title>Git git switch</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</guid>
       <description>git switch 用于切换分支。与git checkout命令的区别在于，使用新的git switch命令，比git checkout要更容易理解。
 git switch -c Dev 创建并切换到新的Dev分支。
 git switch Dev 直接切换到名为Dev的分支。</description>
@@ -251,10 +251,10 @@ git switch Dev 直接切换到名为Dev的分支。</description>
     
     <item>
       <title>Git git tag</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</guid>
       <description>git tag 用于查看本地仓库的所有标签。tag 是 git 版本库的一个标记，指向某个 commit 提交的指针，它比commit id方便我们记忆。
 git tag TagName 给当前分支上的HEAD打上名为TagName的标签。
 git tag TagName CommitId 给 commit id 为CommitId的提交打上名为TagName的标签。
@@ -264,10 +264,10 @@ git tag -d TagName 删除名为TagName的本地标签。</description>
     
     <item>
       <title>Git git status</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</link>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</guid>
       <description>git status 查看当前 git 的状态，即查看工作区代码相对于暂存区的差别。比如哪些文件还在工作区（还没git add）、哪些文件还在暂存区（还没git commit）等等，及时了解当前的 git 状态可以避免一些误操作。
 但git status并不能让我们知道这些文件具体修改了什么内容。</description>
     </item>

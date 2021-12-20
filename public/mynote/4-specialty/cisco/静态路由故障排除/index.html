@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Cisco 静态路由故障排除",
+	    "headline" : "Cisco 静态路由故障排除",
+	    "description" : "配置 R2 进入全局模式\nenable\rconfigure terminal\r故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198\rip route 172.31.1.0 255.255.255.128 172.31.1.194\r故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194\rip route 172.31.1.128 255.255.255.192 172.31.1.198\r配置R3 进入全局模式\nenable\rconfigure terminal\r故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197\r",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-12-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-12-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/cisco\/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4\/",
+	    "keywords" : [ "网络","Cisco","学习笔记","Cisco 实验", ]
+	}
+</script><title>Cisco 静态路由故障排除</title>
+    <meta property="og:title" content="Cisco 静态路由故障排除" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="配置 R2 进入全局模式
+enableconfigure terminal故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198ip route 172.31.1.0 255.255.255.128 172.31.1.194故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194ip route 172.31.1.128 255.255.255.192 172.31.1.198配置R3 进入全局模式
+enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197" />
+    <meta name="description" content="配置 R2 进入全局模式
+enableconfigure terminal故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198ip route 172.31.1.0 255.255.255.128 172.31.1.194故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194ip route 172.31.1.128 255.255.255.192 172.31.1.198配置R3 进入全局模式
+enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Cisco 静态路由故障排除</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-12-02 06:00:00 UTC">
+                        2021-12-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h2 id="配置-r2">配置 R2</h2>
+<p>进入全局模式</p>
+<pre tabindex="0"><code>enable
+configure terminal
+</code></pre><h3 id="故障一">故障一</h3>
+<pre tabindex="0"><code>no ip route 172.31.1.0 255.255.255.128 172.31.1.198
+ip route 172.31.1.0 255.255.255.128 172.31.1.194
+</code></pre><h3 id="故障二">故障二</h3>
+<pre tabindex="0"><code>no ip route 172.31.1.128 255.255.255.192 172.31.1.194
+ip route 172.31.1.128 255.255.255.192 172.31.1.198
+</code></pre><h2 id="配置r3">配置R3</h2>
+<p>进入全局模式</p>
+<pre tabindex="0"><code>enable
+configure terminal
+</code></pre><h3 id="故障三">故障三</h3>
+<pre tabindex="0"><code>ip route 172.31.1.0 255.255.255.128 172.31.1.197
+</code></pre>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco/">
+                    Cisco
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/">
+                    Cisco 实验
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#配置-r2">配置 R2</a>
+      <ul>
+        <li><a href="#故障一">故障一</a></li>
+        <li><a href="#故障二">故障二</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置r3">配置R3</a>
+      <ul>
+        <li><a href="#故障三">故障三</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

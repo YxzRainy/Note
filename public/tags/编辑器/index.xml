@@ -9,19 +9,19 @@
     <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E7%BC%96%E8%BE%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vs Code 使用 Git</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</guid>
       <description>Vs Code 使用 Git 注意本地密钥是否和远程的密钥一样。</description>
     </item>
     
     <item>
       <title>Vs Code 插件</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-%E4%B8%93%E4%B8%9A/%E8%BD%AF%E4%BB%B6/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</guid>
       <description>Vs Code 插件 Bracket Pair Colorizer 给匹配的括号着色
 Path Intellisense 自动完成文件名
 Material Icon Theme 好看的文件图标

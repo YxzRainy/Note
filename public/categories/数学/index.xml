@@ -9,20 +9,20 @@
     <lastBuildDate>Thu, 21 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一次函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
       <description>一次函数 解析式 $ y = kx + b$（$k$ 与 $b$ 为常数 $k \neq 0$），当 $b$ 等于 $0$ 时，这个函数为正比例函数。
 图像  一次函数的图像都是一条直线，因此只需要两点就可以画出。 $ y = kx + b$ 的图像可以由 $y = kx$ 向上或向下平移 |b| 个单位得到，当 $b$ 大于 0 则向上；小于 0 则向下。  与方程、不等式的关系  因为任何一个一元一次方程都可以变为 $ax + b = 0$ 的形式，所以解这个一元一次方程，相当于求与这个一元一次方程对应的 $y = ax + b$ 的函数值为 $0$ 时，自变量 $x$ 的值；例如： $3x + 5 = 6 =&amp;gt; 3x + 5 - 6$。 每个一含有 $x$ 和 $y$ 的二元一次方程都对应一个一次函数，同样也对应一条在坐标系中的直线，因此这条线上的每一个点（$x$，$y$）都是这个二元一次方程的解。 二元一次方程组则对应两个一次函数，同时也对应两条在坐标系中的直线，因此解这个二元一次方程组，相当于找出这两条直线在坐标系中的交点的坐标。  </description>
     </item>
     
     <item>
       <title>二次函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E4%BA%8C%E6%AC%A1%E5%87%BD%E6%95%B0/</guid>
       <description>二次函数 解析式 一般式：$y = ax^2 + bx + c$
 顶点式：$y = a(x - h)^2 + k$
 从 $y = ax^2$ 的图像可以看出  当 $a &amp;gt; 0$ 时，开口向上；当 $a &amp;lt; 0$ 时，开口向下，$|a|$越大，则图像的开口越小。 如果 $a &amp;gt; 0$ ，当 $x &amp;lt; 0$ 时，$y$ 随 $x$ 的增大而减小，当 $x &amp;gt; 0$ 时，$y$ 随 $x$ 的增大而增大；如果 $a &amp;lt; 0$ 时，当 $x &amp;gt; 0$ 时，$y$ 随 $x$ 的增大而减小。  从 $y = ax^2 + k$ 的图像可以看出 当 $k &amp;gt; 0$ 时，图像向上平移 $k$ 个单位；当 $k &amp;lt; 0$，图像则向下平移 $|k|$ 个单位长度。</description>
@@ -30,10 +30,10 @@
     
     <item>
       <title>反比例函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E5%8F%8D%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
       <description>反比例函数 解析式 $y = \frac{k}{x}$
 图像 当 $k$ &amp;gt; 0，时，图像位于一、三象限，且 $y$ 随 $x$ 增大而减小。
 当 $k$ &amp;lt; 0，时，图像位于二、四象限，且 $y$ 随 $x$ 增大而增大。</description>
@@ -41,10 +41,10 @@
     
     <item>
       <title>正比例函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-%E5%AD%A6%E5%BA%9F/%E6%95%B0%E5%AD%A6/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/mathematics/%E4%B8%80%E6%AC%A1%E5%87%BD%E6%95%B0/%E6%AD%A3%E6%AF%94%E4%BE%8B%E5%87%BD%E6%95%B0/</guid>
       <description>正比例函数 解析式 $y = kx$（$k$ 为常数，$k$ ≠ $0$），其中 $k$ 叫做比例系数。</description>
     </item>
     

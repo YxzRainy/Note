@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C printf",
+	    "headline" : "C printf",
+	    "description" : "printf 用于将变量的内容输出到显示器.\n直接输出 printf(\u0026#34;字符串\u0026#34;); print(\u0026ldquo;输出控制符\u0026rdquo;,参数) int i = 10;\/\/将数值 10 的二进制代码储存到变量 i 中 。 printf(\u0026#34;%o\u0026#34;, a);\/\/将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(\u0026ldquo;输出控制符 1 输出控制符 2\u0026rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(\u0026#34;%d %d\\n\u0026#34;, a, i);\/\/控制符和参数必须一一对应。 printf(\u0026ldquo;输出控制符 非输出控制符\u0026rdquo;,参数) int a = 10;\/\/将数值 10 的二进制代码储存到变量 i 中 。 printf(\u0026#34;%o\\n\u0026#34;,a);\/\/将变量 i（数值 10 的二进制代码以八进制输出；\\n 为非输出控制符。 ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/printf\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C printf</title>
+    <meta property="og:title" content="C printf" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="printf 用于将变量的内容输出到显示器.
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 " />
+    <meta name="description" content="printf 用于将变量的内容输出到显示器.
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C printf</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-03 06:00:00 UTC">
+                        2021-10-03
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="printf">printf</h1>
+<p>用于将变量的内容输出到显示器.</p>
+<h4 id="直接输出">直接输出</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;字符串&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</code></pre></div><h4 id="print输出控制符参数">print(&ldquo;输出控制符&rdquo;,参数)</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span><span style="color:#8f5902;font-style:italic">//将数值 10 的二进制代码储存到变量 i 中 。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%o&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。
+</span></code></pre></div><h4 id="printf输出控制符-1-输出控制符-2参数-1参数-2">printf(&ldquo;输出控制符 1 输出控制符 2&rdquo;,参数 1,参数 2)</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+ <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">;</span>
+ <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d %d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//控制符和参数必须一一对应。
+</span></code></pre></div><h4 id="printf输出控制符-非输出控制符参数">printf(&ldquo;输出控制符 非输出控制符&rdquo;,参数)</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span><span style="color:#8f5902;font-style:italic">//将数值 10 的二进制代码储存到变量 i 中 。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%o</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。
+</span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>
