@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Java 卖票问题",
+	    "headline" : "Java 卖票问题",
+	    "description" : "卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(\u0026#34;222\u0026#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao \u0026gt; 0) { System.out.println(this.name \u002b \u0026#34;正在卖第\u0026#34; \u002b (1001 - chepiao) \u002b \u0026#34;张票\u0026#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(\u0026#34;111\u0026#34;); public ThreadOne(String name) { this.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-12-19 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-12-19 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98\/",
+	    "keywords" : [ "Java","学习笔记", ]
+	}
+</script><title>Java 卖票问题</title>
+    <meta property="og:title" content="Java 卖票问题" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(&amp;#34;222&amp;#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao &amp;gt; 0) { System.out.println(this.name &#43; &amp;#34;正在卖第&amp;#34; &#43; (1001 - chepiao) &#43; &amp;#34;张票&amp;#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(&amp;#34;111&amp;#34;); public ThreadOne(String name) { this." />
+    <meta name="description" content="卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(&amp;#34;222&amp;#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao &amp;gt; 0) { System.out.println(this.name &#43; &amp;#34;正在卖第&amp;#34; &#43; (1001 - chepiao) &#43; &amp;#34;张票&amp;#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(&amp;#34;111&amp;#34;); public ThreadOne(String name) { this." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Java 卖票问题</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-12-19 06:00:00 UTC">
+                        2021-12-19
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="卖票">卖票</h1>
+<h2 id="ticket-class">Ticket Class</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Ticket</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">chepiao</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">String</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">String</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;222&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">Ticket</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">chepiao</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                    <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">name</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#34;正在卖第&#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">1001</span> <span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#000">chepiao</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#34;张票&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+                    <span style="color:#000">chepiao</span><span style="color:#ce5c00;font-weight:bold">--;</span>
+                <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
+                <span style="color:#ce5c00;font-weight:bold">}</span>
+            <span style="color:#ce5c00;font-weight:bold">}</span>
+
+        <span style="color:#ce5c00;font-weight:bold">}</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h2 id="threadone-class">ThreadOne Class</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">ThreadOne</span> <span style="color:#204a87;font-weight:bold">implements</span> <span style="color:#000">Runnable</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">chepiao</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">String</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#000">String</span> <span style="color:#000">aa</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;111&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">ThreadOne</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">;</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">aa</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">chepiao</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                    <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">name</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#34;车站正在卖票&#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">1001</span> <span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#000">chepiao</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#34;张车票&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+                    <span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000">chepiao</span><span style="color:#ce5c00;font-weight:bold">;</span>
+                <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+                    <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
+                <span style="color:#ce5c00;font-weight:bold">}</span>
+            <span style="color:#ce5c00;font-weight:bold">}</span>
+        <span style="color:#ce5c00;font-weight:bold">}</span>
+    <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><h2 id="test-class">Test Class</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Test</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+            <span style="color:#000">ThreadOne</span> <span style="color:#000">Gz</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">ThreadOne</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;贵州&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+            <span style="color:#000">ThreadOne</span> <span style="color:#000">Cq</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">ThreadOne</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;重庆&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+            <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Gz</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
+            <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Cq</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
+        <span style="color:#ce5c00;font-weight:bold">}</span>
+<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/java/">
+                    Java
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ticket-class">Ticket Class</a></li>
+    <li><a href="#threadone-class">ThreadOne Class</a></li>
+    <li><a href="#test-class">Test Class</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

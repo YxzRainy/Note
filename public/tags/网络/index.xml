@@ -6,7 +6,53 @@
     <description>Recent content in 网络 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco 配置单区域 OSPFv2</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
+      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
+      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
+    </item>
+    
+    <item>
+      <title>OSPF 协议</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</guid>
+      <description>OSPF 协议 OSPF 是目前网络界耳熟能详的协议了。
+用带宽来判断路径的优劣弥补了RIP的缺陷（光凭带宽也不是很好），同时使用划分区域网络，可以更好的控制管理和扩展网络。
+还有各种小特点比如 DR、BDR 机制，和适合不同网络类型机制，以及使用不同LSA传递各种信息，各种LSA的特性也不通。
+所有综合来讲OSPF是比较适合大众选择的一款路由协议
+router ospf 10 配置 OSPF 路由，进程 ID 为 10
+router-id 1.1.1.1 配置路由器的路由器 ID
+子网掩码的反掩码 IP 地址：192.168.10.8/30，那么它的子网掩码为 255.255.255.252
+则它的子网掩码的反掩码为 255.255.255.255 减去 255.255.255.252 等于 0.0.0.3，
+即配置 OSPFv2 的网络通告为：
+network 192.168.10.8 0.0.0.3 area 0其中 area 是自治系统区域的标识</description>
+    </item>
+    
+    <item>
+      <title>交换机</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
+      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
+access 只允许通通过单个 VLAN。</description>
+    </item>
+    
+    <item>
+      <title>Cisco 静态和动态路由的优缺点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
+      <pubDate>Tue, 07 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
+      <description>静态和动态路由的优缺点 静态路由的优点：  占用资源较多。 便于管理员了解路由。 易于配置。  静态路由的缺点：  配置和维护耗费时间。 配置容易出错，尤其对于大型网络。 需要管理员维护变化的路由信息。 不能随着网络的增长而扩展；维护会越来越麻烦。 需要完全了解整个网络的情况才能进行操作。  动态路由的优点  增加或删除网络时，管理员维护路由配置的工作量较少。 网络拓扑结构发生变化时，协议可以自动做出调整。 配置不容易出错。 扩展性好，网络增长时不会出现问题。  动态路由的缺点  需要占用路由器资源（CPU 时间、内存和链路带宽）。 管理员需要掌握更多的网络知识才能进行配置、验证和故障排除工作。  </description>
+    </item>
+    
     <item>
       <title>Cisco 配置 Rip V2</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
@@ -74,7 +120,10 @@ enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/rip-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>Rip 协议 router rip 启用 Rip
+      <description>Rip 协议 RIP协议是比较老的一款动态路由协议，这款协议现在用的已经很少了；
+RIP协议在 IPv4 里分成两个版本，目前就 RIPv2 版本来讲的话，其实也有很多问题，
+比如
+ 根据路由器或者三层转发设备的条数来判断路径优劣这种判断机制是不准确的。 最大条数只有15跳也限制了RIP的网络规模。 RIP运行的速度比较慢，而且可能产生环路对网络有很大的影响。  router rip 启用 Rip
 version 2 切换到 RipV2 版本
 network 通告该路由器的所有直连网络，通告之后，
 该路由器的路由表就会显示除了通告外的所有网络的路由表的本地接口和远程网络的数量是一样的.
@@ -132,22 +181,93 @@ enable configure terminal 配置端口模式 interface f 0/1 switchport mode acc
     </item>
     
     <item>
-      <title>交换机</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
-      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
-access 只允许通通过单个 VLAN。</description>
-    </item>
-    
-    <item>
       <title>Cisco Vlan</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/vlan/</link>
       <pubDate>Sun, 12 Sep 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/vlan/</guid>
       <description>Vlan 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 enable configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 IP enable configure terminal interface vlan 1 ip address 192.168.10.1 255.255.255.0 </description>
+    </item>
+    
+    <item>
+      <title>安装 Apache</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/</link>
+      <pubDate>Thu, 07 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/</guid>
+      <description>安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\AppInstallPath\Apache24.
+目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。
+conf 文件夹是 Apache 的配置文件目录。
+error 文件夹是 Apache 的错误日志。
+htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。
+modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）
+bin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。
+ApacheMonitor.exe 是管理右下角最小化的图标的。
+httpd.exe 很重要。
+conf 文件夹解析 httpd.conf 是主配置文件。
+extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如</description>
+    </item>
+    
+    <item>
+      <title>网站访问流程</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Wed, 06 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</guid>
+      <description>网站访问流程 静态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.html DNS 服务器，先找本地DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.html），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.html）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache。 通过 Apache，就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.html），即可获取到服务器上文件名为 index.html 的文件。 Apache 会读取这个文件中的数据，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  动态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.pnh DNS 服务器，先找本地DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.php），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.php）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache Apache 就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.php），即可获取到服务器上文件名为 index.php 的文件。 但又因为网站是动态的，所以 Apache 是无法识别后缀为 PHP 的文件的，因此在这里需要一个叫 PHP 引擎的东西，Apache 将 这个 PHP 文件交给 PHP 引擎，PHP 引擎读取 PHP 文件之后，需要将这个文件解析为 html 文件 ，注意，这时的 PHP 引擎可能会去寻找数据库，并对数据库进行一些操作（读取、放入、修改数据库等等）。最后，PHP 引擎会将解析后的 HTML 数据（PHP 文件中的数据和数据库中的数据），全部返回给 Apache。 Apache 会读取 PHP 引擎返回的内容，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  </description>
+    </item>
+    
+    <item>
+      <title>DNS 和端口</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</guid>
+      <description>DNS 和端口 DNS DNS 是互联网的一项服务，它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+简单的讲 DNS 就是翻译官，比如它会将http://www.baidu.com翻译成220.181.111.188让机器理解。
+DNS 有什么用 DNS 是用来做域名解析的，它会在你上网输入网址后，把它转换成 IP，然后去访问这个 IP 所指定的服务器，没有它，你想上百度就要记住百度的 IP，上 163 就要记住 163 的IP，有了 DNS 的处理，你只需要记住对应网站的域名（网址），比如https://yxzi.xyz/。
+DNS 是一个按层次结构排列的分布式系统，由许多 DNS 服务器组成。DNS 服务器是注册加入 DNS 的任何计算机。它具有域名和 IP 地址的索引，并且在请求时，它可以告诉你与域名关联的当前 IP 地址。
+如果它不知道，那么它将尝试从其他 DNS 服务器中找出。
+因此，当您在浏览器中键入域名时，浏览器会询问 DNS 服务器该域的 IP 地址是什么，DNS 服务器会尝试告诉你。
+端口 简单来说：
+ 在一台计算机上，端口用来指定你想要访问这台物理设备上的哪个程序。
+ IP 能锁定一台物理机器，对应着一张网卡，网卡会接收外界发来的数据包。但是问题来了，网卡给程序提供了接口，你监听一下我，要是有消息来了，我就转发给你，这样应用程序就能收到数据了。
+但是问题来了，程序 A 和程序 B 都需要监听网卡接发数据，网卡说那我把接到的数据都发给你两，你们自己看着办吧。
+好，小 A 小 B 都接收了。
+但是又来了CDEF&amp;hellip;&amp;hellip;，不行了，每个包都被发到了所有应用程序，每个应用程序都累得不行，最终垮了。
+好，那网卡说我给你们加个表示吧，我们之间可以用一个号码来作为标识，我和小 A 之间就用 1 来标识，
+如果外界发给 1 号标识的数据我就转发给你，你监听我的时候得告诉我你监听的是1，我就转发 1 的数据包给你。</description>
+    </item>
+    
+    <item>
+      <title>IP 和域名</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</guid>
+      <description>IP 和域名 IP IP 具有唯一性，像人的身份证一样，是唯一的。
+通俗地讲就是互联网世界的门牌号，通过IP地址就可以准确无误的找到某台计算机的位置，它具有唯一性，所以当我们访问某个IP的时候才不会出现错误，他就像我们的身份证号码那样独一无二，我们可以和别人同名，但是绝不可能和别人有同样的身份证号码。
+首先要确定你的IP地址是否是以192.168开头，如果是这个地址的话，不需要担心。这是内网的IP地址，在外网是无法直接访问的。如果不是内网的地址，有可能会遭到黑客的攻击。这需要一定的专业技术，普通人很难进行攻击，而且你的电脑应该需要有很强的利用价值，才会让人费时费力对你发起攻击之心，所以知道你IP对于大多数人来说不能对你做什么。
+域名 IP 不方便我们记忆，而域名，则是为了我们更好的记忆某一个网站的地址。
+域名（Domain Name）是由一串字符组成的，它指向某一个具体的 IP 地址。</description>
+    </item>
+    
+    <item>
+      <title>服务器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>服务器是什么 在网络环境下，根据服务器提供的服务类型不同，分为文件服务器，数据库服务器，应 用程序服务器，WEB服务器等。
+一台个人计算机也可以成为一台服务器，只要这台计算机可以提供服务，而如何让这台计算机提供服务呢？
+在这台计算机上安装可以提供服务的软件（服务软件）。
+比如一台 Web 服务器，它如果要提供 Web 服务（网站访问），就需要安装 Web 服务软件，Apache，Tomcat， Iis 等等
+服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。
+提到服务器对于电脑爱好者来说一定不陌生，一般我们很难看到真正的服务器，因为服务器一般均放置在机房重点，闲人一般均是免进的，所以说起服务器，好多未接触的朋友都觉的很陌生，介于此，斯百德就为不明白服务器是什么的小伙伴们，揭开服务器神秘的面纱。
+其实服务器的模样就和电脑的主机很相似，但是服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。比如我们每天浏览的网站，其实数据均在服务器，服务器一般都在一些IDC数据中心机房以及电信等网络大厦里面。
+服务器，也称伺服器。服务器是网络环境中的高性能计算机，它侦听网络上的其他计算机（客户机）提交的服务请求，并提供相应的服务，为此，服务器必须具有承担服务并且保障服务的能力。我们这里提到的服务器，主要是指的Web服务器，我们也称之为专用服务器，是专为网站业务应用的服务器，这种服务器可以向发出请求的浏览器提供文档的程序。Web服务器也是一种被动的程序，只有当服务器接收到浏览器发出的请求时，服务器才会响应。
+由于Web服务器是一种被动的程序，所以不同类型的网站对Web服务器的要求差别很大。企业网站和个人网站一般都是展示型网站，所以他们对服务器的性能要求一般都不高。电子商务型网站以及门户型等网站一般访问量用户比较大，这些大型网站对服务器的需要则较高。
+目前，用户使用最多的web服务器软件有两个：微软的信息服务器（iis）和Apache。而架设Web服务器比较常见的操作系统有Windows，Linux和Unix。Linux的安全性在这三个系统中最高，同时可以支持多个硬件平台，而且其是开源软件，市场价格更低，甚至用户可以下载免费的代码来搭建Web服务器。Web服务器的操作更简单，性能更优越，目前使用率非常的高，Unix则比较小众！</description>
     </item>
     
   </channel>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C switch",
+	    "headline" : "C switch",
+	    "description" : "switch 它是一种选择控制语句。\nswitch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，\n该语句的功能只是退出 switch 语句转去执行它下面的语句，\n在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。\n当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。\n我们来看下面这个程序：\n#include \u0026lt;stdio.h\u0026gt; int main () { char fraction ; printf(\u0026#34;请输入您的等级：\u0026#34;); scanf(\u0026#34;%c\u0026#34;, \u0026amp;fraction); \/\/ 测试请键入 A \tswitch(fraction) { case \u0026#39;A\u0026#39; : printf(\u0026#34;很棒！\\n\u0026#34; ); case \u0026#39;B\u0026#39; : printf(\u0026#34;还不错哦\\n\u0026#34; ); case \u0026#39;C\u0026#39; : printf(\u0026#34;做得好\\n\u0026#34; ); break; case \u0026#39;D\u0026#39; : printf(\u0026#34;您通过了\\n\u0026#34; ); break; case \u0026#39;F\u0026#39; : printf(\u0026#34;最好再试一下\\n\u0026#34; ); break; default : printf(\u0026#34;无效的成绩\\n\u0026#34; ); } printf(\u0026#34;您的等级是 %c\\n\u0026#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-01-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-01-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/switch\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C switch</title>
+    <meta property="og:title" content="C switch" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="switch 它是一种选择控制语句。
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
+该语句的功能只是退出 switch 语句转去执行它下面的语句，
+在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
+当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
+我们来看下面这个程序：
+#include &amp;lt;stdio.h&amp;gt; int main () { char fraction ; printf(&amp;#34;请输入您的等级：&amp;#34;); scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); // 测试请键入 A 	switch(fraction) { case &amp;#39;A&amp;#39; : printf(&amp;#34;很棒！\n&amp;#34; ); case &amp;#39;B&amp;#39; : printf(&amp;#34;还不错哦\n&amp;#34; ); case &amp;#39;C&amp;#39; : printf(&amp;#34;做得好\n&amp;#34; ); break; case &amp;#39;D&amp;#39; : printf(&amp;#34;您通过了\n&amp;#34; ); break; case &amp;#39;F&amp;#39; : printf(&amp;#34;最好再试一下\n&amp;#34; ); break; default : printf(&amp;#34;无效的成绩\n&amp;#34; ); } printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。" />
+    <meta name="description" content="switch 它是一种选择控制语句。
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
+该语句的功能只是退出 switch 语句转去执行它下面的语句，
+在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
+当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
+我们来看下面这个程序：
+#include &amp;lt;stdio.h&amp;gt; int main () { char fraction ; printf(&amp;#34;请输入您的等级：&amp;#34;); scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); // 测试请键入 A 	switch(fraction) { case &amp;#39;A&amp;#39; : printf(&amp;#34;很棒！\n&amp;#34; ); case &amp;#39;B&amp;#39; : printf(&amp;#34;还不错哦\n&amp;#34; ); case &amp;#39;C&amp;#39; : printf(&amp;#34;做得好\n&amp;#34; ); break; case &amp;#39;D&amp;#39; : printf(&amp;#34;您通过了\n&amp;#34; ); break; case &amp;#39;F&amp;#39; : printf(&amp;#34;最好再试一下\n&amp;#34; ); break; default : printf(&amp;#34;无效的成绩\n&amp;#34; ); } printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C switch</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-01-03 06:00:00 UTC">
+                        2022-01-03
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="switch">switch</h1>
+<p>它是一种选择控制语句。</p>
+<p>switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，</p>
+<p>该语句的功能只是退出 switch 语句转去执行它下面的语句，</p>
+<p>在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。</p>
+<p>当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。</p>
+<p>我们来看下面这个程序：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">fraction</span> <span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入您的等级：&#34;</span><span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%c&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">fraction</span><span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#8f5902;font-style:italic">// 测试请键入 A 
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">switch</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">fraction</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;A&#39;</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;很棒！</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+		<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;B&#39;</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;还不错哦</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+		<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;C&#39;</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;做得好</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+			<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+		<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;D&#39;</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;您通过了</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+			<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+		<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;F&#39;</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;最好再试一下</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+			<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+		<span style="color:#204a87;font-weight:bold">default</span> <span style="color:#ce5c00;font-weight:bold">:</span>
+			<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;无效的成绩</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#000;font-weight:bold">}</span>
+	<span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;您的等级是 %c</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">fraction</span><span style="color:#000;font-weight:bold">);</span>
+
+	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">请输入您的等级：A
+很棒！
+还不错哦
+做得好
+您的等级是 A
+</code></pre></div><p>直到遇到了<code>printf(&quot;做得好\n&quot; );</code>后面的<code>break;</code>，程序才停止执行。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;做得好</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span> <span style="color:#000;font-weight:bold">);</span>
+<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+</code></pre></div><p>原因是因为程序是从上往下执行的，而<code>case</code>后面的子表达式只是一个入口，而当程序找到入口后，其他的入口就在进行判断了（相当于入口不存在了），因此，程序会继续执行下面的语句，直到遇到<code>break</code>终止整个程序。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

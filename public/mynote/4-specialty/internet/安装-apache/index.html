@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "安装 Apache",
+	    "headline" : "安装 Apache",
+	    "description" : "安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\\AppInstallPath\\Apache24.\n目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。\nconf 文件夹是 Apache 的配置文件目录。\nerror 文件夹是 Apache 的错误日志。\nhtdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。\nmodules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）\nbin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。\nApacheMonitor.exe 是管理右下角最小化的图标的。\nhttpd.exe 很重要。\nconf 文件夹解析 httpd.conf 是主配置文件。\nextra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-01-07 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-01-07 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/%E5%AE%89%E8%A3%85-apache\/",
+	    "keywords" : [ "网络","后端","服务器","学习笔记", ]
+	}
+</script><title>安装 Apache</title>
+    <meta property="og:title" content="安装 Apache" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\AppInstallPath\Apache24.
+目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。
+conf 文件夹是 Apache 的配置文件目录。
+error 文件夹是 Apache 的错误日志。
+htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。
+modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）
+bin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。
+ApacheMonitor.exe 是管理右下角最小化的图标的。
+httpd.exe 很重要。
+conf 文件夹解析 httpd.conf 是主配置文件。
+extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如" />
+    <meta name="description" content="安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\AppInstallPath\Apache24.
+目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。
+conf 文件夹是 Apache 的配置文件目录。
+error 文件夹是 Apache 的错误日志。
+htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。
+modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）
+bin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。
+ApacheMonitor.exe 是管理右下角最小化的图标的。
+httpd.exe 很重要。
+conf 文件夹解析 httpd.conf 是主配置文件。
+extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">安装 Apache</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-01-07 06:00:00 UTC">
+                        2021-01-07
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="安装-apache">安装 Apache</h1>
+<h2 id="官方下载地址apachehttpswwwapachehauscomcgi-bindownloadplx">官方下载地址<a href="https://www.apachehaus.com/cgi-bin/download.plx">Apache</a></h2>
+<p>进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是<strong>D:\AppInstallPath\Apache24</strong>.</p>
+<h2 id="目录文件解析">目录文件解析</h2>
+<p>bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。</p>
+<p>conf 文件夹是 Apache 的配置文件目录。</p>
+<p>error 文件夹是 Apache 的错误日志。</p>
+<p>htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。</p>
+<p>modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）</p>
+<h2 id="bin-文件夹解析">bin 文件夹解析</h2>
+<p>ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。</p>
+<p>ApacheMonitor.exe 是管理右下角最小化的图标的。</p>
+<p>httpd.exe 很重要。</p>
+<h2 id="conf-文件夹解析">conf 文件夹解析</h2>
+<p>httpd.conf 是主配置文件。</p>
+<p>extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%90%8E%E7%AB%AF/">
+                    后端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                    服务器
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#官方下载地址apachehttpswwwapachehauscomcgi-bindownloadplx">官方下载地址<a href="https://www.apachehaus.com/cgi-bin/download.plx">Apache</a></a></li>
+    <li><a href="#目录文件解析">目录文件解析</a></li>
+    <li><a href="#bin-文件夹解析">bin 文件夹解析</a></li>
+    <li><a href="#conf-文件夹解析">conf 文件夹解析</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

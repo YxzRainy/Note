@@ -36,5 +36,23 @@ Easy LESS 保存less文件后，自动生成css文件到当前路径
 px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。</description>
     </item>
     
+    <item>
+      <title>Vs Code 配置 Java</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
+  属性
+  高级系统设置
+  高级选项卡
+  环境变量
+  系统变量
+  新建 JAVA_HOME 变量  变量名：JAVA_HOME。 值为：Java JDK 的安装路径。 确定  找到已存在的名为 Path 的变量  编辑 新建 输入：%JAVA_HOME%\jre\bin，确定 再新建，输入：%JAVA_HOME%\bin，确定 保存即可  新建 Classpath 变量   变量名：Classpath，
+  值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+  测试环境配置是否成功 快捷键 Win + R，搜索 cmd 并 Enter，然后在命令行输入java以及javac.
+安装 vs code 扩展 java extension pack。</description>
+    </item>
+    
   </channel>
 </rss>

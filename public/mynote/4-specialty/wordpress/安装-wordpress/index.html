@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "安装 WordPress",
+	    "headline" : "安装 WordPress",
+	    "description" : "下载 WordPress\n将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。\n![image-20220303151925375](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\WordPress\\安装 WordPress.assets\\image-20220303151925375.png)\n打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http:\/\/localhost\/WordPress\/，会自动跳转到网址为http:\/\/localhost\/WordPress\/wp-admin\/setup-config.php的页面。\n![image-20220303151952855](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\WordPress\\安装 WordPress.assets\\image-20220303151952855.png)\nwp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http:\/\/localhost\/WordPress\/wp-login.php\n来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：\n![image-20220303153935800](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\WordPress\\安装 WordPress.assets\\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：\n![image-20220303193804265](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\WordPress\\安装 WordPress.assets\\image-20220303193804265.png)",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-03 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-03 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/wordpress\/%E5%AE%89%E8%A3%85-wordpress\/",
+	    "keywords" : [ "后端","PHP","学习笔记","WordPress", ]
+	}
+</script><title>安装 WordPress</title>
+    <meta property="og:title" content="安装 WordPress" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="下载 WordPress
+将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
+![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
+打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。
+![image-20220303151952855](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151952855.png)
+wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http://localhost/WordPress/wp-login.php
+来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：
+![image-20220303153935800](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：
+![image-20220303193804265](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303193804265.png)" />
+    <meta name="description" content="下载 WordPress
+将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
+![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
+打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。
+![image-20220303151952855](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151952855.png)
+wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http://localhost/WordPress/wp-login.php
+来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：
+![image-20220303153935800](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：
+![image-20220303193804265](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303193804265.png)" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">安装 WordPress</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-03 06:00:00 UTC">
+                        2022-03-03
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <p>下载 <a href="https://cn.wordpress.org/download/">WordPress</a></p>
+<p>将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。</p>
+<p>![image-20220303151925375](E:\Github\MyBlog\content\mynote\4  Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)</p>
+<p>打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。</p>
+<p>![image-20220303151952855](E:\Github\MyBlog\content\mynote\4  Specialty\WordPress\安装 WordPress.assets\image-20220303151952855.png)</p>
+<p>wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http://localhost/WordPress/wp-login.php</p>
+<p>来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：</p>
+<p>![image-20220303153935800](E:\Github\MyBlog\content\mynote\4  Specialty\WordPress\安装 WordPress.assets\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：</p>
+<p>![image-20220303193804265](E:\Github\MyBlog\content\mynote\4  Specialty\WordPress\安装 WordPress.assets\image-20220303193804265.png)</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%90%8E%E7%AB%AF/">
+                    后端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/php/">
+                    PHP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/wordpress/">
+                    WordPress
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

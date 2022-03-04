@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 数组",
+	    "headline" : "C 数组",
+	    "description" : "数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。\n数组的数量，一旦定义，无法修改。\n数组的类型取决于该数组存储的元素的类型。\n#include \u0026lt;iostream\u0026gt; int main(void){ \/\/ arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(\u0026#34;%d\\n\u0026#34;,arr[4 ]); } 一维数组 定义一个一维数组时：\n为 n 个变量连续分配储存空间。\n数组中的所有元素，数据类型必须一致。\n数组中所有变量所占的字节必须一样。\n定义一维数组 #include \u0026lt;iostream\u0026gt;int main(){ \/\/ 完全初始化  int arr[5] ={1,2,3,4,5}; \/\/ 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; \/\/ 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(\u0026#34;%d\\n\u0026#34;,arr2[3]); \/\/ 不初始化，所有元素都是垃圾值  int arr3[5]; printf(\u0026#34;%d\\n\u0026#34;,arr3[5]); \/\/ 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-02-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-02-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%95%B0%E7%BB%84\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C 数组</title>
+    <meta property="og:title" content="C 数组" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(&amp;#34;%d\n&amp;#34;,arr[4 ]); } 一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){ // 完全初始化  int arr[5] ={1,2,3,4,5}; // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]); // 不初始化，所有元素都是垃圾值  int arr3[5]; printf(&amp;#34;%d\n&amp;#34;,arr3[5]); // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，" />
+    <meta name="description" content="数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(&amp;#34;%d\n&amp;#34;,arr[4 ]); } 一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){ // 完全初始化  int arr[5] ={1,2,3,4,5}; // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]); // 不初始化，所有元素都是垃圾值  int arr3[5]; printf(&amp;#34;%d\n&amp;#34;,arr3[5]); // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 数组</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-02-21 06:00:00 UTC">
+                        2022-02-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="数组">数组</h1>
+<p>在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。</p>
+<p>数组的数量，一旦定义，无法修改。</p>
+<p>数组的类型取决于该数组存储的元素的类型。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">){</span>
+<span style="color:#8f5902;font-style:italic">//    arr 是数组的名字，5 表示数组中，元素的个数，
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">};</span>
+    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">4</span> <span style="color:#000;font-weight:bold">]);</span>
+<span style="color:#000;font-weight:bold">}</span> 
+
+</code></pre></div><h2 id="一维数组">一维数组</h2>
+<p>定义一个一维数组时：</p>
+<p>为 n 个变量连续分配储存空间。</p>
+<p>数组中的所有元素，数据类型必须一致。</p>
+<p>数组中所有变量所占的字节必须一样。</p>
+<h3 id="定义一维数组">定义一维数组</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(){</span>
+    <span style="color:#8f5902;font-style:italic">// 完全初始化
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">};</span>
+    <span style="color:#8f5902;font-style:italic">// 不完全初始化，未初始化的元素的值为 0
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr2</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">};</span>
+    <span style="color:#8f5902;font-style:italic">// 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">arr2</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">]);</span>
+    <span style="color:#8f5902;font-style:italic">// 不初始化，所有元素都是垃圾值
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr3</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
+    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">arr3</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]);</span>
+    <span style="color:#8f5902;font-style:italic">// 清零，将数组中的每个元素的值都变成 0
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr4</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+</code></pre></div><h3 id="错误的定义">错误的定义</h3>
+<p>只有在定义数组的同时，才可以整体赋值，</p>
+<p>其他情况下整体复制都是错误的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(){</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
+    <span style="color:#8f5902;font-style:italic">// a[5] 表示 a 数组中索引为 5 的值。
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p><strong>将数组 a 中的值全部复制到 数组 b</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+<span style="color:#8f5902;font-style:italic">//  错误的写法，因为一维数组名，d该数组中第一个元素的地址
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">//  正确的写法
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span> <span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">b</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">];</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+</code></pre></div><h2 id="二维数组">二维数组</h2>
+<p>一个二维数组，在本质上，是一个一维数组的列表。它声明了一个 x 行 y 列的二维整型数组。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(){</span>
+    <span style="color:#8f5902;font-style:italic">//  该数组中总共有12个元素，可以当作 3 行(一)5 列（丨）来看
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">];</span>
+    <span style="color:#8f5902;font-style:italic">//  这个二位数组以此为：
+</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">]</span>
+    <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">]</span>
+    <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">]</span>   <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><h3 id="声明一个二维数组">声明一个二维数组</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">6</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">8</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">9</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">11</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">};</span>
+    
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr2</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">6</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">8</span><span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">9</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">11</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+
+</code></pre></div><p><strong>输出二维数组的内容</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">][</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">6</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">8</span><span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">9</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">11</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">};</span>
+    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">;</span>
+    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">{</span>
+<span style="color:#8f5902;font-style:italic">//          负号表示将输出的内容对其，
+</span><span style="color:#8f5902;font-style:italic">//          3表示每个元素间隔3个光标到位置
+</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%-3d &#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">][</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">]);</span>
+        <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+
+</code></pre></div><h2 id="关于多维数组">关于多维数组</h2>
+<p>不存在多维数组，因为内存是线性的</p>
+<p>n 维数组都可以当作每个元素是 n - 1 维数组的一维数组。</p>
+<p>总的来说，n 维数组是可以被拆分的。</p>
+<p>比如<code>int a\[3][4]</code></p>
+<p>该数组是含有 3 个元素的一维数组，只不过这 3 个元素，每个元素都可以再分为 4 个小元素；</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一维数组">一维数组</a>
+      <ul>
+        <li><a href="#定义一维数组">定义一维数组</a></li>
+        <li><a href="#错误的定义">错误的定义</a></li>
+      </ul>
+    </li>
+    <li><a href="#二维数组">二维数组</a>
+      <ul>
+        <li><a href="#声明一个二维数组">声明一个二维数组</a></li>
+      </ul>
+    </li>
+    <li><a href="#关于多维数组">关于多维数组</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

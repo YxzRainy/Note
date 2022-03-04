@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 命名空间",
+	    "headline" : "JavaScript 命名空间",
+	    "description" : "命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。\n简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。\n作用 私有化变量 function Demo() { var healthy = 0; \/\/ 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， \t\/\/ 不能直接作为对象的属性或变量进行调用。 \tthis.cure = function () { healthy\u002b\u002b; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); \/\/ 返回 0，调用构造函数的属性 view。 demo.cure(); \/\/ 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); \/\/返回 1，调用构造函数的属性 view。 demo.injured(); \/\/ 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); \/\/ 返回 0，调用构造函数的属性 view。  模块化开发 var a = \u0026#39;cold\u0026#39;; \/\/ 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = \u0026#39;weather\u0026#39;; \/\/ 私有化变量 a。 \tthis.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4\/",
+	    "keywords" : [ "学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript 命名空间</title>
+    <meta property="og:title" content="JavaScript 命名空间" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
+简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
+作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy&#43;&#43;; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this." />
+    <meta name="description" content="命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
+简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
+作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy&#43;&#43;; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 命名空间</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="命名空间">命名空间</h1>
+<p>命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。</p>
+<p>简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。</p>
+<h2 id="作用">作用</h2>
+<h3 id="私有化变量">私有化变量</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">healthy</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用，
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 不能直接作为对象的属性或变量进行调用。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">cure</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">healthy</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#000;font-weight:bold">};</span>
+
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">injured</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">healthy</span><span style="color:#ce5c00;font-weight:bold">--</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#000;font-weight:bold">};</span>
+
+	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">view</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">healthy</span><span style="color:#000;font-weight:bold">);</span>
+	<span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Demo</span><span style="color:#000;font-weight:bold">();</span>
+
+<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">view</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 返回 0，调用构造函数的属性 view。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">cure</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 调用构造函数的属性 cure。，使变量 healthy 自增 1。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">view</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">//返回 1，调用构造函数的属性 view。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">injured</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 调用构造函数的属性 injured，使变量 healthy 自减 1。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">view</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 返回 0，调用构造函数的属性 view。
+</span><span style="color:#8f5902;font-style:italic"></span>
+</code></pre></div><h3 id="模块化开发">模块化开发</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;cold&#39;</span><span style="color:#000;font-weight:bold">;</span>
+<span style="color:#8f5902;font-style:italic">// 全局中的变量 a 并不会影响函数 init 中的变量 a。
+</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">init</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;weather&#39;</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 私有化变量 a。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+		<span style="color:#8f5902;font-style:italic">// 返回 weather，尽管这里的变量 a 与全局中的变量 a 重复，
+</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#8f5902;font-style:italic">// 但这里依旧返回函数 init 的私有化变量 a。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">};</span>
+	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#8f5902;font-style:italic">// 将函数返回，即将该方法赋给变量 init。
+</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">();</span>
+		<span style="color:#8f5902;font-style:italic">// 调用函数表达式的属性 fun。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">})();</span>
+
+<span style="color:#000">init</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 执行函数表达式 init，即执行该函数表达式的属性 fun。
+</span><span style="color:#8f5902;font-style:italic"></span>
+<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">inits</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+	<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;summerly&#39;</span><span style="color:#000;font-weight:bold">;</span>
+	<span style="color:#8f5902;font-style:italic">// 私有化变量 a
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+		<span style="color:#8f5902;font-style:italic">// 返回 summerly，尽管这里的变量 a 与全局中的变量 a 重复，
+</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#8f5902;font-style:italic">// 但这里依旧返回函数 inits 的私有化变量 a。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">};</span>
+	<span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#8f5902;font-style:italic">// 将函数返回，即将该函数赋给变量 inits。
+</span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">fun</span><span style="color:#000;font-weight:bold">();</span>
+		<span style="color:#8f5902;font-style:italic">// 调用函数表达式的属性 fun。
+</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">};</span>
+<span style="color:#000;font-weight:bold">})();</span>
+<span style="color:#000">inits</span><span style="color:#000;font-weight:bold">();</span>
+<span style="color:#8f5902;font-style:italic">// 执行函数表达式 inits，即执行该函数表达式的属性 fun。
+</span><span style="color:#8f5902;font-style:italic"></span>
+</code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#作用">作用</a>
+      <ul>
+        <li><a href="#私有化变量">私有化变量</a></li>
+        <li><a href="#模块化开发">模块化开发</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

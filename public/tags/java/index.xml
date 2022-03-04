@@ -6,7 +6,43 @@
     <description>Recent content in Java on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java IO 流</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</guid>
+      <description>IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;; File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } </description>
+    </item>
+    
+    <item>
+      <title>Java 卖票问题</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
+      <description>卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(&amp;#34;222&amp;#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao &amp;gt; 0) { System.out.println(this.name + &amp;#34;正在卖第&amp;#34; + (1001 - chepiao) + &amp;#34;张票&amp;#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(&amp;#34;111&amp;#34;); public ThreadOne(String name) { this.</description>
+    </item>
+    
+    <item>
+      <title>Java 生产者消费者模式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>生产者消费者模式 工厂类 public class Factory { int num=0; //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException { if(num &amp;gt;= 10){ System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;); //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num++; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; + num); //唤醒消费商品的线程  this.notify(); } } //开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;); this.wait();//强制当前线程等待  }else{ Thread.sleep( 1000); //消费商品  num--; System.out.println(&amp;#34;消费者们购买了一个商品，现在库存为:&amp;#34; + num); //唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this.</description>
+    </item>
+    
+    <item>
+      <title>Java 继承</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</guid>
+      <description>继承 Phone Class public class Phone extends Dianhua implements Mp3 { public void playmusic(){ System.out.println(&amp;#34;播放音乐&amp;#34;); } public void call(){ System.out.println(&amp;#34;可以打电话&amp;#34;); } public void dh(){ System.out.println(&amp;#34;可以高得地图导航&amp;#34;); } } Telephone Class public abstract class Telephone { public abstract void call(); public abstract void dh(); } Mp3 Interface public interface Mp3 { abstract void playmusic(); } Test Class public class Test { public static void main(String[] args) { Phone c=new Phone(); c.call(); c.dh(); c.</description>
+    </item>
+    
     <item>
       <title>Java 字符流和字节流</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
@@ -40,7 +76,7 @@
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
-      <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+      <description>基础 类、对象 、属性、封装 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
 对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
 赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
 赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。

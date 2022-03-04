@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 02 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Less &amp; 符号</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
       <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。

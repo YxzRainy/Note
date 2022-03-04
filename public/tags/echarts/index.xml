@@ -42,7 +42,7 @@ Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</guid>
-      <description>地图 常用配置 地图样式 配置**option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
+      <description>地图 常用配置 地图样式 配置 option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
 normal: { //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;, // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;, //区域分界线  borderWidth: 1 }, </description>
     </item>
     

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "库，框架，架构，平台的区别",
+	    "headline" : "库，框架，架构，平台的区别",
+	    "description" : "库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。\n库的概念很宽泛。\n程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；\n各种 SDK 都是库；\n从npm、Maven、Nuget下载的包都是库；\n你自己写一个字符串处理函数，包装好之后调用，也是库。\n框架（Framework） 框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。\njQuery 的规模够大了，但仍然是库，不是框架。\n框架的最大特征是它会接管程序的主控制流，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。\n比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。\n所以一般来说单个项目可以引入很多库，却不能用多个框架。\n同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。\n因为主控制流只有一个。\n架构（Architecture） 架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。\n它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；\n也可以是客户端形式，比如多年前常谈的 B\/S、C\/S 架构；\n还可以是服务器端结构，比如分布式架构、微服务架构；\n再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；\n等等等等。\n所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。\n大方向一旦出了问题，比写几处错误代码的影响可大多了。\n平台（Platform） 平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。\n只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。\n操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；\n浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；\n各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；\n以及常见的通知推送平台、短信平台、统计分析平台等等等。\n 当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。\n某些较大规模的库经常被称为框架，一些框架也会自称平台来撑场面。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-12-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-12-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB\/",
+	    "keywords" : [ "库","框架","架构","平台","转载","学习笔记", ]
+	}
+</script><title>库，框架，架构，平台的区别</title>
+    <meta property="og:title" content="库，框架，架构，平台的区别" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。
+库的概念很宽泛。
+程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；
+各种 SDK 都是库；
+从npm、Maven、Nuget下载的包都是库；
+你自己写一个字符串处理函数，包装好之后调用，也是库。
+框架（Framework） 框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。
+jQuery 的规模够大了，但仍然是库，不是框架。
+框架的最大特征是它会接管程序的主控制流，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。
+比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。
+所以一般来说单个项目可以引入很多库，却不能用多个框架。
+同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。
+因为主控制流只有一个。
+架构（Architecture） 架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。
+它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；
+也可以是客户端形式，比如多年前常谈的 B/S、C/S 架构；
+还可以是服务器端结构，比如分布式架构、微服务架构；
+再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；
+等等等等。
+所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。
+大方向一旦出了问题，比写几处错误代码的影响可大多了。
+平台（Platform） 平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。
+只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。
+操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；
+浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；
+各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；
+以及常见的通知推送平台、短信平台、统计分析平台等等等。
+ 当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。
+某些较大规模的库经常被称为框架，一些框架也会自称平台来撑场面。" />
+    <meta name="description" content="库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。
+库的概念很宽泛。
+程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；
+各种 SDK 都是库；
+从npm、Maven、Nuget下载的包都是库；
+你自己写一个字符串处理函数，包装好之后调用，也是库。
+框架（Framework） 框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。
+jQuery 的规模够大了，但仍然是库，不是框架。
+框架的最大特征是它会接管程序的主控制流，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。
+比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。
+所以一般来说单个项目可以引入很多库，却不能用多个框架。
+同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。
+因为主控制流只有一个。
+架构（Architecture） 架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。
+它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；
+也可以是客户端形式，比如多年前常谈的 B/S、C/S 架构；
+还可以是服务器端结构，比如分布式架构、微服务架构；
+再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；
+等等等等。
+所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。
+大方向一旦出了问题，比写几处错误代码的影响可大多了。
+平台（Platform） 平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。
+只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。
+操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；
+浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；
+各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；
+以及常见的通知推送平台、短信平台、统计分析平台等等等。
+ 当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。
+某些较大规模的库经常被称为框架，一些框架也会自称平台来撑场面。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">库，框架，架构，平台的区别</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-12-21 06:00:00 UTC">
+                        2021-12-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="库框架架构平台的区别">库，框架，架构，平台的区别</h1>
+<h2 id="库library">库（Library）</h2>
+<p>库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。</p>
+<p>库的概念很宽泛。</p>
+<p>程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；</p>
+<p>各种 SDK 都是库；</p>
+<p>从npm、Maven、Nuget下载的包都是库；</p>
+<p>你自己写一个字符串处理函数，包装好之后调用，也是库。</p>
+<h2 id="框架framework">框架（Framework）</h2>
+<p>框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。</p>
+<p>jQuery 的规模够大了，但仍然是库，不是框架。</p>
+<p>框架的最大特征是它会<strong>接管程序的主控制流</strong>，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。</p>
+<p>比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。</p>
+<p>所以一般来说单个项目可以引入很多库，却不能用多个框架。</p>
+<p>同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。</p>
+<p>因为主控制流只有一个。</p>
+<h2 id="架构architecture">架构（Architecture）</h2>
+<p>架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。</p>
+<p>它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；</p>
+<p>也可以是客户端形式，比如多年前常谈的 B/S、C/S 架构；</p>
+<p>还可以是服务器端结构，比如分布式架构、微服务架构；</p>
+<p>再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；</p>
+<p>等等等等。</p>
+<p>所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。</p>
+<p>大方向一旦出了问题，比写几处错误代码的影响可大多了。</p>
+<h2 id="平台platform">平台（Platform）</h2>
+<p>平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。</p>
+<p>只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。</p>
+<p>操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；</p>
+<p>浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；</p>
+<p>各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；</p>
+<p>以及常见的通知推送平台、短信平台、统计分析平台等等等。</p>
+<hr>
+<p>当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。</p>
+<p>某些较大规模的库经常被称为框架，一些框架也会自称平台来撑场面。</p>
+<p>就像罗老师做个手机 UI 也敢叫OS一样。</p>
+<p>有的领域不必太较真，严格揪着定义来看，所有 ORM 都只能是库而非框架，因为数据库的读写跟程序控制流无关。</p>
+<p>但你要说 MyBatis 不算框架还勉强能接受，难道 Hibernate 和 Entity Framework 都要开除出框架行列？</p>
+<p>这也未免太原教旨了。人家接管了全套数据库操作，连语法都大规模解耦，还能要求什么呢？</p>
+<p>我们分清这些概念是为了更好地开发和交流，最终目的还是让程序稳定高效地跑起来。</p>
+<p>有些东西单靠理论、举例和比喻没法彻底搞清楚，在实践中边学边思考就简单多了。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%BA%93/">
+                    库
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%A1%86%E6%9E%B6/">
+                    框架
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%9E%B6%E6%9E%84/">
+                    架构
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%B9%B3%E5%8F%B0/">
+                    平台
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%BD%AC%E8%BD%BD/">
+                    转载
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#库library">库（Library）</a></li>
+    <li><a href="#框架framework">框架（Framework）</a></li>
+    <li><a href="#架构architecture">架构（Architecture）</a></li>
+    <li><a href="#平台platform">平台（Platform）</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rainy 的推荐 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/rainy-%E7%9A%84%E6%8E%A8%E8%8D%90/</link>
+    <description>Recent content in Rainy 的推荐 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/rainy-%E7%9A%84%E6%8E%A8%E8%8D%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>App 推荐</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/1-essay/app/</link>
+      <pubDate>Mon, 18 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/1-essay/app/</guid>
+      <description>App Advanced Renamer 批量重命名工具。
+Photoshop 处理图片。
+Audition 剪辑音频。
+Premiere 剪辑视频。
+After Effects 制作视频特效。
+Git 管理项目的版本。
+Nodejs javascript 的运行环境，能够使得 javascript 脱离浏览器运行。
+Python 运行 python 的环境。
+VsCode 一个很好用的代码编辑器。
+360Zip 解压文件。
+Everything 一个快速的文件搜索工具。
+Oulu 一个好用的词典。
+Typora md 文档编辑器。
+PotPlayer 一个功能强大的视频解码器。
+XiaoYaoEmulator 一个安卓模拟器
+VMware 虚拟机。安装完成后会弹出一个对话框让你输入密钥
+密钥 ZF3R0-FHED2-M80TY-8QYGC-NPKYF
+YF390-0HF8P-M81RQ-2DXQE-M2UT6
+ZF71R-DMX85-08DQY-8YMNC-PPHV8
+IntelliJ IDEA Java
+PyCharm Python
+Dev++ C
+Win SCP 服务器文件管理器
+Xshell 服务器终端，登录 Linux 虚拟服务器</description>
+    </item>
+    
+  </channel>
+</rss>

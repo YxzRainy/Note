@@ -6,7 +6,146 @@
     <description>Recent content in C on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 堆栈</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
+      <description>堆栈 栈内存 先进后出
+压栈，将数据存入栈内存，即在内存中创建内存空间
+出栈，从栈内存中丢弃数据，即释放内存。</description>
+    </item>
+    
+    <item>
+      <title>C 递归</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
+      <description>递归 函数自身调用自身</description>
+    </item>
+    
+    <item>
+      <title>C 函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
+函数还有很多叫法，比如方法、子例程或程序，等等。
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) { if(i &amp;gt; j) { printf(&amp;#34;%d\n&amp;#34;,i); } else { printf(&amp;#34;%d\n&amp;#34;,j); } } // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) { int a = 1; int b = 5; max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）
+能够对接收的参数进行梳理
+有返回值（也可以没有返回值）
+函数的返回值以函数名前面的关键字为准 // 函数名 fun 前面的 int 是该函数的类型，也是该函数返回值的类型 // 就算该函数 return 其他类型的值（比如 char 类型的 A），、 // 但最终这个 char A 也会以 int 类型返回（int 类型的 65，因为 A 的 ASCII 码是65）。 int fun(void) { // 该函数最终的返回值不是 char A ，而是一个整形的 65  return &amp;#39;A&amp;#39;; } int main(void) { int c; c = fun(); printf(&amp;#34;%d\n&amp;#34;,c); } return 的作用 reture 是用来终止函数的，如果有 reture 表达式，还会返回这个表达式的值；如果 return 空，则不会返回某个值，只终止被调函数。</description>
+    </item>
+    
+    <item>
+      <title>C 指针和一维数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
+#include &amp;lt;iostream&amp;gt; int main() { int a[5]; // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]); // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）
+确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。</description>
+    </item>
+    
+    <item>
+      <title>C 数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(&amp;#34;%d\n&amp;#34;,arr[4 ]); } 一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){ // 完全初始化  int arr[5] ={1,2,3,4,5}; // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]); // 不初始化，所有元素都是垃圾值  int arr3[5]; printf(&amp;#34;%d\n&amp;#34;,arr3[5]); // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，</description>
+    </item>
+    
+    <item>
+      <title>C 指针的使用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>指针的使用 互换两个数字 #include &amp;lt;stdio.h&amp;gt;//*p = 1 *q = 5 void interchange(int * p,int * q) { // 将 t 作为两个值的互换媒介。  int t; // t = 1  t = *p; // *p = 5  *p = *q; // *q = 1  *q = t; } // 因为 *p 和 *q 分别指向于 a 和 b，所以，修改 *p 和 *q，就相当于修改 a 和 b， // 尽管 *p 和 *q 在函数指向完毕后已经被释放，但程序依旧通过 *p 和 *q，分别修改了 a 和b。 // 而 p 和 q，两者和 a 、b，并不一样，因为 p、q 中，存放的是指向 a、b 的地址。 // 由此可得出一个结论，函数的形参和实参， 永远不是一个 int main () { int a = 1; int b = 5; // 取 a、b 的地址  interchange(&amp;amp;a,&amp;amp;b); printf(&amp;#34;a = %d,b = %d&amp;#34;,a,b); } 通过被调函数修改主调函数普通变量的值 函数的实参必须为该普通变量的地址。</description>
+    </item>
+    
+    <item>
+      <title>汉化 CodeBlocks</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
+      <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
+打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
+    </item>
+    
+    <item>
+      <title>C CPU 如何对内存条进行处理</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</guid>
+      <description>CPU 如何对内存条进行处理 CUP 处理内存条中的数据时，需要通过控制线（只读或只写）、数据线（数据传输）和地址线（确定将要处理的是哪一个内存单元）处理内存条中的数据。
+32 位系统最大支持 4G 内存。
+64位 系统最大支持 192G 内存。</description>
+    </item>
+    
+    <item>
+      <title>C printf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <description>printf 用于将变量的内容输出到显示器.
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+    </item>
+    
+    <item>
+      <title>C char</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
+      <description>char 字符类型。
+在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
+    </item>
+    
+    <item>
+      <title>C scanf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <description>scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
+    </item>
+    
+    <item>
+      <title>C switch</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <description>switch 它是一种选择控制语句。
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
+该语句的功能只是退出 switch 语句转去执行它下面的语句，
+在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
+当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
+我们来看下面这个程序：
+#include &amp;lt;stdio.h&amp;gt; int main () { char fraction ; printf(&amp;#34;请输入您的等级：&amp;#34;); scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); // 测试请键入 A 	switch(fraction) { case &amp;#39;A&amp;#39; : printf(&amp;#34;很棒！\n&amp;#34; ); case &amp;#39;B&amp;#39; : printf(&amp;#34;还不错哦\n&amp;#34; ); case &amp;#39;C&amp;#39; : printf(&amp;#34;做得好\n&amp;#34; ); break; case &amp;#39;D&amp;#39; : printf(&amp;#34;您通过了\n&amp;#34; ); break; case &amp;#39;F&amp;#39; : printf(&amp;#34;最好再试一下\n&amp;#34; ); break; default : printf(&amp;#34;无效的成绩\n&amp;#34; ); } printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+    </item>
+    
     <item>
       <title>C break</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
@@ -15,29 +154,6 @@
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
       <description>break 用于终止循环或退出 switch.
 不能直接用于 if，除非 if 是循环的一个子句。</description>
-    </item>
-    
-    <item>
-      <title>C printf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
-      <description>printf 用于将变量的内容输出到显示器.
-直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
-    </item>
-    
-    <item>
-      <title>C scanf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
-      <description>scanf 通过键盘将数据输入到变量中。
-将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
-使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
-scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
-scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
     </item>
     
     <item>

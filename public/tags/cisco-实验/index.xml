@@ -6,7 +6,16 @@
     <description>Recent content in Cisco 实验 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco 配置单区域 OSPFv2</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
+      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
+      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
+    </item>
+    
     <item>
       <title>Cisco 配置 Rip V2</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>

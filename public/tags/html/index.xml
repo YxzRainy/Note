@@ -29,5 +29,18 @@
 语义化的优点  使文档在没有 CSS 样式的条件下，也能很好地呈现出内容结构。 使文档结构变的清晰，更具可读性，且利于后期的代码维护。 方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备等）。 有利于 SEO。  </description>
     </item>
     
+    <item>
+      <title>htm、html、shtml 后缀的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>htm、html、shtml 后缀的区别 首先 htm、html、shtml 都是静态网页的后缀，三者也可以说都是只是扩展名不同，其他一样，都是静态的网页。
+Htm 和 html 是完全静态的网页不通过服务器编译解释直接送出给浏览器读取的静态网页，以 htm 和 html 伪静态 Request 除外。
+html、htm、shtml、shtm 均是静态 html 网页，都是网页文件后缀名不同的 html 网页扩展名。
+htm html 与 htm 均是静态网页后缀名，网页文件没有区别与区分，html 与 htm后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为 html与htm 没有本质区别，只是两者适用于不同的运行环境（DOS 和 UNIX）之下。
+shtml shtml命名的网页文件里，使用了ssi的一些指令，就像 asp 中的指令，你可以在SHTML文件中写入SSI指令，当客户端访问这些shtml文件时，服务器端会把这些SHTML文件进行读取和解释，把SHTML文件中包含的SSI指令解释出来。</description>
+    </item>
+    
   </channel>
 </rss>

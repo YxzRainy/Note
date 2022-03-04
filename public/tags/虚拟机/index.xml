@@ -6,11 +6,11 @@
     <description>Recent content in 虚拟机 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>域服务器</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>域服务器 父域一
@@ -48,7 +48,7 @@ Dns 192.168.10.1
     <item>
       <title>域服务器的基本操作</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>域服务器的基本操作 克隆 2008
@@ -93,7 +93,7 @@ ts 属性 用户，即可看到
     <item>
       <title>安装 Hyper V</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
       <description>安装 Hyper V 安装 hyper v

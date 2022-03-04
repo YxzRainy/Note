@@ -6,7 +6,472 @@
     <description>Recent content in Mynotes on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/mynote/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/mynote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>安装 WordPress</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/</link>
+      <pubDate>Thu, 03 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/</guid>
+      <description>下载 WordPress
+将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
+![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
+打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。
+![image-20220303151952855](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151952855.png)
+wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http://localhost/WordPress/wp-login.php
+来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：
+![image-20220303153935800](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：
+![image-20220303193804265](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303193804265.png)</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 02 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>PHP 环境配置 新的学期，新的课程。
+今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
+下载 PHPStudy PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的集成开发环境
+ 解压运行 选择安装目录，通常时 D 盘，我这里是D:\AppInstallPath\PhpStudy  安装完成后，打开 PHPStudy，会出现以下界面：
+![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+另外，PHPStudy 会在安装目录下的 phpstudy_pro\Extensions 路径形成目录结构：
+![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
+在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。
+配置 MySQL 环境变量  此电脑 — 系统属性 — 高级系统设置 — 高级 — 环境变量 。 找到系统变量中名为 Path 的变量， 新建，将 MySql 目录下的 bin 文件的路径粘贴到这里，确定。 win + R 打开 cmd，输入 mysql，如果提示ERROR 2003 (HY000): Can&#39;t connect to MySQL server on &#39;localhost&#39; (10061)就说明 MySQL 的环境变量配置完成。  !</description>
+    </item>
+    
+    <item>
+      <title>《亿万富翁们的饕餮盛宴》</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/documentary/%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BB%AC%E7%9A%84%E9%A5%95%E9%A4%AE%E7%9B%9B%E5%AE%B4/</link>
+      <pubDate>Sat, 26 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/documentary/%E4%BA%BF%E4%B8%87%E5%AF%8C%E7%BF%81%E4%BB%AC%E7%9A%84%E9%A5%95%E9%A4%AE%E7%9B%9B%E5%AE%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C 堆栈</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
+      <description>堆栈 栈内存 先进后出
+压栈，将数据存入栈内存，即在内存中创建内存空间
+出栈，从栈内存中丢弃数据，即释放内存。</description>
+    </item>
+    
+    <item>
+      <title>C 递归</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
+      <description>递归 函数自身调用自身</description>
+    </item>
+    
+    <item>
+      <title>《娇奢父母》</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/documentary/%E5%A8%87%E5%A5%A2%E7%88%B6%E6%AF%8D/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/documentary/%E5%A8%87%E5%A5%A2%E7%88%B6%E6%AF%8D/</guid>
+      <description>钱，真的是体验这时间美好实物的必需品呀。
+这天晚上，因为四天没洗澡的原因，晚上就去洗了个澡，因此我就没锻炼和跑步，虽然已经快五天没跑步了，但确实是因为前几天的天气不太给力的原因，下雪&amp;hellip;
+唉，每次洗澡，我也不得不感概自家的贫穷，我知道这很难改变，但确实很贫穷。
+2022 年了，洗澡还得用煤气烧开水，然后将烧开的水倒在桶里，在提到一个公共厕所里去洗。
+好的是，还好有个日光灯，但洗起来依旧很冷，家里其他人都是去蹭我亲戚家的热水器洗的哈哈哈哈。
+夏天还好，但冬天，着实有点让人落寞了&amp;hellip;
+洗完澡，我就打开电脑，心血来潮的点开之前知乎收藏的三个纪录片，这天晚上我只看了两个，
+因为剩下的那个没看的，需要开大会员我靠&amp;hellip;这玩意也是需要 15 块大洋的&amp;hellip;我又因为经济的原因止步于此了。
+现在我所写 的是名为《骄奢父母》的这个纪录片，这个纪录片很适合穷人或者一边经济水平的人观看，
+为什么这么说，因为我觉得这可以帮助我们了解上流社会，这里用上流社会可以还是有些不恰当，应该用顶流一词比较好。
+这个记录片让我有幸看到了那些亿万富翁是如何培养自己的小孩的。
+负责接送孩子上下学的司机、保镖，
+家庭保姆、厨师、、营养师，甚至还有专门教小孩使用坐便器的老师，
+世界顶尖的教授一对一教学，
+私人订制的鞋，
+职业的肖像画师，
+他们住的地方不是小区、公寓、高楼大厦。
+而是城堡或私人别墅，一个拥有几十个房间的城堡，而城堡之外、是广阔的草坪。
+这些富豪们的孩子，大部分都很有教养，长得很好看，兴趣很广，当然，也有调皮捣蛋的。
+孩子们穿的也都是我们尔等凡人能想象到的，一件貂皮大衣5000英镑，换算人民币就是四万两千多，高定的鞋子···</description>
+    </item>
+    
+    <item>
+      <title>C 函数</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
+函数还有很多叫法，比如方法、子例程或程序，等等。
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) { if(i &amp;gt; j) { printf(&amp;#34;%d\n&amp;#34;,i); } else { printf(&amp;#34;%d\n&amp;#34;,j); } } // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) { int a = 1; int b = 5; max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）
+能够对接收的参数进行梳理
+有返回值（也可以没有返回值）
+函数的返回值以函数名前面的关键字为准 // 函数名 fun 前面的 int 是该函数的类型，也是该函数返回值的类型 // 就算该函数 return 其他类型的值（比如 char 类型的 A），、 // 但最终这个 char A 也会以 int 类型返回（int 类型的 65，因为 A 的 ASCII 码是65）。 int fun(void) { // 该函数最终的返回值不是 char A ，而是一个整形的 65  return &amp;#39;A&amp;#39;; } int main(void) { int c; c = fun(); printf(&amp;#34;%d\n&amp;#34;,c); } return 的作用 reture 是用来终止函数的，如果有 reture 表达式，还会返回这个表达式的值；如果 return 空，则不会返回某个值，只终止被调函数。</description>
+    </item>
+    
+    <item>
+      <title>C 指针和一维数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
+#include &amp;lt;iostream&amp;gt; int main() { int a[5]; // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]); // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）
+确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。</description>
+    </item>
+    
+    <item>
+      <title>C 数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(&amp;#34;%d\n&amp;#34;,arr[4 ]); } 一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){ // 完全初始化  int arr[5] ={1,2,3,4,5}; // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]); // 不初始化，所有元素都是垃圾值  int arr3[5]; printf(&amp;#34;%d\n&amp;#34;,arr3[5]); // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，</description>
+    </item>
+    
+    <item>
+      <title>C 指针的使用</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>指针的使用 互换两个数字 #include &amp;lt;stdio.h&amp;gt;//*p = 1 *q = 5 void interchange(int * p,int * q) { // 将 t 作为两个值的互换媒介。  int t; // t = 1  t = *p; // *p = 5  *p = *q; // *q = 1  *q = t; } // 因为 *p 和 *q 分别指向于 a 和 b，所以，修改 *p 和 *q，就相当于修改 a 和 b， // 尽管 *p 和 *q 在函数指向完毕后已经被释放，但程序依旧通过 *p 和 *q，分别修改了 a 和b。 // 而 p 和 q，两者和 a 、b，并不一样，因为 p、q 中，存放的是指向 a、b 的地址。 // 由此可得出一个结论，函数的形参和实参， 永远不是一个 int main () { int a = 1; int b = 5; // 取 a、b 的地址  interchange(&amp;amp;a,&amp;amp;b); printf(&amp;#34;a = %d,b = %d&amp;#34;,a,b); } 通过被调函数修改主调函数普通变量的值 函数的实参必须为该普通变量的地址。</description>
+    </item>
+    
+    <item>
+      <title>汉化 CodeBlocks</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
+      <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
+打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
+    </item>
+    
+    <item>
+      <title>C CPU 如何对内存条进行处理</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</guid>
+      <description>CPU 如何对内存条进行处理 CUP 处理内存条中的数据时，需要通过控制线（只读或只写）、数据线（数据传输）和地址线（确定将要处理的是哪一个内存单元）处理内存条中的数据。
+32 位系统最大支持 4G 内存。
+64位 系统最大支持 192G 内存。</description>
+    </item>
+    
+    <item>
+      <title>《永恒》</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E6%B0%B8%E6%81%92/</link>
+      <pubDate>Sun, 06 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E6%B0%B8%E6%81%92/</guid>
+      <description>《永恒》 </description>
+    </item>
+    
+    <item>
+      <title>治疗冻疮的方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/1-essay/%E6%B2%BB%E7%96%97%E5%86%BB%E7%96%AE%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 01 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/1-essay/%E6%B2%BB%E7%96%97%E5%86%BB%E7%96%AE%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>治疗冻疮的方法 找一些的白萝卜（圆的和长的白萝卜都可以）叶子，用清水洗干净；
+在锅中放入适量清水，烧开即可；
+向锅中放入刚洗好的白萝卜叶子，沸水煮 10 分钟左右即可；
+等水温降到合适的温度后，将双手或双脚放入水中浸泡即可。
+我当时是早晚各一次，三天左右基本就好的差不多了。
+个人认为可以预防冻疮的方法  接触冷水时（比如洗碗）佩戴加绒的橡胶手套。 不要让易长冻疮的地方忽冷忽热（刚接触热水，立马又接触冷水） 耳罩、手套。 厚袜子，保护手、耳朵以及脚。 晚上睡觉时穿袜子入睡。  </description>
+    </item>
+    
+    <item>
+      <title>程序员的酒后真言</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/</link>
+      <pubDate>Sun, 16 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/</guid>
+      <description>程序员的酒后真言 美国最大的论坛 Reddit，曾经有一个热帖。
+一个程序员说自己喝醉了，软件工程师已经当了 10 年，心里有好多话想说：我可能会后悔今天说了这些话。
+他洋洋洒洒写了一大堆，获得 9700 多个赞。内容很有意思，值得一读。
+  职业发展的最好方法是换公司。
+  技术栈不重要。技术领域有大约 10-20 条核心原则，重要的是这些原则，技术栈只是落实它们的方法。你如果不熟悉某个技术栈，不需要过度担心。
+  工作和人际关系是两回事。有一些公司，我交到了好朋友，但是工作得并不开心；另一些公司，我没有与任何同事建立友谊，但是工作得很开心。
+  我总是对经理实话实说。怕什么？他开除我？我会在两周内找到一份新工作。
+  如果一家公司的工程师超过 100 人，它的期权可能在未来十年内变得很有价值。对于工程师人数很少的公司，期权一般都是毫无价值。
+  好的代码是初级工程师可以理解的代码。伟大的代码可以被第一年的 CS 专业的新生理解。
+  作为一名工程师，最被低估的技能是记录。说真的，如果有人可以教我怎么写文档，我会付钱，也许是 1000 美元。
+  网上的口水战，几乎都无关紧要，别去参与。
+  如果我发现自己是公司里面最厉害的工程师，那就该离开了。
+  我们应该雇佣更多的实习生，他们很棒。那些精力充沛的小家伙用他们的想法乱搞。如果他们公开质疑或批评某事，那就更好了。我喜欢实习生。
+  技术栈很重要。如果你使用 Python 或 C++ 语言，就会忍不住想做一些非常不同的事情。因为某些工具确实擅长某些工作。
+  如果你不确定自己想做什么东西，请使用 Java。这是一种糟糕的编程语言，但几乎无所不能。
+  对于初学者来说，最赚钱的编程语言是 SQL，干翻所有其他语言。你只了解 SQL 而不会做其他事情，照样赚钱。人力资源专家的年薪？也许5万美元。懂 SQL 的人力资源专家？9万美元。
+  测试很重要，但 TDD （测试驱动的开发）几乎变成了一个邪教。</description>
+    </item>
+    
+    <item>
+      <title>贵阳哪些地方值得一玩</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/1-essay/%E8%B4%B5%E9%98%B3%E5%93%AA%E4%BA%9B%E5%9C%B0%E6%96%B9%E5%80%BC%E5%BE%97%E4%B8%80%E7%8E%A9/</link>
+      <pubDate>Sun, 16 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/1-essay/%E8%B4%B5%E9%98%B3%E5%93%AA%E4%BA%9B%E5%9C%B0%E6%96%B9%E5%80%BC%E5%BE%97%E4%B8%80%E7%8E%A9/</guid>
+      <description>贵阳哪些地方值得一玩 贵阳区域  花溪 青岩 天河潭  老城区  黔灵山公园 甲秀楼  市郊  乌当偏坡 渔洞峡 情人谷 阿栗杨梅园 香纸沟水上乐园 白云欢乐世界 金阳喀斯特公园 贵安新区森哒星生态度假公园 云漫湖 瑞士小镇 多彩贵州城1958 多彩贵州海洋世界  贵阳三县一市 贵阳三县一市分别是修文县息烽县，开阳县，清镇市，距离贵阳市较近，非常适合自驾。
+修文县  贵阳野生动物园 阳明洞 苏格兰牧场 桃源河峡谷生态旅游区 珍珠岛度假休闲中心  息烽县  息烽温泉 息烽集中营 乌江峡  开阳县  南江大峡谷 白马峪温泉 云山茶海 十里画廊 白果生态农业观光园  清镇市  时光贵州 红枫湖  安顺区域  黄果树风景区 龙宫风景区  探秘历史 天龙
+ 云峰屯堡（保留600年明朝军屯历史原样，老汉人） 紫云格凸河（悬棺、蜘蛛人） 关岭红崖天书 关岭海百合化石群 普定穿洞遗址  青山秀水  平坝农场（赏樱花） 普定秀水（农家乐） 小河湾（摘果） 黄果树石头寨（烧烤）  有句话是：“玩在贵阳，吃在安顺”。很多贵阳的朋友都会周末到安顺去吃小吃再返程，因此就算是边逛边吃也可以玩一天。</description>
+    </item>
+    
+    <item>
+      <title>C printf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <description>printf 用于将变量的内容输出到显示器.
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+    </item>
+    
+    <item>
+      <title>C char</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
+      <description>char 字符类型。
+在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
+    </item>
+    
+    <item>
+      <title>C scanf</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <description>scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
+    </item>
+    
+    <item>
+      <title>C switch</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <description>switch 它是一种选择控制语句。
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
+该语句的功能只是退出 switch 语句转去执行它下面的语句，
+在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
+当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
+我们来看下面这个程序：
+#include &amp;lt;stdio.h&amp;gt; int main () { char fraction ; printf(&amp;#34;请输入您的等级：&amp;#34;); scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); // 测试请键入 A 	switch(fraction) { case &amp;#39;A&amp;#39; : printf(&amp;#34;很棒！\n&amp;#34; ); case &amp;#39;B&amp;#39; : printf(&amp;#34;还不错哦\n&amp;#34; ); case &amp;#39;C&amp;#39; : printf(&amp;#34;做得好\n&amp;#34; ); break; case &amp;#39;D&amp;#39; : printf(&amp;#34;您通过了\n&amp;#34; ); break; case &amp;#39;F&amp;#39; : printf(&amp;#34;最好再试一下\n&amp;#34; ); break; default : printf(&amp;#34;无效的成绩\n&amp;#34; ); } printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+    </item>
+    
+    <item>
+      <title>一个人的安全感源于</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E5%AE%89%E5%85%A8%E6%84%9F%E6%BA%90%E4%BA%8E/</link>
+      <pubDate>Sat, 25 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E5%AE%89%E5%85%A8%E6%84%9F%E6%BA%90%E4%BA%8E/</guid>
+      <description>一个人的安全感源于 我想说一句特别扎心真实的话：所谓那些要让自己十分独立，强大到谁都不需要依赖的情况，根本不能带来安全感。
+这个逻辑真的超级简单——你让自己变得谁都不需要依赖，然后时刻靠着“我谁都不需要”的想法来支撑自己，
+就算进入到一段关系当中也不放心对方，依旧活的跟自己一个人生活一样&amp;hellip;这不就是一个很没有安全感的人，才会做出来的表现么？
+我相信和这样的人谈过恋爱的人，一定深有体会：
+这个人特别懂事，特别独立，有什么问题都自己解决，有什么负面情绪都自己消化，好像这个人没有你也可以过的很好。
+是，你的确省事了，这个人也的确懂事，可是问题就在于：
+你从来走不进这个人的内心，不是么？因为这人，一直在预设你离开了怎么办。
+所以我觉得过分强调自己的独立，过分让自己不需要和对方发生关系，难道不就是因为十分没有安全感，所以十分害怕对方的离开，
+因此才不和对方发生任何亲密接触，早早地关闭自己的内心么？
+那安全感来自哪里？
+我觉得安全感并不来自于“我不需要”，而是来自于“就算失去了，我还有从头再来的勇气”。
+不知道看过电影《1942》的朋友有没有印象，在大灾之年到来的时候，过去的老东家落魄成了要饭逃荒的人，但是他还有底气说出来：
+“我知道怎么从穷变富，再过上二十年，我还是东家。”
+这种失去了一切之后，依然有重头再来的自信的人，才是真正有安全感：失去痛苦么？太痛苦了。
+但是没关系，只要你让我站住脚，让我缓过来，我照样有本事和底气重头再来。
+所以我觉得对应在感情当中，一个真正有安全感的人应该是这个样子的：
+遇到喜欢的人，大胆追求，完全不在乎这样会不会显得自己太主动，
+完全不在乎自己会不会表现的太积极，反正就算被拒绝了也无所谓，不喜欢我未必一定是我的原因；
+在一起了之后，就好好相处，该依赖对方的依赖，该走心的就走心，完全和对方真心相处，无所保留；
+分开了之后，该哭就哭，该难受就难受，绝对不假装坚强，也不强撑着说自己没事，
+等到走出来了，缓过来之后，收拾好心态去找下一位。
+没有什么“再也不相信爱情了”“再也不会付出那么多了”“不要依赖任何人”的感慨，
+因为他们清楚的知道自己值得被爱，自己能够找到更好的，他们完全有能力开启一段新的感情。
+我们努力学习，努力工作，让自己的生活变得充实，绝对不是为了把别人排斥在外面，然后不停地告诉自己“我不需要”别人。
+我觉得我们这么努力的目的，是为了当我们遇到可以爱，值得爱的人的时候，我们能够大胆的行动；
+如果这段感情失败了，我们也完全可以从头再来。
+所以安全感其实来自于建立的从头再来的底气，安全感恰恰来自于足够的自信。
+ “我有足够的实力，我可以东山再起”和“我有足够的实力，我不需要任何人”这两者之间，我觉得还是有本质上的差别的。
+所以请千万不要产生什么误解，把“我不需要别人”当做自己安全感的来源，我觉得这真的是很错误的想法：
+因为那不是安全感，那是在回避问题，那是用封闭自己内心的方式为自己建造了一个根本不属于自己的堡垒，
+自己躲在堡垒里面，自欺欺人的表示很安全。
+安全感应该来自于你实力带给自己的，高度的自我认同：
+你相信自己很好，你相信自己值得被肯定，值得被爱，你更明确的知道哪怕不好的事情发生在你身上，你也可以很快东山再起。
+所以，当一个人告诉我“我很强大，我不需要依赖任何人，我没有期望所以也不会失望”的时候，
+我不会觉得这个人有很强的安全感，我反而会很心疼这种人——这个人一定经历了什么不好的事情，所以戒备心这么重。
+我希望看到的是，大家可以特别轻松的表示“无所谓，逢山开路遇水搭桥，实在不行也当体验过程了，失败了重新开始就好”。
+所以，不要躲在那个自我封闭的堡垒当中了，走出来吧。
+当你不需要盔甲的时候，你才变得真正足够自信，足够强大，足够有安全感。</description>
+    </item>
+    
+    <item>
+      <title>跑步训练</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/grow/%E8%B7%91%E6%AD%A5%E8%AE%AD%E7%BB%83/</link>
+      <pubDate>Sat, 25 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/grow/%E8%B7%91%E6%AD%A5%E8%AE%AD%E7%BB%83/</guid>
+      <description>跑步训练 冬天跑步，不问配速，不管里程，能坚持，就是万岁。
+在我的心目中，冬训，求稳，不受伤即可。
+如果放之任之，三天打鱼两天晒网，到了来年开春不仅身体发福，跑起来也够呛。
+那么，冬训我们该如何跑呢？
+适量 冬天多跑轻松有氧，适当地堆堆跑量是没有问题的，但一定要适量，遵循循序渐进的原则，
+平常日常拉练 10 - 15 公里，在身体的承受范围之内即可。
+跑量是基础，没有足够的跑量打底，全马是无从谈起的。
+稳速 业余爱好者，最大的问题是：快又快不上去，慢又慢不下来；时而快，时而慢，节奏混乱。
+不管半马还是全马，讲究个人节奏感，匀速为主；
+绝不是仗着体力充沛，肆意冲刺，以至于精疲力竭。
+今天有氧慢跑，速度绝不能快；明天间歇冲刺，就不能保存实力；该慢则慢，不硬撑；该快则快，不保留。
+我们进行速度训练的时候，假如我们一周跑四次，那么有三次都是以有氧慢跑为主，进行预热、调节、恢复，
+只为腾出足够的精力，进行速度训练，否则次次强度训练打底，身体肯定吃不消！
+有氧是主食，速度训练只是调味剂，一周一次，刚刚好。即便跑速度，也要稳速，绝不是有多快冲多快。
+拿 10 x 1000 米间歇举例，前 3 组，可以稍慢点儿，保存好体力，坚持跑完最后一组，
+否则跑到第 5 组，原本 400 配速的间歇，掉到了 430，这就失去了速度训练的意义。
+一定要稳，保存好体力，细水长流，才能坚持到最后。
+力量 力量训练是大多数业余爱好者的短板，我们很少安排时间进行力量的强化训练。
+专业跑者一般一周一次，45 分钟左右，像一般的业余跑者，习惯路跑，很少有练力量的习惯。
+如果你想提升成绩，首先要让腿部有劲，包括我们日常拉练，也是练腿，但效果远不如，针对性的强化训练。
+我们先进行徒手力量训练，深蹲、蛙跳、箭步蹲练腿；腰腹挺举练腰腹；单杆双杆练上肢；平板支撑练核心&amp;hellip;
+随着能力提升，可以借助器材进行强化，比如哑铃深蹲、哑铃箭步蹲等等，
+但务必不要用力过猛，操之过急。</description>
+    </item>
+    
+    <item>
+      <title>库，框架，架构，平台的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 21 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。
+库的概念很宽泛。
+程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；
+各种 SDK 都是库；
+从npm、Maven、Nuget下载的包都是库；
+你自己写一个字符串处理函数，包装好之后调用，也是库。
+框架（Framework） 框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。
+jQuery 的规模够大了，但仍然是库，不是框架。
+框架的最大特征是它会接管程序的主控制流，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。
+比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。
+所以一般来说单个项目可以引入很多库，却不能用多个框架。
+同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。
+因为主控制流只有一个。
+架构（Architecture） 架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。
+它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；
+也可以是客户端形式，比如多年前常谈的 B/S、C/S 架构；
+还可以是服务器端结构，比如分布式架构、微服务架构；
+再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；
+等等等等。
+所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。
+大方向一旦出了问题，比写几处错误代码的影响可大多了。
+平台（Platform） 平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。
+只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。
+操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；
+浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；
+各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；
+以及常见的通知推送平台、短信平台、统计分析平台等等等。
+ 当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。
+某些较大规模的库经常被称为框架，一些框架也会自称平台来撑场面。</description>
+    </item>
+    
+    <item>
+      <title>Java IO 流</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</guid>
+      <description>IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;; File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } </description>
+    </item>
+    
+    <item>
+      <title>Java 卖票问题</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
+      <description>卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(&amp;#34;222&amp;#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao &amp;gt; 0) { System.out.println(this.name + &amp;#34;正在卖第&amp;#34; + (1001 - chepiao) + &amp;#34;张票&amp;#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(&amp;#34;111&amp;#34;); public ThreadOne(String name) { this.</description>
+    </item>
+    
+    <item>
+      <title>Java 生产者消费者模式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>生产者消费者模式 工厂类 public class Factory { int num=0; //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException { if(num &amp;gt;= 10){ System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;); //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num++; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; + num); //唤醒消费商品的线程  this.notify(); } } //开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;); this.wait();//强制当前线程等待  }else{ Thread.sleep( 1000); //消费商品  num--; System.out.println(&amp;#34;消费者们购买了一个商品，现在库存为:&amp;#34; + num); //唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this.</description>
+    </item>
+    
+    <item>
+      <title>Java 继承</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</guid>
+      <description>继承 Phone Class public class Phone extends Dianhua implements Mp3 { public void playmusic(){ System.out.println(&amp;#34;播放音乐&amp;#34;); } public void call(){ System.out.println(&amp;#34;可以打电话&amp;#34;); } public void dh(){ System.out.println(&amp;#34;可以高得地图导航&amp;#34;); } } Telephone Class public abstract class Telephone { public abstract void call(); public abstract void dh(); } Mp3 Interface public interface Mp3 { abstract void playmusic(); } Test Class public class Test { public static void main(String[] args) { Phone c=new Phone(); c.call(); c.dh(); c.</description>
+    </item>
+    
+    <item>
+      <title>Cisco 配置单区域 OSPFv2</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
+      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
+      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
+    </item>
+    
+    <item>
+      <title>OSPF 协议</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</guid>
+      <description>OSPF 协议 OSPF 是目前网络界耳熟能详的协议了。
+用带宽来判断路径的优劣弥补了RIP的缺陷（光凭带宽也不是很好），同时使用划分区域网络，可以更好的控制管理和扩展网络。
+还有各种小特点比如 DR、BDR 机制，和适合不同网络类型机制，以及使用不同LSA传递各种信息，各种LSA的特性也不通。
+所有综合来讲OSPF是比较适合大众选择的一款路由协议
+router ospf 10 配置 OSPF 路由，进程 ID 为 10
+router-id 1.1.1.1 配置路由器的路由器 ID
+子网掩码的反掩码 IP 地址：192.168.10.8/30，那么它的子网掩码为 255.255.255.252
+则它的子网掩码的反掩码为 255.255.255.255 减去 255.255.255.252 等于 0.0.0.3，
+即配置 OSPFv2 的网络通告为：
+network 192.168.10.8 0.0.0.3 area 0其中 area 是自治系统区域的标识</description>
+    </item>
+    
+    <item>
+      <title>交换机</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
+      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
+access 只允许通通过单个 VLAN。</description>
+    </item>
+    
+    <item>
+      <title>Cisco 静态和动态路由的优缺点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
+      <pubDate>Tue, 07 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
+      <description>静态和动态路由的优缺点 静态路由的优点：  占用资源较多。 便于管理员了解路由。 易于配置。  静态路由的缺点：  配置和维护耗费时间。 配置容易出错，尤其对于大型网络。 需要管理员维护变化的路由信息。 不能随着网络的增长而扩展；维护会越来越麻烦。 需要完全了解整个网络的情况才能进行操作。  动态路由的优点  增加或删除网络时，管理员维护路由配置的工作量较少。 网络拓扑结构发生变化时，协议可以自动做出调整。 配置不容易出错。 扩展性好，网络增长时不会出现问题。  动态路由的缺点  需要占用路由器资源（CPU 时间、内存和链路带宽）。 管理员需要掌握更多的网络知识才能进行配置、验证和故障排除工作。  </description>
+    </item>
+    
     <item>
       <title>Cisco 配置 Rip V2</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
@@ -91,26 +556,30 @@ enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1
       <description>Npm 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
 本文目标读者是「不太了解 npm 的新人」，大神您别看了，不然又说我啰嗦了 。
 社区 程序员自古以来就有社区文化：
-社区的意思是：拥有共同职业或兴趣的人们，自发组织在一起，通过分享信息和资源进行合作。虚拟社区的参与者经常会在线讨论相关话题，或访问某些网站。 前端程序员也有社区，世界上最大的前端社区应该就是 GitHub 了。前端通过 GitHub 来
-分享源代码（线上代码仓库） 讨论问题（Issue 列表） 收集学习资源和常去的网站（比如我收集的优质中文前端博客）
-加入社区最大的好处之一是，你可以使用别人贡献的代码，你也可以贡献代码给别人用。
+社区的意思是：拥有共同职业或兴趣的人们，自发组织在一起，通过分享信息和资源进行合作。
+虚拟社区的参与者经常会在线讨论相关话题，或访问某些网站。
+前端程序员也有社区，世界上最大的前端社区应该就是 GitHub 了。
+前端通过 GitHub ：
+ 分享源代码（线上代码仓库） 讨论问题（Issue 列表） 收集学习资源和常去的网站（比如我收集的优质中文前端博客）  加入社区最大的好处之一是，你可以使用别人贡献的代码，你也可以贡献代码给别人用。
 共享代码 前端是怎么共享代码的呢？
 在 GitHub 还没有兴起的年代，前端是通过网址来共享代码
 比如你想使用 jQuery，那么你点击 jQuery 网站上提供的链接就可以下载 jQuery，放到自己的网站上使用
-GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能：
-麻烦 当一个网站依赖的代码越来越多，程序员发现这是一件很麻烦的事情：
-去 jQuery 官网下载 jQuery 去 BootStrap 官网下载 BootStrap 去 Underscore 官网下载 Underscore ……
-有些程序员就受不鸟了，一个拥有三大美德的程序员 Isaac Z. Schlueter （以下简称 Isaaz）给出一个解决方案：用一个工具把这些代码集中到一起来管理吧！
-这个工具就是他用 JavaScript （运行在 Node.js 上）写的 npm，全称是 Node Package Manager
-具体步骤 NPM 的思路大概是这样的：</description>
+GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能，但这很麻烦。
+比如，当一个网站依赖的代码越来越多，程序员们发现这是一件很麻烦的事情：
+去 jQuery 官网下载 jQuery。
+去 BootStrap 官网下载 BootStrap。
+去 Underscore 官网下载 Underscore。 ……
+有些程序员就受不鸟了，一个拥有三大美德的程序员 Isaac Z. Schlueter （以下简称 Isaaz）给出一个解决方案：
+用一个工具把这些代码集中到一起来管理吧。
+这个工具就是他用 JavaScript （运行在 Node.js 上）写的 npm，全称是 Node Package Manager。</description>
     </item>
     
     <item>
       <title>挑剔是一种控制人的手段</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E6%8C%91%E5%89%94%E6%98%AF%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E4%BA%BA%E7%9A%84%E6%89%8B%E6%AE%B5/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%8C%91%E5%89%94%E6%98%AF%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E4%BA%BA%E7%9A%84%E6%89%8B%E6%AE%B5/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E6%8C%91%E5%89%94%E6%98%AF%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E4%BA%BA%E7%9A%84%E6%89%8B%E6%AE%B5/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%8C%91%E5%89%94%E6%98%AF%E4%B8%80%E7%A7%8D%E6%8E%A7%E5%88%B6%E4%BA%BA%E7%9A%84%E6%89%8B%E6%AE%B5/</guid>
       <description>挑剔是一种控制人的手段 挑剔衣服的质量，可以得到更便宜的价格。
 挑剔员工的工作，可以得到更好的品质。
 女人对男人的挑剔是无处不在的。
@@ -121,10 +590,10 @@ GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能：
     
     <item>
       <title>男女之间最大的矛盾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%9B%E7%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%9B%E7%9B%BE/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%9B%E7%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E7%94%B7%E5%A5%B3%E4%B9%8B%E9%97%B4%E6%9C%80%E5%A4%A7%E7%9A%84%E7%9F%9B%E7%9B%BE/</guid>
       <description>男女之间最大的矛盾 男女之间最大的矛盾在于：
 一方面，女人想找一个各方面能力比自己强的男人；另一方面，又想要这个男人事事都顺着自己。
 这就出现了一个难题：
@@ -174,6 +643,19 @@ GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能：
     </item>
     
     <item>
+      <title>练字技巧</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E7%BB%83%E5%AD%97%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Fri, 12 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E7%BB%83%E5%AD%97%E6%8A%80%E5%B7%A7/</guid>
+      <description>练字技巧 同字不同书，笔画都是有变化的
+练字期间使用米子格或田字格的纸，不能脱离格子，因为格子是规范，是辅助线
+临帖
+仔细观察原帖的辅助线
+起笔——运笔-收笔</description>
+    </item>
+    
+    <item>
       <title>Echarts 遇到的错误</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
@@ -190,20 +672,58 @@ Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</guid>
-      <description>地图 常用配置 地图样式 配置**option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
+      <description>地图 常用配置 地图样式 配置 option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
 normal: { //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;, // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;, //区域分界线  borderWidth: 1 }, </description>
     </item>
     
     <item>
       <title>Less &amp; 符号</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
       <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
 Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}}解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } </description>
+    </item>
+    
+    <item>
+      <title>域服务器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>域服务器 父域一
+父域二
+子域三
+成员四
+9 月 30 号 vmware
+One
+大规模联网用域
+小规模联网用组
+更大的规模用林
+打开 one，和 two，three，fou
+更改计算机属性 - 重命名计算机名
+设置密码和用户名
+设置 ipv4 属性
+One
+ip 192.168.10.1，255.255.255.0，192.168.10.1
+Dns 127.0.0.1，变为 192.168.10.1
+Two
+ip 地址 192.168.10.2，255.255.255.0，192.168.10.1
+Dns 192.168.10.1 变为 192.168.10.2 备用 dns 192.168.10.1
+Three
+ip 192.168.10.3，255.255.255.0，192.168.10.1
+Dns 192.168.10.1
+Four
+ip 192.168.10.4，255.255.255.0，192.168.10.1
+Dns 192.168.10.1
+选择 one
+服务器管理 - 添加角色 - 服务器角色
+勾选 dns 服务器 和 active directory 服务，安装完成后重启
+管理工具
+本地安全策略 账户策略 密码策略 密码必须符合复杂性要求 禁用</description>
     </item>
     
     <item>
@@ -259,11 +779,56 @@ dataView: {}, 还原所有配置项 restore: {},数据区域的缩放 dataZoom:
     </item>
     
     <item>
+      <title>域服务器的基本操作</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Fri, 29 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <description>域服务器的基本操作 克隆 2008
+打开 ad 01
+新建用户
+点击新建的用户
+隶属于
+添加一个
+将 2012 升级为域控
+添加一个子用户，但无法使用这个用户名登录域服务器
+设置
+192.168.1.1
+255.255.255.0
+网关 192.168.1.1
+配置 2008
+控制面板
+网络链接
+设置 ip
+192.168.1.50
+255.255.255.0
+192.168.1.1
+192.168.1.1
+更改计算机名字
+加入域
+yxzi\user02（2012 域控上添加的用户）
+在 2008 上面用 user02 这个用户名登录到域控
+打开 ad 01
+user 02 属性
+账户，登录时间
+新建 用户 user03
+选择 user03 属性
+配置登录名和密码
+指定计算机才能登录
+登录到，输入 ad 02 的计算机名
+ad1 新建组 ts01
+添加到组，选择 user02
+选择 user03，隶属于，
+ts 属性 用户，即可看到
+新建 组织单位 danwei</description>
+    </item>
+    
+    <item>
       <title>var 和 let 的区别</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
 在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
 而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
@@ -442,10 +1007,10 @@ let 不能被重新定义，但是 var 是可以的 </description>
     
     <item>
       <title>喜欢上一个人的本质是什么</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E5%96%9C%E6%AC%A2%E4%B8%8A%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%AC%E8%B4%A8%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>喜欢上一个人的本质是什么 这世上所有的感情，其实都是一种“富兰克林效应”。
 一个人爱上另一个人的根本原因是什么？
 是因为对方的外貌？对方的品格？对方的地位？对方的名声？对方的财富？统统都不是！那究竟是为什么呢？
@@ -725,7 +1290,10 @@ series: [ { // 表示下面data中的数据表示的是哪一方面的数据，�
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/rip-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>Rip 协议 router rip 启用 Rip
+      <description>Rip 协议 RIP协议是比较老的一款动态路由协议，这款协议现在用的已经很少了；
+RIP协议在 IPv4 里分成两个版本，目前就 RIPv2 版本来讲的话，其实也有很多问题，
+比如
+ 根据路由器或者三层转发设备的条数来判断路径优劣这种判断机制是不准确的。 最大条数只有15跳也限制了RIP的网络规模。 RIP运行的速度比较慢，而且可能产生环路对网络有很大的影响。  router rip 启用 Rip
 version 2 切换到 RipV2 版本
 network 通告该路由器的所有直连网络，通告之后，
 该路由器的路由表就会显示除了通告外的所有网络的路由表的本地接口和远程网络的数量是一样的.
@@ -1269,44 +1837,6 @@ tim 为了将刘启从那啥拉回来也在鬼门关走了一走
     </item>
     
     <item>
-      <title>《爆裂鼓手》</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E7%88%86%E8%A3%82%E9%BC%93%E6%89%8B/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E7%88%86%E8%A3%82%E9%BC%93%E6%89%8B/</guid>
-      <description>《爆裂鼓手》
-一个年轻的鼓手正在勤奋的练习。
-安德鲁被弗莱彻选为乐队新替补，众人中只有他被选上，他心中一定和开心，
-安德鲁还成功约了喜欢的女孩一起吃披萨
-安德鲁被弗莱彻放鸽子，但后来发现并灭有，六点的时候光头给了康纳利一份谱子，但因安德鲁迟到了，因此他 并没有。。
-这光头很严格，但为什么喜欢开别人玩笑，逗别人玩呢？
-安德鲁被弗莱彻扔椅子，扇耳光，当众羞辱。
-安德鲁带伤练习打鼓。
-安德鲁与喜欢的女孩约会
-弗莱彻喜怒无常。
-安德鲁把别人的乐谱弄丢了，但他背过谱子，他上了，他们获得了第一名。
-坦纳你来干嘛了今天是核心排练没时间调教替补，弗莱彻说。留下坦纳一脸懵逼。
-弗莱彻全看表现，今天你行，你就取代他上，明天他行，他就取代你。
-我宁愿酗酒吸毒 34 岁就家破人亡，成为人们晚餐桌上的话题，也不愿意腰缠万贯满面红光的活到 9 0 岁，但是没人记得我
-安德鲁以为他是核心乐手，没想到再弗莱彻心中不过是个临时核心。现在弗莱彻找到了另一个也会安德鲁所会的双倍慢摇，弗莱彻为了让音乐会达到最高水准，让他们竞争，并选出最适合的乐手，但安德鲁却慌了，他怕康纳利会取代他。他输了，他被替代了，他不服
-安德鲁决定和女友妮可分手，为了他那梦想。
-疯子吧，这弗莱彻，压迫式训练。
-安德鲁为了当核心驾车拿鼓锥，但在返回的途中出车祸了，他依旧拿着鼓锥跑向表演现场，弗莱彻都惊讶。
-安德鲁在表演途中坚持不了，弗莱彻说 ：“你玩完了。”安德鲁冲上去打弗莱彻。
-有人给安德鲁说肖恩不是上出车祸死的，而是被弗莱彻逼成抑郁症杀死的。
-安德鲁的父亲不想看到儿子被弗莱彻逼成像肖恩这样，因此找了律师控告弗莱彻，使他失业。安德鲁对此犹豫了，但最终还是决定让弗莱彻事业。
-安德鲁在酒吧偶遇弗莱彻，被弗莱彻的一席话感动，大致意思就是我曾经在学校并不是为了指挥，而是为了逼迫，并再次说出来理查帕克的例子。
-出了就把后，弗莱彻说出了目的——他想让安德鲁在音乐节上当他的鼓手。
-“康纳利呢”安德鲁回答。
-他一直都是我用来激发你动力的而已。弗莱彻回答
-看到这里我已经开始觉得这光头还真不错，虽然之前我就已经觉得有着一方面的考虑，但当他真说出目的的时候，还是觉得弗莱彻的教育理念从某个方面讲，确实有用。
-安德鲁答应了弗莱彻，并邀请前女友妮可观看他的爵士乐表演，但现在的妮可已经有男朋友了。哈哈哈哈，看到这我直接心情愉悦，这部活该吗？有些人，一旦错过，就不在了。
-音乐节来了，演出开始，但谱子确实错的，弗莱彻原来早已知道谁让他失去了职位，早已开始报复，演出结束过后，安德鲁到休息室拥抱父亲，父亲让他回家， 但他转身便来到了台上，直接无视弗莱彻，开始 solo，中途弗莱彻说了一句：“我把你眼球挖出来”，被安德鲁用那啥打了一下，这一下真痛快！
-安德鲁继续即兴，越来越快，弗莱彻这次真的震惊了。
-最后一刻，弗莱彻和安德鲁相视一笑。在他们的眼神对望和表情变化中，我看到了对音乐执着追求的狂热和艺术上不受任何干扰的默契。这种过程，非常短暂，短到让人无法相信，但是这，可能就是艺术的魅力吧。</description>
-    </item>
-    
-    <item>
       <title>《猫鼠游戏》</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E7%8C%AB%E9%BC%A0%E6%B8%B8%E6%88%8F/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -1676,10 +2206,10 @@ tim 为了将刘启从那啥拉回来也在鬼门关走了一走
     
     <item>
       <title>为什么大学不谈恋爱</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%AD%A6%E4%B8%8D%E8%B0%88%E6%81%8B%E7%88%B1/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%AD%A6%E4%B8%8D%E8%B0%88%E6%81%8B%E7%88%B1/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%AD%A6%E4%B8%8D%E8%B0%88%E6%81%8B%E7%88%B1/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%AD%A6%E4%B8%8D%E8%B0%88%E6%81%8B%E7%88%B1/</guid>
       <description>为什么大学不谈恋爱 我就搞不明白了，为什么上大学就非得谈恋爱不可呢？
 是游戏不好玩还是手机不好玩？非要找小哥哥小姐姐安慰你那寂寞空虚的心？
 你要是觉得大学就必须谈一次恋爱的话，那我问你：
@@ -1808,16 +2338,6 @@ tim 为了将刘启从那啥拉回来也在鬼门关走了一走
 自然的层级 无生物，比如石头、水滴、树木只能通过外力改变，而生物则有潜能自行改变。
 宇宙中必然有一位“上帝”（最初推动者）推动世间中所有的运作，即上帝位于大自然的最顶端；并且他认为这位“上帝”是宇宙万物各种活动的“目的因”。
 对女人的看法 女性在某些方面并不完整，认为女性是未完成的男人；甚至认为女人只是土壤，而男人却是“播种者”；男人提供“形式”（男人决定“质料”的“形式”或“特征”），而女人则仅贡献“质料”（组成事物的物质）。</description>
-    </item>
-    
-    <item>
-      <title>交换机</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
-      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
-access 只允许通通过单个 VLAN。</description>
     </item>
     
     <item>
@@ -1997,94 +2517,11 @@ CSS 代码 .search { position: relative; height: 30px; text-align: right; line-h
     </item>
     
     <item>
-      <title>域服务器</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>域服务器 父域一
-父域二
-子域三
-成员四
-9 月 30 号 vmware
-One
-大规模联网用域
-小规模联网用组
-更大的规模用林
-打开 one，和 two，three，fou
-更改计算机属性 - 重命名计算机名
-设置密码和用户名
-设置 ipv4 属性
-One
-ip 192.168.10.1，255.255.255.0，192.168.10.1
-Dns 127.0.0.1，变为 192.168.10.1
-Two
-ip 地址 192.168.10.2，255.255.255.0，192.168.10.1
-Dns 192.168.10.1 变为 192.168.10.2 备用 dns 192.168.10.1
-Three
-ip 192.168.10.3，255.255.255.0，192.168.10.1
-Dns 192.168.10.1
-Four
-ip 192.168.10.4，255.255.255.0，192.168.10.1
-Dns 192.168.10.1
-选择 one
-服务器管理 - 添加角色 - 服务器角色
-勾选 dns 服务器 和 active directory 服务，安装完成后重启
-管理工具
-本地安全策略 账户策略 密码策略 密码必须符合复杂性要求 禁用</description>
-    </item>
-    
-    <item>
-      <title>域服务器的基本操作</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
-      <description>域服务器的基本操作 克隆 2008
-打开 ad 01
-新建用户
-点击新建的用户
-隶属于
-添加一个
-将 2012 升级为域控
-添加一个子用户，但无法使用这个用户名登录域服务器
-设置
-192.168.1.1
-255.255.255.0
-网关 192.168.1.1
-配置 2008
-控制面板
-网络链接
-设置 ip
-192.168.1.50
-255.255.255.0
-192.168.1.1
-192.168.1.1
-更改计算机名字
-加入域
-yxzi\user02（2012 域控上添加的用户）
-在 2008 上面用 user02 这个用户名登录到域控
-打开 ad 01
-user 02 属性
-账户，登录时间
-新建 用户 user03
-选择 user03 属性
-配置登录名和密码
-指定计算机才能登录
-登录到，输入 ad 02 的计算机名
-ad1 新建组 ts01
-添加到组，选择 user02
-选择 user03，隶属于，
-ts 属性 用户，即可看到
-新建 组织单位 danwei</description>
-    </item>
-    
-    <item>
       <title>好感、喜欢与爱</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E6%84%9F%E5%96%9C%E6%AC%A2%E4%B8%8E%E7%88%B1/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E5%A5%BD%E6%84%9F%E5%96%9C%E6%AC%A2%E4%B8%8E%E7%88%B1/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E6%84%9F%E5%96%9C%E6%AC%A2%E4%B8%8E%E7%88%B1/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E5%A5%BD%E6%84%9F%E5%96%9C%E6%AC%A2%E4%B8%8E%E7%88%B1/</guid>
       <description>好感、喜欢与爱 对你有好感 好感只是一种浅层次的情感，没有依赖的成份，是一对多。
 比如你找 Ta 说话，Ta 会以一种不错的态度对你，会很乐意你说话。
 聊天的时候，还会主动开启话题……可是，这只是一种好感，
@@ -2114,29 +2551,6 @@ Ta 会管束你，Ta 希望你能自为更好的自己；
     </item>
     
     <item>
-      <title>如何提高文笔</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</guid>
-      <description>如何提高文笔 经常阅读
-随时记录灵感。
-写文章第一天先把想写的写下来，连系段落随意写下。
-第二天把文章大体全部梳理写一遍。
-第三天重复精简修词。隔一天再审一遍
-画面感
-1） 静画面中突出具体特质，如颜色、形状、质感、味道等等。
-2） 动静反衬。即静画面中突出动的，或动画面中突出伫立不动的。
-尽可能少用“的”
-视觉美感
-是带有情绪的想象，用最少的文字，传递出最多元的信息
-词汇本身就极具美感和意境
-建立素材库，随机搭配
-情感落点
-越想表达什么感情，越不说。欲言又止、欲走还留。</description>
-    </item>
-    
-    <item>
       <title>学习的方法</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -2150,36 +2564,20 @@ Ta 会管束你，Ta 希望你能自为更好的自己；
     </item>
     
     <item>
-      <title>安装 Hyper V</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</link>
+      <title>安装 ThinkPHP</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
-      <description>安装 Hyper V 安装 hyper v
-在第一台上链接第二台虚拟计算机
-启动 nat 模式 8
-关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
-第一太 ping 第二台计算机的 ip 地址，成功即可
-查询
-开远程权限
-新建虚拟机
-位置和名称
-指定代数，32 位系统选第一代 64 位系统选第二代
-分配内存，1024
-网络连接，intel 8257
-大小，25gb
-以后安装操作系统
-最后链接虚拟机
-右击虚拟机
-检查点
-将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
-安装操作系统
-文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。
-关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
-hyper v 设置，实时迁移，启用迁移
-移动虚拟机，将虚拟机移动到新建的磁盘上即可
-允许链接共享
-在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</guid>
+      <description>安装 ThinkPHP 安装 Composer 在 Windows 中，你需要下载并运行 Composer
+安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的php.exe）
+比如 D:\phpstudy_pro\Extensions\php\php7.3.4nts
+第一次报错  [Composer\Downloader\TransportException]curl error 28 while downloading https://repo.packagist.org/packages.json: Timeout was reached解决方法：修改全局文件(推荐) composer config -g repo.packagist composer https://packagist.phpcomposer.com
+第二次报错  [InvalidArgumentException]Could not find package topthink/think with version 6.0.x-dev.切换 composer 镜像地址：阿里云镜像
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+安装 Thinkphp 开发版 我们这里下载开发版的 ThinkPhp
+composer create-project topthink/think=6.0.x-dev tp
+在上一步创建的 tp 文件夹中执行 php think run（确保当前目录有 think 文件）</description>
     </item>
     
     <item>
@@ -2215,10 +2613,10 @@ hyper v 设置，实时迁移，启用迁移
     
     <item>
       <title>感情中的决策与试探</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</guid>
       <description>感情中的决策与试探 男生通常像狗，思路是决策型的。
 女生通常像猫，思路是试探型的。
 你一回家，猫跟狗都蹲在门边。
@@ -2618,19 +3016,6 @@ Putty 用于 Windows 从本地登陆到远程 Linux 服务器
     </item>
     
     <item>
-      <title>练字技巧</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E7%BB%83%E5%AD%97%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E7%BB%83%E5%AD%97%E6%8A%80%E5%B7%A7/</guid>
-      <description>练字技巧 同字不同书，笔画都是有变化的
-练字期间使用米子格或田字格的纸，不能脱离格子，因为格子是规范，是辅助线
-临帖
-仔细观察原帖的辅助线
-起笔——运笔-收笔</description>
-    </item>
-    
-    <item>
       <title>绿幕抠像</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
@@ -2805,6 +3190,25 @@ Putty 用于 Windows 从本地登陆到远程 Linux 服务器
 读书多不代表做生意能成，搞原子弹的不如卖茶叶蛋的歇后语听过没。
 做生意是一个行当，做学术也是一个行当，这是两个不同的行当。
 除非能把全世界所有学科的书都烂熟于胸，否则只读很窄一面的书，或者就读成功学，那我只能祝你好运了。</description>
+    </item>
+    
+    <item>
+      <title>轻易得到就不会被珍惜</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E8%BD%BB%E6%98%93%E5%BE%97%E5%88%B0%E5%B0%B1%E4%B8%8D%E4%BC%9A%E8%A2%AB%E7%8F%8D%E6%83%9C/</link>
+      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E8%BD%BB%E6%98%93%E5%BE%97%E5%88%B0%E5%B0%B1%E4%B8%8D%E4%BC%9A%E8%A2%AB%E7%8F%8D%E6%83%9C/</guid>
+      <description>很多人认为，轻易得来的，不会懂得珍惜。
+我是这么看的：如果得来的东西不是我所需要的，那珍不珍惜对我来说都无所谓。
+“非常需要”才会想要珍惜，怎么得来的是其次。
+有人不懂得珍惜，那不是因为得来有多“轻易”，而是因为他不知道自己有多“需要”。
+有一句话说“失去后才懂得珍惜”。
+当你非常需要的东西极自然而然地融入了你的生活，你感受不到自己有多需要它，自然就不会意识到该去珍惜。
+即使别人告诉你应该珍惜，你也很可能因为没有切身感受那种非常需要的感觉而满不在意。
+可一旦某天你失去了它，你立刻就会发现，你的生活缺了什么东西，而它就像是空气。
+有些人不知道自己需要什么就想方设法去“得到”某样东西 ，得到后渐渐发觉自己并没有想象中那样需要它。
+即使得到的过程非常艰辛，他最终也不会明白什么是珍惜。
+只有明白自己有多需要，你才会懂得珍惜。</description>
     </item>
     
     <item>
@@ -4030,10 +4434,10 @@ git config -l</description>
     
     <item>
       <title>JavaScript arguments</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</guid>
       <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
 arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
 注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
@@ -4042,20 +4446,20 @@ arguments 对象不是一个 Array ；但它类似于 Array，但除了有 lengt
     
     <item>
       <title>JavaScript DOM</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/dom/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/dom/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/</guid>
       <description>DOM DOM（文档对象模型），它就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
 使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
     </item>
     
     <item>
       <title>JavaScript Function</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/function/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</guid>
       <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
 全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
 Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
@@ -4066,10 +4470,10 @@ function demo(name, age) { this.name = name; this.age = age; // 构造函数 dem
     
     <item>
       <title>JavaScript isNaN</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/isnan/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/isnan/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/isnan/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/isnan/</guid>
       <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
 如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
 返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
@@ -4077,10 +4481,10 @@ function demo(name, age) { this.name = name; this.age = age; // 构造函数 dem
     
     <item>
       <title>JavaScript Math</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/math/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/math/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/math/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/math/</guid>
       <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
 引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
 计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
@@ -4091,20 +4495,20 @@ function One() { for (var c = 0; c &amp;lt; 18; c++) { var d = Math.random().toF
     
     <item>
       <title>JavaScript new</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/new/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/new/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/new/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/new/</guid>
       <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
 调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
     </item>
     
     <item>
       <title>JavaScript Number</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/number/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/number/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/number/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/number/</guid>
       <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
  将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
@@ -4112,29 +4516,29 @@ Number 的方法 toString() NumObj.toString(radix)
     
     <item>
       <title>JavaScript Object</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/object/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/object/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/object/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/object/</guid>
       <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
 创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { //var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, // b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { this.color = color; // color为可选参数 	this.name = &amp;#39;bird&amp;#39;; this.width = &amp;#39;500&amp;#39;; this.</description>
     </item>
     
     <item>
       <title>JavaScript parseFloat</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parsefloat/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/parsefloat/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parsefloat/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/parsefloat/</guid>
       <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
     </item>
     
     <item>
       <title>JavaScript parselnt</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parselnt/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/parselnt/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/parselnt/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/parselnt/</guid>
       <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
 将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
 当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
@@ -4144,30 +4548,30 @@ Number 的方法 toString() NumObj.toString(radix)
     
     <item>
       <title>JavaScript return</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/return/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</guid>
       <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
 字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { return +n; // 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
     </item>
     
     <item>
       <title>JavaScript this</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/this/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/this/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/this/</guid>
       <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
 通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
     </item>
     
     <item>
       <title>JavaScript Window 对象</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/window-%E5%AF%B9%E8%B1%A1/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</guid>
       <description>Window 对象 Window 对象表示浏览器中打开的窗口。
 如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
 Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
@@ -4177,10 +4581,10 @@ clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</d
     
     <item>
       <title>JavaScript XMLHttpRequest</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/xmlhttprequest/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/xmlhttprequest/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</guid>
       <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
 XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
 状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
@@ -4193,10 +4597,10 @@ send 用于向服务端发送一个 HTTP 请求。
     
     <item>
       <title>JavaScript 作用域</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
       <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
 每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
 父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
@@ -4210,10 +4614,10 @@ send 用于向服务端发送一个 HTTP 请求。
     
     <item>
       <title>JavaScript 函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
@@ -4223,10 +4627,10 @@ function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形�
     
     <item>
       <title>JavaScript 函数的参数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
       <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
 在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
 函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
@@ -4237,10 +4641,10 @@ function demo(a, b) { // 定义两个形参。 	var f, g = &amp;#39;&amp;#39;; f
     
     <item>
       <title>JavaScript 分支与循环</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
       <description>分支与循环 if 单一的 if 语句 if (条件) { 要执行的语句块; } if else 语句 if (条件) { 要执行的语句块; } else { 要执行的语句块; } 多重 if 语句嵌套 if (条件) { 要执行的语句块; } else if (条件) { 要执行的语句块; } else { 要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
 另外，可以用函数表达式定义函数？
 switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
@@ -4249,10 +4653,10 @@ n = &amp;#39;老虎&amp;#39;; switch (n) { // 将表达式 n 与下面的 case �
     
     <item>
       <title>JavaScript 包装类</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
       <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
 因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
 Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
@@ -4266,19 +4670,19 @@ var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new 
     
     <item>
       <title>JavaScript 区分对象与数组</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
       <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = []; var obj = {}; var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
     </item>
     
     <item>
       <title>JavaScript 原型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%9E%8B/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%9E%8B/</guid>
       <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
 __proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
 声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
@@ -4288,10 +4692,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原型链</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
       <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
 几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
 可以使用对象的属性 proto 实现继承。</description>
@@ -4299,10 +4703,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原始值和引用值</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
       <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
 原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
 Number 数值，用整数或浮点数表示，它允许任意位的小数。
@@ -4318,10 +4722,10 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
     
     <item>
       <title>JavaScript 变量的声明方式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
       <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
 var var 可以声明局部变量与全局变量。
 使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
@@ -4330,10 +4734,10 @@ var var 可以声明局部变量与全局变量。
     
     <item>
       <title>JavaScript 命名空间</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
       <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
 简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
 作用 私有化变量 function Demo() { var healthy = 0; // 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { healthy++; }; this.injured = function () { healthy--; }; this.view = function () { console.log(healthy); }; } var demo = new Demo(); demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.view(); //返回 1，调用构造函数的属性 view。 demo.injured(); // 调用构造函数的属性 injured，使变量 healthy 自减 1。 demo.view(); // 返回 0，调用构造函数的属性 view。  模块化开发 var a = &amp;#39;cold&amp;#39;; // 全局中的变量 a 并不会影响函数 init 中的变量 a。 var init = (function () { var a = &amp;#39;weather&amp;#39;; // 私有化变量 a。 	this.</description>
@@ -4341,29 +4745,29 @@ var var 可以声明局部变量与全局变量。
     
     <item>
       <title>JavaScript 字符串截取</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
       <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
     </item>
     
     <item>
       <title>JavaScript 属性调用</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
       <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
 var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zheng&amp;#39; }, wife3: { name: &amp;#39;xing&amp;#39; }, wife4: { name: &amp;#39;zhu&amp;#39; }, fun: function (num) { var a = [&amp;#39;wife&amp;#39; + num]; console.log(a); return this[&amp;#39;wife&amp;#39; + num]; // 看不太懂 	}, }; demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
     </item>
     
     <item>
       <title>JavaScript 开发原则</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
       <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
 平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
 向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
@@ -4374,10 +4778,10 @@ var demo = { wife1: { name: &amp;#39;lei&amp;#39; }, wife2: { name: &amp;#39;zhe
     
     <item>
       <title>JavaScript 立即执行函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
       <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
 用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
 它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
@@ -4388,20 +4792,20 @@ var demo = (function (a, b) { // 用变量 demo 接收 IIFE 的返回值 	a = Nu
     
     <item>
       <title>JavaScript 继承方式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
       <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
 Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {} var grandfather = new Grand(); Father.prototype = grandfather; function Father() { this.red = &amp;#39;red&amp;#39;; this.money = { card: &amp;#39;pencil&amp;#39;, }; this.value = &amp;#39;100&amp;#39;; } var father = new Father(); Son.prototype = father; function Son() { this.orange = &amp;#39;orange&amp;#39;; } var son = new Son(); console.log(son.orange); // 返回 orange。 console.log(son.red); // 返回 red，虽然对象 son 本身没有属性 red，但它的原型 father 上有属性 red。 console.log(son.blue); // 返回 blue，虽然对象 son 本身没有属性 blue，其原型 father 也没有这个属性， // 但原型 father 的原型 grand 上有属性 blue。 son.</description>
     </item>
     
     <item>
       <title>JavaScript 节点</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%8A%82%E7%82%B9/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%8A%82%E7%82%B9/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%8A%82%E7%82%B9/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%8A%82%E7%82%B9/</guid>
       <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
 元素节点 指文档中的元素。
 文本节点 指文档中元素所包含着的文本。
@@ -4415,10 +4819,10 @@ nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为�
     
     <item>
       <title>JavaScript 运算符</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
 ++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
 操作数前置或后置
@@ -4442,10 +4846,10 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 递归</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
       <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
 缺点：影响程序的效率与性能。
 递归实现阶乘 var n = 5; function OneOne(n) { if (n == 1) { //将当 n 等于 1 时作为结束条件 	return 1; // 返回值为 1 	} return (n = n * OneOne(n - 1)); // 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
@@ -4453,20 +4857,20 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 链式调用</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
       <description>链式调用 模仿一个 jQuery 链式调用的方式。
 var demo = { a: function () { console.log(123); return this; // 将函数自身返回。 	}, b: function () { console.log(456); return this; // 将函数自身返回。 	}, c: function () { console.log(789); return this; //将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
     </item>
     
     <item>
       <title>JavaScript 闭包</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%97%AD%E5%8C%85/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%97%AD%E5%8C%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</guid>
       <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
 生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
 闭包的优缺点 优点 避免全局变量的污染。
@@ -4477,10 +4881,10 @@ function demo() { function test() { var d = 345; console.log(c); // 虽然函数
     
     <item>
       <title>JavaScript 预编译</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
       <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
 预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
 函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。
@@ -4575,10 +4979,10 @@ git config --global user name &amp;#34;Your Github UserName&amp;#34; git config 
     
     <item>
       <title>什么是爱情</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B1%E6%83%85/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B1%E6%83%85/</link>
       <pubDate>Wed, 20 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B1%E6%83%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%B1%E6%83%85/</guid>
       <description>什么是爱情 一 什么是爱情？你告诉我
 什么是喜欢？你告诉我
 什么是有趣的灵魂？
@@ -4831,8 +5235,11 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E5%8E%9F%E5%9B%A0/</guid>
       <description>国内无法访问外网的原因 国内外网被屏蔽有很多种原因，比如政治因素、安全因经济因素等等。
-比如国外的信息有些是被中国法律不允许观看的（黄色，暴力、政治），但是这些信息在有些国家是可以合法存在的，因此中国就屏蔽了大部分国外知名网站。
-另外，虽然外网被屏蔽了，但并不是不能上，而是需要添加一些翻墙的软件（VPN），通过这些软件可以访问外网的信息，上网可以查到这类的软件，不过目前还是会屏蔽的，毕竟中国政治问题很大。</description>
+比如国外的信息有些是被中国法律不允许观看的（黄色，暴力、政治），
+但是这些信息在有些国家是可以合法存在的，因此中国就屏蔽了大部分国外知名网站。
+另外，虽然外网被屏蔽了，但并不是不能上，而是需要添加一些翻墙的软件（VPN），
+通过这些软件可以访问外网的信息，网上可以下载到这类软件，但大部分都需要付费（比如我现在使用的 Clash）
+不过目前这玩意是不合法的，无法在网上光明正大的传播或讨论，毕竟中国政治问题很大。</description>
     </item>
     
     <item>
@@ -5155,29 +5562,6 @@ CSS 样式书写靠后的属性最终会应用到元素。
     </item>
     
     <item>
-      <title>C printf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
-      <description>printf 用于将变量的内容输出到显示器.
-直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
-    </item>
-    
-    <item>
-      <title>C scanf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
-      <description>scanf 通过键盘将数据输入到变量中。
-将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
-使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
-scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
-scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
-    </item>
-    
-    <item>
       <title>C 循环控制</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
@@ -5364,6 +5748,19 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
     </item>
     
     <item>
+      <title>htm、html、shtml 后缀的区别</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>htm、html、shtml 后缀的区别 首先 htm、html、shtml 都是静态网页的后缀，三者也可以说都是只是扩展名不同，其他一样，都是静态的网页。
+Htm 和 html 是完全静态的网页不通过服务器编译解释直接送出给浏览器读取的静态网页，以 htm 和 html 伪静态 Request 除外。
+html、htm、shtml、shtm 均是静态 html 网页，都是网页文件后缀名不同的 html 网页扩展名。
+htm html 与 htm 均是静态网页后缀名，网页文件没有区别与区分，html 与 htm后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为 html与htm 没有本质区别，只是两者适用于不同的运行环境（DOS 和 UNIX）之下。
+shtml shtml命名的网页文件里，使用了ssi的一些指令，就像 asp 中的指令，你可以在SHTML文件中写入SSI指令，当客户端访问这些shtml文件时，服务器端会把这些SHTML文件进行读取和解释，把SHTML文件中包含的SSI指令解释出来。</description>
+    </item>
+    
+    <item>
       <title>Issus</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/github/issus/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
@@ -5387,7 +5784,7 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
-      <description>基础 类、对象 、属性、封装、 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+      <description>基础 类、对象 、属性、封装 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
 对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
 赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
 赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
@@ -5438,6 +5835,39 @@ private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2
     </item>
     
     <item>
+      <title>安装 Hyper V</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</link>
+      <pubDate>Sat, 02 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
+      <description>安装 Hyper V 安装 hyper v
+在第一台上链接第二台虚拟计算机
+启动 nat 模式 8
+关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
+第一太 ping 第二台计算机的 ip 地址，成功即可
+查询
+开远程权限
+新建虚拟机
+位置和名称
+指定代数，32 位系统选第一代 64 位系统选第二代
+分配内存，1024
+网络连接，intel 8257
+大小，25gb
+以后安装操作系统
+最后链接虚拟机
+右击虚拟机
+检查点
+将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
+安装操作系统
+文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。
+关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
+hyper v 设置，实时迁移，启用迁移
+移动虚拟机，将虚拟机移动到新建的磁盘上即可
+允许链接共享
+在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成</description>
+    </item>
+    
+    <item>
       <title>Hello World</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/1-essay/hello-world/</link>
       <pubDate>Fri, 01 Oct 2021 06:00:00 +0000</pubDate>
@@ -5455,6 +5885,183 @@ private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/vlan/</guid>
       <description>Vlan 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 enable configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 IP enable configure terminal interface vlan 1 ip address 192.168.10.1 255.255.255.0 </description>
+    </item>
+    
+    <item>
+      <title>如何提高文笔</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</link>
+      <pubDate>Mon, 06 Sep 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</guid>
+      <description>如何提高文笔 经常阅读
+随时记录灵感。
+写文章第一天先把想写的写下来，连系段落随意写下。
+第二天把文章大体全部梳理写一遍。
+第三天重复精简修词。隔一天再审一遍
+画面感 1） 静画面中突出具体特质，如颜色、形状、质感、味道等等。
+2） 动静反衬。即静画面中突出动的，或动画面中突出伫立不动的。
+尽可能少用“的”
+视觉美感 是带有情绪的想象，用最少的文字，传递出最多元的信息
+词汇本身就极具美感和意境
+建立素材库，随机搭配
+情感落点 越想表达什么感情，越不说。欲言又止、欲走还留。</description>
+    </item>
+    
+    <item>
+      <title>What is PHP</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</link>
+      <pubDate>Sat, 30 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</guid>
+      <description>What is PHP PHP 是一种运行在服务器端的脚本语言。
+PHP Hyper text Pxeprosessor, php. 超文本预处理器，底层使用C语言。
+所支持的数据库有：Sqlservex、Mysql、Oracle、Access</description>
+    </item>
+    
+    <item>
+      <title>安装 Apache</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/</link>
+      <pubDate>Thu, 07 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%AE%89%E8%A3%85-apache/</guid>
+      <description>安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\AppInstallPath\Apache24.
+目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。
+conf 文件夹是 Apache 的配置文件目录。
+error 文件夹是 Apache 的错误日志。
+htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。
+modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）
+bin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。
+ApacheMonitor.exe 是管理右下角最小化的图标的。
+httpd.exe 很重要。
+conf 文件夹解析 httpd.conf 是主配置文件。
+extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件，比如</description>
+    </item>
+    
+    <item>
+      <title>网站访问流程</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Wed, 06 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</guid>
+      <description>网站访问流程 静态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.html DNS 服务器，先找本地DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.html），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.html）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache。 通过 Apache，就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.html），即可获取到服务器上文件名为 index.html 的文件。 Apache 会读取这个文件中的数据，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  动态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.pnh DNS 服务器，先找本地DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.php），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.php）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache Apache 就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.php），即可获取到服务器上文件名为 index.php 的文件。 但又因为网站是动态的，所以 Apache 是无法识别后缀为 PHP 的文件的，因此在这里需要一个叫 PHP 引擎的东西，Apache 将 这个 PHP 文件交给 PHP 引擎，PHP 引擎读取 PHP 文件之后，需要将这个文件解析为 html 文件 ，注意，这时的 PHP 引擎可能会去寻找数据库，并对数据库进行一些操作（读取、放入、修改数据库等等）。最后，PHP 引擎会将解析后的 HTML 数据（PHP 文件中的数据和数据库中的数据），全部返回给 Apache。 Apache 会读取 PHP 引擎返回的内容，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  </description>
+    </item>
+    
+    <item>
+      <title>DNS 和端口</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</guid>
+      <description>DNS 和端口 DNS DNS 是互联网的一项服务，它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
+简单的讲 DNS 就是翻译官，比如它会将http://www.baidu.com翻译成220.181.111.188让机器理解。
+DNS 有什么用 DNS 是用来做域名解析的，它会在你上网输入网址后，把它转换成 IP，然后去访问这个 IP 所指定的服务器，没有它，你想上百度就要记住百度的 IP，上 163 就要记住 163 的IP，有了 DNS 的处理，你只需要记住对应网站的域名（网址），比如https://yxzi.xyz/。
+DNS 是一个按层次结构排列的分布式系统，由许多 DNS 服务器组成。DNS 服务器是注册加入 DNS 的任何计算机。它具有域名和 IP 地址的索引，并且在请求时，它可以告诉你与域名关联的当前 IP 地址。
+如果它不知道，那么它将尝试从其他 DNS 服务器中找出。
+因此，当您在浏览器中键入域名时，浏览器会询问 DNS 服务器该域的 IP 地址是什么，DNS 服务器会尝试告诉你。
+端口 简单来说：
+ 在一台计算机上，端口用来指定你想要访问这台物理设备上的哪个程序。
+ IP 能锁定一台物理机器，对应着一张网卡，网卡会接收外界发来的数据包。但是问题来了，网卡给程序提供了接口，你监听一下我，要是有消息来了，我就转发给你，这样应用程序就能收到数据了。
+但是问题来了，程序 A 和程序 B 都需要监听网卡接发数据，网卡说那我把接到的数据都发给你两，你们自己看着办吧。
+好，小 A 小 B 都接收了。
+但是又来了CDEF&amp;hellip;&amp;hellip;，不行了，每个包都被发到了所有应用程序，每个应用程序都累得不行，最终垮了。
+好，那网卡说我给你们加个表示吧，我们之间可以用一个号码来作为标识，我和小 A 之间就用 1 来标识，
+如果外界发给 1 号标识的数据我就转发给你，你监听我的时候得告诉我你监听的是1，我就转发 1 的数据包给你。</description>
+    </item>
+    
+    <item>
+      <title>IP 和域名</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</guid>
+      <description>IP 和域名 IP IP 具有唯一性，像人的身份证一样，是唯一的。
+通俗地讲就是互联网世界的门牌号，通过IP地址就可以准确无误的找到某台计算机的位置，它具有唯一性，所以当我们访问某个IP的时候才不会出现错误，他就像我们的身份证号码那样独一无二，我们可以和别人同名，但是绝不可能和别人有同样的身份证号码。
+首先要确定你的IP地址是否是以192.168开头，如果是这个地址的话，不需要担心。这是内网的IP地址，在外网是无法直接访问的。如果不是内网的地址，有可能会遭到黑客的攻击。这需要一定的专业技术，普通人很难进行攻击，而且你的电脑应该需要有很强的利用价值，才会让人费时费力对你发起攻击之心，所以知道你IP对于大多数人来说不能对你做什么。
+域名 IP 不方便我们记忆，而域名，则是为了我们更好的记忆某一个网站的地址。
+域名（Domain Name）是由一串字符组成的，它指向某一个具体的 IP 地址。</description>
+    </item>
+    
+    <item>
+      <title>服务器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>服务器是什么 在网络环境下，根据服务器提供的服务类型不同，分为文件服务器，数据库服务器，应 用程序服务器，WEB服务器等。
+一台个人计算机也可以成为一台服务器，只要这台计算机可以提供服务，而如何让这台计算机提供服务呢？
+在这台计算机上安装可以提供服务的软件（服务软件）。
+比如一台 Web 服务器，它如果要提供 Web 服务（网站访问），就需要安装 Web 服务软件，Apache，Tomcat， Iis 等等
+服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。
+提到服务器对于电脑爱好者来说一定不陌生，一般我们很难看到真正的服务器，因为服务器一般均放置在机房重点，闲人一般均是免进的，所以说起服务器，好多未接触的朋友都觉的很陌生，介于此，斯百德就为不明白服务器是什么的小伙伴们，揭开服务器神秘的面纱。
+其实服务器的模样就和电脑的主机很相似，但是服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。比如我们每天浏览的网站，其实数据均在服务器，服务器一般都在一些IDC数据中心机房以及电信等网络大厦里面。
+服务器，也称伺服器。服务器是网络环境中的高性能计算机，它侦听网络上的其他计算机（客户机）提交的服务请求，并提供相应的服务，为此，服务器必须具有承担服务并且保障服务的能力。我们这里提到的服务器，主要是指的Web服务器，我们也称之为专用服务器，是专为网站业务应用的服务器，这种服务器可以向发出请求的浏览器提供文档的程序。Web服务器也是一种被动的程序，只有当服务器接收到浏览器发出的请求时，服务器才会响应。
+由于Web服务器是一种被动的程序，所以不同类型的网站对Web服务器的要求差别很大。企业网站和个人网站一般都是展示型网站，所以他们对服务器的性能要求一般都不高。电子商务型网站以及门户型等网站一般访问量用户比较大，这些大型网站对服务器的需要则较高。
+目前，用户使用最多的web服务器软件有两个：微软的信息服务器（iis）和Apache。而架设Web服务器比较常见的操作系统有Windows，Linux和Unix。Linux的安全性在这三个系统中最高，同时可以支持多个硬件平台，而且其是开源软件，市场价格更低，甚至用户可以下载免费的代码来搭建Web服务器。Web服务器的操作更简单，性能更优越，目前使用率非常的高，Unix则比较小众！</description>
+    </item>
+    
+    <item>
+      <title>静态网站和动态网站</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+      <description>静态网站和动态网站 静态网站的特点  网页内容一经发布到网站服务器上，无论是否有用户访问，每个静态网页的内容都是保存在网站服务器上的,也就是说,静态网页是实实在在保存在服务器上的文件，每个网页都是一个独立的文件。 静态网页的内容相对稳定，因此容易被搜索引擎检索。 静态网页没有数据库的支持，在网站制作和维护方面工作量较大，因此当网站信息量很大时完全依靠静态网页制作方式比较困难。 静态网页的交互性较差，在功能方面有较大的限制，当我们要修改网页上文件时，需要将修改后的文件覆盖服务器上的源文件。  动态网站的特点  交互性强，网页会根据用户的要求和选择而动态地改变和响应，网页上的数据都是从数据库中获取的，并且用户的操作，也可以对网页上的数据进行实时的更新。 自动更新，即无须手动更新HTmL文档,便会自动生成新页面，可以大大节省工作量。 因时因人而变，在不同时间、不同用户访问用一个网址时，会出现不同页面。 在动态网页的网址中有一个标志性的符号“?”。  </description>
+    </item>
+    
+    <item>
+      <title>C *的含义</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description>星号的含义 </description>
+    </item>
+    
+    <item>
+      <title>C 基本类型指针</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</guid>
+      <description>基本类型指针 #include &amp;lt;stdio.h&amp;gt; int main () { int * p; // 定义一个指针变量 p，且这个 p 只能存放 int 类型的地址， 	int i = 20; p = &amp;amp;i; // &amp;amp;i 表示获取变量 i 的内存地址 //这时候 p 中，存放的就是指向变量 i 的内存地址，则 p 完全等同于 i.  int j = * p; printf(&amp;#34;i = %d ,j = %d \n&amp;#34;,i,j); return 0; } 详解 *p #include &amp;lt;iostream&amp;gt;int main() { int * p; int i = 5; p = &amp;amp;i; // p 保存了 i 的地址 // 修改 p 不会影响 i；修改 i 也不会影响 p，因为他们是不同的变量。 // *p = i，此时，修改 *p 就是修改 i，修改 i 就是修改 *p // 更准确的说，*p 是以 p 的内容为地址的变量。  *p = 99; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); i = 88; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); } </description>
+    </item>
+    
+    <item>
+      <title>《爆裂鼓手》</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E7%88%86%E8%A3%82%E9%BC%93%E6%89%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/3-afterthought/movie/film/%E7%88%86%E8%A3%82%E9%BC%93%E6%89%8B/</guid>
+      <description>《爆裂鼓手》
+一个年轻的鼓手正在勤奋的练习。
+安德鲁被弗莱彻选为乐队新替补，众人中只有他被选上，他心中一定和开心，
+安德鲁还成功约了喜欢的女孩一起吃披萨
+安德鲁被弗莱彻放鸽子，但后来发现并灭有，六点的时候光头给了康纳利一份谱子，但因安德鲁迟到了，因此他 并没有。。
+这光头很严格，但为什么喜欢开别人玩笑，逗别人玩呢？
+安德鲁被弗莱彻扔椅子，扇耳光，当众羞辱。
+安德鲁带伤练习打鼓。
+安德鲁与喜欢的女孩约会
+弗莱彻喜怒无常。
+安德鲁把别人的乐谱弄丢了，但他背过谱子，他上了，他们获得了第一名。
+坦纳你来干嘛了今天是核心排练没时间调教替补，弗莱彻说。留下坦纳一脸懵逼。
+弗莱彻全看表现，今天你行，你就取代他上，明天他行，他就取代你。
+我宁愿酗酒吸毒 34 岁就家破人亡，成为人们晚餐桌上的话题，也不愿意腰缠万贯满面红光的活到 9 0 岁，但是没人记得我
+安德鲁以为他是核心乐手，没想到再弗莱彻心中不过是个临时核心。现在弗莱彻找到了另一个也会安德鲁所会的双倍慢摇，弗莱彻为了让音乐会达到最高水准，让他们竞争，并选出最适合的乐手，但安德鲁却慌了，他怕康纳利会取代他。他输了，他被替代了，他不服
+安德鲁决定和女友妮可分手，为了他那梦想。
+疯子吧，这弗莱彻，压迫式训练。
+安德鲁为了当核心驾车拿鼓锥，但在返回的途中出车祸了，他依旧拿着鼓锥跑向表演现场，弗莱彻都惊讶。
+安德鲁在表演途中坚持不了，弗莱彻说 ：“你玩完了。”安德鲁冲上去打弗莱彻。
+有人给安德鲁说肖恩不是上出车祸死的，而是被弗莱彻逼成抑郁症杀死的。
+安德鲁的父亲不想看到儿子被弗莱彻逼成像肖恩这样，因此找了律师控告弗莱彻，使他失业。安德鲁对此犹豫了，但最终还是决定让弗莱彻事业。
+安德鲁在酒吧偶遇弗莱彻，被弗莱彻的一席话感动，大致意思就是我曾经在学校并不是为了指挥，而是为了逼迫，并再次说出来理查帕克的例子。
+出了就把后，弗莱彻说出了目的——他想让安德鲁在音乐节上当他的鼓手。
+“康纳利呢”安德鲁回答。
+他一直都是我用来激发你动力的而已。弗莱彻回答
+看到这里我已经开始觉得这光头还真不错，虽然之前我就已经觉得有着一方面的考虑，但当他真说出目的的时候，还是觉得弗莱彻的教育理念从某个方面讲，确实有用。
+安德鲁答应了弗莱彻，并邀请前女友妮可观看他的爵士乐表演，但现在的妮可已经有男朋友了。哈哈哈哈，看到这我直接心情愉悦，这部活该吗？有些人，一旦错过，就不在了。
+音乐节来了，演出开始，但谱子确实错的，弗莱彻原来早已知道谁让他失去了职位，早已开始报复，演出结束过后，安德鲁到休息室拥抱父亲，父亲让他回家， 但他转身便来到了台上，直接无视弗莱彻，开始 solo，中途弗莱彻说了一句：“我把你眼球挖出来”，被安德鲁用那啥打了一下，这一下真痛快！
+安德鲁继续即兴，越来越快，弗莱彻这次真的震惊了。
+最后一刻，弗莱彻和安德鲁相视一笑。在他们的眼神对望和表情变化中，我看到了对音乐执着追求的狂热和艺术上不受任何干扰的默契。这种过程，非常短暂，短到让人无法相信，但是这，可能就是艺术的魅力吧。</description>
     </item>
     
   </channel>

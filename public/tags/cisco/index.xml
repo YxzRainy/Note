@@ -6,7 +6,53 @@
     <description>Recent content in Cisco on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 03 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco 配置单区域 OSPFv2</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
+      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
+      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
+    </item>
+    
+    <item>
+      <title>OSPF 协议</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/ospf-%E5%8D%8F%E8%AE%AE/</guid>
+      <description>OSPF 协议 OSPF 是目前网络界耳熟能详的协议了。
+用带宽来判断路径的优劣弥补了RIP的缺陷（光凭带宽也不是很好），同时使用划分区域网络，可以更好的控制管理和扩展网络。
+还有各种小特点比如 DR、BDR 机制，和适合不同网络类型机制，以及使用不同LSA传递各种信息，各种LSA的特性也不通。
+所有综合来讲OSPF是比较适合大众选择的一款路由协议
+router ospf 10 配置 OSPF 路由，进程 ID 为 10
+router-id 1.1.1.1 配置路由器的路由器 ID
+子网掩码的反掩码 IP 地址：192.168.10.8/30，那么它的子网掩码为 255.255.255.252
+则它的子网掩码的反掩码为 255.255.255.255 减去 255.255.255.252 等于 0.0.0.3，
+即配置 OSPFv2 的网络通告为：
+network 192.168.10.8 0.0.0.3 area 0其中 area 是自治系统区域的标识</description>
+    </item>
+    
+    <item>
+      <title>交换机</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
+      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
+      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
+access 只允许通通过单个 VLAN。</description>
+    </item>
+    
+    <item>
+      <title>Cisco 静态和动态路由的优缺点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
+      <pubDate>Tue, 07 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
+      <description>静态和动态路由的优缺点 静态路由的优点：  占用资源较多。 便于管理员了解路由。 易于配置。  静态路由的缺点：  配置和维护耗费时间。 配置容易出错，尤其对于大型网络。 需要管理员维护变化的路由信息。 不能随着网络的增长而扩展；维护会越来越麻烦。 需要完全了解整个网络的情况才能进行操作。  动态路由的优点  增加或删除网络时，管理员维护路由配置的工作量较少。 网络拓扑结构发生变化时，协议可以自动做出调整。 配置不容易出错。 扩展性好，网络增长时不会出现问题。  动态路由的缺点  需要占用路由器资源（CPU 时间、内存和链路带宽）。 管理员需要掌握更多的网络知识才能进行配置、验证和故障排除工作。  </description>
+    </item>
+    
     <item>
       <title>Cisco 配置 Rip V2</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
@@ -74,7 +120,10 @@ enableconfigure terminal故障三 ip route 172.31.1.0 255.255.255.128 172.31.1
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/rip-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>Rip 协议 router rip 启用 Rip
+      <description>Rip 协议 RIP协议是比较老的一款动态路由协议，这款协议现在用的已经很少了；
+RIP协议在 IPv4 里分成两个版本，目前就 RIPv2 版本来讲的话，其实也有很多问题，
+比如
+ 根据路由器或者三层转发设备的条数来判断路径优劣这种判断机制是不准确的。 最大条数只有15跳也限制了RIP的网络规模。 RIP运行的速度比较慢，而且可能产生环路对网络有很大的影响。  router rip 启用 Rip
 version 2 切换到 RipV2 版本
 network 通告该路由器的所有直连网络，通告之后，
 该路由器的路由表就会显示除了通告外的所有网络的路由表的本地接口和远程网络的数量是一样的.
@@ -129,16 +178,6 @@ enable configure terminal 配置端口模式 interface f 0/1 switchport mode acc
 一台路由器在交换机上方
 将交换机与路由器连起来
 配置 S1 进全局模式 enable configure terminal hostname S1 vlan 10 exit vlan 20 exit vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk配置 R1 enableconfigure terminalhostname R1配置虚拟子端口 interface g 0/0.</description>
-    </item>
-    
-    <item>
-      <title>交换机</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
-      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
-access 只允许通通过单个 VLAN。</description>
     </item>
     
     <item>
