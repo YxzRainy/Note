@@ -99,6 +99,45 @@
     </item>
     
     <item>
+      <title>C 基本类型指针</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</guid>
+      <description>基本类型指针 #include &amp;lt;stdio.h&amp;gt; int main () { int * p; // 定义一个指针变量 p，且这个 p 只能存放 int 类型的地址， 	int i = 20; p = &amp;amp;i; // &amp;amp;i 表示获取变量 i 的内存地址 //这时候 p 中，存放的就是指向变量 i 的内存地址，则 p 完全等同于 i.  int j = * p; printf(&amp;#34;i = %d ,j = %d \n&amp;#34;,i,j); return 0; } 详解 *p #include &amp;lt;iostream&amp;gt;int main() { int * p; int i = 5; p = &amp;amp;i; // p 保存了 i 的地址 // 修改 p 不会影响 i；修改 i 也不会影响 p，因为他们是不同的变量。 // *p = i，此时，修改 *p 就是修改 i，修改 i 就是修改 *p // 更准确的说，*p 是以 p 的内容为地址的变量。  *p = 99; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); i = 88; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); } </description>
+    </item>
+    
+    <item>
+      <title>C 指针</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</guid>
+      <description>指针 指针是 C 语言的灵魂。
+指针是一个地址；
+地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针本质就是一个操作受限的非负整数。
+指针只能进行减法运算，不能进行加乘除等运算。
+指针变量是存放编号的变量。
+八位（Bit）是一个字节，一个字节就是一个内存单元。
+int* 是 指向整型变量的指针，
+作用 表示一些复杂的数据结构。
+能够快速的传递数据。
+使函数返回一个以上的值。
+可以直接访问硬件。
+更方便的处理字符串。</description>
+    </item>
+    
+    <item>
+      <title>C 星号的含义</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description>星号的含义 </description>
+    </item>
+    
+    <item>
       <title>C printf</title>
       <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
       <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>

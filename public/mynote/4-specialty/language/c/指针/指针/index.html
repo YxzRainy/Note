@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 指针",
+	    "headline" : "C 指针",
+	    "description" : "指针 指针是 C 语言的灵魂。\n指针是一个地址；\n地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。\n指针本质就是一个操作受限的非负整数。\n指针只能进行减法运算，不能进行加乘除等运算。\n指针变量是存放编号的变量。\n八位（Bit）是一个字节，一个字节就是一个内存单元。\nint* 是 指向整型变量的指针，\n作用 表示一些复杂的数据结构。\n能够快速的传递数据。\n使函数返回一个以上的值。\n可以直接访问硬件。\n更方便的处理字符串。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-02-17 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-02-17 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E6%8C%87%E9%92%88\/",
+	    "keywords" : [ "C","指针","学习笔记", ]
+	}
+</script><title>C 指针</title>
+    <meta property="og:title" content="C 指针" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="指针 指针是 C 语言的灵魂。
+指针是一个地址；
+地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针本质就是一个操作受限的非负整数。
+指针只能进行减法运算，不能进行加乘除等运算。
+指针变量是存放编号的变量。
+八位（Bit）是一个字节，一个字节就是一个内存单元。
+int* 是 指向整型变量的指针，
+作用 表示一些复杂的数据结构。
+能够快速的传递数据。
+使函数返回一个以上的值。
+可以直接访问硬件。
+更方便的处理字符串。" />
+    <meta name="description" content="指针 指针是 C 语言的灵魂。
+指针是一个地址；
+地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针本质就是一个操作受限的非负整数。
+指针只能进行减法运算，不能进行加乘除等运算。
+指针变量是存放编号的变量。
+八位（Bit）是一个字节，一个字节就是一个内存单元。
+int* 是 指向整型变量的指针，
+作用 表示一些复杂的数据结构。
+能够快速的传递数据。
+使函数返回一个以上的值。
+可以直接访问硬件。
+更方便的处理字符串。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 指针</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-02-17 06:00:00 UTC">
+                        2022-02-17
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="指针">指针</h1>
+<p>指针是 C 语言的灵魂。</p>
+<p>指针是一个地址；</p>
+<p>地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。</p>
+<p>指针本质就是一个操作受限的非负整数。</p>
+<p>指针只能进行减法运算，不能进行加乘除等运算。</p>
+<p><strong>指针变量是存放编号的变量。</strong></p>
+<p>八位（Bit）是一个字节，一个字节就是一个内存单元。</p>
+<p><code>int*</code> 是 <code>指向整型变量的指针</code>，</p>
+<h2 id="作用">作用</h2>
+<p>表示一些复杂的数据结构。</p>
+<p>能够快速的传递数据。</p>
+<p>使函数返回一个以上的值。</p>
+<p>可以直接访问硬件。</p>
+<p>更方便的处理字符串。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%8C%87%E9%92%88/">
+                    指针
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#作用">作用</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -1,9 +1,4 @@
-Copy-Item -Recurse E:\Github\MyBlog\public\categories E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\css E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\js E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\mynote E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\page E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\tags E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\index.html E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\index.xml E:\Github\MyWeb\Sub\Blog
-Copy-Item -Recurse E:\Github\MyBlog\public\sitemap.xml E:\Github\MyWeb\Sub\Blog
+ri -Recurse E:\Github\MyBlog\public\*
+hugo -D
+ri -Recurse E:\Github\MyWeb\Sub\Blog\*
+Copy-Item -Recurse E:\Github\MyBlog\public\* E:\Github\MyWeb\Sub\Blog

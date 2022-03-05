@@ -1,7 +1,7 @@
 ---
-PHPtitle: PHP 环境配置
+title: PHP 环境配置
 date: 2022-03-02 6:00:00
-updated: 2022-03-026:00:00
+updated: 2022-03-02 6:00:00
 categories:
         - 编程技术
 tags:
@@ -25,11 +25,11 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 
 安装完成后，打开 PHPStudy，会出现以下界面：
 
-![image-20220303002913840](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
 
 另外，PHPStudy 会在安装目录下的 **phpstudy_pro\Extensions** 路径形成目录结构：
 
-![image-20220303002959290](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
+![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
 
 在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。
 
@@ -39,7 +39,7 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 2. 找到系统变量中名为 Path 的变量， 新建，将 MySql 目录下的 bin 文件的路径粘贴到这里，确定。
 3. win + R 打开 cmd，输入 mysql，如果提示`ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061)`就说明 MySQL 的环境变量配置完成。
 
-![image-20220303003228646](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303003228646.png)
+![image-20220303003228646](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303003228646.png)
 
 ## 创建站点
 
@@ -47,7 +47,7 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 
 打开浏览器，在地址栏输入**localhost:80**，出现以下内容即为配置成功。
 
-![image-20220303002637668](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002637668.png)
+![image-20220303002637668](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002637668.png)
 
 ## 我的第一个 PHP 程序
 
@@ -59,13 +59,13 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 
 依旧打开我们的 cmd，输入`php -v`，出现以下内容即为配置成功：
 
-![image-20220303005755212](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303005755212.png)
+![image-20220303005755212](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303005755212.png)
 
 ### 安装 VS Code 扩展
 
-打开我们的 VsCode，安装名为 PHP Sever  的扩展：
+打开我们的 VsCode，安装名为 PHP Sever 的扩展：
 
-![image-20220303010013869](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010013869.png)
+![image-20220303010013869](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010013869.png)
 
 安装完插件后，我们新建一个后缀为 php 的文档，输入以下内容（内容随便）：
 
@@ -86,10 +86,10 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 
 鼠标右击**PHP Server: Serve project**
 
-![image-20220303010824031](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010824031.png)
+![image-20220303010824031](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010824031.png)
 
 之后会跳转到电脑的默认浏览器，并打开一个页面，出现以下内容：
 
-![image-20220303010918612](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010918612.png)
+![image-20220303010918612](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010918612.png)
 
 OK，我们的第一个 PHP 程序就成功拿捏了！

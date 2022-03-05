@@ -167,7 +167,6 @@ function changeHref(href) {
 
 
 function SearchBox(time) {
-
     // 创建对话框遮罩
     Mask = $('<div></div>');
     var body = $('body');
@@ -219,6 +218,7 @@ function SearchBox(time) {
 
     })
 }
+
 // 点击按钮弹出对话框
 function GetEl() {
     Search = $('#SearchBox .Search');

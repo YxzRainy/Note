@@ -20,8 +20,8 @@
 	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
-	    "name" : "",
-	    "headline" : "",
+	    "name" : "PHP 环境配置",
+	    "headline" : "PHP 环境配置",
 	    "description" : "PHP 环境配置 新的学期，新的课程。\n今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。\n下载 PHPStudy PHPStudy 是一个 windows 下的 Apache\/Ngnix\u002bPHP\u002bMySQL 的集成开发环境\n 解压运行 选择安装目录，通常时 D 盘，我这里是D:\\AppInstallPath\\PhpStudy  安装完成后，打开 PHPStudy，会出现以下界面：\n![image-20220303002913840](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\Language\\PHP\\PHP 环境配置.assets\\image-20220303002913840.png)\n另外，PHPStudy 会在安装目录下的 phpstudy_pro\\Extensions 路径形成目录结构：\n![image-20220303002959290](E:\\Github\\MyBlog\\content\\mynote\\4 Specialty\\Language\\PHP\\PHP 环境配置.assets\\image-20220303002959290.png)\n在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。\n配置 MySQL 环境变量  此电脑 — 系统属性 — 高级系统设置 — 高级 — 环境变量 。 找到系统变量中名为 Path 的变量， 新建，将 MySql 目录下的 bin 文件的路径粘贴到这里，确定。 win \u002b R 打开 cmd，输入 mysql，如果提示ERROR 2003 (HY000): Can\u0027t connect to MySQL server on \u0027localhost\u0027 (10061)就说明 MySQL 的环境变量配置完成。  !",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
@@ -35,8 +35,8 @@
 	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/php\/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE\/",
 	    "keywords" : [ "Php","后端","学习笔记", ]
 	}
-</script><title></title>
-    <meta property="og:title" content="" />
+</script><title>PHP 环境配置</title>
+    <meta property="og:title" content="PHP 环境配置" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="PHP 环境配置 新的学期，新的课程。
 今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
@@ -78,7 +78,7 @@
     <body class="Wrap">
         <article class="Post BorderBox  ">
             <header class="PostHeader">
-                <h1 id="Title" class="post-title"></h1>
+                <h1 id="Title" class="post-title">PHP 环境配置</h1>
                 
                 <div class="DateArea">
                     
@@ -103,9 +103,9 @@
 <li>选择安装目录，通常时 D 盘，我这里是<strong>D:\AppInstallPath\PhpStudy</strong></li>
 </ol>
 <p>安装完成后，打开 PHPStudy，会出现以下界面：</p>
-<p>![image-20220303002913840](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)</p>
+<p>![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)</p>
 <p>另外，PHPStudy 会在安装目录下的 <strong>phpstudy_pro\Extensions</strong> 路径形成目录结构：</p>
-<p>![image-20220303002959290](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)</p>
+<p>![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)</p>
 <p>在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。</p>
 <h2 id="配置-mysql-环境变量">配置 MySQL 环境变量</h2>
 <ol>
@@ -113,20 +113,20 @@
 <li>找到系统变量中名为 Path 的变量， 新建，将 MySql 目录下的 bin 文件的路径粘贴到这里，确定。</li>
 <li>win + R 打开 cmd，输入 mysql，如果提示<code>ERROR 2003 (HY000): Can't connect to MySQL server on 'localhost' (10061)</code>就说明 MySQL 的环境变量配置完成。</li>
 </ol>
-<p>![image-20220303003228646](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303003228646.png)</p>
+<p>![image-20220303003228646](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303003228646.png)</p>
 <h2 id="创建站点">创建站点</h2>
 <p>回到 PHPStudy，启动 MySQL 和 Apache（或者是 Nginx），配置网站的域名和端口，以及根目录。通常默认就 OK。</p>
 <p>打开浏览器，在地址栏输入<strong>localhost:80</strong>，出现以下内容即为配置成功。</p>
-<p>![image-20220303002637668](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002637668.png)</p>
+<p>![image-20220303002637668](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002637668.png)</p>
 <h2 id="我的第一个-php-程序">我的第一个 PHP 程序</h2>
 <p>接下来，我就可以开始编写 PHP 代码了，注意，我这里用的是宇宙第一编辑器 VS Code。</p>
 <h3 id="配置-php-环境变量">配置 PHP 环境变量</h3>
 <p>依旧是向之前那样找到名为 Path 的变量，然后添加 php 的安装路径，我这里的路径为<strong>D:\AppInstallPath\PhpStudy\phpstudy_pro\Extensions\php\php7.3.4nts</strong></p>
 <p>依旧打开我们的 cmd，输入<code>php -v</code>，出现以下内容即为配置成功：</p>
-<p>![image-20220303005755212](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303005755212.png)</p>
+<p>![image-20220303005755212](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303005755212.png)</p>
 <h3 id="安装-vs-code-扩展">安装 VS Code 扩展</h3>
-<p>打开我们的 VsCode，安装名为 PHP Sever  的扩展：</p>
-<p>![image-20220303010013869](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010013869.png)</p>
+<p>打开我们的 VsCode，安装名为 PHP Sever 的扩展：</p>
+<p>![image-20220303010013869](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010013869.png)</p>
 <p>安装完插件后，我们新建一个后缀为 php 的文档，输入以下内容（内容随便）：</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#ce5c00;font-weight:bold">&lt;!</span><span style="color:#000">DOCTYPE</span> <span style="color:#000">html</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
 <span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">html</span><span style="color:#ce5c00;font-weight:bold">&gt;</span>
@@ -141,9 +141,9 @@
 </span><span style="color:#a40000">
 </span><span style="color:#a40000">&lt;/html
 </span></code></pre></div><p>鼠标右击<strong>PHP Server: Serve project</strong></p>
-<p>![image-20220303010824031](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010824031.png)</p>
+<p>![image-20220303010824031](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010824031.png)</p>
 <p>之后会跳转到电脑的默认浏览器，并打开一个页面，出现以下内容：</p>
-<p>![image-20220303010918612](E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010918612.png)</p>
+<p>![image-20220303010918612](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303010918612.png)</p>
 <p>OK，我们的第一个 PHP 程序就成功拿捏了！</p>
 
             </div>
@@ -189,7 +189,7 @@
     </svg>
 </a>
 
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
 <script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
