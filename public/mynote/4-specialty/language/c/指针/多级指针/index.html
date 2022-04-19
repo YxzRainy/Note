@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 多级指针",
+	    "headline" : "C 多级指针",
+	    "description" : "多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。\n#include \u0026lt;iostream\u0026gt;#include \u0026lt;malloc.h\u0026gt; int main() {  \/\/ i 存放的是 int 类型  int i = 10;  \/\/ p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = \u0026amp;i;  \/\/ q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = \u0026amp;p;  \/\/ r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = \u0026amp;q;  printf(\u0026#34;%d\u0026#34;,***r); } #include \u0026lt;iostream\u0026gt;#include \u0026lt;malloc.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-13 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-13 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88\/",
+	    "keywords" : [ "C","指针","学习笔记", ]
+	}
+</script><title>C 多级指针</title>
+    <meta property="og:title" content="C 多级指针" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // i 存放的是 int 类型  int i = 10;  // p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = &amp;amp;i;  // q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = &amp;amp;p;  // r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = &amp;amp;q;  printf(&amp;#34;%d&amp;#34;,***r); } #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc." />
+    <meta name="description" content="多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // i 存放的是 int 类型  int i = 10;  // p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = &amp;amp;i;  // q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = &amp;amp;p;  // r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = &amp;amp;q;  printf(&amp;#34;%d&amp;#34;,***r); } #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 多级指针</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-13 06:00:00 UTC">
+                        2022-04-13
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="多级指针">多级指针</h1>
+<p>其实就是指针的指针<code>int**</code>，或指针的指针的指针<code>int***</code>，或者指针的指针的指针的指针<code>int****</code>。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;malloc.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// i 存放的是 int 类型
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">**</span> <span style="color:#000">q</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">p</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">***</span> <span style="color:#000">r</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">q</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">***</span><span style="color:#000">r</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;malloc.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">f</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">**</span><span style="color:#000">q</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// *q = p
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// p 是 int * 类型，&amp;p 是 int ** 类型。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">f</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">p</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%8C%87%E9%92%88/">
+                    指针
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

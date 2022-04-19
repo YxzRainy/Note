@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "十进制转 N 进制",
+	    "headline" : "十进制转 N 进制",
+	    "description" : "十进制转 N 进制 **除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换\n十进制转二进制 除以二取余，并将余数倒过来，即可得出结果。\n比如 185：\n 18 \/ 2 = 92， 余 1\n92 \/ 2 = 46，余 0\n46 \/ 2 = 23，余 0\n23 \/ 2 = 11， 余 1\n11 \/ 2 = 5 ， 余 1\n5 \/ 2 = 2， 余 1\n2 \/ 2 = 1， 余 0\n1 \/ 2 = 1， 余 1\n 最后将余数倒过来，即可得到 185 的二进制数：10111001。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-17 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-17 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/computer\/%E8%BF%9B%E5%88%B6\/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2\/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6\/",
+	    "keywords" : [ "进制转换","学习笔记", ]
+	}
+</script><title>十进制转 N 进制</title>
+    <meta property="og:title" content="十进制转 N 进制" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="十进制转 N 进制 **除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换
+十进制转二进制 除以二取余，并将余数倒过来，即可得出结果。
+比如 185：
+ 18 / 2 = 92， 余 1
+92 / 2 = 46，余 0
+46 / 2 = 23，余 0
+23 / 2 = 11， 余 1
+11 / 2 = 5 ， 余 1
+5 / 2 = 2， 余 1
+2 / 2 = 1， 余 0
+1 / 2 = 1， 余 1
+ 最后将余数倒过来，即可得到 185 的二进制数：10111001。" />
+    <meta name="description" content="十进制转 N 进制 **除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换
+十进制转二进制 除以二取余，并将余数倒过来，即可得出结果。
+比如 185：
+ 18 / 2 = 92， 余 1
+92 / 2 = 46，余 0
+46 / 2 = 23，余 0
+23 / 2 = 11， 余 1
+11 / 2 = 5 ， 余 1
+5 / 2 = 2， 余 1
+2 / 2 = 1， 余 0
+1 / 2 = 1， 余 1
+ 最后将余数倒过来，即可得到 185 的二进制数：10111001。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">十进制转 N 进制</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-17 06:00:00 UTC">
+                        2022-04-17
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="十进制转-n-进制">十进制转 N 进制</h1>
+<p>**除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换</p>
+<h2 id="十进制转二进制">十进制转二进制</h2>
+<p>除以二取余，并将余数倒过来，即可得出结果。</p>
+<p>比如 185：</p>
+<blockquote>
+<p>18 / 2 = 92， 余  1</p>
+<p>92 / 2 = 46，余 0</p>
+<p>46 / 2 = 23，余 0</p>
+<p>23 / 2 = 11，  余  1</p>
+<p>11 / 2 = 5 ，    余 1</p>
+<p>5 / 2 = 2，     余  1</p>
+<p>2 / 2 = 1，       余 0</p>
+<p>1  / 2 = 1，       余  1</p>
+</blockquote>
+<p>最后将余数倒过来，即可得到 185 的二进制数：<code>10111001</code>。</p>
+<h2 id="十进制转八进制">十进制转八进制</h2>
+<p>除以八取余，并将余数倒过来，即可得出结果。</p>
+<p>比如 185：</p>
+<blockquote>
+<p>185 / 8 = 23， 余 1</p>
+<p>23 / 8 =  2，    余 7</p>
+<p>2  / 8 = 0，      余 2</p>
+</blockquote>
+<p>最后将余数倒过来，即可得到 185 的八进制数：<code>271</code>。</p>
+<h2 id="十进制转十六进制">十进制转十六进制</h2>
+<p>除以十六取余，并将余数倒过来，即可得出结果。</p>
+<p>比如 185：</p>
+<blockquote>
+<p>185 / 16 = 11，余 9</p>
+<p>11 / 16 = 0，    余 11 —&gt; B</p>
+</blockquote>
+<p>然后因为 11 在十六进制中是 B，所以需要将 11 变为 B，</p>
+<p>最后将余数倒过来，即可得到 185 的十六进制数：<code>B9</code>。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">
+                    进制转换
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#十进制转二进制">十进制转二进制</a></li>
+    <li><a href="#十进制转八进制">十进制转八进制</a></li>
+    <li><a href="#十进制转十六进制">十进制转十六进制</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

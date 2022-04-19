@@ -6,7 +6,27 @@
     <description>Recent content in 指针 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E6%8C%87%E9%92%88/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E6%8C%87%E9%92%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 多级指针</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</guid>
+      <description>多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // i 存放的是 int 类型  int i = 10;  // p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = &amp;amp;i;  // q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = &amp;amp;p;  // r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = &amp;amp;q;  printf(&amp;#34;%d&amp;#34;,***r); } #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.</description>
+    </item>
+    
+    <item>
+      <title>C 跨函数使用内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</guid>
+      <description>跨函数使用变量 静态内存不能跨函数使用 当静态函数终止之后，这个静态函数中的数据就不能被其他函数访问，因为这个静态函数的内存空间已经被释放了。就算可以使用，也是非法访问，这样是不对的。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// q 是指针变量，无论 q 是什么类型的指针变量，都只占 4 个字节 // 将实参 *p 传入 fun 函数的形参，则**q = *p, 则*q = p，q 存放的是 p 的地址， void fun(int **q){  int i = 5;  // ** q = i  // *q = p  //q = p 的地址  // **q = *p  // 因为 *q = p，所以这里相当于 p = &amp;amp;1，  *q = &amp;amp;i; } int main(void) {  int *p;  // 取 p（*p） 的地址，传入函数 fun，实际传入的是 *p，则 **q = *p  fun(&amp;amp;p);  // 下面代码语法没问题，但是逻辑上有问题。  // 这是因为当 fun 函数执行完毕后，fun 函数中的 i 变量已经被释放，  // 因此，p 虽然可以存放 i 的地址， 但是却不能访问 i 。  // 就算能够访问 i ，这也是非法的访问，没 error 是因为编译器的问题。  printf(&amp;#34;%d\n&amp;#34;,*p); } 动态内存可以跨函数使用 因为当一个函数执行完毕，动态内存分配的变量不会随着fun()的自动释放而释放，所以，当fun()被系统自动释放后，我们依旧可以访问变量*p</description>
+    </item>
+    
     <item>
       <title>C 静态内存和动态内存</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%92%8C%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98/</link>
@@ -128,11 +148,12 @@ void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; 
 指针变量是存放编号的变量。
 八位（Bit）是一个字节，一个字节就是一个内存单元。
 int* 是 指向整型变量的指针，
-作用 表示一些复杂的数据结构。
-能够快速的传递数据。
-使函数返回一个以上的值。
-可以直接访问硬件。
-更方便的处理字符串。</description>
+作用   表示一些复杂的数据结构（树、图）。
+  快速的传递数据，并且减少了内存的耗费。
+  使函数返回一个以上的值。
+  可以直接访问硬件。
+  更方便的处理字符串（&amp;rsquo;\0&amp;rsquo;）。
+  </description>
     </item>
     
     <item>

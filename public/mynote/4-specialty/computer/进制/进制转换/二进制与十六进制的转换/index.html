@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "二进制与十六进制的转换",
+	    "headline" : "二进制与十六进制的转换",
+	    "description" : "二进制与十六进制的转换 二进制转十六进制 从右向左，四位一段，分别转换，不够四位补零。\n因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。\n0101110 —\u0026gt; 0010, 1110，四位一段。\n（0010 = 2）（1110 = 14 = E），则最后得到十六进制数2E\n十六进制转二进制 将每一个十六进制位转换为 4 个二进制位。\n2E —\u0026gt; （0010）（1110），一段四位则最后得到二进制数101110",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-17 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-17 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/computer\/%E8%BF%9B%E5%88%B6\/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2\/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2\/",
+	    "keywords" : [ "进制转换","学习笔记", ]
+	}
+</script><title>二进制与十六进制的转换</title>
+    <meta property="og:title" content="二进制与十六进制的转换" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="二进制与十六进制的转换 二进制转十六进制 从右向左，四位一段，分别转换，不够四位补零。
+因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。
+0101110 —&amp;gt; 0010, 1110，四位一段。
+（0010 = 2）（1110 = 14 = E），则最后得到十六进制数2E
+十六进制转二进制 将每一个十六进制位转换为 4 个二进制位。
+2E —&amp;gt; （0010）（1110），一段四位则最后得到二进制数101110" />
+    <meta name="description" content="二进制与十六进制的转换 二进制转十六进制 从右向左，四位一段，分别转换，不够四位补零。
+因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。
+0101110 —&amp;gt; 0010, 1110，四位一段。
+（0010 = 2）（1110 = 14 = E），则最后得到十六进制数2E
+十六进制转二进制 将每一个十六进制位转换为 4 个二进制位。
+2E —&amp;gt; （0010）（1110），一段四位则最后得到二进制数101110" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">二进制与十六进制的转换</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-17 06:00:00 UTC">
+                        2022-04-17
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="二进制与十六进制的转换">二进制与十六进制的转换</h1>
+<h2 id="二进制转十六进制">二进制转十六进制</h2>
+<p><strong>从右向左，四位一段，分别转换，不够四位补零。</strong></p>
+<p>因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。</p>
+<p>0101110 —&gt; 0010, 1110，四位一段。</p>
+<p>（0010 = 2）（1110 = 14 = E），则最后得到十六进制数<code>2E</code></p>
+<h2 id="十六进制转二进制">十六进制转二进制</h2>
+<p>将每一个十六进制位转换为 4 个二进制位。</p>
+<p>2E —&gt; （0010）（1110），一段四位则最后得到二进制数<code>101110</code></p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">
+                    进制转换
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#二进制转十六进制">二进制转十六进制</a></li>
+    <li><a href="#十六进制转二进制">十六进制转二进制</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

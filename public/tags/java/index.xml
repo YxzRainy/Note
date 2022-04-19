@@ -62,15 +62,6 @@
     </item>
     
     <item>
-      <title>Java 冒泡排序</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.out.println(&amp;#34;排序前：&amp;#34;);  //打印排序前的数组元素  printArray(arr);  //数组排序的方法  bubbleSort(arr);  System.out.println(&amp;#34;排序后：&amp;#34;);  //打印排序后的数组元素  printArray(arr);  }  //定义打印数组中所有元素的方法  public static void printArray(int[] arr) {  for (int i = 0; i &amp;lt; arr.length; i++) {  //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;);  }  System.out.println(&amp;#34;\n&amp;#34;);  // 返回后换行  }  //定义冒泡排序的方法  public static void bubbleSort(int[] arr) {  // arr.</description>
-    </item>
-    
-    <item>
       <title>Java 基础</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>

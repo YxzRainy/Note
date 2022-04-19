@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>进制 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/categories/%E8%BF%9B%E5%88%B6/</link>
+    <description>Recent content in 进制 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 17 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E8%BF%9B%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>N 进制转十进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/n-%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/n-%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6/</guid>
+      <description>N 进制转十进制 给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。比如 5 进制的 32 转为十进制为：2 + 3 * 5 = 17。
+十进制转十进制 1234 —&amp;gt; 4 * 10º + 3 * 10¹ + 2 * 10² + 1 * 10³ = 1234
+二进制转十进制 10101 —&amp;gt; 1 * 2º + 0 * 2 ¹ + 1 * 2² + 0 *2³ + 1 * 2⁴ = 21
+八进制转十进制 371 —&amp;gt; 1 * 8º + 7 * 8¹ + 3 * 8² = 249</description>
+    </item>
+    
+    <item>
+      <title>二进制与八进制的转换</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%85%AB%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%85%AB%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</guid>
+      <description>二进制与八进制的转换 二进制转八进制 从右向左，三位一段，分别转换，不够三位补零。
+0101110 —&amp;gt; 000, 101, 110，三位一段。
+（000 = 0）（101 = 5）（110 = 6），则最后得到八进制数56。
+八进制转二进制 将每一个八进制位转换为 3 个二进制位。
+27 —&amp;gt; （010）（111），最后得到二进制数10111。</description>
+    </item>
+    
+    <item>
+      <title>二进制与十六进制的转换</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</guid>
+      <description>二进制与十六进制的转换 二进制转十六进制 从右向左，四位一段，分别转换，不够四位补零。
+因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。
+0101110 —&amp;gt; 0010, 1110，四位一段。
+（0010 = 2）（1110 = 14 = E），则最后得到十六进制数2E
+十六进制转二进制 将每一个十六进制位转换为 4 个二进制位。
+2E —&amp;gt; （0010）（1110），一段四位则最后得到二进制数101110</description>
+    </item>
+    
+    <item>
+      <title>十进制转 N 进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/</guid>
+      <description>十进制转 N 进制 **除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换
+十进制转二进制 除以二取余，并将余数倒过来，即可得出结果。
+比如 185：
+ 18 / 2 = 92， 余 1
+92 / 2 = 46，余 0
+46 / 2 = 23，余 0
+23 / 2 = 11， 余 1
+11 / 2 = 5 ， 余 1
+5 / 2 = 2， 余 1
+2 / 2 = 1， 余 0
+1 / 2 = 1， 余 1
+ 最后将余数倒过来，即可得到 185 的二进制数：10111001。</description>
+    </item>
+    
+    <item>
+      <title>进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6/</guid>
+      <description>进制 进制也就是进位计数制，是人为定义的带进位的计数方法。
+十进制是逢十进一，十六进制是逢十六进一，二进制就是逢二进一，以此类推，N 进制就是逢 N 进位。
+计算机只识别 2 进制，人类最习惯使用的是十进制。
+用不同的进制表示同一个数，虽然使用的进制不一样，但内部依旧表示的同一个数，只是外部所表现形式不一样而已。
+不存在十六进制与八进制的直接相互转化，都是以二进制为中间进制来进行转化。
+进制的表示  B 表示二进制 O 表示八进制 D 表示十进制 H 表示十六进制  二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  </description>
+    </item>
+    
+  </channel>
+</rss>

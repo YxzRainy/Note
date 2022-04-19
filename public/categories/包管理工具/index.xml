@@ -8,12 +8,12 @@
     <language>zh-cn</language>
     <lastBuildDate>Sun, 21 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Npm 是什么</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <title>NPM  是什么</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      <description>Npm 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>NPM 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
 本文目标读者是「不太了解 npm 的新人」，大神您别看了，不然又说我啰嗦了 。
 社区 程序员自古以来就有社区文化：
 社区的意思是：拥有共同职业或兴趣的人们，自发组织在一起，通过分享信息和资源进行合作。

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 结构体",
+	    "headline" : "C 结构体",
+	    "description" : "结构体 将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。\n为什么需要结构体 为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求\n结构体的定义 结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。\n需要注意的是，结构体最后的分号不能省去。\n#include \u0026lt;iostream\u0026gt;#include \u0026lt;malloc.h\u0026gt;\/\/ 第一种定义结构体的方式 \/\/ 只定义变量类型， 但不定义变量名， \/\/ 变量名由我们使用这个变量类型的时候定义。 struct Student{  int age;  float score;  char sex; }; \/\/ 第二种定义结构体的方式 \/\/ 定义的同时，也将变量名（Sts）定义了（变量名写死了）。 struct Students{  int age;  float score;  char sex; } Sts; \/\/ 第三种定义结构体的方式 \/\/ 没有定义变量类型，只定义了变量名。 struct{  int age;  float score;  char sex; }St;  int main(void) { } ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-15 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-15 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E7%BB%93%E6%9E%84%E4%BD%93\/%E7%BB%93%E6%9E%84%E4%BD%93\/",
+	    "keywords" : [ "C","结构体","学习笔记", ]
+	}
+</script><title>C 结构体</title>
+    <meta property="og:title" content="C 结构体" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="结构体 将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。
+为什么需要结构体 为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求
+结构体的定义 结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。
+需要注意的是，结构体最后的分号不能省去。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// 第一种定义结构体的方式 // 只定义变量类型， 但不定义变量名， // 变量名由我们使用这个变量类型的时候定义。 struct Student{  int age;  float score;  char sex; }; // 第二种定义结构体的方式 // 定义的同时，也将变量名（Sts）定义了（变量名写死了）。 struct Students{  int age;  float score;  char sex; } Sts; // 第三种定义结构体的方式 // 没有定义变量类型，只定义了变量名。 struct{  int age;  float score;  char sex; }St;  int main(void) { } " />
+    <meta name="description" content="结构体 将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。
+为什么需要结构体 为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求
+结构体的定义 结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。
+需要注意的是，结构体最后的分号不能省去。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// 第一种定义结构体的方式 // 只定义变量类型， 但不定义变量名， // 变量名由我们使用这个变量类型的时候定义。 struct Student{  int age;  float score;  char sex; }; // 第二种定义结构体的方式 // 定义的同时，也将变量名（Sts）定义了（变量名写死了）。 struct Students{  int age;  float score;  char sex; } Sts; // 第三种定义结构体的方式 // 没有定义变量类型，只定义了变量名。 struct{  int age;  float score;  char sex; }St;  int main(void) { } " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 结构体</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-15 06:00:00 UTC">
+                        2022-04-15
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="结构体">结构体</h1>
+<p>将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。</p>
+<h2 id="为什么需要结构体">为什么需要结构体</h2>
+<p>为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求</p>
+<h2 id="结构体的定义">结构体的定义</h2>
+<p>结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。</p>
+<p>需要注意的是，结构体最后的分号不能省去。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;malloc.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#8f5902;font-style:italic">// 第一种定义结构体的方式
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 只定义变量类型， 但不定义变量名，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 变量名由我们使用这个变量类型的时候定义。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 第二种定义结构体的方式
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 定义的同时，也将变量名（Sts）定义了（变量名写死了）。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Students</span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000">Sts</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 第三种定义结构体的方式
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 没有定义变量类型，只定义了变量名。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">struct</span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span><span style="color:#000">St</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BB%93%E6%9E%84%E4%BD%93/">
+                    结构体
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#为什么需要结构体">为什么需要结构体</a></li>
+    <li><a href="#结构体的定义">结构体的定义</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

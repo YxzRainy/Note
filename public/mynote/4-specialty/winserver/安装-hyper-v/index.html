@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%AE%89%E8%A3%85-hyper-v/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%AE%89%E8%A3%85-hyper-v/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "安装 Hyper V",
+	    "headline" : "安装 Hyper V",
+	    "description" : "安装 Hyper V 安装 hyper v\n在第一台上链接第二台虚拟计算机\n启动 nat 模式 8\n关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享\n第一太 ping 第二台计算机的 ip 地址，成功即可\n查询\n开远程权限\n新建虚拟机\n位置和名称\n指定代数，32 位系统选第一代 64 位系统选第二代\n分配内存，1024\n网络连接，intel 8257\n大小，25gb\n以后安装操作系统\n最后链接虚拟机\n右击虚拟机\n检查点\n将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符\n安装操作系统\n文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。\n关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。\nhyper v 设置，实时迁移，启用迁移\n移动虚拟机，将虚拟机移动到新建的磁盘上即可\n允许链接共享\n在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-02 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/winserver\/%E5%AE%89%E8%A3%85-hyper-v\/",
+	    "keywords" : [ "Win Server","虚拟机","学习笔记", ]
+	}
+</script><title>安装 Hyper V</title>
+    <meta property="og:title" content="安装 Hyper V" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="安装 Hyper V 安装 hyper v
+在第一台上链接第二台虚拟计算机
+启动 nat 模式 8
+关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
+第一太 ping 第二台计算机的 ip 地址，成功即可
+查询
+开远程权限
+新建虚拟机
+位置和名称
+指定代数，32 位系统选第一代 64 位系统选第二代
+分配内存，1024
+网络连接，intel 8257
+大小，25gb
+以后安装操作系统
+最后链接虚拟机
+右击虚拟机
+检查点
+将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
+安装操作系统
+文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。
+关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
+hyper v 设置，实时迁移，启用迁移
+移动虚拟机，将虚拟机移动到新建的磁盘上即可
+允许链接共享
+在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成" />
+    <meta name="description" content="安装 Hyper V 安装 hyper v
+在第一台上链接第二台虚拟计算机
+启动 nat 模式 8
+关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享
+第一太 ping 第二台计算机的 ip 地址，成功即可
+查询
+开远程权限
+新建虚拟机
+位置和名称
+指定代数，32 位系统选第一代 64 位系统选第二代
+分配内存，1024
+网络连接，intel 8257
+大小，25gb
+以后安装操作系统
+最后链接虚拟机
+右击虚拟机
+检查点
+将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符
+安装操作系统
+文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。
+关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。
+hyper v 设置，实时迁移，启用迁移
+移动虚拟机，将虚拟机移动到新建的磁盘上即可
+允许链接共享
+在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">安装 Hyper V</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-02 06:00:00 UTC">
+                        2021-10-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="安装-hyper-v">安装 Hyper V</h1>
+<p><strong>安装 hyper v</strong></p>
+<p>在第一台上链接第二台虚拟计算机</p>
+<p>启动 nat 模式 8</p>
+<p>关闭两台计算机的防火墙，更改高级设置，启用网络网络发现，关闭密码共享</p>
+<p>第一太 ping 第二台计算机的 ip 地址，成功即可</p>
+<p>查询</p>
+<p>开远程权限</p>
+<p><strong>新建虚拟机</strong></p>
+<p>位置和名称</p>
+<p>指定代数，32 位系统选第一代 64 位系统选第二代</p>
+<p>分配内存，1024</p>
+<p>网络连接，intel 8257</p>
+<p>大小，25gb</p>
+<p>以后安装操作系统</p>
+<p>最后链接虚拟机</p>
+<p>右击虚拟机</p>
+<p>检查点</p>
+<p>将虚拟机导出到文件夹，到处后就可以在操作界面进行导入虚拟机，创建新标识符</p>
+<p>安装操作系统</p>
+<p>文件，设置 ，固件，dvd 放到第一个，安装完成后，关机再将硬盘放到第一个。</p>
+<p>关机，添加新硬盘，开机，计算机管理，磁盘管理，新建一个本地磁盘。</p>
+<p>hyper v 设置，实时迁移，启用迁移</p>
+<p>移动虚拟机，将虚拟机移动到新建的磁盘上即可</p>
+<p>允许链接共享</p>
+<p>在 hyper v 上新建磁盘，固定大小动态扩展，下一步，完成</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/win-server/">
+                    Win Server
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">
+                    虚拟机
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

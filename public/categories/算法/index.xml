@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/categories/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E7%AE%97%E6%B3%95/</guid>
+      <description>算法 通俗定义 解题的方法和步骤。
+狭义定义 对存储数据的操作。
+广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。
+我们至少可以通过两种结构来存储数据：
+ 数组 链表  </description>
+    </item>
+    
+  </channel>
+</rss>

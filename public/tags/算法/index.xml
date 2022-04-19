@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 17 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 冒泡排序</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢&amp;quot;浮&amp;quot;到数列的顶端。
+步骤 比较相邻的元素。如果第一个比第二个大，就交换它们两个。
+对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，会产生一个最大或者最小的数（这取决于你是升序还是降序）。升序是产生最小的数，降序是产生最大的数。
+C 代码实现 # include &amp;lt;stdio.h&amp;gt; // 定义冒泡排序函数，将数组中的元素按从小到大的顺序排列 // 形参是数组中第一个元素的地址和数组的长度 // 以 sort(a,6); 来举例 void sort(int * a, int len){  int i,j,t;  // 定义总共需要几次循环才能对数组中每个元素都进行比较  // 首次循环 ：i = 5，所以想要将这个数组进行排序，总共需要进行 5 次比较。  for (i = 0; i &amp;lt; len-1;i ++){  // 每一次整体比较结束后，需要进行比较的元素就要少一个，  // 因为每一次比较后，都会产生一个最小的元素，而这个最小的元素，将不再参加后续的比较，  // 因此，每次整体比较后，都会少一个元素参加后续的比较  // 当 i = 0 时：数组中会进行 5 次依次比较  // 当 i = 1 时：数组中会进行 4 次依次比较  // 当 i = 2 时：数组中会进行 3 次依次比较  // 当 i = 3 时：数组中会进行 2 次依次比较  // 当 i = 4 时：数组中会进行 1 次依次比较  for(j = 0;j &amp;lt; len - 1- i;j++){  // 开始进行元素的交换，&amp;gt; 表示升序，&amp;lt; 表示降序  // 如果数组中第一个元素（a[0]）大于第二个元素（a[1]）  // 注意，此时是第一个元素在前，第二个元素在后  // 每次依次比较后，j 都会 + 1，也就是最小的元素将不再参与比较  if (a[j] &amp;gt; a[j+1]){  // 将较大的元素赋给 t  t = a[j];  // 将较小的元素赋给 a[0]，  // 也就是互换它们的位置，将较小的元素放到较大的元素的前面  a[j] = a [j+1];  // 在将 t（a[0]）,也就是较大的元素放到较小的元素的后面，  // 最终，成功交换这两个元素的位置。  a[j + 1] = t;  }  }  } } int main(void) {  int a[] = {10,2,8,-8,11,0};   // // 将数组中第一个元素的地址和数组长度作为实参  sort(a,6);  // 输出最终的冒泡排序的结果  for(int i = 0; i &amp;lt; 6;i++){  printf(&amp;#34;%d &amp;#34;,a[i]);  }  printf(&amp;#34;\n&amp;#34;); } JAVA 代码实现 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.</description>
+    </item>
+    
+  </channel>
+</rss>

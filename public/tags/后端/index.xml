@@ -91,7 +91,7 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
 今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
 下载 PHPStudy PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的集成开发环境
  解压运行 选择安装目录，通常时 D 盘，我这里是D:\AppInstallPath\PhpStudy  安装完成后，打开 PHPStudy，会出现以下界面：
-![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+![]E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets/1.png)
 另外，PHPStudy 会在安装目录下的 phpstudy_pro\Extensions 路径形成目录结构：
 ![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
 在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Echarts 柱状图",
+	    "headline" : "Echarts 柱状图",
+	    "description" : "Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，\n通过柱状图，可以很清晰的看出每个分类数据的排名情况。\n基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。\nvar myChart = echarts.init(document.getElementById(\u0026#39;main\u0026#39;)); var xArr = [\u0026#39;李宁\u0026#39;, \u0026#39;安踏\u0026#39;, \u0026#39;耐克\u0026#39;] var yArr = [30, 25, 55] var option = {  title: {  text: \u0026#39;运动品牌科技水平\u0026#39;,  link: \u0026#39;https:\/\/yxzi.xyz\/\u0026#39;  }, }; myChart.setOption(option) X 轴数据 在option下配置 X 轴类型和数据。\nxAxis: {  type: \u0026#39;category\u0026#39;,  data: xArr }, Y 轴数据 在option下配置 Y 轴的类型。\nyAxis: {  type: \u0026#39;value\u0026#39;, }, 图表类型 在series下配置type.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-30 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-30 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/storehouse\/echarts\/%E6%9F%B1%E7%8A%B6%E5%9B%BE\/",
+	    "keywords" : [ "前端","图表","可视化","学习笔记","Echarts", ]
+	}
+</script><title>Echarts 柱状图</title>
+    <meta property="og:title" content="Echarts 柱状图" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
+通过柱状图，可以很清晰的看出每个分类数据的排名情况。
+基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); var xArr = [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;耐克&amp;#39;] var yArr = [30, 25, 55] var option = {  title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  link: &amp;#39;https://yxzi.xyz/&amp;#39;  }, }; myChart.setOption(option) X 轴数据 在option下配置 X 轴类型和数据。
+xAxis: {  type: &amp;#39;category&amp;#39;,  data: xArr }, Y 轴数据 在option下配置 Y 轴的类型。
+yAxis: {  type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type." />
+    <meta name="description" content="Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
+通过柱状图，可以很清晰的看出每个分类数据的排名情况。
+基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
+var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); var xArr = [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;耐克&amp;#39;] var yArr = [30, 25, 55] var option = {  title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  link: &amp;#39;https://yxzi.xyz/&amp;#39;  }, }; myChart.setOption(option) X 轴数据 在option下配置 X 轴类型和数据。
+xAxis: {  type: &amp;#39;category&amp;#39;,  data: xArr }, Y 轴数据 在option下配置 Y 轴的类型。
+yAxis: {  type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Echarts 柱状图</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-30 06:00:00 UTC">
+                        2021-10-30
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="echarts-柱状图">Echarts 柱状图</h1>
+<h2 id="特点">特点</h2>
+<p>柱状图描述的是分类数据，呈现的是每一个分类中有多少，</p>
+<p>通过柱状图，可以很清晰的看出每个分类数据的排名情况。</p>
+<h2 id="基本结构">基本结构</h2>
+<p>引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">myChart</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">echarts</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">init</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;main&#39;</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">xArr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;李宁&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;安踏&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;耐克&#39;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">yArr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">30</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">25</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">55</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">option</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">text</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;运动品牌科技水平&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">link</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;https://yxzi.xyz/&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">myChart</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setOption</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">option</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h2 id="x-轴数据">X 轴数据</h2>
+<p>在<strong>option</strong>下配置 X 轴类型和数据。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">xAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;category&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">xArr</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h2 id="y-轴数据">Y 轴数据</h2>
+<p>在<strong>option</strong>下配置 Y 轴的类型。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">yAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;value&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h2 id="图表类型">图表类型</h2>
+<p>在<strong>series</strong>下配置<code>type</code>.</p>
+<h3 id="柱状图">柱状图</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;bar&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span></code></pre></div><h2 id="常用配置">常用配置</h2>
+<h3 id="最大与最小值值">最大与最小值值</h3>
+<p>在<strong>series</strong>下配置<code>markPoint</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">markPoint</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;max&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;最大值&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;min&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;最小值&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="平均值">平均值</h3>
+<p>在<strong>series</strong>下配置<code>markLine</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">markLine</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;average&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;平均值&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="数值显示及其样式">数值显示及其样式</h3>
+<p>在<strong>series</strong>下配置<code>label</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">label</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">show</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">rotate</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;45&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">position</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;left&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="柱的宽度">柱的宽度</h3>
+<p>在<strong>series</strong>下配置<code>barWidth</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">barWidth</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;20%&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span></code></pre></div><h3 id="横向柱状图">横向柱状图</h3>
+<p>修改<strong>option</strong>下的<code>yAxis</code>和<code>xAxis</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">xAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;value&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">yAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;category&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000">xArr</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%9B%BE%E8%A1%A8/">
+                    图表
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%8F%AF%E8%A7%86%E5%8C%96/">
+                    可视化
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/echarts/">
+                    Echarts
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#特点">特点</a></li>
+    <li><a href="#基本结构">基本结构</a></li>
+    <li><a href="#x-轴数据">X 轴数据</a></li>
+    <li><a href="#y-轴数据">Y 轴数据</a></li>
+    <li><a href="#图表类型">图表类型</a>
+      <ul>
+        <li><a href="#柱状图">柱状图</a></li>
+      </ul>
+    </li>
+    <li><a href="#常用配置">常用配置</a>
+      <ul>
+        <li><a href="#最大与最小值值">最大与最小值值</a></li>
+        <li><a href="#平均值">平均值</a></li>
+        <li><a href="#数值显示及其样式">数值显示及其样式</a></li>
+        <li><a href="#柱的宽度">柱的宽度</a></li>
+        <li><a href="#横向柱状图">横向柱状图</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -6,14 +6,454 @@
     <description>Recent content in Mynotes on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/mynote/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/mynote/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vue What is Vue</title>
+      <title>C 链表</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
+      <description>链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。
+链表靠节点的指针域中存放的指针地址来寻找下一个元素。
+确定一个链表，只需要知道头指针即可。
+优点 存取数据效率高。
+不需要一个太大的内存。
+缺点 查找某个位置的元素时，效率很低。
+节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。
+链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。
+首节点 链表中存放第一个有效数据的节点。
+尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。
+头结点 头结点的数据类型和首节点的类型一模一样。
+头结点是首节点前面的那个节点。
+头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
+设置头结点的目的是为了方便对链表的操作。
+头指针 用于存放头结点地址。
+链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  // 调用 CreateList() 函数来创建一个链表 ，  // 然后因为 CreateList() reture 了该链表的头指针，  // 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  // 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  // 遍历链表中的节点  // 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  // 用于存放有效节点的个数  int len;  //  int i;  // 用于临时存放用户输入的节点的值  int val;  // 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-&amp;gt;pNext = NULL;   printf(&amp;#34;请输入需要生成的链表节点的个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);   for(i = 0; i&amp;lt;len; i++)  {  printf(&amp;#34;请输入地%d个节点的值：&amp;#34;,i+1);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  pNew -&amp;gt;data = val;  pTail -&amp;gt;pNext = pNew;  pNew -&amp;gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -&amp;gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(&amp;#34;链表为空！\n&amp;#34;);  }  else  {  struct Node * p = pHead-&amp;gt;pNext;  while(NULL !</description>
+    </item>
+    
+    <item>
+      <title>数据结构</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
+      <description>数据结构 数据结构是指计算机存储和组织数据的一种的结构。常见的数据结构有数组、链表、队列、哈希表、树等等。</description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E7%AE%97%E6%B3%95/</guid>
+      <description>算法 通俗定义 解题的方法和步骤。
+狭义定义 对存储数据的操作。
+广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。
+我们至少可以通过两种结构来存储数据：
+ 数组 链表  </description>
+    </item>
+    
+    <item>
+      <title>C 冒泡排序</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢&amp;quot;浮&amp;quot;到数列的顶端。
+步骤 比较相邻的元素。如果第一个比第二个大，就交换它们两个。
+对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，会产生一个最大或者最小的数（这取决于你是升序还是降序）。升序是产生最小的数，降序是产生最大的数。
+C 代码实现 # include &amp;lt;stdio.h&amp;gt; // 定义冒泡排序函数，将数组中的元素按从小到大的顺序排列 // 形参是数组中第一个元素的地址和数组的长度 // 以 sort(a,6); 来举例 void sort(int * a, int len){  int i,j,t;  // 定义总共需要几次循环才能对数组中每个元素都进行比较  // 首次循环 ：i = 5，所以想要将这个数组进行排序，总共需要进行 5 次比较。  for (i = 0; i &amp;lt; len-1;i ++){  // 每一次整体比较结束后，需要进行比较的元素就要少一个，  // 因为每一次比较后，都会产生一个最小的元素，而这个最小的元素，将不再参加后续的比较，  // 因此，每次整体比较后，都会少一个元素参加后续的比较  // 当 i = 0 时：数组中会进行 5 次依次比较  // 当 i = 1 时：数组中会进行 4 次依次比较  // 当 i = 2 时：数组中会进行 3 次依次比较  // 当 i = 3 时：数组中会进行 2 次依次比较  // 当 i = 4 时：数组中会进行 1 次依次比较  for(j = 0;j &amp;lt; len - 1- i;j++){  // 开始进行元素的交换，&amp;gt; 表示升序，&amp;lt; 表示降序  // 如果数组中第一个元素（a[0]）大于第二个元素（a[1]）  // 注意，此时是第一个元素在前，第二个元素在后  // 每次依次比较后，j 都会 + 1，也就是最小的元素将不再参与比较  if (a[j] &amp;gt; a[j+1]){  // 将较大的元素赋给 t  t = a[j];  // 将较小的元素赋给 a[0]，  // 也就是互换它们的位置，将较小的元素放到较大的元素的前面  a[j] = a [j+1];  // 在将 t（a[0]）,也就是较大的元素放到较小的元素的后面，  // 最终，成功交换这两个元素的位置。  a[j + 1] = t;  }  }  } } int main(void) {  int a[] = {10,2,8,-8,11,0};   // // 将数组中第一个元素的地址和数组长度作为实参  sort(a,6);  // 输出最终的冒泡排序的结果  for(int i = 0; i &amp;lt; 6;i++){  printf(&amp;#34;%d &amp;#34;,a[i]);  }  printf(&amp;#34;\n&amp;#34;); } JAVA 代码实现 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.</description>
+    </item>
+    
+    <item>
+      <title>C 枚举</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</guid>
+      <description>枚举 将一个事物所有可能的取值给一一列举出来。
+优点 使代码更加安全。
+使代码更加直观。
+缺点 书写麻烦。
+# include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; // 定义一个数据类型，并没有定义变量，该数据类型的名字为 enum WeekDay enum WeekDay{  // 每一个元素，实际上都是数字，并且第一个元素默认是从 0 开始的，  // 当然，也可以指定首个元素是多少：MonDay = 1;那么此时的 Monday 就是 1，不再是 0 了  // 那么第二个元素就是 2，不再是 1 了，  // 这样写的好处是，WeekDay 的取值只能是下面的这些枚举常量，也就是将 WeekDay 的取值范围给限制了。  // 这样会让代码更加安全，也更加直观。  MonDay, TuesDay,WednesDay,ThursDay,FriDay,SaturDay,SunDay };  int main(void) {  // 因为一个周实际上只能有 7 天，因此这个 int week 只能取1 - 7，且不能是负数或则大于7 的数  // 但默认情况下，int week 的取值大概率会超出这个范围，但我们又不能强制要求 int 的 week 的取值范围是多少  // 所以，我们就需要用到枚举  int week;  // 虽然 WednesDay = 2，但是不能写成：  // enum WeekDay newWeek = 2;  // newWeek 的值只能是枚举常量  enum WeekDay newWeek = WednesDay;  // 实际上返回的是 2  printf(&amp;#34;%d&amp;#34;,newWeek); } </description>
+    </item>
+    
+    <item>
+      <title>English before</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</guid>
+      <description>before 表示时间  在&amp;hellip;以前。  before + 表示几点钟的数词  I get up before 7:00 every day.  before + 表示具体的时间或具体时间点的词  We must finish our lessons before this year.  before + 表示几岁的词  Rainy will marry a good man before 40 years old.  before + 表示年份的词  We sill be very rich before 2030.  before 后面不能加一段时间：before three days。
+如果要表示”三天之前“，可以用 ago 这个副词：three days ago。
+表示位置  在&amp;hellip;前面。 当着&amp;hellip; 的面。  before 可以跟一个表示物体、地点、场所或表示人的词语。表示在某个地点或某个人的前面。</description>
+    </item>
+    
+    <item>
+      <title>English behind</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</guid>
+      <description>behind 表示时间  晚于、迟于、较晚  behind 可以跟一个表示时间点词语，表示晚于某个时间点。
+ your idea is behind the times.  表示位置  在&amp;hellip;的后面。  behind 跟一个表示物体、地点、场所或表示人的词语，表示在某个地方都后面或在某个人的后面。
+ The cat is behind the door. The tree behind my house is very big.  表示力量、能力  落后、不如、低于。  behind 有时可以表示能力落后于某人。
+ I am far behind you in English.  </description>
+    </item>
+    
+    <item>
+      <title>English below</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</guid>
+      <description>below 表示位置  在&amp;hellip;之下。  below + 表示地点、场所的词语，表示在某个地点的下面。
+ Your cellphone is below the wall.  表示数量、年龄、价值  低于&amp;hellip;。 在&amp;hellip;以下。  below + 表示数量、程度、价值、年龄、温度的词语，表示低于某个数量、年龄等。
+ She is below 20 years old. It is below 20 ℃. The people below 18 years old cant attend my course.  </description>
+    </item>
+    
+    <item>
+      <title>English beside</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</guid>
+      <description>beside 表示位置  在&amp;hellip;附近。 在&amp;hellip; 旁边。  beside + 名词 beside + 名词表示在这个某个地点的旁边或者附近。
+  The room beside the bathroom is mine.
+  She is beside the bathroom.
+  My student drink tea beside the sea every afternoon.
+  表示对比  和&amp;hellip;相比。  beside + 名词或代词，表示和某人相比。
+ Beside his, my trouble is nothing.  表示无关  That is beside the question.  </description>
+    </item>
+    
+    <item>
+      <title>English between</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</guid>
+      <description>between 表示时间、位置、数量  在&amp;hellip;之间。  between + 两个事物/两个人 表示在两者之间。
+注意，Among 才是表示三者以上，包括三者。
+ He does busines between America and China. They don&amp;rsquo;t know the secret between you and me.  between + 两个时间点 表示在两个时间点之内的这段时间。
+ We have a class between 20:00 and 22:00. I will rich between 30 and 50 years old.  表示关系、比较、分配  在&amp;hellip;之间。  between + 名词 这种情况，一般作后置定语，表示两者之间的关系/比较两者等。
+ What is the difference between American English an British English.</description>
+    </item>
+    
+    <item>
+      <title>N 进制转十进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/n-%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/n-%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B6/</guid>
+      <description>N 进制转十进制 给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。比如 5 进制的 32 转为十进制为：2 + 3 * 5 = 17。
+十进制转十进制 1234 —&amp;gt; 4 * 10º + 3 * 10¹ + 2 * 10² + 1 * 10³ = 1234
+二进制转十进制 10101 —&amp;gt; 1 * 2º + 0 * 2 ¹ + 1 * 2² + 0 *2³ + 1 * 2⁴ = 21
+八进制转十进制 371 —&amp;gt; 1 * 8º + 7 * 8¹ + 3 * 8² = 249</description>
+    </item>
+    
+    <item>
+      <title>二进制与八进制的转换</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%85%AB%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%85%AB%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</guid>
+      <description>二进制与八进制的转换 二进制转八进制 从右向左，三位一段，分别转换，不够三位补零。
+0101110 —&amp;gt; 000, 101, 110，三位一段。
+（000 = 0）（101 = 5）（110 = 6），则最后得到八进制数56。
+八进制转二进制 将每一个八进制位转换为 3 个二进制位。
+27 —&amp;gt; （010）（111），最后得到二进制数10111。</description>
+    </item>
+    
+    <item>
+      <title>二进制与十六进制的转换</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%8E%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E7%9A%84%E8%BD%AC%E6%8D%A2/</guid>
+      <description>二进制与十六进制的转换 二进制转十六进制 从右向左，四位一段，分别转换，不够四位补零。
+因为一个十六进制位有 16 种状态，所以需要 4 个二进制位的排列组合来表示，即每个 16 进制位，都需要用 4 个二进制位来表示，所以，我们可以将一串二进制位划分为好几段，四位为一段，不够四位的在前方补零，最后再一段一段的进行转换。
+0101110 —&amp;gt; 0010, 1110，四位一段。
+（0010 = 2）（1110 = 14 = E），则最后得到十六进制数2E
+十六进制转二进制 将每一个十六进制位转换为 4 个二进制位。
+2E —&amp;gt; （0010）（1110），一段四位则最后得到二进制数101110</description>
+    </item>
+    
+    <item>
+      <title>十进制转 N 进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC-n-%E8%BF%9B%E5%88%B6/</guid>
+      <description>十进制转 N 进制 **除 N 取余，直至商 0 ，余数倒序。**十六进制需要将余数转换
+十进制转二进制 除以二取余，并将余数倒过来，即可得出结果。
+比如 185：
+ 18 / 2 = 92， 余 1
+92 / 2 = 46，余 0
+46 / 2 = 23，余 0
+23 / 2 = 11， 余 1
+11 / 2 = 5 ， 余 1
+5 / 2 = 2， 余 1
+2 / 2 = 1， 余 0
+1 / 2 = 1， 余 1
+ 最后将余数倒过来，即可得到 185 的二进制数：10111001。</description>
+    </item>
+    
+    <item>
+      <title>进制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%BF%9B%E5%88%B6/%E8%BF%9B%E5%88%B6/</guid>
+      <description>进制 进制也就是进位计数制，是人为定义的带进位的计数方法。
+十进制是逢十进一，十六进制是逢十六进一，二进制就是逢二进一，以此类推，N 进制就是逢 N 进位。
+计算机只识别 2 进制，人类最习惯使用的是十进制。
+用不同的进制表示同一个数，虽然使用的进制不一样，但内部依旧表示的同一个数，只是外部所表现形式不一样而已。
+不存在十六进制与八进制的直接相互转化，都是以二进制为中间进制来进行转化。
+进制的表示  B 表示二进制 O 表示八进制 D 表示十进制 H 表示十六进制  二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  </description>
+    </item>
+    
+    <item>
+      <title>C 结构体</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/</guid>
+      <description>结构体 将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。
+为什么需要结构体 为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求
+结构体的定义 结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。
+需要注意的是，结构体最后的分号不能省去。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// 第一种定义结构体的方式 // 只定义变量类型， 但不定义变量名， // 变量名由我们使用这个变量类型的时候定义。 struct Student{  int age;  float score;  char sex; }; // 第二种定义结构体的方式 // 定义的同时，也将变量名（Sts）定义了（变量名写死了）。 struct Students{  int age;  float score;  char sex; } Sts; // 第三种定义结构体的方式 // 没有定义变量类型，只定义了变量名。 struct{  int age;  float score;  char sex; }St;  int main(void) { } </description>
+    </item>
+    
+    <item>
+      <title>C 结构体的使用</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
+  先初始化一个结构体，后续再一个变量一个变量的进行赋值。
+  #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,&amp;#39;N&amp;#39;};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = &amp;#39;V&amp;#39;;  printf(&amp;#34;%d %f %c\n&amp;#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&amp;#34;%d %f %c&amp;#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-&amp;gt;成员变量名 = *(指针变量名).</description>
+    </item>
+    
+    <item>
+      <title>English at</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</guid>
+      <description>at 表示地点  在&amp;hellip;地方。 在&amp;hellip;附近。  at + 小地方 at + 小地方容易和 in + 小地方混淆，前者表示在某个地方的范围或附近，而后者表示在某个地方的内部或里面。
+ They met me at the station. They are at the balcony. My mother planted some flowers at the balcony.  需要注意的是 at 不能加大地方。
+表示时间  在&amp;hellip;时刻  at 都是加一个基数词，表示几点钟。
+ I got up at six this morning. I get up at six every morning.  表示状态或从事与  they are at meeting.  表示速度/价格  I bought it at a low price.</description>
+    </item>
+    
+    <item>
+      <title>English 实义动词</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</guid>
+      <description>实义动词 表示有实际意义的动词，除了系动词、助动词、情态动词，剩下的就是实义动词。
+任何一个实义动词都有五种形式（原型、过去式、过去分词、现在分词、第三人称单数格式）。
+虽然一个实义动词有五种格式，但是这五种格式都是同一个意思，比如 work、worked、works，都是工作的意思。
+为什么一个单词会有五种不同的形式？这是因为英语有时态的变化，即不同的时态，使用不同的形式。
+一般来说，过去式、过去分词、现在分词和第三人称单数格式都是通过原型变化而成的。在单词的原型后面增加字母组合，这叫词尾变化。
+不及物动词 可以独立完成的动词叫做不及物动词，动词后面不需要物，也不能有物，因为不加物的情况下，这个句子的意思已经完整了
+因为，一个单词有不同的意思，因此，一个单词也有可能又是及物动词，又是不及物动词。
+ Rainy sleeping. I work.  单及物动词 只有一个动作承受者，单及物动词后面只能跟着一个物。
+ Rainy like you. Rainy buy water.  双及物动词  有两个动作承受者，即动词后有两个“物”，一个“动物”，一个“物体”。 Rainy teaches you English。 一般句型为：主语 + 双及物动词 + 间接宾语 + 直接宾语。  复杂及物动词  只有一个动作承受者，动词后面要有一个“物”，这个物后面还要有一个对这个“物”的补充说明。 Rainy consider you smart。 一般句型为：主语 + 复杂及物动词 + 宾语 + 宾补。  复合动词 由动词和另一个单词或几个单词所构成的词组。
+动词短语虽然由几个词构成，但实际上它只表示一个动作。
+ Look after Look forward to Look at Git up  </description>
+    </item>
+    
+    <item>
+      <title>English about</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</link>
+      <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</guid>
+      <description>about 表示有关，关于 about + 名词  about Rainy. about Chongqing. about English.  about + 代词的宾格  about + me.  about 动名词短语  about haveing a party. about buying a ship.  当 about 表示关于的时候，只能作后置定语和表语，一般情况不能作状语。
+The news about Rainy is not true.
+The story is about Susu and Rainy.
+表示在附近 about 有时候可以表示在&amp;hellip;附近。
+表示在身边 about 表示在身边的时候，一般都用在固定结构里面：Have sth about sb.
+ I have a cellphone about me. Jack had a gun about him.</description>
+    </item>
+    
+    <item>
+      <title>English after</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</link>
+      <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</guid>
+      <description>after 表示时间，顺序  在&amp;hellip;之后。  after + 时间点 after 可以放在一个表示具体时间点的词语的前面，表示在&amp;hellip;之后。
+ I sleep after 10:00 every day. I Fitness after work. She Play the game after class. I will retire after 35 years old . I born after 2001. I class after Sunday.  after + 一段时间 after 跟表示时间段的词语 。
+ He come back after a week. after an hour. after three years.  after + 动名词短语  After getting up every morning, I turn on my computer.</description>
+    </item>
+    
+    <item>
+      <title>English as</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</link>
+      <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</guid>
+      <description>as 表示当作、作为 as + 一个表示人的名词  As a good wife, you should know how to cook. As a good husband, I must earn much money. As a Englishs teacher, I am happy.  as + 名词 这个时候 as + 名词是放在句尾作状语，这个时候 as 后面的名词不一定是表示人的名词。
+ I eat rice gruel as breakfast.（把稀饭当作早餐） I chose the novel as my textbook. Don’t treat me as  </description>
+    </item>
+    
+    <item>
+      <title>English in</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</link>
+      <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</guid>
+      <description>in 表示在某个地方。  在&amp;hellip;里。 在&amp;hellip;中。 在&amp;hellip; 上。  in + 大地方 这种情况，表示在某个地方，没有里面的意思。
+ We live in the world. The people in Asia are poor. She is in Shanghai.  in + 小地方 这种情况，表示在某个地方内部。
+ They are making shoes in the factory. They make shoes in the factory every. The girl in the factory are young.  另外，还有一些含有 in 的固定介词短语，这些固定的介词短语，有固定的意思和用法。
+表示时间   在&amp;hellip;。
+  在&amp;hellip;后。
+  in + 年份/月份  I set up my website in 2021.</description>
+    </item>
+    
+    <item>
+      <title>English on</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</link>
+      <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</guid>
+      <description>on 表示位置  在&amp;hellip;上面。  on 加一个表示物体的名词，表示在这个物体的上面，并且强调跟物体的表面接触。
+ Children are playing a game on the floor, The picture on the wall is expensive. My book is one the bed.  表示时间  在..时候。  on + 表示时间的名词构成介词短语的时候，一般表示一天之内的时间（具体某一天），比如某日、星期几、日期、或某日的上午/中午/下午/晚上等等。
+ The handsome man met Pandora on the morning of May 10,2003. We will have a party on July 15. He came on the morning of My 1st.  表示状态  处于&amp;hellip;状态   Who is on duty today?</description>
+    </item>
+    
+    <item>
+      <title>C 多级指针</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</guid>
+      <description>多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // i 存放的是 int 类型  int i = 10;  // p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = &amp;amp;i;  // q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = &amp;amp;p;  // r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = &amp;amp;q;  printf(&amp;#34;%d&amp;#34;,***r); } #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.</description>
+    </item>
+    
+    <item>
+      <title>C 跨函数使用内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</guid>
+      <description>跨函数使用变量 静态内存不能跨函数使用 当静态函数终止之后，这个静态函数中的数据就不能被其他函数访问，因为这个静态函数的内存空间已经被释放了。就算可以使用，也是非法访问，这样是不对的。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// q 是指针变量，无论 q 是什么类型的指针变量，都只占 4 个字节 // 将实参 *p 传入 fun 函数的形参，则**q = *p, 则*q = p，q 存放的是 p 的地址， void fun(int **q){  int i = 5;  // ** q = i  // *q = p  //q = p 的地址  // **q = *p  // 因为 *q = p，所以这里相当于 p = &amp;amp;1，  *q = &amp;amp;i; } int main(void) {  int *p;  // 取 p（*p） 的地址，传入函数 fun，实际传入的是 *p，则 **q = *p  fun(&amp;amp;p);  // 下面代码语法没问题，但是逻辑上有问题。  // 这是因为当 fun 函数执行完毕后，fun 函数中的 i 变量已经被释放，  // 因此，p 虽然可以存放 i 的地址， 但是却不能访问 i 。  // 就算能够访问 i ，这也是非法的访问，没 error 是因为编译器的问题。  printf(&amp;#34;%d\n&amp;#34;,*p); } 动态内存可以跨函数使用 因为当一个函数执行完毕，动态内存分配的变量不会随着fun()的自动释放而释放，所以，当fun()被系统自动释放后，我们依旧可以访问变量*p</description>
+    </item>
+    
+    <item>
+      <title>English 专有名词</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</guid>
+      <description>专用名词 专有名词，就是人名、地名、专门机构等。
+大多数的专有名词是不可数名词，在某些情况下可以复数使用，或者转换为普通名词的单数/复数使用。
+专有名词的首字母必须大写。
+ Rainy is student. Beijing is beautiful China is so large. FBI is very famous  一个可数名词的单数是不能单独再句子或短语里面出现的，需要加限定词（形容词性物主代词，指示代词、数词等等）、冠词或变直接复数。比如 she is teacher这句话就是不对的，应该改为 she is a teacher 或者she is my teacher或 She is Nick&amp;rsquo;s teacher
+特殊的 当Mother的首字母大写后，它表示称呼语，相当于一个专有名词，可以单独使用；如果是小写的mother，那么则表示可数名词单数，不能单独使用</description>
+    </item>
+    
+    <item>
+      <title>English 普通名词</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</guid>
+      <description>普通名词 普通名词 除了专业名词以外的词都是普通名词。
+普通名词被分为可数名词和不可数名词。
+专有名词复数使用，专业名词转换普通名词  There are two Jacks in our class Millions of Lei Fengs have emerged in China Hey, Tom, have a Mrs. Carl is waiting for you  可数名词 可数名词（单数复数都可以，可以用数词计算）
+可数名词能加不定冠词（a/an）和数词（one、two）
+可数名词可以加定冠词（the）
+比如 apple、egg、boy、tree、family、class、police、team 等等
+可数名词单数不能单独作主语使用：Book is expensive.
+正确的应该是：
+ The Book is expensive. My books are good.  单数和复数 单数指的就是一个事物。复数指的是两个及以上的事物。
+单数变复数规则  大部分可数名词可以直接在词尾 + s. 以字母 s、sh、x、ch 结尾时，在词尾 +es. 以辅音字母 +y 结尾的时候，把 y 变为 i 后，再 +es。如果以元音字母 + y 结尾时，就不用变化，直接在词尾 +s 即可。 以字母 f 或 fe 结尾的时候，把 f 或 fe 变为 v 后，再＋ es。 以辅音字母 + o 结尾的时候，在词尾 +es 以**元音字母 + o **结尾的可数名词或以 o 结尾的简写词，在词尾 +s.</description>
+    </item>
+    
+    <item>
+      <title>English 量词</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</guid>
+      <description>量词 我们可以用量词来表示不可数名词的数量。但不是每一个量词都可以修饰每一个不可数名词。
+当不可数名词的单复数变化时，只需将量词从单数变为复数。
+量词中的 of 时没有意思的，它主要就是为了修饰不可数名词，作前置定语，另外，量词也可以修饰可数名词的复数形式，但不能修饰可数名词的的单数形式。毕竟一个名词用量词修饰，说明这个名词不止一个，如果这个名词还用单数形式的话，就不合理了。
+ a glass of water. two bottle of milk. a kilograms of meat. a basket of apples  量词的构成 a/an/one + 可数名词单数 + of  a cup of a bucket of a glass of a box of  数词 + 可数名词的复数 + of  two bottles of three tins of the boxes of  并不是所有可数名词都能构成量词，只有那种有内部空间或表示容器或一些符合逻辑的可数名词才能构成量词。
+不要用中文的量词思维来判断英文的量词使用。比如不能 a table of food，因为 table 没有内部空间或表示容器的意思。</description>
+    </item>
+    
+    <item>
+      <title>English 介词短语的构成</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</link>
+      <pubDate>Mon, 11 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</guid>
+      <description>介词短语的构成 要学好介词短语，先要掌握一个概念：介词宾语。
+介词和介词宾语在一起构成的短语叫作介词短语：介词 + 介词宾语 = 介词短语
+介词短语可以被分成四种类型。
+介词宾语 介词后面的词语叫介词宾语。
+介词宾语和宾语是不一样的，千万不要混淆。
+宾语是动作的承受。
+介词宾语仅仅只是放在介词后面的词语。
+介词 + 名词 这是最常见、最普通、最容易的介词短语形式。绝大部分介词后面都可以跟一个名词构成一个介词短语。一个介词短语，不管这个名词是专有名词还是普通名词，当然如果是普通名词，要注意可数名词单复数的问题。
+ in China. under the tree. behind my house. beside Rainy.  介词 + 人称代词宾格  beside me. before you. behind him.  介词 +数词 需要注意的是，并不是每一个介词后面都能跟数词。
+ in 2023. at 5 : 30.  介词 +动词短语 虽然部分介词的后面可以跟动动词短语构成介词短语，但是这种介词短语的出现频率非常高。
+ before having dinner. about learning English. by watching TV.  </description>
+    </item>
+    
+    <item>
+      <title>English 介词短语的用法</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Mon, 11 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <description>介词短语的用法 作状语 介词短语作状语的时候，可以在主谓宾或主系表中充当时间状语和地点状语，有时候还可以充当方式状语。
+作地点状语 当介词作地点状语的时候，这个介词就可以在句子中充当地点状语的作用
+主系表 + 介词短语作地点状语
+ I am happy in Guangxi. I was sad in Guangxi. They are busy in Beijing.  主谓宾 + 介词短语作地点状语
+ I work in China.  作时间状语 当介词作时间状语的时候，这个介词就可以在句子中充当时间状语的作用
+ I was young in 2023. I get up at six. We will be famous in 2020.  作方式状语 少数的介词短语，还能表达动作的方式。
+ Can you write in English. I tell stories in English.  作后置定语 介词短语作后置定语，跟前置定语一样，只能修饰普通名词。</description>
+    </item>
+    
+    <item>
+      <title>CDN</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</link>
+      <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</guid>
+      <description>CDN 使网址的加载速度变快。</description>
+    </item>
+    
+    <item>
+      <title>What is Vue</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/what-is-vue/</link>
       <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/what-is-vue/</guid>
-      <description>What is Vue 官方答复</description>
+      <description>What is Vue Vue 是一套用于构建用户界面的渐进式 JavaScript框架。
+Vue 的特点  采用组件化模式，提高代码复用率，且让代码更好维护。 不在使用传统的命令式编码，在Vue中，使用声明式编码，让我们无需直接操作 DOM，提高开发效率。 . 使用虚拟 DOM + 优秀的 Diff 算法，尽量复用 DOM 节点。  </description>
+    </item>
+    
+    <item>
+      <title>初识 Vue</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</link>
+      <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</guid>
+      <description>初识 Vue 创建 Vue 实例，并传入一个配置对象。
+root 容器里的代码依然符合 html 规范，只不过混入了一些特殊的Vue 语法。
+root 容器里的代码被称为 Vue 模板。
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34; /&amp;gt;  &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;   &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;  &amp;lt;/head&amp;gt;   &amp;lt;body&amp;gt;  &amp;lt;!-- {{}}插值语法 --&amp;gt;  &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt;{{ message }}&amp;lt;/div&amp;gt;  &amp;lt;/body&amp;gt;  &amp;lt;script src=&amp;#34;./main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;/html&amp;gt; JavaScript var app = new Vue({  // 选择一个在页面上已存在的 DOM 元素作为操作元素  el: &amp;#39;#app&amp;#39;,  // 将数据内容插入 el 选择的元素数  data: {  message: &amp;#39;vue 加载成功!</description>
     </item>
     
     <item>
@@ -45,7 +485,7 @@
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%89%AF%E8%AF%8D/</guid>
-      <description>副词 用于修饰动词或形容词。有时也可以修饰数词、介词、连词、名词或一整个句子。
+      <description>副词 用于修饰动词或形容词，有时也可以修饰数词、介词、连词、名词或一整个句子。
 副词是表示行为或状态特征的词，主要作状语、也可以作表语、定语、补足语或介词宾语。
  I ate two apple quickly  当一个句子中同时出现多个不同的副词的时候，书写顺序如下：方式副词 —— 地点副词 —— 时间副词
 特殊副词 在英语中，很多单词都有多重词性，比如一些单词，可以作副词，也可以作形容词，有些还有其他词性。
@@ -437,6 +877,32 @@ C:\Windows\system32&amp;gt;mysql --version mysql Ver 14.14 Distrib 5.7.26, for W
     </item>
     
     <item>
+      <title>C for</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</guid>
+      <description>for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
+for(1; 2; 3) {  A; } 其中：
+1 只执行一次。
+3 执行完后才意味着一次 for 循环执行完毕。
+3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>C if</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</guid>
+      <description>if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
+如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+    </item>
+    
+    <item>
       <title>C malloc</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
@@ -448,11 +914,38 @@ malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.
     </item>
     
     <item>
-      <title>Window 无法使用 WIFI</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/window-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8-wifi/</link>
+      <title>C 流程控制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/window-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8-wifi/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
+      <description>流程控制 流程控制也叫控制结构，控制程序应该如何执行代码。
+顺序控制 从上到下的执行代码，中间没有任何判断或跳转。
+选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
+循环控制 某些代码被重复执行。</description>
+    </item>
+    
+    <item>
+      <title>English 动词短语和介词短语</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</guid>
+      <description>动词短语和介词短语 它们的区别 动词短语 动词短语虽然由多个词语构成，但它实际上是一个整体，只能将它当作一个词语看待，因为它与普通的动词是一样的。
+动词和介词构成的动词短语也叫复合动词，属于实义动词的范畴。
+ look at get up look for  介词短语 介词短语的介词是放在开头的，后面跟一个名词/代词/数词/动名词/可以构成一个介词短语。
+介词可以根据自身的规则构成很多个意义不同的介词短语，而动词短语是一个固定的实义动词，有固定的意思和作用。
+介词短语是一个真正意义上的短语，
+动词短语不属于短语，只是一个动词。
+因为动词短语中的介词和介词短语中的介词看起来样的，所以，这很容易让我们将这两者混用。</description>
+    </item>
+    
+    <item>
+      <title>Window 无法使用 WIFI</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/windows/window-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8-wifi/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/windows/window-%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8-wifi/</guid>
       <description>就在今天，我的联想小新突然就没网了，点开右下角的网络标志一看，没想到 WIFI 的开关都直接消失了，直接给我干懵逼的了，转到设置一看，设置项的WIFI选项也很莫名的消失了，我也没更新系统，就用着用着就没WIFI了，属实是很怪。
 然后我打开设备管理器看了一下，发现网络适配器中的 Intel(R) Wireless-AC 9569居然提示报错无法启动（代码 10）。
 最后我在网上查了大概十分钟，就在知乎上找到了一个回答，很简单粗暴，也非常有用。
@@ -877,7 +1370,7 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
 今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
 下载 PHPStudy PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的集成开发环境
  解压运行 选择安装目录，通常时 D 盘，我这里是D:\AppInstallPath\PhpStudy  安装完成后，打开 PHPStudy，会出现以下界面：
-![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+![]E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets/1.png)
 另外，PHPStudy 会在安装目录下的 phpstudy_pro\Extensions 路径形成目录结构：
 ![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
 在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。
@@ -906,23 +1399,12 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
     </item>
     
     <item>
-      <title>C 堆栈</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
-      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
-      <description>堆栈 栈内存 先进后出
-压栈，将数据存入栈内存，即在内存中创建内存空间
-出栈，从栈内存中丢弃数据，即释放内存。</description>
-    </item>
-    
-    <item>
       <title>C 递归</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
-      <description>递归 函数自身调用自身</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <description>递归 函数自身调用自身。</description>
     </item>
     
     <item>
@@ -950,11 +1432,24 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
     </item>
     
     <item>
+      <title>堆栈</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/%E5%A0%86%E6%A0%88/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/%E5%A0%86%E6%A0%88/</guid>
+      <description>堆栈 栈内存 先进后出
+压栈，将数据存入栈内存，即在内存中创建内存空间
+出栈，从栈内存中丢弃数据，即释放内存。
+堆内存
+堆内存 </description>
+    </item>
+    
+    <item>
       <title>C 函数</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
 函数还有很多叫法，比如方法、子例程或程序，等等。
 #include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）</description>
@@ -966,11 +1461,15 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
       <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
-      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+      <description>数组 数组是用于储存多个相同类型数据的集合。
+在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。
+特点 数组是连续的、线性的，在内存中亦是如此。
 数组的数量，一旦定义，无法修改。
 数组的类型取决于该数组存储的元素的类型。
-数组是连续的、线性的，在内存中亦是如此。
-#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。</description>
+优点 存取速度快。
+缺点 需要一个连续的、很大的内存。
+插入和删除元素的效率很低。</description>
     </item>
     
     <item>
@@ -983,12 +1482,14 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
     </item>
     
     <item>
-      <title>汉化 CodeBlocks</title>
+      <title>CodeBlocks 的使用</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
       <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
-      <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
+      <description>CodeBlocks 的使用 codebooks 快捷键 注释 使用Ctrl + Shift + C快速注释。
+使用Ctrl + Shift + X取消注释。
+汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
 打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
     </item>
     
@@ -1026,11 +1527,12 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
 指针变量是存放编号的变量。
 八位（Bit）是一个字节，一个字节就是一个内存单元。
 int* 是 指向整型变量的指针，
-作用 表示一些复杂的数据结构。
-能够快速的传递数据。
-使函数返回一个以上的值。
-可以直接访问硬件。
-更方便的处理字符串。</description>
+作用   表示一些复杂的数据结构（树、图）。
+  快速的传递数据，并且减少了内存的耗费。
+  使函数返回一个以上的值。
+  可以直接访问硬件。
+  更方便的处理字符串（&amp;rsquo;\0&amp;rsquo;）。
+  </description>
     </item>
     
     <item>
@@ -1103,30 +1605,20 @@ int* 是 指向整型变量的指针，
     
     <item>
       <title>C printf</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/printf/</link>
       <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/printf/</guid>
       <description>printf 用于将变量的内容输出到显示器.
 直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2)  int a = 10;  int i = 15;  printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
     </item>
     
     <item>
-      <title>C char</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
-      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
-      <description>char 字符类型。
-在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
-    </item>
-    
-    <item>
       <title>C scanf</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/scanf/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/scanf/</guid>
       <description>scanf 通过键盘将数据输入到变量中。
 将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
 使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
@@ -1136,17 +1628,18 @@ scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;
     
     <item>
       <title>C switch</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</guid>
       <description>switch 它是一种选择控制语句。
-switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
-该语句的功能只是退出 switch 语句转去执行它下面的语句，
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，该语句的功
+能只是退出 switch 语句并转去执行这个 switch 下面的语句。
 在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
-当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
-我们来看下面这个程序：
-#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+当我们使用它时，它会去寻找与表达式结果所匹
+的子表达式（case），并执行子表达式后面的所有
+语句，直到遇到 break 停止执行。
+#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主</description>
     </item>
     
     <item>
@@ -1228,10 +1721,10 @@ switch 是选择控制语句，而不是循环控制语句，如果在 switch �
     
     <item>
       <title>库，框架，架构，平台的区别</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Tue, 21 Dec 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。
 库的概念很宽泛。
 程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；
@@ -1421,12 +1914,12 @@ enableconfigure terminal 故障三 ip route 172.31.1.0 255.255.255.128 172.31.1
     </item>
     
     <item>
-      <title>Npm 是什么</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <title>NPM  是什么</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      <description>Npm 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <description>NPM 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
 本文目标读者是「不太了解 npm 的新人」，大神您别看了，不然又说我啰嗦了 。
 社区 程序员自古以来就有社区文化：
 社区的意思是：拥有共同职业或兴趣的人们，自发组织在一起，通过分享信息和资源进行合作。
@@ -1499,19 +1992,19 @@ GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能，但这�
     
     <item>
       <title>Echarts 文字样式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
       <description>文字样式 fontSize: 11, color: &amp;#34;#eee&amp;#34;, textShadowColor: &amp;#34;rgba(0, 0, 0, 1)&amp;#34;, textShadowBlur: 10, textShadowOffsetX: 1, textShadowOffsetY: 1, 图形样式 barBorderRadius: 2, shadowColor: &amp;#34;rgba(0, 0 0, 0.3)&amp;#34;, shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1, </description>
     </item>
     
     <item>
       <title>快速使用 Echarts</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
       <description>快速使用 Echarts  // 快速使用 Echcarts (function () {  // 1. 实例化对象  var myChart = echarts.init(document.querySelector(&amp;#34;&amp;#34;));  // 2.配置   // 3. 把配置给实例对象  myChart.setOption(option);  // 4. 让图表跟随屏幕自动的去适应  window.addEventListener(&amp;#34;resize&amp;#34;, function () {  myChart.resize();  }); })(); </description>
     </item>
     
@@ -1530,10 +2023,10 @@ GItHub 兴起之后，社区中也有人使用 GitHub 的下载功能，但这�
     
     <item>
       <title>Echarts 遇到的错误</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
       <description>遇到的错误 今天使用 Echarts 绘制地图时，浏览器控制台出现以下错误：
 Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. 如何解决
 只需要给需要被绘制的元素设置width和height Css 属性即可。</description>
@@ -1541,10 +2034,10 @@ Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39
     
     <item>
       <title>Echarts 地图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9C%B0%E5%9B%BE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</guid>
       <description>地图 常用配置 地图样式 配置 option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
 normal: {  //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;,  // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;,  //区域分界线  borderWidth: 1 }, </description>
     </item>
@@ -1563,10 +2056,10 @@ Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;marg
     
     <item>
       <title>域服务器</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/win-server-%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>域服务器 父域一
 父域二
 子域三
@@ -1601,10 +2094,10 @@ Dns 192.168.10.1
     
     <item>
       <title>Echarts 折线图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
       <description>Echarts 折线图 图表类型 在series下配置type.
 type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
 在series下配置markArea
@@ -1615,10 +2108,10 @@ lineStyle: {  color: &amp;#39;red&amp;#39;,  type: &amp;#39;dashed&amp;#39; } �
     
     <item>
       <title>Echarts 柱状图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
       <description>Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
 通过柱状图，可以很清晰的看出每个分类数据的排名情况。
 基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
@@ -1629,10 +2122,10 @@ yAxis: {  type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type.
     
     <item>
       <title>Echarts 通用配置</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>Echarts 通用配置 title 图表的标题。
 标题的样式 在title下配置textStyle、
 textStyle: {  color: &amp;#39;#008c8c&amp;#39;, }, 标题的边框 在title下配置：
@@ -1651,10 +2144,10 @@ dataView: {}, 还原所有配置项 restore: {}, 数据区域的缩放 dataZoom:
     
     <item>
       <title>域服务器的基本操作</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Fri, 29 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%9F%9F%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/</guid>
       <description>域服务器的基本操作 克隆 2008
 打开 ad 01
 新建用户
@@ -2060,10 +2553,10 @@ let 不能被重新定义，但是 var 是可以的 </description>
     
     <item>
       <title>Echarts 基本配置</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
       <description>初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
 var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
 var option = {} 标题 title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: {  // 轴类型为类目轴  type: &amp;#39;category&amp;#39;,  // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: {  // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
@@ -2072,10 +2565,10 @@ series: [  {  // 表示下面data中的数据表示的是哪一方面的数据�
     
     <item>
       <title>Echarts 是什么</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>Echarts 是什么 ECharts 是一个使用 JavaScript 实现的开源可视化库，兼容性强，
 底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
 使用 Echarts 的时候，只需要更改配置项即可。</description>
@@ -4375,16 +4868,19 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 介词</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</guid>
       <description>介词 用于表示位置，方向等，使句子形成结构，介词没有实际意义
 主要用来表明名词和代词与其他句子成分的关系。
-介词也叫前置词，是一种虚词，不能单独做句子成分，一
-般只能用在名词或者代词、数词和动名词的前面。
-介词跟这些词语构成一个一个短语，这些短语叫做介词短语。
- I ate three apple with chopsticks.  </description>
+ I ate three apple with chopsticks.  介词也叫前置词，是一种虚词，不能单独做句子成分，一般只能用在名词或者代词、数词和动名词的前面。介词可以与这些词语构成介词短语，才能在句子红充当一个句子成分。
+ In Guangxi. In the school. in 2023.  介词虽然数量不多，但是通常因为一个介词有好几十个意思，甚至是上百个，所以很难掌握，也很难区别。
+比如最常用的介词 in，它的意义至少就有 6 个。
+In 在&amp;hellip;地方 in China.
+在&amp;hellip;里面  in my room.  表时间，在某年，某月  in 2023. in May.  在&amp;hellip;之后  in three days.  穿什么颜色的衣服  in red.  用&amp;hellip;语言  in English  介词的分类 简单介词 由一个单词组成的介词。
+ in. after.  复合介词 由两个单词组成一个新词的介词。
+ inside. into.</description>
     </item>
     
     <item>
@@ -4422,23 +4918,24 @@ i、it、you、he、she、we、they 等等都是人称代词。
     
     <item>
       <title>English 动词</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</guid>
       <description>动词 表示动的行为或心理活动的词。
 谓语动词 它是谓语的一部分，用于表达动作的时间、状态、语气、否定、可能性、必须性等，但想发挥这些作用，需要用到助动词。
 前五种谓语动词，对应了五种简单句，同时也囊括了五种句子成分。
-实义动词 表示有实际意义的动词，除了系动词、助动词、情态动词，剩下的就是实意动词。
-任何一个实义动词都有五种形式（原型、过去式、过去分词、现在分词、第三人称单数格式）。虽然一个实义动词有五种格式，但是这五种格式都是同一个意思，比如 work、worked、works，都是工作的意思。
-一个单词会有五种不同的形式，这是因为英语有时态的变化，即不同的时态，使用不同的形式。
-一般来说，过去式、过去分词、现在分词和第三人称单数格式都是通过原型变化而成的。在原型后面增加字母组合，这叫词尾变化
-不及物动词 可以独立完成的动词叫做不及物动词，动词后面不需要物，也不能有物，因为不加物的情况下，这个句子的意思已经完整了
-因为，一个单词有不同的意思，因此，一个单词也有可能又是及物动词，又是不及物动词。
- Rainy sleeping. I work.  单及物动词 只有一个动作承受者，单及物动词后面只能跟着一个物。
- Rainy like you. Rainy buy water.  双及物动词  有两个动作承受者，即动词后有两个“物”，一个“动物”，一个“物体”。 Rainy teaches you English。 一般句型为：主语 + 双及物动词 + 间接宾语 + 直接宾语。  复杂及物动词  只有一个动作承受者，动词后面要有一个“物”，这个物后面还要有一个对这个“物”的补充说明。 Rainy consider you smart。 一般句型为：主语 + 复杂及物动词 + 宾语 + 宾补。  复合动词 由动词和另一个单词或几个单词所构成的词组。
-动词短语虽然由几个词构成，但实际上它只表示一个动作。
- Look after Look forward to Look at Git up  非实义动词 系动词 不单是动作，将动词之后的信息赋给在动词之前信息。也叫连系动词，即连系表语的词。</description>
+非实义动词 系动词 不单是动作，将动词之后的信息赋给在动词之前信息。也叫连系动词，即连系表语的词。
+系动词不能单独使用，必须跟表语一起用。
+系动词大部分都是 be 动词，它有八种形式：
+ be（原型） is（第一人称单数） am（第三人称单数） are（You 和复数） was（单数的过去式） were（复数的过去式） being（过去分词） been（现在分词）  be 动词都是是的意思，但有有些时候并不用在一句话中被翻译出来。
+ Rainy is tall. Rainy is in the room. Rainy looks tall.  除了 be，还有少数的实义动词可以充当系动词。这些系动词虽然是实义动词充当的，但是作系动词的意思和作实义动词的意思是不同的。
+ You look beautifu.  助动词 它没有意思的，且不能单独使用，只能用于协助系动词或实义动词构成复合谓语。
+注意不要将助动词与它本身的实义弄混淆。
+比如 Might eat，助动词 might，协助谓语动词 eat 表示可能吃，但 might 也可以表示力量，注意别将助动词与其本身的实义弄混淆。
+助动词有：
+be、do、have、will、would、shall、should.
+ Do you love me. I do not love you. I did not love you.</description>
     </item>
     
     <item>
@@ -4468,26 +4965,35 @@ Don’t open the door, will you?
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</guid>
-      <description>同位语 用于将主语或宾语重新说一遍。即两个不同的词语都表示同一个事物或人。
+      <description>同位语 用于将主语或宾语重新说一遍。使得两个不同的词语都表示同一个事物或人。
  Rainy,an english teacher,is very strict.  </description>
     </item>
     
     <item>
       <title>English 名词</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</guid>
       <description>名词 表示人或物的名称。
- Rainy is a person  专有名词 专有名词，就是人名、地名、专门机构等。
-大多数的专有名词是不可数名词，在某些情况下可以复数使用，或者转换为普通名词的单数/复数使用。
-专有名词的首字母必须大写。
- Rainy is student. Beijing is beautiful China is so large. FBI is very famous  一个可数名词的单数是不能单独再句子或短语里面出现的，需要加限定词（形容词性物主代词，指示代词、数词等等）、冠词或变直接复数。比如 she is teacher这句话就是不对的，应该改为 she is a teacher 或者she is my teacher或 She is Nick&amp;rsquo;s teacher
-特殊的 当Mother的首字母大写后，它表示称呼语，相当于一个专有名词，可以单独使用；如果是小写的mother，那么则表示可数名词单数，不能单独使用
-普通名词 除了专业名词以外的词都是普通名词。
-专有名词复数使用，专业名词转换普通名词   There are two Jacks in our class
-  Millions of Lei Fengs have emerged in China
-  Hey, Tom, have a Mrs.</description>
+ Rainy is a person  名词所有格 表示一种所有关系。
+比如小明的书包，其中小明的就是所有格，因为书包是属于小明的。
+表示人或动物的名词 + &amp;rsquo;s 这种名词所有格，构成的方式很容易，直接子表示人或动物的名词后面**+&amp;rsquo;s**就可以了，这里的 &amp;rsquo;s 相当于中文里的”的“。
+一个普通名词，在变成所有格的时候，，要注意可数名词不能单独使用，比如 friend&amp;rsquo;s ；需要加一个限定词 my，变成My friend&amp;rsquo;s这样才能构成名词所有格。
+作前置定语 Jack &amp;rsquo;s book
+Jack &amp;rsquo;s books
+The boss’s car
+同时它作前置定语的时候可以修饰可数名词（单数和复数形式）和不可数名词。
+复数名词 s 结尾，后加’ 如果名词是s结尾的复数或名词本身是s结尾， 直接加**&amp;rsquo;就可以了，当然也可以加&amp;rsquo;s**。
+My boss&amp;rsquo;s 相当于 My boss&amp;rsquo;
+of + 无生命的名词 不可数名词或复数直接+of。 Of water
+Of oil
+可数名词不能直接加 of，需要加限定词或冠词或变复数。 of相当于中文**“的”的意思，the相当于“这”**的意思
+Of the house
+Of my house
+Of this coat
+Of the carrot
+被名词所有格作后置定语修饰的名词，都必须在这个名词前面+ the The price of the house.</description>
     </item>
     
     <item>
@@ -4520,7 +5026,8 @@ Be careful（小心）</description>
 定语可以将名词具体化，缩小名词的范围.比如你去帮我买香蕉，这句话并不具体，因为没有表示要买多少根香蕉，或者买什么种类的香蕉，因此，我们需要加上一些具体的词，使我们的句子更加合理化，这些词就是定语。
 在英语中，普通名词才能用定语修饰 ，专有名词是不能用定语修饰的，特殊情况除外。
 同一个普通名词，可以有多个定语修饰。
- The little white rabbit ate a large carrot. One book a bottle of water Two beautiful girls  前置定语 后置定语 </description>
+ The little white rabbit ate a large carrot. One book a bottle of water Two beautiful girls  前置定语 放在名词前面修饰名词的词语。
+后置定语 放在名词后面修饰名词的词语。</description>
     </item>
     
     <item>
@@ -4552,7 +5059,7 @@ Be careful（小心）</description>
       <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</guid>
       <description>宾补 对宾语进行补充说明，使得句子意思完整。
 宾补只跟宾语有关系，跟主语没关系。
- He made the English class funny I make you rich. We keep the room chean.  </description>
+ He made the English class funny I make you rich. We keep the room clean.  </description>
     </item>
     
     <item>
@@ -4563,14 +5070,13 @@ Be careful（小心）</description>
       <guid>http://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</guid>
       <description>宾语 指动作（谓语）的承受者。
 能作主语的词都可以作宾语，不能作主语的，也不能作宾语。但要注意的是，如果是人称代词作宾语，则必须用宾格，不能用主格。
- I buy a book every year. You believe us I want two  和表语不同，宾语前面不需要也不能有系动词 be.
+ I buy a book every year. You believe us I want two apples.  和表语不同，宾语前面不需要也不能有系动词 be.
 间宾 一般来说， 我们把表示人的称为间接宾语。
 间宾和直宾的位置是可以换的，如果间宾放直宾的后面，那么要在间宾的前面＋ to.
  Rainy teaches you English I gave a book to her I gave them books  直宾 我们把表示物的称为直接宾语。
 例句  Rainy teaches you English  与宾补的区别 主语 + 及物动词 + 宾语 + 名词（作宾语）
 主语 + 及物动词 + 宾语 + 名词（作宾补）
-I gave her a book.
-I call her Mary.</description>
+I gave her a book.</description>
     </item>
     
     <item>
@@ -6503,80 +7009,46 @@ CSS 样式书写靠后的属性最终会应用到元素。
     
     <item>
       <title>C break</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/break/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/break/</guid>
       <description>break 用于终止循环或退出 switch.
 不能直接用于 if，除非 if 是循环的一个子句。</description>
     </item>
     
     <item>
-      <title>C 循环控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
-      <description>循环控制 某些代码被重复执行。
-for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
-for(1; 2; 3) {  A; } 其中 1 只执行一次。
-3 执行完后才意味着一次 for 循环执行完毕。
-3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
-    </item>
-    
-    <item>
       <title>C 自增与自减</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
-      <description>自增与自减 前自增**++i与后自增i++**.
-异同 相同 最终都会使 i 的值加 1.
-不同 i++ 返回原来的值，
-++i 返回加 1 后的值。
-#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  c = a++;  // return 3  d = ++b;  // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <description>自增与自减 前自增++i与后自增 i++.
+异同 相同
+最终都会使 i 的值加 1.
+不同
+i++返回原来的值，
+++i返回加 1 后的值。
+#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  // return 3  c = a++;  // return 4  d = ++b;  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
     </item>
     
     <item>
       <title>C 运算符</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 三目运算符 a ? b : c 相当于 if 语句
 if (a);  b; else  c; return 0; 逗号表达式 (a,b,c,d) 从左向右执行，表达式最终的值是 d 的值。
 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int i;  int c = 2;  i = (c++, ++c, c + 2, c - 3);  // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.</description>
     </item>
     
     <item>
-      <title>C 选择控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
-      <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
-if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
-如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
-    </item>
-    
-    <item>
-      <title>C 顺序控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
-      <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
-    </item>
-    
-    <item>
       <title>C 预备知识</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
       <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
 因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
 CPU 再对内存中的数据进行处理。
@@ -6589,10 +7061,11 @@ int a; //调用操作系统在内存条中创建一个空的内存空间，并�
 软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
 一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
 当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
-进制 B 表示二进制、O 表示八进制、D 表示十进制、H 表示十六进制。
-N 进制表示逢 N 进一。
-用几种不同的进制表示同一个数，虽然使用的进制不一样，但都表示的同一个数，只是外部的表现形式不一样而已。
-二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。</description>
+常量的表示 整数。 八进制：前面加 0 ，018。
+十进制：传统写法，18。
+十六进制：前面加 0x 或 0X，0x18。
+浮点数。 传统写法，1.8。
+科学计数法，1.8e2（1.8 * 10 的 2 次方）。</description>
     </item>
     
     <item>
@@ -6718,15 +7191,6 @@ shtml shtml 命名的网页文件里，使用了 ssi 的一些指令，就像 as
     </item>
     
     <item>
-      <title>Java 冒泡排序</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.out.println(&amp;#34;排序前：&amp;#34;);  //打印排序前的数组元素  printArray(arr);  //数组排序的方法  bubbleSort(arr);  System.out.println(&amp;#34;排序后：&amp;#34;);  //打印排序后的数组元素  printArray(arr);  }  //定义打印数组中所有元素的方法  public static void printArray(int[] arr) {  for (int i = 0; i &amp;lt; arr.length; i++) {  //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;);  }  System.out.println(&amp;#34;\n&amp;#34;);  // 返回后换行  }  //定义冒泡排序的方法  public static void bubbleSort(int[] arr) {  // arr.</description>
-    </item>
-    
-    <item>
       <title>Java 基础</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
@@ -6784,10 +7248,10 @@ private void Show1() {  int a = 123; }  // 相当于 default int Show2() int Sho
     
     <item>
       <title>安装 Hyper V</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%AE%89%E8%A3%85-hyper-v/</link>
       <pubDate>Sat, 02 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/win-server/%E5%AE%89%E8%A3%85-hyper-v/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/winserver/%E5%AE%89%E8%A3%85-hyper-v/</guid>
       <description>安装 Hyper V 安装 hyper v
 在第一台上链接第二台虚拟计算机
 启动 nat 模式 8
@@ -6955,6 +7419,34 @@ DNS 是一个按层次结构排列的分布式系统，由许多 DNS 服务器�
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</guid>
       <description>静态网站和动态网站 静态网站的特点  网页内容一经发布到网站服务器上，无论是否有用户访问，每个静态网页的内容都是保存在网站服务器上的,也就是说,静态网页是实实在在保存在服务器上的文件，每个网页都是一个独立的文件。 静态网页的内容相对稳定，因此容易被搜索引擎检索。 静态网页没有数据库的支持，在网站制作和维护方面工作量较大，因此当网站信息量很大时完全依靠静态网页制作方式比较困难。 静态网页的交互性较差，在功能方面有较大的限制，当我们要修改网页上文件时，需要将修改后的文件覆盖服务器上的源文件。  动态网站的特点  交互性强，网页会根据用户的要求和选择而动态地改变和响应，网页上的数据都是从数据库中获取的，并且用户的操作，也可以对网页上的数据进行实时的更新。 自动更新，即无须手动更新 HTmL 文档,便会自动生成新页面，可以大大节省工作量。 因时因人而变，在不同时间、不同用户访问用一个网址时，会出现不同页面。 在动态网页的网址中有一个标志性的符号“?”。  </description>
+    </item>
+    
+    <item>
+      <title>补码</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</guid>
+      <description>补码 在计算机中，数值一律用补码来表示和存储
+已知十进制求二进制的补码 求正整数的二进制补码 除 2 取余，直至商为 0，余数倒序即可
+求负整数的二进制补码 先求与该负数的相反数的二进制数，然后将所有位取反，末尾位加 1，不够位数，左侧补 1。
+（-3）—&amp;gt; 011 —&amp;gt; 100 —&amp;gt; 101 — 11111111,11111111,11111111,11111101 — &amp;gt;
+FFFFFFFD
+求零的二进制补码 全是 0。
+已知二进制补码求十进制 如果二进制补码首位是 0，则表示这个数是正整数。
+直接转十进制即可。
+如果二进制补码首位是 1，则表示这个数是负整数。
+将所有位取反，末位加 1，所得数字就是该负数的绝对值。
+1001010 —&amp;gt; 0110101 —&amp;gt; 0110110 —&amp;gt; 57 —&amp;gt; -54
+如果二进制补码全是零，则表示这个数字是 0。
+原码 原码不能直接参加运算
+首位是 0 表示这个数是正整数，首位是 1 表示这个数是负整数，
+其余二进制位是该数字的绝对值的二进制位。
+（+35）00100011，就是 35 的二进制，不足位补零，0 表示负；
+（-35）10100011，最高位放符号位，1 表示负。
+反码 在计算机中不常用。
+（+35）—&amp;gt; 00100011，和原码补码都相同
+（-35）—&amp;gt; 11011100，+ 35 的原码全部取反即可求出 -35 的反码。或者 35 的补码最低位减去 1 获得。</description>
     </item>
     
   </channel>

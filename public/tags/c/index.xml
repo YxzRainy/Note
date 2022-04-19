@@ -6,7 +6,100 @@
     <description>Recent content in C on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 链表</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
+      <description>链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。
+链表靠节点的指针域中存放的指针地址来寻找下一个元素。
+确定一个链表，只需要知道头指针即可。
+优点 存取数据效率高。
+不需要一个太大的内存。
+缺点 查找某个位置的元素时，效率很低。
+节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。
+链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。
+首节点 链表中存放第一个有效数据的节点。
+尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。
+头结点 头结点的数据类型和首节点的类型一模一样。
+头结点是首节点前面的那个节点。
+头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
+设置头结点的目的是为了方便对链表的操作。
+头指针 用于存放头结点地址。
+链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  // 调用 CreateList() 函数来创建一个链表 ，  // 然后因为 CreateList() reture 了该链表的头指针，  // 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  // 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  // 遍历链表中的节点  // 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  // 用于存放有效节点的个数  int len;  //  int i;  // 用于临时存放用户输入的节点的值  int val;  // 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-&amp;gt;pNext = NULL;   printf(&amp;#34;请输入需要生成的链表节点的个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);   for(i = 0; i&amp;lt;len; i++)  {  printf(&amp;#34;请输入地%d个节点的值：&amp;#34;,i+1);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  pNew -&amp;gt;data = val;  pTail -&amp;gt;pNext = pNew;  pNew -&amp;gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -&amp;gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(&amp;#34;链表为空！\n&amp;#34;);  }  else  {  struct Node * p = pHead-&amp;gt;pNext;  while(NULL !</description>
+    </item>
+    
+    <item>
+      <title>C 冒泡排序</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/algorithm/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢&amp;quot;浮&amp;quot;到数列的顶端。
+步骤 比较相邻的元素。如果第一个比第二个大，就交换它们两个。
+对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，会产生一个最大或者最小的数（这取决于你是升序还是降序）。升序是产生最小的数，降序是产生最大的数。
+C 代码实现 # include &amp;lt;stdio.h&amp;gt; // 定义冒泡排序函数，将数组中的元素按从小到大的顺序排列 // 形参是数组中第一个元素的地址和数组的长度 // 以 sort(a,6); 来举例 void sort(int * a, int len){  int i,j,t;  // 定义总共需要几次循环才能对数组中每个元素都进行比较  // 首次循环 ：i = 5，所以想要将这个数组进行排序，总共需要进行 5 次比较。  for (i = 0; i &amp;lt; len-1;i ++){  // 每一次整体比较结束后，需要进行比较的元素就要少一个，  // 因为每一次比较后，都会产生一个最小的元素，而这个最小的元素，将不再参加后续的比较，  // 因此，每次整体比较后，都会少一个元素参加后续的比较  // 当 i = 0 时：数组中会进行 5 次依次比较  // 当 i = 1 时：数组中会进行 4 次依次比较  // 当 i = 2 时：数组中会进行 3 次依次比较  // 当 i = 3 时：数组中会进行 2 次依次比较  // 当 i = 4 时：数组中会进行 1 次依次比较  for(j = 0;j &amp;lt; len - 1- i;j++){  // 开始进行元素的交换，&amp;gt; 表示升序，&amp;lt; 表示降序  // 如果数组中第一个元素（a[0]）大于第二个元素（a[1]）  // 注意，此时是第一个元素在前，第二个元素在后  // 每次依次比较后，j 都会 + 1，也就是最小的元素将不再参与比较  if (a[j] &amp;gt; a[j+1]){  // 将较大的元素赋给 t  t = a[j];  // 将较小的元素赋给 a[0]，  // 也就是互换它们的位置，将较小的元素放到较大的元素的前面  a[j] = a [j+1];  // 在将 t（a[0]）,也就是较大的元素放到较小的元素的后面，  // 最终，成功交换这两个元素的位置。  a[j + 1] = t;  }  }  } } int main(void) {  int a[] = {10,2,8,-8,11,0};   // // 将数组中第一个元素的地址和数组长度作为实参  sort(a,6);  // 输出最终的冒泡排序的结果  for(int i = 0; i &amp;lt; 6;i++){  printf(&amp;#34;%d &amp;#34;,a[i]);  }  printf(&amp;#34;\n&amp;#34;); } JAVA 代码实现 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.</description>
+    </item>
+    
+    <item>
+      <title>C 枚举</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</guid>
+      <description>枚举 将一个事物所有可能的取值给一一列举出来。
+优点 使代码更加安全。
+使代码更加直观。
+缺点 书写麻烦。
+# include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; // 定义一个数据类型，并没有定义变量，该数据类型的名字为 enum WeekDay enum WeekDay{  // 每一个元素，实际上都是数字，并且第一个元素默认是从 0 开始的，  // 当然，也可以指定首个元素是多少：MonDay = 1;那么此时的 Monday 就是 1，不再是 0 了  // 那么第二个元素就是 2，不再是 1 了，  // 这样写的好处是，WeekDay 的取值只能是下面的这些枚举常量，也就是将 WeekDay 的取值范围给限制了。  // 这样会让代码更加安全，也更加直观。  MonDay, TuesDay,WednesDay,ThursDay,FriDay,SaturDay,SunDay };  int main(void) {  // 因为一个周实际上只能有 7 天，因此这个 int week 只能取1 - 7，且不能是负数或则大于7 的数  // 但默认情况下，int week 的取值大概率会超出这个范围，但我们又不能强制要求 int 的 week 的取值范围是多少  // 所以，我们就需要用到枚举  int week;  // 虽然 WednesDay = 2，但是不能写成：  // enum WeekDay newWeek = 2;  // newWeek 的值只能是枚举常量  enum WeekDay newWeek = WednesDay;  // 实际上返回的是 2  printf(&amp;#34;%d&amp;#34;,newWeek); } </description>
+    </item>
+    
+    <item>
+      <title>C 结构体</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/</guid>
+      <description>结构体 将一些基本类型数据组合在一起，形成一个新的复合数据类型，这个复合数据类型，就是结构体。
+为什么需要结构体 为了表示一些复杂的事物，而普通的基本类型无法满足我们的实际需求
+结构体的定义 结构体有三种定义方式，但最常用的定义方式是第一种，第二种和第三种都不常用，相较于第一种定义方式，第一种和第二种方式也不是特别好。
+需要注意的是，结构体最后的分号不能省去。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// 第一种定义结构体的方式 // 只定义变量类型， 但不定义变量名， // 变量名由我们使用这个变量类型的时候定义。 struct Student{  int age;  float score;  char sex; }; // 第二种定义结构体的方式 // 定义的同时，也将变量名（Sts）定义了（变量名写死了）。 struct Students{  int age;  float score;  char sex; } Sts; // 第三种定义结构体的方式 // 没有定义变量类型，只定义了变量名。 struct{  int age;  float score;  char sex; }St;  int main(void) { } </description>
+    </item>
+    
+    <item>
+      <title>C 结构体的使用</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
+  先初始化一个结构体，后续再一个变量一个变量的进行赋值。
+  #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,&amp;#39;N&amp;#39;};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = &amp;#39;V&amp;#39;;  printf(&amp;#34;%d %f %c\n&amp;#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&amp;#34;%d %f %c&amp;#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-&amp;gt;成员变量名 = *(指针变量名).</description>
+    </item>
+    
+    <item>
+      <title>C 多级指针</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%A4%9A%E7%BA%A7%E6%8C%87%E9%92%88/</guid>
+      <description>多级指针 其实就是指针的指针int**，或指针的指针的指针int***，或者指针的指针的指针的指针int****。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // i 存放的是 int 类型  int i = 10;  // p 存放 i 的地址，且这个地址只能是 int 类型的地址，因为 p 是 int 类型的指针变量。  int * p = &amp;amp;i;  // q 存放 p 的地址，且这个地址只能是 int * 类型的地址，不能存放 int 类型的地址，因为 q 是 int* 类型的指针变量。  int ** q = &amp;amp;p;  // r 存放 q 的地址,且这个地址只能int**的地址，不能存放 int * 类型的地址，因为 r 是 int **类型的指针变量。  int *** r = &amp;amp;q;  printf(&amp;#34;%d&amp;#34;,***r); } #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.</description>
+    </item>
+    
+    <item>
+      <title>C 跨函数使用内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E8%B7%A8%E5%87%BD%E6%95%B0%E4%BD%BF%E7%94%A8%E5%86%85%E5%AD%98/</guid>
+      <description>跨函数使用变量 静态内存不能跨函数使用 当静态函数终止之后，这个静态函数中的数据就不能被其他函数访问，因为这个静态函数的内存空间已经被释放了。就算可以使用，也是非法访问，这样是不对的。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt;// q 是指针变量，无论 q 是什么类型的指针变量，都只占 4 个字节 // 将实参 *p 传入 fun 函数的形参，则**q = *p, 则*q = p，q 存放的是 p 的地址， void fun(int **q){  int i = 5;  // ** q = i  // *q = p  //q = p 的地址  // **q = *p  // 因为 *q = p，所以这里相当于 p = &amp;amp;1，  *q = &amp;amp;i; } int main(void) {  int *p;  // 取 p（*p） 的地址，传入函数 fun，实际传入的是 *p，则 **q = *p  fun(&amp;amp;p);  // 下面代码语法没问题，但是逻辑上有问题。  // 这是因为当 fun 函数执行完毕后，fun 函数中的 i 变量已经被释放，  // 因此，p 虽然可以存放 i 的地址， 但是却不能访问 i 。  // 就算能够访问 i ，这也是非法的访问，没 error 是因为编译器的问题。  printf(&amp;#34;%d\n&amp;#34;,*p); } 动态内存可以跨函数使用 因为当一个函数执行完毕，动态内存分配的变量不会随着fun()的自动释放而释放，所以，当fun()被系统自动释放后，我们依旧可以访问变量*p</description>
+    </item>
+    
     <item>
       <title>C 动态一维数组</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
@@ -40,6 +133,32 @@
     </item>
     
     <item>
+      <title>C for</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</guid>
+      <description>for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
+for(1; 2; 3) {  A; } 其中：
+1 只执行一次。
+3 执行完后才意味着一次 for 循环执行完毕。
+3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>C if</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</guid>
+      <description>if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
+如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+    </item>
+    
+    <item>
       <title>C malloc</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
@@ -48,6 +167,18 @@
       <description>malloc malloc 是 memory（内存）allocate（分配）的缩写。
 可以让一个变量动态分配内存。
 malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int a = 5; // a 是一个 int 变量，它是静态分配的  int * p = (int *)malloc(4); // 动态分配  *p = 5;// *p 也是一个 int 变量，但它是动态分配的  free(p); // 手动释放动态分配的内存  printf(&amp;#34;%d\n&amp;#34;,*p);  printf(&amp;#34;%d\n&amp;#34;,p); }  使用 malloc 函数，需要添加头文件 malloc.h malloc 函数只有一个形参，并且形参是整型。 malloc(4)表示请求系统为我们分配 4 个字节 malloc 函数只能返回第一个字节的地址，即 p 只保存了第一个字节的整型地址 int * 是为了让系统知道我们分配这个 4 个字节的地址是整型地址。 int * p = (int *)malloc(4)这行代码总共分配了 8 个字节，int * p分配了 4 个字节，(int *)malloc(4)分配了 84 个字节一共 8 个字节。 p（int * p）本身所占的内存是静态分配的，但 p 所指向的内存(int *)malloc(4)是动态分配的。 free(p)表示将 p 所指向的内存给释放掉，使得 p 指向的内存无法被读写。但是，p 本身的内存是静态的，不能被我们用free()函数手动释放，p 本身的内存只能在 p 变量所在的函数运行结束后，被系统自动释放。 *p = 5和int a = 5的区别在于前者的内存分配方式是动态分配的，后者的内存分配方式是静态分配的。 *p = 5 中，其中*p指的是用(int *)malloc(4)动态分配了 4 个字节的内存空间，而*p = 5，则是将 5 这个 int 数值放入这动态分配的 4 个字节的内存中。而 p 则只保存了其中第 1 个字节的地址。  </description>
+    </item>
+    
+    <item>
+      <title>C 流程控制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/</guid>
+      <description>流程控制 流程控制也叫控制结构，控制程序应该如何执行代码。
+顺序控制 从上到下的执行代码，中间没有任何判断或跳转。
+选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
+循环控制 某些代码被重复执行。</description>
     </item>
     
     <item>
@@ -122,31 +253,20 @@ void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; 
     </item>
     
     <item>
-      <title>C 堆栈</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
-      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
-      <description>堆栈 栈内存 先进后出
-压栈，将数据存入栈内存，即在内存中创建内存空间
-出栈，从栈内存中丢弃数据，即释放内存。</description>
-    </item>
-    
-    <item>
       <title>C 递归</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
-      <description>递归 函数自身调用自身</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <description>递归 函数自身调用自身。</description>
     </item>
     
     <item>
       <title>C 函数</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
 函数还有很多叫法，比如方法、子例程或程序，等等。
 #include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）</description>
@@ -158,11 +278,15 @@ void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; 
       <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
-      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+      <description>数组 数组是用于储存多个相同类型数据的集合。
+在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。
+特点 数组是连续的、线性的，在内存中亦是如此。
 数组的数量，一旦定义，无法修改。
 数组的类型取决于该数组存储的元素的类型。
-数组是连续的、线性的，在内存中亦是如此。
-#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。</description>
+优点 存取速度快。
+缺点 需要一个连续的、很大的内存。
+插入和删除元素的效率很低。</description>
     </item>
     
     <item>
@@ -175,12 +299,14 @@ void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; 
     </item>
     
     <item>
-      <title>汉化 CodeBlocks</title>
+      <title>CodeBlocks 的使用</title>
       <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
       <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
       
       <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
-      <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
+      <description>CodeBlocks 的使用 codebooks 快捷键 注释 使用Ctrl + Shift + C快速注释。
+使用Ctrl + Shift + X取消注释。
+汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
 打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
     </item>
     
@@ -218,11 +344,12 @@ void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; 
 指针变量是存放编号的变量。
 八位（Bit）是一个字节，一个字节就是一个内存单元。
 int* 是 指向整型变量的指针，
-作用 表示一些复杂的数据结构。
-能够快速的传递数据。
-使函数返回一个以上的值。
-可以直接访问硬件。
-更方便的处理字符串。</description>
+作用   表示一些复杂的数据结构（树、图）。
+  快速的传递数据，并且减少了内存的耗费。
+  使函数返回一个以上的值。
+  可以直接访问硬件。
+  更方便的处理字符串（&amp;rsquo;\0&amp;rsquo;）。
+  </description>
     </item>
     
     <item>
@@ -236,30 +363,20 @@ int* 是 指向整型变量的指针，
     
     <item>
       <title>C printf</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/printf/</link>
       <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/printf/</guid>
       <description>printf 用于将变量的内容输出到显示器.
 直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2)  int a = 10;  int i = 15;  printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
     </item>
     
     <item>
-      <title>C char</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
-      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
-      <description>char 字符类型。
-在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
-    </item>
-    
-    <item>
       <title>C scanf</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/scanf/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/scanf/</guid>
       <description>scanf 通过键盘将数据输入到变量中。
 将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
 使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
@@ -269,95 +386,62 @@ scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;
     
     <item>
       <title>C switch</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</guid>
       <description>switch 它是一种选择控制语句。
-switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
-该语句的功能只是退出 switch 语句转去执行它下面的语句，
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，该语句的功
+能只是退出 switch 语句并转去执行这个 switch 下面的语句。
 在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
-当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
-我们来看下面这个程序：
-#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+当我们使用它时，它会去寻找与表达式结果所匹
+的子表达式（case），并执行子表达式后面的所有
+语句，直到遇到 break 停止执行。
+#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主</description>
     </item>
     
     <item>
       <title>C break</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/break/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/break/</guid>
       <description>break 用于终止循环或退出 switch.
 不能直接用于 if，除非 if 是循环的一个子句。</description>
     </item>
     
     <item>
-      <title>C 循环控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
-      <description>循环控制 某些代码被重复执行。
-for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
-for(1; 2; 3) {  A; } 其中 1 只执行一次。
-3 执行完后才意味着一次 for 循环执行完毕。
-3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
-    </item>
-    
-    <item>
       <title>C 自增与自减</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
-      <description>自增与自减 前自增**++i与后自增i++**.
-异同 相同 最终都会使 i 的值加 1.
-不同 i++ 返回原来的值，
-++i 返回加 1 后的值。
-#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  c = a++;  // return 3  d = ++b;  // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <description>自增与自减 前自增++i与后自增 i++.
+异同 相同
+最终都会使 i 的值加 1.
+不同
+i++返回原来的值，
+++i返回加 1 后的值。
+#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  // return 3  c = a++;  // return 4  d = ++b;  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
     </item>
     
     <item>
       <title>C 运算符</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 三目运算符 a ? b : c 相当于 if 语句
 if (a);  b; else  c; return 0; 逗号表达式 (a,b,c,d) 从左向右执行，表达式最终的值是 d 的值。
 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int i;  int c = 2;  i = (c++, ++c, c + 2, c - 3);  // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.</description>
     </item>
     
     <item>
-      <title>C 选择控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
-      <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
-if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
-如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
-    </item>
-    
-    <item>
-      <title>C 顺序控制</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
-      <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
-    </item>
-    
-    <item>
       <title>C 预备知识</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
       <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
 因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
 CPU 再对内存中的数据进行处理。
@@ -370,10 +454,11 @@ int a; //调用操作系统在内存条中创建一个空的内存空间，并�
 软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
 一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
 当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
-进制 B 表示二进制、O 表示八进制、D 表示十进制、H 表示十六进制。
-N 进制表示逢 N 进一。
-用几种不同的进制表示同一个数，虽然使用的进制不一样，但都表示的同一个数，只是外部的表现形式不一样而已。
-二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。</description>
+常量的表示 整数。 八进制：前面加 0 ，018。
+十进制：传统写法，18。
+十六进制：前面加 0x 或 0X，0x18。
+浮点数。 传统写法，1.8。
+科学计数法，1.8e2（1.8 * 10 的 2 次方）。</description>
     </item>
     
   </channel>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>函数 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/tags/%E5%87%BD%E6%95%B0/</link>
+    <description>Recent content in 函数 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Feb 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 函数</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
+函数还有很多叫法，比如方法、子例程或程序，等等。
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）</description>
+    </item>
+    
+  </channel>
+</rss>
