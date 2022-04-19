@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Css 层叠",
 	    "headline" : "Css 层叠",
-	    "description" : "层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。\n确定声明值 找出样式表中没有冲突的声明，并应用到 CSS 属性，样式声明不冲突则不会发生层叠。\n层叠 对样式表中有冲突（同一个元素在样式表中设置了多个相同的属性）的声明使用层叠规则。\n比较重要性\n 重要性由高到低为 样式表中的 !imliortant 样式（尽量不使用）。 样式表中的普通样式（内联式 \u0026gt; 内嵌式 \u0026gt; 外链式）。 浏览器中的默认样式。  比较优先级\n 选择器选中的范围越窄，优先级越高。 通过选择器，计算出一个四位数（xxxx），该四位数越大越则优先级越高。这个四位数的进制为逢 256 进一。  四位数的取值\n  千位：内联样式，记作 1，否则记为 0。\n  百位：所有 id 选择器的数量。\n  十位：所有类选择器、属性选择器、伪类选择器的数量。\n  个位：元素选择器、伪元素选择器的数量。\n  零：通配符选择器。\n  比较源次序\nCSS 样式书写靠后的属性最终会应用到元素。\n继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况，跟文字内容相关的属性都能被继承。），则继承其父元素的属性。\n当元素的属性有默认值时，该元素一般不会继承父元素的属性。\n使用默认值 每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。",
+	    "description" : "层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。\n确定声明值 找出样式表中没有冲突的声明，并应用到 CSS 属性，样式声明不冲突则不会发生层叠。\n层叠 对样式表中有冲突（同一个元素在样式表中设置了多个相同的属性）的声明使用层叠规则。\n比较重要性\n 重要性由高到低为 样式表中的 !imliortant 样式（尽量不使用）。 样式表中的普通样式（内联式 \u0026gt; 内嵌式 \u0026gt; 外链式）。 浏览器中的默认样式。  比较优先级\n 选择器选中的范围越窄，优先级越高。 通过选择器，计算出一个四位数（xxxx），该四位数越大越则优先级越高。这个四位数的进制为逢 256 进一。  四位数的取值\n  千位：内联样式，记作 1，否则记为 0。\n  百位：所有 id 选择器的数量。\n  十位：所有类选择器、属性选择器、伪类选择器的数量。\n  个位：元素选择器、伪元素选择器的数量。\n  零：通配符选择器。\n  比较源次序\nCSS 样式书写靠后的属性最终会应用到元素。\n继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况下，只有跟文字内容有关的属性可以被继承。），则继承其父元素的属性。\n当元素的属性有默认值时，该元素一般不会继承父元素的属性。\n使用默认值 每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-04 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-04 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/css\/%E5%B1%82%E5%8F%A0\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/css\/%E5%B1%82%E5%8F%A0\/",
 	    "keywords" : [ "Css","前端","学习笔记", ]
 	}
 </script><title>Css 层叠</title>
@@ -51,7 +51,7 @@
   零：通配符选择器。
   比较源次序
 CSS 样式书写靠后的属性最终会应用到元素。
-继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况，跟文字内容相关的属性都能被继承。），则继承其父元素的属性。
+继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况下，只有跟文字内容有关的属性可以被继承。），则继承其父元素的属性。
 当元素的属性有默认值时，该元素一般不会继承父元素的属性。
 使用默认值 每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。" />
     <meta name="description" content="层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。
@@ -67,14 +67,14 @@ CSS 样式书写靠后的属性最终会应用到元素。
   零：通配符选择器。
   比较源次序
 CSS 样式书写靠后的属性最终会应用到元素。
-继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况，跟文字内容相关的属性都能被继承。），则继承其父元素的属性。
+继承 使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况下，只有跟文字内容有关的属性可以被继承。），则继承其父元素的属性。
 当元素的属性有默认值时，该元素一般不会继承父元素的属性。
 使用默认值 每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -146,7 +146,7 @@ CSS 样式书写靠后的属性最终会应用到元素。
 <p><strong>比较源次序</strong></p>
 <p>CSS 样式书写靠后的属性最终会应用到元素。</p>
 <h2 id="继承">继承</h2>
-<p>使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况，跟文字内容相关的属性都能被继承。），则继承其父元素的属性。</p>
+<p>使用继承，对仍然没有值的属性，若可以继承（部分属性是不能继承的，通常情况下，只有跟文字内容有关的属性可以被继承。），则继承其父元素的属性。</p>
 <p>当元素的属性有默认值时，该元素一般不会继承父元素的属性。</p>
 <h2 id="使用默认值">使用默认值</h2>
 <p>每个 CSS 在属性都会有默认值，当继承结束后，对于仍然没有值的属性，会使用默认值。</p>
@@ -191,9 +191,9 @@ CSS 样式书写靠后的属性最终会应用到元素。
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

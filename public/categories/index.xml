@@ -2,179 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/categories/</link>
+    <link>http://yxzi.xyz/Sub/Blog/categories/</link>
     <description>Recent content in Categories on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 03 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>博客框架</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</link>
-      <pubDate>Thu, 03 Mar 2022 06:00:00 +0000</pubDate>
+      <title>前端框架</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>编程技术</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Wed, 02 Mar 2022 06:00:00 +0000</pubDate>
+      <title>English</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/english/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/english/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>观影</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E5%BD%B1/</link>
-      <pubDate>Sat, 26 Feb 2022 06:00:00 +0000</pubDate>
+      <title>编程语言</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E5%BD%B1/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>随笔</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Tue, 01 Feb 2022 06:00:00 +0000</pubDate>
+      <title>数据库</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
       <description></description>
     </item>
     
     <item>
       <title>观点</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E7%82%B9/</link>
-      <pubDate>Sun, 16 Jan 2022 06:00:00 +0000</pubDate>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E7%82%B9/</link>
+      <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E7%82%B9/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E7%82%B9/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>编程知识</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/</link>
-      <pubDate>Tue, 21 Dec 2021 06:00:00 +0000</pubDate>
+      <title>windows</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/windows/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/windows/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网络技术</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>博客框架</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</link>
+      <pubDate>Thu, 03 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>观影</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E5%BD%B1/</link>
+      <pubDate>Sat, 26 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E8%A7%82%E5%BD%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>随笔</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Tue, 01 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程知识</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Tue, 21 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/</guid>
       <description></description>
     </item>
     
     <item>
       <title>包管理工具</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>可视化库</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/</guid>
       <description></description>
     </item>
     
     <item>
       <title>写作</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E5%86%99%E4%BD%9C/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%86%99%E4%BD%9C/</link>
       <pubDate>Fri, 12 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E5%86%99%E4%BD%9C/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%86%99%E4%BD%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>服务器</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>PHP 框架</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/php-%E6%A1%86%E6%9E%B6/</link>
+      <title>后端框架</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/php-%E6%A1%86%E6%9E%B6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>软件技术</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E8%BD%AF%E4%BB%B6%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/git/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/git/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/git/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>数学</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E5%AD%A6/</link>
+      <title>Math</title>
+      <link>http://yxzi.xyz/Sub/Blog/categories/math/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>英语</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E8%8B%B1%E8%AF%AD/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E8%8B%B1%E8%AF%AD/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/math/</guid>
       <description></description>
     </item>
     
     <item>
       <title>网络</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E7%BD%91%E7%BB%9C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>编程</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Github</title>
-      <link>https://yxzi.xyz/Sub/Blog/categories/github/</link>
+      <link>http://yxzi.xyz/Sub/Blog/categories/github/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/categories/github/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/categories/github/</guid>
       <description></description>
     </item>
     

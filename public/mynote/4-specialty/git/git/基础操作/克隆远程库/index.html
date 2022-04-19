@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 克隆远程库",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 克隆远程库</title>
@@ -48,9 +48,9 @@ git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆�
 使用https除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用ssh协议而只能用https。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -87,8 +87,8 @@ git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆�
 <p>通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地</p>
 <h2 id="克隆远程库-1">克隆远程库</h2>
 <p>接下来我们使用<code>git clone RemoteAddress</code>命令将我们刚刚创建的远程库克隆到本地。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git clone git@github.com:YxzRainy/YxzRainy.github.io.git
-</code></pre></div><p>GitHub 给出的克隆地址不止一个，还可以用<strong><a href="https://github.com/michaelliao/gitskills.git">https://github.com/michaelliao/gitskills.git</a></strong>这样的地址。实际上，Git 支持多种协议，默认的<strong>git://<strong>使用 ssh，但也可以使用</strong>https</strong>等其他协议。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git clone git@github.com:YxzRainy/YxzRainy.github.io.git
+</span></span></code></pre></div><p>GitHub 给出的克隆地址不止一个，还可以用<strong><a href="https://github.com/michaelliao/gitskills.git">https://github.com/michaelliao/gitskills.git</a></strong>这样的地址。实际上，Git 支持多种协议，默认的<strong>git://<strong>使用 ssh，但也可以使用</strong>https</strong>等其他协议。</p>
 <p>使用<strong>https</strong>除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放 http 端口的公司内部就无法使用<strong>ssh</strong>协议而只能用<strong>https</strong>。</p>
 
             </div>
@@ -128,9 +128,9 @@ git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆�
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

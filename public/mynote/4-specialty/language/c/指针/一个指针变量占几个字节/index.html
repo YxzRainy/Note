@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 一个指针变量占几个字节",
+	    "headline" : "C 一个指针变量占几个字节",
+	    "description" : "一个指针变量占几个字节 在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。\n在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。\nsizeof() 此函数可以返回指定数据类型所占的字节。\n#include \u0026lt;stdio.h\u0026gt; int main () {  int a = 666;  char ch = \u0026#39;A\u0026#39;;  double dou = 99.9;  int*p = \u0026amp;a;  char *c = \u0026amp;ch;  double *x = \u0026amp;dou;  \/\/ 不过什么数据类型的指针变量，  \/\/ 所占字节都是 8 个（32 位系统占 4 个字节）  printf(\u0026#34;%d\\n\u0026#34;,sizeof(p));  printf(\u0026#34;%d\\n\u0026#34;,sizeof(c));  printf(\u0026#34;%d\\n\u0026#34;,sizeof(x)); } 虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-30 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-30 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82\/",
+	    "keywords" : [ "C","指针","学习笔记", ]
+	}
+</script><title>C 一个指针变量占几个字节</title>
+    <meta property="og:title" content="C 一个指针变量占几个字节" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="一个指针变量占几个字节 在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。
+在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。
+sizeof() 此函数可以返回指定数据类型所占的字节。
+#include &amp;lt;stdio.h&amp;gt; int main () {  int a = 666;  char ch = &amp;#39;A&amp;#39;;  double dou = 99.9;  int*p = &amp;amp;a;  char *c = &amp;amp;ch;  double *x = &amp;amp;dou;  // 不过什么数据类型的指针变量，  // 所占字节都是 8 个（32 位系统占 4 个字节）  printf(&amp;#34;%d\n&amp;#34;,sizeof(p));  printf(&amp;#34;%d\n&amp;#34;,sizeof(c));  printf(&amp;#34;%d\n&amp;#34;,sizeof(x)); } 虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。" />
+    <meta name="description" content="一个指针变量占几个字节 在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。
+在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。
+sizeof() 此函数可以返回指定数据类型所占的字节。
+#include &amp;lt;stdio.h&amp;gt; int main () {  int a = 666;  char ch = &amp;#39;A&amp;#39;;  double dou = 99.9;  int*p = &amp;amp;a;  char *c = &amp;amp;ch;  double *x = &amp;amp;dou;  // 不过什么数据类型的指针变量，  // 所占字节都是 8 个（32 位系统占 4 个字节）  printf(&amp;#34;%d\n&amp;#34;,sizeof(p));  printf(&amp;#34;%d\n&amp;#34;,sizeof(c));  printf(&amp;#34;%d\n&amp;#34;,sizeof(x)); } 虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 一个指针变量占几个字节</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-30 06:00:00 UTC">
+                        2022-03-30
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="一个指针变量占几个字节">一个指针变量占几个字节</h1>
+<p>在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。</p>
+<p>在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。</p>
+<h2 id="sizeof">sizeof()</h2>
+<p>此函数可以返回指定数据类型所占的字节。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span> <span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">666</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">ch</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;A&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#000">dou</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">99.9</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">ch</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">double</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">x</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">dou</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 不过什么数据类型的指针变量，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 所占字节都是 8 个（32 位系统占 4 个字节）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">p</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><p>虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。</p>
+<p>虽然一个指针变量所指向的变量的所占字节大小不一样，但是这个指针变量，<strong>无论它指向的变量占多少个字节，该指针变量本身只会且仅占 4 个字节。</strong></p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%8C%87%E9%92%88/">
+                    指针
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sizeof">sizeof()</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

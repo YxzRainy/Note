@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 安装",
+	    "headline" : "MySQL 安装",
+	    "description" : "安装 启动和关闭 MySQL Window 操作系统中打开 CMD\nnetstartmysql# 启动 MySQL netstopmysql# 关闭 MySQL 登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。\n-P表示端口号。\n-u表示用户名。\n-p表示密码。\n输入命令后 Enter。\nMySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。\nMySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：\nMySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：\nMySQL-uroot-p123456注意，这里的-p123456是不能有空格的。\n\u0026gt;MySQL -h localhost -P 3306 -u root -p123456 MySQL: [Warning] Using a password on the command line interface can be insecure. Welcome to the MySQL monitor. Commands end with ; or \\g. Your MySQL connection id is 4 Server version: 5.7.26 MySQL Community Server (GPL) MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%AE%89%E8%A3%85\/",
+	    "keywords" : [ "SQL","MySQL","学习笔记", ]
+	}
+</script><title>MySQL 安装</title>
+    <meta property="og:title" content="MySQL 安装" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="安装 启动和关闭 MySQL Window 操作系统中打开 CMD
+netstartmysql# 启动 MySQL netstopmysql# 关闭 MySQL 登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。
+-P表示端口号。
+-u表示用户名。
+-p表示密码。
+输入命令后 Enter。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：
+MySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：
+MySQL-uroot-p123456注意，这里的-p123456是不能有空格的。
+&amp;gt;MySQL -h localhost -P 3306 -u root -p123456 MySQL: [Warning] Using a password on the command line interface can be insecure. Welcome to the MySQL monitor. Commands end with ; or \g. Your MySQL connection id is 4 Server version: 5.7.26 MySQL Community Server (GPL) MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。" />
+    <meta name="description" content="安装 启动和关闭 MySQL Window 操作系统中打开 CMD
+netstartmysql# 启动 MySQL netstopmysql# 关闭 MySQL 登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。
+-P表示端口号。
+-u表示用户名。
+-p表示密码。
+输入命令后 Enter。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：
+MySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：
+MySQL-uroot-p123456注意，这里的-p123456是不能有空格的。
+&amp;gt;MySQL -h localhost -P 3306 -u root -p123456 MySQL: [Warning] Using a password on the command line interface can be insecure. Welcome to the MySQL monitor. Commands end with ; or \g. Your MySQL connection id is 4 Server version: 5.7.26 MySQL Community Server (GPL) MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 安装</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-04 06:00:00 UTC">
+                        2022-04-04
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="安装">安装</h1>
+<h2 id="启动和关闭-mysql">启动和关闭 MySQL</h2>
+<p>Window 操作系统中打开 CMD</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">net</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">start</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 启动 MySQL
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">net</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">stop</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 关闭 MySQL
+</span></span></span></code></pre></div><h2 id="登录服务端">登录服务端</h2>
+<h3 id="隐藏密码登录">隐藏密码登录</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><code>-h</code>表示主机。</p>
+<p><code>-P</code>表示端口号。</p>
+<p><code>-u</code>表示用户名。</p>
+<p><code>-p</code>表示密码。</p>
+<p>输入命令后 Enter。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Enter</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">password</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span></code></pre></div><p>输入密码，登录成功。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Enter</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">password</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">******</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Welcome</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">to</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">the</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">monitor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#000">Commands</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">end</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">or</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">\</span><span style="color:#000">g</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Your</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">connection</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">is</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">26</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Community</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">GPL</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000;font-weight:bold">.......</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="显示密码登录">显示密码登录</h3>
+<p>当然，我们也可以直接以显示密码的方式登录：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p123456</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>上面的命令可以简写为：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p123456</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>注意，这里的<code>-p123456</code>是不能有空格的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>&gt;MySQL -h localhost -P <span style="color:#0000cf;font-weight:bold">3306</span> -u root -p123456
+</span></span><span style="display:flex;"><span>MySQL: <span style="color:#ce5c00;font-weight:bold">[</span>Warning<span style="color:#ce5c00;font-weight:bold">]</span> Using a password on the <span style="color:#204a87">command</span> line interface can be insecure.
+</span></span><span style="display:flex;"><span>Welcome to the MySQL monitor.  Commands end with <span style="color:#000;font-weight:bold">;</span> or <span style="color:#4e9a06">\g</span>.
+</span></span><span style="display:flex;"><span>Your MySQL connection id is <span style="color:#0000cf;font-weight:bold">4</span>
+</span></span><span style="display:flex;"><span>Server version: 5.7.26 MySQL Community Server <span style="color:#ce5c00;font-weight:bold">(</span>GPL<span style="color:#ce5c00;font-weight:bold">)</span>
+</span></span></code></pre></div><p>MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。</p>
+<h2 id="退出服务端">退出服务端</h2>
+<p>使用<code>exit</code>命令或者 Ctrl + C。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#000">mysql</span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">exit</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Bye</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#启动和关闭-mysql">启动和关闭 MySQL</a></li>
+    <li><a href="#登录服务端">登录服务端</a>
+      <ul>
+        <li><a href="#隐藏密码登录">隐藏密码登录</a></li>
+        <li><a href="#显示密码登录">显示密码登录</a></li>
+      </ul>
+    </li>
+    <li><a href="#退出服务端">退出服务端</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

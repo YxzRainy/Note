@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "eNSP 路由命令",
+	    "headline" : "eNSP 路由命令",
+	    "description" : "路由命令 system-view 系统界面\ncurrent- 当前配置\nundo info-center enable（删除或禁用 xx）\nsysname Namr 重命名设备\ndisplay vlan 查看 vlan\ndisplay interface 显示交换机的所有接口信息\ndisplay interface 接口名\ndisplay this 显示当前端口信息\ndisplay vlan 显示 vlan\nvlan\ndisplay port vlan 显示 vlan\nquit 退出\nsave 保存\nreboot 重启设备\nreset save-configuration 选择 y or n 重置设备配置\ndisplay mac-address 显示 mac 地址\ndisplay interface Ethernet brief 以太网摘要情况\nundo negotiation auto 开启接口自动协商功能\nduplex full 设置双工模式\nspeeed 100 修改接口速率\nmac-address static 0099-cd11-1111 Eth 接口 vlan 1",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/ensp\/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4\/",
+	    "keywords" : [ "eNSP","交换机","路由器", ]
+	}
+</script><title>eNSP 路由命令</title>
+    <meta property="og:title" content="eNSP 路由命令" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="路由命令 system-view 系统界面
+current- 当前配置
+undo info-center enable（删除或禁用 xx）
+sysname Namr 重命名设备
+display vlan 查看 vlan
+display interface 显示交换机的所有接口信息
+display interface 接口名
+display this 显示当前端口信息
+display vlan 显示 vlan
+vlan
+display port vlan 显示 vlan
+quit 退出
+save 保存
+reboot 重启设备
+reset save-configuration 选择 y or n 重置设备配置
+display mac-address 显示 mac 地址
+display interface Ethernet brief 以太网摘要情况
+undo negotiation auto 开启接口自动协商功能
+duplex full 设置双工模式
+speeed 100 修改接口速率
+mac-address static 0099-cd11-1111 Eth 接口 vlan 1" />
+    <meta name="description" content="路由命令 system-view 系统界面
+current- 当前配置
+undo info-center enable（删除或禁用 xx）
+sysname Namr 重命名设备
+display vlan 查看 vlan
+display interface 显示交换机的所有接口信息
+display interface 接口名
+display this 显示当前端口信息
+display vlan 显示 vlan
+vlan
+display port vlan 显示 vlan
+quit 退出
+save 保存
+reboot 重启设备
+reset save-configuration 选择 y or n 重置设备配置
+display mac-address 显示 mac 地址
+display interface Ethernet brief 以太网摘要情况
+undo negotiation auto 开启接口自动协商功能
+duplex full 设置双工模式
+speeed 100 修改接口速率
+mac-address static 0099-cd11-1111 Eth 接口 vlan 1" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">eNSP 路由命令</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-21 06:00:00 UTC">
+                        2022-03-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="路由命令">路由命令</h1>
+<p>system-view 系统界面</p>
+<p>current- 当前配置</p>
+<p>undo info-center enable（删除或禁用 xx）</p>
+<p>sysname Namr 重命名设备</p>
+<p>display vlan 查看 vlan</p>
+<p>display interface 显示交换机的所有接口信息</p>
+<p>display interface 接口名</p>
+<p>display this 显示当前端口信息</p>
+<p>display vlan 显示 vlan</p>
+<p>vlan</p>
+<p>display port vlan 显示 vlan</p>
+<p>quit 退出</p>
+<p>save 保存</p>
+<p>reboot 重启设备</p>
+<p>reset save-configuration 选择 y or n 重置设备配置</p>
+<p>display mac-address 显示 mac 地址</p>
+<p>display interface Ethernet brief 以太网摘要情况</p>
+<p>undo negotiation auto 开启接口自动协商功能</p>
+<p>duplex full 设置双工模式</p>
+<p>speeed 100 修改接口速率</p>
+<p>mac-address static 0099-cd11-1111 Eth 接口 vlan 1</p>
+<p>port link-type access/trunk</p>
+<p>port trunk allow&ndash;pass vlan vlan 名</p>
+<p>port link-type hybrid</p>
+<p>port hybrid tagged vlan 名/vlan 名 to vlan 名</p>
+<p>port hybrid untagged（剥离 vid） vlan 名</p>
+<p>port hybrid pvid vlan 10（送到一个没有 tag 的标签，打上 vlan 10 标签）</p>
+<p>vid 是 vlan id</p>
+<p>pvid 是 port default vlan 10</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/ensp/">
+                    eNSP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">
+                    交换机
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">
+                    路由器
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

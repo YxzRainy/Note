@@ -2,17 +2,131 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/c/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/c/</link>
     <description>Recent content in C on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 24 Feb 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 动态一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>动态一维数组 动态一维数组可以被当作静态一维数组来来用，换言之，静态数组可以实现的，动态数组都可以实现，不同的是，动态一维数组可以被我们使用free()函数助动释放掉，而且可以用realloc()动态的缩小或扩充。
+而静态一维数组只能等当前函数执行完毕后，才会被系统自动释放。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // 静态创建一维数组，数组大小为 20个字节  // 静态数组只能等它自己所在的函数 main 执行完毕后，才会被系统助动释放。  int a[5];   // 动态创建一维数组  // 数组长度  int len;  // 数组名  int * pArr;  //自定义数组长度  printf(&amp;#34;请输入你要存放的元素个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);// 5  // 动态创建一维数组，数组大小为 20个字节，类似于 int pArr[len];  pArr = (int *)malloc(4 * len);   // 向动态数组里面添加元素  for(int i = 0; i &amp;lt; len; i++)  {  scanf(&amp;#34;%d&amp;#34;,&amp;amp;pArr[i]);  printf(&amp;#34;你向数组中添加了：%d\n&amp;#34;,pArr[i]);  }   // 输出动态数组中所有的元素  printf(&amp;#34;pArr 数组中的元素有：&amp;#34;);  for(int i = 0; i &amp;lt; len; i++)  {  printf(&amp;#34;%d、&amp;#34;,pArr[i]);  } } </description>
+    </item>
+    
+    <item>
+      <title>C 静态内存和动态内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%92%8C%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%92%8C%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98/</guid>
+      <description>静态内存和动态内存 静态内存 由系统自动分配，由系统自动释放。
+在栈内存中分配。
+动态内存 由使用者手动分配，由使用者手动释放
+在堆内存中分配</description>
+    </item>
+    
+    <item>
+      <title>C 动态数组的构造</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E7%9A%84%E6%9E%84%E9%80%A0/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E7%9A%84%E6%9E%84%E9%80%A0/</guid>
+      <description>动态数组的构造 </description>
+    </item>
+    
+    <item>
+      <title>C malloc</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</guid>
+      <description>malloc malloc 是 memory（内存）allocate（分配）的缩写。
+可以让一个变量动态分配内存。
+malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int a = 5; // a 是一个 int 变量，它是静态分配的  int * p = (int *)malloc(4); // 动态分配  *p = 5;// *p 也是一个 int 变量，但它是动态分配的  free(p); // 手动释放动态分配的内存  printf(&amp;#34;%d\n&amp;#34;,*p);  printf(&amp;#34;%d\n&amp;#34;,p); }  使用 malloc 函数，需要添加头文件 malloc.h malloc 函数只有一个形参，并且形参是整型。 malloc(4)表示请求系统为我们分配 4 个字节 malloc 函数只能返回第一个字节的地址，即 p 只保存了第一个字节的整型地址 int * 是为了让系统知道我们分配这个 4 个字节的地址是整型地址。 int * p = (int *)malloc(4)这行代码总共分配了 8 个字节，int * p分配了 4 个字节，(int *)malloc(4)分配了 84 个字节一共 8 个字节。 p（int * p）本身所占的内存是静态分配的，但 p 所指向的内存(int *)malloc(4)是动态分配的。 free(p)表示将 p 所指向的内存给释放掉，使得 p 指向的内存无法被读写。但是，p 本身的内存是静态的，不能被我们用free()函数手动释放，p 本身的内存只能在 p 变量所在的函数运行结束后，被系统自动释放。 *p = 5和int a = 5的区别在于前者的内存分配方式是动态分配的，后者的内存分配方式是静态分配的。 *p = 5 中，其中*p指的是用(int *)malloc(4)动态分配了 4 个字节的内存空间，而*p = 5，则是将 5 这个 int 数值放入这动态分配的 4 个字节的内存中。而 p 则只保存了其中第 1 个字节的地址。  </description>
+    </item>
+    
+    <item>
+      <title>C 一个指针变量占几个字节</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/</link>
+      <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/</guid>
+      <description>一个指针变量占几个字节 在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。
+在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。
+sizeof() 此函数可以返回指定数据类型所占的字节。
+#include &amp;lt;stdio.h&amp;gt; int main () {  int a = 666;  char ch = &amp;#39;A&amp;#39;;  double dou = 99.9;  int*p = &amp;amp;a;  char *c = &amp;amp;ch;  double *x = &amp;amp;dou;  // 不过什么数据类型的指针变量，  // 所占字节都是 8 个（32 位系统占 4 个字节）  printf(&amp;#34;%d\n&amp;#34;,sizeof(p));  printf(&amp;#34;%d\n&amp;#34;,sizeof(c));  printf(&amp;#34;%d\n&amp;#34;,sizeof(x)); } 虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。</description>
+    </item>
+    
+    <item>
+      <title>C 动态分配内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/</guid>
+      <description>动态内存分配 传统数组的缺点 传统数组也叫静态数组，也属于静态内存
+  数组长度必须事先指定，且只能是长整数，不能是变量。
+  传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。
+#include &amp;lt;stdio.h&amp;gt;void fun(void){  // 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，  // 只能在本函数（fun 函数）运行完毕后由系统自动释放  int a[5] = {1,2,3,4,5}; } int main () {  }   数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。
+  Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。
+  动态数组（动态内存） 动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，</description>
+    </item>
+    
+    <item>
+      <title>C 一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){  // 完全初始化  int arr[5] ={1,2,3,4,5};  // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3};  // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]);  // 不初始化，所有元素都是垃圾值  int arr3[5];  printf(&amp;#34;%d\n&amp;#34;,arr3[5]);  // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，
+其他情况下整体复制都是错误的。
+#include &amp;lt;iostream&amp;gt;int main(){  int a[5];  // a[5] 表示 a 数组中索引为 5 的值。  a[5] = {1,2,3,4,5}; } 将数组 a 中的值全部复制到数组 b #include &amp;lt;iostream&amp;gt; int main() { // 错误的写法，因为一维数组名，d该数组中第一个元素的地址  b = a; // 正确的写法  for(int i = 0; i &amp;lt; 5; i++ )  {  b[i] = a[i];  } } </description>
+    </item>
+    
+    <item>
+      <title>C 二维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>二维数组 一个二维数组，在本质上，是一个一维数组的列表。它声明了一个 x 行 y 列的二维整型数组。
+#include &amp;lt;iostream&amp;gt; int main(){  // 该数组中总共有12个元素，可以当作 3 行(一)5 列（丨）来看  int arr[3][4];  // 这个二位数组以此为：  arr[0][0] arr[0][1] arr[0][2] arr[0][3]  arr[1][0] arr[1][1] arr[1][2] arr[1][3]  arr[2][0] arr[2][1] arr[2][2] arr[2][3] } 声明一个二维数组 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] = {1,2,3,4,6,7,8,9,10,11,12};   int arr2[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  }; } 输出二维数组的内容 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  };  int i,j;  for(i = 0; i &amp;lt; 3; ++i)  {  for(j = 0; j &amp;lt; 4; ++j)  { // 负号表示将输出的内容对其， // 3表示每个元素间隔3个光标到位置  printf(&amp;#34;%-3d &amp;#34;,arr[i][j]);  }  printf(&amp;#34;\n&amp;#34;);  } } 关于多维数组 不存在多维数组，因为内存是线性的</description>
+    </item>
+    
+    <item>
+      <title>C 指针和一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
+#include &amp;lt;iostream&amp;gt; int main() {  int a[5];  // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]);  // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）
+void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; i++)  {  printf(&amp;#34;%d\n&amp;#34;,*(arr + i));  // *(arr + i) 等价于 arr[i]  printf(&amp;#34;%d\n&amp;#34;,arr[i]);  } } 确定一个一维数组需要哪些参数 当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。</description>
+    </item>
+    
+    <item>
+      <title>C 指针的运算</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97/</guid>
+      <description>指针的运算 指针变量不能相加不能相乘也不能相除。 如果两个指针变量指向的是同一块连续空间中的不同存储单元（比如数组），则这两个指针变量才可以相减（表示两个元素相隔多少个元素/字节）</description>
+    </item>
+    
     <item>
       <title>C 堆栈</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
       <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
       <description>堆栈 栈内存 先进后出
 压栈，将数据存入栈内存，即在内存中创建内存空间
 出栈，从栈内存中丢弃数据，即释放内存。</description>
@@ -20,99 +134,82 @@
     
     <item>
       <title>C 递归</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
       <description>递归 函数自身调用自身</description>
     </item>
     
     <item>
       <title>C 函数</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
 函数还有很多叫法，比如方法、子例程或程序，等等。
-#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) { if(i &amp;gt; j) { printf(&amp;#34;%d\n&amp;#34;,i); } else { printf(&amp;#34;%d\n&amp;#34;,j); } } // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) { int a = 1; int b = 5; max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）
-能够对接收的参数进行梳理
-有返回值（也可以没有返回值）
-函数的返回值以函数名前面的关键字为准 // 函数名 fun 前面的 int 是该函数的类型，也是该函数返回值的类型 // 就算该函数 return 其他类型的值（比如 char 类型的 A），、 // 但最终这个 char A 也会以 int 类型返回（int 类型的 65，因为 A 的 ASCII 码是65）。 int fun(void) { // 该函数最终的返回值不是 char A ，而是一个整形的 65  return &amp;#39;A&amp;#39;; } int main(void) { int c; c = fun(); printf(&amp;#34;%d\n&amp;#34;,c); } return 的作用 reture 是用来终止函数的，如果有 reture 表达式，还会返回这个表达式的值；如果 return 空，则不会返回某个值，只终止被调函数。</description>
-    </item>
-    
-    <item>
-      <title>C 指针和一维数组</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
-      <description>指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
-#include &amp;lt;iostream&amp;gt; int main() { int a[5]; // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]); // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）
-确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。</description>
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）</description>
     </item>
     
     <item>
       <title>C 数组</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</link>
       <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
       <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
 数组的数量，一旦定义，无法修改。
 数组的类型取决于该数组存储的元素的类型。
-#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5}; printf(&amp;#34;%d\n&amp;#34;,arr[4 ]); } 一维数组 定义一个一维数组时：
-为 n 个变量连续分配储存空间。
-数组中的所有元素，数据类型必须一致。
-数组中所有变量所占的字节必须一样。
-定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){ // 完全初始化  int arr[5] ={1,2,3,4,5}; // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3}; // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]); // 不初始化，所有元素都是垃圾值  int arr3[5]; printf(&amp;#34;%d\n&amp;#34;,arr3[5]); // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，</description>
+数组是连续的、线性的，在内存中亦是如此。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。</description>
     </item>
     
     <item>
       <title>C 指针的使用</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
-      <description>指针的使用 互换两个数字 #include &amp;lt;stdio.h&amp;gt;//*p = 1 *q = 5 void interchange(int * p,int * q) { // 将 t 作为两个值的互换媒介。  int t; // t = 1  t = *p; // *p = 5  *p = *q; // *q = 1  *q = t; } // 因为 *p 和 *q 分别指向于 a 和 b，所以，修改 *p 和 *q，就相当于修改 a 和 b， // 尽管 *p 和 *q 在函数指向完毕后已经被释放，但程序依旧通过 *p 和 *q，分别修改了 a 和b。 // 而 p 和 q，两者和 a 、b，并不一样，因为 p、q 中，存放的是指向 a、b 的地址。 // 由此可得出一个结论，函数的形参和实参， 永远不是一个 int main () { int a = 1; int b = 5; // 取 a、b 的地址  interchange(&amp;amp;a,&amp;amp;b); printf(&amp;#34;a = %d,b = %d&amp;#34;,a,b); } 通过被调函数修改主调函数普通变量的值 函数的实参必须为该普通变量的地址。</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>指针的使用 互换两个数字 #include &amp;lt;stdio.h&amp;gt;//*p = 1 *q = 5 void interchange(int * p,int * q) { // 将 t 作为两个值的互换媒介。  int t; // t = 1  t = *p; // *p = 5  *p = *q; // *q = 1  *q = t; } // 因为 *p 和 *q 分别指向于 a 和 b，所以，修改 *p 和 *q，就相当于修改 a 和 b， // 尽管 *p 和 *q 在函数指向完毕后已经被释放，但程序依旧通过 *p 和 *q，分别修改了 a 和b。 // 而 p 和 q，两者和 a 、b，并不一样，因为 p、q 中，存放的是指向 a、b 的地址。 // 由此可得出一个结论，函数的形参和实参， 永远不是一个 int main () {  int a = 1;  int b = 5; // 取 a、b 的地址  interchange(&amp;amp;a,&amp;amp;b);  printf(&amp;#34;a = %d,b = %d&amp;#34;,a,b); } 通过被调函数修改主调函数普通变量的值 函数的实参必须为该普通变量的地址。</description>
     </item>
     
     <item>
       <title>汉化 CodeBlocks</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
       <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
       <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
 打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
     </item>
     
     <item>
       <title>C CPU 如何对内存条进行处理</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</link>
       <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</guid>
       <description>CPU 如何对内存条进行处理 CUP 处理内存条中的数据时，需要通过控制线（只读或只写）、数据线（数据传输）和地址线（确定将要处理的是哪一个内存单元）处理内存条中的数据。
 32 位系统最大支持 4G 内存。
-64位 系统最大支持 192G 内存。</description>
+64 位 系统最大支持 192G 内存。</description>
     </item>
     
     <item>
       <title>C 基本类型指针</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</link>
       <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</guid>
-      <description>基本类型指针 #include &amp;lt;stdio.h&amp;gt; int main () { int * p; // 定义一个指针变量 p，且这个 p 只能存放 int 类型的地址， 	int i = 20; p = &amp;amp;i; // &amp;amp;i 表示获取变量 i 的内存地址 //这时候 p 中，存放的就是指向变量 i 的内存地址，则 p 完全等同于 i.  int j = * p; printf(&amp;#34;i = %d ,j = %d \n&amp;#34;,i,j); return 0; } 详解 *p #include &amp;lt;iostream&amp;gt;int main() { int * p; int i = 5; p = &amp;amp;i; // p 保存了 i 的地址 // 修改 p 不会影响 i；修改 i 也不会影响 p，因为他们是不同的变量。 // *p = i，此时，修改 *p 就是修改 i，修改 i 就是修改 *p // 更准确的说，*p 是以 p 的内容为地址的变量。  *p = 99; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); i = 88; printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); } </description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</guid>
+      <description>基本类型指针 #include &amp;lt;stdio.h&amp;gt; int main () { 	int * p; // 定义一个指针变量 p，且这个 p 只能存放 int 类型的地址， 	int i = 20; 	p = &amp;amp;i; // &amp;amp;i 表示获取变量 i 的内存地址 //这时候 p 中，存放的就是指向变量 i 的内存地址，则 p 完全等同于 i.  	int j = * p; 	printf(&amp;#34;i = %d ,j = %d \n&amp;#34;,i,j);  	return 0; } 详解 *p #include &amp;lt;iostream&amp;gt;int main() {  int * p;  int i = 5;  p = &amp;amp;i; // p 保存了 i 的地址 // 修改 p 不会影响 i；修改 i 也不会影响 p，因为他们是不同的变量。 // *p = i，此时，修改 *p 就是修改 i，修改 i 就是修改 *p // 更准确的说，*p 是以 p 的内容为地址的变量。  *p = 99;  printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p);  i = 88;  printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); } </description>
     </item>
     
     <item>
       <title>C 指针</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</link>
       <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</guid>
       <description>指针 指针是 C 语言的灵魂。
 指针是一个地址；
 地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
@@ -130,39 +227,39 @@ int* 是 指向整型变量的指针，
     
     <item>
       <title>C 星号的含义</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</link>
       <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
       <description>星号的含义 </description>
     </item>
     
     <item>
       <title>C printf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
       <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
       <description>printf 用于将变量的内容输出到显示器.
-直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2) int a = 10; int i = 15; printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2)  int a = 10;  int i = 15;  printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
     </item>
     
     <item>
       <title>C char</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
       <description>char 字符类型。
 在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
     </item>
     
     <item>
       <title>C scanf</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
       <description>scanf 通过键盘将数据输入到变量中。
 将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
 使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
@@ -172,97 +269,95 @@ scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;
     
     <item>
       <title>C switch</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
       <description>switch 它是一种选择控制语句。
 switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
 该语句的功能只是退出 switch 语句转去执行它下面的语句，
 在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
 当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
 我们来看下面这个程序：
-#include &amp;lt;stdio.h&amp;gt; int main () { char fraction ; printf(&amp;#34;请输入您的等级：&amp;#34;); scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); // 测试请键入 A 	switch(fraction) { case &amp;#39;A&amp;#39; : printf(&amp;#34;很棒！\n&amp;#34; ); case &amp;#39;B&amp;#39; : printf(&amp;#34;还不错哦\n&amp;#34; ); case &amp;#39;C&amp;#39; : printf(&amp;#34;做得好\n&amp;#34; ); break; case &amp;#39;D&amp;#39; : printf(&amp;#34;您通过了\n&amp;#34; ); break; case &amp;#39;F&amp;#39; : printf(&amp;#34;最好再试一下\n&amp;#34; ); break; default : printf(&amp;#34;无效的成绩\n&amp;#34; ); } printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction); return 0; } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
     </item>
     
     <item>
       <title>C break</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
       <description>break 用于终止循环或退出 switch.
 不能直接用于 if，除非 if 是循环的一个子句。</description>
     </item>
     
     <item>
       <title>C 循环控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
       <description>循环控制 某些代码被重复执行。
 for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
-for(1; 2; 3) { A; } 其中 1 只执行一次。
+for(1; 2; 3) {  A; } 其中 1 只执行一次。
 3 执行完后才意味着一次 for 循环执行完毕。
 3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { int sum = 0; for (int i = 1;i &amp;lt; 10;i++) printf(&amp;#34;%d\n&amp;#34;, i); //0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
     </item>
     
     <item>
       <title>C 自增与自减</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
-      <description>自增与自减 前自增**++i**与后自增**i++**.
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <description>自增与自减 前自增**++i与后自增i++**.
 异同 相同 最终都会使 i 的值加 1.
 不同 i++ 返回原来的值，
 ++i 返回加 1 后的值。
-#include &amp;lt;stdio.h&amp;gt; int main() { int a,b,c,d; a = b = 3; c = a++; // return 3  d = ++b; // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d); return 0; } </description>
+#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  c = a++;  // return 3  d = ++b;  // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
     </item>
     
     <item>
       <title>C 运算符</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
-      <description>运算符 三目运算符 a ? b : c
-相当于 if 语句
-if (a) b; else c return 0; 逗号表达式 (a,b,c,d)
-从左向右执行，表达式最终的值是 d 的值。
-int i; int c = 2; i = (c++, ++c, c + 2, c - 3); // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.  printf(&amp;#34;%d&amp;#34;, i); // return 1  return 0; </description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 三目运算符 a ? b : c 相当于 if 语句
+if (a);  b; else  c; return 0; 逗号表达式 (a,b,c,d) 从左向右执行，表达式最终的值是 d 的值。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int i;  int c = 2;  i = (c++, ++c, c + 2, c - 3);  // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.</description>
     </item>
     
     <item>
       <title>C 选择控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
       <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
 if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
 如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { if (1) A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { if (2 &amp;gt; 1) printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
-#include &amp;lt;stdio.h&amp;gt;int main(void) { if (1) A; B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { if (2 &amp;gt; 1) printf(&amp;#34;被 if 语句控制\n&amp;#34;); printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
     </item>
     
     <item>
       <title>C 顺序控制</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
       <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
     </item>
     
     <item>
       <title>C 预备知识</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
       <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
 因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
 CPU 再对内存中的数据进行处理。

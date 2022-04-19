@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 配置文件",
+	    "headline" : "MySQL 配置文件",
+	    "description" : "配置文件 在 MySQL 根目录中，有一个my.ini配置文件。\n客户端配置 [mysql]是MySQL客户端的配置。\n[mysql] default-character-set=utf8 服务端配置 [mysqld] port=3306 # MySQL 服务运行时的端口号 basedir=D:\/AppInstallPath\/PhpStudy\/phpstudy_pro\/Extensions\/MySQL5.7.26\/ # MySQL 程序所存放路径,常用于存放 MySQL 启动、配置文件、日志等 datadir=D:\/AppInstallPath\/PhpStudy\/phpstudy_pro\/Extensions\/MySQL5.7.26\/data\/ # MySQL数据存放文件(极其重要) character-set-server=utf8 # 数据库和数据库表的默认字符集。(推荐utf8,以免导致乱码) default-storage-engine=MyIsam # MySQL 的存储引擎  # ...... ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6\/",
+	    "keywords" : [ "SQL","MySQL","学习笔记", ]
+	}
+</script><title>MySQL 配置文件</title>
+    <meta property="og:title" content="MySQL 配置文件" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="配置文件 在 MySQL 根目录中，有一个my.ini配置文件。
+客户端配置 [mysql]是MySQL客户端的配置。
+[mysql] default-character-set=utf8 服务端配置 [mysqld] port=3306 # MySQL 服务运行时的端口号 basedir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/ # MySQL 程序所存放路径,常用于存放 MySQL 启动、配置文件、日志等 datadir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/data/ # MySQL数据存放文件(极其重要) character-set-server=utf8 # 数据库和数据库表的默认字符集。(推荐utf8,以免导致乱码) default-storage-engine=MyIsam # MySQL 的存储引擎  # ...... " />
+    <meta name="description" content="配置文件 在 MySQL 根目录中，有一个my.ini配置文件。
+客户端配置 [mysql]是MySQL客户端的配置。
+[mysql] default-character-set=utf8 服务端配置 [mysqld] port=3306 # MySQL 服务运行时的端口号 basedir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/ # MySQL 程序所存放路径,常用于存放 MySQL 启动、配置文件、日志等 datadir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/data/ # MySQL数据存放文件(极其重要) character-set-server=utf8 # 数据库和数据库表的默认字符集。(推荐utf8,以免导致乱码) default-storage-engine=MyIsam # MySQL 的存储引擎  # ...... " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 配置文件</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-04 06:00:00 UTC">
+                        2022-04-04
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="配置文件">配置文件</h1>
+<p>在 MySQL 根目录中，有一个<strong>my.ini</strong>配置文件。</p>
+<h2 id="客户端配置">客户端配置</h2>
+<p><code>[mysql]</code>是MySQL客户端的配置。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">[mysql]</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">default-character-set</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">utf8</span>
+</span></span></code></pre></div><h2 id="服务端配置">服务端配置</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">[mysqld]</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">port</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">3306 # MySQL 服务运行时的端口号</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">basedir</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/ # MySQL 程序所存放路径,常用于存放 MySQL 启动、配置文件、日志等</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">datadir</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/data/ # MySQL数据存放文件(极其重要)</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">character-set-server</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">utf8 # 数据库和数据库表的默认字符集。(推荐utf8,以免导致乱码)</span>
+</span></span><span style="display:flex;"><span><span style="color:#c4a000">default-storage-engine</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">MyIsam # MySQL 的存储引擎 </span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># ......</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#客户端配置">客户端配置</a></li>
+    <li><a href="#服务端配置">服务端配置</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

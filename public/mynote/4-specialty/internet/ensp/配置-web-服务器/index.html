@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "eNSP 配置 Web 服务器",
+	    "headline" : "eNSP 配置 Web 服务器",
+	    "description" : "配置 Web 服务器 第一台客户机 10.0.1.10\n10.0.1.1\n域名服务器\n10.0.2.10\nServer\n10.0.2.10\n10.0.2.1\n域名服务器\n10.0.2.10\n配置 router\nsys\nint e 0\/0\/0\nip add 10.0.2.1 255.255.255.0\nquit\nint g0\/0\/0\nip add 10.0.1.1 255.255.255.0\nquit\nsave\n配置 lsw\nsys\nint g0\/0\/1\nport link type access\nquit\nint g0\/0\/2\nport link type trunk\n打开 client\n目的 10.0.2.10\n打开 Server\n目的 10.0.1.10\n新建本地\n创建文件夹 ftp 和 http\n新建 flag.txt\n新建 index.html\n分别启动\n打开 Server\n服务器信息\nftp 选择文件根目录",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/ensp\/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8\/",
+	    "keywords" : [ "eNSP","交换机","路由器","eNSP 实验", ]
+	}
+</script><title>eNSP 配置 Web 服务器</title>
+    <meta property="og:title" content="eNSP 配置 Web 服务器" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="配置 Web 服务器 第一台客户机 10.0.1.10
+10.0.1.1
+域名服务器
+10.0.2.10
+Server
+10.0.2.10
+10.0.2.1
+域名服务器
+10.0.2.10
+配置 router
+sys
+int e 0/0/0
+ip add 10.0.2.1 255.255.255.0
+quit
+int g0/0/0
+ip add 10.0.1.1 255.255.255.0
+quit
+save
+配置 lsw
+sys
+int g0/0/1
+port link type access
+quit
+int g0/0/2
+port link type trunk
+打开 client
+目的 10.0.2.10
+打开 Server
+目的 10.0.1.10
+新建本地
+创建文件夹 ftp 和 http
+新建 flag.txt
+新建 index.html
+分别启动
+打开 Server
+服务器信息
+ftp 选择文件根目录" />
+    <meta name="description" content="配置 Web 服务器 第一台客户机 10.0.1.10
+10.0.1.1
+域名服务器
+10.0.2.10
+Server
+10.0.2.10
+10.0.2.1
+域名服务器
+10.0.2.10
+配置 router
+sys
+int e 0/0/0
+ip add 10.0.2.1 255.255.255.0
+quit
+int g0/0/0
+ip add 10.0.1.1 255.255.255.0
+quit
+save
+配置 lsw
+sys
+int g0/0/1
+port link type access
+quit
+int g0/0/2
+port link type trunk
+打开 client
+目的 10.0.2.10
+打开 Server
+目的 10.0.1.10
+新建本地
+创建文件夹 ftp 和 http
+新建 flag.txt
+新建 index.html
+分别启动
+打开 Server
+服务器信息
+ftp 选择文件根目录" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">eNSP 配置 Web 服务器</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-21 06:00:00 UTC">
+                        2022-03-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="配置-web-服务器">配置 Web 服务器</h1>
+<h2 id="第一台客户机">第一台客户机</h2>
+<p>10.0.1.10</p>
+<p>10.0.1.1</p>
+<p>域名服务器</p>
+<p>10.0.2.10</p>
+<p>Server</p>
+<p>10.0.2.10</p>
+<p>10.0.2.1</p>
+<p>域名服务器</p>
+<p>10.0.2.10</p>
+<p>配置 router</p>
+<p>sys</p>
+<p>int e 0/0/0</p>
+<p>ip add 10.0.2.1 255.255.255.0</p>
+<p>quit</p>
+<p>int g0/0/0</p>
+<p>ip add 10.0.1.1 255.255.255.0</p>
+<p>quit</p>
+<p>save</p>
+<p>配置 lsw</p>
+<p>sys</p>
+<p>int g0/0/1</p>
+<p>port link type access</p>
+<p>quit</p>
+<p>int g0/0/2</p>
+<p>port link type trunk</p>
+<p>打开 client</p>
+<p>目的 10.0.2.10</p>
+<p>打开 Server</p>
+<p>目的 10.0.1.10</p>
+<p>新建本地</p>
+<p>创建文件夹 ftp 和 http</p>
+<p>新建 flag.txt</p>
+<p>新建 index.html</p>
+<p>分别启动</p>
+<p>打开 Server</p>
+<p>服务器信息</p>
+<p>ftp 选择文件根目录</p>
+<p>http 选择文件目录</p>
+<p>dns</p>
+<p>yxz.com</p>
+<p>10.0.2.10</p>
+<p>启动</p>
+<p>打开路由器 开始抓包</p>
+<p>打开 client</p>
+<p>服务器地址 10.0.2.10</p>
+<p>ftp client</p>
+<p>http yxz.com</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/ensp/">
+                    eNSP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">
+                    交换机
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">
+                    路由器
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/ensp-%E5%AE%9E%E9%AA%8C/">
+                    eNSP 实验
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一台客户机">第一台客户机</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

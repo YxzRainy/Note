@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 指针和一维数组",
 	    "headline" : "C 指针和一维数组",
-	    "description" : "指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。\n#include \u0026lt;iostream\u0026gt; int main() { int a[5]; \/\/ 打印一维数组 a 中，第一个元素的地址  printf(\u0026#34;%#x\\n\u0026#34;,\u0026amp;a[0]); \/\/ 打印一维数组 a 的名字  printf(\u0026#34;%#x\\n\u0026#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p \u002b n）\n确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。",
+	    "description" : "指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。\n#include \u0026lt;iostream\u0026gt; int main() {  int a[5];  \/\/ 打印一维数组 a 中，第一个元素的地址  printf(\u0026#34;%#x\\n\u0026#34;,\u0026amp;a[0]);  \/\/ 打印一维数组 a 的名字  printf(\u0026#34;%#x\\n\u0026#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p \u002b n）\nvoid DeterminesArray(int *arr, int lenght) {  for(int i = 0; i \u0026lt; lenght; i\u002b\u002b)  {  printf(\u0026#34;%d\\n\u0026#34;,*(arr \u002b i));  \/\/ *(arr \u002b i) 等价于 arr[i]  printf(\u0026#34;%d\\n\u0026#34;,arr[i]);  } } 确定一个一维数组需要哪些参数 当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -30,25 +30,25 @@
 	    "accountablePerson" : "Rainy",
 	    "copyrightHolder" : "Rainy",
 	    "copyrightYear" : "2022",
-	    "datePublished": "2022-02-21 06:00:00 \u002b0000 UTC",
-	    "dateModified" : "2022-02-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84\/",
+	    "datePublished": "2022-03-24 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-24 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84\/",
 	    "keywords" : [ "C","指针","学习笔记", ]
 	}
 </script><title>C 指针和一维数组</title>
     <meta property="og:title" content="C 指针和一维数组" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
-#include &amp;lt;iostream&amp;gt; int main() { int a[5]; // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]); // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p &#43; n）
-确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。" />
+#include &amp;lt;iostream&amp;gt; int main() {  int a[5];  // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]);  // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p &#43; n）
+void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; i&#43;&#43;)  {  printf(&amp;#34;%d\n&amp;#34;,*(arr &#43; i));  // *(arr &#43; i) 等价于 arr[i]  printf(&amp;#34;%d\n&amp;#34;,arr[i]);  } } 确定一个一维数组需要哪些参数 当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。" />
     <meta name="description" content="指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
-#include &amp;lt;iostream&amp;gt; int main() { int a[5]; // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]); // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p &#43; n）
-确定一个一维数组需要哪些参数 当一个函数要处理一个一维数组，则需要接收该数组的那些信息。" />
+#include &amp;lt;iostream&amp;gt; int main() {  int a[5];  // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]);  // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p &#43; n）
+void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; i&#43;&#43;)  {  printf(&amp;#34;%d\n&amp;#34;,*(arr &#43; i));  // *(arr &#43; i) 等价于 arr[i]  printf(&amp;#34;%d\n&amp;#34;,arr[i]);  } } 确定一个一维数组需要哪些参数 当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -70,8 +70,8 @@
                 
                 <div class="DateArea">
                     
-                    <time class="PostDate" datetime=" 2022-02-21 06:00:00 UTC">
-                        2022-02-21
+                    <time class="PostDate" datetime=" 2022-03-24 06:00:00 UTC">
+                        2022-03-24
                     </time>
                     
                 </div>
@@ -84,21 +84,65 @@
                 <h1 id="指针和一维数组">指针和一维数组</h1>
 <h2 id="一维数组名">一维数组名</h2>
 <p>一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
-</span><span style="color:#8f5902;font-style:italic"></span>
-<span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
-<span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
-    <span style="color:#8f5902;font-style:italic">// 打印一维数组 a 中，第一个元素的地址
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%#x</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]);</span>
-    <span style="color:#8f5902;font-style:italic">// 打印一维数组 a 的名字
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%#x</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#000;font-weight:bold">}</span>
-
-</code></pre></div><h2 id="下标和指针的关系">下标和指针的关系</h2>
-<p>如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）</p>
-<h2 id="确定一个一维数组需要哪些参数">确定一个一维数组需要哪些参数</h2>
-<p>当一个函数要处理一个一维数组，则需要接收该数组的那些信息。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 打印一维数组 a 中，第一个元素的地址
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%#x</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 打印一维数组 a 的名字
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%#x</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="下标和指针的关系">下标和指针的关系</h2>
+<p><strong>如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">DeterminesArray</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">lenght</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">lenght</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// *(arr + i) 等价于 arr[i]
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="确定一个一维数组需要哪些参数">确定一个一维数组需要哪些参数</h2>
+<p>当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。</p>
+<ol>
+<li>
+<p><strong>数组首个元素的地址</strong></p>
+</li>
+<li>
+<p><strong>数组的长度</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">DeterminesArray</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">lenght</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">lenght</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span> <span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">300</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4000</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">50000</span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// a[3] ，因为数组名 a 是第一个元素的地址，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 所以a[3] 的意思是从数组第一个元素的地址开始 + 1，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 第二个元素就是*（a + 1），地址 + 4（因为 int 类型占 4 个字节）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 第三个元素是*（a + 2）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第一个元素的地址：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// a + 1，这个 1 在内存中占了四个字节，所以地址会向后数 4 个字节，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 最后的才会返回数组中第二个元素的地址
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第二个元素的地址：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第三个元素的地址：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第四个元素的地址：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第五个元素的地址：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;数组 a 中第三个元素是：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;for 循环输出数组：</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">DeterminesArray</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div></li>
+</ol>
 
             </div>
             
@@ -139,9 +183,9 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

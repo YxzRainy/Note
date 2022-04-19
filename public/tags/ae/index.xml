@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AE on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/ae/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/ae/</link>
     <description>Recent content in AE on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/ae/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/ae/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>双重曝光</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E5%8F%8C%E9%87%8D%E6%9B%9D%E5%85%89/</guid>
       <description>双重曝光  导入绿幕抠像后的素材与背景 素材。 将背景素材放到抠像绿幕素材的下面。 背景素材——轨道遮罩—Alpha。  </description>
     </item>
     
     <item>
       <title>绿幕抠像</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/after-effects/%E7%BB%BF%E5%B9%95%E6%8A%A0%E5%83%8F/</guid>
       <description>绿幕抠像  导入图像。 新建合成——右击图层中的图像——效果——Keying——Keylight(1.2)。 Screen Color——吸管——点击图像中的绿色部分——关闭切换透明网格。 View——下拉框 Screen-Matte——增加 Screen Gain。 Screen-Matte——调整 Clip black/Clip White（使图像中的黑色和白色更加纯粹）。 View——下拉框 Final Result。 消除图像边缘的锯齿。 右击图层中的图像——效果——遮罩——简单阻塞工具——调整阻塞遮罩（使图像边缘的锯齿消除）。  </description>
     </item>
     

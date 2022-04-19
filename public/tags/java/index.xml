@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/java/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/java/</link>
     <description>Recent content in Java on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java IO 流</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</link>
       <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</guid>
-      <description>IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;; File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } </description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</guid>
+      <description>IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream;  public class ShuRuShuChu {  public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;;  File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileOutputStream fos=new FileOutputStream(xieru,true);  byte[] words=str.getBytes();  fos.write(words,0,words.length);  //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileInputStream fis = new FileInputStream(file2);  byte[] b = new byte[1024];  int len = fis.read(b);  while (len != -1) {  String data = new String(b);  System.</description>
     </item>
     
     <item>
       <title>Java 卖票问题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
-      <description>卖票 Ticket Class public class Ticket { public static int chepiao = 1000; public String name; public String a = new String(&amp;#34;222&amp;#34;); public Ticket(String name) { this.name = name; } public void run() { while (true) { synchronized (a) { if (chepiao &amp;gt; 0) { System.out.println(this.name + &amp;#34;正在卖第&amp;#34; + (1001 - chepiao) + &amp;#34;张票&amp;#34;); chepiao--; } else { break; } } } } } ThreadOne Class public class ThreadOne implements Runnable { public static int chepiao = 1000; public String name; public static String aa = new String(&amp;#34;111&amp;#34;); public ThreadOne(String name) { this.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
+      <description>卖票 Ticket Class public class Ticket {  public static int chepiao = 1000;  public String name;  public String a = new String(&amp;#34;222&amp;#34;);   public Ticket(String name) {  this.name = name;  }   public void run() {  while (true) {  synchronized (a) {  if (chepiao &amp;gt; 0) {  System.out.println(this.name + &amp;#34;正在卖第&amp;#34; + (1001 - chepiao) + &amp;#34;张票&amp;#34;);  chepiao--;  } else {  break;  }  }   }  } } ThreadOne Class public class ThreadOne implements Runnable {  public static int chepiao = 1000;  public String name;  public static String aa = new String(&amp;#34;111&amp;#34;);   public ThreadOne(String name) {  this.</description>
     </item>
     
     <item>
       <title>Java 生产者消费者模式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
-      <description>生产者消费者模式 工厂类 public class Factory { int num=0; //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException { if(num &amp;gt;= 10){ System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;); //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num++; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; + num); //唤醒消费商品的线程  this.notify(); } } //开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;); this.wait();//强制当前线程等待  }else{ Thread.sleep( 1000); //消费商品  num--; System.out.println(&amp;#34;消费者们购买了一个商品，现在库存为:&amp;#34; + num); //唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>生产者消费者模式 工厂类 public class Factory {  int num=0;   //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException {  if(num &amp;gt;= 10){  System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;);  //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait();  }else {  Thread.sleep(1000);  num++; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; + num);  //唤醒消费商品的线程  this.notify();  }  }  //开始消费  public synchronized void subProduct() throws InterruptedException {  if(num == 0){  System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;);  this.</description>
     </item>
     
     <item>
       <title>Java 继承</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</link>
       <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</guid>
-      <description>继承 Phone Class public class Phone extends Dianhua implements Mp3 { public void playmusic(){ System.out.println(&amp;#34;播放音乐&amp;#34;); } public void call(){ System.out.println(&amp;#34;可以打电话&amp;#34;); } public void dh(){ System.out.println(&amp;#34;可以高得地图导航&amp;#34;); } } Telephone Class public abstract class Telephone { public abstract void call(); public abstract void dh(); } Mp3 Interface public interface Mp3 { abstract void playmusic(); } Test Class public class Test { public static void main(String[] args) { Phone c=new Phone(); c.call(); c.dh(); c.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</guid>
+      <description>继承 Phone Class public class Phone extends Dianhua implements Mp3 {  public void playmusic(){  System.out.println(&amp;#34;播放音乐&amp;#34;);  }  public void call(){  System.out.println(&amp;#34;可以打电话&amp;#34;);  }  public void dh(){  System.out.println(&amp;#34;可以高得地图导航&amp;#34;);  } } Telephone Class public abstract class Telephone {  public abstract void call();  public abstract void dh(); } Mp3 Interface public interface Mp3 {  abstract void playmusic(); } Test Class public class Test {  public static void main(String[] args) {  Phone c=new Phone();  c.</description>
     </item>
     
     <item>
       <title>Java 字符流和字节流</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
       <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
-      <description>字节流 package yxzi.xyz; import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader; public class Rainy { public static void main(String[] args) throws Exception { File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file); // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;); // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024]; int len = wj.read(arr); while (len != -1) { // String data = new String(arr); //// System.out.println(data);  len = wj.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
+      <description>字节流 package yxzi.xyz;  import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader;  public class Rainy {  public static void main(String[] args) throws Exception {  File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file);  // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;);  // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024];  int len = wj.read(arr);  while (len != -1) { // String data = new String(arr); //// System.</description>
     </item>
     
     <item>
       <title>Java 遍历集合</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
       <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
-      <description>遍历集合 package Yxzi; import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator; public class Test { public static void main(String[] args) throws Exception { ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList(); Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23); Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18); Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13); Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11); Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23); arr.add(obj1); arr.add(obj2); arr.add(obj3); arr.add(obj4); arr.add(obj5); // 遍历集合方法一 // for(Object obj : arr){ // System.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
+      <description>遍历集合 package Yxzi;  import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator;  public class Test {  public static void main(String[] args) throws Exception {  ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList();   Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23);  Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18);  Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13);  Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11);  Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23);   arr.add(obj1);  arr.</description>
     </item>
     
     <item>
       <title>Java 冒泡排序</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 public static void main(String[] args) { //定义数组  int[] arr = {6, 4, 8, 2, 9}; System.out.println(&amp;#34;排序前：&amp;#34;); //打印排序前的数组元素  printArray(arr); //数组排序的方法  bubbleSort(arr); System.out.println(&amp;#34;排序后：&amp;#34;); //打印排序后的数组元素  printArray(arr); } //定义打印数组中所有元素的方法  public static void printArray(int[] arr) { for (int i = 0; i &amp;lt; arr.length; i++) { //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;); } System.out.println(&amp;#34;\n&amp;#34;); // 返回后换行  } //定义冒泡排序的方法  public static void bubbleSort(int[] arr) { // arr.length - 1，即 5 - 1 = 4，  // 这里的循环控制的是总共进行 n 轮排序，这里只进行四轮排序  // 为什么只进行四轮，因为通过推算，进行 4 轮排序后就可以得出最终结果。  for (int i = 0; i &amp;lt; arr.</description>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.out.println(&amp;#34;排序前：&amp;#34;);  //打印排序前的数组元素  printArray(arr);  //数组排序的方法  bubbleSort(arr);  System.out.println(&amp;#34;排序后：&amp;#34;);  //打印排序后的数组元素  printArray(arr);  }  //定义打印数组中所有元素的方法  public static void printArray(int[] arr) {  for (int i = 0; i &amp;lt; arr.length; i++) {  //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;);  }  System.out.println(&amp;#34;\n&amp;#34;);  // 返回后换行  }  //定义冒泡排序的方法  public static void bubbleSort(int[] arr) {  // arr.</description>
     </item>
     
     <item>
       <title>Java 基础</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
       <description>基础 类、对象 、属性、封装 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
 对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
 赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
@@ -83,16 +83,16 @@
 至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
 至于继承，还不知道。
 void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
-void Show1() { int a = 123; } int Show2() { int a = 123; return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
-private void Show1() { int a = 123; } // 相当于 default int Show2() int Show2() { int a = 123; return a; } </description>
+void Show1() {  int a = 123; }  int Show2() {  int a = 123;  return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() {  int a = 123; }  // 相当于 default int Show2() int Show2() {  int a = 123;  return a; } </description>
     </item>
     
     <item>
       <title>Vs Code 配置 Java</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
       <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
   属性
   高级系统设置

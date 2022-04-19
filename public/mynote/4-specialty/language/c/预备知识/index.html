@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 预备知识",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86\/",
 	    "keywords" : [ "C","学习笔记", ]
 	}
 </script><title>C 预备知识</title>
@@ -72,9 +72,9 @@ N 进制表示逢 N 进一。
 二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  给定一个 N 进制的数 25，转换为十进制为：5 &#43; 2 * N。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -118,11 +118,11 @@ N 进制表示逢 N 进一。
 <p>软件不能直接控制硬件。</p>
 <h2 id="什么是变量">什么是变量</h2>
 <p>变量的本质是将一个空闲的内存空间与某个变量产生联系。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">//调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">//将 3 放入变量 a 的内存空间内。
-</span></code></pre></div><h2 id="变量为什么要初始化">变量为什么要初始化</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//将 3 放入变量 a 的内存空间内。
+</span></span></span></code></pre></div><h2 id="变量为什么要初始化">变量为什么要初始化</h2>
 <h3 id="释放">释放</h3>
 <p>指的是某个内存空间可以被另外的程序使用。</p>
 <h3 id="垃圾值">垃圾值</h3>
@@ -229,9 +229,9 @@ N 进制表示逢 N 进一。
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

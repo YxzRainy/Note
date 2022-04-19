@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DQL on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/tags/dql/</link>
+    <description>Recent content in DQL on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/dql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 基础查询</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</guid>
+      <description>基础查询 我们用的是名为 MyEmployees.sql 的 SQL 文件。
+语法 selectQueryListfromTableName;特点 QueryList 可以是表中的字段、常量、表达式、函数。
+查询的结果是一个虚拟的表格。
+查询表中的单个字段 SELECTlast_nameFROMemployees;查询表中的多个字段 会以特定的顺序显示我们查询的字段。
+SELECTlast_name,first_name,emailFROMemployees;查询表中的所有字段 会以表原本的字段顺序显示我们查询的字段
+SELECT*FROMemployees;区分关键字和字段名 MySQL 中，我们可以用一对着重号**``**来区 MySQL 中的分字段和关键字
+SELECT`NAME`FROMrainy;查询常量 SELECT&amp;#39;john&amp;#39;;查询表达式 SELECT100*57;查询函数 SELECTVERSION();起别名 起别名（列头）可以使我们更好的理解表。
+如果要查询的字段有重名的情况，使用别名可以区分开来。
+方式一：
+SELECT100-2AS计算结果;SELECTlast_nameAS姓,first_nameAS名FROMemployees;方式二 使用空格
+SELECTlast_name姓,first_name名FROMemployees;去掉重复行 查询员工表中涉及到的所有部门的编号。
+SELECTDISTINCTdepartment_idFROMemployees;+ 号的作用 两个操作数都为数值型，则做加法运算。
+SELECT520+250;其中一方为字符型，试图将字符型数值转换成数值型。 如果转换成功，则继续做加法运算。 如果转换失败，则将字符型数值转换成 0。
+SELECT&amp;#34;john&amp;#34;+90;只要其中一方为 Null，则结果肯定为 Null。
+SELECT&amp;#34;john&amp;#34;+null;字段拼接 查询员工的名和姓，并将名和姓拼接成一个字段，并显示姓名。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 条件查询</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无表名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询 按逻辑表达式查询 模糊查询  按条件表达式筛选 查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary&amp;gt;12000;查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id&amp;lt;&amp;gt;90;</description>
+    </item>
+    
+  </channel>
+</rss>

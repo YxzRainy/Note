@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Java IO 流",
 	    "headline" : "Java IO 流",
-	    "description" : "IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { \/\/写入  String str=\u0026#34;写入成功！\u0026#34;; File xieru=new File(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\期末考试\\\\李白.txt\u0026#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); \/\/读取  File file2 = new File(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\期末考试\\\\李白.txt\u0026#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } ",
+	    "description" : "IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream;  public class ShuRuShuChu {  public static void main(String[]args) throws Exception { \/\/写入  String str=\u0026#34;写入成功！\u0026#34;;  File xieru=new File(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\期末考试\\\\李白.txt\u0026#34;);  FileOutputStream fos=new FileOutputStream(xieru,true);  byte[] words=str.getBytes();  fos.write(words,0,words.length);  \/\/读取  File file2 = new File(\u0026#34;C:\\\\Users\\\\admin\\\\Desktop\\\\期末考试\\\\李白.txt\u0026#34;);  FileInputStream fis = new FileInputStream(file2);  byte[] b = new byte[1024];  int len = fis.read(b);  while (len != -1) {  String data = new String(b);  System.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,19 +32,19 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-12-19 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-12-19 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/io-%E6%B5%81\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/io-%E6%B5%81\/",
 	    "keywords" : [ "Java","学习笔记", ]
 	}
 </script><title>Java IO 流</title>
     <meta property="og:title" content="Java IO 流" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;; File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } " />
-    <meta name="description" content="IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; public class ShuRuShuChu { public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;; File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileOutputStream fos=new FileOutputStream(xieru,true); byte[] words=str.getBytes(); fos.write(words,0,words.length); //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;); FileInputStream fis = new FileInputStream(file2); byte[] b = new byte[1024]; int len = fis.read(b); while (len != -1) { String data = new String(b); System.out.println(data); len = fis.read(b); } } } " />
+    <meta property="og:description" content="IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream;  public class ShuRuShuChu {  public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;;  File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileOutputStream fos=new FileOutputStream(xieru,true);  byte[] words=str.getBytes();  fos.write(words,0,words.length);  //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileInputStream fis = new FileInputStream(file2);  byte[] b = new byte[1024];  int len = fis.read(b);  while (len != -1) {  String data = new String(b);  System." />
+    <meta name="description" content="IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream;  public class ShuRuShuChu {  public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;;  File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileOutputStream fos=new FileOutputStream(xieru,true);  byte[] words=str.getBytes();  fos.write(words,0,words.length);  //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileInputStream fis = new FileInputStream(file2);  byte[] b = new byte[1024];  int len = fis.read(b);  while (len != -1) {  String data = new String(b);  System." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -78,32 +78,32 @@
             <div class="PostContent">
                 
                 <h1 id="io-流">IO 流</h1>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.File</span><span style="color:#ce5c00;font-weight:bold">;</span>
-<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileInputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
-<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
-
-<span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">ShuRuShuChu</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span><span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">Exception</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-<span style="color:#8f5902;font-style:italic">//写入
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">String</span> <span style="color:#000">str</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;写入成功！&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
-            <span style="color:#000">File</span> <span style="color:#000">xieru</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#000">FileOutputStream</span> <span style="color:#000">fos</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">xieru</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">str</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getBytes</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#000">fos</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">write</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">length</span><span style="color:#ce5c00;font-weight:bold">);</span>
-
-<span style="color:#8f5902;font-style:italic">//读取
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">File</span> <span style="color:#000">file2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#000">FileInputStream</span> <span style="color:#000">fis</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileInputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">file2</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">1024</span><span style="color:#ce5c00;font-weight:bold">];</span>
-            <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">fis</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">1</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">String</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">fis</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#ce5c00;font-weight:bold">}</span>
-<span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.File</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileInputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">java.io.FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">ShuRuShuChu</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">main</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">[]</span><span style="color:#000">args</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">Exception</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//写入
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">String</span> <span style="color:#000">str</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;写入成功！&#34;</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">File</span> <span style="color:#000">xieru</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">FileOutputStream</span> <span style="color:#000">fos</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileOutputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">xieru</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">str</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">getBytes</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">fos</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">write</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">words</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">length</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//读取
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">File</span> <span style="color:#000">file2</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">File</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">FileInputStream</span> <span style="color:#000">fis</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">FileInputStream</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">file2</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[]</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87;font-weight:bold">byte</span><span style="color:#ce5c00;font-weight:bold">[</span><span style="color:#000">1024</span><span style="color:#ce5c00;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">fis</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">1</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">String</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">String</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">fis</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">read</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">b</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span></code></pre></div>
             </div>
             
             
@@ -131,9 +131,9 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

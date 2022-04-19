@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>博客框架 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</link>
+    <link>http://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/</link>
     <description>Recent content in 博客框架 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 03 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装 WordPress</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</link>
       <pubDate>Thu, 03 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/wordpress/%E5%AE%89%E8%A3%85-wordpress/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</guid>
       <description>下载 WordPress
 将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
 ![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
@@ -22,79 +22,6 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
 来到登录页面，输入用户名和密码，登录成功后就可以来到 WordPress 的管理后台：
 ![image-20220303153935800](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303153935800.png)点击左上角的站点名字，比如我这里是 Rainy Space，即可跳转到我的站点：
 ![image-20220303193804265](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303193804265.png)</description>
-    </item>
-    
-    <item>
-      <title>Hugo 命令</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%91%BD%E4%BB%A4/</guid>
-      <description>Hugo 命令 hugo new site MyBlog 创建一个新的站点文件夹
-hugo new Article/first.md hugo -t ThemeName hugo -D 构建静态页面</description>
-    </item>
-    
-    <item>
-      <title>Hugo 安装</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%AE%89%E8%A3%85-hugo-/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%AE%89%E8%A3%85-hugo-/</guid>
-      <description>Hugo 安装 源码编译安装，首先安装好依赖的工具
- Git Mercurial Go 1.3+ (Go 1.4+ on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
- 用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm </description>
-    </item>
-    
-    <item>
-      <title>博客添加搜索功能</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hugo/%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
-      <description>博客添加搜索功能 HTML 代码 然后在网页内需要添加搜索栏的合适位置添加以下代码，一般放在顶部导航栏：
-&amp;lt;div class=&amp;#34;search&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-start&amp;#34;&amp;gt;search&amp;lt;/i&amp;gt; &amp;lt;input type=&amp;#34;text&amp;#34; class=&amp;#34;search-input&amp;#34; placeholder=&amp;#34;Searching...&amp;#34; /&amp;gt; &amp;lt;i class=&amp;#34;material-icons search-icon search-clear&amp;#34;&amp;gt;clear&amp;lt;/i&amp;gt; &amp;lt;div class=&amp;#34;search-results&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; 上面的clear是一个清除输入框内容的图标，search-results是用于输出匹配到的结果的板块；
-CSS 代码 .search { position: relative; height: 30px; text-align: right; line-height: 30px; padding-right: 10px; } .search .search-icon { float: right; height: 100%; margin: 0 10px; line-height: 30px; cursor: pointer; user-select: none; } .search .search-input { float: right; width: 30%; height: 30px; line-height: 30px; margin: 0; border: 2px solid #ddd; border-radius: 10px; box-sizing: border-box; } .</description>
-    </item>
-    
-    <item>
-      <title>Hexo 将博客作为站点子页面</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
-      <description>Hexo 将博客作为站点子页面 前言 如果你想如何在 GitHub 的 repository 中上传自己写的网页作为首页，hexo 生成的博客页作为其子页？即自己写的页面作为 UserName.github.io 的页面，将 hexo 博客放在 UserName.github.io/blog 上，那么，这个教程也许可以帮到你。
-本教程的前提是你已经用 hexo 将博客搭建在 UserName.github.io 的仓库上了。
-新建仓库 在 github 上新建一个仓库，名字随意，我的是 Blog。
-然后本地初始化一个 master 分支，并且将原仓库 clone 到本地分支，并且 开启仓库的 GitHub Pages.，需要注意的是，这里的本地分支目前是没有 CNAME 文件 的。
-修改 Hexo 的配置文件 打开配置文件 _config.yml，找到 #URL 下的 url 和 root，将 url 修改为https:// UesrName.github.io/新建的仓库名（我这里是 Blog），然后将 root 修改为**/新建的仓库名/**。
-# URL## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;url:https://YxzRainy.github.io/Blogroot:/Blog/再下滑找到 deploy:下的 repo，将地址改为你新建的 Clone 地址。</description>
-    </item>
-    
-    <item>
-      <title>Hexo 搭建博客</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
-将 Git 与 Github 关联 下载并安装Git 配置个人信息 git config --global user.name &amp;#34;Your UserName&amp;#34; git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
-ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
-new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</description>
-    </item>
-    
-    <item>
-      <title>Hexo 更改博客主题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
-      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
-      <description>Hexo 更改博客主题 前言 配置完了 Hexo，你是否对自带的主题不满意呢？本篇文章将教你如何更改及美化 Hexo 主题。
-下载主题 去 Hexo 的Hexo Themes下载一个你认为不错的主题。这里推荐 Next主题
-更改基本站点信息 在你的博客根目录下打开**_config.yml**，将 Site 下的信息改为你自己的
-# Sitetitle:Rainy 的梦呓subtitle:&amp;#39;至简&amp;#39;description:&amp;#39;My Blog And Note to sum up&amp;#39;keywords:Blog noteauthor:Yxzlanguage:zh-CNtimezone:&amp;#39;Asia/Shanghai&amp;#39;同时 记得将 URL 下的 url 改为你自己的站点地址
-# URL## Set your site url here. For example, if you use GitHub Page, set url as &amp;#39;https://username.github.io/project&amp;#39;url:https://YxzRainy.github.io/Blog切换到 Next 主题 在你的博客根目录下打开**_config.yml**，将 Extensions，下的 theme 改为 next。
-# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme:next安装主题 在博客根目录新建一个 themes/next 文件夹。
-将刚才下载好的主题文件夹中的配置文件复制到新建的 themes/next 中，并将 themes/next/config.yml 复制到你的博客根目录，最后重命名为config.</description>
     </item>
     
   </channel>

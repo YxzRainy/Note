@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript with",
+	    "headline" : "JavaScript with",
+	    "description" : "with with(ogj)函数可以改变自身代码块中的代码的作用域链，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。\nES5 中不支持 with 函数。\n var obj = {  age: \u0026#34;456\u0026#34;,  name: \u0026#34;your\u0026#34;, }  function test() {  var age = \u0026#39;123\u0026#39;;  var name = \u0026#39;my\u0026#39;;  with (obj) {  \/\/ 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。  \/\/ 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。  console.log(age);  console.log(name);  } } test(); 替代链式调用 with (document) {  write(\u0026#34;with 调用\u0026#34; \u002b \u0026#34;\u0026lt;br\/\u0026gt;\u0026#34;) }  \/\/等同于 document.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%85%B6%E4%BB%96\/with\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript with</title>
+    <meta property="og:title" content="JavaScript with" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="with with(ogj)函数可以改变自身代码块中的代码的作用域链，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。
+ES5 中不支持 with 函数。
+ var obj = {  age: &amp;#34;456&amp;#34;,  name: &amp;#34;your&amp;#34;, }  function test() {  var age = &amp;#39;123&amp;#39;;  var name = &amp;#39;my&amp;#39;;  with (obj) {  // 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。  // 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。  console.log(age);  console.log(name);  } } test(); 替代链式调用 with (document) {  write(&amp;#34;with 调用&amp;#34; &#43; &amp;#34;&amp;lt;br/&amp;gt;&amp;#34;) }  //等同于 document." />
+    <meta name="description" content="with with(ogj)函数可以改变自身代码块中的代码的作用域链，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。
+ES5 中不支持 with 函数。
+ var obj = {  age: &amp;#34;456&amp;#34;,  name: &amp;#34;your&amp;#34;, }  function test() {  var age = &amp;#39;123&amp;#39;;  var name = &amp;#39;my&amp;#39;;  with (obj) {  // 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。  // 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。  console.log(age);  console.log(name);  } } test(); 替代链式调用 with (document) {  write(&amp;#34;with 调用&amp;#34; &#43; &amp;#34;&amp;lt;br/&amp;gt;&amp;#34;) }  //等同于 document." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript with</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-04 06:00:00 UTC">
+                        2022-04-04
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="with">with</h1>
+<p><strong>with(ogj)函数可以改变自身代码块中的代码的作用域链</strong>，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。</p>
+<p>ES5 中不支持 with 函数。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JS" data-lang="JS"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">obj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">age</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;456&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;your&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;123&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;my&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">with</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">obj</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#8f5902;font-style:italic">// 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><h2 id="替代链式调用">替代链式调用</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JS" data-lang="JS"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">with</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">write</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;with 调用&#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#34;&lt;br/&gt;&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//等同于
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">write</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;链式调用&#34;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h2 id="with-的缺点">with 的缺点</h2>
+<p>with 的缺点就是因为太强大了，可以更改原型链，这会导致程序运行变慢。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#替代链式调用">替代链式调用</a></li>
+    <li><a href="#with-的缺点">with 的缺点</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

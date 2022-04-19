@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Cisco 配置单区域 OSPFv2",
+	    "headline" : "Cisco 配置单区域 OSPFv2",
+	    "description" : "配置单区域 OSPFv2 配置 R1 enable\rconfigure terminal\rrouter ospf 10\rrouter-id 1.1.1.1\rnetwork 172.16.1.0 0.0.0.255 area 0\rnetwork 172.16.3.0 0.0.0.3 area 0\rnetwork 192.168.10.4 0.0.0.3 area 0\rpassive-interface GigabitEthernet0\/0 配置 R2 enable\rconfigure terminal\rrouter ospf 10\rrouter-id 2.2.2.2\rnetwork 172.16.2.0 0.0.0.255 area 0\rnetwork 172.16.3.0 0.0.0.3 area 0\rnetwork 192.168.10.8 0.0.0.3 area 0\rpassive-interface GigabitEthernet0\/0 配置 R3 enable\rconfigure terminal\rrouter ospf 10\rrouter-id 3.3.3.3\rnetwork 192.168.1.0 0.0.0.255 area 0\rnetwork 192.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-12-12 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-12-12 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/cisco\/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2\/",
+	    "keywords" : [ "网络","Cisco","学习笔记","Cisco 实验", ]
+	}
+</script><title>Cisco 配置单区域 OSPFv2</title>
+    <meta property="og:title" content="Cisco 配置单区域 OSPFv2" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192." />
+    <meta name="description" content="配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Cisco 配置单区域 OSPFv2</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-12-12 06:00:00 UTC">
+                        2021-12-12
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="配置单区域-ospfv2">配置单区域 OSPFv2</h1>
+<h2 id="配置-r1">配置 R1</h2>
+<pre tabindex="0"><code>enable
+configure terminal
+
+router ospf 10
+router-id 1.1.1.1
+network 172.16.1.0 0.0.0.255 area 0
+network 172.16.3.0 0.0.0.3 area 0
+network 192.168.10.4 0.0.0.3 area 0
+passive-interface GigabitEthernet0/0
+</code></pre><h2 id="配置-r2">配置 R2</h2>
+<pre tabindex="0"><code>enable
+configure terminal
+
+router ospf 10
+router-id 2.2.2.2
+network 172.16.2.0 0.0.0.255 area 0
+network 172.16.3.0 0.0.0.3 area 0
+network 192.168.10.8 0.0.0.3 area 0
+passive-interface GigabitEthernet0/0
+</code></pre><h2 id="配置-r3">配置 R3</h2>
+<pre tabindex="0"><code>enable
+configure terminal
+
+router ospf 10
+router-id 3.3.3.3
+network 192.168.1.0 0.0.0.255 area 0
+network 192.168.10.4 0.0.0.3 area 0
+network 192.168.10.8 0.0.0.3 area 0
+passive-interface GigabitEthernet0/0
+</code></pre>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco/">
+                    Cisco
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/">
+                    Cisco 实验
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#配置-r1">配置 R1</a></li>
+    <li><a href="#配置-r2">配置 R2</a></li>
+    <li><a href="#配置-r3">配置 R3</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

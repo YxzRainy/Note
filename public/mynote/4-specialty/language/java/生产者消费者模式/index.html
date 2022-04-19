@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Java 生产者消费者模式",
 	    "headline" : "Java 生产者消费者模式",
-	    "description" : "生产者消费者模式 工厂类 public class Factory { int num=0; \/\/库存 \/\/ 开始生产  public synchronized void addProduct() throws InterruptedException { if(num \u0026gt;= 10){ System.out.println(\u0026#34;库存已满，不能再生产了!\u0026#34;); \/\/强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num\u002b\u002b; \/\/生产出商品  System.out.println(\u0026#34;生产者生产了一个商品，当前库存为: \u0026#34; \u002b num); \/\/唤醒消费商品的线程  this.notify(); } } \/\/开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(\u0026#34;商品已经被抢光了！请等待补货...\u0026#34;); this.wait();\/\/强制当前线程等待  }else{ Thread.sleep( 1000); \/\/消费商品  num--; System.out.println(\u0026#34;消费者们购买了一个商品，现在库存为:\u0026#34; \u002b num); \/\/唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this.",
+	    "description" : "生产者消费者模式 工厂类 public class Factory {  int num=0;   \/\/库存 \/\/ 开始生产  public synchronized void addProduct() throws InterruptedException {  if(num \u0026gt;= 10){  System.out.println(\u0026#34;库存已满，不能再生产了!\u0026#34;);  \/\/强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait();  }else {  Thread.sleep(1000);  num\u002b\u002b; \/\/生产出商品  System.out.println(\u0026#34;生产者生产了一个商品，当前库存为: \u0026#34; \u002b num);  \/\/唤醒消费商品的线程  this.notify();  }  }  \/\/开始消费  public synchronized void subProduct() throws InterruptedException {  if(num == 0){  System.out.println(\u0026#34;商品已经被抢光了！请等待补货...\u0026#34;);  this.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,19 +32,19 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-12-19 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-12-19 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/java\/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F\/",
 	    "keywords" : [ "Java","学习笔记", ]
 	}
 </script><title>Java 生产者消费者模式</title>
     <meta property="og:title" content="Java 生产者消费者模式" />
     <meta property="og:type" content="article" />
-    <meta property="og:description" content="生产者消费者模式 工厂类 public class Factory { int num=0; //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException { if(num &amp;gt;= 10){ System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;); //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num&#43;&#43;; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; &#43; num); //唤醒消费商品的线程  this.notify(); } } //开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;); this.wait();//强制当前线程等待  }else{ Thread.sleep( 1000); //消费商品  num--; System.out.println(&amp;#34;消费者们购买了一个商品，现在库存为:&amp;#34; &#43; num); //唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this." />
-    <meta name="description" content="生产者消费者模式 工厂类 public class Factory { int num=0; //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException { if(num &amp;gt;= 10){ System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;); //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait(); }else { Thread.sleep(1000); num&#43;&#43;; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; &#43; num); //唤醒消费商品的线程  this.notify(); } } //开始消费  public synchronized void subProduct() throws InterruptedException { if(num == 0){ System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;); this.wait();//强制当前线程等待  }else{ Thread.sleep( 1000); //消费商品  num--; System.out.println(&amp;#34;消费者们购买了一个商品，现在库存为:&amp;#34; &#43; num); //唤醒生产商品的线程  this.notify(); } } } 生产者类 public class Productor implements Runnable{ Factory factory; public Productor(Factory factory) { this." />
+    <meta property="og:description" content="生产者消费者模式 工厂类 public class Factory {  int num=0;   //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException {  if(num &amp;gt;= 10){  System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;);  //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait();  }else {  Thread.sleep(1000);  num&#43;&#43;; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; &#43; num);  //唤醒消费商品的线程  this.notify();  }  }  //开始消费  public synchronized void subProduct() throws InterruptedException {  if(num == 0){  System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;);  this." />
+    <meta name="description" content="生产者消费者模式 工厂类 public class Factory {  int num=0;   //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException {  if(num &amp;gt;= 10){  System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;);  //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait();  }else {  Thread.sleep(1000);  num&#43;&#43;; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; &#43; num);  //唤醒消费商品的线程  this.notify();  }  }  //开始消费  public synchronized void subProduct() throws InterruptedException {  if(num == 0){  System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;);  this." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -79,97 +79,97 @@
                 
                 <h1 id="生产者消费者模式">生产者消费者模式</h1>
 <h2 id="工厂类">工厂类</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Factory</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">;</span>
-
-        <span style="color:#8f5902;font-style:italic">//库存
-</span><span style="color:#8f5902;font-style:italic">//    开始生产
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">addProduct</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">InterruptedException</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">&gt;=</span> <span style="color:#000">10</span><span style="color:#ce5c00;font-weight:bold">){</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;库存已满，不能再生产了!&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#8f5902;font-style:italic">//强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放
-</span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">wait</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span><span style="color:#204a87;font-weight:bold">else</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">sleep</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">++;</span>                                <span style="color:#8f5902;font-style:italic">//生产出商品
-</span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;生产者生产了一个商品，当前库存为: &#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#8f5902;font-style:italic">//唤醒消费商品的线程
-</span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">notify</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#8f5902;font-style:italic">//开始消费
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">subProduct</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">InterruptedException</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">){</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;商品已经被抢光了！请等待补货...&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">wait</span><span style="color:#ce5c00;font-weight:bold">();</span><span style="color:#8f5902;font-style:italic">//强制当前线程等待
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#ce5c00;font-weight:bold">}</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">sleep</span><span style="color:#ce5c00;font-weight:bold">(</span> <span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#8f5902;font-style:italic">//消费商品
-</span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">--;</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;消费者们购买了一个商品，现在库存为:&#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#8f5902;font-style:italic">//唤醒生产商品的线程
-</span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">notify</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#ce5c00;font-weight:bold">}</span>
-<span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div><h2 id="生产者类">生产者类</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Productor</span> <span style="color:#204a87;font-weight:bold">implements</span> <span style="color:#000">Runnable</span><span style="color:#ce5c00;font-weight:bold">{</span>
-    <span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
-    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">Productor</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
-    <span style="color:#ce5c00;font-weight:bold">}</span>
-    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-        <span style="color:#8f5902;font-style:italic">//生产者不停生产商品
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">;</span>
-        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">&lt;=</span><span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">){</span>
-            <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">addProduct</span><span style="color:#ce5c00;font-weight:bold">();</span>
-                <span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">++;</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-            <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InterruptedException</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">printStackTrace</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">==</span><span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">){</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;生产第九个商品失败，产业链已经破损！！！但商品还能正常购买。&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#ce5c00;font-weight:bold">}</span>
-    <span style="color:#ce5c00;font-weight:bold">}</span>
-<span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div><h2 id="消费者类">消费者类</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Customer</span> <span style="color:#204a87;font-weight:bold">implements</span> <span style="color:#000">Runnable</span><span style="color:#ce5c00;font-weight:bold">{</span>
-    <span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
-    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">Customer</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
-    <span style="color:#ce5c00;font-weight:bold">}</span>
-    <span style="color:#5c35cc;font-weight:bold">@Override</span>
-    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-      <span style="color:#8f5902;font-style:italic">//消费者不停消费商品
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">1</span><span style="color:#ce5c00;font-weight:bold">;</span>
-        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">&lt;=</span> <span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-            <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">subProduct</span><span style="color:#ce5c00;font-weight:bold">();</span>
-                <span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">++;</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InterruptedException</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">printStackTrace</span><span style="color:#ce5c00;font-weight:bold">();</span>
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
-                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;产业链已经破损，无法消费了，换下一家吧！&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-                <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
-
-            <span style="color:#ce5c00;font-weight:bold">}</span>
-        <span style="color:#ce5c00;font-weight:bold">}</span>
-    <span style="color:#ce5c00;font-weight:bold">}</span>
-<span style="color:#ce5c00;font-weight:bold">}</span>
-</code></pre></div><h2 id="测试类">测试类</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">        <span style="color:#000">Factory</span> <span style="color:#000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Factory</span><span style="color:#ce5c00;font-weight:bold">();</span>
-        <span style="color:#000">Productor</span> <span style="color:#000">productor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Productor</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//生产者线程对象
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">Customer</span> <span style="color:#000">customer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Customer</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">);</span>
-        <span style="color:#8f5902;font-style:italic">//道费者线程对象
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;当前库存为：0&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
-        <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">productor</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
-        <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">customer</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Factory</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//库存
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//    开始生产
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">addProduct</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">InterruptedException</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">&gt;=</span> <span style="color:#000">10</span><span style="color:#ce5c00;font-weight:bold">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;库存已满，不能再生产了!&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#8f5902;font-style:italic">//强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">wait</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span><span style="color:#204a87;font-weight:bold">else</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">sleep</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">++;</span>                                <span style="color:#8f5902;font-style:italic">//生产出商品
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;生产者生产了一个商品，当前库存为: &#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#8f5902;font-style:italic">//唤醒消费商品的线程
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">notify</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//开始消费
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">synchronized</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">subProduct</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#204a87;font-weight:bold">throws</span> <span style="color:#000">InterruptedException</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;商品已经被抢光了！请等待补货...&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">wait</span><span style="color:#ce5c00;font-weight:bold">();</span><span style="color:#8f5902;font-style:italic">//强制当前线程等待
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#ce5c00;font-weight:bold">}</span><span style="color:#204a87;font-weight:bold">else</span><span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">sleep</span><span style="color:#ce5c00;font-weight:bold">(</span> <span style="color:#000">1000</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#8f5902;font-style:italic">//消费商品
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">--;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;消费者们购买了一个商品，现在库存为:&#34;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">num</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#8f5902;font-style:italic">//唤醒生产商品的线程
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">notify</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="生产者类">生产者类</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Productor</span> <span style="color:#204a87;font-weight:bold">implements</span> <span style="color:#000">Runnable</span><span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">Productor</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//生产者不停生产商品
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">0</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">&lt;=</span><span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">){</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">addProduct</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">++;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InterruptedException</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">printStackTrace</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">==</span><span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">){</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;生产第九个商品失败，产业链已经破损！！！但商品还能正常购买。&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="消费者类">消费者类</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">Customer</span> <span style="color:#204a87;font-weight:bold">implements</span> <span style="color:#000">Runnable</span><span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#000">Customer</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">Factory</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#5c35cc;font-weight:bold">@Override</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">public</span> <span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">run</span><span style="color:#ce5c00;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#8f5902;font-style:italic">//消费者不停消费商品
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">1</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">&lt;=</span> <span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">try</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">this</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">factory</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">subProduct</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">time</span><span style="color:#ce5c00;font-weight:bold">++;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">catch</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">InterruptedException</span> <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">e</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">printStackTrace</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">time</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">9</span><span style="color:#ce5c00;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;产业链已经破损，无法消费了，换下一家吧！&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#204a87;font-weight:bold">break</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">}</span>
+</span></span></code></pre></div><h2 id="测试类">测试类</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>        <span style="color:#000">Factory</span> <span style="color:#000">factory</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Factory</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">Productor</span> <span style="color:#000">productor</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Productor</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">);</span><span style="color:#8f5902;font-style:italic">//生产者线程对象
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">Customer</span> <span style="color:#000">customer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Customer</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">factory</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">//道费者线程对象
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">System</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#c4a000">println</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#34;当前库存为：0&#34;</span><span style="color:#ce5c00;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">productor</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Thread</span><span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#000">customer</span><span style="color:#ce5c00;font-weight:bold">).</span><span style="color:#c4a000">start</span><span style="color:#ce5c00;font-weight:bold">();</span>
+</span></span></code></pre></div>
             </div>
             
             
@@ -204,9 +204,9 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

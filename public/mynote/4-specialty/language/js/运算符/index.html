@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "JavaScript 运算符",
@@ -32,8 +32,8 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E8%BF%90%E7%AE%97%E7%AC%A6\/",
-	    "keywords" : [ "学习笔记","JavaScript", ]
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E8%BF%90%E7%AE%97%E7%AC%A6\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
 	}
 </script><title>JavaScript 运算符</title>
     <meta property="og:title" content="JavaScript 运算符" />
@@ -78,9 +78,9 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -156,7 +156,7 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 <li>null</li>
 <li>NaN</li>
 <li>0</li>
-<li>空字符串（&quot;&quot;、''）</li>
+<li>空字符串（&quot;&quot;、&rsquo;&rsquo;）</li>
 <li>undefined</li>
 </ul>
 <h3 id="heading-1">||</h3>
@@ -164,32 +164,38 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 <h3 id="heading-2">&amp;&amp;</h3>
 <p>a &amp;&amp; b &amp;&amp; c，逻辑与；若匹配到隐式转换后为 false 的表达式，则返回该表达式的值；若表达式隐式转换后都为 true，则返回最后一个 true 表达式的值</p>
 <h4 id="短路语句">短路语句</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;前面的表达式为 true，你才能看到我&#39;</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#8f5902;font-style:italic">// 如果表达式 a &gt; b 隐式转换后为 true，那么会执行该表达式之后的语句，否则不执行之后的语句。
-</span></code></pre></div><h3 id="heading-3">！</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;前面的表达式为 true，你才能看到我&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 如果表达式 a &gt; b 隐式转换后为 true，那么会执行该表达式之后的语句，否则不执行之后的语句。
+</span></span></span></code></pre></div><h3 id="heading-3">！</h3>
 <p>! a， 逻辑非；将操作数转换为布尔值，然后返回这个布尔值的反。</p>
 <h2 id="按位运算符">按位运算符</h2>
 <h3 id="heading-4">&amp;</h3>
 <p>按位与</p>
 <h4 id="如何运算">如何运算</h4>
 <p>规则：上下一与，相同为 1，不同为 0。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">// 1
-</span><span style="color:#8f5902;font-style:italic">// 1  在二进制里表示为  1
-</span><span style="color:#8f5902;font-style:italic">// 3  在二进制里表示为  11
-</span><span style="color:#8f5902;font-style:italic">// 对 1 进行补位：00000001
-</span><span style="color:#8f5902;font-style:italic">// 对 11 进行补位：00000011
-</span><span style="color:#8f5902;font-style:italic">// 根据与运算的规则：上下一与，相同为 1，不同为 0
-</span><span style="color:#8f5902;font-style:italic">// 1：     00000001
-</span><span style="color:#8f5902;font-style:italic">// 3：     00000011
-</span><span style="color:#8f5902;font-style:italic">// 结果：00000001
-</span><span style="color:#8f5902;font-style:italic">//因 00000001 转为十进制等于 1，因此最终结果为 1
-</span></code></pre></div><h3 id="heading-5">|</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">// 1
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 1  在二进制里表示为  1
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 3  在二进制里表示为  11
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 对 1 进行补位：00000001
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 对 11 进行补位：00000011
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 根据与运算的规则：上下一与，相同为 1，不同为 0
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 1：     00000001
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 3：     00000011
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 结果：00000001
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//因 00000001 转为十进制等于 1，因此最终结果为 1
+</span></span></span></code></pre></div><h3 id="heading-5">|</h3>
 <p>按位或</p>
 
             </div>
             
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
             
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
@@ -244,9 +250,9 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

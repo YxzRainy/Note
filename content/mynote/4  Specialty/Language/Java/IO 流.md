@@ -3,7 +3,7 @@ title: Java IO 流
 date: 2021-12-19 6:00:00
 updated: 2021-12-19 6:00:00
 categories:
-        - 编程技术
+        - 编程语言
 tags:
         - Java
         - 学习笔记

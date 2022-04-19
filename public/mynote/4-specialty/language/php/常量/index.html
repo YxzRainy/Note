@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "PHP 常量",
+	    "headline" : "PHP 常量",
+	    "description" : "常量 顾名思义，指的是不能被改变的变量。\n定义 在 PHP 中，常量有两种定义方式（5.3 之后才有两种）\n使用 define 函数定义\ndefine(\u0026#39;PI\u0026#39;, 3.14); echo PI, \u0026#39;\u0026lt;br\/\u0026gt;\u0026#39;; 使用 const 关键字定义\nconst PII = 18; echo PII; 定义特殊常量\ndefine(\u0026#39;-_-\u0026#39;, \u0026#39;smile\u0026#39;); \/\/ 输出失败 \/\/ echo -_-; \/\/ 输出成功 echo constant(\u0026#39;-_-\u0026#39;); 这种特殊符号的常量无法用 一般的方式来输出，必须使用 constant 函数来输出。\n命名规则  常量不需要使用 $ 符号，因为一旦使用 $，系统就会认为这是变量。 常量的名字组成由字母、 数字和下划线组成，不能以数字开头。 常量的名字通常是以大写字母为主（主要是与变量以示区别）。 常量命名的规则比变量要松散， 可以使用一些特殊字符，但该方式只能使用 define 定义。  常量和变量的使用  数据可能变化的， 那么肯定是用变量。 数据不一定会变的，可以使用常量或者变量（变量居多） 数据不允许被修改的， 务必用常量。  系统常量 PHP_ VERSION：PHP 版本号。 PHP INT SIZE**：整型数据所占的字节数。 PHP_ INT_MAX：整型能表示的最大值（PHP 中整型是允许出现负数的）",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-09 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-09 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/php\/%E5%B8%B8%E9%87%8F\/",
+	    "keywords" : [ "PHP","后端","学习笔记", ]
+	}
+</script><title>PHP 常量</title>
+    <meta property="og:title" content="PHP 常量" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="常量 顾名思义，指的是不能被改变的变量。
+定义 在 PHP 中，常量有两种定义方式（5.3 之后才有两种）
+使用 define 函数定义
+define(&amp;#39;PI&amp;#39;, 3.14); echo PI, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; 使用 const 关键字定义
+const PII = 18; echo PII; 定义特殊常量
+define(&amp;#39;-_-&amp;#39;, &amp;#39;smile&amp;#39;); // 输出失败 // echo -_-; // 输出成功 echo constant(&amp;#39;-_-&amp;#39;); 这种特殊符号的常量无法用 一般的方式来输出，必须使用 constant 函数来输出。
+命名规则  常量不需要使用 $ 符号，因为一旦使用 $，系统就会认为这是变量。 常量的名字组成由字母、 数字和下划线组成，不能以数字开头。 常量的名字通常是以大写字母为主（主要是与变量以示区别）。 常量命名的规则比变量要松散， 可以使用一些特殊字符，但该方式只能使用 define 定义。  常量和变量的使用  数据可能变化的， 那么肯定是用变量。 数据不一定会变的，可以使用常量或者变量（变量居多） 数据不允许被修改的， 务必用常量。  系统常量 PHP_ VERSION：PHP 版本号。 PHP INT SIZE**：整型数据所占的字节数。 PHP_ INT_MAX：整型能表示的最大值（PHP 中整型是允许出现负数的）" />
+    <meta name="description" content="常量 顾名思义，指的是不能被改变的变量。
+定义 在 PHP 中，常量有两种定义方式（5.3 之后才有两种）
+使用 define 函数定义
+define(&amp;#39;PI&amp;#39;, 3.14); echo PI, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; 使用 const 关键字定义
+const PII = 18; echo PII; 定义特殊常量
+define(&amp;#39;-_-&amp;#39;, &amp;#39;smile&amp;#39;); // 输出失败 // echo -_-; // 输出成功 echo constant(&amp;#39;-_-&amp;#39;); 这种特殊符号的常量无法用 一般的方式来输出，必须使用 constant 函数来输出。
+命名规则  常量不需要使用 $ 符号，因为一旦使用 $，系统就会认为这是变量。 常量的名字组成由字母、 数字和下划线组成，不能以数字开头。 常量的名字通常是以大写字母为主（主要是与变量以示区别）。 常量命名的规则比变量要松散， 可以使用一些特殊字符，但该方式只能使用 define 定义。  常量和变量的使用  数据可能变化的， 那么肯定是用变量。 数据不一定会变的，可以使用常量或者变量（变量居多） 数据不允许被修改的， 务必用常量。  系统常量 PHP_ VERSION：PHP 版本号。 PHP INT SIZE**：整型数据所占的字节数。 PHP_ INT_MAX：整型能表示的最大值（PHP 中整型是允许出现负数的）" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">PHP 常量</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-09 06:00:00 UTC">
+                        2022-03-09
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="常量">常量</h1>
+<p>顾名思义，指的是不能被改变的变量。</p>
+<h2 id="定义">定义</h2>
+<p>在 PHP 中，常量有两种定义方式（5.3 之后才有两种）</p>
+<p><strong>使用 define 函数定义</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#000">define</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;PI&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3.14</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">PI</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><p><strong>使用 const 关键字定义</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">PII</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">PII</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><p><strong>定义特殊常量</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#000">define</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;-_-&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;smile&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 输出失败
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// echo -_-;
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 输出成功
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">constant</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;-_-&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>这种特殊符号的常量无法用 一般的方式来输出，必须使用 constant 函数来输出。</p>
+<h2 id="命名规则">命名规则</h2>
+<ol>
+<li>常量不需要使用 $ 符号，因为一旦使用 $，系统就会认为这是变量。</li>
+<li>常量的名字组成由字母、 数字和下划线组成，不能以数字开头。</li>
+<li>常量的名字通常是以大写字母为主（主要是与变量以示区别）。</li>
+<li>常量命名的规则比变量要松散， 可以使用一些特殊字符，但该方式只能使用 define 定义。</li>
+</ol>
+<h2 id="常量和变量的使用">常量和变量的使用</h2>
+<ol>
+<li>数据可能变化的， 那么肯定是用变量。</li>
+<li>数据不一定会变的，可以使用常量或者变量（变量居多）</li>
+<li>数据不允许被修改的， 务必用常量。</li>
+</ol>
+<h2 id="系统常量">系统常量</h2>
+<p><strong>PHP_ VERSION</strong>：PHP 版本号。
+<em><em>PHP</em> INT</em> SIZE**：整型数据所占的字节数。
+<strong>PHP_ INT_MAX</strong>：整型能表示的最大值（PHP 中整型是允许出现负数的）</p>
+<h3 id="系统魔术常量">系统魔术常量</h3>
+<p>在 PHP 中，还有一些特殊的系统常量，他们由 __ 开始 + 常量名 + __，这种常量称之为<strong>系统魔术常量</strong>。</p>
+<p>魔术常量的值通常会跟着环境变化，但是用户改变不了。</p>
+<p><strong>__DIR__</strong>：当前被执行的脚本所在电脑的绝对路径+
+<strong>__FILE__</strong>：当前被执行的脚本所在的电脑的绝对路径(带自己文件的名字)。
+<strong>__LINE__</strong>：当前所属的行数.
+<strong>__NAMESPACE__</strong>：当前所属的命名空间。
+<strong>__CLASS__</strong>： 当前所属的类,
+<strong>__METHOD__</strong>：当前所属的方法。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">__DIR__</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">__FILE__</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">__LINE__</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/php/">
+                    PHP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%90%8E%E7%AB%AF/">
+                    后端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#定义">定义</a></li>
+    <li><a href="#命名规则">命名规则</a></li>
+    <li><a href="#常量和变量的使用">常量和变量的使用</a></li>
+    <li><a href="#系统常量">系统常量</a>
+      <ul>
+        <li><a href="#系统魔术常量">系统魔术常量</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Cisco 配置单臂路由",
+	    "headline" : "Cisco 配置单臂路由",
+	    "description" : "配置单臂路由 拓扑图 三台 PC\n中间一台交换机\n一台路由器在交换机上方\n将交换机与路由器连起来\n配置 S1 进全局模式 enable configure terminal hostname S1  vlan 10 exit  vlan 20 exit  vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0\/2\rswitchport acces vlan 10\rexit\rinterface f 0\/3\rswitchport acces vlan 20\rexit\rinterface f 0\/4\rswitchport acces vlan 30\rexi 将二层端口配置成 trunk 模式 interface g 0\/1\rswitchport mode trunk 配置 R1 enable\rconfigure terminal\rhostname R1 配置虚拟子端口 interface g 0\/0.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/cisco\/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1\/",
+	    "keywords" : [ "网络","Cisco","学习笔记","Cisco 实验", ]
+	}
+</script><title>Cisco 配置单臂路由</title>
+    <meta property="og:title" content="Cisco 配置单臂路由" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="配置单臂路由 拓扑图 三台 PC
+中间一台交换机
+一台路由器在交换机上方
+将交换机与路由器连起来
+配置 S1 进全局模式 enable configure terminal hostname S1  vlan 10 exit  vlan 20 exit  vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi 将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk 配置 R1 enableconfigure terminalhostname R1 配置虚拟子端口 interface g 0/0." />
+    <meta name="description" content="配置单臂路由 拓扑图 三台 PC
+中间一台交换机
+一台路由器在交换机上方
+将交换机与路由器连起来
+配置 S1 进全局模式 enable configure terminal hostname S1  vlan 10 exit  vlan 20 exit  vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi 将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk 配置 R1 enableconfigure terminalhostname R1 配置虚拟子端口 interface g 0/0." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Cisco 配置单臂路由</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
+                        2021-10-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="配置单臂路由">配置单臂路由</h1>
+<h2 id="拓扑图">拓扑图</h2>
+<p>三台 PC</p>
+<p>中间一台交换机</p>
+<p>一台路由器在交换机上方</p>
+<p>将交换机与路由器连起来</p>
+<h2 id="配置-s1">配置 S1</h2>
+<h3 id="进全局模式">进全局模式</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>enable
+</span></span><span style="display:flex;"><span>configure terminal
+</span></span><span style="display:flex;"><span>hostname S1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vlan 10
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vlan 20
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>vlan 30
+</span></span><span style="display:flex;"><span>exit
+</span></span></code></pre></div><h3 id="将指定-access-端口分配给指定-vlan">将指定 access 端口分配给指定 vlan</h3>
+<pre tabindex="0"><code>interface f 0/2
+switchport acces vlan 10
+exit
+
+interface f 0/3
+switchport acces vlan 20
+exit
+
+interface f 0/4
+switchport acces vlan 30
+exi
+</code></pre><h3 id="将二层端口配置成-trunk-模式">将二层端口配置成 trunk 模式</h3>
+<pre tabindex="0"><code>interface g 0/1
+switchport mode  trunk
+</code></pre><h2 id="配置-r1">配置 R1</h2>
+<pre tabindex="0"><code>enable
+configure terminal
+hostname R1
+</code></pre><h3 id="配置虚拟子端口">配置虚拟子端口</h3>
+<pre tabindex="0"><code>interface g 0/0.1
+enc dot1Q 10
+ip address 192.168.2.2（pc的默认网关）255.255.255.0
+exit
+
+interface g 0/0.2
+enc dot1Q 20
+ip address 192.168.3.2（pc的默认网关）255.255.255.0
+exit
+
+interface g 0/0.3
+enc dot1Q 30
+ip address 192.168.4.2（pc的默认网关）255.255.255.0
+exit
+</code></pre><h3 id="开启虚拟端口">开启虚拟端口</h3>
+<pre tabindex="0"><code>interface g 0/0
+no shutdown
+exit
+</code></pre><h2 id="配置-pc">配置 PC</h2>
+<h3 id="配置-pc-0">配置 PC 0</h3>
+<pre tabindex="0"><code>ip 地址 192.168.2.1
+子网掩码：255.255.255.0
+默认网关 192.168.2.2
+</code></pre><h3 id="配置-pc-1">配置 PC 1</h3>
+<pre tabindex="0"><code>ip 地址 3.1
+子网掩码：255.255.255.0
+默认网关：192.168.3.2
+</code></pre><h3 id="配置-pc3">配置 PC3</h3>
+<pre tabindex="0"><code>ip 地址：192.168.14.1
+子网掩码：255.255.255.0
+默认网关：192.168.4.2
+</code></pre>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco/">
+                    Cisco
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco-%E5%AE%9E%E9%AA%8C/">
+                    Cisco 实验
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#拓扑图">拓扑图</a></li>
+    <li><a href="#配置-s1">配置 S1</a>
+      <ul>
+        <li><a href="#进全局模式">进全局模式</a></li>
+        <li><a href="#将指定-access-端口分配给指定-vlan">将指定 access 端口分配给指定 vlan</a></li>
+        <li><a href="#将二层端口配置成-trunk-模式">将二层端口配置成 trunk 模式</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置-r1">配置 R1</a>
+      <ul>
+        <li><a href="#配置虚拟子端口">配置虚拟子端口</a></li>
+        <li><a href="#开启虚拟端口">开启虚拟端口</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置-pc">配置 PC</a>
+      <ul>
+        <li><a href="#配置-pc-0">配置 PC 0</a></li>
+        <li><a href="#配置-pc-1">配置 PC 1</a></li>
+        <li><a href="#配置-pc3">配置 PC3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

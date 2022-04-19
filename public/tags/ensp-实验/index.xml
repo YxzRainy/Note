@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eNSP 实验 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/tags/ensp-%E5%AE%9E%E9%AA%8C/</link>
+    <description>Recent content in eNSP 实验 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 21 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/ensp-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>eMSP 配置 trunk 和 Access</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</link>
+      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</guid>
+      <description>配置 trunk 和 Access 添加静态mac
+改名，配置 IP和子网掩码
+第一台pc ping 其他pc
+显示 mac 地址
+设置 mac 地址
+划分vlan
+改名
+显示 vlan
+其中一台 pc ping 剩余 pc
+创建 vlan batch 1
+进入接口1和2
+port link-type access
+port defult vlan 10
+quit
+进入接口3和4
+port link-type access
+port defult vlan 20
+quit
+相同 vlan 互相 ping
+两台交换机分别有四台 pc
+第一台交换机下有vlan 10 和 vlan 20
+第二台交换机下有vlan 10 和 vlan 20</description>
+    </item>
+    
+    <item>
+      <title>eNSP 配置 Web 服务器</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>配置 Web 服务器 第一台客户机 10.0.1.10
+10.0.1.1
+域名服务器
+10.0.2.10
+Server
+10.0.2.10
+10.0.2.1
+域名服务器
+10.0.2.10
+配置 router
+sys
+int e 0/0/0
+ip add 10.0.2.1 255.255.255.0
+quit
+int g0/0/0
+ip add 10.0.1.1 255.255.255.0
+quit
+save
+配置 lsw
+sys
+int g0/0/1
+port link type access
+quit
+int g0/0/2
+port link type trunk
+打开 client
+目的 10.0.2.10
+打开 Server
+目的 10.0.1.10
+新建本地
+创建文件夹 ftp 和 http
+新建 flag.txt
+新建 index.html
+分别启动
+打开 Server
+服务器信息
+ftp 选择文件根目录</description>
+    </item>
+    
+  </channel>
+</rss>

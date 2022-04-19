@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Echarts 基本配置",
 	    "headline" : "Echarts 基本配置",
-	    "description" : "初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。\nvar myChart = echarts.init(document.getElementById(\u0026#39;main\u0026#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。\nvar option = {} 标题 title: { text: \u0026#39;运动品牌科技水平\u0026#39;, \/\/标题文本点击tiao超链接  link: \u0026#39;https:\/\/yxzi.xyz\/\u0026#39; }, X轴 xAxis: { \/\/ 轴类型为类目轴  type: \u0026#39;category\u0026#39;, \/\/ 类目轴的类别名称  data: [\u0026#39;李宁\u0026#39;, \u0026#39;安踏\u0026#39;, \u0026#39;匹克\u0026#39;, \u0026#39;迪卡侬\u0026#39;, \u0026#39;耐克\u0026#39;, \u0026#39;阿迪达斯\u0026#39;] }, Y轴 yAxis: { \/\/ 轴类型为数值轴，数值轴是不需要设置data属性，  \/\/ 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: \u0026#39;value\u0026#39;, }, series 一个系列配置。\nseries: [ { \/\/ 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: \u0026#39;科技水平\u0026#39;, \/\/ 定义图标的类型，这里是柱状图  type: \u0026#39;bar\u0026#39;, \/\/ xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40] } ] 将配置项设置给 Echarts 实例对象 myChart.",
+	    "description" : "初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。\nvar myChart = echarts.init(document.getElementById(\u0026#39;main\u0026#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。\nvar option = {} 标题 title: {  text: \u0026#39;运动品牌科技水平\u0026#39;,  \/\/标题文本点击tiao超链接  link: \u0026#39;https:\/\/yxzi.xyz\/\u0026#39; }, X轴 xAxis: {  \/\/ 轴类型为类目轴  type: \u0026#39;category\u0026#39;,  \/\/ 类目轴的类别名称  data: [\u0026#39;李宁\u0026#39;, \u0026#39;安踏\u0026#39;, \u0026#39;匹克\u0026#39;, \u0026#39;迪卡侬\u0026#39;, \u0026#39;耐克\u0026#39;, \u0026#39;阿迪达斯\u0026#39;] }, Y轴 yAxis: {  \/\/ 轴类型为数值轴，数值轴是不需要设置data属性，  \/\/ 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: \u0026#39;value\u0026#39;, }, series 一个系列配置。\nseries: [  {  \/\/ 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: \u0026#39;科技水平\u0026#39;,  \/\/ 定义图标的类型，这里是柱状图  type: \u0026#39;bar\u0026#39;,  \/\/ xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40]  }  ] 将配置项设置给 Echarts 实例对象 myChart.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-27 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-27 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/echarts\/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/echarts\/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE\/",
 	    "keywords" : [ "前端","图表","可视化","学习笔记","Echarts", ]
 	}
 </script><title>Echarts 基本配置</title>
@@ -40,17 +40,17 @@
     <meta property="og:type" content="article" />
     <meta property="og:description" content="初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
 var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
-var option = {} 标题 title: { text: &amp;#39;运动品牌科技水平&amp;#39;, //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: { // 轴类型为类目轴  type: &amp;#39;category&amp;#39;, // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: { // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
-series: [ { // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;, // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;, // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40] } ] 将配置项设置给 Echarts 实例对象 myChart." />
+var option = {} 标题 title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: {  // 轴类型为类目轴  type: &amp;#39;category&amp;#39;,  // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: {  // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
+series: [  {  // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;,  // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;,  // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40]  }  ] 将配置项设置给 Echarts 实例对象 myChart." />
     <meta name="description" content="初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
 var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
-var option = {} 标题 title: { text: &amp;#39;运动品牌科技水平&amp;#39;, //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: { // 轴类型为类目轴  type: &amp;#39;category&amp;#39;, // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: { // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
-series: [ { // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;, // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;, // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40] } ] 将配置项设置给 Echarts 实例对象 myChart." />
+var option = {} 标题 title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: {  // 轴类型为类目轴  type: &amp;#39;category&amp;#39;,  // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: {  // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
+series: [  {  // 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平  name: &amp;#39;科技水平&amp;#39;,  // 定义图标的类型，这里是柱状图  type: &amp;#39;bar&amp;#39;,  // xAxis 中与类目相对应的数据  data: [22, 15, 12, 15, 80, 40]  }  ] 将配置项设置给 Echarts 实例对象 myChart." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -85,44 +85,44 @@ series: [ { // 表示下面data中的数据表示的是哪一方面的数据，�
                 
                 <h2 id="初始化">初始化</h2>
 <p>初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">myChart</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">echarts</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">init</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;main&#39;</span><span style="color:#000;font-weight:bold">));</span>
-</code></pre></div><h2 id="绘制图表">绘制图表</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">myChart</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">echarts</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">init</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;main&#39;</span><span style="color:#000;font-weight:bold">));</span>
+</span></span></code></pre></div><h2 id="绘制图表">绘制图表</h2>
 <p>用一个对象作为配置项，绘制整个图表。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">option</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{}</span>
-</code></pre></div><h3 id="标题">标题</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#000">text</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;运动品牌科技水平&#39;</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#8f5902;font-style:italic">//标题文本点击tiao超链接
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">link</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;https://yxzi.xyz/&#39;</span>
-<span style="color:#000;font-weight:bold">},</span>
-</code></pre></div><h3 id="x轴">X轴</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">xAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#8f5902;font-style:italic">// 轴类型为类目轴
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;category&#39;</span><span style="color:#000;font-weight:bold">,</span>
-    <span style="color:#8f5902;font-style:italic">// 类目轴的类别名称
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;李宁&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;安踏&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;匹克&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;迪卡侬&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;耐克&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;阿迪达斯&#39;</span><span style="color:#000;font-weight:bold">]</span>
-<span style="color:#000;font-weight:bold">},</span>
-</code></pre></div><h3 id="y轴">Y轴</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">yAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#8f5902;font-style:italic">// 轴类型为数值轴，数值轴是不需要设置data属性，
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据
-</span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;value&#39;</span><span style="color:#000;font-weight:bold">,</span>
-<span style="color:#000;font-weight:bold">},</span>
-</code></pre></div><h3 id="series">series</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">option</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{}</span>
+</span></span></code></pre></div><h3 id="标题">标题</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">title</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">text</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;运动品牌科技水平&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">//标题文本点击tiao超链接
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">link</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;https://yxzi.xyz/&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="x轴">X轴</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">xAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 轴类型为类目轴
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;category&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 类目轴的类别名称
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;李宁&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;安踏&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;匹克&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;迪卡侬&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;耐克&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;阿迪达斯&#39;</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="y轴">Y轴</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">yAxis</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 轴类型为数值轴，数值轴是不需要设置data属性，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;value&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span>
+</span></span></code></pre></div><h3 id="series">series</h3>
 <p>一个系列配置。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#000">series</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
-        <span style="color:#000;font-weight:bold">{</span>
-            <span style="color:#8f5902;font-style:italic">// 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;科技水平&#39;</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#8f5902;font-style:italic">// 定义图标的类型，这里是柱状图
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;bar&#39;</span><span style="color:#000;font-weight:bold">,</span>
-            <span style="color:#8f5902;font-style:italic">// xAxis 中与类目相对应的数据
-</span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">22</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">80</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">40</span><span style="color:#000;font-weight:bold">]</span>
-        <span style="color:#000;font-weight:bold">}</span>
-    <span style="color:#000;font-weight:bold">]</span> 
-</code></pre></div><h2 id="将配置项设置给-echarts-实例对象">将配置项设置给 Echarts 实例对象</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">myChart</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setOption</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">option</span><span style="color:#000;font-weight:bold">)</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">series</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// 表示下面data中的数据表示的是哪一方面的数据，这里表示的是科技水平
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;科技水平&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// 定义图标的类型，这里是柱状图
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">type</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;bar&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// xAxis 中与类目相对应的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">22</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">12</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">15</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">80</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">40</span><span style="color:#000;font-weight:bold">]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">]</span> 
+</span></span></code></pre></div><h2 id="将配置项设置给-echarts-实例对象">将配置项设置给 Echarts 实例对象</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">myChart</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setOption</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">option</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div>
             </div>
             
             
@@ -181,9 +181,9 @@ series: [ { // 表示下面data中的数据表示的是哪一方面的数据，�
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

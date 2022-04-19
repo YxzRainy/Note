@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程语言 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in 编程语言 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 动态一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>动态一维数组 动态一维数组可以被当作静态一维数组来来用，换言之，静态数组可以实现的，动态数组都可以实现，不同的是，动态一维数组可以被我们使用free()函数助动释放掉，而且可以用realloc()动态的缩小或扩充。
+而静态一维数组只能等当前函数执行完毕后，才会被系统自动释放。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // 静态创建一维数组，数组大小为 20个字节  // 静态数组只能等它自己所在的函数 main 执行完毕后，才会被系统助动释放。  int a[5];   // 动态创建一维数组  // 数组长度  int len;  // 数组名  int * pArr;  //自定义数组长度  printf(&amp;#34;请输入你要存放的元素个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);// 5  // 动态创建一维数组，数组大小为 20个字节，类似于 int pArr[len];  pArr = (int *)malloc(4 * len);   // 向动态数组里面添加元素  for(int i = 0; i &amp;lt; len; i++)  {  scanf(&amp;#34;%d&amp;#34;,&amp;amp;pArr[i]);  printf(&amp;#34;你向数组中添加了：%d\n&amp;#34;,pArr[i]);  }   // 输出动态数组中所有的元素  printf(&amp;#34;pArr 数组中的元素有：&amp;#34;);  for(int i = 0; i &amp;lt; len; i++)  {  printf(&amp;#34;%d、&amp;#34;,pArr[i]);  } } </description>
+    </item>
+    
+    <item>
+      <title>C 静态内存和动态内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%92%8C%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%92%8C%E9%9D%99%E6%80%81%E5%86%85%E5%AD%98/</guid>
+      <description>静态内存和动态内存 静态内存 由系统自动分配，由系统自动释放。
+在栈内存中分配。
+动态内存 由使用者手动分配，由使用者手动释放
+在堆内存中分配</description>
+    </item>
+    
+    <item>
+      <title>C 动态数组的构造</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E7%9A%84%E6%9E%84%E9%80%A0/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E6%95%B0%E7%BB%84%E7%9A%84%E6%9E%84%E9%80%A0/</guid>
+      <description>动态数组的构造 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript DOM</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/dom/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/dom/</guid>
+      <description>DOM DOM （文档对象模型）中提供了一系列的方法，DOM 是这一些列方法的统称。这些方法使得我们可以操作 HTML 和 XML。
+DOM 就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
+使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码 ），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript ES5 严格模式</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</guid>
+      <description>ES5 严格模式 ECMAScript 是 JavaScript 的一个标准。
+ES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？
+当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）
+&amp;ldquo;use strict&amp;rdquo; 使某一作用域内的代码不在兼容 ES3 中的一些不规则的语法，使用全新的 ES5 的语法。
+如何启用 ES5 严格模式 在作用域顶端添加语句&amp;quot;use strict&amp;quot;即可，启用之后，ES3 中的一些方法就无法使用了。比如arguments的callee属性：
+&amp;#39;use strict&amp;#39;; function test() { 	console.log(arguments.callee); } test(); 浏览器会出现以下错误：
+Uncaught TypeError: &amp;#39;caller&amp;#39;, &amp;#39;callee&amp;#39;, and &amp;#39;arguments&amp;#39; properties may not be accessed on strict mode functions or the arguments objects for calls to them 同样，也可以使某一局部作用域支持 ES5，而其他作用域支持 ES3：</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Try Catch</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</guid>
+      <description>Try Catch 为了容错，防止程序报错后引起整个程序的终止运行
+try 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码
+catch 有一个参数，参数名自定义 比如 e
+那么这个 e 就会有两个参数 e.name 和 e.message
+Error.name EvalError：eval()的使用与定义不一致
+RangeError：数值越界
+ReferenceError：非法或不能识别的引用数值，比如当一个变量未经声明就使用或者一个函数未定义就调用的时候，会出现 ReferenceError。
+SyntaxError：语法解析错误
+TypeError：操作数类型错误
+URlError：URI 处理函数使用不当</description>
+    </item>
+    
+    <item>
+      <title>JavaScript with</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/</guid>
+      <description>with with(ogj)函数可以改变自身代码块中的代码的作用域链，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。
+ES5 中不支持 with 函数。
+ var obj = {  age: &amp;#34;456&amp;#34;,  name: &amp;#34;your&amp;#34;, }  function test() {  var age = &amp;#39;123&amp;#39;;  var name = &amp;#39;my&amp;#39;;  with (obj) {  // 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。  // 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。  console.log(age);  console.log(name);  } } test(); 替代链式调用 with (document) {  write(&amp;#34;with 调用&amp;#34; + &amp;#34;&amp;lt;br/&amp;gt;&amp;#34;) }  //等同于 document.</description>
+    </item>
+    
+    <item>
+      <title>C malloc</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</link>
+      <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/</guid>
+      <description>malloc malloc 是 memory（内存）allocate（分配）的缩写。
+可以让一个变量动态分配内存。
+malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int a = 5; // a 是一个 int 变量，它是静态分配的  int * p = (int *)malloc(4); // 动态分配  *p = 5;// *p 也是一个 int 变量，但它是动态分配的  free(p); // 手动释放动态分配的内存  printf(&amp;#34;%d\n&amp;#34;,*p);  printf(&amp;#34;%d\n&amp;#34;,p); }  使用 malloc 函数，需要添加头文件 malloc.h malloc 函数只有一个形参，并且形参是整型。 malloc(4)表示请求系统为我们分配 4 个字节 malloc 函数只能返回第一个字节的地址，即 p 只保存了第一个字节的整型地址 int * 是为了让系统知道我们分配这个 4 个字节的地址是整型地址。 int * p = (int *)malloc(4)这行代码总共分配了 8 个字节，int * p分配了 4 个字节，(int *)malloc(4)分配了 84 个字节一共 8 个字节。 p（int * p）本身所占的内存是静态分配的，但 p 所指向的内存(int *)malloc(4)是动态分配的。 free(p)表示将 p 所指向的内存给释放掉，使得 p 指向的内存无法被读写。但是，p 本身的内存是静态的，不能被我们用free()函数手动释放，p 本身的内存只能在 p 变量所在的函数运行结束后，被系统自动释放。 *p = 5和int a = 5的区别在于前者的内存分配方式是动态分配的，后者的内存分配方式是静态分配的。 *p = 5 中，其中*p指的是用(int *)malloc(4)动态分配了 4 个字节的内存空间，而*p = 5，则是将 5 这个 int 数值放入这动态分配的 4 个字节的内存中。而 p 则只保存了其中第 1 个字节的地址。  </description>
+    </item>
+    
+    <item>
+      <title>C 一个指针变量占几个字节</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/</link>
+      <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E4%B8%80%E4%B8%AA%E6%8C%87%E9%92%88%E5%8F%98%E9%87%8F%E5%8D%A0%E5%87%A0%E4%B8%AA%E5%AD%97%E8%8A%82/</guid>
+      <description>一个指针变量占几个字节 在 64 位系统中，一个指针变量占 4 个字节，不管这个指针指向的是什么类型的变量。
+在 64 位系统中，一个指针变量占 8 个字节，不管这个指针指向的是什么类型的变量。
+sizeof() 此函数可以返回指定数据类型所占的字节。
+#include &amp;lt;stdio.h&amp;gt; int main () {  int a = 666;  char ch = &amp;#39;A&amp;#39;;  double dou = 99.9;  int*p = &amp;amp;a;  char *c = &amp;amp;ch;  double *x = &amp;amp;dou;  // 不过什么数据类型的指针变量，  // 所占字节都是 8 个（32 位系统占 4 个字节）  printf(&amp;#34;%d\n&amp;#34;,sizeof(p));  printf(&amp;#34;%d\n&amp;#34;,sizeof(c));  printf(&amp;#34;%d\n&amp;#34;,sizeof(x)); } 虽然在 64 位系统中的指针变量占 8 个字节，但是一个变量的地址（指针变量）只会存放该变量首字节的地址。这样，指针变量通过首字节的地址，就能知道自己所指向的变量类型，也就知道了该指针变量所指向的变量到底占多少个字节。</description>
+    </item>
+    
+    <item>
+      <title>C 动态分配内存</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/</link>
+      <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/</guid>
+      <description>动态内存分配 传统数组的缺点 传统数组也叫静态数组，也属于静态内存
+  数组长度必须事先指定，且只能是长整数，不能是变量。
+  传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。
+#include &amp;lt;stdio.h&amp;gt;void fun(void){  // 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，  // 只能在本函数（fun 函数）运行完毕后由系统自动释放  int a[5] = {1,2,3,4,5}; } int main () {  }   数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。
+  Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。
+  动态数组（动态内存） 动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，</description>
+    </item>
+    
+    <item>
+      <title>C 一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){  // 完全初始化  int arr[5] ={1,2,3,4,5};  // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3};  // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]);  // 不初始化，所有元素都是垃圾值  int arr3[5];  printf(&amp;#34;%d\n&amp;#34;,arr3[5]);  // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，
+其他情况下整体复制都是错误的。
+#include &amp;lt;iostream&amp;gt;int main(){  int a[5];  // a[5] 表示 a 数组中索引为 5 的值。  a[5] = {1,2,3,4,5}; } 将数组 a 中的值全部复制到数组 b #include &amp;lt;iostream&amp;gt; int main() { // 错误的写法，因为一维数组名，d该数组中第一个元素的地址  b = a; // 正确的写法  for(int i = 0; i &amp;lt; 5; i++ )  {  b[i] = a[i];  } } </description>
+    </item>
+    
+    <item>
+      <title>C 二维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>二维数组 一个二维数组，在本质上，是一个一维数组的列表。它声明了一个 x 行 y 列的二维整型数组。
+#include &amp;lt;iostream&amp;gt; int main(){  // 该数组中总共有12个元素，可以当作 3 行(一)5 列（丨）来看  int arr[3][4];  // 这个二位数组以此为：  arr[0][0] arr[0][1] arr[0][2] arr[0][3]  arr[1][0] arr[1][1] arr[1][2] arr[1][3]  arr[2][0] arr[2][1] arr[2][2] arr[2][3] } 声明一个二维数组 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] = {1,2,3,4,6,7,8,9,10,11,12};   int arr2[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  }; } 输出二维数组的内容 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  };  int i,j;  for(i = 0; i &amp;lt; 3; ++i)  {  for(j = 0; j &amp;lt; 4; ++j)  { // 负号表示将输出的内容对其， // 3表示每个元素间隔3个光标到位置  printf(&amp;#34;%-3d &amp;#34;,arr[i][j]);  }  printf(&amp;#34;\n&amp;#34;);  } } 关于多维数组 不存在多维数组，因为内存是线性的</description>
+    </item>
+    
+    <item>
+      <title>C 指针和一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E5%92%8C%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>指针和一维数组 一维数组名 一维数组的名字是一个指针常量，它存放的是数组一个元素的地址。
+#include &amp;lt;iostream&amp;gt; int main() {  int a[5];  // 打印一维数组 a 中，第一个元素的地址  printf(&amp;#34;%#x\n&amp;#34;,&amp;amp;a[0]);  // 打印一维数组 a 的名字  printf(&amp;#34;%#x\n&amp;#34;,a); } 下标和指针的关系 如果 p 是一个指针变量，则 p[n] 永远等价于 *（p + n）
+void DeterminesArray(int *arr, int lenght) {  for(int i = 0; i &amp;lt; lenght; i++)  {  printf(&amp;#34;%d\n&amp;#34;,*(arr + i));  // *(arr + i) 等价于 arr[i]  printf(&amp;#34;%d\n&amp;#34;,arr[i]);  } } 确定一个一维数组需要哪些参数 当一个函数要处理一个或多个一维数组时，我们需要接收该数组的那些信息。也就是如何让一个函数知道我们将要处理的是一个数组，而不是其他数据类型。</description>
+    </item>
+    
+    <item>
+      <title>C 指针的运算</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E8%BF%90%E7%AE%97/</guid>
+      <description>指针的运算 指针变量不能相加不能相乘也不能相除。 如果两个指针变量指向的是同一块连续空间中的不同存储单元（比如数组），则这两个指针变量才可以相减（表示两个元素相隔多少个元素/字节）</description>
+    </item>
+    
+    <item>
+      <title>PHP 变量</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Thu, 10 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</guid>
+      <description>变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。 $_ GET：获取所有表单以 get 方式提交的数据。 $_ POST：POST 提交的数据都会保存在此。 $_ REQUEST：GET 和 POST 提交的都会保存。 $GLOBALS：PHP 中所有的全局变量。 $_ SERVER：服务器信息。 $_ SESSION：session 会话数据。 $_ COOKIE：cookie 会话数据。 $_ ENV：环境信息。 $_ FILES：用户上传的文件信息。
+可变变量 // 找到 $a，将其赋值为 b， // 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b， $a = &amp;#39;b&amp;#39;; // 最后再将 $b 赋为 bb $b = &amp;#39;bb&amp;#39;; echo $$a; 变量传值 指的是将一个变量的值赋给另外一个变量。
+变量传值一共有两种方式：值传递和引用传递。 值传递：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。 引用传递：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。
+//值传递 $a = 10; $b = $a; $b = 66; echo $a, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $b, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;;  echo &amp;#39;&amp;lt;hr&amp;gt;&amp;#39;;  // 引用传递 $c = 3; $d = &amp;amp;$c; $c = 5; echo $c, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $d, &amp;#39;&amp;lt;br/&amp;#39;; 在内存中，通常有以下几个分区：</description>
+    </item>
+    
+    <item>
+      <title>PHP 数据类型</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Thu, 10 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>数据类型 在 PHP 中，指的是一个变量所存储的数据本身的类型，而不是变量的类型，即变量本身是没有数据类型的。
+基本数据类型 int/integer 占 4 个字节，表示整数类型，前提是存的下，当整型存不下的时候，将会变为 double 类型。
+PHP 中提供了四种整型的定义方式：十进制定义、二进制定义、八进制定义和十六进制定义。
+// 十进制 $decimal = 20;  // 二进制 $Binary = 10100;  // 八进制 $Octal = 1747;  // 十六进制 $HexaDecimal = 0x3E7;  echo $decimal . &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; echo $Binary . &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; echo $Octal . &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; echo $HexaDecimal . &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; float/double 占 8 个字节，表示小数或者是整型所存不下的整数。
+string 所占字节根据长度分配，表示字符串。
+bool/boolean 表示 true 或 false.
+复合数据类型 object 存放对象。
+array 次性存放多个数据。
+特殊数据类型 resource 存放资源数据，比如 PHP 外部数据（数据库、文件等）</description>
+    </item>
+    
+    <item>
+      <title>PHP 常量</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</link>
+      <pubDate>Wed, 09 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</guid>
+      <description>常量 顾名思义，指的是不能被改变的变量。
+定义 在 PHP 中，常量有两种定义方式（5.3 之后才有两种）
+使用 define 函数定义
+define(&amp;#39;PI&amp;#39;, 3.14); echo PI, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; 使用 const 关键字定义
+const PII = 18; echo PII; 定义特殊常量
+define(&amp;#39;-_-&amp;#39;, &amp;#39;smile&amp;#39;); // 输出失败 // echo -_-; // 输出成功 echo constant(&amp;#39;-_-&amp;#39;); 这种特殊符号的常量无法用 一般的方式来输出，必须使用 constant 函数来输出。
+命名规则  常量不需要使用 $ 符号，因为一旦使用 $，系统就会认为这是变量。 常量的名字组成由字母、 数字和下划线组成，不能以数字开头。 常量的名字通常是以大写字母为主（主要是与变量以示区别）。 常量命名的规则比变量要松散， 可以使用一些特殊字符，但该方式只能使用 define 定义。  常量和变量的使用  数据可能变化的， 那么肯定是用变量。 数据不一定会变的，可以使用常量或者变量（变量居多） 数据不允许被修改的， 务必用常量。  系统常量 PHP_ VERSION：PHP 版本号。 PHP INT SIZE**：整型数据所占的字节数。 PHP_ INT_MAX：整型能表示的最大值（PHP 中整型是允许出现负数的）</description>
+    </item>
+    
+    <item>
+      <title>PHP 环境配置</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 02 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>PHP 环境配置 新的学期，新的课程。
+今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
+下载 PHPStudy PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的集成开发环境
+ 解压运行 选择安装目录，通常时 D 盘，我这里是D:\AppInstallPath\PhpStudy  安装完成后，打开 PHPStudy，会出现以下界面：
+![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+另外，PHPStudy 会在安装目录下的 phpstudy_pro\Extensions 路径形成目录结构：
+![image-20220303002959290](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002959290.png)
+在这里我们只需要注意 MySql 和 php 的路径，因为之后我们会用到这两个路径来配置环境变量。
+配置 MySQL 环境变量  此电脑 — 系统属性 — 高级系统设置 — 高级 — 环境变量 。 找到系统变量中名为 Path 的变量， 新建，将 MySql 目录下的 bin 文件的路径粘贴到这里，确定。 win + R 打开 cmd，输入 mysql，如果提示ERROR 2003 (HY000): Can&#39;t connect to MySQL server on &#39;localhost&#39; (10061)就说明 MySQL 的环境变量配置完成。  !</description>
+    </item>
+    
+    <item>
+      <title>C 堆栈</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%A0%86%E6%A0%88/</guid>
+      <description>堆栈 栈内存 先进后出
+压栈，将数据存入栈内存，即在内存中创建内存空间
+出栈，从栈内存中丢弃数据，即释放内存。</description>
+    </item>
+    
+    <item>
+      <title>C 递归</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 24 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%92%E5%BD%92/</guid>
+      <description>递归 函数自身调用自身</description>
+    </item>
+    
+    <item>
+      <title>C 函数</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Wed, 23 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
+函数还有很多叫法，比如方法、子例程或程序，等等。
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）</description>
+    </item>
+    
+    <item>
+      <title>C 数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+数组是连续的、线性的，在内存中亦是如此。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。</description>
+    </item>
+    
+    <item>
+      <title>C 指针的使用</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+      <description>指针的使用 互换两个数字 #include &amp;lt;stdio.h&amp;gt;//*p = 1 *q = 5 void interchange(int * p,int * q) { // 将 t 作为两个值的互换媒介。  int t; // t = 1  t = *p; // *p = 5  *p = *q; // *q = 1  *q = t; } // 因为 *p 和 *q 分别指向于 a 和 b，所以，修改 *p 和 *q，就相当于修改 a 和 b， // 尽管 *p 和 *q 在函数指向完毕后已经被释放，但程序依旧通过 *p 和 *q，分别修改了 a 和b。 // 而 p 和 q，两者和 a 、b，并不一样，因为 p、q 中，存放的是指向 a、b 的地址。 // 由此可得出一个结论，函数的形参和实参， 永远不是一个 int main () {  int a = 1;  int b = 5; // 取 a、b 的地址  interchange(&amp;amp;a,&amp;amp;b);  printf(&amp;#34;a = %d,b = %d&amp;#34;,a,b); } 通过被调函数修改主调函数普通变量的值 函数的实参必须为该普通变量的地址。</description>
+    </item>
+    
+    <item>
+      <title>汉化 CodeBlocks</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</link>
+      <pubDate>Sat, 19 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B1%89%E5%8C%96-codeblocks/</guid>
+      <description>汉化 CodeBlocks 将汉化文件zh_CN.mo放置到路径D:\AppInstallPath\CodeBlocks\share\CodeBlocks\locale\zh_CN（没有文件夹就自行创建）
+打开 CodeBlocks，Settings — Environment — View — Internationalization(勾选)，选择Chinese(Simplified)</description>
+    </item>
+    
+    <item>
+      <title>C CPU 如何对内存条进行处理</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/cpu-%E5%A6%82%E4%BD%95%E5%AF%B9%E5%86%85%E5%AD%98%E6%9D%A1%E8%BF%9B%E8%A1%8C%E5%A4%84%E7%90%86/</guid>
+      <description>CPU 如何对内存条进行处理 CUP 处理内存条中的数据时，需要通过控制线（只读或只写）、数据线（数据传输）和地址线（确定将要处理的是哪一个内存单元）处理内存条中的数据。
+32 位系统最大支持 4G 内存。
+64 位 系统最大支持 192G 内存。</description>
+    </item>
+    
+    <item>
+      <title>C 基本类型指针</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/</guid>
+      <description>基本类型指针 #include &amp;lt;stdio.h&amp;gt; int main () { 	int * p; // 定义一个指针变量 p，且这个 p 只能存放 int 类型的地址， 	int i = 20; 	p = &amp;amp;i; // &amp;amp;i 表示获取变量 i 的内存地址 //这时候 p 中，存放的就是指向变量 i 的内存地址，则 p 完全等同于 i.  	int j = * p; 	printf(&amp;#34;i = %d ,j = %d \n&amp;#34;,i,j);  	return 0; } 详解 *p #include &amp;lt;iostream&amp;gt;int main() {  int * p;  int i = 5;  p = &amp;amp;i; // p 保存了 i 的地址 // 修改 p 不会影响 i；修改 i 也不会影响 p，因为他们是不同的变量。 // *p = i，此时，修改 *p 就是修改 i，修改 i 就是修改 *p // 更准确的说，*p 是以 p 的内容为地址的变量。  *p = 99;  printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p);  i = 88;  printf(&amp;#34;i = %d,p = %d \n&amp;#34;,i,*p); } </description>
+    </item>
+    
+    <item>
+      <title>C 指针</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/</guid>
+      <description>指针 指针是 C 语言的灵魂。
+指针是一个地址；
+地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针本质就是一个操作受限的非负整数。
+指针只能进行减法运算，不能进行加乘除等运算。
+指针变量是存放编号的变量。
+八位（Bit）是一个字节，一个字节就是一个内存单元。
+int* 是 指向整型变量的指针，
+作用 表示一些复杂的数据结构。
+能够快速的传递数据。
+使函数返回一个以上的值。
+可以直接访问硬件。
+更方便的处理字符串。</description>
+    </item>
+    
+    <item>
+      <title>C 星号的含义</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Thu, 17 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%98%9F%E5%8F%B7%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description>星号的含义 </description>
+    </item>
+    
+    <item>
+      <title>C printf</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</link>
+      <pubDate>Tue, 04 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/printf/</guid>
+      <description>printf 用于将变量的内容输出到显示器.
+直接输出 printf(&amp;#34;字符串&amp;#34;); print(&amp;ldquo;输出控制符&amp;rdquo;,参数) int i = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o&amp;#34;, a);//将变量 i（数值 10） 的二进制代码以八进制输出，a 为参数。 printf(&amp;ldquo;输出控制符 1 输出控制符 2&amp;rdquo;,参数 1,参数 2)  int a = 10;  int i = 15;  printf(&amp;#34;%d %d\n&amp;#34;, a, i);//控制符和参数必须一一对应。 printf(&amp;ldquo;输出控制符 非输出控制符&amp;rdquo;,参数) int a = 10;//将数值 10 的二进制代码储存到变量 i 中 。 printf(&amp;#34;%o\n&amp;#34;,a);//将变量 i（数值 10 的二进制代码以八进制输出；\n 为非输出控制符。 </description>
+    </item>
+    
+    <item>
+      <title>C char</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/char/</guid>
+      <description>char 字符类型。
+在 C 语言中，单个字符必须使用单引号括起来，多个字符（字符串）必须使用双引号括起来。</description>
+    </item>
+    
+    <item>
+      <title>C scanf</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/scanf/</guid>
+      <description>scanf 通过键盘将数据输入到变量中。
+将从键盘输入的字符转化为输入控制符所规定类型的数据，然后存入以输入参数的值为地址的变量中。
+使用 scanf 之前先使用 printf 提示用户以什么样的方式输入内容。
+scanf 中使用非输入控制符时，尽量使用空格，不建议使用其他的符号。
+scanf(&amp;ldquo;输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;%d&amp;#34;,&amp;amp;i);//i&amp;amp; 表示变量 i 的地址，&amp;amp; 是一个取地址符，也就是将输入的整数类型的值放入到变量 i 中。 printf(&amp;#34;%d\n&amp;#34;,i); scanf(&amp;ldquo;非输入控制符 输入控制符&amp;rdquo;,输入参数) int i; scanf(&amp;#34;z%d&amp;#34;,&amp;amp;i);//非输入控制符 z （z 可以是任意值）必须同输入控制符一起输入 。 printf(&amp;#34;i = %d\n&amp;#34;,i); </description>
+    </item>
+    
+    <item>
+      <title>C switch</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</link>
+      <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/switch/</guid>
+      <description>switch 它是一种选择控制语句。
+switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，
+该语句的功能只是退出 switch 语句转去执行它下面的语句，
+在 switch 中，出现 continue 是错误的，除非当前 switch 在 for 或 while 之中。
+当我们使用它时，它会去寻找与表达式结果所匹配的子表达式（case），并执行子表达式后面的所有语句，直到遇到 break 停止执行。
+我们来看下面这个程序：
+#include &amp;lt;stdio.h&amp;gt; int main () {  char fraction ; 	printf(&amp;#34;请输入您的等级：&amp;#34;); 	scanf(&amp;#34;%c&amp;#34;, &amp;amp;fraction); 	// 测试请键入 A 	switch(fraction) { 	case &amp;#39;A&amp;#39; : 	printf(&amp;#34;很棒！\n&amp;#34; ); 	case &amp;#39;B&amp;#39; : 	printf(&amp;#34;还不错哦\n&amp;#34; ); 	case &amp;#39;C&amp;#39; : 	printf(&amp;#34;做得好\n&amp;#34; ); 	break; 	case &amp;#39;D&amp;#39; : 	printf(&amp;#34;您通过了\n&amp;#34; ); 	break; 	case &amp;#39;F&amp;#39; : 	printf(&amp;#34;最好再试一下\n&amp;#34; ); 	break; 	default : 	printf(&amp;#34;无效的成绩\n&amp;#34; ); 	} 	printf(&amp;#34;您的等级是 %c\n&amp;#34;, fraction);  	return 0;  } 当我们键入 A 时，会发现程序不仅仅执行了与主表达式匹配的子表达式 A 后面的代码块，连着后面的子表达式 B 和 C 后面的代码块也一起执行了。</description>
+    </item>
+    
+    <item>
+      <title>Java IO 流</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/io-%E6%B5%81/</guid>
+      <description>IO 流 import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream;  public class ShuRuShuChu {  public static void main(String[]args) throws Exception { //写入  String str=&amp;#34;写入成功！&amp;#34;;  File xieru=new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileOutputStream fos=new FileOutputStream(xieru,true);  byte[] words=str.getBytes();  fos.write(words,0,words.length);  //读取  File file2 = new File(&amp;#34;C:\\Users\\admin\\Desktop\\期末考试\\李白.txt&amp;#34;);  FileInputStream fis = new FileInputStream(file2);  byte[] b = new byte[1024];  int len = fis.read(b);  while (len != -1) {  String data = new String(b);  System.</description>
+    </item>
+    
+    <item>
+      <title>Java 卖票问题</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%8D%96%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
+      <description>卖票 Ticket Class public class Ticket {  public static int chepiao = 1000;  public String name;  public String a = new String(&amp;#34;222&amp;#34;);   public Ticket(String name) {  this.name = name;  }   public void run() {  while (true) {  synchronized (a) {  if (chepiao &amp;gt; 0) {  System.out.println(this.name + &amp;#34;正在卖第&amp;#34; + (1001 - chepiao) + &amp;#34;张票&amp;#34;);  chepiao--;  } else {  break;  }  }   }  } } ThreadOne Class public class ThreadOne implements Runnable {  public static int chepiao = 1000;  public String name;  public static String aa = new String(&amp;#34;111&amp;#34;);   public ThreadOne(String name) {  this.</description>
+    </item>
+    
+    <item>
+      <title>Java 生产者消费者模式</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E6%A8%A1%E5%BC%8F/</guid>
+      <description>生产者消费者模式 工厂类 public class Factory {  int num=0;   //库存 // 开始生产  public synchronized void addProduct() throws InterruptedException {  if(num &amp;gt;= 10){  System.out.println(&amp;#34;库存已满，不能再生产了!&amp;#34;);  //强制当前线程等待，知道其他线程在同一个对象调用notify()方法后释放  this.wait();  }else {  Thread.sleep(1000);  num++; //生产出商品  System.out.println(&amp;#34;生产者生产了一个商品，当前库存为: &amp;#34; + num);  //唤醒消费商品的线程  this.notify();  }  }  //开始消费  public synchronized void subProduct() throws InterruptedException {  if(num == 0){  System.out.println(&amp;#34;商品已经被抢光了！请等待补货...&amp;#34;);  this.</description>
+    </item>
+    
+    <item>
+      <title>Java 继承</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Sun, 19 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E7%BB%A7%E6%89%BF/</guid>
+      <description>继承 Phone Class public class Phone extends Dianhua implements Mp3 {  public void playmusic(){  System.out.println(&amp;#34;播放音乐&amp;#34;);  }  public void call(){  System.out.println(&amp;#34;可以打电话&amp;#34;);  }  public void dh(){  System.out.println(&amp;#34;可以高得地图导航&amp;#34;);  } } Telephone Class public abstract class Telephone {  public abstract void call();  public abstract void dh(); } Mp3 Interface public interface Mp3 {  abstract void playmusic(); } Test Class public class Test {  public static void main(String[] args) {  Phone c=new Phone();  c.</description>
+    </item>
+    
+    <item>
+      <title>Java 字符流和字节流</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</link>
+      <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%AD%97%E7%AC%A6%E6%B5%81%E5%92%8C%E5%AD%97%E8%8A%82%E6%B5%81/</guid>
+      <description>字节流 package yxzi.xyz;  import java.io.File; import java.io.FileInputStream; import java.io.FileOutputStream; import java.io.FileReader;  public class Rainy {  public static void main(String[] args) throws Exception {  File file = new File(&amp;#34;C:\\Users\\admin\\Desktop\\java\\File.txt&amp;#34;); // 字节输入流  FileInputStream wj = new FileInputStream(file);  // 字节输出流  FileOutputStream outinput = new FileOutputStream(&amp;#34;C:\\Users\\admin\\Desktop\\java\\副本.txt&amp;#34;);  // 创建一个字符数组---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  byte arr[] = new byte[1024];  int len = wj.read(arr);  while (len != -1) { // String data = new String(arr); //// System.</description>
+    </item>
+    
+    <item>
+      <title>Java 遍历集合</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</link>
+      <pubDate>Sat, 20 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E9%81%8D%E5%8E%86%E9%9B%86%E5%90%88/</guid>
+      <description>遍历集合 package Yxzi;  import java.util.ArrayList; import java.util.HashMap; import java.util.Iterator;  public class Test {  public static void main(String[] args) throws Exception {  ArrayList &amp;lt;Student&amp;gt; arr = new ArrayList();   Student obj1 = new Student(&amp;#34;小明&amp;#34;, 23);  Student obj2 = new Student(&amp;#34;小红&amp;#34;, 18);  Student obj3 = new Student(&amp;#34;小花&amp;#34;, 13);  Student obj4 = new Student(&amp;#34;小黑&amp;#34;, 11);  Student obj5 = new Student(&amp;#34;小白&amp;#34;, 23);   arr.add(obj1);  arr.</description>
+    </item>
+    
+    <item>
+      <title>Less &amp; 符号</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的 css 变为且的关系，而没有使用&amp;amp;的 css 是父子的关系
+&amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
+如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
+Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}} 解析后的 Css 代码 .mainbox .column:nth-child(2) { 	flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { 	flex: 5; } </description>
+    </item>
+    
+    <item>
+      <title>var 和 let 的区别</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
+在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
+而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
+let 不能在定义之前访问该变量，但是 var 可以。 let 必须先声明，在使用。而 var 先使用后声明也行，只不过直接使用但没有定义的时候，其值是 undefined。var 有一个变量提升的过程，当整个函数作用域被创建的时候，实际上 var 定义的变量都会被创建，并且如果此时没有初始化的话，则默认为初始化一个 undefined
+let 不能被重新定义，但是 var 是可以的 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript arguments</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
+arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
+注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
+arguments 对象不是一个 Array ；但它类似于 Array，但除了有 length 属性和索引的特性之外没有任何其他 Array 属性。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript eval</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</guid>
+      <description>eval eval()函数会将传入的字符串当做 JavaScript 代码来执行。
+在 JavaScript 中，有一句话叫：
+eval 是魔鬼。
+console.log(eval(&amp;#39;2 + 2&amp;#39;)); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Function</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
+全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
+Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+function demo(name, age) { 	this.name = name; 	this.age = age; 	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript function</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</guid>
+      <description>function 地方</description>
+    </item>
+    
+    <item>
+      <title>JavaScript isNaN</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</guid>
+      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
+如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
+返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</guid>
+      <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
+引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
+计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
+在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754 标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持 52 位，就会出现运算精度不准的问题。
+1000000000000001 + 1000000000000001 = 2000000000000002，即在 JavaScript 中，可正常计算范围在小数点前 16 位与后 16 位。
+function One() { 	for (var c = 0; c &amp;lt; 18; c++) { 	var d = Math.random().toFixed(2) * 100; 	// 首先取 0-1 的随机数，然后取这个数小数点后的两位数，最后乘 100，并赋给变量 d 	var e = Math.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript new</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</guid>
+      <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
+调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Number</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</guid>
+      <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
+Number 的方法 toString() NumObj.toString(radix)
+ 将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Object</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</guid>
+      <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
+创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { 	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, 	// b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { 	this.color = color; 	// color为可选参数 	this.name = &amp;#39;bird&amp;#39;; 	this.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parseFloat</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</guid>
+      <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript parselnt</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</guid>
+      <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
+将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
+当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
+若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
+// n 进制转十进制-------------------------------------------------- var n = 10010; var c = 2; // 变量 n 可为 8，16，32。 var a = parseInt(n, c); // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 console.log(a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript return</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
+字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { 	return +n; 	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript this</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</guid>
+      <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
+通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Window 对象</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</guid>
+      <description>Window 对象 Window 对象表示浏览器中打开的窗口。
+如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
+Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
+setTimeout() 使函数或代码在经过一段指定的时间才开始执行。
+clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript XMLHttpRequest</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</guid>
+      <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
+状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
+responseText 当一个请求被发送后，该属性会返回服务器端的文本。
+onreadystatechange 该属性会在属性 readyState 发生改变的时候被调用。
+XMLHttpRequest 的方法 open 用于初始化一个请求。
+send 用于向服务端发送一个 HTTP 请求。
+注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 作用域</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
+每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
+父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
+作用域都是独立的 声明多个同级函数时，这些函数的作用域链都是独立的，即每个同级函数中的局部变量不可以公用，但它们都可以使用全局中的变量；这些作用域链会随着对应函数的执行完毕而依次释放。
+全局作用域 在全局作用域（GO 对象）中的变量为全局变量，全局变量的的作用域为整个脚本，这类变量在脚本中的任何地方（包括函数内部）能被调用。
+它们通常指在全局中定义的变量或没有使用 var 声明的暗示全局变量。
+这些变量都在全局作用域中：  函数外声明的变量。 函数中没有使用 var 声明的变量。  局部作用域 局部作用域（AO 对象）中的变量为局部变量，局部变量的作用域仅限于某个特定的函数，这类变量可以在特定的函数中调用。
+每个函数内部都会创建一个局部作用域，当一个函数（父函数）中包含另一个函数（子函数），则父函数不能调用子函数的变量，但子函数可以调用父函数的变量；并且两个独立且同级的函数中的局部变量不能公用，只能各用各的局部变量。
+这些变量都在局部作用域中：  它们通常指在函数中定义的变量或函数的形式参数。 函数中使用 var 声明的变量。 函数中的形式参数。  累加器 function One() { 	var b = 0; 	function Two() { 	b++; 	console.log(b); 	} 	a = Two; 	// 变量 a 是一个暗示全局变量，用变量 a 接收函数 Two } One(); //调用函数 One，使暗示全局变量 a 可以执行 a(); // 执行变量 a，相当于执行函数 Two，每执行一次变量 a，就会使 b 在原来的的结果上自增一次。 a(); a(); 作用域链 function One() { 	// 声明函数 One 时，系统会隐式创建 One.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
+每一个函数其实都是一个 Function 类型的对象。
+函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
+声明方式 基本方式 直接通过 function 关键字进行声明。
+function demo(a, b) { 	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a + b); 	// 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { 	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 函数的参数</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
+在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
+函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
+函数运行结束的时候形参被释放，而实参内容不会改变。
+实参 实际参数，是在调用函数时传递给函数的参数， 实参可以是常量、变量、表达式、函数等， 无论实参是何种类型的量，在进行函数调用时，它们都必须具有确定的值， 以便把这些值传送给形参， 因此应预先用赋值，输入等办法使实参获得确定值。
+function demo(a, b) { 	// 定义两个形参。 	var f, 	g = &amp;#39;&amp;#39;; 	for (var e = 0; e &amp;lt; arguments.length; e++) { 	// arguments 对象的属性 length 表示实参（实参列表）的数量。 	f = arguments[e]; 	// 遍历所有实参 	console.log(&amp;#39;遍历的实参:&amp;#39; + f); 	} 	g = arguments.length; 	// 返回实参的数量 	// arguments 对象类似数组，但却不是数组。 	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 分支与循环</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <description>分支与循环 if 单一的 if 语句 if (条件) { 	要执行的语句块; } if else 语句 if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 多重 if 语句嵌套 if (条件) { 	要执行的语句块; } else if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+另外，可以用函数表达式定义函数？
+switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
+n = &amp;#39;老虎&amp;#39;; switch (n) { 	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 	// 可以使用 break 语句终止执行该代码块之后代码块。 	case &amp;#39;老虎&amp;#39;: 	case &amp;#39;虎&amp;#39;: 	case &amp;#39;白虎&amp;#39;: 	case &amp;#39;母老虎&amp;#39;: 	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 包装类</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
+因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
+Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
+数字类型的对象可以进行学运算，但运算的结果，这个对象会变回原始类型的数值。
+String 将原始类型的字符串，转换为 String 对象，它的原型是 String.prototyp。
+当原始值字符串直接调用属性 length 时，系统会对这个原始值字符串进行包装类，使之变为对象字符串，又因为字符串对象自带属性 length，因此系统不会将这个属性 delete 删掉，所以最终将属性 length 的值返回。
+Boolean 将原始类型的布尔值，转换为 boolean 对象，它的原型是 Boolean.prototyp。
+注意 因为 Number、String、boolean 它们本身重写了（用一个同名不同功能的方法覆盖系统自带的方法）一个 xxx.prototype.toString 方法，所以它们不会用原型上 Object.prototype 的 toString 方法。
+var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new Boolean(&amp;#39;true&amp;#39;); console.log(typeof a); console.log(typeof b); console.log(typeof c); // 返回三个 object 数值包装类运算 var num = new Number(123); //原始值 num 被进行包装类，因此它变成了 对象 123。 console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 区分对象与数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = [];  var obj = {};  var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</guid>
+      <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
+__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
+原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
+// Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） // 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； // Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; // Demo.prototype.size = &amp;#34;500&amp;#34;; // Demo.prototype.height = &amp;#34;1400&amp;#34;; // Demo.prototype.width = &amp;#34;800&amp;#34;; //上面代码可以简化为： Demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原型链</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
+几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
+可以使用对象的属性 proto 实现继承。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 原始值和引用值</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
+原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
+Number 数值，用整数或浮点数表示，它允许任意位的小数。
+String 字符串，由零个或多个字符构成，它必须被包含在双引号或双引号内。
+与数组一样的是，字符串中的每个字符都有一个下标，这些下标从 0 开始。因此，它有属性 length。
+Boolean 布尔，表示一个逻辑值，只有 true 或 false 两个值。
+BigInt 任何精度格式的整数，是一种比 Number 数据类型支持的范围更大的整数值。用于安全地存储和操作大整数。
+Symbol 符号，它是唯一的并且是不可修改的。
+undefined 未定义，它只有一个值 undefined，指一个声明未描述的变量的初始值或一个变量直接赋值为 undefined，或没有实际参数的形式参数
+Null 空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。
+原始值的储存原理 a = 10; // 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 // 栈内存： // a ： 10 var b = a; // 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 // 栈内存： // a ：10 // 拷贝变量 10 // b ：10 a = 20; // 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 // 栈内存： // a ：10（已关闭） // b ：10 // a ：20 （新的变量 a） 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 变量的声明方式</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
+var var 可以声明局部变量与全局变量。
+使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
+若用 var 声明一个变量，但没有进行赋值，则变量的默认值为 undefined。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 命名空间</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
+简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
+作用 私有化变量 function Demo() { 	var healthy = 0; 	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { 	healthy++; 	};  	this.injured = function () { 	healthy--; 	};  	this.view = function () { 	console.log(healthy); 	}; }  var demo = new Demo();  demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 字符串截取</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
+      <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 属性调用</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
+var demo = { 	wife1: { name: &amp;#39;lei&amp;#39; }, 	wife2: { name: &amp;#39;zheng&amp;#39; }, 	wife3: { name: &amp;#39;xing&amp;#39; }, 	wife4: { name: &amp;#39;zhu&amp;#39; }, 	fun: function (num) { 	var a = [&amp;#39;wife&amp;#39; + num]; 	console.log(a); 	return this[&amp;#39;wife&amp;#39; + num]; 	// 看不太懂 	}, };  demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 开发原则</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
+平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
+向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
+性能考虑 减少访问 DOM 的和文档中标记的元素；过多的页面元素只会增大 DOM 树的规模。
+将多个 JavaScript 文件合并为一个；减少加载页面时发送的请求数量。
+压缩已完成的 JavaScript 脚本；将文件中的不必要的字节（空格、注释、回车符）统统删除，从而减少整体文件大小。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 立即执行函数</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
+用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
+它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
+只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
+多个 IIFE 之间要加分号。
+var demo = (function (a, b) { 	// 用变量 demo 接收 IIFE 的返回值 	a = Number(a); 	b = Number(b); 	var c = (a + b) * 10; 	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; 	// 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { 	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 继承方式</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
+Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {}  var grandfather = new Grand();  Father.prototype = grandfather;  function Father() { 	this.red = &amp;#39;red&amp;#39;; 	this.money = { 	card: &amp;#39;pencil&amp;#39;, 	}; 	this.value = &amp;#39;100&amp;#39;; }  var father = new Father();  Son.prototype = father;  function Son() { 	this.orange = &amp;#39;orange&amp;#39;; } var son = new Son();  console.log(son.orange); // 返回 orange。 console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 节点</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/%E8%8A%82%E7%82%B9/</guid>
+      <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
+元素节点 指文档中的元素。
+文本节点 指文档中元素所包含着的文本。
+属性节点 指文档中元素的属性；属性都被包含在元素中。
+节点的属性 childNodes 返回一个指定节点所包含的所有子节点的集合。
+nodeValue 返回或设置当前节点的值。
+注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
+nodeName 返回指定节点的大写字母形式的节点名。
+nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 运算符</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
+操作数前置或后置
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&amp;ndash; a&amp;ndash; 或 &amp;ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+操作数前置或后置
+若位于数值的之后（a&amp;ndash;），则会递减之前返回数值。
+若位于数值的之前（&amp;ndash;a），则会递减之后返回数值。
+比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
+对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
+对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
+对于关系运算符（ &amp;lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
+原始值比较的是值，引用值比较的是引用地址。
+In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
+Instanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。
+2 &amp;gt; 3 &amp;lt; 1
+先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 递归</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
+缺点：影响程序的效率与性能。
+递归实现阶乘 var n = 5; function OneOne(n) { 	if (n == 1) { 	//将当 n 等于 1 时作为结束条件 	return 1; 	// 返回值为 1 	} 	return (n = n * OneOne(n - 1)); 	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 链式调用</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <description>链式调用 模仿一个 jQuery 链式调用的方式。
+var demo = { 	a: function () { 	console.log(123); 	return this; 	// 将函数自身返回。 	},  	b: function () { 	console.log(456); 	return this; 	// 将函数自身返回。 	},  	c: function () { 	console.log(789); 	return this; 	//将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 闭包</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</guid>
+      <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
+生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
+闭包的优缺点 优点 避免全局变量的污染。
+使变量长期储存在内存中。
+缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
+function demo() { 	function test() { 	var d = 345; 	console.log(c); 	// 虽然函数 test 中没有变量 c，但因为函数 test 可以使用函数 demo 的 AO， 	// 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 	} 	var c = 123; 	return test; 	// 将函数 test 返回，即将函数 test 与它的作用域一起保存到了外部， 	// 使的函数 demo 可以使用函数 test 的 AO } var e = demo(); // 用变量 e 接收函数 demo 的返回值，也就是接收函数 test 以及它的 AO e(); // 调用变量 e，即相当于执行函数 demo 的返回值 // 父函数 demo 执行完毕后，释放了自己的 AO，但子函数 test 在这之前已经将父函数 demo 的 AO 保存了起来， // 所以它会到函数 demo 的作用域中去寻找变量 c，然后返回 123 function demo() { 	var b = &amp;#39;apple&amp;#39;; 	var obj = { 	c: function () { 	// 给对象 obj 添加一个属性 c ，属性值为一个函数 	if (b !</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 预编译</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
+预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
+函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。
+变量声明提升 使用 var 声明的变量，不管在这之前还是之后调用该变量，并不会报错，会返回 undefined。
+暗示全局变量 暗示全局变量（imply global），一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性； 任何全局变量，都是 window 的属性，即可以通过 window 对象调用全局变量。window 就是全局的域，它包括了全局变量和全局函数。
+暗示全局变量不会进行变量声明提升。
+a = 10; // 一个变量未声明就赋值，那么此变量就是 window（全局对象）的属性，也叫暗示全局变量 // 相当于 window.a = 10; // 相当于 window = { 	a: 10, };  //一切声明了的全局变量，都是 window 的属性 var b = 20; // 相当于 window.b = 20; // 相当于 window = { 	b: 20, }; // 调用变量 b，相当于调用全局对象 window 的属性 b，即 console.</description>
+    </item>
+    
+    <item>
+      <title>C break</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/break/</guid>
+      <description>break 用于终止循环或退出 switch.
+不能直接用于 if，除非 if 是循环的一个子句。</description>
+    </item>
+    
+    <item>
+      <title>C 循环控制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</guid>
+      <description>循环控制 某些代码被重复执行。
+for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
+for(1; 2; 3) {  A; } 其中 1 只执行一次。
+3 执行完后才意味着一次 for 循环执行完毕。
+3 执行完后一定会再执行一次 2，且不管表达式 2 的结果为 true 或 false 都会执行一次 2。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	int sum = 0; 	for (int i = 1;i &amp;lt; 10;i++) 	printf(&amp;#34;%d\n&amp;#34;, i); 	//0 - 10 的自然数。 } 1 - 10 所有奇数之和 #include &amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>C 自增与自减</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%87%AA%E5%A2%9E%E4%B8%8E%E8%87%AA%E5%87%8F/</guid>
+      <description>自增与自减 前自增**++i与后自增i++**.
+异同 相同 最终都会使 i 的值加 1.
+不同 i++ 返回原来的值，
+++i 返回加 1 后的值。
+#include &amp;lt;stdio.h&amp;gt; int main() {  int a,b,c,d;  a = b = 3;  c = a++;  // return 3  d = ++b;  // return 4  printf(&amp;#34;c = %d\nd = %d&amp;#34;,c,d);  return 0; } </description>
+    </item>
+    
+    <item>
+      <title>C 运算符</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 三目运算符 a ? b : c 相当于 if 语句
+if (a);  b; else  c; return 0; 逗号表达式 (a,b,c,d) 从左向右执行，表达式最终的值是 d 的值。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int i;  int c = 2;  i = (c++, ++c, c + 2, c - 3);  // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.</description>
+    </item>
+    
+    <item>
+      <title>C 选择控制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</guid>
+      <description>选择控制 某些代码可能执行，也可能不执行，有选择的执行某些代码。
+if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
+如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
+#include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A; 	B; } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;被 if 语句控制\n&amp;#34;); 	printf(&amp;#34;不被 if 语句控制\n&amp;#34;); } if 语句默认只能控制一个 A，如果想控制多个语句（A 和 B），就必须将 A 和 B 用 {} 括起来。</description>
+    </item>
+    
+    <item>
+      <title>C 顺序控制</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A1%BA%E5%BA%8F%E6%8E%A7%E5%88%B6/</guid>
+      <description>顺序控制 从上到下的执行代码，中间没有任何判断或跳转。</description>
+    </item>
+    
+    <item>
+      <title>C 预备知识</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/</guid>
+      <description>预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
+因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
+CPU 再对内存中的数据进行处理。
+因为 CPU、内存、显卡（控制显示器的正确显示）、硬盘都是安装在主板上的，因此主板是一个组织它们如何有效运行的硬件。
+程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。
+软件不能直接控制硬件。
+什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。
+int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
+垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC++ 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。
+软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
+一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
+当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
+进制 B 表示二进制、O 表示八进制、D 表示十进制、H 表示十六进制。
+N 进制表示逢 N 进一。
+用几种不同的进制表示同一个数，虽然使用的进制不一样，但都表示的同一个数，只是外部的表现形式不一样而已。
+二进制的规律  1 = 1 10 = 21 100 = 22 1000 = 23 10000 = 24  给定一个 N 进制的数 25，转换为十进制为：5 + 2 * N。</description>
+    </item>
+    
+    <item>
+      <title>Html img 的常见问题</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/img-%E7%9A%84%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</guid>
+      <description>img 的常见问题 关于无法设置宽高 如果该元素的图像链接失效，则该元素的特性会与行盒一样，无法设置宽高；如果想要图像链接失效后仍具有宽高，可以将该元素设置为块盒或者行块盒。
+关于图像底部的留白 当任何一个元素（例如 div）内包含行盒（例如 img）时，该 img 行盒就会在这个 div 元素的内部创建参考线，即这个 div 元素在没有设置下外边距的情况下，img 元素的基线（下外边距的底部）会与父元素的基线对齐（即留白部分就是 img 元素的下外边距），因此导致图像底部有留白。
+解决方法：
+ 第一种是将父元素的字体大小设置为零，则父元素的内部就不会产生参考线。 第二种是将 img 元素设置为块盒，因此其父元素的内部就没有包含行盒，因此不会在其父元素内部产生参考线。  </description>
+    </item>
+    
+    <item>
+      <title>Html 元素语义化</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E5%85%83%E7%B4%A0%E8%AF%AD%E4%B9%89%E5%8C%96/</guid>
+      <description>元素语义化 前言 在 HTML 5 中，新增了许多元素，这些不同的元素都有不同的含义，因此语义化指的是用最合理、最恰当的元素来标记网页内容，使得机器也可以知道页面中有哪些元素，比如，文章、标题、或是段落。
+语义化的优点  使文档在没有 CSS 样式的条件下，也能很好地呈现出内容结构。 使文档结构变的清晰，更具可读性，且利于后期的代码维护。 方便其他设备解析（屏幕阅读器、盲人阅读器、移动设备等）。 有利于 SEO。  </description>
+    </item>
+    
+    <item>
+      <title>htm、html、shtml 后缀的区别</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/htmhtmlshtml-%E5%90%8E%E7%BC%80%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>htm、html、shtml 后缀的区别 首先 htm、html、shtml 都是静态网页的后缀，三者也可以说都是只是扩展名不同，其他一样，都是静态的网页。
+Htm 和 html 是完全静态的网页不通过服务器编译解释直接送出给浏览器读取的静态网页，以 htm 和 html 伪静态 Request 除外。
+html、htm、shtml、shtm 均是静态 html 网页，都是网页文件后缀名不同的 html 网页扩展名。
+htm html 与 htm 均是静态网页后缀名，网页文件没有区别与区分，html 与 htm 后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为 html 与 htm 没有本质区别，只是两者适用于不同的运行环境（DOS 和 UNIX）之下。
+shtml shtml 命名的网页文件里，使用了 ssi 的一些指令，就像 asp 中的指令，你可以在 SHTML 文件中写入 SSI 指令，当客户端访问这些 shtml 文件时，服务器端会把这些 SHTML 文件进行读取和解释，把 SHTML 文件中包含的 SSI 指令解释出来。</description>
+    </item>
+    
+    <item>
+      <title>Java 冒泡排序</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.out.println(&amp;#34;排序前：&amp;#34;);  //打印排序前的数组元素  printArray(arr);  //数组排序的方法  bubbleSort(arr);  System.out.println(&amp;#34;排序后：&amp;#34;);  //打印排序后的数组元素  printArray(arr);  }  //定义打印数组中所有元素的方法  public static void printArray(int[] arr) {  for (int i = 0; i &amp;lt; arr.length; i++) {  //返回当前数组中所有的元素  System.out.print(arr[i] + &amp;#34;&amp;#34;);  }  System.out.println(&amp;#34;\n&amp;#34;);  // 返回后换行  }  //定义冒泡排序的方法  public static void bubbleSort(int[] arr) {  // arr.</description>
+    </item>
+    
+    <item>
+      <title>Java 基础</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/java-%E5%9F%BA%E7%A1%80/</guid>
+      <description>基础 类、对象 、属性、封装 类可以理解成对象的集合。比如 class person，定义一个人物类，这是一个抽象的概念。
+对象可以理解为类中的一个元素，比如利用 person 这个人物类 new 一个“小明”，这个小明，就是一个具体的东西。
+赋予这个小明一些属性，比如眼睛，鼻子，身高，这就是这个对象的属性。
+赋予小明会编程、会跳舞唱歌的能力，这些就是这个对象的方法，你可以利用（调用）这些方法，让小明这个对象帮你写代码、唱首歌或跳支舞。
+至于封装，我的理解是将内部的代码封装起来，然后提供一个接口供我们访问。比如电脑主机的开机键就是一个接口，我们点击开机键，就是调用这个电脑的一个接口，至于开机的内部过程或操作细节由电脑自行完成，我们无法干涉。
+至于继承，还不知道。
+void 的作用 void 表示一个方法中没有 return 任何数据类型，如果方法中 return 了某种数据类型，那么 void 会被替换为这种数据类型。
+void Show1() {  int a = 123; }  int Show2() {  int a = 123;  return a; } public、protected、default（什么都不写）、private，表示访问控制的权限
+private void Show1() {  int a = 123; }  // 相当于 default int Show2() int Show2() {  int a = 123;  return a; } </description>
+    </item>
+    
+    <item>
+      <title>Vs Code 配置 Java</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
+  属性
+  高级系统设置
+  高级选项卡
+  环境变量
+  系统变量
+  新建 JAVA_HOME 变量  变量名：JAVA_HOME。 值为：Java JDK 的安装路径。 确定  找到已存在的名为 Path 的变量  编辑 新建 输入：%JAVA_HOME%\jre\bin，确定 再新建，输入：%JAVA_HOME%\bin，确定 保存即可  新建 Classpath 变量   变量名：Classpath，
+  值为：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+  测试环境配置是否成功 快捷键 Win + R，搜索 cmd 并 Enter，然后在命令行输入java以及javac.
+安装 vs code 扩展 java extension pack。</description>
+    </item>
+    
+    <item>
+      <title>What is PHP</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</link>
+      <pubDate>Sat, 30 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</guid>
+      <description>What is PHP PHP 是一种运行在服务器端的脚本语言。
+PHP Hyper text Pxeprosessor, php. 超文本预处理器，底层使用 C 语言。
+所支持的数据库有：Sqlservex、Mysql、Oracle、Access</description>
+    </item>
+    
+    <item>
+      <title>安装 Apache</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%AE%89%E8%A3%85-apache/</link>
+      <pubDate>Thu, 07 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%AE%89%E8%A3%85-apache/</guid>
+      <description>安装 Apache 官方下载地址Apache 进不去的话，就挂个 VPN，下载好后解压，我们会得到一个名为 Apache24 的文件夹，我们先将这个文件夹放到你想要放置的目录，我这里是D:\AppInstallPath\Apache24.
+目录文件解析 bin 和 cgi -bin 文件夹是 windows 下的一些可执行文件。
+conf 文件夹是 Apache 的配置文件目录。
+error 文件夹是 Apache 的错误日志。
+htdoce 文件夹是 Apache 的默认主机地址（网站的根目录文件，默认为 index）。
+modules 文件夹是 Apache 的模块，Apache 的所有功能都是模块化的，你想要什么功能，就可以在配置文件中去加载对应功能的模块（so 后缀的文件）
+bin 文件夹解析 ab.exe 是提供压力测试（当很多人访问你的网站时，你的网站是否能承载）的一个程序。
+ApacheMonitor.exe 是管理右下角最小化的图标的。
+httpd.exe 很重要。
+conf 文件夹解析 httpd.conf 是主配置文件。
+extra 文件夹中都是子配置文件（比如 httpd-vhosts.conf），当我们需要用这些子配置文件的时候，我们需要到主配置中文件中去加载这些子配置文件。
+Httpd.exe 代表着服务器的进程，它运行之后，服务器才能运行。</description>
+    </item>
+    
+    <item>
+      <title>静态网站和动态网站</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+      <description>静态网站和动态网站 静态网站的特点  网页内容一经发布到网站服务器上，无论是否有用户访问，每个静态网页的内容都是保存在网站服务器上的,也就是说,静态网页是实实在在保存在服务器上的文件，每个网页都是一个独立的文件。 静态网页的内容相对稳定，因此容易被搜索引擎检索。 静态网页没有数据库的支持，在网站制作和维护方面工作量较大，因此当网站信息量很大时完全依靠静态网页制作方式比较困难。 静态网页的交互性较差，在功能方面有较大的限制，当我们要修改网页上文件时，需要将修改后的文件覆盖服务器上的源文件。  动态网站的特点  交互性强，网页会根据用户的要求和选择而动态地改变和响应，网页上的数据都是从数据库中获取的，并且用户的操作，也可以对网页上的数据进行实时的更新。 自动更新，即无须手动更新 HTmL 文档,便会自动生成新页面，可以大大节省工作量。 因时因人而变，在不同时间、不同用户访问用一个网址时，会出现不同页面。 在动态网页的网址中有一个标志性的符号“?”。  </description>
+    </item>
+    
+  </channel>
+</rss>

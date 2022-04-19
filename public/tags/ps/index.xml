@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PS on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/ps/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/ps/</link>
     <description>Recent content in PS on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/ps/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/ps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>制作光晕</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%85%89%E6%99%95/</guid>
       <description>制作光晕  新建透明图层。 将该图层填充为纯黑色。 菜单栏——滤镜——渲染——镜头光晕——调整参数——确定。  </description>
     </item>
     
     <item>
       <title>制作剪影</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E5%89%AA%E5%BD%B1/</guid>
       <description>制作剪影  导入图像。 工具栏——快速选择工具。 建立选区。 属性栏——创建或调整选区——调整参数——输出设置——输出到：图层蒙版——确定。 图层面板——创建新的填充或调整图层——纯色——选择颜色——确定。 将纯色图层作为图像的背景。 复制一次图像层——Ctrl + J。 选择位于下方的图像层。 图层面板——添加图层样式——颜色叠加——调整颜色——确定。 移动工具——将位于下方的图像层调整到合适的位置。  </description>
     </item>
     
     <item>
       <title>制作灰度图</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E5%88%B6%E4%BD%9C%E7%81%B0%E5%BA%A6%E5%9B%BE/</guid>
       <description>制作灰度图  新建——颜色模式——灰度。 工具栏——渐变工具——黑白渐变。 调整渐变样式。  </description>
     </item>
     
     <item>
       <title>裁剪图形</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/photoshop/%E8%A3%81%E5%89%AA%E5%9B%BE%E5%83%8F/</guid>
       <description>裁剪图形  导入图像。 解锁当前图像所在的图层。 菜单栏——图像——画布大小——调整参数——确定。 调整图像将要被被保留的部分。  </description>
     </item>
     

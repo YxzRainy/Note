@@ -3,9 +3,9 @@ title: PHP 环境配置
 date: 2022-03-02 6:00:00
 updated: 2022-03-02 6:00:00
 categories:
-        - 编程技术
+        - 编程语言
 tags:
-        - Php
+        - PHP
         - 后端
         - 学习笔记
 ---
@@ -25,7 +25,7 @@ PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的**集成开发环境
 
 安装完成后，打开 PHPStudy，会出现以下界面：
 
-![image-20220303002913840](E:\Github\MyBlog\content\mynote\4 Specialty\Language\PHP\PHP 环境配置.assets\image-20220303002913840.png)
+![]E:\Github\MyBlog\content\mynote\4  Specialty\Language\PHP\PHP 环境配置.assets/1.png)
 
 另外，PHPStudy 会在安装目录下的 **phpstudy_pro\Extensions** 路径形成目录结构：
 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 动态分配内存",
+	    "headline" : "C 动态分配内存",
+	    "description" : "动态内存分配 传统数组的缺点 传统数组也叫静态数组，也属于静态内存\n  数组长度必须事先指定，且只能是长整数，不能是变量。\n  传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。\n#include \u0026lt;stdio.h\u0026gt;void fun(void){  \/\/ 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，  \/\/ 只能在本函数（fun 函数）运行完毕后由系统自动释放  int a[5] = {1,2,3,4,5}; } int main () {  }   数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。\n  Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。\n  动态数组（动态内存） 动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-30 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-30 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98\/",
+	    "keywords" : [ "C","指针","学习笔记", ]
+	}
+</script><title>C 动态分配内存</title>
+    <meta property="og:title" content="C 动态分配内存" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="动态内存分配 传统数组的缺点 传统数组也叫静态数组，也属于静态内存
+  数组长度必须事先指定，且只能是长整数，不能是变量。
+  传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。
+#include &amp;lt;stdio.h&amp;gt;void fun(void){  // 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，  // 只能在本函数（fun 函数）运行完毕后由系统自动释放  int a[5] = {1,2,3,4,5}; } int main () {  }   数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。
+  Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。
+  动态数组（动态内存） 动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，" />
+    <meta name="description" content="动态内存分配 传统数组的缺点 传统数组也叫静态数组，也属于静态内存
+  数组长度必须事先指定，且只能是长整数，不能是变量。
+  传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。
+#include &amp;lt;stdio.h&amp;gt;void fun(void){  // 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，  // 只能在本函数（fun 函数）运行完毕后由系统自动释放  int a[5] = {1,2,3,4,5}; } int main () {  }   数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。
+  Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。
+  动态数组（动态内存） 动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 动态分配内存</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-30 06:00:00 UTC">
+                        2022-03-30
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="动态内存分配">动态内存分配</h1>
+<h2 id="传统数组的缺点">传统数组的缺点</h2>
+<p>传统数组也叫静态数组，也属于静态内存</p>
+<ol>
+<li>
+<p>数组长度必须事先指定，且只能是长整数，不能是变量。</p>
+</li>
+<li>
+<p>传统形式定义的数组，该数组的内存无法被我们手动释放。因为系统为该数组分配的储存空间就会一直存在，除非数组所在的函数运行完毕，数组的空间才会被系统释放。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">fun</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">){</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 这 20 个字节（4 个 int ）的储存空间无法被我们手动的释放，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 只能在本函数（fun 函数）运行完毕后由系统自动释放
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span> <span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div></li>
+<li>
+<p>数组的长度一旦定义，其长度就不能再被更改。也就是数组的长度不能在函数运行的过程中动态的扩充或缩小。</p>
+</li>
+<li>
+<p>Ａ 函数中定义的数组，在 Ａ 函数运行期间可以被其他函数使用，但 A 函数运行完毕之后，A 函数中的数组将无法在被其他函数使用（A 函数在运行完毕后，就会被系统释放）。</p>
+</li>
+</ol>
+<h2 id="动态数组动态内存">动态数组（动态内存）</h2>
+<p>动态数组很好的解决了传统数组的 4 个缺点，传统数组也叫静态数组，</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%8C%87%E9%92%88/">
+                    指针
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#传统数组的缺点">传统数组的缺点</a></li>
+    <li><a href="#动态数组动态内存">动态数组（动态内存）</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

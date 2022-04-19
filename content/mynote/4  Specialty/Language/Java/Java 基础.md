@@ -3,7 +3,7 @@ title: Java 基础
 date: 2021-10-03 6:00:00
 updated: 2021-10-23 6:00:00
 categories:
-        - 编程技术
+        - 编程语言
 tags:
         - Java
         - 学习笔记

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 基础查询</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</guid>
+      <description>基础查询 我们用的是名为 MyEmployees.sql 的 SQL 文件。
+语法 selectQueryListfromTableName;特点 QueryList 可以是表中的字段、常量、表达式、函数。
+查询的结果是一个虚拟的表格。
+查询表中的单个字段 SELECTlast_nameFROMemployees;查询表中的多个字段 会以特定的顺序显示我们查询的字段。
+SELECTlast_name,first_name,emailFROMemployees;查询表中的所有字段 会以表原本的字段顺序显示我们查询的字段
+SELECT*FROMemployees;区分关键字和字段名 MySQL 中，我们可以用一对着重号**``**来区 MySQL 中的分字段和关键字
+SELECT`NAME`FROMrainy;查询常量 SELECT&amp;#39;john&amp;#39;;查询表达式 SELECT100*57;查询函数 SELECTVERSION();起别名 起别名（列头）可以使我们更好的理解表。
+如果要查询的字段有重名的情况，使用别名可以区分开来。
+方式一：
+SELECT100-2AS计算结果;SELECTlast_nameAS姓,first_nameAS名FROMemployees;方式二 使用空格
+SELECTlast_name姓,first_name名FROMemployees;去掉重复行 查询员工表中涉及到的所有部门的编号。
+SELECTDISTINCTdepartment_idFROMemployees;+ 号的作用 两个操作数都为数值型，则做加法运算。
+SELECT520+250;其中一方为字符型，试图将字符型数值转换成数值型。 如果转换成功，则继续做加法运算。 如果转换失败，则将字符型数值转换成 0。
+SELECT&amp;#34;john&amp;#34;+90;只要其中一方为 Null，则结果肯定为 Null。
+SELECT&amp;#34;john&amp;#34;+null;字段拼接 查询员工的名和姓，并将名和姓拼接成一个字段，并显示姓名。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 条件查询</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无表名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询 按逻辑表达式查询 模糊查询  按条件表达式筛选 查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary&amp;gt;12000;查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id&amp;lt;&amp;gt;90;</description>
+    </item>
+    
+    <item>
+      <title>MySQL 语法规范</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E8%AF%AD%E6%B3%95%E8%A7%84%E8%8C%83/</guid>
+      <description>语法规范   MySQL 的 SQL语法不区分大小写，但建议关键i大写，表名，列名小写。
+  每条命令结尾必须使用英文的分号;结尾，当然也可以用其他的，比如\g。
+  每条命令根据需要，可以进行缩进或换行。
+mysql&amp;gt;show-&amp;gt;databases;  注释
+# 单行注释 -- 单行注释 /* 多行注释 */覆  </description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/mysql/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/mysql/</guid>
+      <description>MySQL MySQL 属于 Oracle。
+MySQL 的优点  成本低：开源数据库，完全免费，社区庞大。 性能高：执行速度快。 简单：体积小，简单易用。 跨平台：支持多种操作系统。  </description>
+    </item>
+    
+    <item>
+      <title>MySql DBMS</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dbms/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dbms/</guid>
+      <description>DBMS 数据库管理系统（Datebase Management System），我们可以通过 DBMS 来创建或操作数据库。
+常见的数据库管理系统：MySQL、Oracle、DB2、SqlServer
+基于共享文件系统 比如微软的 Access
+基于C/S架构 基于客户机/服务器的 DBMS。需要安装客户端和服务端
+比如 MySQL、Oracle、SqlSever。</description>
+    </item>
+    
+    <item>
+      <title>MySQL SQL</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/sql/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/sql/</guid>
+      <description>SQL 结构化查询语言（Structure Query Language），专门用来对数据库进行一些操作的语言。
+SQL 的优点 SQL 语言不是某个特定 DBMS 所专有的语言，相反，近乎所有的 DBMS 都支持 SQL。</description>
+    </item>
+    
+    <item>
+      <title>MySql What is 数据库</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/what-is-%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/what-is-%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>What is 数据库 数据库（Database），通俗的说，它存储了一系列有组织的数据，像一个“仓库”，简称 DB。
+为什么要学习数据库？ 数据库可以实现数据的持久化。
+使用完整的管理系统对数据进行同意管理，易于查询。
+数据库的特点  数据不是直接放到数据库中的，而是先将数据放到表中，再将表放到库中。 一个数据库中可以有多个表，每个表都有一个的名字，用来标识自已，且表名具有唯一性。 表具有一些特性，这些特性定义了数据在表中如何存储。 表由列（字段）组成，每个表都有一个或多个列组成。 表中的数据是按行储存的。  </description>
+    </item>
+    
+    <item>
+      <title>MySQL 安装</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</guid>
+      <description>安装 启动和关闭 MySQL Window 操作系统中打开 CMD
+netstartmysql# 启动 MySQL netstopmysql# 关闭 MySQL 登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。
+-P表示端口号。
+-u表示用户名。
+-p表示密码。
+输入命令后 Enter。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：
+MySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：
+MySQL-uroot-p123456注意，这里的-p123456是不能有空格的。
+&amp;gt;MySQL -h localhost -P 3306 -u root -p123456 MySQL: [Warning] Using a password on the command line interface can be insecure. Welcome to the MySQL monitor. Commands end with ; or \g. Your MySQL connection id is 4 Server version: 5.7.26 MySQL Community Server (GPL) MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 常用命令</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>常用命令 显示数据库 使用show databases;命令来查看数据库，需要注意的是 database 后面的 s 和;符号。
+mysql&amp;gt;showdatabases;+--------------------+|Database|+--------------------+|information_schema||mysql||performance_schema||study||sys||typecho||wordpress|+--------------------+7rowsinset(0.02sec)打开数据库 使用use DatabaseName;命令来打开 typecho 数据库，DatabaseName 是数据库的名称。
+mysql&amp;gt;usetypecho;Databasechanged查看表 使用show tables;命令来查看 typecho 数据库中的表。
+mysql&amp;gt;showtables;+-----------------------+|Tables_in_typecho|+-----------------------+|typecho_comments||typecho_contents||typecho_fields||typecho_metas||typecho_options||typecho_relationships||typecho_users|+-----------------------+7rowsinset(0.00sec)还可以使用show tables from DatabaseName;命令来查看表，更加方便。
+DatabaseName 是数据库的名称。
+mysql&amp;gt;showtablesfromtypecho;+-----------------------+|Tables_in_typecho|+-----------------------+|typecho_comments||typecho_contents||typecho_fields||typecho_metas||typecho_options||typecho_relationships||typecho_users|+-----------------------+7rowsinset(0.00sec)查询当前处于哪个数据库 使用select database();命令来查看我们当前所在的数据库。
+mysql&amp;gt;selectdatabase();+------------+|database()|+------------+|typecho|+------------+1rowinset(0.00sec)创建表 使用create table TableName();来创建数据库中的表，TableName 是要创建的表的名称。
+mysql&amp;gt;createtablerainy(-&amp;gt;idint,-&amp;gt;namevarchar(20));QueryOK,0rowsaffected(0.01sec)查看表结构 使用DSEC TableName;来查看数据库中的表结构，TableName 是要查询的表的名称。
+mysql&amp;gt;descrainy;+-------+-------------+------+-----+---------+-------+|Field|Type|Null|Key|Default|Extra|+-------+-------------+------+-----+---------+-------+|id|int(11)|YES||NULL|||name|varchar(20)|YES||NULL||+-------+-------------+------+-----+---------+-------+2rowsinset(0.00sec)查询表中的数据 使用select * from TableName;来查询指定表中的数据，TableName 是要查询的表的名称。
+mysql&amp;gt;select*fromrainy;Emptyset(0.00sec)提示空，表示该表中没有任何数据。
+插入数据 使用insert into TableName;来插入一些数据，TableName 是要插入数据的表的名称。
+mysql&amp;gt;insertintorainy(id,name)values(1,&amp;#39;su&amp;#39;);QueryOK,1rowaffected(0.00sec)我们插入数据后重新查询表中的数据：
+mysql&amp;gt;select*fromrainy;+------+------+|id|name|+------+------+|1|su||1|su|+------+------+2rowsinset(0.00sec)修改表中的数据 mysql&amp;gt;updaterainysetname=&amp;#39;zhu&amp;#39;whereid=1;QueryOK,2rowsaffected(0.03sec)Rowsmatched:2Changed:2Warnings:0修改后重新查询表中的数据：
+mysql&amp;gt;select*fromrainy;+------+------+|id|name|+------+------+|1|zhu||1|zhu|+------+------+2rowsinset(0.00sec)查询 MySQL 版本 登录 MySQL 服务端，使用select version();命令来查看：
+mysql&amp;gt;selectversion();+-----------+|version()|+-----------+|5.7.26|+-----------+1rowinset(0.02sec)打开cmd，直接使用DOS命令查看：
+C:\Windows\system32&amp;gt;mysql --version mysql Ver 14.14 Distrib 5.7.26, for Win64 (x86_64)  C:\Windows\system32&amp;gt;mysql -V mysql Ver 14.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 配置文件</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</guid>
+      <description>配置文件 在 MySQL 根目录中，有一个my.ini配置文件。
+客户端配置 [mysql]是MySQL客户端的配置。
+[mysql] default-character-set=utf8 服务端配置 [mysqld] port=3306 # MySQL 服务运行时的端口号 basedir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/ # MySQL 程序所存放路径,常用于存放 MySQL 启动、配置文件、日志等 datadir=D:/AppInstallPath/PhpStudy/phpstudy_pro/Extensions/MySQL5.7.26/data/ # MySQL数据存放文件(极其重要) character-set-server=utf8 # 数据库和数据库表的默认字符集。(推荐utf8,以免导致乱码) default-storage-engine=MyIsam # MySQL 的存储引擎  # ...... </description>
+    </item>
+    
+  </channel>
+</rss>

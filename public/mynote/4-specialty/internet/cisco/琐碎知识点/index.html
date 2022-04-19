@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Cisco 琐碎知识点",
+	    "headline" : "Cisco 琐碎知识点",
+	    "description" : "琐碎知识点 C 直连网络\nL 本地接口\nS 静态路由\n汇总路由的作用 将多条路由汇总为一条，减少路由表体积\n浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离\n默认静态路由的ipv4地址 0.0.0.0 0.0.0.0\nACL 是控制列表\n控制列表最后一条是默认拒绝语句\nACL 的两种类型 标准 ACL ，扩展类型 ACL\n通配符掩码中的 0 是全匹配 1是全忽略\n通配符掩码是 子网反掩码\nhost 表示 0.0.0.0\n静态路由 目标地址 送出接口或吓一跳\n递归静态路由（吓一跳静态路由）\n完全指定路由（接口和下一跳都配置）\n子网掩码 24 可以包含多少个网络位\n网络位 只有八位\n全 0 为 网络地址\n全1 为广播地址\nrip 动态协议\n汇总路由\n进站 in\n出站 out\n三个接口\n每个接口有都有一个in或out\n一共可以写6个ACL\n每个in和每个out都可以写ipv4或ipv6的地址\nAccess list 10 deny ip地址 反码\n搭建网络需要考虑哪些因素\n命令题，动态路由\nACL host 等同于 0.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/cisco\/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9\/",
+	    "keywords" : [ "网络","Cisco","学习笔记", ]
+	}
+</script><title>Cisco 琐碎知识点</title>
+    <meta property="og:title" content="Cisco 琐碎知识点" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="琐碎知识点 C 直连网络
+L 本地接口
+S 静态路由
+汇总路由的作用 将多条路由汇总为一条，减少路由表体积
+浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离
+默认静态路由的ipv4地址 0.0.0.0 0.0.0.0
+ACL 是控制列表
+控制列表最后一条是默认拒绝语句
+ACL 的两种类型 标准 ACL ，扩展类型 ACL
+通配符掩码中的 0 是全匹配 1是全忽略
+通配符掩码是 子网反掩码
+host 表示 0.0.0.0
+静态路由 目标地址 送出接口或吓一跳
+递归静态路由（吓一跳静态路由）
+完全指定路由（接口和下一跳都配置）
+子网掩码 24 可以包含多少个网络位
+网络位 只有八位
+全 0 为 网络地址
+全1 为广播地址
+rip 动态协议
+汇总路由
+进站 in
+出站 out
+三个接口
+每个接口有都有一个in或out
+一共可以写6个ACL
+每个in和每个out都可以写ipv4或ipv6的地址
+Access list 10 deny ip地址 反码
+搭建网络需要考虑哪些因素
+命令题，动态路由
+ACL host 等同于 0." />
+    <meta name="description" content="琐碎知识点 C 直连网络
+L 本地接口
+S 静态路由
+汇总路由的作用 将多条路由汇总为一条，减少路由表体积
+浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离
+默认静态路由的ipv4地址 0.0.0.0 0.0.0.0
+ACL 是控制列表
+控制列表最后一条是默认拒绝语句
+ACL 的两种类型 标准 ACL ，扩展类型 ACL
+通配符掩码中的 0 是全匹配 1是全忽略
+通配符掩码是 子网反掩码
+host 表示 0.0.0.0
+静态路由 目标地址 送出接口或吓一跳
+递归静态路由（吓一跳静态路由）
+完全指定路由（接口和下一跳都配置）
+子网掩码 24 可以包含多少个网络位
+网络位 只有八位
+全 0 为 网络地址
+全1 为广播地址
+rip 动态协议
+汇总路由
+进站 in
+出站 out
+三个接口
+每个接口有都有一个in或out
+一共可以写6个ACL
+每个in和每个out都可以写ipv4或ipv6的地址
+Access list 10 deny ip地址 反码
+搭建网络需要考虑哪些因素
+命令题，动态路由
+ACL host 等同于 0." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Cisco 琐碎知识点</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
+                        2021-10-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="琐碎知识点">琐碎知识点</h1>
+<p>C 直连网络</p>
+<p>L 本地接口</p>
+<p>S 静态路由</p>
+<p>汇总路由的作用 将多条路由汇总为一条，减少路由表体积</p>
+<p>浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离</p>
+<p>默认静态路由的ipv4地址 0.0.0.0 0.0.0.0</p>
+<p>ACL 是控制列表</p>
+<p>控制列表最后一条是默认拒绝语句</p>
+<p>ACL 的两种类型 标准 ACL ，扩展类型 ACL</p>
+<p>通配符掩码中的 0 是全匹配 1是全忽略</p>
+<p>通配符掩码是 子网反掩码</p>
+<p>host 表示 0.0.0.0</p>
+<p>静态路由 目标地址  送出接口或吓一跳</p>
+<p>递归静态路由（吓一跳静态路由）</p>
+<p>完全指定路由（接口和下一跳都配置）</p>
+<p>子网掩码 24 可以包含多少个网络位</p>
+<p>网络位 只有八位</p>
+<p>全 0 为 网络地址</p>
+<p>全1 为广播地址</p>
+<p>rip 动态协议</p>
+<p>汇总路由</p>
+<p>进站 in</p>
+<p>出站 out</p>
+<p>三个接口</p>
+<p>每个接口有都有一个in或out</p>
+<p>一共可以写6个ACL</p>
+<p>每个in和每个out都可以写ipv4或ipv6的地址</p>
+<p>Access list 10 deny ip地址 反码</p>
+<p>搭建网络需要考虑哪些因素</p>
+<p>命令题，动态路由</p>
+<p>ACL host 等同于 0.0.0.0</p>
+<p>permit any 等同于 255.255.255.255</p>
+<p>给一个主机地址，</p>
+<p>默认子网掩码为32</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E7%BD%91%E7%BB%9C/">
+                    网络
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/cisco/">
+                    Cisco
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

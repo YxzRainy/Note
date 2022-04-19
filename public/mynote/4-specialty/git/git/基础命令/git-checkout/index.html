@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git git checkout",
 	    "headline" : "Git git checkout",
-	    "description" : "git checkout $ git checkout \u0026ndash;File 清空名为File文件的修改，注意不要忘记中间的 \u0026ndash;，，如果不加 \u0026ndash;，就变成了切换到 FileName 分支的命令。\n$ git checkout -- ReadMe.txt\rgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。\ngit checkout Branch to track remote branch \u0027BranchName\u0027 from \u0027origin\u0027.\r将当前分支切换到名为BranchName的分支\ngit checkout -b BranchName -b 参数相当于以下两条命令\ngit branch BranchName git checkout BranchName git checkout -b LocalBranch origin\/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。\n这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。",
+	    "description" : "git checkout $ git checkout \u0026ndash;File 清空名为File文件的修改，注意不要忘记中间的 \u0026ndash;，，如果不加 \u0026ndash;，就变成了切换到 FileName 分支的命令。\n$ git checkout -- ReadMe.txt git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。\ngit checkout Branch to track remote branch \u0026#39;BranchName\u0026#39; from \u0026#39;origin\u0026#39;. 将当前分支切换到名为BranchName的分支\ngit checkout -b BranchName -b 参数相当于以下两条命令\ngit branch BranchName git checkout BranchName git checkout -b LocalBranch origin\/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。\n这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,29 +32,29 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-checkout\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4\/git-checkout\/",
 	    "keywords" : [ "Git","命令","Github","学习笔记", ]
 	}
 </script><title>Git git checkout</title>
     <meta property="og:title" content="Git git checkout" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
-$ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
-git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
+$ git checkout -- ReadMe.txt git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
+git checkout Branch to track remote branch &amp;#39;BranchName&amp;#39; from &amp;#39;origin&amp;#39;. 将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
 git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。" />
     <meta name="description" content="git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
-$ git checkout -- ReadMe.txtgit checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
-git checkout Branch to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.将当前分支切换到名为BranchName的分支
+$ git checkout -- ReadMe.txt git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
+git checkout Branch to track remote branch &amp;#39;BranchName&amp;#39; from &amp;#39;origin&amp;#39;. 将当前分支切换到名为BranchName的分支
 git checkout -b BranchName -b 参数相当于以下两条命令
 git branch BranchName git checkout BranchName git checkout -b LocalBranch origin/RemoteBranch 在本地创建一个名为LocalBranch的分支，并创建一个名为RemoteBranch的远程分支。
 这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -94,13 +94,13 @@ git branch BranchName git checkout BranchName git checkout -b LocalBranch origin
 </code></pre><h2 id="git-checkout-">git checkout .</h2>
 <p>清空在<strong>工作区中</strong>，对文件所作的所有修改，**.**表示当前目录的所有文件夹。</p>
 <h2 id="git-checkout-branch">git checkout Branch</h2>
-<pre tabindex="0"><code>to track remote branch 'BranchName' from 'origin'.
+<pre tabindex="0"><code>to track remote branch &#39;BranchName&#39; from &#39;origin&#39;.
 </code></pre><p>将当前分支切换到名为<strong>BranchName</strong>的分支</p>
 <h2 id="git-checkout--b-branchname">git checkout -b BranchName</h2>
 <p>-b 参数相当于以下两条命令</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git branch BranchName
-git checkout BranchName
-</code></pre></div><h2 id="git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch origin/RemoteBranch</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git branch BranchName
+</span></span><span style="display:flex;"><span>git checkout BranchName
+</span></span></code></pre></div><h2 id="git-checkout--b-localbranch-originremotebranch">git checkout -b LocalBranch origin/RemoteBranch</h2>
 <p>在本地创建一个名为<strong>LocalBranch</strong>的分支，并创建一个名为<strong>RemoteBranch</strong>的远程分支。</p>
 <p>这个远程分支和本地分支相对应，另外，本地和远程分支的名称最好一致。</p>
 
@@ -151,9 +151,9 @@ git checkout BranchName
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

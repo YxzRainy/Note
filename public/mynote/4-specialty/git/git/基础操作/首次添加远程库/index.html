@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 添加第一个远程库",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 添加第一个远程库</title>
@@ -54,9 +54,9 @@ ssh-keygen -t rsa -C &amp;#34;1971438937@qq.com&amp;#34; 输入后，三个回�
 new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -98,17 +98,17 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
 <p>在 Github 上创建一个仓库，仓库名随意， 。</p>
 <h2 id="关联远程库">关联远程库</h2>
 <p>我们使用<code>git remote add origin</code>命令把本地库与一个远程库关联起来。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git
-</code></pre></div><p>远程库的名字就是<strong>origin</strong>，这是默认的名字，你也可以将它改成别的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git
+</span></span></code></pre></div><p>远程库的名字就是<strong>origin</strong>，这是默认的名字，你也可以将它改成别的。</p>
 <h2 id="将-git-与-github-关联">将 Git 与 Github 关联</h2>
 <h3 id="下载并安装-githttpsgit-scmcom">下载并安装 <a href="https://git-scm.com/">Git</a></h3>
 <h3 id="配置个人信息">配置个人信息</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git config --global user.name <span style="color:#4e9a06">&#34;Your UserName&#34;</span>
-git config --global user.email <span style="color:#4e9a06">&#34;YourEmail@qq.com&#34;</span>
-</code></pre></div><h3 id="生成-ssh-密钥文件">生成 ssh 密钥文件</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git config --global user.name <span style="color:#4e9a06">&#34;Your UserName&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#4e9a06">&#34;YourEmail@qq.com&#34;</span>
+</span></span></code></pre></div><h3 id="生成-ssh-密钥文件">生成 ssh 密钥文件</h3>
 <p>hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">ssh-keygen -t rsa -C <span style="color:#4e9a06">&#34;1971438937@qq.com&#34;</span>
-</code></pre></div><p>输入后，三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的<strong>id_rsa.pub</strong>文件中的密钥，将其中内容全部复制。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>ssh-keygen -t rsa -C <span style="color:#4e9a06">&#34;1971438937@qq.com&#34;</span>
+</span></span></code></pre></div><p>输入后，三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的<strong>id_rsa.pub</strong>文件中的密钥，将其中内容全部复制。</p>
 <h3 id="new-ssh-key">new SSH Key</h3>
 <p>打开你的 Github 的主页，点击头像，选择 Settings，再选择 SSH and GPG keys，找到 SSH keys，点击 New SSH Key，Title 为标题，任意填写，将刚刚复制的 id_rsa pub 文件中的密钥文本粘贴进去，最后 Add SSH key。</p>
 <h3 id="检测-github-公钥设置是否成功">检测 GitHub 公钥设置是否成功</h3>
@@ -121,8 +121,8 @@ git config --global user.email <span style="color:#4e9a06">&#34;YourEmail@qq.com
 <h3 id="删除远程库">删除远程库</h3>
 <p>如果添加的时候地址写错了，或者就是想删除远程库，可以用<code>git remote rm WarehouseName</code>命令。使用前，建议先用<code>git remote -v</code>查看远程库信息。</p>
 <p>然后，根据远程库的名字删除，比如删除<strong>origin</strong></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git remote rm origin
-</code></pre></div><p>注意，此处的<strong>删除</strong>其实是<strong>解除了本地和远程的绑定关系</strong>，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到 GitHub，在后台页面找到删除按钮再删除。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git remote rm origin
+</span></span></code></pre></div><p>注意，此处的<strong>删除</strong>其实是<strong>解除了本地和远程的绑定关系</strong>，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到 GitHub，在后台页面找到删除按钮再删除。</p>
 
             </div>
             
@@ -179,9 +179,9 @@ git config --global user.email <span style="color:#4e9a06">&#34;YourEmail@qq.com
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数组 on Rainy · Blog</title>
+    <link>http://yxzi.xyz/Sub/Blog/tags/%E6%95%B0%E7%BB%84/</link>
+    <description>Recent content in 数组 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E6%95%B0%E7%BB%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C 动态一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E5%8A%A8%E6%80%81%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>动态一维数组 动态一维数组可以被当作静态一维数组来来用，换言之，静态数组可以实现的，动态数组都可以实现，不同的是，动态一维数组可以被我们使用free()函数助动释放掉，而且可以用realloc()动态的缩小或扩充。
+而静态一维数组只能等当前函数执行完毕后，才会被系统自动释放。
+#include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  // 静态创建一维数组，数组大小为 20个字节  // 静态数组只能等它自己所在的函数 main 执行完毕后，才会被系统助动释放。  int a[5];   // 动态创建一维数组  // 数组长度  int len;  // 数组名  int * pArr;  //自定义数组长度  printf(&amp;#34;请输入你要存放的元素个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);// 5  // 动态创建一维数组，数组大小为 20个字节，类似于 int pArr[len];  pArr = (int *)malloc(4 * len);   // 向动态数组里面添加元素  for(int i = 0; i &amp;lt; len; i++)  {  scanf(&amp;#34;%d&amp;#34;,&amp;amp;pArr[i]);  printf(&amp;#34;你向数组中添加了：%d\n&amp;#34;,pArr[i]);  }   // 输出动态数组中所有的元素  printf(&amp;#34;pArr 数组中的元素有：&amp;#34;);  for(int i = 0; i &amp;lt; len; i++)  {  printf(&amp;#34;%d、&amp;#34;,pArr[i]);  } } </description>
+    </item>
+    
+    <item>
+      <title>C 一维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%B8%80%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>一维数组 定义一个一维数组时：
+为 n 个变量连续分配储存空间。
+数组中的所有元素，数据类型必须一致。
+数组中所有变量所占的字节必须一样。
+定义一维数组 #include &amp;lt;iostream&amp;gt;int main(){  // 完全初始化  int arr[5] ={1,2,3,4,5};  // 不完全初始化，未初始化的元素的值为 0  int arr2[5] ={1,2,3};  // 打印索引为 4 的值，但 arr2 中没有索引为 3 的值，因此这里返回 0  printf(&amp;#34;%d\n&amp;#34;,arr2[3]);  // 不初始化，所有元素都是垃圾值  int arr3[5];  printf(&amp;#34;%d\n&amp;#34;,arr3[5]);  // 清零，将数组中的每个元素的值都变成 0  int arr4[5] = {0}; } 错误的定义 只有在定义数组的同时，才可以整体赋值，
+其他情况下整体复制都是错误的。
+#include &amp;lt;iostream&amp;gt;int main(){  int a[5];  // a[5] 表示 a 数组中索引为 5 的值。  a[5] = {1,2,3,4,5}; } 将数组 a 中的值全部复制到数组 b #include &amp;lt;iostream&amp;gt; int main() { // 错误的写法，因为一维数组名，d该数组中第一个元素的地址  b = a; // 正确的写法  for(int i = 0; i &amp;lt; 5; i++ )  {  b[i] = a[i];  } } </description>
+    </item>
+    
+    <item>
+      <title>C 二维数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Thu, 24 Mar 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84/</guid>
+      <description>二维数组 一个二维数组，在本质上，是一个一维数组的列表。它声明了一个 x 行 y 列的二维整型数组。
+#include &amp;lt;iostream&amp;gt; int main(){  // 该数组中总共有12个元素，可以当作 3 行(一)5 列（丨）来看  int arr[3][4];  // 这个二位数组以此为：  arr[0][0] arr[0][1] arr[0][2] arr[0][3]  arr[1][0] arr[1][1] arr[1][2] arr[1][3]  arr[2][0] arr[2][1] arr[2][2] arr[2][3] } 声明一个二维数组 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] = {1,2,3,4,6,7,8,9,10,11,12};   int arr2[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  }; } 输出二维数组的内容 #include &amp;lt;iostream&amp;gt; int main() {  int arr[3][4] =  {  {1, 2, 3, 4},  {5, 6, 7, 8},  {9,10,11,12}  };  int i,j;  for(i = 0; i &amp;lt; 3; ++i)  {  for(j = 0; j &amp;lt; 4; ++j)  { // 负号表示将输出的内容对其， // 3表示每个元素间隔3个光标到位置  printf(&amp;#34;%-3d &amp;#34;,arr[i][j]);  }  printf(&amp;#34;\n&amp;#34;);  } } 关于多维数组 不存在多维数组，因为内存是线性的</description>
+    </item>
+    
+    <item>
+      <title>C 数组</title>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 21 Feb 2022 06:00:00 +0000</pubDate>
+      
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组 在 C 语言中，与数组相关的方法很少，大部分操作，都只能自己去实现，比如排序，查找等等。
+数组的数量，一旦定义，无法修改。
+数组的类型取决于该数组存储的元素的类型。
+数组是连续的、线性的，在内存中亦是如此。
+#include &amp;lt;iostream&amp;gt; int main(void){ // arr 是数组的名字，5 表示数组中，元素的个数，  int arr[5] = {1,2,3,4,5};  printf(&amp;#34;%d\n&amp;#34;,arr[4]); } 在 C 语言中，一个数组的名字是这个数组第一个元素的指针地址。</description>
+    </item>
+    
+  </channel>
+</rss>

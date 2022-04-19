@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Less on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/less/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/less/</link>
     <description>Recent content in Less on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 02 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/less/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/less/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Less &amp; 符号</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
-      <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的css变为且的关系，而没有使用&amp;amp;的css是父子的关系
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
+      <description>Less &amp;amp; 符号 在类前面添加了&amp;amp;之后，编译之后的 css 变为且的关系，而没有使用&amp;amp;的 css 是父子的关系
 &amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
 如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
-Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}}解析后的 Css 代码 .mainbox .column:nth-child(2) { flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { flex: 5; } </description>
+Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}} 解析后的 Css 代码 .mainbox .column:nth-child(2) { 	flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { 	flex: 5; } </description>
     </item>
     
   </channel>

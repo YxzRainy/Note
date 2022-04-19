@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "安装 ThinkPHP",
+	    "headline" : "安装 ThinkPHP",
+	    "description" : "安装 ThinkPHP 安装 Composer 在 Windows 中，你需要下载并运行 Composer\n安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的 php.exe）\n比如 D:\\phpstudy_pro\\Extensions\\php\\php7.3.4nts\n第一次报错  [Composer\\Downloader\\TransportException]\rcurl error 28 while downloading https:\/\/repo.packagist.org\/packages.json: Timeout was reached 解决方法：修改全局文件(推荐) composer config -g repo.packagist composer https:\/\/packagist.phpcomposer.com\n第二次报错  [InvalidArgumentException]\rCould not find package topthink\/think with version 6.0.x-dev. 切换 composer 镜像地址：阿里云镜像\ncomposer config -g repo.packagist composer https:\/\/mirrors.aliyun.com\/composer\/\n安装 Thinkphp 开发版 我们这里下载开发版的 ThinkPhp\ncomposer create-project topthink\/think=6.0.x-dev tp\n在上一步创建的 tp 文件夹中执行 php think run（确保当前目录有 think 文件）",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/frame\/thinkphp\/%E5%AE%89%E8%A3%85-thinkphp\/",
+	    "keywords" : [ "PHP","学习笔记","ThinkPHP", ]
+	}
+</script><title>安装 ThinkPHP</title>
+    <meta property="og:title" content="安装 ThinkPHP" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="安装 ThinkPHP 安装 Composer 在 Windows 中，你需要下载并运行 Composer
+安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的 php.exe）
+比如 D:\phpstudy_pro\Extensions\php\php7.3.4nts
+第一次报错  [Composer\Downloader\TransportException]curl error 28 while downloading https://repo.packagist.org/packages.json: Timeout was reached 解决方法：修改全局文件(推荐) composer config -g repo.packagist composer https://packagist.phpcomposer.com
+第二次报错  [InvalidArgumentException]Could not find package topthink/think with version 6.0.x-dev. 切换 composer 镜像地址：阿里云镜像
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+安装 Thinkphp 开发版 我们这里下载开发版的 ThinkPhp
+composer create-project topthink/think=6.0.x-dev tp
+在上一步创建的 tp 文件夹中执行 php think run（确保当前目录有 think 文件）" />
+    <meta name="description" content="安装 ThinkPHP 安装 Composer 在 Windows 中，你需要下载并运行 Composer
+安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的 php.exe）
+比如 D:\phpstudy_pro\Extensions\php\php7.3.4nts
+第一次报错  [Composer\Downloader\TransportException]curl error 28 while downloading https://repo.packagist.org/packages.json: Timeout was reached 解决方法：修改全局文件(推荐) composer config -g repo.packagist composer https://packagist.phpcomposer.com
+第二次报错  [InvalidArgumentException]Could not find package topthink/think with version 6.0.x-dev. 切换 composer 镜像地址：阿里云镜像
+composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+安装 Thinkphp 开发版 我们这里下载开发版的 ThinkPhp
+composer create-project topthink/think=6.0.x-dev tp
+在上一步创建的 tp 文件夹中执行 php think run（确保当前目录有 think 文件）" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">安装 ThinkPHP</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
+                        2021-10-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="安装-thinkphp">安装 ThinkPHP</h1>
+<h2 id="安装-composer">安装 Composer</h2>
+<p>在 Windows 中，你需要下载并运行 <a href="https://getcomposer.org/Composer-Setup.exe">Composer</a></p>
+<p>安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的 php.exe）</p>
+<p>比如 D:\phpstudy_pro\Extensions\php\php7.3.4nts</p>
+<h3 id="第一次报错">第一次报错</h3>
+<pre tabindex="0"><code>  [Composer\Downloader\TransportException]
+  curl error 28 while downloading https://repo.packagist.org/packages.json: Timeout was reached
+</code></pre><p>解决方法：修改全局文件(推荐)
+composer config -g repo.packagist composer <a href="https://packagist.phpcomposer.com">https://packagist.phpcomposer.com</a></p>
+<h3 id="第二次报错">第二次报错</h3>
+<pre tabindex="0"><code> [InvalidArgumentException]
+  Could not find package topthink/think with version 6.0.x-dev.
+</code></pre><p>切换 composer 镜像地址：阿里云镜像</p>
+<p>composer config -g repo.packagist composer <a href="https://mirrors.aliyun.com/composer/">https://mirrors.aliyun.com/composer/</a></p>
+<h2 id="安装-thinkphp-开发版">安装 Thinkphp 开发版</h2>
+<p>我们这里下载开发版的 <a href="https://www.kancloud.cn/manual/thinkphp6_0/1037479">ThinkPhp</a></p>
+<p>composer create-project topthink/think=6.0.x-dev tp</p>
+<p>在上一步创建的 tp 文件夹中执行 php think run（确保当前目录有 think 文件）</p>
+<p>最后在浏览器输入 http://localhost:8000/</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/php/">
+                    PHP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/thinkphp/">
+                    ThinkPHP
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装-composer">安装 Composer</a>
+      <ul>
+        <li><a href="#第一次报错">第一次报错</a></li>
+        <li><a href="#第二次报错">第二次报错</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装-thinkphp-开发版">安装 Thinkphp 开发版</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

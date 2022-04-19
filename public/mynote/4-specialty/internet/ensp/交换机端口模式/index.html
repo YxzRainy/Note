@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "eNSP 交换机端口模式",
+	    "headline" : "eNSP 交换机端口模式",
+	    "description" : "交换机端口模式 Access 接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃\n发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃\ntrunk 接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃\n发送，vid 在允许列表内，vid 等于 pvid 剥离 vid 并发送，\nvid 不等于 pvid，保留 vid 并转发\nvid 不在运行列表，直接丢弃\nhybrid 接收，同 trunk，\n发送\nvid 不在允许列表中，直接丢弃\nvid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决定是否保留这个 vid （tagged 和 untagged）\n启用 gvrp 必须是 trunk",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-21 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/ensp\/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F\/",
+	    "keywords" : [ "eNSP","交换机","路由器", ]
+	}
+</script><title>eNSP 交换机端口模式</title>
+    <meta property="og:title" content="eNSP 交换机端口模式" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="交换机端口模式 Access 接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃
+发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃
+trunk 接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃
+发送，vid 在允许列表内，vid 等于 pvid 剥离 vid 并发送，
+vid 不等于 pvid，保留 vid 并转发
+vid 不在运行列表，直接丢弃
+hybrid 接收，同 trunk，
+发送
+vid 不在允许列表中，直接丢弃
+vid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决定是否保留这个 vid （tagged 和 untagged）
+启用 gvrp 必须是 trunk" />
+    <meta name="description" content="交换机端口模式 Access 接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃
+发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃
+trunk 接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃
+发送，vid 在允许列表内，vid 等于 pvid 剥离 vid 并发送，
+vid 不等于 pvid，保留 vid 并转发
+vid 不在运行列表，直接丢弃
+hybrid 接收，同 trunk，
+发送
+vid 不在允许列表中，直接丢弃
+vid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决定是否保留这个 vid （tagged 和 untagged）
+启用 gvrp 必须是 trunk" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">eNSP 交换机端口模式</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-21 06:00:00 UTC">
+                        2022-03-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="交换机端口模式">交换机端口模式</h1>
+<h2 id="access">Access</h2>
+<p>接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃</p>
+<p>发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃</p>
+<h2 id="trunk">trunk</h2>
+<p>接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃</p>
+<p>发送，vid 在允许列表内，vid 等于 pvid 剥离 vid 并发送，</p>
+<p>vid 不等于 pvid，保留 vid 并转发</p>
+<p>vid 不在运行列表，直接丢弃</p>
+<h2 id="hybrid">hybrid</h2>
+<p>接收，同 trunk，</p>
+<p>发送</p>
+<p>vid 不在允许列表中，直接丢弃</p>
+<p>vid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决定是否保留这个 vid （tagged 和 untagged）</p>
+<p>启用 gvrp 必须是 trunk</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/ensp/">
+                    eNSP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E4%BA%A4%E6%8D%A2%E6%9C%BA/">
+                    交换机
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/">
+                    路由器
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#access">Access</a></li>
+    <li><a href="#trunk">trunk</a></li>
+    <li><a href="#hybrid">hybrid</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

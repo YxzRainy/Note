@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "PHP 变量",
+	    "headline" : "PHP 变量",
+	    "description" : "变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。 $_ GET：获取所有表单以 get 方式提交的数据。 $_ POST：POST 提交的数据都会保存在此。 $_ REQUEST：GET 和 POST 提交的都会保存。 $GLOBALS：PHP 中所有的全局变量。 $_ SERVER：服务器信息。 $_ SESSION：session 会话数据。 $_ COOKIE：cookie 会话数据。 $_ ENV：环境信息。 $_ FILES：用户上传的文件信息。\n可变变量 \/\/ 找到 $a，将其赋值为 b， \/\/ 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b， $a = \u0026#39;b\u0026#39;; \/\/ 最后再将 $b 赋为 bb $b = \u0026#39;bb\u0026#39;; echo $$a; 变量传值 指的是将一个变量的值赋给另外一个变量。\n变量传值一共有两种方式：值传递和引用传递。 值传递：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。 引用传递：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。\n\/\/值传递 $a = 10; $b = $a; $b = 66; echo $a, \u0026#39;\u0026lt;br\/\u0026gt;\u0026#39;, $b, \u0026#39;\u0026lt;br\/\u0026gt;\u0026#39;;  echo \u0026#39;\u0026lt;hr\u0026gt;\u0026#39;;  \/\/ 引用传递 $c = 3; $d = \u0026amp;$c; $c = 5; echo $c, \u0026#39;\u0026lt;br\/\u0026gt;\u0026#39;, $d, \u0026#39;\u0026lt;br\/\u0026#39;; 在内存中，通常有以下几个分区：",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-03-10 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-03-10 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/php\/%E5%8F%98%E9%87%8F\/",
+	    "keywords" : [ "PFP","后端","学习笔记", ]
+	}
+</script><title>PHP 变量</title>
+    <meta property="og:title" content="PHP 变量" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。 $_ GET：获取所有表单以 get 方式提交的数据。 $_ POST：POST 提交的数据都会保存在此。 $_ REQUEST：GET 和 POST 提交的都会保存。 $GLOBALS：PHP 中所有的全局变量。 $_ SERVER：服务器信息。 $_ SESSION：session 会话数据。 $_ COOKIE：cookie 会话数据。 $_ ENV：环境信息。 $_ FILES：用户上传的文件信息。
+可变变量 // 找到 $a，将其赋值为 b， // 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b， $a = &amp;#39;b&amp;#39;; // 最后再将 $b 赋为 bb $b = &amp;#39;bb&amp;#39;; echo $$a; 变量传值 指的是将一个变量的值赋给另外一个变量。
+变量传值一共有两种方式：值传递和引用传递。 值传递：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。 引用传递：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。
+//值传递 $a = 10; $b = $a; $b = 66; echo $a, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $b, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;;  echo &amp;#39;&amp;lt;hr&amp;gt;&amp;#39;;  // 引用传递 $c = 3; $d = &amp;amp;$c; $c = 5; echo $c, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $d, &amp;#39;&amp;lt;br/&amp;#39;; 在内存中，通常有以下几个分区：" />
+    <meta name="description" content="变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。 $_ GET：获取所有表单以 get 方式提交的数据。 $_ POST：POST 提交的数据都会保存在此。 $_ REQUEST：GET 和 POST 提交的都会保存。 $GLOBALS：PHP 中所有的全局变量。 $_ SERVER：服务器信息。 $_ SESSION：session 会话数据。 $_ COOKIE：cookie 会话数据。 $_ ENV：环境信息。 $_ FILES：用户上传的文件信息。
+可变变量 // 找到 $a，将其赋值为 b， // 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b， $a = &amp;#39;b&amp;#39;; // 最后再将 $b 赋为 bb $b = &amp;#39;bb&amp;#39;; echo $$a; 变量传值 指的是将一个变量的值赋给另外一个变量。
+变量传值一共有两种方式：值传递和引用传递。 值传递：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。 引用传递：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。
+//值传递 $a = 10; $b = $a; $b = 66; echo $a, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $b, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;;  echo &amp;#39;&amp;lt;hr&amp;gt;&amp;#39;;  // 引用传递 $c = 3; $d = &amp;amp;$c; $c = 5; echo $c, &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, $d, &amp;#39;&amp;lt;br/&amp;#39;; 在内存中，通常有以下几个分区：" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">PHP 变量</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-03-10 06:00:00 UTC">
+                        2022-03-10
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="变量">变量</h1>
+<h2 id="预定义变量">预定义变量</h2>
+<p>指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都
+是数组。
+<strong>$_ GET</strong>：获取所有表单以 get 方式提交的数据。
+<strong>$_ POST</strong>：POST 提交的数据都会保存在此。
+<strong>$_ REQUEST</strong>：GET 和 POST 提交的都会保存。
+<strong>$GLOBALS</strong>：PHP 中所有的全局变量。
+<strong>$_ SERVER</strong>：服务器信息。
+<strong>$_ SESSION</strong>：session 会话数据。
+<strong>$_ COOKIE</strong>：cookie 会话数据。
+<strong>$_ ENV</strong>：环境信息。
+<strong>$_ FILES</strong>：用户上传的文件信息。</p>
+<h2 id="可变变量">可变变量</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 找到 $a，将其赋值为 b，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">$a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;b&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 最后再将 $b 赋为 bb
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">$b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;bb&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">$$a</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><h2 id="变量传值">变量传值</h2>
+<p>指的是将一个变量的值赋给另外一个变量。</p>
+<p>变量传值一共有两种方式：值传递和引用传递。
+<strong>值传递</strong>：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。
+<strong>引用传递</strong>：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//值传递
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">$a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">$b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">$a</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">$b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">66</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">$a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">$b</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#4e9a06">&#39;&lt;hr&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 引用传递
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">$c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">$d</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">$c</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">$c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">echo</span> <span style="color:#000">$c</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&gt;&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">$d</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&lt;br/&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><p>在内存中，通常有以下几个分区：</p>
+<ol>
+<li>栈区，程序可以操作的内存部分(不存数据，运行程序代码)，少但是快。</li>
+<li>代码段，存储程序的内存部分(不执行)。</li>
+<li>数据段，存储普通数据(全局区和静态区)。</li>
+<li>堆区，存储复杂数据，大但是效率低。</li>
+</ol>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/pfp/">
+                    PFP
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%90%8E%E7%AB%AF/">
+                    后端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#预定义变量">预定义变量</a></li>
+    <li><a href="#可变变量">可变变量</a></li>
+    <li><a href="#变量传值">变量传值</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

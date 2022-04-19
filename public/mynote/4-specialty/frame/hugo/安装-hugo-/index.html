@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Hugo 安装",
+	    "headline" : "Hugo 安装",
+	    "description" : "Hugo 安装 源码编译安装，首先安装好依赖的工具\n Git Mercurial Go 1.3\u002b (Go 1.4\u002b on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：\n 用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(\u0026#39;https:\/\/chocolatey.org\/install.ps1\u0026#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-22 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/frame\/hugo\/%E5%AE%89%E8%A3%85-hugo-\/",
+	    "keywords" : [ "GO","Hugo","博客框架","学习笔记", ]
+	}
+</script><title>Hugo 安装</title>
+    <meta property="og:title" content="Hugo 安装" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Hugo 安装 源码编译安装，首先安装好依赖的工具
+ Git Mercurial Go 1.3&#43; (Go 1.4&#43; on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
+ 用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm " />
+    <meta name="description" content="Hugo 安装 源码编译安装，首先安装好依赖的工具
+ Git Mercurial Go 1.3&#43; (Go 1.4&#43; on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
+ 用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Hugo 安装</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-22 06:00:00 UTC">
+                        2021-10-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="hugo-安装">Hugo 安装</h1>
+<p>源码编译安装，首先安装好依赖的工具</p>
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li><a href="http://mercurial.selenic.com/">Mercurial</a></li>
+<li><a href="http://golang.org/">Go</a> 1.3+ (Go 1.4+ on Windows)</li>
+</ul>
+<p>我的环境是 windows，选择的安装方法是<code>Chocolatey (Windows)</code>，步骤如下：</p>
+<ol>
+<li>用<code>管理员身份</code>打开 windows 中的<code>Windows PowerShell</code>（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”）</li>
+<li>复制下方代码，然后执行</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope Process -Force<span style="color:#000;font-weight:bold">;</span> <span style="color:#ce5c00;font-weight:bold">[</span>System.Net.ServicePointManager<span style="color:#ce5c00;font-weight:bold">]</span>::SecurityProtocol <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">[</span>System.Net.ServicePointManager<span style="color:#ce5c00;font-weight:bold">]</span>::SecurityProtocol -bor 3072<span style="color:#000;font-weight:bold">;</span> iex <span style="color:#ce5c00;font-weight:bold">((</span>New-Object System.Net.WebClient<span style="color:#ce5c00;font-weight:bold">)</span>.DownloadString<span style="color:#ce5c00;font-weight:bold">(</span><span style="color:#4e9a06">&#39;https://chocolatey.org/install.ps1&#39;</span><span style="color:#ce5c00;font-weight:bold">))</span>
+</span></span></code></pre></div><ol>
+<li>输入 choco，查看是否安装成功。</li>
+<li>复制下方代码，然后执行</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>choco install hugo -confirm
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/go/">
+                    GO
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/hugo/">
+                    Hugo
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6/">
+                    博客框架
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

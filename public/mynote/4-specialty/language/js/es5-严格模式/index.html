@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript ES5 严格模式",
+	    "headline" : "JavaScript ES5 严格模式",
+	    "description" : "ES5 严格模式 ECMAScript 是 JavaScript 的一个标准。\nES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？\n当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）\n\u0026ldquo;use strict\u0026rdquo; 使某一作用域内的代码不在兼容 ES3 中的一些不规则的语法，使用全新的 ES5 的语法。\n如何启用 ES5 严格模式 在作用域顶端添加语句\u0026quot;use strict\u0026quot;即可，启用之后，ES3 中的一些方法就无法使用了。比如arguments的callee属性：\n\u0026#39;use strict\u0026#39;; function test() { \tconsole.log(arguments.callee); } test(); 浏览器会出现以下错误：\nUncaught TypeError: \u0026#39;caller\u0026#39;, \u0026#39;callee\u0026#39;, and \u0026#39;arguments\u0026#39; properties may not be accessed on strict mode functions or the arguments objects for calls to them 同样，也可以使某一局部作用域支持 ES5，而其他作用域支持 ES3：",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript ES5 严格模式</title>
+    <meta property="og:title" content="JavaScript ES5 严格模式" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="ES5 严格模式 ECMAScript 是 JavaScript 的一个标准。
+ES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？
+当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）
+&amp;ldquo;use strict&amp;rdquo; 使某一作用域内的代码不在兼容 ES3 中的一些不规则的语法，使用全新的 ES5 的语法。
+如何启用 ES5 严格模式 在作用域顶端添加语句&amp;quot;use strict&amp;quot;即可，启用之后，ES3 中的一些方法就无法使用了。比如arguments的callee属性：
+&amp;#39;use strict&amp;#39;; function test() { 	console.log(arguments.callee); } test(); 浏览器会出现以下错误：
+Uncaught TypeError: &amp;#39;caller&amp;#39;, &amp;#39;callee&amp;#39;, and &amp;#39;arguments&amp;#39; properties may not be accessed on strict mode functions or the arguments objects for calls to them 同样，也可以使某一局部作用域支持 ES5，而其他作用域支持 ES3：" />
+    <meta name="description" content="ES5 严格模式 ECMAScript 是 JavaScript 的一个标准。
+ES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？
+当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）
+&amp;ldquo;use strict&amp;rdquo; 使某一作用域内的代码不在兼容 ES3 中的一些不规则的语法，使用全新的 ES5 的语法。
+如何启用 ES5 严格模式 在作用域顶端添加语句&amp;quot;use strict&amp;quot;即可，启用之后，ES3 中的一些方法就无法使用了。比如arguments的callee属性：
+&amp;#39;use strict&amp;#39;; function test() { 	console.log(arguments.callee); } test(); 浏览器会出现以下错误：
+Uncaught TypeError: &amp;#39;caller&amp;#39;, &amp;#39;callee&amp;#39;, and &amp;#39;arguments&amp;#39; properties may not be accessed on strict mode functions or the arguments objects for calls to them 同样，也可以使某一局部作用域支持 ES5，而其他作用域支持 ES3：" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript ES5 严格模式</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-04 06:00:00 UTC">
+                        2022-04-04
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="es5-严格模式">ES5 严格模式</h1>
+<p>ECMAScript 是 JavaScript 的一个标准。</p>
+<p>ES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？</p>
+<p>当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）</p>
+<h2 id="use-strict">&ldquo;use strict&rdquo;</h2>
+<p>使某一作用域内的代码不在兼容 ES3 中的一些不规则的语法，使用全新的 ES5 的语法。</p>
+<h2 id="如何启用-es5-严格模式">如何启用 ES5 严格模式</h2>
+<p>在作用域顶端添加语句<code>&quot;use strict&quot;</code>即可，启用之后，ES3 中的一些方法就无法使用了。比如<code>arguments</code>的<code>callee</code>属性：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">arguments</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">callee</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><p>浏览器会出现以下错误：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JS" data-lang="JS"><span style="display:flex;"><span><span style="color:#000">Uncaught</span> <span style="color:#000">TypeError</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;caller&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;callee&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">and</span> <span style="color:#4e9a06">&#39;arguments&#39;</span> <span style="color:#000">properties</span> <span style="color:#000">may</span> <span style="color:#000">not</span> <span style="color:#000">be</span> <span style="color:#000">accessed</span> <span style="color:#000">on</span> <span style="color:#000">strict</span> <span style="color:#000">mode</span> <span style="color:#000">functions</span> <span style="color:#000">or</span> <span style="color:#000">the</span> <span style="color:#000">arguments</span> <span style="color:#000">objects</span> <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">calls</span> <span style="color:#000">to</span> <span style="color:#000">them</span>
+</span></span></code></pre></div><p>同样，也可以使某一局部作用域支持 ES5，而其他作用域支持 ES3：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 支持 ES3 模式，可以使用 arguments 的 callee 属性
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">arguments</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">callee</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 支持 ES5 模式，所以无法使用 ES3 中 arguments 的 callee 属性
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">arguments</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">callee</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><h2 id="为什么用字符串启用-es5-严格模式">为什么用字符串启用 ES5 严格模式</h2>
+<p>为什么启用 ES5 要使用<code>&quot;use strict&quot;</code>这种字符串的方式来启用 ES5 严格模式？而不、使用一个函数<code>strict()</code>？</p>
+<p>这是因为如果使用的是一个函数的话，就会导致不支持 ES5 的浏览器使用<code>strict()</code>直接报错，导致后面的代码无法执行。而字符串<code>&quot;use strict&quot;</code>却不会导致程序报错，因为单独的字符串或者数字是无意义的，仅仅只是一个表达式。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#4e9a06">&#39;无意义，不会导致程序报错&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#0000cf;font-weight:bold">1971438937</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><p>直接点说，就是为了兼容那些老版本浏览器（不支持 ES5 的浏览器）</p>
+<h2 id="es5-不支持的操作">ES5 不支持的操作</h2>
+<p>with</p>
+<p>arguments.caller</p>
+<p>function.caller</p>
+<p>声明变量之前必须声明。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Uncaught ReferenceError: b is not defined
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>局部 this 必须被赋值，而且是赋什么就是什么，不赋值的情况下是 undefined。</p>
+<p>严格模式下，全局 this 依旧指向 window。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">rainy</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 非严格模式下，局部 this 默认指向 window
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">rainy</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 严格模式下，局部this 默认指向 undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 此时的 this 指向函数 demo 本身
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><p>拒绝重复属性（重复后不会报错）和参数（重复后会报错）。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 重复属性，但不会报错
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">obj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 后面的 name 属性会覆盖前面的 name 属性
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 返回 456
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;123&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;456&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">obj</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//重复参数，会报错
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#4e9a06">&#39;use strict&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#use-strict">&ldquo;use strict&rdquo;</a></li>
+    <li><a href="#如何启用-es5-严格模式">如何启用 ES5 严格模式</a></li>
+    <li><a href="#为什么用字符串启用-es5-严格模式">为什么用字符串启用 ES5 严格模式</a></li>
+    <li><a href="#es5-不支持的操作">ES5 不支持的操作</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

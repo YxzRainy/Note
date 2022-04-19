@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 合并冲突",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 合并冲突</title>
@@ -46,9 +46,9 @@ Auto-merging Rainy.txt CONFLICT (content): Merge conflict in Rainy.txt Automatic
 如何解决冲突 我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容，再git commit即可。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -83,10 +83,10 @@ Auto-merging Rainy.txt CONFLICT (content): Merge conflict in Rainy.txt Automatic
                 
                 <h1 id="合并冲突">合并冲突</h1>
 <p>有时候，我们在使用<code>git merge</code>命令进行合并的时候，会出现以下提示。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">Auto-merging Rainy.txt
-CONFLICT (content): Merge conflict in Rainy.txt
-Automatic merge failed; fix conflicts and then commit the result.
-</code></pre></div><p>会发现使用<code>git merge</code>自动合并失败了，git 提示我们需要手动
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Auto-merging Rainy.txt
+</span></span><span style="display:flex;"><span>CONFLICT (content): Merge conflict in Rainy.txt
+</span></span><span style="display:flex;"><span>Automatic merge failed; fix conflicts and then commit the result.
+</span></span></code></pre></div><p>会发现使用<code>git merge</code>自动合并失败了，git 提示我们需要手动
 修复冲突，然后提交结果。</p>
 <h2 id="如何解决冲突">如何解决冲突</h2>
 <p>我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容，再<strong>git commit</strong>即可。</p>
@@ -128,9 +128,9 @@ Automatic merge failed; fix conflicts and then commit the result.
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

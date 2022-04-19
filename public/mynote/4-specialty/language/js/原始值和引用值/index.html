@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "JavaScript 原始值和引用值",
@@ -32,8 +32,8 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC\/",
-	    "keywords" : [ "学习笔记","JavaScript", ]
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
 	}
 </script><title>JavaScript 原始值和引用值</title>
     <meta property="og:title" content="JavaScript 原始值和引用值" />
@@ -62,9 +62,9 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
 原始值的储存原理 a = 10; // 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。 // 栈内存： // a ： 10 var b = a; // 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。 // 栈内存： // a ：10 // 拷贝变量 10 // b ：10 a = 20; // 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。 // 栈内存： // a ：10（已关闭） // b ：10 // a ：20 （新的变量 a） 引用值 引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -117,23 +117,23 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
 <h3 id="null">Null</h3>
 <p>空指针，它也只有一个值 null，表示一个不存在的或无效 object 和地址引用。因为历史遗留性问题，它是的数据类型为 Object。</p>
 <h3 id="原始值的储存原理">原始值的储存原理</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存：
-</span><span style="color:#8f5902;font-style:italic">// a ： 10
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存：
-</span><span style="color:#8f5902;font-style:italic">// a ：10
-</span><span style="color:#8f5902;font-style:italic">// 拷贝变量 10
-</span><span style="color:#8f5902;font-style:italic">// b ：10
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存：
-</span><span style="color:#8f5902;font-style:italic">// a ：10（已关闭）
-</span><span style="color:#8f5902;font-style:italic">// b ：10
-</span><span style="color:#8f5902;font-style:italic">// a ：20 （新的变量 a）
-</span></code></pre></div><h2 id="引用值">引用值</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在栈内存第一层创建一个变量 a ，然后将数值 10 放进变量 a 中。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// a ： 10
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在栈内存第二层创建一个变量 b，然后将变量 a 中的数值 10 拷贝到变量 b 中。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// a ：10
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 拷贝变量 10
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// b ：10
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在栈内存第三层重新创建一个变量 a，然后将数值 10 放入这个第三层的变量 a 中，之后关闭在第一层的变量 a。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存：
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// a ：10（已关闭）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// b ：10
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// a ：20 （新的变量 a）
+</span></span></span></code></pre></div><h2 id="引用值">引用值</h2>
 <p>引用值都是对象，每个对象都有属性和方法。它指的是存储在堆内存中的实际对象。每一个引用变量中都存放着指针，这个指针指向其堆内存中的实际对象。</p>
 <h3 id="array">Array</h3>
 <p>数组，用于构造数组的全局对象，它是类似于列表的高阶对象。</p>
@@ -146,38 +146,43 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
 <h3 id="data">Data</h3>
 <p>日期，用于呈现时间中的某一时刻。</p>
 <h3 id="原始值的储存原理-1">原始值的储存原理</h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#8f5902;font-style:italic">// 储存模式--------------------------------------------------
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">];</span>
-<span style="color:#8f5902;font-style:italic">// 在栈内存的第一层中创建一个 变量 arr，然后在变量 arr 中放一个指向堆内存第一层的链接地址，
-</span><span style="color:#8f5902;font-style:italic">// 再将数组 [1 , 2] 放到堆内存的第一层中。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
-</span><span style="color:#8f5902;font-style:italic">// arr：指向 [1, 2] 的地址          [ 1 , 2 ]
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">brr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">// 在栈内存第二层中创建一个变量 brr，然后将栈内存第一层中变量 arr 中的链接地址拷贝到变量 brr 中，
-</span><span style="color:#8f5902;font-style:italic">// 则变量 brr 与 变量 arr 中的链接地址都指向堆内存第一层中的数组[ 1 , 2 ]。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
-</span><span style="color:#8f5902;font-style:italic">// arr：指向 [ 1 , 2 ] 的地址       [ 1 , 2 ]
-</span><span style="color:#8f5902;font-style:italic">//         ? 拷贝
-</span><span style="color:#8f5902;font-style:italic">// brr：指向 [ 1 , 2 ] 的地址
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">push</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#8f5902;font-style:italic">// 通过栈内存第一层的变量 arr 中的链接地址找到堆内存的第一层中的数组 [1 , 2]，
-</span><span style="color:#8f5902;font-style:italic">// 然后向这个数组中添加一个数值 3，则堆内存第一层中的的数组变为了 [ 1 , 2 , 3 ]。
-</span><span style="color:#8f5902;font-style:italic">// 因此栈内存第一层的 变量 arr 与第二层的变量 brr 中的链接地址都指向堆内存第一层中的数组 [1,2,3]。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
-</span><span style="color:#8f5902;font-style:italic">// arr：指向[1 , 2 ,3]的地址        [1 , 2 ,3]
-</span><span style="color:#8f5902;font-style:italic">// brr：指向[1 , 2 ,3]的地址
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
-<span style="color:#8f5902;font-style:italic">// 找到栈内存第一层中的 变量 arr，将该变量中的链接地址改为指向堆内存第二层中的数组 [4 , 5] 的地址，
-</span><span style="color:#8f5902;font-style:italic">// 再将数组 [ 4 , 5 ] 放到堆内存第二层中。
-</span><span style="color:#8f5902;font-style:italic">// 此时变量 arr 中链接地址指向的是堆内存第二层中的数组[ 4 , 5 ]，
-</span><span style="color:#8f5902;font-style:italic">// 但变量 brr 中的链接地址依旧指向堆内存第一层中的数组 [ 1 , 2 , 3 ]。
-</span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
-</span><span style="color:#8f5902;font-style:italic">// arr：指向[ 4, 5 ]的地址         [ 1 , 2 , 3 ]
-</span><span style="color:#8f5902;font-style:italic">// brr：指向[ 1 , 2 ,3 ]的地址       [4 , 5]
-</span><span style="color:#8f5902;font-style:italic"></span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 储存模式--------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在栈内存的第一层中创建一个 变量 arr，然后在变量 arr 中放一个指向堆内存第一层的链接地址，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 再将数组 [1 , 2] 放到堆内存的第一层中。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// arr：指向 [1, 2] 的地址          [ 1 , 2 ]
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">brr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">arr</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在栈内存第二层中创建一个变量 brr，然后将栈内存第一层中变量 arr 中的链接地址拷贝到变量 brr 中，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 则变量 brr 与 变量 arr 中的链接地址都指向堆内存第一层中的数组[ 1 , 2 ]。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// arr：指向 [ 1 , 2 ] 的地址       [ 1 , 2 ]
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//         ? 拷贝
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// brr：指向 [ 1 , 2 ] 的地址
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">push</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 通过栈内存第一层的变量 arr 中的链接地址找到堆内存的第一层中的数组 [1 , 2]，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 然后向这个数组中添加一个数值 3，则堆内存第一层中的的数组变为了 [ 1 , 2 , 3 ]。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 因此栈内存第一层的 变量 arr 与第二层的变量 brr 中的链接地址都指向堆内存第一层中的数组 [1,2,3]。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// arr：指向[1 , 2 ,3]的地址        [1 , 2 ,3]
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// brr：指向[1 , 2 ,3]的地址
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">arr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 找到栈内存第一层中的 变量 arr，将该变量中的链接地址改为指向堆内存第二层中的数组 [4 , 5] 的地址，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 再将数组 [ 4 , 5 ] 放到堆内存第二层中。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 此时变量 arr 中链接地址指向的是堆内存第二层中的数组[ 4 , 5 ]，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 但变量 brr 中的链接地址依旧指向堆内存第一层中的数组 [ 1 , 2 , 3 ]。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 栈内存                            堆内存
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// arr：指向[ 4, 5 ]的地址         [ 1 , 2 , 3 ]
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// brr：指向[ 1 , 2 ,3 ]的地址       [4 , 5]
+</span></span></span></code></pre></div>
             </div>
             
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
             
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
@@ -228,9 +233,9 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

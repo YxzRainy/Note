@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 配置别名",
 	    "headline" : "Git 配置别名",
-	    "description" : "配置别名 命令简写 $ git config --global alias.st status $ git config --global alias.co checkout $ git config --global alias.ci commit $ git config --global alias.br branch 以上命令将：\ngit status简写为git st；\ngit checkout简写为git co；\ngit commit简写为git ci\ngit branch简写为git br\n以后提交就可以输入：\n$ git ci -m \u0026#34;this is shorthand\u0026#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。\n配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git\/config文件中：\n[core]\rrepositoryformatversion = 0\rfilemode = false\rbare = false\rlogallrefupdates = true\rsymlinks = false\rignorecase = true\r[alias]\rlast = log -1\r用户的配置文件自行寻找，我的是在C:\\Users\\Rainy目录下",
+	    "description" : "配置别名 命令简写 $ git config --global alias.st status $ git config --global alias.co checkout $ git config --global alias.ci commit $ git config --global alias.br branch 以上命令将：\ngit status简写为git st；\ngit checkout简写为git co；\ngit commit简写为git ci\ngit branch简写为git br\n以后提交就可以输入：\n$ git ci -m \u0026#34;this is shorthand\u0026#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。\n配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git\/config文件中：\n[core]\rrepositoryformatversion = 0\rfilemode = false\rbare = false\rlogallrefupdates = true\rsymlinks = false\rignorecase = true\r[alias]\rlast = log -1 用户的配置文件自行寻找，我的是在C:\\Users\\Rainy目录下",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 配置别名</title>
@@ -46,7 +46,7 @@ git branch简写为git br
 以后提交就可以输入：
 $ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
 配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git/config文件中：
-[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下" />
+[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1 用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下" />
     <meta name="description" content="配置别名 命令简写 $ git config --global alias.st status $ git config --global alias.co checkout $ git config --global alias.ci commit $ git config --global alias.br branch 以上命令将：
 git status简写为git st；
 git checkout简写为git co；
@@ -55,12 +55,12 @@ git branch简写为git br
 以后提交就可以输入：
 $ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时候，加上--global是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。
 配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的.git/config文件中：
-[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下" />
+[core]repositoryformatversion = 0filemode = falsebare = falselogallrefupdates = truesymlinks = falseignorecase = true[alias]last = log -1 用户的配置文件自行寻找，我的是在C:\Users\Rainy目录下" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -95,18 +95,18 @@ $ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时�
                 
                 <h1 id="配置别名">配置别名</h1>
 <h2 id="命令简写">命令简写</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">$ git config --global alias.st status
-$ git config --global alias.co checkout
-$ git config --global alias.ci commit
-$ git config --global alias.br branch
-</code></pre></div><p>以上命令将：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ git config --global alias.st status
+</span></span><span style="display:flex;"><span>$ git config --global alias.co checkout
+</span></span><span style="display:flex;"><span>$ git config --global alias.ci commit
+</span></span><span style="display:flex;"><span>$ git config --global alias.br branch
+</span></span></code></pre></div><p>以上命令将：</p>
 <p><code>git status</code>简写为<code>git st</code>；</p>
 <p><code>git checkout</code>简写为<code>git co</code>；</p>
 <p><code>git commit</code>简写为<code>git ci</code></p>
 <p><code>git branch</code>简写为<code>git br</code></p>
 <p>以后提交就可以输入：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">$ git ci -m <span style="color:#4e9a06">&#34;this is shorthand&#34;</span>
-</code></pre></div><h2 id="配置别名-1">配置别名</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ git ci -m <span style="color:#4e9a06">&#34;this is shorthand&#34;</span>
+</span></span></code></pre></div><h2 id="配置别名-1">配置别名</h2>
 <p>配置 Git 的时候，加上<code>--global</code>是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。</p>
 <p>配置文件放哪了？每个仓库的 Git 配置文件都放在当前仓库的<code>.git/config</code>文件中：</p>
 <pre tabindex="0"><code>[core]
@@ -118,7 +118,6 @@ $ git config --global alias.br branch
 	ignorecase = true
 [alias]
          last = log -1
-
 </code></pre><p>用户的配置文件自行寻找，我的是在<strong>C:\Users\Rainy</strong>目录下</p>
 
             </div>
@@ -159,9 +158,9 @@ $ git config --global alias.br branch
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

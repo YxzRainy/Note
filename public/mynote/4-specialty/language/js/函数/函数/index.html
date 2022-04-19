@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "JavaScript 函数",
 	    "headline" : "JavaScript 函数",
-	    "description" : "函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。\n每一个函数其实都是一个 Function 类型的对象。\n函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。\n声明方式 基本方式 直接通过 function 关键字进行声明。\nfunction demo(a, b) { \/\/ 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 \tconsole.log(a \u002b b); \/\/ 返回形参 a 与 b 的和 3。 } demo(1, 2); \/\/ 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; \/\/ 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， \/\/ 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); \/\/ 返回函数 demo 的函数名  \/\/匿名函数方式-------------------------------------------------- var demo = function () { console.",
+	    "description" : "函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。\n每一个函数其实都是一个 Function 类型的对象。\n函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。\n声明方式 基本方式 直接通过 function 关键字进行声明。\nfunction demo(a, b) { \t\/\/ 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 \tconsole.log(a \u002b b); \t\/\/ 返回形参 a 与 b 的和 3。 } demo(1, 2); \/\/ 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; \/\/ 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， \/\/ 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); \/\/ 返回函数 demo 的函数名  \/\/匿名函数方式-------------------------------------------------- var demo = function () { \tconsole.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,8 +32,8 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%87%BD%E6%95%B0\/%E5%87%BD%E6%95%B0\/",
-	    "keywords" : [ "学习笔记","JavaScript", ]
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/js\/%E5%87%BD%E6%95%B0\/%E5%87%BD%E6%95%B0\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
 	}
 </script><title>JavaScript 函数</title>
     <meta property="og:title" content="JavaScript 函数" />
@@ -42,17 +42,17 @@
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
 声明方式 基本方式 直接通过 function 关键字进行声明。
-function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a &#43; b); // 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { console." />
+function demo(a, b) { 	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a &#43; b); 	// 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { 	console." />
     <meta name="description" content="函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
 声明方式 基本方式 直接通过 function 关键字进行声明。
-function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a &#43; b); // 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { console." />
+function demo(a, b) { 	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a &#43; b); 	// 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { 	console." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -92,46 +92,52 @@ function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形�
 <h2 id="声明方式">声明方式</h2>
 <h3 id="基本方式">基本方式</h3>
 <p>直接通过 function 关键字进行声明。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-	<span style="color:#8f5902;font-style:italic">// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。
-</span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
-	<span style="color:#8f5902;font-style:italic">// 返回形参 a 与 b 的和 3。
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#8f5902;font-style:italic">// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参）
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#8f5902;font-style:italic">// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字，
-</span><span style="color:#8f5902;font-style:italic">// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#8f5902;font-style:italic">// 返回函数 demo 的函数名
-</span><span style="color:#8f5902;font-style:italic"></span>
-<span style="color:#8f5902;font-style:italic">//匿名函数方式--------------------------------------------------
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">456</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#000;font-weight:bold">};</span>
-<span style="color:#000">demo</span><span style="color:#000;font-weight:bold">();</span>
-<span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
-<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">);</span>
-</code></pre></div><h2 id="函数表达式">函数表达式</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 返回形参 a 与 b 的和 3。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 函数 demo 的属性 name 为指定函数的（这里为 demo）名字，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 返回函数 demo 的函数名
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//匿名函数方式--------------------------------------------------
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">456</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="函数表达式">函数表达式</h2>
 <p>函数表达式类似于函数声明，并且两者拥有几乎相同的语法；</p>
 <p>函数表达式与函数声明的最主要区别是函数名称，在函数表达式中可省略它，从而创建匿名函数。</p>
 <p>函数表达式没有函数声明提升的特性。</p>
 <h4 id="命名函数表达式">命名函数表达式</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;命名函数表达式&#39;</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#000;font-weight:bold">};</span>
-</code></pre></div><h4 id="匿名函数表达式">匿名函数表达式</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
-	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;匿名函数表达式&#39;</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#000;font-weight:bold">})();</span>
-</code></pre></div><h4 id="函数的属性-name">函数的属性 name</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{};</span>
-<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
-<span style="color:#8f5902;font-style:italic">// ES5 是返回空字符串 &#34;&#34;。
-</span><span style="color:#8f5902;font-style:italic">// ES6 是返回接收匿名函数的变量名。
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">test</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;命名函数表达式&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span></code></pre></div><h4 id="匿名函数表达式">匿名函数表达式</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">demo</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">b</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;匿名函数表达式&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">})();</span>
+</span></span></code></pre></div><h4 id="函数的属性-name">函数的属性 name</h4>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// ES5 是返回空字符串 &#34;&#34;。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// ES6 是返回接收匿名函数的变量名。
+</span></span></span></code></pre></div>
             </div>
             
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
             
             <div class="PostTag">
                 <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
@@ -170,9 +176,9 @@ function demo(a, b) { // 声明一个函数，demo 为函数名，a 与 b为形�
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

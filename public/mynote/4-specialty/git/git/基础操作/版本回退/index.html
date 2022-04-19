@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 版本回退",
 	    "headline" : "Git 版本回退",
-	    "description" : "版本回退 类似存档 现在我们新建一个文件text.txt，并对这个文件进行第一次修改和提交，得到text.txt 1.0 版本。\n 重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。\n这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。\nGit 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。\n在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。\n回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。\ngit reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。\n这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？\n回退的指定版本 这个操作需要知道指定版本的版本号，比如想回退到指定版本 3.0的版本号为1098b，那么使用git reset --hard commit id\ngit reset --hard commit id 版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。\n这时候再查看text.txt的内容，你会发现我们的版本 3.0又回来了。\nGit 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的HEAD 指针，HEAD指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了版本 3.0.",
+	    "description" : "版本回退 类似存档 现在我们新建一个文件text.txt，并对这个文件进行第一次修改和提交，得到text.txt 1.0 版本。\n 重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。\n这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。\nGit 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。\n在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^比较容易数不过来，所以我们写成HEAD~100或者HEAD~50**。\n回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。\ngit reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。\n这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？\n回退的指定版本 这个操作需要知道指定版本的版本号，比如想回退到指定版本 3.0的版本号为1098b，那么使用git reset --hard commit id\ngit reset --hard commit id 版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。\n这时候再查看text.txt的内容，你会发现我们的版本 3.0又回来了。\nGit 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的HEAD 指针，HEAD指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了版本 3.0.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 版本回退</title>
@@ -42,7 +42,7 @@
  重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。
 这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。
 Git 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。
-在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。
+在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^比较容易数不过来，所以我们写成HEAD~100或者HEAD~50**。
 回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。
 git reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。
 这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？
@@ -54,7 +54,7 @@ Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版�
  重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。
 这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。
 Git 也是一样，每当你觉得文件修改到一定程度的时候，就可以保存一个快照，这个快照在 Git 中被称为commit。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个commit恢复，然后继续工作，而不是把几个月的工作成果全部丢失。
-在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。
+在 Git 中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上 100 个版本写 100 个**^比较容易数不过来，所以我们写成HEAD~100或者HEAD~50**。
 回退的上一个版本 再次回到我们的text.txt文件上，假设我们目前是版本 3.0，也就是最新版本，现在用git reset --hard HEAD^ 命令将文件退回到上一个版本。
 git reset --hard HEAD^ OK，现在文件已经被还原到上一个版本 2.0了，当然，你还可以继续回退到上一个版本1.0，不过先别着急。
 这时候你也许会有个疑惑，如果你还想回到版本 3.0应该怎么办呢？
@@ -64,9 +64,9 @@ git reset --hard commit id 版本号没必要写全，前几位就可以了，Gi
 Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的HEAD 指针，HEAD指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了版本 3.0." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -110,24 +110,24 @@ Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版�
 <p>不知道你有没有发现，<strong>修改一个文件后并提交</strong>与<strong>通过一关游戏并存档</strong>有着相似之处。</p>
 <p>这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。</p>
 <p>Git 也是一样，每当你觉得文件修改到一定程度的时候，就可以<strong>保存一个快照</strong>，这个快照在 Git 中被称为<code>commit</code>。一旦你把文件改乱了，或者误删了文件，还可以从最近的一个<strong>commit</strong>恢复，然后继续工作，而不是把几个月的工作成果全部丢失。</p>
-<p>在 Git 中，用<strong>HEAD</strong>表示当前版本，上一个版本就是<strong>HEAD^</strong>，上上一个版本就是<strong>HEAD^^</strong>，当然往上 100 个版本写 100 个**^**比较容易数不过来，所以我们写成**HEAD~100**或者**HEAD~50**。</p>
+<p>在 Git 中，用<strong>HEAD</strong>表示当前版本，上一个版本就是<strong>HEAD^</strong>，上上一个版本就是<strong>HEAD^^</strong>，当然往上 100 个版本写 100 个**^<strong>比较容易数不过来，所以我们写成</strong>HEAD~100<strong>或者</strong>HEAD~50**。</p>
 <h2 id="回退的上一个版本">回退的上一个版本</h2>
 <p>再次回到我们的<strong>text.txt</strong>文件上，假设我们目前是<strong>版本 3.0</strong>，也就是最新版本，现在用<code>git reset --hard HEAD^</code> 命令将文件退回到上一个版本。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git reset --hard HEAD<span style="color:#4e9a06">^
-</span></code></pre></div><p>OK，现在文件已经被还原到上一个<strong>版本 2.0</strong>了，当然，你还可以继续回退到上一个版本<strong>1.0</strong>，不过先别着急。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git reset --hard HEAD<span style="color:#4e9a06">^
+</span></span></span></code></pre></div><p>OK，现在文件已经被还原到上一个<strong>版本 2.0</strong>了，当然，你还可以继续回退到上一个版本<strong>1.0</strong>，不过先别着急。</p>
 <p>这时候你也许会有个疑惑，如果你还想回到<strong>版本 3.0</strong>应该怎么办呢？</p>
 <h2 id="回退的指定版本">回退的指定版本</h2>
 <p>这个操作需要知道指定版本的版本号，比如想回退到指定<strong>版本 3.0</strong>的版本号为<strong>1098b</strong>，那么使用<code>git reset --hard commit id</code></p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git reset --hard commit id
-</code></pre></div><p>版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git reset --hard commit id
+</span></span></code></pre></div><p>版本号没必要写全，前几位就可以了，Git 会自动去找。当然也不能只写前面一两位，因为这样的话，Git 可能会找到不止一个版本号，就无法确定你具体想回退到哪一个版本了。</p>
 <p>这时候再查看<strong>text.txt</strong>的内容，你会发现我们的<strong>版本 3.0</strong>又回来了。</p>
 <p>Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版本的<strong>HEAD 指针</strong>，<strong>HEAD</strong>指向的版本就是当前版本，因此，当你回退到某个版本的时候，Git 仅仅是把 HEAD 重新指向了<strong>版本 3.0</strong>.</p>
 <h3 id="只-commit-过一次代码会出现的问题">只 commit 过一次代码会出现的问题</h3>
 <p>使用<code>git reset --hard &quot;HEAD^&quot;</code>命令时遇到以下错误：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">fatal: ambiguous argument &#39;HEAD<span style="color:#4e9a06">^&#39;</span>: unknown revision or path not in the working tree.
-Use &#39;--&#39; to separate paths from revisions, like this:
-&#39;git <span style="color:#000;font-weight:bold">&lt;</span>command<span style="color:#000;font-weight:bold">&gt;</span> [<span style="color:#000;font-weight:bold">&lt;</span>revision<span style="color:#000;font-weight:bold">&gt;</span>...] -- [<span style="color:#000;font-weight:bold">&lt;</span>file<span style="color:#000;font-weight:bold">&gt;</span>...]&#39;
-</code></pre></div><p>这是因为当前仓库到目前为止只<code>git commit</code>过一次代码，故已经是 HEAD （当前最新）版本，没有历史版本，自然是不能回退。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>fatal: ambiguous argument &#39;HEAD<span style="color:#4e9a06">^&#39;</span>: unknown revision or path not in the working tree.
+</span></span><span style="display:flex;"><span>Use &#39;--&#39; to separate paths from revisions, like this:
+</span></span><span style="display:flex;"><span>&#39;git <span style="color:#000;font-weight:bold">&lt;</span>command<span style="color:#000;font-weight:bold">&gt;</span> [<span style="color:#000;font-weight:bold">&lt;</span>revision<span style="color:#000;font-weight:bold">&gt;</span>...] -- [<span style="color:#000;font-weight:bold">&lt;</span>file<span style="color:#000;font-weight:bold">&gt;</span>...]&#39;
+</span></span></code></pre></div><p>这是因为当前仓库到目前为止只<code>git commit</code>过一次代码，故已经是 HEAD （当前最新）版本，没有历史版本，自然是不能回退。</p>
 <h4 id="解决">解决</h4>
 <p>只需要继续 commit 几次，使得有多个历史版本。</p>
 <h2 id="找不到-commit-id-怎么办">找不到 commit id 怎么办</h2>
@@ -179,9 +179,9 @@ Use &#39;--&#39; to separate paths from revisions, like this:
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -2,14 +2,14 @@
 <html lang="zh-cmn-Hans">
     <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.96.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/" />
+    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Git 管理修改",
 	    "headline" : "Git 管理修改",
-	    "description" : "管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。\n第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：\n修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本\ngit add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本\ngit commit ReadMe.txt\r接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？\n这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。\n 也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。\n修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本\ngit add ReadMe.txt\r修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.",
+	    "description" : "管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。\n第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：\n修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本\ngit add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本\ngit commit ReadMe.txt 接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？\n这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。\n 也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。\n修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本\ngit add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9\/",
+	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5\/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9\/",
 	    "keywords" : [ "Git","Github","学习笔记", ]
 	}
 </script><title>Git 管理修改</title>
@@ -42,25 +42,25 @@
 第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
 git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本
-git commit ReadMe.txt接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
+git commit ReadMe.txt 接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
 这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。
  也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
-git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3." />
+git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3." />
     <meta name="description" content="管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。
 第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
 git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本
-git commit ReadMe.txt接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
+git commit ReadMe.txt 接着你会发现被提交的版本为什么不是ReadMe.txt 3.0？
 这是因为 Git 管理的是修改，而非文件，因此，当你使用git add命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的git commit只负责把暂存区的修改提交了。
  也就是将 2.0 版本提交了，因为版本 2.0 被添加到了暂存区 但版本 3.0 却并没有被提交，因为版本 3.0 没有被添加到暂存区  如何提交第二次修改 那怎么提交第二次修改呢？你可以继续git add再git commit，也可以别着急提交第一次修改，先git add第二次修改，再git commit，就相当于把两次修改合并后一块提交了。
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
-git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3." />
+git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -98,8 +98,8 @@ git add ReadMe.txt修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3." />
 <h3 id="第二次修改为什么没有被提交">第二次修改为什么没有被提交</h3>
 <p>现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：</p>
 <p>修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">git add ReadMe.txt
-</code></pre></div><p>修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>git add ReadMe.txt
+</span></span></code></pre></div><p>修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.0 版本</p>
 <pre tabindex="0"><code>git commit ReadMe.txt
 </code></pre><p>接着你会发现被提交的版本为什么不是<strong>ReadMe.txt 3.0</strong>？</p>
 <p>这是因为 Git 管理的是修改，而非文件，因此，当你使用<code>git add</code>命令将 2.0 版本放入暂存区后，准备提交，但是，之后得到的版本 3.0 并没有被放入暂存区，所以，最后的<code>git commit</code>只负责把暂存区的修改提交了。</p>
@@ -157,9 +157,9 @@ git commit ReadMe.txt
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

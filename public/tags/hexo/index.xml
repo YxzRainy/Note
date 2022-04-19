@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hexo on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/hexo/</link>
+    <link>http://yxzi.xyz/Sub/Blog/tags/hexo/</link>
     <description>Recent content in Hexo on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hexo 将博客作为站点子页面</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
       <description>Hexo 将博客作为站点子页面 前言 如果你想如何在 GitHub 的 repository 中上传自己写的网页作为首页，hexo 生成的博客页作为其子页？即自己写的页面作为 UserName.github.io 的页面，将 hexo 博客放在 UserName.github.io/blog 上，那么，这个教程也许可以帮到你。
 本教程的前提是你已经用 hexo 将博客搭建在 UserName.github.io 的仓库上了。
 新建仓库 在 github 上新建一个仓库，名字随意，我的是 Blog。
@@ -23,10 +23,10 @@
     
     <item>
       <title>Hexo 搭建博客</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
 将 Git 与 Github 关联 下载并安装Git 配置个人信息 git config --global user.name &amp;#34;Your UserName&amp;#34; git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
 ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
@@ -35,10 +35,10 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
     
     <item>
       <title>Hexo 更改博客主题</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
       <description>Hexo 更改博客主题 前言 配置完了 Hexo，你是否对自带的主题不满意呢？本篇文章将教你如何更改及美化 Hexo 主题。
 下载主题 去 Hexo 的Hexo Themes下载一个你认为不错的主题。这里推荐 Next主题
 更改基本站点信息 在你的博客根目录下打开**_config.yml**，将 Site 下的信息改为你自己的
