@@ -18,3 +18,21 @@ tags:
 
 SQL 语言不是某个特定 DBMS 所专有的语言，相反，近乎所有的 DBMS 都支持 SQL。
 
+## SQL的语言分类
+
+### DQL
+
+数据查询语言 select。
+
+## DML
+
+数据操作语言insert 、update、delete。
+
+### DDL
+
+数据定义语言 create、drop、alter。
+
+### TCL
+
+事务控制语言 commit、rollback。
+
