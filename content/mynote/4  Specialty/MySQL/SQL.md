@@ -24,15 +24,19 @@ SQL 语言不是某个特定 DBMS 所专有的语言，相反，近乎所有的 
 
 数据查询语言 select。
 
-## DML
+### DML
 
-数据操作语言insert 、update、delete。
+数据操作语言，用于对数据库表中的数据进行操作。
+
+SELECT、INSERT、UPDATE、DELETE、CALL、EXPLAIN PLAN、LOCK TABLE
 
 ### DDL
 
-数据定义语言 create、drop、alter。
+数据定义语言，用于对数据库、表层面进行操作。
 
-### TCL
+CREATE、ALTER、DROP、TRUNCATE、COMMENT、GRANT、REVOKE
 
-事务控制语言 commit、rollback。
+### DCL
+
+事务控制语言COMMIT、SAVEPOINT、ROLLBACK、SET TRANSACTION
 

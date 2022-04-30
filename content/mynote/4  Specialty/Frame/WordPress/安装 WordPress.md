@@ -15,7 +15,7 @@ tags:
 
 将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
 
-![image-20220303151925375](E:\Github\MyBlog\content\mynote\4  Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
+![image-20220303151925375](E:\Github\MyBlog\content\mynote\4  Specialty\Frame\WordPress\安装 WordPress.assets\image-20220303151925375.png)
 
 打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。
 

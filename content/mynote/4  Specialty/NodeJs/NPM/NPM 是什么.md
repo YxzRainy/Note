@@ -3,10 +3,11 @@ title: NPM  是什么
 date: 2021-11-21 6:00:00
 updated: 2021-11-21 6:00:00
 categories:
-        - 包管理工具
+        - NodeJs
 tags:
         - NPM 
         - 学习笔记
+        - 包管理工具
 ---
 
 # NPM  是什么

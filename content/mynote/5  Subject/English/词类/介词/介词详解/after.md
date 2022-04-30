@@ -13,9 +13,7 @@ tags:
 
 # after
 
-## 表示时间，顺序
-
-1. 在...之后。
+## 表示时间/顺序
 
 ### after + 时间点 
 
@@ -40,13 +38,13 @@ after 跟表示时间段的词语 。
 
 - After getting up every morning, I turn on my computer.
 
-## after +句子
+### after + 句子
 
-## 表示由于、鉴于
+这种情况表示由于.../鉴于...的意思。
 
 - After failing in the test,he decided to work hard.
 
-## 表示追赶、追求、追寻
+## 表示追赶/追求/追寻
 
 ### after + 名词或人称代词宾格
 
@@ -55,7 +53,7 @@ after 跟表示时间段的词语 。
 - The police are after the thief.
 - The cat is after a mouse.
 
-## 表示依照、仿照
+## 表示依照/仿照
 
 - read after me
 

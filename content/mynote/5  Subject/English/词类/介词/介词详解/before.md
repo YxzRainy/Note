@@ -13,9 +13,7 @@ tags:
 
 # before
 
-## 表示时间
-
-1. 在...以前。
+## 表示在某个时间点以前
 
 ### before + 表示几点钟的数词
 
@@ -39,10 +37,9 @@ before 后面不能加一段时间：before three days。
 
 ## 表示位置
 
-1. 在...前面。
-2. 当着... 的面。
+### before + 地点/场所/人
 
-before 可以跟一个表示物体、地点、场所或表示人的词语。表示在某个地点或某个人的前面。
+这种情况表示在某个地点或某个人的前面。
 
 - He boasts before Rainy.
 - We should not mention love before Pandora.

@@ -16,12 +16,9 @@ tags:
 
 ## 表示位置
 
-1. 在...附近。
-2. 在... 旁边。
+### beside + 表示地点的名词
 
-### beside + 名词
-
-beside + 名词表示在这个某个地点的旁边或者附近。
+表示在这个某个地点的旁边或者附近。
 
 - The room beside the bathroom is mine.
 
@@ -30,9 +27,9 @@ beside + 名词表示在这个某个地点的旁边或者附近。
 
 ## 表示对比
 
-1. 和...相比。
+### beside + 名词或代词
 
-beside + 名词或代词，表示和某人相比。
+表示与某人相比。
 
 - Beside his, my trouble is nothing.
 

@@ -20,11 +20,7 @@ tags:
 ```yaml
 # Copyright (c) 1993-1999 Microsoft Corp.
 
-#
-
 # This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
-
-#
 
 # This file contains the mappings of IP addresses to host names. Each
 
@@ -36,17 +32,11 @@ tags:
 
 # space.
 
-#
-
 # Additionally, comments (such as these) may be inserted on individual
 
 # lines or following the machine name denoted by a '#' symbol.
 
-#
-
 # For example:
-
-#
 
 # 102.54.94.97 rhino.acme.com # source server
 
