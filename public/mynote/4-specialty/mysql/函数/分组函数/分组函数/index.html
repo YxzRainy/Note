@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 分组函数",
+	    "headline" : "MySQL 分组函数",
+	    "description" : "分组函数 与分组函数一同查询的字段要求是GROUP BY后的字段。\nSUM 统计表中字段的和。\n一般用于处理数值类型，计算时会忽略 NULL 值。\nSELECTSUM(salary)FROMemployees;AVG 统计表中字段的平均值。\n一般用于处理数值类型，计算时会忽略 NULL 值。\nSELECTAVG(salary)FROMemployees;MAX 统计表中字段的最大值，可以处理任何数据类型，计算时会忽略 NULL 值。\nSELECTMAX(salary)FROMemployees;MIN 统计表中字段的最小值，可以处理任何数据类型，计算时会忽略 NULL 值。\nSELECTMIN(salary)FROMemployees;COUNT 统计表的行数，可以处理任何数据类型，计算时会忽略 NULL 值。\n查询总行数 SELECTCOUNT(*)FROMemployees",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%87%BD%E6%95%B0\/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0\/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0\/",
+	    "keywords" : [ "SQL","函数","MySQL","分组函数","学习笔记", ]
+	}
+</script><title>MySQL 分组函数</title>
+    <meta property="og:title" content="MySQL 分组函数" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="分组函数 与分组函数一同查询的字段要求是GROUP BY后的字段。
+SUM 统计表中字段的和。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECTSUM(salary)FROMemployees;AVG 统计表中字段的平均值。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECTAVG(salary)FROMemployees;MAX 统计表中字段的最大值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECTMAX(salary)FROMemployees;MIN 统计表中字段的最小值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECTMIN(salary)FROMemployees;COUNT 统计表的行数，可以处理任何数据类型，计算时会忽略 NULL 值。
+查询总行数 SELECTCOUNT(*)FROMemployees" />
+    <meta name="description" content="分组函数 与分组函数一同查询的字段要求是GROUP BY后的字段。
+SUM 统计表中字段的和。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECTSUM(salary)FROMemployees;AVG 统计表中字段的平均值。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECTAVG(salary)FROMemployees;MAX 统计表中字段的最大值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECTMAX(salary)FROMemployees;MIN 统计表中字段的最小值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECTMIN(salary)FROMemployees;COUNT 统计表的行数，可以处理任何数据类型，计算时会忽略 NULL 值。
+查询总行数 SELECTCOUNT(*)FROMemployees" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 分组函数</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-22 06:00:00 UTC">
+                        2022-04-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="分组函数">分组函数</h1>
+<p>与分组函数一同查询的字段要求是<code>GROUP BY</code>后的字段。</p>
+<h2 id="sum">SUM</h2>
+<p>统计表中字段的和。</p>
+<p>一般用于处理数值类型，计算时会忽略 NULL 值。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">SUM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="avg">AVG</h2>
+<p>统计表中字段的平均值。</p>
+<p>一般用于处理数值类型，计算时会忽略 NULL 值。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AVG</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="max">MAX</h2>
+<p>统计表中字段的最大值，可以处理任何数据类型，计算时会忽略 NULL 值。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">MAX</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="min">MIN</h2>
+<p>统计表中字段的最小值，可以处理任何数据类型，计算时会忽略 NULL 值。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">MIN</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="count">COUNT</h2>
+<p>统计表的行数，可以处理任何数据类型，计算时会忽略 NULL 值。</p>
+<h3 id="查询总行数">查询总行数</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">COUNT</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%87%BD%E6%95%B0/">
+                    函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/">
+                    分组函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sum">SUM</a></li>
+    <li><a href="#avg">AVG</a></li>
+    <li><a href="#max">MAX</a></li>
+    <li><a href="#min">MIN</a></li>
+    <li><a href="#count">COUNT</a>
+      <ul>
+        <li><a href="#查询总行数">查询总行数</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

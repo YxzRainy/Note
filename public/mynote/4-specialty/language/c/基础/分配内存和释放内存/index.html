@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E5%92%8C%E9%87%8A%E6%94%BE%E5%86%85%E5%AD%98/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E5%92%8C%E9%87%8A%E6%94%BE%E5%86%85%E5%AD%98/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 分配内存和释放内存",
+	    "headline" : "C 分配内存和释放内存",
+	    "description" : "分配内存和释放内存 分配内存 操作系统会将某一块内存空间的控制权限，交给程序。\n释放内存 释放内存，可以用 C 语言中的free();函数来实现。\n程序会将某一块内存空间的控制权限，交还给操作系统，使得这个程序无法对这块区域进行操作。而不是将这一块内存空间中的数据清空。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%9F%BA%E7%A1%80\/%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E5%92%8C%E9%87%8A%E6%94%BE%E5%86%85%E5%AD%98\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C 分配内存和释放内存</title>
+    <meta property="og:title" content="C 分配内存和释放内存" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="分配内存和释放内存 分配内存 操作系统会将某一块内存空间的控制权限，交给程序。
+释放内存 释放内存，可以用 C 语言中的free();函数来实现。
+程序会将某一块内存空间的控制权限，交还给操作系统，使得这个程序无法对这块区域进行操作。而不是将这一块内存空间中的数据清空。" />
+    <meta name="description" content="分配内存和释放内存 分配内存 操作系统会将某一块内存空间的控制权限，交给程序。
+释放内存 释放内存，可以用 C 语言中的free();函数来实现。
+程序会将某一块内存空间的控制权限，交还给操作系统，使得这个程序无法对这块区域进行操作。而不是将这一块内存空间中的数据清空。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 分配内存和释放内存</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-20 06:00:00 UTC">
+                        2022-04-20
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="分配内存和释放内存">分配内存和释放内存</h1>
+<h2 id="分配内存">分配内存</h2>
+<p>操作系统会将某一块内存空间的控制权限，交给程序。</p>
+<h2 id="释放内存">释放内存</h2>
+<p>释放内存，可以用 C 语言中的<code>free();</code>函数来实现。</p>
+<p>程序会将某一块内存空间的控制权限，交还给操作系统，使得这个程序无法对这块区域进行操作。而不是将这一块内存空间中的数据清空。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#分配内存">分配内存</a></li>
+    <li><a href="#释放内存">释放内存</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

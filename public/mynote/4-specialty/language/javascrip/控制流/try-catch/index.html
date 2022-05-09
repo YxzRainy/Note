@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript Try Catch",
+	    "headline" : "JavaScript Try Catch",
+	    "description" : "Try Catch 为了容错，防止程序报错后引起整个程序的终止运行\ntry 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码\ncatch 有一个参数，参数名自定义 比如 e\n那么这个 e 就会有两个参数 e.name 和 e.message\nError.name EvalError：eval()的使用与定义不一致\nRangeError：数值越界\nReferenceError：非法或不能识别的引用数值，比如当一个变量未经声明就使用或者一个函数未定义就调用的时候，会出现 ReferenceError。\nSyntaxError：语法解析错误\nTypeError：操作数类型错误\nURlError：URI 处理函数使用不当",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-04 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E6%8E%A7%E5%88%B6%E6%B5%81\/try-catch\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript Try Catch</title>
+    <meta property="og:title" content="JavaScript Try Catch" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Try Catch 为了容错，防止程序报错后引起整个程序的终止运行
+try 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码
+catch 有一个参数，参数名自定义 比如 e
+那么这个 e 就会有两个参数 e.name 和 e.message
+Error.name EvalError：eval()的使用与定义不一致
+RangeError：数值越界
+ReferenceError：非法或不能识别的引用数值，比如当一个变量未经声明就使用或者一个函数未定义就调用的时候，会出现 ReferenceError。
+SyntaxError：语法解析错误
+TypeError：操作数类型错误
+URlError：URI 处理函数使用不当" />
+    <meta name="description" content="Try Catch 为了容错，防止程序报错后引起整个程序的终止运行
+try 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码
+catch 有一个参数，参数名自定义 比如 e
+那么这个 e 就会有两个参数 e.name 和 e.message
+Error.name EvalError：eval()的使用与定义不一致
+RangeError：数值越界
+ReferenceError：非法或不能识别的引用数值，比如当一个变量未经声明就使用或者一个函数未定义就调用的时候，会出现 ReferenceError。
+SyntaxError：语法解析错误
+TypeError：操作数类型错误
+URlError：URI 处理函数使用不当" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript Try Catch</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-04 06:00:00 UTC">
+                        2022-04-04
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="try-catch">Try Catch</h1>
+<p>为了容错，防止程序报错后引起整个程序的终止运行</p>
+<p>try 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码</p>
+<p>catch 有一个参数，参数名自定义 比如 e</p>
+<p>那么这个 e 就会有两个参数 e.name 和 e.message</p>
+<h2 id="errorname">Error.name</h2>
+<p>EvalError：eval()的使用与定义不一致</p>
+<p>RangeError：数值越界</p>
+<p>ReferenceError：非法或不能识别的引用数值，比如当一个变量未经声明就使用或者一个函数未定义就调用的时候，会出现 ReferenceError。</p>
+<p>SyntaxError：语法解析错误</p>
+<p>TypeError：操作数类型错误</p>
+<p>URlError：URI 处理函数使用不当</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#errorname">Error.name</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

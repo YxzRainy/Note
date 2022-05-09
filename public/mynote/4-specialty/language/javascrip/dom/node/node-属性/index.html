@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/node/node-%E5%B1%9E%E6%80%A7/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/node/node-%E5%B1%9E%E6%80%A7/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript Node 属性",
+	    "headline" : "JavaScript Node 属性",
+	    "description" : "Node 属性 用来遍历节点树。\nparentElement 返回当前元素节点的父元素节点。\nparentNode 返回指定节点的父节点，一个节点的父节点只有一个。\nchildNodes 返回指定节点所包含的所有子节点。\nfirstChild 返回指定节点所包含的最后一个节点\nlastChild 返回指定节点所包含的第一个节点\nnextSibling 返回在指定节点后面的兄弟节点，如果指定节点为最后一个节点，则返回 null。\npreviousSibling 返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/node\/node-%E5%B1%9E%E6%80%A7\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript Node 属性</title>
+    <meta property="og:title" content="JavaScript Node 属性" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Node 属性 用来遍历节点树。
+parentElement 返回当前元素节点的父元素节点。
+parentNode 返回指定节点的父节点，一个节点的父节点只有一个。
+childNodes 返回指定节点所包含的所有子节点。
+firstChild 返回指定节点所包含的最后一个节点
+lastChild 返回指定节点所包含的第一个节点
+nextSibling 返回在指定节点后面的兄弟节点，如果指定节点为最后一个节点，则返回 null。
+previousSibling 返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。" />
+    <meta name="description" content="Node 属性 用来遍历节点树。
+parentElement 返回当前元素节点的父元素节点。
+parentNode 返回指定节点的父节点，一个节点的父节点只有一个。
+childNodes 返回指定节点所包含的所有子节点。
+firstChild 返回指定节点所包含的最后一个节点
+lastChild 返回指定节点所包含的第一个节点
+nextSibling 返回在指定节点后面的兄弟节点，如果指定节点为最后一个节点，则返回 null。
+previousSibling 返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript Node 属性</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-02 06:00:00 UTC">
+                        2022-05-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="node-属性">Node 属性</h1>
+<p>用来遍历节点树。</p>
+<h2 id="parentelement">parentElement</h2>
+<p>返回当前元素节点的父元素节点。</p>
+<h2 id="parentnode">parentNode</h2>
+<p>返回指定节点的父节点，一个节点的父节点只有一个。</p>
+<h2 id="childnodes">childNodes</h2>
+<p>返回指定节点所包含的所有子节点。</p>
+<h2 id="firstchild">firstChild</h2>
+<p>返回指定节点所包含的最后一个节点</p>
+<h2 id="lastchild">lastChild</h2>
+<p>返回指定节点所包含的第一个节点</p>
+<h2 id="nextsibling">nextSibling</h2>
+<p>返回在指定节点后面的兄弟节点，如果指定节点为最后一个节点，则返回 null。</p>
+<h2 id="previoussibling">previousSibling</h2>
+<p>返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#parentelement">parentElement</a></li>
+    <li><a href="#parentnode">parentNode</a></li>
+    <li><a href="#childnodes">childNodes</a></li>
+    <li><a href="#firstchild">firstChild</a></li>
+    <li><a href="#lastchild">lastChild</a></li>
+    <li><a href="#nextsibling">nextSibling</a></li>
+    <li><a href="#previoussibling">previousSibling</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

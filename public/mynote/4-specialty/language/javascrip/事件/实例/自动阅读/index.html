@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 自动阅读",
+	    "headline" : "JavaScript 自动阅读",
+	    "description" : "自动阅读 JavaScrip var start = document.getElementsByTagName(\u0026#39;div\u0026#39;)[0];\rvar stop = document.getElementsByTagName(\u0026#39;div\u0026#39;)[0];\rvar time;\r\/\/ 定义一个 key，用来判断自动阅读是否暂停\r\/\/ 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）\rvar key = \u0026#39;自动阅读已暂停\u0026#39;;\rstart.onclick = function () {\r\/\/ 判断自动阅读的状态\rif (key == \u0026#39;自动阅读已暂停\u0026#39;) {\r\/\/ 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动\rtime = setInterval(function () {\rwindow.scrollBy(0, 10);\r}, 100);\r\/\/ 自动阅读已开始\rkey = \u0026#39;自动阅读已开始\u0026#39;;\r}\r};\r\/\/ 自动阅读已暂停\rstop.onclick = function () {\rclearInterval(time);\rkey = \u0026#39;自动阅读已暂停\u0026#39;;\r}; ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E4%BA%8B%E4%BB%B6\/%E5%AE%9E%E4%BE%8B\/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB\/",
+	    "keywords" : [ "前端","事件","学习笔记","JavaScript","JavaScrip 实例", ]
+	}
+</script><title>JavaScript 自动阅读</title>
+    <meta property="og:title" content="JavaScript 自动阅读" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="自动阅读 JavaScrip var start = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var stop = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var time;// 定义一个 key，用来判断自动阅读是否暂停// 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）var key = &amp;#39;自动阅读已暂停&amp;#39;;start.onclick = function () {// 判断自动阅读的状态if (key == &amp;#39;自动阅读已暂停&amp;#39;) {// 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动time = setInterval(function () {window.scrollBy(0, 10);}, 100);// 自动阅读已开始key = &amp;#39;自动阅读已开始&amp;#39;;}};// 自动阅读已暂停stop.onclick = function () {clearInterval(time);key = &amp;#39;自动阅读已暂停&amp;#39;;}; " />
+    <meta name="description" content="自动阅读 JavaScrip var start = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var stop = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var time;// 定义一个 key，用来判断自动阅读是否暂停// 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）var key = &amp;#39;自动阅读已暂停&amp;#39;;start.onclick = function () {// 判断自动阅读的状态if (key == &amp;#39;自动阅读已暂停&amp;#39;) {// 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动time = setInterval(function () {window.scrollBy(0, 10);}, 100);// 自动阅读已开始key = &amp;#39;自动阅读已开始&amp;#39;;}};// 自动阅读已暂停stop.onclick = function () {clearInterval(time);key = &amp;#39;自动阅读已暂停&amp;#39;;}; " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 自动阅读</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-05 06:00:00 UTC">
+                        2022-05-05
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="自动阅读">自动阅读</h1>
+<h2 id="javascrip">JavaScrip</h2>
+<pre tabindex="0"><code class="language-JavaScrip" data-lang="JavaScrip">var start = document.getElementsByTagName(&#39;div&#39;)[0];
+var stop = document.getElementsByTagName(&#39;div&#39;)[0];
+
+var time;
+// 定义一个 key，用来判断自动阅读是否暂停
+// 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）
+var key = &#39;自动阅读已暂停&#39;;
+
+start.onclick = function () {
+    // 判断自动阅读的状态
+	if (key == &#39;自动阅读已暂停&#39;) {
+        // 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动
+		time = setInterval(function () {
+			window.scrollBy(0, 10);
+		}, 100);
+        // 自动阅读已开始
+		key = &#39;自动阅读已开始&#39;;
+	}
+};
+
+// 自动阅读已暂停
+stop.onclick = function () {
+	clearInterval(time);
+	key = &#39;自动阅读已暂停&#39;;
+};
+</code></pre>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E4%BA%8B%E4%BB%B6/">
+                    事件
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascrip-%E5%AE%9E%E4%BE%8B/">
+                    JavaScrip 实例
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascrip">JavaScrip</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

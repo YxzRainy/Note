@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E4%BC%AA%E5%85%83%E7%B4%A0%E5%92%8C%E4%BC%AA%E7%B1%BB/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/%E4%BC%AA%E5%85%83%E7%B4%A0%E5%92%8C%E4%BC%AA%E7%B1%BB/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "HTML 伪元素和伪类",
+	    "headline" : "HTML 伪元素和伪类",
+	    "description" : "伪元素和伪类 伪类选择器和伪元素选择器都是 CSS 选择器的一种。\n伪类选择器使用:开头。\n伪元素选择器使用::开头\n伪类 用于当已有元素处于的某个状态时，为其添加对应的样式，这个状态根据用户行为而动态变化。\n比如说，当用户悬停在指定的元素时，我们可以通过:hover来描述这个元素的状态。虽然它和普通的 css 类相似，可以为已有的元素添加样式，但是它只有处于 DOM 树无法描述的状态下才能为元素添加样式，所以将其称为伪类。\n伪元素 伪元素用于创建一些不在 DOM 树中的元素（虚拟元素），并为其添加其 CSS 样式。伪元素开头为双冒号::。\n比如说，我们可以用::before或::after在一个元素的前面或后面增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在 DOM 树中，因为他们都是虚拟的元素。\n ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-06 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-06 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/html\/%E4%BC%AA%E5%85%83%E7%B4%A0%E5%92%8C%E4%BC%AA%E7%B1%BB\/",
+	    "keywords" : [ "前端","HTML","学习笔记", ]
+	}
+</script><title>HTML 伪元素和伪类</title>
+    <meta property="og:title" content="HTML 伪元素和伪类" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="伪元素和伪类 伪类选择器和伪元素选择器都是 CSS 选择器的一种。
+伪类选择器使用:开头。
+伪元素选择器使用::开头
+伪类 用于当已有元素处于的某个状态时，为其添加对应的样式，这个状态根据用户行为而动态变化。
+比如说，当用户悬停在指定的元素时，我们可以通过:hover来描述这个元素的状态。虽然它和普通的 css 类相似，可以为已有的元素添加样式，但是它只有处于 DOM 树无法描述的状态下才能为元素添加样式，所以将其称为伪类。
+伪元素 伪元素用于创建一些不在 DOM 树中的元素（虚拟元素），并为其添加其 CSS 样式。伪元素开头为双冒号::。
+比如说，我们可以用::before或::after在一个元素的前面或后面增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在 DOM 树中，因为他们都是虚拟的元素。
+ " />
+    <meta name="description" content="伪元素和伪类 伪类选择器和伪元素选择器都是 CSS 选择器的一种。
+伪类选择器使用:开头。
+伪元素选择器使用::开头
+伪类 用于当已有元素处于的某个状态时，为其添加对应的样式，这个状态根据用户行为而动态变化。
+比如说，当用户悬停在指定的元素时，我们可以通过:hover来描述这个元素的状态。虽然它和普通的 css 类相似，可以为已有的元素添加样式，但是它只有处于 DOM 树无法描述的状态下才能为元素添加样式，所以将其称为伪类。
+伪元素 伪元素用于创建一些不在 DOM 树中的元素（虚拟元素），并为其添加其 CSS 样式。伪元素开头为双冒号::。
+比如说，我们可以用::before或::after在一个元素的前面或后面增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在 DOM 树中，因为他们都是虚拟的元素。
+ " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">HTML 伪元素和伪类</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-06 06:00:00 UTC">
+                        2022-05-06
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="伪元素和伪类">伪元素和伪类</h1>
+<p>伪类选择器和伪元素选择器都是 CSS 选择器的一种。</p>
+<p>伪类选择器使用<code>:</code>开头。</p>
+<p>伪元素选择器使用<code>::</code>开头</p>
+<h2 id="伪类">伪类</h2>
+<p>用于当已有元素处于的某个状态时，为其添加对应的样式，这个状态根据用户行为而动态变化。</p>
+<p>比如说，当用户悬停在指定的元素时，我们可以通过<code>:hover</code>来描述这个元素的状态。虽然它和普通的 css 类相似，可以为已有的元素添加样式，但是它只有处于 DOM 树无法描述的状态下才能为元素添加样式，所以将其称为伪类。</p>
+<h2 id="伪元素">伪元素</h2>
+<p>伪元素用于创建一些不在 DOM 树中的元素（虚拟元素），并为其添加其 CSS 样式。伪元素开头为双冒号<code>::</code>。</p>
+<p>比如说，我们可以用<code>::before</code>或<code>::after</code>在一个元素的前面或后面增加一些文本，并为这些文本添加样式。虽然用户可以看到这些文本，但是这些文本实际上不在 DOM 树中，因为他们都是虚拟的元素。</p>
+<h2 id="heading"></h2>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/html/">
+                    HTML
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#伪类">伪类</a></li>
+    <li><a href="#伪元素">伪元素</a></li>
+    <li><a href="#heading"></a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

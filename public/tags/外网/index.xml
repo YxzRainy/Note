@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>外网 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/</link>
     <description>Recent content in 外网 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 16 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%A4%96%E7%BD%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>国内无法访问外网的原因</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E5%8E%9F%E5%9B%A0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E5%8E%9F%E5%9B%A0/</link>
       <pubDate>Sat, 16 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E5%8E%9F%E5%9B%A0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/%E5%9B%BD%E5%86%85%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E7%9A%84%E5%8E%9F%E5%9B%A0/</guid>
       <description>国内无法访问外网的原因 国内外网被屏蔽有很多种原因，比如政治因素、安全因经济因素等等。
 比如国外的信息有些是被中国法律不允许观看的（黄色，暴力、政治），
 但是这些信息在有些国家是可以合法存在的，因此中国就屏蔽了大部分国外知名网站。

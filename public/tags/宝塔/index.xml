@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>宝塔 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/%E5%AE%9D%E5%A1%94/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%AE%9D%E5%A1%94/</link>
     <description>Recent content in 宝塔 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E5%AE%9D%E5%A1%94/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%AE%9D%E5%A1%94/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SHH 密钥登录</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
       <description>SHH 密钥登录 用 xshell 生成密钥 新建用户密钥生成向导
 输入密钥长度，比如 2024，下一步
 输入密钥名称、密码，下一步
@@ -27,10 +27,10 @@ AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     
     <item>
       <title>登录宝塔</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
       <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
 Putty 用于 Windows 从本地登陆到远程 Linux 服务器

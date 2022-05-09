@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 函数",
+	    "headline" : "MySQL 函数",
+	    "description" : "函数 函数之间可以嵌套\n语法 SELECT函数名(实参列表,表名)单行函数 主要用于处理数据，传入一个参数，返回一个值。\n 字符函数，传入的参数为字符串类型。 数学函数，传入的参数为数字类型。 日期函数，传入的参数为日期类型。 其他函数 流程控制函数，可以实现一些分支结构。  分组函数 主要用于统计数据，传入一组参数，并返回一个值，也叫统计函数、组函数、聚合函数。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-23 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-23 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%87%BD%E6%95%B0\/%E5%87%BD%E6%95%B0\/",
+	    "keywords" : [ "SQL","DQL","函数","MySQL","学习笔记", ]
+	}
+</script><title>MySQL 函数</title>
+    <meta property="og:title" content="MySQL 函数" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="函数 函数之间可以嵌套
+语法 SELECT函数名(实参列表,表名)单行函数 主要用于处理数据，传入一个参数，返回一个值。
+ 字符函数，传入的参数为字符串类型。 数学函数，传入的参数为数字类型。 日期函数，传入的参数为日期类型。 其他函数 流程控制函数，可以实现一些分支结构。  分组函数 主要用于统计数据，传入一组参数，并返回一个值，也叫统计函数、组函数、聚合函数。" />
+    <meta name="description" content="函数 函数之间可以嵌套
+语法 SELECT函数名(实参列表,表名)单行函数 主要用于处理数据，传入一个参数，返回一个值。
+ 字符函数，传入的参数为字符串类型。 数学函数，传入的参数为数字类型。 日期函数，传入的参数为日期类型。 其他函数 流程控制函数，可以实现一些分支结构。  分组函数 主要用于统计数据，传入一组参数，并返回一个值，也叫统计函数、组函数、聚合函数。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 函数</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-23 06:00:00 UTC">
+                        2022-04-23
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="函数">函数</h1>
+<p>函数之间可以嵌套</p>
+<h2 id="语法">语法</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">函数名</span><span style="color:#000;font-weight:bold">(</span><span style="color:#a40000">实参列表</span><span style="color:#000;font-weight:bold">,</span><span style="color:#a40000">表名</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="单行函数">单行函数</h2>
+<p>主要用于处理数据，传入一个参数，返回一个值。</p>
+<ul>
+<li>字符函数，传入的参数为字符串类型。</li>
+<li>数学函数，传入的参数为数字类型。</li>
+<li>日期函数，传入的参数为日期类型。</li>
+<li>其他函数</li>
+<li>流程控制函数，可以实现一些分支结构。</li>
+</ul>
+<h2 id="分组函数">分组函数</h2>
+<p>主要用于统计数据，传入一组参数，并返回一个值，也叫统计函数、组函数、聚合函数。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%87%BD%E6%95%B0/">
+                    函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#语法">语法</a></li>
+    <li><a href="#单行函数">单行函数</a></li>
+    <li><a href="#分组函数">分组函数</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

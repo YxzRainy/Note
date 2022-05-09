@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编程 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</link>
+    <link>https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/</link>
     <description>Recent content in 编程 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 14 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Css 选择器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%80%89%E6%8B%A9%E5%99%A8/</link>
+      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E9%80%89%E6%8B%A9%E5%99%A8/</guid>
+      <description>选择器 ID 选择器，尽量少用，</description>
+    </item>
+    
     <item>
       <title>Css 字体</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</link>
       <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AD%97%E4%BD%93/</guid>
       <description>字体 参考线 当制作文字时，会出现几根参考线。不同的文字类型，参考线位置、距离都不一样，同一种文字类型，参考线一致。
 组成
  text_top ascent，顶线 super，上基线 baseline，基线 sub，下基线 text_bottom descent，底线  决定因素
@@ -32,58 +41,58 @@ bottom：文字底线向下延申的空间。
     
     <item>
       <title>Css 文本溢出处理</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</link>
       <pubDate>Wed, 13 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E5%A4%84%E7%90%86/</guid>
       <description>文本溢出处理 实现单行文本的溢出显示省略号可以直接用 text-overflow:ellipsis 属性来实现，当然还需要加宽度width属来兼容部分浏览。
 overflow: hidden; text-overflow: ellipsis; white-space: nowrap; </description>
     </item>
     
     <item>
-      <title>Css 媒体查询</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</link>
-      <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2/</guid>
-      <description>媒体查询 @media screen and (min-width: 720px) { 	/* 当浏览器宽度大于 value 时所应用的样式 */ }  @media screen and (max-width: value) { 	/* 当浏览器宽度小于 value 时所应用的样式*/ } </description>
-    </item>
-    
-    <item>
       <title>Css 渐变</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</link>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E6%B8%90%E5%8F%98/</guid>
       <description>渐变 background-image: linear-gradient(rgb(48, 47, 47), rgb(177, 177, 175)); </description>
     </item>
     
     <item>
+      <title>Css 自适应布局</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/</link>
+      <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/</guid>
+      <description>自适应布局 @media screen and (min-width: 720px) { 	/* 当浏览器宽度大于 value 时所应用的样式 */ }  @media screen and (max-width: value) { 	/* 当浏览器宽度小于 value 时所应用的样式*/ } </description>
+    </item>
+    
+    <item>
       <title>Css table 空隙</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</link>
       <pubDate>Mon, 11 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/table-%E7%A9%BA%E9%9A%99/</guid>
       <description>table 空隙 如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。
 border-collapse: collapse; </description>
     </item>
     
     <item>
       <title>Css 修改网页滚动条样式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</link>
       <pubDate>Sun, 10 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E6%BB%9A%E5%8A%A8%E6%9D%A1%E6%A0%B7%E5%BC%8F/</guid>
       <description>修改网页滚动条样式 属性描述 /* 整个滚动条*/ ::-webkit-scrollbar { }  /* 滚动条两端的按钮 */ ::-webkit-scrollbar-button { }  /* 滚动条的滚动轨道 */ ::-webkit-scrollbar-track { }  /* 内层轨道 */ ::-webkit-scrollbar-track-piece { }  /* 滑块 */ ::-webkit-scrollbar-thumb { }  /* 边角 */ ::-webkit-scrollbar-corner { }  /* 右下角拖动块的样式 */ ::-webkit-resizer { } 使用 一般我们这样设置这几个主要属性就 OK 了。
 /*定义整个滚动条高宽及背景：高宽分别对应横竖滚动条的尺寸*/ ::-webkit-scrollbar { 	width: 10px; 	background-color: #f5f5f5; } /*定义滚动条轨道：内阴影 + 圆角*/ ::-webkit-scrollbar-track { 	background-color: #f5f5f5; } /*定义滑块：内阴影 + 圆角*/ ::-webkit-scrollbar-thumb { 	border-radius: 10px; 	background-color: #555; } 更多相关属性 :horizontal //水平方向的滚动条 :vertical //垂直 方向的滚动条 :decrement //应用于按钮和内层轨道(track piece)。它用来指示按钮或者内层轨道是否会减小视窗的位置(比如，垂直滚动条的上面，水平滚动条的左边。) :increment //decrement类似，用来指示按钮或内层轨道是否会增大视窗的位置(比如，垂直滚动条的下面和水平滚动条的右边。) :start //伪类也应用于按钮和滑块。它用来定义对象是否放到滑块的前面。 :end //类似于start伪类，标识对象是否放到滑块的后面。 :double-button //该伪类以用于按钮和内层轨道。用于判断一个按钮是不是放在滚动条同一端的一对按钮中的一个。对于内层轨道来说，它表示内层轨道是否紧靠一对按钮。 :single-button //类似于double-button伪类。对按钮来说，它用于判断一个按钮是否自己独立的在滚动条的一段。对内层轨道来说，它表示内层轨道是否紧靠一个single-button。 :no-button //用于内层轨道，表示内层轨道是否要滚动到滚动条的终端，比如，滚动条两端没有按钮的时候。 :corner-present //用于所有滚动条轨道，指示滚动条圆角是否显示。 :window-inactive //用于所有的滚动条轨道，指示应用滚动条的某个页面容器(元素)是否当前被激活。 </description>
     </item>
     
     <item>
       <title>Css Body 背景图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/body-%E8%83%8C%E6%99%AF%E5%9B%BE/</guid>
       <description>Body 背景图 画布 它是一块区域，也叫视口（可视窗口）。
 它的最小宽度为视口宽度，最小高度为视口高度。
 Html 的背景图 该元素的背景覆盖画布。即给该元素设置背景，相当于设置画布的背景。
@@ -95,20 +104,20 @@ Body 的背景图 若根元素有背景，body 元素的背景正常显示。
     
     <item>
       <title>Css keyframes</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/keyframes/</guid>
       <description>Css keyframes 持续旋转 选中文档中的元素。
 .map2 {  width: 8.0375rem;  height: 8.0375rem;  background-image: url(../images/lbx.png);  opacity: 0.6;  animation: rotate 15s linear infinite;  z-index: 2; } keyframes @keyframes rotate { 	/* 从 0° 开始旋转 */ 	from { 	transform: translate(-50%, -50%) rotate(0deg); 	} 	/* 旋转到 360 ° */ 	to { 	transform: translate(-50%, -50%) rotate(360deg); 	} } </description>
     </item>
     
     <item>
       <title>italic 和 oblique</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</link>
       <pubDate>Sat, 09 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/italic-%E5%92%8C-oblique/</guid>
       <description>italic 和 oblique italic：浏览器会显示一个斜体的字体样式。
 oblique：浏览器会显示一个倾斜的字体样式。
 可以发现关键之处为斜体和倾斜。
@@ -120,14 +129,15 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 语法</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Fri, 08 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</guid>
-      <description>语法 选择器的组成 选择器：位于语法开始，用于选中 HTML 文档中的元素。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E8%AF%AD%E6%B3%95/</guid>
+      <description>语法 CSS 的语法通常是一个选择器，用于选择 HTML 文档中的元素。
+选择器：位于语法开始，用于选中 HTML 文档中的元素。
 声明：以 { 开始，以 } 结束。{ 与 } 必须成对出现。
 声明块：由属性与属性值组成。
-.selector { 	color: #000; } 调用方法 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
+.selector { 	color: #000; } 使用 内联式：将 CSS 语法书写到元素的 style 属性中，仅对当前元素生效，也叫行内式。
 内嵌式：首先将 style 元素书写到 head 元素中，然后将 CSS 语法书写到 style 元素中，也叫内部样式表。
 外链式：将 CSS 语法书写到独立的 CSS 文件中，并在 HTML 文档中使用 link 元素引入，也叫外部样式表。
 优先级：内联式 &amp;gt; 内嵌式 &amp;gt; 外链式。</description>
@@ -135,10 +145,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 块格式化上下文</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
       <pubDate>Thu, 07 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%9D%97%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
       <description>块格式化上下文 格式化上下文（Block Formatting Context），它是一块 独立的渲染区域，它规定了在该区域中，普通流块盒的布局。
 触发 BFC 的元素  根元素 html，该元素创建的 BFC 覆盖了文档中的所有元素。 浮动元素，float 的值不为 none 的元素。 绝对定位元素，position 的值为 absolute 或 fixed 的元素。 overflow 的值不为 visible 的块盒。 行块盒，display 的值为 inline-block 的元素。 表格单元格，display 的值为 table-cell 的元素，表格单元格默认为该值。 表格标题，display 的值为 table-caption 的元素，表格标题默认为该值。  正常布局流块盒的渲染区域  每个块盒都会参与块格式化上下文的创建。 不同的 BFC，它们进行渲染时互不干扰。 创建 BFC 的元素，隔绝了它内部和外部的联系，内部的渲染不会影响到外部区域。 创建 BFC 的元素，它的所有内容都会被包含在它所创建的 BFC 中  BFC 的作用 解决高度塌陷
 创建 BFC 的元素，它的自动高度会计算浮动元素；若只是为了创建 BFC 一般使用副作用最小的方式：设置块盒的 overflow 的属性值为 hidden。仅仅是为了解决高度坍塌，建议使用伪元素 after。
@@ -148,10 +158,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 盒子模型</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Wed, 06 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</guid>
       <description>盒子模型 前言 在 CSS 中，每一个元素都可以看作是一个盒子，这个盒子由以下几个方面组成。目前常用的有两种盒模型，分别是标准盒模型和怪异盒模型。
 一个盒子的组成  内容（content） 内边距（padding） 边框（border） 外边距（margin）  标准盒模型 box-sizing 的值为 content-box 的元素；且浏览器将采用标准模式解析。
 盒子总宽度 = width + padding（左右）+ border（左右）+ margin（左右）。
@@ -163,10 +173,10 @@ oblique 是让没有斜体属性的文字做倾斜处理。
     
     <item>
       <title>Css 层叠上下文</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
       <pubDate>Tue, 05 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
       <description>层叠上下文 它是一块区域，它由某个元素创建，它规定了该区域中的内容在 Z 轴上排列的先后顺序。
 它是一种 三维概念。所有的 HTML 元素都根据其元素的属性按照优先级顺序占据这个空间。
 规则 只有定位元素设置 z-index 有效。
@@ -181,10 +191,10 @@ z-index 的值，该值越大，则越靠近用户。
     
     <item>
       <title>Css 层叠</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</link>
       <pubDate>Mon, 04 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B1%82%E5%8F%A0/</guid>
       <description>层叠 层叠是 CSS 的一个基本特征，浏览器通过 优先级 来判断哪些属性值对一个元素最为重要，从而在这个元素上应用这些属性值。
 确定声明值 找出样式表中没有冲突的声明，并应用到 CSS 属性，样式声明不冲突则不会发生层叠。
 层叠 对样式表中有冲突（同一个元素在样式表中设置了多个相同的属性）的声明使用层叠规则。
@@ -205,10 +215,10 @@ CSS 样式书写靠后的属性最终会应用到元素。
     
     <item>
       <title>Css 布局</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%B8%83%E5%B1%80/</guid>
       <description>布局 正常流布局  默认情况下，所有元素都属于正常流。 块盒独占一行。 行盒水平依次排列。 包含块：每个盒子都有它的包含块，包含块决定了该盒子的排列范围。 在正常布局流中，元素的包含块，都是该元素父元素的内容盒。  常见问题 Margin 合并
 多个同级且相邻的正常布局流块盒，当它们的上下外边距相邻，会合并为一个外边距，两个外边距值都是正数，则取较大值；两个值都是负数，则取较大值；一正一负则取两个值的和，该情况抗可以触发 BFC 解决。
 Margin 塌陷

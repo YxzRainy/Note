@@ -5,7 +5,6 @@ updated: 2021-10-22 6:00:00
 categories:
         - 随笔
 tags:
-        - App
         - Rainy 的推荐
 ---
 
@@ -37,39 +36,39 @@ tags:
 
 ## [Nodejs](https://nodejs.org/zh-cn/)
 
-javascript 的运行环境，能够使得 javascript 脱离浏览器运行。
+Javascript 的运行环境，能够使得 javascript 脱离浏览器运行。
 
 ## [Python](https://www.python.org/downloads/)
 
-运行 python 的环境。
+ Python 的运行环境。
 
 ## [VsCode](https://code.visualstudio.com/)
 
-一个很好用的代码编辑器。
+全能代码编辑器。
 
-## [360Zip](http://www.360totalsecurity.com/zh-cn/360zip/)
+## [360 Zip](http://www.360totalsecurity.com/zh-cn/360zip/)
 
-解压文件。
+简洁无广告的解压工具。
 
 ## [Everything](https://www.voidtools.com/zh-cn/downloads/)
 
-一个快速的文件搜索工具。
+快速的文件搜索工具。
 
 ## [Oulu](https://www.eudic.net/v4/en/app/eudic)
 
-一个好用的词典。
+好用的词典。
 
 ## [Typora](https://www.typora.io/)
 
-md 文档编辑器。
+markdown 编辑器。
 
 ## [PotPlayer](https://potplayer.en.softonic.com/download)
 
-一个功能强大的视频解码器。
+功能强大的视频解码器。
 
 ## [XiaoYaoEmulator](https://www.xyaz.cn/)
 
-一个安卓模拟器
+ Android 模拟器。
 
 ## [VMware](https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html)
 
@@ -91,9 +90,9 @@ Java
 
 Python
 
-## Dev++
+## [CodeBlock](https://www.codeblocks.org/downloads/)
 
-C
+免费的 C/C++ 和 Fortran IDE
 
 ## [Win SCP](https://winscp.en.softonic.com/)
 
@@ -102,3 +101,15 @@ C
 ## [Xshell](https://xshell.en.softonic.com/)
 
 服务器终端，登录 Linux 虚拟服务器
+
+## [Notepad++](https://notepad-plus.en.softonic.com/)
+
+轻量、快速的文本编辑器
+
+## [Navicat Premium](https://www.navicat.com.cn/download/navicat-premium)
+
+链接数据库
+
+## [Baidu Translate](https://fanyi.baidu.com/appdownload/download.html?tab=desktop&fr=pcplugin)
+
+快速的翻译软件

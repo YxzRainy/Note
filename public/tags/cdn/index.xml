@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CDN on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/cdn/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/cdn/</link>
     <description>Recent content in CDN on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CDN</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</link>
       <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</guid>
       <description>CDN 使网址的加载速度变快。</description>
     </item>
     

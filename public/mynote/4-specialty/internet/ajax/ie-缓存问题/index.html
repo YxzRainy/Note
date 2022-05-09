@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ie-%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ie-%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Ajax IE 缓存问题",
+	    "headline" : "Ajax IE 缓存问题",
+	    "description" : "Ajax IE 缓存问题 IE 浏览器会会对Ajax 请求的的结果进行缓存，这会导致下次请求服务器的时候，使用的是本地的缓存，而不是服务器响应的最新数据，这会对一些时效性比较强的一些场景产生影响。\nJavaScript 在 open 方法种中的 url 路径中加上一个参数...?t=\u0027 \u002b Date.now()即可。该值是获取当前时间戳。\nconst div = document.getElementById(\u0026#39;result\u0026#39;); const btn = document.getElementById(\u0026#39;btn\u0026#39;); btn.onclick = function () {  const xhr = new XMLHttpRequest();  \/\/ 获取时间戳，解决IE 浏览器缓存的问题  xhr.open(\u0026#39;POST\u0026#39;, \u0026#39;http:\/\/localhost:8000\/ie?t=\u0026#39; \u002b Date.now())  xhr.setRequestHeader(\u0026#39;Content-Type\u0026#39;, \u0026#39;application\/x-www-form-urlencoded\u0026#39;)  xhr.setRequestHeader(\u0026#39;name\u0026#39;, \u0026#39;Rainy\u0026#39;)  xhr.send(\u0026#39;a=100\u0026amp;b=200\u0026#39;);  xhr.onreadystatechange = function () {  if (xhr.readyState == 4) {  if (xhr.status \u0026gt;= 200 \u0026amp;\u0026amp; xhr.status \u0026lt; 300) {  div.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-01 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-01 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/internet\/ajax\/ie-%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98\/",
+	    "keywords" : [ "前端","学习笔记", ]
+	}
+</script><title>Ajax IE 缓存问题</title>
+    <meta property="og:title" content="Ajax IE 缓存问题" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Ajax IE 缓存问题 IE 浏览器会会对Ajax 请求的的结果进行缓存，这会导致下次请求服务器的时候，使用的是本地的缓存，而不是服务器响应的最新数据，这会对一些时效性比较强的一些场景产生影响。
+JavaScript 在 open 方法种中的 url 路径中加上一个参数...?t=&#39; &#43; Date.now()即可。该值是获取当前时间戳。
+const div = document.getElementById(&amp;#39;result&amp;#39;); const btn = document.getElementById(&amp;#39;btn&amp;#39;); btn.onclick = function () {  const xhr = new XMLHttpRequest();  // 获取时间戳，解决IE 浏览器缓存的问题  xhr.open(&amp;#39;POST&amp;#39;, &amp;#39;http://localhost:8000/ie?t=&amp;#39; &#43; Date.now())  xhr.setRequestHeader(&amp;#39;Content-Type&amp;#39;, &amp;#39;application/x-www-form-urlencoded&amp;#39;)  xhr.setRequestHeader(&amp;#39;name&amp;#39;, &amp;#39;Rainy&amp;#39;)  xhr.send(&amp;#39;a=100&amp;amp;b=200&amp;#39;);  xhr.onreadystatechange = function () {  if (xhr.readyState == 4) {  if (xhr.status &amp;gt;= 200 &amp;amp;&amp;amp; xhr.status &amp;lt; 300) {  div." />
+    <meta name="description" content="Ajax IE 缓存问题 IE 浏览器会会对Ajax 请求的的结果进行缓存，这会导致下次请求服务器的时候，使用的是本地的缓存，而不是服务器响应的最新数据，这会对一些时效性比较强的一些场景产生影响。
+JavaScript 在 open 方法种中的 url 路径中加上一个参数...?t=&#39; &#43; Date.now()即可。该值是获取当前时间戳。
+const div = document.getElementById(&amp;#39;result&amp;#39;); const btn = document.getElementById(&amp;#39;btn&amp;#39;); btn.onclick = function () {  const xhr = new XMLHttpRequest();  // 获取时间戳，解决IE 浏览器缓存的问题  xhr.open(&amp;#39;POST&amp;#39;, &amp;#39;http://localhost:8000/ie?t=&amp;#39; &#43; Date.now())  xhr.setRequestHeader(&amp;#39;Content-Type&amp;#39;, &amp;#39;application/x-www-form-urlencoded&amp;#39;)  xhr.setRequestHeader(&amp;#39;name&amp;#39;, &amp;#39;Rainy&amp;#39;)  xhr.send(&amp;#39;a=100&amp;amp;b=200&amp;#39;);  xhr.onreadystatechange = function () {  if (xhr.readyState == 4) {  if (xhr.status &amp;gt;= 200 &amp;amp;&amp;amp; xhr.status &amp;lt; 300) {  div." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Ajax IE 缓存问题</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-01 06:00:00 UTC">
+                        2022-05-01
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="ajax-ie-缓存问题">Ajax IE 缓存问题</h1>
+<p>IE 浏览器会会对Ajax 请求的的结果进行缓存，这会导致下次请求服务器的时候，使用的是本地的缓存，而不是服务器响应的最新数据，这会对一些时效性比较强的一些场景产生影响。</p>
+<h2 id="javascript">JavaScript</h2>
+<p>在 open 方法种中的 url 路径中加上一个参数<code>...?t=' + Date.now()</code>即可。该值是获取当前时间戳。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;result&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">btn</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementById</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;btn&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">btn</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">onclick</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">xhr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">XMLHttpRequest</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 获取时间戳，解决IE 浏览器缓存的问题
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;POST&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;http://localhost:8000/ie?t=&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#204a87">Date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">now</span><span style="color:#000;font-weight:bold">())</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setRequestHeader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;Content-Type&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;application/x-www-form-urlencoded&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setRequestHeader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;name&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;Rainy&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">send</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;a=100&amp;b=200&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">onreadystatechange</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">readyState</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">status</span> <span style="color:#ce5c00;font-weight:bold">&gt;=</span> <span style="color:#0000cf;font-weight:bold">200</span> <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">status</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#0000cf;font-weight:bold">300</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">innerHTML</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">xhr</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">response</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#javascript">JavaScript</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

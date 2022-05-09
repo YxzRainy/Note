@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%97%B6%E9%97%B4%E7%BA%BF/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%97%B6%E9%97%B4%E7%BA%BF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScrip 时间线",
+	    "headline" : "JavaScrip 时间线",
+	    "description" : "时间线 浏览器加载一个页面时，当开始执行 JavaScrip 的那一刻，浏览器会有一个特定的加载顺序，按照这个加载顺序一步步的执行的过程，就会形成一个时间线。\n顺序 大致就三步：创建 Document ——\u0026gt; DOMTree 解析完毕，文档加载完毕并执行完毕。\n 创建 Document 对象，开始解析 Web 页面。 解析 HTML 元素和它们的文本内容后添加 Element 对象和 Text 节点到文档中。此时的document.readyState = \u0027loading\u0027。 如遇到 link 引入的外部 CSS，那么创建线程加载这个 CSS，并继续解析文档。 遇到 script 引入的外部 JS，并且没有设置异步 async、defer 等，浏览器则同步加载这个 JS 文件，并阻塞，等待 JS 加载完成并执行该脚本，然后继续解析文档。 遇到 script 引入的外部 JS，井且设置有异步 async、defer 等，浏览器创建异步线程加载，井继续解析文档。对于 async 属性的脚本，脚本加载完成后立即执行。(异步加载的 JS 文件，其中禁止使用 document.write()) 遇到 img 等有 src 属性的元素，先正常解析 DOM 结构，然后浏览器异步加载 src，并继续解析文档。 当文档（DOMTree）解析完成，此时的document.readyState = \u0027interactive\u0027。 文档解析完成后，所有设置有 defer 的脚本会按照顺序执行。（注意与async的不同,但同样禁止使用document.write()） document 对象触发 DOMContentLoaded 事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。 当所有 async 的脚本加载完成并执行完毕后、img 等加载完成后，document.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E6%97%B6%E9%97%B4%E7%BA%BF\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScrip 时间线</title>
+    <meta property="og:title" content="JavaScrip 时间线" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="时间线 浏览器加载一个页面时，当开始执行 JavaScrip 的那一刻，浏览器会有一个特定的加载顺序，按照这个加载顺序一步步的执行的过程，就会形成一个时间线。
+顺序 大致就三步：创建 Document ——&amp;gt; DOMTree 解析完毕，文档加载完毕并执行完毕。
+ 创建 Document 对象，开始解析 Web 页面。 解析 HTML 元素和它们的文本内容后添加 Element 对象和 Text 节点到文档中。此时的document.readyState = &#39;loading&#39;。 如遇到 link 引入的外部 CSS，那么创建线程加载这个 CSS，并继续解析文档。 遇到 script 引入的外部 JS，并且没有设置异步 async、defer 等，浏览器则同步加载这个 JS 文件，并阻塞，等待 JS 加载完成并执行该脚本，然后继续解析文档。 遇到 script 引入的外部 JS，井且设置有异步 async、defer 等，浏览器创建异步线程加载，井继续解析文档。对于 async 属性的脚本，脚本加载完成后立即执行。(异步加载的 JS 文件，其中禁止使用 document.write()) 遇到 img 等有 src 属性的元素，先正常解析 DOM 结构，然后浏览器异步加载 src，并继续解析文档。 当文档（DOMTree）解析完成，此时的document.readyState = &#39;interactive&#39;。 文档解析完成后，所有设置有 defer 的脚本会按照顺序执行。（注意与async的不同,但同样禁止使用document.write()） document 对象触发 DOMContentLoaded 事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。 当所有 async 的脚本加载完成并执行完毕后、img 等加载完成后，document." />
+    <meta name="description" content="时间线 浏览器加载一个页面时，当开始执行 JavaScrip 的那一刻，浏览器会有一个特定的加载顺序，按照这个加载顺序一步步的执行的过程，就会形成一个时间线。
+顺序 大致就三步：创建 Document ——&amp;gt; DOMTree 解析完毕，文档加载完毕并执行完毕。
+ 创建 Document 对象，开始解析 Web 页面。 解析 HTML 元素和它们的文本内容后添加 Element 对象和 Text 节点到文档中。此时的document.readyState = &#39;loading&#39;。 如遇到 link 引入的外部 CSS，那么创建线程加载这个 CSS，并继续解析文档。 遇到 script 引入的外部 JS，并且没有设置异步 async、defer 等，浏览器则同步加载这个 JS 文件，并阻塞，等待 JS 加载完成并执行该脚本，然后继续解析文档。 遇到 script 引入的外部 JS，井且设置有异步 async、defer 等，浏览器创建异步线程加载，井继续解析文档。对于 async 属性的脚本，脚本加载完成后立即执行。(异步加载的 JS 文件，其中禁止使用 document.write()) 遇到 img 等有 src 属性的元素，先正常解析 DOM 结构，然后浏览器异步加载 src，并继续解析文档。 当文档（DOMTree）解析完成，此时的document.readyState = &#39;interactive&#39;。 文档解析完成后，所有设置有 defer 的脚本会按照顺序执行。（注意与async的不同,但同样禁止使用document.write()） document 对象触发 DOMContentLoaded 事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。 当所有 async 的脚本加载完成并执行完毕后、img 等加载完成后，document." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScrip 时间线</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-09 06:00:00 UTC">
+                        2022-05-09
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="时间线">时间线</h1>
+<p>浏览器加载一个页面时，当开始执行 JavaScrip 的那一刻，浏览器会有一个特定的加载顺序，按照这个加载顺序一步步的执行的过程，就会形成一个时间线。</p>
+<h2 id="顺序">顺序</h2>
+<p>大致就三步：<strong>创建 Document  ——&gt; DOMTree 解析完毕，文档加载完毕并执行完毕</strong>。</p>
+<ol>
+<li>创建 Document 对象，开始解析 Web 页面。 解析 HTML 元素和它们的文本内容后添加 Element 对象和 Text 节点到文档中。此时的<code>document.readyState = 'loading'</code>。</li>
+<li>如遇到 link 引入的外部 CSS，那么创建线程加载这个 CSS，并继续解析文档。</li>
+<li>遇到 script 引入的外部 JS，并且没有设置异步 async、defer 等，浏览器则同步加载这个 JS 文件，并阻塞，等待 JS 加载完成并执行该脚本，然后继续解析文档。</li>
+<li>遇到 script 引入的外部 JS，井且设置有异步 async、defer 等，浏览器创建异步线程加载，井继续解析文档。对于 async 属性的脚本，脚本加载完成后立即执行。(异步加载的 JS 文件，其中禁止使用 document.write())</li>
+<li>遇到 img 等有 src 属性的元素，先正常解析 DOM 结构，然后浏览器异步加载 src，并继续解析文档。</li>
+<li>当文档（DOMTree）解析完成，此时的<code>document.readyState = 'interactive'</code>。</li>
+<li>文档解析完成后，所有设置有 defer 的脚本会按照顺序执行。（注意与async的不同,但同样禁止使用document.write()）</li>
+<li>document 对象触发 DOMContentLoaded 事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。</li>
+<li>当所有 async 的脚本加载完成并执行完毕后、img 等加载完成后，<code>document.readyState = 'complete'</code>,，window 对象触发 load 事件</li>
+<li>从此，以异步响应方式处理用户输入、网络事件等。、</li>
+</ol>
+<h2 id="监听文档加载状态">监听文档加载状态</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 创建 Document 时的状态
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">readyState</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 监听文档的加载状态
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">onreadystatechange</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">readyState</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 文档解析完所执行的事件，此时文档还没有加载完毕，仅仅只是解析完毕。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addEventListener</span><span style="color:#000;font-weight:bold">(</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#4e9a06">&#39;DOMContentLoaded&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;DOMContentLoaded 事件被触发！\n\n标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#顺序">顺序</a></li>
+    <li><a href="#监听文档加载状态">监听文档加载状态</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

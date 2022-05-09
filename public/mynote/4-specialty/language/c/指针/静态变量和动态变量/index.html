@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E5%8A%A8%E6%80%81%E5%8F%98%E9%87%8F/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E5%8A%A8%E6%80%81%E5%8F%98%E9%87%8F/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 静态变量和动态变量",
+	    "headline" : "C 静态变量和动态变量",
+	    "description" : "静态变量和动态变量 如果一个变量所对应的内存空间是静态分配的，那么这个变量就是静态变量。\n如果一个变量所对应的内存空间是动态分配的，那么这个变量就是动态变量。\n静态变量 静态变量在栈内存中分配。由程序自动分配，也由程序自动释放。在函数运行的过程中，无法被使用者手动释放，必须等函数执行完毕。\n动态变量 动态变量在堆内存中分配。由使用者手动分配，也由使用者手动释放。在函数的运行的过程中，可以被使用者手动释放，不需要等待函数执行完毕。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-09 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-09 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E5%92%8C%E5%8A%A8%E6%80%81%E5%8F%98%E9%87%8F\/",
+	    "keywords" : [ "C","指针","学习笔记", ]
+	}
+</script><title>C 静态变量和动态变量</title>
+    <meta property="og:title" content="C 静态变量和动态变量" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="静态变量和动态变量 如果一个变量所对应的内存空间是静态分配的，那么这个变量就是静态变量。
+如果一个变量所对应的内存空间是动态分配的，那么这个变量就是动态变量。
+静态变量 静态变量在栈内存中分配。由程序自动分配，也由程序自动释放。在函数运行的过程中，无法被使用者手动释放，必须等函数执行完毕。
+动态变量 动态变量在堆内存中分配。由使用者手动分配，也由使用者手动释放。在函数的运行的过程中，可以被使用者手动释放，不需要等待函数执行完毕。" />
+    <meta name="description" content="静态变量和动态变量 如果一个变量所对应的内存空间是静态分配的，那么这个变量就是静态变量。
+如果一个变量所对应的内存空间是动态分配的，那么这个变量就是动态变量。
+静态变量 静态变量在栈内存中分配。由程序自动分配，也由程序自动释放。在函数运行的过程中，无法被使用者手动释放，必须等函数执行完毕。
+动态变量 动态变量在堆内存中分配。由使用者手动分配，也由使用者手动释放。在函数的运行的过程中，可以被使用者手动释放，不需要等待函数执行完毕。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 静态变量和动态变量</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-09 06:00:00 UTC">
+                        2022-04-09
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="静态变量和动态变量">静态变量和动态变量</h1>
+<p>如果一个变量所对应的内存空间是静态分配的，那么这个变量就是静态变量。</p>
+<p>如果一个变量所对应的内存空间是动态分配的，那么这个变量就是动态变量。</p>
+<h2 id="静态变量">静态变量</h2>
+<p>静态变量在栈内存中分配。由程序自动分配，也由程序自动释放。在函数运行的过程中，无法被使用者手动释放，必须等函数执行完毕。</p>
+<h2 id="动态变量">动态变量</h2>
+<p>动态变量在堆内存中分配。由使用者手动分配，也由使用者手动释放。在函数的运行的过程中，可以被使用者手动释放，不需要等待函数执行完毕。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%8C%87%E9%92%88/">
+                    指针
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#静态变量">静态变量</a></li>
+    <li><a href="#动态变量">动态变量</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/count/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/count/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL COUNT",
+	    "headline" : "MySQL COUNT",
+	    "description" : "COUNT COUNT(*) 统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。\n这种写法用的比较多，因为在一般的存储引擎下，COUNT(*)的效率通常比较高。\nCOUNT(1) 忽略所有字段，1 表示一个固定值，也可以用 COUNT(2)、COUNT(3) 代替，在统计结果的时候，不会忽略字段值为 NULL 的行。\nCOUNT(字段名) 统计指定字段名的值有多少行，字段值为 NULL 的行会被忽略统计。\nCOUNT(DISTINCT 字段名) 统计指定字段名的值有多少行，，字段值为 NULL 或重复的行会被忽略统计。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%87%BD%E6%95%B0\/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0\/count\/",
+	    "keywords" : [ "SQL","函数","MySQL","分组函数","学习笔记", ]
+	}
+</script><title>MySQL COUNT</title>
+    <meta property="og:title" content="MySQL COUNT" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="COUNT COUNT(*) 统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。
+这种写法用的比较多，因为在一般的存储引擎下，COUNT(*)的效率通常比较高。
+COUNT(1) 忽略所有字段，1 表示一个固定值，也可以用 COUNT(2)、COUNT(3) 代替，在统计结果的时候，不会忽略字段值为 NULL 的行。
+COUNT(字段名) 统计指定字段名的值有多少行，字段值为 NULL 的行会被忽略统计。
+COUNT(DISTINCT 字段名) 统计指定字段名的值有多少行，，字段值为 NULL 或重复的行会被忽略统计。" />
+    <meta name="description" content="COUNT COUNT(*) 统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。
+这种写法用的比较多，因为在一般的存储引擎下，COUNT(*)的效率通常比较高。
+COUNT(1) 忽略所有字段，1 表示一个固定值，也可以用 COUNT(2)、COUNT(3) 代替，在统计结果的时候，不会忽略字段值为 NULL 的行。
+COUNT(字段名) 统计指定字段名的值有多少行，字段值为 NULL 的行会被忽略统计。
+COUNT(DISTINCT 字段名) 统计指定字段名的值有多少行，，字段值为 NULL 或重复的行会被忽略统计。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL COUNT</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-25 06:00:00 UTC">
+                        2022-04-25
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="count">COUNT</h1>
+<h2 id="count-1">COUNT(*)</h2>
+<p>统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。</p>
+<p>这种写法用的比较多，因为在一般的存储引擎下，<code>COUNT(*)</code>的效率通常比较高。</p>
+<h2 id="count1">COUNT(1)</h2>
+<p>忽略所有字段，1 表示一个固定值，也可以用 COUNT(2)、COUNT(3) 代替，在统计结果的时候，不会忽略字段值为 NULL 的行。</p>
+<h2 id="count字段名">COUNT(字段名)</h2>
+<p>统计指定字段名的值有多少行，字段值为 NULL 的行会被忽略统计。</p>
+<h2 id="countdistinct-字段名">COUNT(DISTINCT 字段名)</h2>
+<p>统计指定字段名的值有多少行，，字段值为 NULL 或重复的行会被忽略统计。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%87%BD%E6%95%B0/">
+                    函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/">
+                    分组函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#count-1">COUNT(*)</a></li>
+    <li><a href="#count1">COUNT(1)</a></li>
+    <li><a href="#count字段名">COUNT(字段名)</a></li>
+    <li><a href="#countdistinct-字段名">COUNT(DISTINCT 字段名)</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

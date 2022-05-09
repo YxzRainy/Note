@@ -1,11 +1,11 @@
 ---
-title: Html img 的常见问题
+title: HTML img 的常见问题
 date: 2021-10-03 6:00:00
 updated: 2021-10-23 6:00:00
 categories:
         - 编程语言
 tags:
-        - Html
+        - HTML
         - 前端
         - 学习笔记
 ---

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8-mysql/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8-mysql/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "无法启动 MySQL",
+	    "headline" : "无法启动 MySQL",
+	    "description" : "无法启动 MySQL 错误一 打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。\n5.7.26 解决方案 管理员运行 CMD 输入：\nnet stop mysql\rsc delete mysql 提示[SC] DeleteService 成功后，重新打开 PHPStudy，会发现 MySQL 可以正常启动了。\n错误二 提示错误信息：\n1045 access denied for user \u0026#39;root\u0026#39;@\u0026#39;localhost\u0026#39; using password yes 5.7.26 解决方案   停用MySQL服务 没启动的可以省略\nnet stop mysql   找到 MySQL 安装路径下的 my.ini\n  打开 my.ini 找到 [mysqld] 然后在下面加上 skip_grant_tables，表示启动 MySQL 服务的时候跳过权限表认证\n  启动数据库修改密码\n  刷新权限 flush privileges",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/softwareuse\/phpstudy\/%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8-mysql\/",
+	    "keywords" : [ "学习笔记","PHPStudy", ]
+	}
+</script><title>无法启动 MySQL</title>
+    <meta property="og:title" content="无法启动 MySQL" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="无法启动 MySQL 错误一 打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。
+5.7.26 解决方案 管理员运行 CMD 输入：
+net stop mysqlsc delete mysql 提示[SC] DeleteService 成功后，重新打开 PHPStudy，会发现 MySQL 可以正常启动了。
+错误二 提示错误信息：
+1045 access denied for user &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; using password yes 5.7.26 解决方案   停用MySQL服务 没启动的可以省略
+net stop mysql   找到 MySQL 安装路径下的 my.ini
+  打开 my.ini 找到 [mysqld] 然后在下面加上 skip_grant_tables，表示启动 MySQL 服务的时候跳过权限表认证
+  启动数据库修改密码
+  刷新权限 flush privileges" />
+    <meta name="description" content="无法启动 MySQL 错误一 打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。
+5.7.26 解决方案 管理员运行 CMD 输入：
+net stop mysqlsc delete mysql 提示[SC] DeleteService 成功后，重新打开 PHPStudy，会发现 MySQL 可以正常启动了。
+错误二 提示错误信息：
+1045 access denied for user &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; using password yes 5.7.26 解决方案   停用MySQL服务 没启动的可以省略
+net stop mysql   找到 MySQL 安装路径下的 my.ini
+  打开 my.ini 找到 [mysqld] 然后在下面加上 skip_grant_tables，表示启动 MySQL 服务的时候跳过权限表认证
+  启动数据库修改密码
+  刷新权限 flush privileges" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">无法启动 MySQL</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-20 06:00:00 UTC">
+                        2022-04-20
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="无法启动-mysql">无法启动 MySQL</h1>
+<h2 id="错误一">错误一</h2>
+<p>打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。</p>
+<h3 id="5726-解决方案">5.7.26 解决方案</h3>
+<p>管理员运行 CMD 输入：</p>
+<pre tabindex="0"><code>net stop mysql
+sc delete mysql
+</code></pre><p>提示<code>[SC] DeleteService 成功</code>后，重新打开 PHPStudy，会发现 MySQL 可以正常启动了。</p>
+<h2 id="错误二">错误二</h2>
+<p>提示错误信息：</p>
+<pre tabindex="0"><code>1045 access denied for user &#39;root&#39;@&#39;localhost&#39; using password yes
+</code></pre><h3 id="5726-解决方案-1">5.7.26 解决方案</h3>
+<ul>
+<li>
+<p>停用MySQL服务  没启动的可以省略</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>net stop mysql 
+</span></span></code></pre></div></li>
+<li>
+<p>找到 MySQL  安装路径下的 <strong>my.ini</strong></p>
+</li>
+<li>
+<p>打开 my.ini  找到  [mysqld]  然后在下面加上 <strong>skip_grant_tables</strong>，表示启动 MySQL 服务的时候跳过权限表认证</p>
+</li>
+<li>
+<p>启动数据库修改密码</p>
+</li>
+<li>
+<p>刷新权限 flush privileges</p>
+</li>
+<li>
+<p>再将的<strong>my.ini</strong>里的<strong>skip_grant_tables</strong> 去掉，因为启动 MySQL 服务的时候不能让它跳过权限表认证</p>
+</li>
+<li>
+<p>最后重启 MySQL 即可。</p>
+</li>
+</ul>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/phpstudy/">
+                    PHPStudy
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#错误一">错误一</a>
+      <ul>
+        <li><a href="#5726-解决方案">5.7.26 解决方案</a></li>
+      </ul>
+    </li>
+    <li><a href="#错误二">错误二</a>
+      <ul>
+        <li><a href="#5726-解决方案-1">5.7.26 解决方案</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

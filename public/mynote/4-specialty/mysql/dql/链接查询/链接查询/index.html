@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 链接查询",
+	    "headline" : "MySQL 链接查询",
+	    "description" : "链接查询 当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。\n笛卡尔乘积错误 表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。\nSELECTname,boyNameFROMbeauty,boys导致的原因是因为没有添加有效的链接条件。\n只需要添加有效的链接条件即可。\nSELECTname,boyNameFROMbeauty,boysWHEREbeauty.boyfriend_id=boys.id;内连接 从结果表中删除与其他被连接表中没有匹配行的所有行。\nSQL 92 只支持内链接。\nSQL 99 支持内链接，外连接以及交叉链接。并且该版本的语法要比 SQL 92 的可读性要高。\n外链接 交叉链接 ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/dql\/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2\/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2\/",
+	    "keywords" : [ "SQL","DQL","MySQL","链接查询","学习笔记", ]
+	}
+</script><title>MySQL 链接查询</title>
+    <meta property="og:title" content="MySQL 链接查询" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="链接查询 当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。
+笛卡尔乘积错误 表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。
+SELECTname,boyNameFROMbeauty,boys导致的原因是因为没有添加有效的链接条件。
+只需要添加有效的链接条件即可。
+SELECTname,boyNameFROMbeauty,boysWHEREbeauty.boyfriend_id=boys.id;内连接 从结果表中删除与其他被连接表中没有匹配行的所有行。
+SQL 92 只支持内链接。
+SQL 99 支持内链接，外连接以及交叉链接。并且该版本的语法要比 SQL 92 的可读性要高。
+外链接 交叉链接 " />
+    <meta name="description" content="链接查询 当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。
+笛卡尔乘积错误 表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。
+SELECTname,boyNameFROMbeauty,boys导致的原因是因为没有添加有效的链接条件。
+只需要添加有效的链接条件即可。
+SELECTname,boyNameFROMbeauty,boysWHEREbeauty.boyfriend_id=boys.id;内连接 从结果表中删除与其他被连接表中没有匹配行的所有行。
+SQL 92 只支持内链接。
+SQL 99 支持内链接，外连接以及交叉链接。并且该版本的语法要比 SQL 92 的可读性要高。
+外链接 交叉链接 " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 链接查询</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-25 06:00:00 UTC">
+                        2022-04-25
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="链接查询">链接查询</h1>
+<p>当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。</p>
+<h2 id="笛卡尔乘积错误">笛卡尔乘积错误</h2>
+<p>表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">boyName</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">beauty</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">boys</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>导致的原因是因为没有添加有效的链接条件。</p>
+<p>只需要添加有效的链接条件即可。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">boyName</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">beauty</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">boys</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">beauty</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">boyfriend_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">boys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">id</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="内连接">内连接</h2>
+<p>从结果表中删除与其他被连接表中没有匹配行的所有行。</p>
+<p>SQL 92 只支持内链接。</p>
+<p>SQL 99 支持内链接，外连接以及交叉链接。并且该版本的语法要比 SQL 92 的可读性要高。</p>
+<h2 id="外链接">外链接</h2>
+<h2 id="交叉链接">交叉链接</h2>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/">
+                    链接查询
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#笛卡尔乘积错误">笛卡尔乘积错误</a></li>
+    <li><a href="#内连接">内连接</a></li>
+    <li><a href="#外链接">外链接</a></li>
+    <li><a href="#交叉链接">交叉链接</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

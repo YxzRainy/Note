@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "判断是否为完全二叉树",
+	    "headline" : "判断是否为完全二叉树",
+	    "description" : "判断是否为完全二叉树 #include \u0026lt;stdio.h\u0026gt;#include \u0026lt;stdlib.h\u0026gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  \/\/创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-\u0026gt;data = data;  c-\u0026gt;lchild = 0;  c-\u0026gt;rchild = 0;  return c; }  \/* \/\/5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0 int is_complete(node *p){ \/\/请完善这里 } *\/ int main(void) {  \/\/构建一棵树  node *t = get_a_node(1);  t-\u0026gt;lchild = get_a_node(2);  t-\u0026gt;rchild = get_a_node(3);  t-\u0026gt;lchild-\u0026gt;rchild = get_a_node(5);  t-\u0026gt;rchild-\u0026gt;rchild = get_a_node(7);  t-\u0026gt;rchild-\u0026gt;rchild-\u0026gt;lchild = get_a_node(14);   return 0; } ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-26 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-26 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/datastructure\/algorithm\/%E6%A0%91\/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91\/",
+	    "keywords" : [ "C","树","学习笔记", ]
+	}
+</script><title>判断是否为完全二叉树</title>
+    <meta property="og:title" content="判断是否为完全二叉树" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="判断是否为完全二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  //创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  /* //5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0 int is_complete(node *p){ //请完善这里 } */ int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   return 0; } " />
+    <meta name="description" content="判断是否为完全二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  //创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  /* //5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0 int is_complete(node *p){ //请完善这里 } */ int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   return 0; } " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">判断是否为完全二叉树</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-26 06:00:00 UTC">
+                        2022-04-26
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="判断是否为完全二叉树">判断是否为完全二叉树</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdio.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;stdlib.h&gt;</span><span style="color:#8f5902;font-style:italic">
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">typedef</span> <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">node</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">data</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">lchild</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">rchild</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#000">n</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//创建一个节点
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">data</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">c</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">malloc</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">node</span><span style="color:#000;font-weight:bold">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">c</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">data</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">c</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">lchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">c</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">c</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">int is_complete(node *p){
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">	//请完善这里
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">}
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">//构建一棵树
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">t</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">t</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">lchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">t</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">t</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">lchild</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">t</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">t</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">rchild</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">lchild</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">get_a_node</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">14</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%A0%91/">
+                    树
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

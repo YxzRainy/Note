@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement-%E5%B1%9E%E6%80%A7/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement-%E5%B1%9E%E6%80%A7/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript HTMLElement 属性",
+	    "headline" : "JavaScript HTMLElement 属性",
+	    "description" : "HTMLElement 属性 innerText\/textContent 设置或获取指定元素所包含的文本信息，只返文本信息，不返回所包含的元素。\n另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。\ninnerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。\nvar body = document.getElementsByTagName(\u0026#39;body\u0026#39;)[0]; var div = document.getElementsByTagName(\u0026#39;div\u0026#39;)[0]; \/\/ 设置内容 div.innerText = \u0026#39;123\u0026#39;; \/textContent  div.textContent = \u0026#39;456\u0026#39;; offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。\noffsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。\noffsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border\n如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。\noffsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border\n如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。\noffsetParent 返回距离当前元素最近的定位父元素。\n如果当前元素的父元素中没有定位元素，则返回 body。\nstyle 设置或返回 ele 的内联样式表中的 attr，并不会返回内嵌样式表和外链样式表中的 CSS 属性。\n设置的值必须为字符串格式。\n如果是设置 float 这样的保留字属性，则尽量使用 cssFloat ，虽然也可以使用 float 设置，但是 W3C 并不建议使用 float，因为 float 是一个保留字，未来可能会成为关键字，避免未来的命名冲突。\n复合属性尽量分开设置，比如boder，尽量分别设置borderWidth、borderStyle和borderColor。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/element\/htmlelement\/htmlelement-%E5%B1%9E%E6%80%A7\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript HTMLElement 属性</title>
+    <meta property="og:title" content="JavaScript HTMLElement 属性" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="HTMLElement 属性 innerText/textContent 设置或获取指定元素所包含的文本信息，只返文本信息，不返回所包含的元素。
+另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+innerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerText = &amp;#39;123&amp;#39;; /textContent  div.textContent = &amp;#39;456&amp;#39;; offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。
+style 设置或返回 ele 的内联样式表中的 attr，并不会返回内嵌样式表和外链样式表中的 CSS 属性。
+设置的值必须为字符串格式。
+如果是设置 float 这样的保留字属性，则尽量使用 cssFloat ，虽然也可以使用 float 设置，但是 W3C 并不建议使用 float，因为 float 是一个保留字，未来可能会成为关键字，避免未来的命名冲突。
+复合属性尽量分开设置，比如boder，尽量分别设置borderWidth、borderStyle和borderColor。" />
+    <meta name="description" content="HTMLElement 属性 innerText/textContent 设置或获取指定元素所包含的文本信息，只返文本信息，不返回所包含的元素。
+另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+innerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerText = &amp;#39;123&amp;#39;; /textContent  div.textContent = &amp;#39;456&amp;#39;; offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。
+style 设置或返回 ele 的内联样式表中的 attr，并不会返回内嵌样式表和外链样式表中的 CSS 属性。
+设置的值必须为字符串格式。
+如果是设置 float 这样的保留字属性，则尽量使用 cssFloat ，虽然也可以使用 float 设置，但是 W3C 并不建议使用 float，因为 float 是一个保留字，未来可能会成为关键字，避免未来的命名冲突。
+复合属性尽量分开设置，比如boder，尽量分别设置borderWidth、borderStyle和borderColor。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript HTMLElement 属性</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-05 06:00:00 UTC">
+                        2022-05-05
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="htmlelement-属性">HTMLElement 属性</h1>
+<h2 id="innertexttextcontent">innerText/textContent</h2>
+<p>设置或获取指定元素所包含的文本信息，只返文本信息，不返回所包含的元素。</p>
+<p>另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。</p>
+<p>innerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 设置内容
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">innerText</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;123&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a40000">/textContent </span>
+</span></span><span style="display:flex;"><span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">textContent</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;456&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><h2 id="offsetheight">offsetHeight</h2>
+<p>它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。</p>
+<h2 id="offsetwidth">offsetWidth</h2>
+<p>它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。</p>
+<h2 id="offsetleft">offsetLeft</h2>
+<p>返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border</p>
+<p>如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。</p>
+<h2 id="offsettop">offsetTop</h2>
+<p>它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border</p>
+<p>如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。</p>
+<h2 id="offsetparent">offsetParent</h2>
+<p>返回距离当前元素最近的定位父元素。</p>
+<p>如果当前元素的父元素中没有定位元素，则返回 body。</p>
+<h2 id="style">style</h2>
+<p>设置或返回 ele 的<strong>内联样式表</strong>中的 attr，<strong>并不会返回内嵌样式表和外链样式表中的 CSS 属性。</strong></p>
+<p>设置的值必须为字符串格式。</p>
+<p>如果是设置 float 这样的保留字属性，则尽量使用 cssFloat ，虽然也可以使用 float 设置，但是 W3C 并不建议使用 float，因为 float 是一个保留字，未来可能会成为关键字，避免未来的命名冲突。</p>
+<p>复合属性尽量分开设置，比如<code>boder</code>，尽量分别设置<code>borderWidth</code>、<code>borderStyle</code>和<code>borderColor</code>。</p>
+<p>组合单词的属性名，变为小驼峰式的属性名来进行设置，比如<code>background-color</code>变为<code>backgroundColor</code>。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#innertexttextcontent">innerText/textContent</a></li>
+    <li><a href="#offsetheight">offsetHeight</a></li>
+    <li><a href="#offsetwidth">offsetWidth</a></li>
+    <li><a href="#offsetleft">offsetLeft</a></li>
+    <li><a href="#offsettop">offsetTop</a></li>
+    <li><a href="#offsetparent">offsetParent</a></li>
+    <li><a href="#style">style</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

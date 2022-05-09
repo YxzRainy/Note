@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function-%E6%96%B9%E6%B3%95/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function-%E6%96%B9%E6%B3%95/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript Function 方法",
+	    "headline" : "JavaScript Function 方法",
+	    "description" : "Function 方法 call(obj) 调用构造函数并改变该构造函数 this 的指向为 obj。\n注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为构造函数 x 中的 this 指向，之后的参数为被调用函数的形参。\n该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。\nfunction demo(name, age) { \tthis.name = name; \tthis.age = age; \t\/\/ 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， \t\/\/ 所以这里相当于 test.name 与 test.age } var a = new demo(\u0026#39;zxy\u0026#39;, 100); var test = {}; demo.call(test, \u0026#39;zxy\u0026#39;, 100); \/\/ 用 call 方法改变构造函数 demo 中 this 的指向为对象 test， \/\/ 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用。 console.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E5%87%BD%E6%95%B0\/function\/function-%E6%96%B9%E6%B3%95\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript Function 方法</title>
+    <meta property="og:title" content="JavaScript Function 方法" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Function 方法 call(obj) 调用构造函数并改变该构造函数 this 的指向为 obj。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为构造函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+function demo(name, age) { 	this.name = name; 	this.age = age; 	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.call(test, &amp;#39;zxy&amp;#39;, 100); // 用 call 方法改变构造函数 demo 中 this 的指向为对象 test， // 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用。 console." />
+    <meta name="description" content="Function 方法 call(obj) 调用构造函数并改变该构造函数 this 的指向为 obj。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为构造函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+function demo(name, age) { 	this.name = name; 	this.age = age; 	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.call(test, &amp;#39;zxy&amp;#39;, 100); // 用 call 方法改变构造函数 demo 中 this 的指向为对象 test， // 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用。 console." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript Function 方法</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="function-方法">Function 方法</h1>
+<h2 id="callobj">call(obj)</h2>
+<p>调用构造函数并改变该构造函数 this 的指向为 obj。</p>
+<h3 id="注意">注意</h3>
+<p>在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为构造函数 x 中的 this 指向，之后的参数为被调用函数的形参。</p>
+<p>该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 所以这里相当于 test.name 与 test.age
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;zxy&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{};</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;zxy&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 用 call 方法改变构造函数 demo 中 this 的指向为对象 test，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="使用-call">使用 call</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Tyre</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">size</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">style</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Interior</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">texture</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">color</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">color</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">texture</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">texture</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Model</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">lang</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">height</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">width</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Car</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">comfort</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">length</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">Tyre</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">//隐式执行 var this = {size:&#34;&#34;,style:&#34;&#34;}
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">Interior</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">comfort</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">Interior</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">length</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 使用 call 分别改变函数 Tyre、Interior、Interior 的指向为 this（Car），使得 Car 可以使用它们的形式参数
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">Lamborghini</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Car</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">50</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;线性&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;black&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;真皮&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">1.7</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2.5</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">5.2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;SuperRun&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 用构造函数 Car 创建对象 Lamborghini。
+</span></span></span></code></pre></div><h2 id="apply">apply()</h2>
+<p>apply() 用于调用一个构造函数并改变该函数 this 的指向，并将一个数组（或类似数组对象）作为该函数的参数书写到 this 之后。</p>
+<h3 id="注意-1">注意</h3>
+<p>在 x.apply() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为与被调用函数对应数量的形参，且这些形参必须包含在数组中。</p>
+<p>apply() 方法的作用和 call() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">name</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 构造函数 demo 中的 this 指向被下面的 apply 方法变为了对象 test，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 所以这里相当于 test.name 与 test.age
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">demo</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;zxy&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">demo</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">apply</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;zxy&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 用 apply 方法改变构造函数 demo 中 this 的指向为对象 test，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="使用-apply">使用 apply()</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Tyre</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">size</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">style</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Interior</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">texture</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">color</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">color</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">texture</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">texture</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Model</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">lang</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">height</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">width</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">Car</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">comfort</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">length</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">Tyre</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">apply</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">size</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">style</span><span style="color:#000;font-weight:bold">]);</span> <span style="color:#8f5902;font-style:italic">//隐式执行 var this ={size:&#34;&#34;,style:&#34;&#34;}
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000">Interior</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">apply</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">color</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">comfort</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">Model</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">apply</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">length</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">type</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 使用 apply 分别改变函数 Tyre、Interior、Interior 的指向为 this（Car），使得 Car 可以使用它们的形式参数。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">Lamborghini</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#000">Car</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">50</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;线性&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;black&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;真皮&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">1.7</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">2.5</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">5.2</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;SuperRun&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#callobj">call(obj)</a>
+      <ul>
+        <li><a href="#注意">注意</a></li>
+        <li><a href="#使用-call">使用 call</a></li>
+      </ul>
+    </li>
+    <li><a href="#apply">apply()</a>
+      <ul>
+        <li><a href="#注意-1">注意</a></li>
+        <li><a href="#使用-apply">使用 apply()</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

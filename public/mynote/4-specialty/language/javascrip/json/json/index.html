@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScrip JSON",
+	    "headline" : "JavaScrip JSON",
+	    "description" : "JOSN 一种轻量级的数据传输格式。本质上就是对象，用来传输的对象。\n它在与后端的数据交互中有较为广泛的应用。\n优点 JSON 比 XML 更小、更快，更易解析。\n语法 客户端与服务端的交互数据无非就是两种：\n 数组 对象  于是乎，JSON 所表示的数据要么就是对象，要么就是数组。\nJSON 数组 var employees = [ \t{ \u0026#34;firstName\u0026#34;:\u0026#34;Bill\u0026#34; , \u0026#34;lastName\u0026#34;:\u0026#34;Gates\u0026#34; }, \t{ \u0026#34;firstName\u0026#34;:\u0026#34;George\u0026#34; , \u0026#34;lastName\u0026#34;:\u0026#34;Bush\u0026#34; }, \t{ \u0026#34;firstName\u0026#34;:\u0026#34;Thomas\u0026#34; , \u0026#34;lastName\u0026#34;: \u0026#34;Carter\u0026#34; } \t]; JSON 对象 var obj = {   age: 20,  str: \u0026#34;zhongfucheng\u0026#34;,  method: function () {  alert(\u0026#34;我爱学习\u0026#34;);  }   }; ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-30 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-30 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/json\/json\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScrip JSON</title>
+    <meta property="og:title" content="JavaScrip JSON" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="JOSN 一种轻量级的数据传输格式。本质上就是对象，用来传输的对象。
+它在与后端的数据交互中有较为广泛的应用。
+优点 JSON 比 XML 更小、更快，更易解析。
+语法 客户端与服务端的交互数据无非就是两种：
+ 数组 对象  于是乎，JSON 所表示的数据要么就是对象，要么就是数组。
+JSON 数组 var employees = [ 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Bill&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Gates&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;George&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Bush&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Thomas&amp;#34; , &amp;#34;lastName&amp;#34;: &amp;#34;Carter&amp;#34; } 	]; JSON 对象 var obj = {   age: 20,  str: &amp;#34;zhongfucheng&amp;#34;,  method: function () {  alert(&amp;#34;我爱学习&amp;#34;);  }   }; " />
+    <meta name="description" content="JOSN 一种轻量级的数据传输格式。本质上就是对象，用来传输的对象。
+它在与后端的数据交互中有较为广泛的应用。
+优点 JSON 比 XML 更小、更快，更易解析。
+语法 客户端与服务端的交互数据无非就是两种：
+ 数组 对象  于是乎，JSON 所表示的数据要么就是对象，要么就是数组。
+JSON 数组 var employees = [ 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Bill&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Gates&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;George&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Bush&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Thomas&amp;#34; , &amp;#34;lastName&amp;#34;: &amp;#34;Carter&amp;#34; } 	]; JSON 对象 var obj = {   age: 20,  str: &amp;#34;zhongfucheng&amp;#34;,  method: function () {  alert(&amp;#34;我爱学习&amp;#34;);  }   }; " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScrip JSON</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-30 06:00:00 UTC">
+                        2022-04-30
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="josn">JOSN</h1>
+<p>一种轻量级的数据传输格式。本质上就是对象，用来传输的对象。</p>
+<p>它在与后端的数据交互中有较为广泛的应用。</p>
+<h2 id="优点">优点</h2>
+<p>JSON 比 XML 更小、更快，更易解析。</p>
+<h2 id="语法">语法</h2>
+<p>客户端与服务端的交互数据无非就是两种：</p>
+<ul>
+<li>数组</li>
+<li>对象</li>
+</ul>
+<p>于是乎，JSON 所表示的数据要么就是对象，要么就是数组。</p>
+<h3 id="json-数组">JSON 数组</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">employees</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">{</span> <span style="color:#4e9a06">&#34;firstName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#34;Bill&#34;</span> <span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;lastName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#34;Gates&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">{</span> <span style="color:#4e9a06">&#34;firstName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#34;George&#34;</span> <span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;lastName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#34;Bush&#34;</span> <span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">{</span> <span style="color:#4e9a06">&#34;firstName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span><span style="color:#4e9a06">&#34;Thomas&#34;</span> <span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;lastName&#34;</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Carter&#34;</span> <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">];</span>
+</span></span></code></pre></div><h3 id="json-对象">JSON 对象</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">obj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">age</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">str</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;zhongfucheng&#34;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000">method</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#000">alert</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;我爱学习&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">};</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#优点">优点</a></li>
+    <li><a href="#语法">语法</a>
+      <ul>
+        <li><a href="#json-数组">JSON 数组</a></li>
+        <li><a href="#json-对象">JSON 对象</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

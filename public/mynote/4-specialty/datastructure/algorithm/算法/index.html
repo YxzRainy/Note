@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E7%AE%97%E6%B3%95/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E7%AE%97%E6%B3%95/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "算法",
+	    "headline" : "算法",
+	    "description" : "算法 通俗定义 解题的方法和步骤。\n狭义定义 对存储数据的操作。\n对不同的数据结构，要完成某一个功能所执行的操作是不一样的。\n比如，输出数组所有的元素和输出链表中所有的元素的操作是不一样的。这说明，算法是依附于数据结构，不同的数据结构，所执行的算法是不一样的。\n广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。\n我们至少可以通过两种结构来存储数据：\n 数组 链表  衡量算法的标准 时间复杂度 程序执行的大概次数，而非执行时间。\n为什么执行时间来计算呢，这是因为在不同的机器上，同一个程序的执行时间是不同的（机器的性能不一样）。\n空间复杂度 算法执行过程中，大概所占用的最大内存。\n可读性 算法是否容易让人理解。\n健壮性 指一个算法对不合理数据输入的反应能力和处理能力，也称为算法容错性。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-18 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-18 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/datastructure\/algorithm\/%E7%AE%97%E6%B3%95\/",
+	    "keywords" : [ "学习笔记", ]
+	}
+</script><title>算法</title>
+    <meta property="og:title" content="算法" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="算法 通俗定义 解题的方法和步骤。
+狭义定义 对存储数据的操作。
+对不同的数据结构，要完成某一个功能所执行的操作是不一样的。
+比如，输出数组所有的元素和输出链表中所有的元素的操作是不一样的。这说明，算法是依附于数据结构，不同的数据结构，所执行的算法是不一样的。
+广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。
+我们至少可以通过两种结构来存储数据：
+ 数组 链表  衡量算法的标准 时间复杂度 程序执行的大概次数，而非执行时间。
+为什么执行时间来计算呢，这是因为在不同的机器上，同一个程序的执行时间是不同的（机器的性能不一样）。
+空间复杂度 算法执行过程中，大概所占用的最大内存。
+可读性 算法是否容易让人理解。
+健壮性 指一个算法对不合理数据输入的反应能力和处理能力，也称为算法容错性。" />
+    <meta name="description" content="算法 通俗定义 解题的方法和步骤。
+狭义定义 对存储数据的操作。
+对不同的数据结构，要完成某一个功能所执行的操作是不一样的。
+比如，输出数组所有的元素和输出链表中所有的元素的操作是不一样的。这说明，算法是依附于数据结构，不同的数据结构，所执行的算法是不一样的。
+广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。
+我们至少可以通过两种结构来存储数据：
+ 数组 链表  衡量算法的标准 时间复杂度 程序执行的大概次数，而非执行时间。
+为什么执行时间来计算呢，这是因为在不同的机器上，同一个程序的执行时间是不同的（机器的性能不一样）。
+空间复杂度 算法执行过程中，大概所占用的最大内存。
+可读性 算法是否容易让人理解。
+健壮性 指一个算法对不合理数据输入的反应能力和处理能力，也称为算法容错性。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">算法</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-18 06:00:00 UTC">
+                        2022-04-18
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="算法">算法</h1>
+<h2 id="通俗定义">通俗定义</h2>
+<p>解题的方法和步骤。</p>
+<h2 id="狭义定义">狭义定义</h2>
+<p>对存储数据的操作。</p>
+<p>对不同的数据结构，要完成某一个功能所执行的操作是不一样的。</p>
+<p>比如，输出数组所有的元素和输出链表中所有的元素的操作是不一样的。这说明，<strong>算法是依附于数据结构，不同的数据结构，所执行的算法是不一样的。</strong></p>
+<h2 id="广义定义">广义定义</h2>
+<p>广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。</p>
+<p>我们至少可以通过两种结构来存储数据：</p>
+<ul>
+<li>数组</li>
+<li>链表</li>
+</ul>
+<h2 id="衡量算法的标准">衡量算法的标准</h2>
+<h3 id="时间复杂度">时间复杂度</h3>
+<p>程序执行的大概次数，而非执行时间。</p>
+<p>为什么执行时间来计算呢，这是因为在不同的机器上，同一个程序的执行时间是不同的（机器的性能不一样）。</p>
+<h3 id="空间复杂度">空间复杂度</h3>
+<p>算法执行过程中，大概所占用的最大内存。</p>
+<h3 id="可读性">可读性</h3>
+<p>算法是否容易让人理解。</p>
+<h3 id="健壮性">健壮性</h3>
+<p>指一个算法对不合理数据输入的反应能力和处理能力，也称为算法容错性。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#通俗定义">通俗定义</a></li>
+    <li><a href="#狭义定义">狭义定义</a></li>
+    <li><a href="#广义定义">广义定义</a></li>
+    <li><a href="#衡量算法的标准">衡量算法的标准</a>
+      <ul>
+        <li><a href="#时间复杂度">时间复杂度</a></li>
+        <li><a href="#空间复杂度">空间复杂度</a></li>
+        <li><a href="#可读性">可读性</a></li>
+        <li><a href="#健壮性">健壮性</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

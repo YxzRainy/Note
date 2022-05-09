@@ -2,17 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NPM on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/npm/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/npm/</link>
     <description>Recent content in NPM on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 21 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Express</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/express/express/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/express/express/</guid>
+      <description>Express 基于 Node.js 的 Web 开发框架，可以快速地搭建一个完整功能的网站。
+安装 新建一个工作区，输入npm install express --save即可。
+基本使用 新建一个名为Express.js的 js 文件，输入代码：
+ // 引入 express const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  // 创建应用对象 const app = express()  // 设置端口号 const port = 8000   // 创建路由规则，允许所有方 式的请求 app.all(&amp;#39;/json-server&amp;#39;, (request, response) =&amp;gt; {  // 设置响应头，允许跨域  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  // 允许接收所有类型的响应头  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 响应一个数据  const data = {  name: &amp;#39;Rainy&amp;#39;,  age: &amp;#39;18&amp;#39;  }  // 将对象转换为字符串类型的数据  let str = JSON.</description>
+    </item>
+    
+    <item>
+      <title>NodeJs</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/nodejs/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/nodejs/</guid>
+      <description>NodeJs Node.js不是一种独立的语言，也不是一个JavaScript的框架，Node.js只是一个让JavaScript运行在浏览器之外的平台。
+安装NodeJs  </description>
+    </item>
+    
+    <item>
+      <title>npm install 没反应</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm/npm-install-%E6%B2%A1%E5%8F%8D%E5%BA%94/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm/npm-install-%E6%B2%A1%E5%8F%8D%E5%BA%94/</guid>
+      <description>npm install 没反应 运行npm install时，出现以下错误
+ idealTree:Test: sill idealTree buildDeps 解决办法 设置为淘宝镜像 npm config set registry https://registry.npm.taobao.org 检查是否设置成功 E:\Code\Web\Test&amp;gt;npm config get registry https://registry.npmjs.org/ 继续安装 npm install 安装成功！</description>
+    </item>
+    
     <item>
       <title>NPM  是什么</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Sun, 21 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/nodejs/npm/npm-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>NPM 是什么 网上的 npm 教程主要都在讲怎么安装、配置和使用 npm，却不告诉新人「为什么要使用 npm」。今天我就来讲讲这个话题。
 本文目标读者是「不太了解 npm 的新人」，大神您别看了，不然又说我啰嗦了 。
 社区 程序员自古以来就有社区文化：

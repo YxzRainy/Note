@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 分支与循环",
+	    "headline" : "JavaScript 分支与循环",
+	    "description" : "分支与循环 if 单一的 if 语句 if (条件) { \t要执行的语句块; } if else 语句 if (条件) { \t要执行的语句块; } else { \t要执行的语句块; } 多重 if 语句嵌套 if (条件) { \t要执行的语句块; } else if (条件) { \t要执行的语句块; } else { \t要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，\n另外，可以用函数表达式定义函数？\nswitch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。\nn = \u0026#39;老虎\u0026#39;; switch (n) { \t\/\/ 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， \t\/\/ 且会执行该代码块之后的的所有代码块，为了减少代码请求， \t\/\/ 可以使用 break 语句终止执行该代码块之后代码块。 \tcase \u0026#39;老虎\u0026#39;: \tcase \u0026#39;虎\u0026#39;: \tcase \u0026#39;白虎\u0026#39;: \tcase \u0026#39;母老虎\u0026#39;: \tconsole.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript 分支与循环</title>
+    <meta property="og:title" content="JavaScript 分支与循环" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="分支与循环 if 单一的 if 语句 if (条件) { 	要执行的语句块; } if else 语句 if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 多重 if 语句嵌套 if (条件) { 	要执行的语句块; } else if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+另外，可以用函数表达式定义函数？
+switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
+n = &amp;#39;老虎&amp;#39;; switch (n) { 	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 	// 可以使用 break 语句终止执行该代码块之后代码块。 	case &amp;#39;老虎&amp;#39;: 	case &amp;#39;虎&amp;#39;: 	case &amp;#39;白虎&amp;#39;: 	case &amp;#39;母老虎&amp;#39;: 	console." />
+    <meta name="description" content="分支与循环 if 单一的 if 语句 if (条件) { 	要执行的语句块; } if else 语句 if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 多重 if 语句嵌套 if (条件) { 	要执行的语句块; } else if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
+另外，可以用函数表达式定义函数？
+switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
+n = &amp;#39;老虎&amp;#39;; switch (n) { 	// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块， 	// 且会执行该代码块之后的的所有代码块，为了减少代码请求， 	// 可以使用 break 语句终止执行该代码块之后代码块。 	case &amp;#39;老虎&amp;#39;: 	case &amp;#39;虎&amp;#39;: 	case &amp;#39;白虎&amp;#39;: 	case &amp;#39;母老虎&amp;#39;: 	console." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 分支与循环</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="分支与循环">分支与循环</h1>
+<h2 id="if">if</h2>
+<h3 id="单一的-if-语句">单一的 if 语句</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">条件</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="if-else-语句">if else 语句</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">条件</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="多重-if-语句嵌套">多重 if 语句嵌套</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">条件</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">条件</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">要执行的语句块</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="为什么-if-语句中不能进行函数声明">为什么 if 语句中不能进行函数声明</h3>
+<p>因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，</p>
+<p>另外，可以用函数表达式定义函数？</p>
+<h2 id="switch">switch</h2>
+<p>将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#000">n</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;老虎&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">switch</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 将表达式 n 与下面的 case 后的子表达式匹配，匹配成功后会执行与其关联的代码块，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 且会执行该代码块之后的的所有代码块，为了减少代码请求，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#8f5902;font-style:italic">// 可以使用 break 语句终止执行该代码块之后代码块。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;老虎&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;虎&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;白虎&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;母老虎&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;嗷嗷嗷&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 不再执行 break 之后的代码块。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;猫咪&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;小猫&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;加菲猫&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;喵喵喵&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;狗子&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;小狗&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;土狗&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;狼狗&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">case</span> <span style="color:#4e9a06">&#39;哈士奇&#39;</span><span style="color:#ce5c00;font-weight:bold">:</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;汪汪汪&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#204a87;font-weight:bold">break</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><h3 id="continue-和-break">continue 和 break</h3>
+<p>continue 用于终止执行该语句之后的所有代码，并从头开始执行下一次循环。</p>
+<p>break 用于终止本次循环，下次循环时继续执行循环体。</p>
+<h2 id="for">for</h2>
+<p>用于创建一个循环，由三个表达式和一个用于在循环中执行的代码块组成。</p>
+<h2 id="while">while</h2>
+<p>当指定表达式为 true，则循环执行一个代码块，直到表达式为 false 时结束循环。</p>
+<p>在一个循环语句中，应当有使表达式为 false 的条件，否则会造成死循环。</p>
+<h2 id="do-while">do while</h2>
+<p>不管指定条件是否为 true，其代码块都会被执行一次，直到开始第二次循环时，才开始判断指定条件，直到指定条件为 false 时结束循环。</p>
+<h2 id="for-in">for in</h2>
+<p>用于以任意顺序循环遍历一个对象（除 Symbol 以外）的属性。</p>
+<p>因为 for &hellip; in 是为遍历对象的属性而构建的，所以并不建议与数组一起使用； 通常与 Object 的 hasOwnPropert 方法一起使用。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">obj</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;zhu&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">age</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;18&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">gander</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;man&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">height</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">174</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000">__proto__</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#000">lastName</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;对象 obj 的原型 proto 上的属性&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">},</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87">Object</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">prototype</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zxy</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;原型 Object 上的属性&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">key</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">obj</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// key 为对象 obj 的属性名。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">!</span><span style="color:#000">obj</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">hasOwnProperty</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8f5902;font-style:italic">// 判断对象 obj 是否含有自身没有的属性值。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#39;：&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">obj</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8f5902;font-style:italic">// 返回对象 obj 自身所没有的属性名和属性值，即返回其原型上的属性。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">key</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">obj</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">obj</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">hasOwnProperty</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8f5902;font-style:italic">// 判断对象 obj 是否含有自身有的属性值。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#39;：&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">obj</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8f5902;font-style:italic">// 返回对象 obj 自身拥有的属性，即不返回其原型上的属性。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#4e9a06">&#39;：&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">obj</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">]);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 返回对象 obj 的属性名与属性值（obj[key] 为对象 obj 的属性值），但因为在这里使用了 obj.key，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 系统会将 obj[key] 隐式转换为 obj[&#39;key&#39;]，使得 key 作为一个属性值，而不是作为一个变量。
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#if">if</a>
+      <ul>
+        <li><a href="#单一的-if-语句">单一的 if 语句</a></li>
+        <li><a href="#if-else-语句">if else 语句</a></li>
+        <li><a href="#多重-if-语句嵌套">多重 if 语句嵌套</a></li>
+        <li><a href="#为什么-if-语句中不能进行函数声明">为什么 if 语句中不能进行函数声明</a></li>
+      </ul>
+    </li>
+    <li><a href="#switch">switch</a>
+      <ul>
+        <li><a href="#continue-和-break">continue 和 break</a></li>
+      </ul>
+    </li>
+    <li><a href="#for">for</a></li>
+    <li><a href="#while">while</a></li>
+    <li><a href="#do-while">do while</a></li>
+    <li><a href="#for-in">for in</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

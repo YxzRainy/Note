@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/css/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "Css 实现居中",
 	    "headline" : "Css 实现居中",
-	    "description" : "实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：\n.conter { \twidth: 600px; \theight: 400px; \tposition: absolute; \tleft: 50%; \ttop: 50%; \tmargin-top: -200px; \/* 高度的一半 *\/ \tmargin-left: -300px; \/* 宽度的一半 *\/ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。\nposition: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。\ndisplay: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; ",
+	    "description" : "实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：\nwidth: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; \/* 高度的一半 *\/ margin-left: -300px; \/* 宽度的一半 *\/ 绝对定位 transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，注意：这个方法有 bug。\nposition: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。\ndisplay: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; ",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,25 +32,25 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-16 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-16 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/css\/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/css\/%E5%AE%9E%E7%8E%B0%E5%B1%85%E4%B8%AD\/",
 	    "keywords" : [ "Css","前端","学习笔记", ]
 	}
 </script><title>Css 实现居中</title>
     <meta property="og:title" content="Css 实现居中" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
-.conter { 	width: 600px; 	height: 400px; 	position: absolute; 	left: 50%; 	top: 50%; 	margin-top: -200px; /* 高度的一半 */ 	margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ 绝对定位 transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，注意：这个方法有 bug。
 position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
 display: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; " />
     <meta name="description" content="实现居中 绝对定位 兼容性不错的主流 css 绝对定位居中的用法：
-.conter { 	width: 600px; 	height: 400px; 	position: absolute; 	left: 50%; 	top: 50%; 	margin-top: -200px; /* 高度的一半 */ 	margin-left: -300px; /* 宽度的一半 */ } 绝对定位 css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。
+width: 600px; height: 400px; position: absolute; left: 50%; top: 50%; margin-top: -200px; /* 高度的一半 */ margin-left: -300px; /* 宽度的一半 */ 绝对定位 transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，注意：这个方法有 bug。
 position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); 弹性布局 给父元素应用以下样式，将子元素居于父元素正中间。
 display: flex; flex-direction: row; justify-content: center; align-items: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 文本实现垂直居中 display: flex; align-items: center; " />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -86,17 +86,15 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
                 <h1 id="实现居中">实现居中</h1>
 <h2 id="绝对定位">绝对定位</h2>
 <p>兼容性不错的主流 css 绝对定位居中的用法：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">conter</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">width</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">600</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">height</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">400</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">position</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">absolute</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">left</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">50</span><span style="color:#204a87;font-weight:bold">%</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">top</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">50</span><span style="color:#204a87;font-weight:bold">%</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">margin-top</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">-200</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">/* 高度的一半 */</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">-300</span><span style="color:#204a87;font-weight:bold">px</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">/* 宽度的一半 */</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">width</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">600px</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">height</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">400px</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">position</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">absolute</span><span style="color:#ce5c00;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">left</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">50</span><span style="color:#ce5c00;font-weight:bold">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">top</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">50</span><span style="color:#ce5c00;font-weight:bold">%;</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">margin-top</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">-200px</span><span style="color:#ce5c00;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">/* 高度的一半 */</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">margin-left</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">-300px</span><span style="color:#ce5c00;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">/* 宽度的一半 */</span>
 </span></span></code></pre></div><h2 id="绝对定位-1">绝对定位</h2>
-<p>css3 的出现，使得有了更好的解决方法，就是使用 transform 代替 margin. transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，有 bug。</p>
+<p>transform 中 translate 偏移的百分比值是相对于自身大小的，可以这样实现 css 绝对定位居中，给子元素应用以下样式，将子元素居于父元素正中间，注意：这个方法有 bug。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">position</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">absolute</span><span style="color:#ce5c00;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">left</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">50</span><span style="color:#ce5c00;font-weight:bold">%;</span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">top</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#204a87;font-weight:bold">50</span><span style="color:#ce5c00;font-weight:bold">%;</span>
@@ -153,11 +151,12 @@ display: flex; flex-direction: row; justify-content: center; align-items: center
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

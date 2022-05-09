@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 模糊查询",
+	    "headline" : "MySQL 模糊查询",
+	    "description" : "模糊查询 LIKE 查询某个字段中所有包含单个或多个字符的数据\n查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资 _通配符，表示匹配任意单个字符。\nSELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE#第三个字符为n，第五个字符为l的数据\u0026#39;__n_l%\u0026#39;;查询员工名中第二个字符为 _ 的员工名 \\转义字符，表示特殊的控制意义，一般用于格式控制。\nSELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE\u0026#39;_\\_%\u0026#39;;ESCAPE关键字可以让我们自定义转义字符。\nSELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE\u0026#39;_$_%\u0026#39;#自定义一个转义字符$ESCAPE\u0026#39;$\u0026#39;;查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。\nSELECT*FROMemployeesWHERElast_nameLIKE#%表示匹配任意内容的意思#这里的%表示匹配a字符前面和后面都有任意字符的数据\u0026#39;%a%\u0026#39;;BETWEEN AND 查询某个字段中所有在\u0026hellip;和\u0026hellip;之间的数据。\n可以提高语句简洁度。\n包含两个临界值。\n查询员工编号在 100 - 120 之间的员工信息 方式一（推荐）\nSELECT*FROMemployeesWHEREemployee_idBETWEEN100AND120;方式二\nSELECT*FROMemployeesWHEREemployee_id\u0026gt;=100ANDemployee_id\u0026lt;=120;IN 查询某个字段中所有等于 in 列表中指定字符串的数据。\n可以提高语句简洁的。\nin 列表中的值的类型必须统一。\nin 列表中的字符串不支持通配符。\n查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号 方式一（推荐）\nSELECTlast_name,job_idFROMemployeesWHEREjob_idin(\u0026#39;IT_PROT\u0026#39;,\u0026#39;AD_VP\u0026#39;,\u0026#39;AD_PRES\u0026#39;);方式二\nSELECTlast_name,job_idFROMemployeesWHEREjob_id=\u0026#39;IT_PROT\u0026#39;ORjob_id=\u0026#39;AD_VP\u0026#39;ORjob_id=\u0026#39;AD_PRES\u0026#39;;IS NULL 查询某个字段中所有等于 Null 的数据。\n因为在 MySQL 中， = 和\u0026lt;\u0026gt; 不能判断Null，也就是不能写成= Null或 \u0026lt;\u0026gt; Null，\n所以只能用is Null来判断某个字段中的数据是否等于Null\n查询没有奖金的员工名和奖金率 SELECTlast_name,commission_pctFROMemployeesWHEREcommission_pctISNULL# 安全等于 # commission_pct \u0026lt;=\u0026gt; NULL IS NOT NULL 查询某个字段中所有不等于 Null 的数据。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-23 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-23 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/dql\/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2\/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2\/",
+	    "keywords" : [ "SQL","DQL","MySQL","条件查询","学习笔记", ]
+	}
+</script><title>MySQL 模糊查询</title>
+    <meta property="og:title" content="MySQL 模糊查询" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="模糊查询 LIKE 查询某个字段中所有包含单个或多个字符的数据
+查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资 _通配符，表示匹配任意单个字符。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE#第三个字符为n，第五个字符为l的数据&amp;#39;__n_l%&amp;#39;;查询员工名中第二个字符为 _ 的员工名 \转义字符，表示特殊的控制意义，一般用于格式控制。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_\_%&amp;#39;;ESCAPE关键字可以让我们自定义转义字符。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_$_%&amp;#39;#自定义一个转义字符$ESCAPE&amp;#39;$&amp;#39;;查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。
+SELECT*FROMemployeesWHERElast_nameLIKE#%表示匹配任意内容的意思#这里的%表示匹配a字符前面和后面都有任意字符的数据&amp;#39;%a%&amp;#39;;BETWEEN AND 查询某个字段中所有在&amp;hellip;和&amp;hellip;之间的数据。
+可以提高语句简洁度。
+包含两个临界值。
+查询员工编号在 100 - 120 之间的员工信息 方式一（推荐）
+SELECT*FROMemployeesWHEREemployee_idBETWEEN100AND120;方式二
+SELECT*FROMemployeesWHEREemployee_id&amp;gt;=100ANDemployee_id&amp;lt;=120;IN 查询某个字段中所有等于 in 列表中指定字符串的数据。
+可以提高语句简洁的。
+in 列表中的值的类型必须统一。
+in 列表中的字符串不支持通配符。
+查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号 方式一（推荐）
+SELECTlast_name,job_idFROMemployeesWHEREjob_idin(&amp;#39;IT_PROT&amp;#39;,&amp;#39;AD_VP&amp;#39;,&amp;#39;AD_PRES&amp;#39;);方式二
+SELECTlast_name,job_idFROMemployeesWHEREjob_id=&amp;#39;IT_PROT&amp;#39;ORjob_id=&amp;#39;AD_VP&amp;#39;ORjob_id=&amp;#39;AD_PRES&amp;#39;;IS NULL 查询某个字段中所有等于 Null 的数据。
+因为在 MySQL 中， = 和&amp;lt;&amp;gt; 不能判断Null，也就是不能写成= Null或 &amp;lt;&amp;gt; Null，
+所以只能用is Null来判断某个字段中的数据是否等于Null
+查询没有奖金的员工名和奖金率 SELECTlast_name,commission_pctFROMemployeesWHEREcommission_pctISNULL# 安全等于 # commission_pct &amp;lt;=&amp;gt; NULL IS NOT NULL 查询某个字段中所有不等于 Null 的数据。" />
+    <meta name="description" content="模糊查询 LIKE 查询某个字段中所有包含单个或多个字符的数据
+查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资 _通配符，表示匹配任意单个字符。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE#第三个字符为n，第五个字符为l的数据&amp;#39;__n_l%&amp;#39;;查询员工名中第二个字符为 _ 的员工名 \转义字符，表示特殊的控制意义，一般用于格式控制。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_\_%&amp;#39;;ESCAPE关键字可以让我们自定义转义字符。
+SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_$_%&amp;#39;#自定义一个转义字符$ESCAPE&amp;#39;$&amp;#39;;查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。
+SELECT*FROMemployeesWHERElast_nameLIKE#%表示匹配任意内容的意思#这里的%表示匹配a字符前面和后面都有任意字符的数据&amp;#39;%a%&amp;#39;;BETWEEN AND 查询某个字段中所有在&amp;hellip;和&amp;hellip;之间的数据。
+可以提高语句简洁度。
+包含两个临界值。
+查询员工编号在 100 - 120 之间的员工信息 方式一（推荐）
+SELECT*FROMemployeesWHEREemployee_idBETWEEN100AND120;方式二
+SELECT*FROMemployeesWHEREemployee_id&amp;gt;=100ANDemployee_id&amp;lt;=120;IN 查询某个字段中所有等于 in 列表中指定字符串的数据。
+可以提高语句简洁的。
+in 列表中的值的类型必须统一。
+in 列表中的字符串不支持通配符。
+查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号 方式一（推荐）
+SELECTlast_name,job_idFROMemployeesWHEREjob_idin(&amp;#39;IT_PROT&amp;#39;,&amp;#39;AD_VP&amp;#39;,&amp;#39;AD_PRES&amp;#39;);方式二
+SELECTlast_name,job_idFROMemployeesWHEREjob_id=&amp;#39;IT_PROT&amp;#39;ORjob_id=&amp;#39;AD_VP&amp;#39;ORjob_id=&amp;#39;AD_PRES&amp;#39;;IS NULL 查询某个字段中所有等于 Null 的数据。
+因为在 MySQL 中， = 和&amp;lt;&amp;gt; 不能判断Null，也就是不能写成= Null或 &amp;lt;&amp;gt; Null，
+所以只能用is Null来判断某个字段中的数据是否等于Null
+查询没有奖金的员工名和奖金率 SELECTlast_name,commission_pctFROMemployeesWHEREcommission_pctISNULL# 安全等于 # commission_pct &amp;lt;=&amp;gt; NULL IS NOT NULL 查询某个字段中所有不等于 Null 的数据。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 模糊查询</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-23 06:00:00 UTC">
+                        2022-04-23
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="模糊查询">模糊查询</h1>
+<h2 id="like">LIKE</h2>
+<p>查询某个字段中所有包含单个或多个字符的数据</p>
+<h3 id="查询员工名中第三个字符为n第五个字符为-l-的员工名和工资">查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资</h3>
+<p><code>_</code>通配符，表示匹配任意单个字符。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">salary</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">LIKE</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">第三个字符为</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">n</span><span style="color:#a40000">，第五个字符为</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">l</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">的数据</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#4e9a06">&#39;__n_l%&#39;</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询员工名中第二个字符为-_-的员工名">查询员工名中第二个字符为 _ 的员工名</h3>
+<p><code>\</code>转义字符，表示特殊的控制意义，一般用于格式控制。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">salary</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">LIKE</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#4e9a06">&#39;_\_%&#39;</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><code>ESCAPE</code>关键字可以让我们自定义转义字符。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">salary</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">LIKE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#4e9a06">&#39;_$_%&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">自定义一个转义字符</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">$</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">ESCAPE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;$&#39;</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询员工名中包含字符-a-的员工信息">查询员工名中包含字符 a 的员工信息</h3>
+<p><code>%</code>通配符，表示匹配任意多个字符，且包含 0 个字符。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">LIKE</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">表示匹配任意内容的意思</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">这里的</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">%</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">表示匹配</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">a</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">字符前面和后面都有任意字符的数据</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#4e9a06">&#39;%a%&#39;</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="between-and">BETWEEN AND</h2>
+<p>查询某个字段中所有在&hellip;和&hellip;之间的数据。</p>
+<p>可以提高语句简洁度。</p>
+<p>包含两个临界值。</p>
+<h3 id="查询员工编号在-100---120-之间的员工信息">查询员工编号在 100 - 120 之间的员工信息</h3>
+<p><strong>方式一（推荐）</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employee_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BETWEEN</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">100</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AND</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">120</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><strong>方式二</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employee_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">100</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AND</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employee_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&lt;=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">120</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="in">IN</h2>
+<p>查询某个字段中所有等于 in 列表中指定字符串的数据。</p>
+<p>可以提高语句简洁的。</p>
+<p>in 列表中的值的类型必须统一。</p>
+<p>in 列表中的字符串不支持通配符。</p>
+<h3 id="查询员工的工种编号是-it-_progad_vpad_pres-中的一个员工名和工种编号">查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号</h3>
+<p><strong>方式一（推荐）</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">in</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;IT_PROT&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;AD_VP&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;AD_PRES&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><strong>方式二</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;IT_PROT&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">OR</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;AD_VP&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">OR</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;AD_PRES&#39;</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="is-null">IS NULL</h2>
+<p>查询某个字段中所有等于 Null 的数据。</p>
+<p>因为在 MySQL 中， = 和&lt;&gt;  不能判断<code>Null</code>，也就是不能写成<code>= Null</code>或 <code>&lt;&gt; Null</code>，</p>
+<p>所以只能用<code>is Null</code>来判断某个字段中的数据是否等于<code>Null</code></p>
+<h3 id="查询没有奖金的员工名和奖金率">查询没有奖金的员工名和奖金率</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">IS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 安全等于
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># commission_pct &lt;=&gt; NULL
+</span></span></span></code></pre></div><h2 id="is-not-null">IS NOT NULL</h2>
+<p>查询某个字段中所有不等于 Null 的数据。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">IS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NOT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="不推荐使用">&lt;=&gt;（不推荐使用）</h3>
+<p>安全等于，它既可以判断 NULL 值，又可以判断普通的数值。但是该运算符的可读性较差，</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&lt;=&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/">
+                    条件查询
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#like">LIKE</a>
+      <ul>
+        <li><a href="#查询员工名中第三个字符为n第五个字符为-l-的员工名和工资">查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资</a></li>
+        <li><a href="#查询员工名中第二个字符为-_-的员工名">查询员工名中第二个字符为 _ 的员工名</a></li>
+        <li><a href="#查询员工名中包含字符-a-的员工信息">查询员工名中包含字符 a 的员工信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#between-and">BETWEEN AND</a>
+      <ul>
+        <li><a href="#查询员工编号在-100---120-之间的员工信息">查询员工编号在 100 - 120 之间的员工信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#in">IN</a>
+      <ul>
+        <li><a href="#查询员工的工种编号是-it-_progad_vpad_pres-中的一个员工名和工种编号">查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号</a></li>
+      </ul>
+    </li>
+    <li><a href="#is-null">IS NULL</a>
+      <ul>
+        <li><a href="#查询没有奖金的员工名和奖金率">查询没有奖金的员工名和奖金率</a></li>
+      </ul>
+    </li>
+    <li><a href="#is-not-null">IS NOT NULL</a>
+      <ul>
+        <li><a href="#不推荐使用">&lt;=&gt;（不推荐使用）</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

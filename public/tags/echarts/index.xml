@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Echarts on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/echarts/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/echarts/</link>
     <description>Recent content in Echarts on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/echarts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/echarts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Echarts 文字样式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%96%87%E5%AD%97%E6%A0%B7%E5%BC%8F/</guid>
       <description>文字样式 fontSize: 11, color: &amp;#34;#eee&amp;#34;, textShadowColor: &amp;#34;rgba(0, 0, 0, 1)&amp;#34;, textShadowBlur: 10, textShadowOffsetX: 1, textShadowOffsetY: 1, 图形样式 barBorderRadius: 2, shadowColor: &amp;#34;rgba(0, 0 0, 0.3)&amp;#34;, shadowBlur: 3, shadowOffsetX: 1, shadowOffsetY: 1, </description>
     </item>
     
     <item>
       <title>快速使用 Echarts</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sat, 13 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8/</guid>
       <description>快速使用 Echarts  // 快速使用 Echcarts (function () {  // 1. 实例化对象  var myChart = echarts.init(document.querySelector(&amp;#34;&amp;#34;));  // 2.配置   // 3. 把配置给实例对象  myChart.setOption(option);  // 4. 让图表跟随屏幕自动的去适应  window.addEventListener(&amp;#34;resize&amp;#34;, function () {  myChart.resize();  }); })(); </description>
     </item>
     
     <item>
       <title>Echarts 遇到的错误</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sat, 06 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
       <description>遇到的错误 今天使用 Echarts 绘制地图时，浏览器控制台出现以下错误：
 Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39;CanvasRenderingContext2D&amp;#39;: The image argument is a canvas element with a width or height of 0. 如何解决
 只需要给需要被绘制的元素设置width和height Css 属性即可。</description>
@@ -38,20 +38,20 @@ Uncaught DOMException: Failed to execute &amp;#39;drawImage&amp;#39; on &amp;#39
     
     <item>
       <title>Echarts 地图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</link>
       <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9C%B0%E5%9B%BE/</guid>
       <description>地图 常用配置 地图样式 配置 option —&amp;gt; geo —&amp;gt; itemStyle 下的normal .
 normal: {  //面积区域颜色  areaColor: &amp;#34;#008C8C&amp;#34;,  // 区域分界线颜色  borderColor: &amp;#34;rgba(43, 196, 243, 1)&amp;#34;,  //区域分界线  borderWidth: 1 }, </description>
     </item>
     
     <item>
       <title>Echarts 折线图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%8A%98%E7%BA%BF%E5%9B%BE/</guid>
       <description>Echarts 折线图 图表类型 在series下配置type.
 type: &amp;#39;line&amp;#39;, 常用配置 标注图表区域 标记图表中某个范围的数据。
 在series下配置markArea
@@ -62,10 +62,10 @@ lineStyle: {  color: &amp;#39;red&amp;#39;,  type: &amp;#39;dashed&amp;#39; } �
     
     <item>
       <title>Echarts 柱状图</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E6%9F%B1%E7%8A%B6%E5%9B%BE/</guid>
       <description>Echarts 柱状图 特点 柱状图描述的是分类数据，呈现的是每一个分类中有多少，
 通过柱状图，可以很清晰的看出每个分类数据的排名情况。
 基本结构 引入 echarts.js 文件, DOM 容器，初始化对象，设置 option。
@@ -76,10 +76,10 @@ yAxis: {  type: &amp;#39;value&amp;#39;, }, 图表类型 在series下配置type.
     
     <item>
       <title>Echarts 通用配置</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 30 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E9%80%9A%E7%94%A8%E9%85%8D%E7%BD%AE/</guid>
       <description>Echarts 通用配置 title 图表的标题。
 标题的样式 在title下配置textStyle、
 textStyle: {  color: &amp;#39;#008c8c&amp;#39;, }, 标题的边框 在title下配置：
@@ -98,10 +98,10 @@ dataView: {}, 还原所有配置项 restore: {}, 数据区域的缩放 dataZoom:
     
     <item>
       <title>Echarts 基本配置</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</guid>
       <description>初始化 初始化一个 Echarts 实例，参数是一个 dom，它决定了图表最终呈现的位置。
 var myChart = echarts.init(document.getElementById(&amp;#39;main&amp;#39;)); 绘制图表 用一个对象作为配置项，绘制整个图表。
 var option = {} 标题 title: {  text: &amp;#39;运动品牌科技水平&amp;#39;,  //标题文本点击tiao超链接  link: &amp;#39;https://yxzi.xyz/&amp;#39; }, X轴 xAxis: {  // 轴类型为类目轴  type: &amp;#39;category&amp;#39;,  // 类目轴的类别名称  data: [&amp;#39;李宁&amp;#39;, &amp;#39;安踏&amp;#39;, &amp;#39;匹克&amp;#39;, &amp;#39;迪卡侬&amp;#39;, &amp;#39;耐克&amp;#39;, &amp;#39;阿迪达斯&amp;#39;] }, Y轴 yAxis: {  // 轴类型为数值轴，数值轴是不需要设置data属性，  // 因为数值轴针对xAxis的data中的类别名称去series的data中去寻找对应的数据  type: &amp;#39;value&amp;#39;, }, series 一个系列配置。
@@ -110,10 +110,10 @@ series: [  {  // 表示下面data中的数据表示的是哪一方面的数据�
     
     <item>
       <title>Echarts 是什么</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/storehouse/echarts/echarts-%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>Echarts 是什么 ECharts 是一个使用 JavaScript 实现的开源可视化库，兼容性强，
 底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
 使用 Echarts 的时候，只需要更改配置项即可。</description>

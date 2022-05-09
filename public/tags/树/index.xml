@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>树 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%A0%91/</link>
+    <description>Recent content in 树 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 26 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%A0%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>二叉树的最大深度</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</link>
+      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</guid>
+      <description>二叉树的最大深度 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  //二叉树的最大深度 int max_depth(node *p) {  int left = 0;  int right = 0;  if (p-&amp;gt;lchild)  {  left = max_depth(p-&amp;gt;lchild);  }  if (p-&amp;gt;rchild)  {  right = max_depth(p-&amp;gt;rchild);  }  if (left &amp;gt; right)  return left + 1;  else  return right + 1; }  int main(void) {  // 构建树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   // 二叉树的最大深度  int depth = max_depth(t);  printf(&amp;#34;二叉树的深度为：%d\n&amp;#34;,depth);  return 0; } </description>
+    </item>
+    
+    <item>
+      <title>判断是否为完全二叉树</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>判断是否为完全二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  //创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  /* //5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0 int is_complete(node *p){ //请完善这里 } */ int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   return 0; } </description>
+    </item>
+    
+    <item>
+      <title>判断是否为对称二叉树</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>判断是否为对称二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  bool isSymHeper(node* left,node* right); //3 判断是否是对称的二叉树，如果是返回1，如果否返回0 bool isSym(node* p) {  if(p == NULL)  return true;  return isSymHeper(p-&amp;gt;lchild,p-&amp;gt;rchild); } bool isSymHeper(node* left,node* right) {  if(left == NULL &amp;amp;&amp;amp; right == NULL)  return true;  if(left == NULL || right == NULL || left-&amp;gt;data !</description>
+    </item>
+    
+    <item>
+      <title>翻转二叉树</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>翻转二叉树 #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt;  typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  //4 翻转二叉树，返回树根 node *node_reverse(node* p) {  if (p == NULL)  return NULL;  node_reverse(p-&amp;gt;lchild);  node_reverse(p-&amp;gt;rchild);  node * t = p-&amp;gt;lchild;  p-&amp;gt;lchild = p-&amp;gt;rchild;  p-&amp;gt;rchild = t;   return p; }  int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);    // 翻转二叉树  node* newt = node_reverse(t);  printf(&amp;#34;翻转后的二叉树根节点：%d\n&amp;#34;,newt-&amp;gt;lchild-&amp;gt;lchild-&amp;gt;rchild-&amp;gt;data );    return 0; } </description>
+    </item>
+    
+    <item>
+      <title>二叉树的节点数量</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E6%95%B0%E9%87%8F/</link>
+      <pubDate>Thu, 21 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E6%95%B0%E9%87%8F/</guid>
+      <description>二叉树的节点数量 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }   // 求树的节点数量 int node_num(node *p) {  int left = 0;  int right = 0;  if (p-&amp;gt;lchild)  {  left = node_num(p-&amp;gt;lchild);  }  if (p-&amp;gt;rchild)  {  right = node_num(p-&amp;gt;rchild);  }  int nums = left + right +1;  return nums; }   int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   // 树的结点个数  int num = node_num(t);  printf(&amp;#34;树的结点个数为：%d\n&amp;#34;,num);   return 0; } </description>
+    </item>
+    
+  </channel>
+</rss>

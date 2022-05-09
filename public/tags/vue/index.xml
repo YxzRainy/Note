@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/vue/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/vue/</link>
     <description>Recent content in Vue on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What is Vue</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/what-is-vue/</link>
+      <title>Vue</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/vue/</link>
       <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/what-is-vue/</guid>
-      <description>What is Vue Vue 是一套用于构建用户界面的渐进式 JavaScript框架。
-Vue 的特点  采用组件化模式，提高代码复用率，且让代码更好维护。 不在使用传统的命令式编码，在Vue中，使用声明式编码，让我们无需直接操作 DOM，提高开发效率。 . 使用虚拟 DOM + 优秀的 Diff 算法，尽量复用 DOM 节点。  </description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/vue/</guid>
+      <description>Vue Vue 是一套用于构建用户界面的渐进式 JavaScript框架。
+特点  采用组件化模式，提高代码复用率，且让代码更好维护。 不在使用传统的命令式编码，在Vue中，使用声明式编码，让我们无需直接操作 DOM，提高开发效率。 . 使用虚拟 DOM + 优秀的 Diff 算法，尽量复用 DOM 节点。  </description>
     </item>
     
     <item>
       <title>初识 Vue</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</link>
       <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/vue/vue-2/%E5%88%9D%E8%AF%86-vue/</guid>
       <description>初识 Vue 创建 Vue 实例，并传入一个配置对象。
 root 容器里的代码依然符合 html 规范，只不过混入了一些特殊的Vue 语法。
 root 容器里的代码被称为 Vue 模板。

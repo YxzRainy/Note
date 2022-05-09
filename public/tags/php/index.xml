@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/php/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/php/</link>
     <description>Recent content in PHP on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 10 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/php/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP 数据类型</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
       <pubDate>Thu, 10 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
       <description>数据类型 在 PHP 中，指的是一个变量所存储的数据本身的类型，而不是变量的类型，即变量本身是没有数据类型的。
 基本数据类型 int/integer 占 4 个字节，表示整数类型，前提是存的下，当整型存不下的时候，将会变为 double 类型。
 PHP 中提供了四种整型的定义方式：十进制定义、二进制定义、八进制定义和十六进制定义。
@@ -26,10 +26,10 @@ array 次性存放多个数据。
     
     <item>
       <title>PHP 常量</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</link>
       <pubDate>Wed, 09 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%B8%B8%E9%87%8F/</guid>
       <description>常量 顾名思义，指的是不能被改变的变量。
 定义 在 PHP 中，常量有两种定义方式（5.3 之后才有两种）
 使用 define 函数定义
@@ -41,13 +41,13 @@ define(&amp;#39;-_-&amp;#39;, &amp;#39;smile&amp;#39;); // 输出失败 // echo 
     
     <item>
       <title>安装 WordPress</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</link>
       <pubDate>Thu, 03 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/wordpress/%E5%AE%89%E8%A3%85-wordpress/</guid>
       <description>下载 WordPress
 将下载好的压缩包解压到 PHPStudy 安装目录下的 WWW 文件夹中。
-![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151925375.png)
+![image-20220303151925375](E:\Github\MyBlog\content\mynote\4 Specialty\Frame\WordPress\安装 WordPress.assets\image-20220303151925375.png)
 打开 PHPStudy，启动MySQL和 Nginx，打开浏览器输入 http://localhost/WordPress/，会自动跳转到网址为http://localhost/WordPress/wp-admin/setup-config.php的页面。
 ![image-20220303151952855](E:\Github\MyBlog\content\mynote\4 Specialty\WordPress\安装 WordPress.assets\image-20220303151952855.png)
 wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这个文件就可以来到 WordPress 的登录页面，我这里的路径是http://localhost/WordPress/wp-login.php
@@ -58,10 +58,10 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
     
     <item>
       <title>PHP 环境配置</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 02 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>PHP 环境配置 新的学期，新的课程。
 今天也是开始了 PHP 的学习，这边文章是为了记录我个人搭建 PHP 环境时的过程。
 下载 PHPStudy PHPStudy 是一个 windows 下的 Apache/Ngnix+PHP+MySQL 的集成开发环境
@@ -75,10 +75,10 @@ wp-login.php 文件是 WordPress 的登录页面，我们用浏览器访问这�
     
     <item>
       <title>安装 ThinkPHP</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/thinkphp/%E5%AE%89%E8%A3%85-thinkphp/</guid>
       <description>安装 ThinkPHP 安装 Composer 在 Windows 中，你需要下载并运行 Composer
 安装 composer 时开启 openssl 配置，目录为（php.ini 配置文件的目录中的 php.exe）
 比如 D:\phpstudy_pro\Extensions\php\php7.3.4nts
@@ -91,22 +91,22 @@ composer create-project topthink/think=6.0.x-dev tp
     </item>
     
     <item>
-      <title>What is PHP</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</link>
+      <title>PHP</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php/</link>
       <pubDate>Sat, 30 Jan 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/what-is-php/</guid>
-      <description>What is PHP PHP 是一种运行在服务器端的脚本语言。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/php/</guid>
+      <description>PHP PHP 是一种运行在服务器端的脚本语言。
 PHP Hyper text Pxeprosessor, php. 超文本预处理器，底层使用 C 语言。
 所支持的数据库有：Sqlservex、Mysql、Oracle、Access</description>
     </item>
     
     <item>
       <title>静态网站和动态网站</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</link>
       <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%92%8C%E5%8A%A8%E6%80%81%E7%BD%91%E7%AB%99/</guid>
       <description>静态网站和动态网站 静态网站的特点  网页内容一经发布到网站服务器上，无论是否有用户访问，每个静态网页的内容都是保存在网站服务器上的,也就是说,静态网页是实实在在保存在服务器上的文件，每个网页都是一个独立的文件。 静态网页的内容相对稳定，因此容易被搜索引擎检索。 静态网页没有数据库的支持，在网站制作和维护方面工作量较大，因此当网站信息量很大时完全依靠静态网页制作方式比较困难。 静态网页的交互性较差，在功能方面有较大的限制，当我们要修改网页上文件时，需要将修改后的文件覆盖服务器上的源文件。  动态网站的特点  交互性强，网页会根据用户的要求和选择而动态地改变和响应，网页上的数据都是从数据库中获取的，并且用户的操作，也可以对网页上的数据进行实时的更新。 自动更新，即无须手动更新 HTmL 文档,便会自动生成新页面，可以大大节省工作量。 因时因人而变，在不同时间、不同用户访问用一个网址时，会出现不同页面。 在动态网页的网址中有一个标志性的符号“?”。  </description>
     </item>
     

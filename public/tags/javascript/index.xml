@@ -2,28 +2,553 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/javascript/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/javascript/</link>
     <description>Recent content in JavaScript on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScrip 时间线</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%97%B6%E9%97%B4%E7%BA%BF/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%97%B6%E9%97%B4%E7%BA%BF/</guid>
+      <description>时间线 浏览器加载一个页面时，当开始执行 JavaScrip 的那一刻，浏览器会有一个特定的加载顺序，按照这个加载顺序一步步的执行的过程，就会形成一个时间线。
+顺序 大致就三步：创建 Document ——&amp;gt; DOMTree 解析完毕，文档加载完毕并执行完毕。
+ 创建 Document 对象，开始解析 Web 页面。 解析 HTML 元素和它们的文本内容后添加 Element 对象和 Text 节点到文档中。此时的document.readyState = &#39;loading&#39;。 如遇到 link 引入的外部 CSS，那么创建线程加载这个 CSS，并继续解析文档。 遇到 script 引入的外部 JS，并且没有设置异步 async、defer 等，浏览器则同步加载这个 JS 文件，并阻塞，等待 JS 加载完成并执行该脚本，然后继续解析文档。 遇到 script 引入的外部 JS，井且设置有异步 async、defer 等，浏览器创建异步线程加载，井继续解析文档。对于 async 属性的脚本，脚本加载完成后立即执行。(异步加载的 JS 文件，其中禁止使用 document.write()) 遇到 img 等有 src 属性的元素，先正常解析 DOM 结构，然后浏览器异步加载 src，并继续解析文档。 当文档（DOMTree）解析完成，此时的document.readyState = &#39;interactive&#39;。 文档解析完成后，所有设置有 defer 的脚本会按照顺序执行。（注意与async的不同,但同样禁止使用document.write()） document 对象触发 DOMContentLoaded 事件，这也标志着程序执行从同步脚本执行阶段，转化为事件驱动阶段。 当所有 async 的脚本加载完成并执行完毕后、img 等加载完成后，document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 正则表达式</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式 一种查找以及字符串替换的操作。
+直接量（推荐使用） var reg = /abcde/i;  var str = &amp;#39;abCDE&amp;#39;;  var result = reg.test(str); console.log(result); new RegExp var str = &amp;#39;abCDE&amp;#39;;  var reg = new RegExp(&amp;#39;abc&amp;#39;, &amp;#39;i&amp;#39;);  var result = reg.test(str);  console.log(result);  </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Document</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document/</link>
+      <pubDate>Sat, 07 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document/</guid>
+      <description>Document Document 是文档的根，表示整个文档，它包含所有元素，包括 html 元素。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Document 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Sat, 07 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document-%E5%B1%9E%E6%80%A7/</guid>
+      <description>Document 属性 head 和 body 表示文档中的 head 和 body 元素。
+document.head document.body documentElement 表示文档中的 html 元素。
+document.documentElement </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Document 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 07 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/document/document-%E6%96%B9%E6%B3%95/</guid>
+      <description>Document 方法 查找节点 使用 querySelectorAll 和 querySelector 方法选择的元素不是实时的，而使用 getElements 方法选择的元素是实时的。
+比如，使用 querySelecto 选择 div 元素，并存放到 ele 变量中，如果后面我们在文档中删除或增加一个 div 元素，ele 中的 div 元素依旧不变。
+getElementById() 选择文档中指定 id 的元素，id 是唯一的，所以是 getElement，不是 getElements
+var ele = document.getElementById(&amp;#39;only&amp;#39;) getElementsByTagName() 选择文档中指定标签名的元素，返回结果是一个类数组
+var ele = document.getElementsByTagName(&amp;#39;span&amp;#39;) getElementsByTagName(&amp;rsquo;*&#39;) 选择文档中的所有元素。
+var ele = document.getElementsByTagName(&amp;#39;*&amp;#39;) getElementsByName() 选择文档中指定 name 的元素，ele 是一个类数组，需要注意，该元素只有部分元素才能生效
+var ele = document.getElementsByName(&amp;#39;span&amp;#39;) getElementsByClassName() 选择文档中指定 class 的元素
+var ele = document.getElementsByClassName(&amp;#39;build&amp;#39;) querySelector() 选择匹配指定选择器的第一个元素。不实时
+var ele = document.querySelector(&amp;#39;div &amp;gt; span a .</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/date/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/date/</guid>
+      <description>Date() 创建一个 Date 实例，该实例呈现时间中的某个时刻。
+Date 对象基于格林威治 Unix Time Stamp，即自 1970年 1 月 1 日（UTC）起经过的毫秒数。
+Date 对象有大量的设置、获取和操作日期的方法。 但它并不含有任何属性。
+Date 对象中存放的都是被构造出来的那一刻的时间，而不是随着系统时间改变而改变。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Element</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element/</guid>
+      <description>Element 用来遍历元素节点。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Event</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event-%E6%96%B9%E6%B3%95/</guid>
+      <description>Event stopPropagation() 用于取消事件的捕获和冒泡，W3C 推荐的方法。
+cancelBubble() 功能与stopPropagation()相同， IE 独有，但在 Chrome 中也可以用。
+var wrapper = document.getElementsByClassName(&amp;#39;wrapper&amp;#39;)[0];  document.addEventListener( 	&amp;#39;click&amp;#39;, 	function () { 	console.log(&amp;#39;document&amp;#39;); 	}, 	false );  wrapper.addEventListener( 	&amp;#39;click&amp;#39;, 	function (event) { 	console.log(&amp;#39;点击了子元素&amp;#39;);  	event.stopPropagation();  // IE 独有，但 Chrome 也可以使用 	event.cancelBubble = true; 	}, 	false ); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Event</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event/</guid>
+      <description>Event 表示在 DOM 中出现的事件。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Event 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/event/event-%E5%B1%9E%E6%80%A7/</guid>
+      <description>Event 属性 target 返回触发当前事件的事件源对象。
+document.onclick = function (event) { 	console.log(event.target); }; </description>
+    </item>
+    
+    <item>
+      <title>JavaScript EventTarget</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/eventtarget/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/eventtarget/</guid>
+      <description>EventTarget addEventListener() 监听一个对象，并给这个对象绑定指定的事件处理函数。
+第一个参数是事件类型，第二个参数是事件的回调回函数。
+this 的指向是 DOM 元素本身，第三个参数是一个布尔值，用于定义该对象应该使用哪一种事件处理模型（冒泡、捕获）进行触发。
+优点 可以给同一个对象同一类型事件绑定多个事件处理函数，并且会按绑定事件的先后顺序去执行。
+// 旧事件 div.addEventListener( 	&amp;#39;click&amp;#39;, 	function () { 	console.log(&amp;#39;第一个事件&amp;#39;); 	}, 	false ); // 新事件，不会fu div.addEventListener( 	&amp;#39;click&amp;#39;, 	function () { 	console.log(&amp;#39;第二个事件&amp;#39;); 	}, 	false ); attachEvent() IE 独有事件，它与 addEventListener() 差不多。
+this 指向 window。
+for 绑定 addEventListener() 事件 var li = document.getElementsByTagName(&amp;#39;li&amp;#39;);  var len = li.length; for (var i = 0; i &amp;lt; len; i++) {  // 用立即执行函数解决闭包内存泄漏的问题 	(function (i) { 	li[i].</description>
+    </item>
+    
+    <item>
+      <title>JavaScript get 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/get-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/get-%E6%96%B9%E6%B3%95/</guid>
+      <description>get 方法 getDate() 返回一个月中的某天 1 — 31
+getDay() 返回一周中的某天 0 — 6。
+注意，0 表示周一，6 表示周日。
+getMonth() 返回一年终的某月0 — 11。
+注意，0 表示一月，11 表示 12 月
+getFullYear() 获取四位数的年份 XXXX。
+以前是用的 getYear() 方法，因为以前表示日期用的六位制 YY.MM.DD，直到 1999 年 12 月 31 日之后，变成了 2000 年，这个时候的日期用六位制已经无法表示了，因此，现在改用八位制 YYYY.MM.DD。
+getHours() 获取小时 0 — 23
+getMinutes() 获取分 0 — 59
+getSeconds() 获取秒 0 — 59
+getMilliseconds() 获取毫秒 0 — 999
+getTime() 获取毫秒（从格林威治时间 1970 年 1 月 1 日至今的毫秒数），也叫获取时间戳。
+时间戳 用于验证执行某个程序所花费的毫秒数。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript GlobalEventHandlers</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/globaleventhandlers/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/globaleventhandlers/</guid>
+      <description>GlobalEventHandlers 全局事件句柄，在 JavaScrip 中，为了将属性和事件区分开，所有事件的命名都是小写的，而不是像属性那样用小驼峰式命名。
+onclick 当指定元素被点击时，所触发的事件。它的兼容性非常好。
+基本等于将事件写到 HTML 元素的onclick内联属性上。
+this 的指向是 DOM 元素本身。
+只能监听鼠标左键，无法监听右键和滚轮。
+onmousedown + onmouseup = onclick
+缺点 一个元素只能绑定一个事件，如果给这个元素定义新的事件，那么新的事件会覆盖旧的事件。
+var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];  // 旧事件 div.onclick = function () { 	console.log(&amp;#39;旧事件&amp;#39;); }; // 新事件，会覆盖旧事件 div.onclick = function () { 	console.log(&amp;#39;新s&amp;#39;); }; 点击事件只触发一次 div.onclick = function () { 	console.log(4555);  // 使 onclick 事件只能被触发一次 	div.onclick = null; }; oncontextmenu 鼠标右键单击指定对象时，所触发的事件。
+onmousemove 鼠标移动到指定对象上时，所触发的事件。
+onmousedown 鼠标按下指定对象时，所触发的事件。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript HTMLElement</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement/</guid>
+      <description>HTMLElement offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript HTMLElement 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement-%E5%B1%9E%E6%80%A7/</guid>
+      <description>HTMLElement 属性 innerText/textContent 设置或获取指定元素所包含的文本信息，只返文本信息，不返回所包含的元素。
+另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+innerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerText = &amp;#39;123&amp;#39;; /textContent  div.textContent = &amp;#39;456&amp;#39;; offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。
+style 设置或返回 ele 的内联样式表中的 attr，并不会返回内嵌样式表和外链样式表中的 CSS 属性。
+设置的值必须为字符串格式。
+如果是设置 float 这样的保留字属性，则尽量使用 cssFloat ，虽然也可以使用 float 设置，但是 W3C 并不建议使用 float，因为 float 是一个保留字，未来可能会成为关键字，避免未来的命名冲突。
+复合属性尽量分开设置，比如boder，尽量分别设置borderWidth、borderStyle和borderColor。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript set 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/set-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/set-%E6%96%B9%E6%B3%95/</guid>
+      <description>set 方法 setDate() 以数值 1-31 设置日
+var date = new Date(); // 设置日期中的第 18 天 var d = date.setDate(18); console.log(d); // 输出被更改后的时间戳，因为日变了，所以日对应的周也会跟着变。 console.log(date); 定时执行某个代码
+用 set 方法设置一个未来的时间点，然后判断当 getTime() 的毫秒数与 set 的毫秒数相差小于 1000 的时候，相当于此刻的时间点已经和设置的时间点重合，可以执行一些需要在这个时间点所执行的操作。
+用它可以实现倒计时抢漏、闹钟等功能。
+setTime() 设置从 1970 年 1 月 1 日至今的毫秒数。
+var date = new Date(); // 将 date 设置为从格林威治时间至今的毫秒数（毫秒数会转换为日期） date.setTime(12343546557501); // 返回设置的日期 console.log(date); 闹钟 var date = new Date(); // 设置未来的某个时间点的分和秒，当格林威治时间到达我们设置的时间戳，会执行某个操作 date.setMinutes(10); date.setSeconds(5);  // 定时器，每隔 1000 毫秒会执行一次回调函数 setInterval(function () { 	// 判断格林威治时间是否和设置的时间点相差小于 1000 毫秒（小于 1000 毫秒则表示格林威治时间已经到大我们设置的时间戳） 	if (new Date().</description>
+    </item>
+    
+    <item>
+      <title>JavaScript String 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/string/string-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/string/string-%E6%96%B9%E6%B3%95/</guid>
+      <description>String 方法 fromCharCode() 将 UTF-16 组成的值转换为一个字符串。
+match() 检索并返回一个字符串匹配正则表达式的结果。
+ var reg = /ab/g;  var str = &amp;#39;abababababab&amp;#39;;  var result = str.match(reg); console.log(result); slice() 从字符串的第 n 位字符开始截取，一直截取到字符串最末。并返回一个新的字符串，且不会改动原字符串。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Window 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window-%E5%B1%9E%E6%80%A7/</guid>
+      <description>Window 属性 innerWidth 和 innerHeight 返回视口的宽度和高度。
+视口就是浏览器中能看到网页的部分。
+// 视口宽度 var WViewport = window.innerWidth; // 视口高度 var HViewport = window.innerHeight; console.log(&amp;#39;视口宽度：&amp;#39; + WViewport); console.log(&amp;#39;视口高度：&amp;#39; + HViewport); pageYOffset 和 pageXOffset 返回滚动条当前的纵向滚动距离和横向滚动距离。
+// 纵向滚动条的滚动距离 var Ydistance = window.pageYOffset; // 横向滚动条的滚动距离 var Xdistance = window.pageXOffset; console.log(Ydistance); console.log(Xdistance); IE 8 及 IE 8 以下的浏览器 document.body.scrollLeft/Top 和 document.documentElement.scorllLeft/Top这个两个属性的兼容性机器混乱，Top 代表纵向，Left 代表横向
+在 IE 8及 IE 8 以下的浏览器中，这两个属性中只要其中一个有值，则另一个属性的值一定为 0。因此， 如果我们要考虑兼容性的问题，都会将这两个属性相加，以兼容 IE 8及其 IE 8 以下的浏览器。
+DOMContentLoaded 文档解析完成后执行的事件。
+它和window.onload的区别是，window.onload是在文档加载完成后所触发的事件，而DOMContentLoaded，无需等文档全部加载完成，只需要等文档（DOMTree）解析完成后，DOMContentLoaded就会被触发。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Window 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window-%E6%96%B9%E6%B3%95/</guid>
+      <description>Window 方法 scroll() 和 scrollTo() 使文档的滚动条滚动至文档中的特定位置。
+//让水平的滚动条滚动到 100 像素的位置，再让垂直滚动条滚动到 200 像素的位置 scrollTo(100,200) scrollBy() 使文档的滚动条按指定的偏移量滚动。
+//　让垂直滚动条滚动 10px， scrollTo(0,10) // 重复执行的话，滚动条会再滚动 10px scrollTo(0,10) getComputedStyle() 返回指定元素经过计算后的 CSS 样式,，且返回的值都是绝对值，它是一个只读属性。
+返回的样式是元素在浏览器中最终渲染效果的样式。
+第一个参数是元素，第二个参数是伪元素。
+getComputedStyle() 的第二个参数可以获取第一个参数（元素）的伪元素（::before、::after等）的 CSS 样式。
+第二个参数不是必须的，当不查询元素的伪元素的时候可以忽略或者传入 null。
+currentStyle 只读属性，返回的 CSS 属性的值没有经过计算。IE 独有属性。
+获取指定元素的指定 CSS 属性 var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];  function GetStyle(elem, name) { 	if (window.getComputedStyle) { 	return window.getComputedStyle(elem, null)[name]; 	} else { 	return elem.currentStyle[name]; 	} } setInterval() 用于每隔一段时间调用一个函数或一个代码片段。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 事件句柄</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%8F%A5%E6%9F%84/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%8F%A5%E6%9F%84/</guid>
+      <description>事件句柄 事件发生时进行的操作。
+事件句柄就是一个将元素的特定事件与某个函数关联起来，比如onclick、onmouseover 等都是事件句柄，它们会指向一个给定的函数，如果事件发生，那么就会执行此函数。
+document.oncontextmenu = function () { 	console.log(&amp;#39;鼠标右击事件句柄&amp;#39;); }; document.onclick = function () { 	console.log(&amp;#39;点击事件句柄&amp;#39;); }; </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 事件处理模型</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E6%A8%A1%E5%9E%8B/</guid>
+      <description>事件处理模型 一个对象的一个事件类型，只能触发一种事件处理模型，也就是要么触发事件冒泡，要么触发事件捕获。
+另外，并不是所有事件都存冒泡，比如 focus、blur、change、submit、reset、select 等事件。
+事件冒泡 结构上（非视觉上）为嵌套关系的元素，会存在事件冒泡的情况。即同一类型的事件，触发事件源，事件会以由内（事件源）至外的顺序被触发。
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt;  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;  &amp;lt;style&amp;gt;  * {  margin: 0;  padding: 0;  }   .wrapper {  width: 300px;  height: 300px;  background-color: rgb(183, 43, 43);  }   .content {  width: 200px;  height: 200px;  background-color: rgb(12, 175, 200);  }   .</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 事件对象</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/</guid>
+      <description>事件对象 在 DOM 中发生事件时，所有相关信息都会被收集并存储在一个名为**event **的对象中。这个对象包含了一些基本信息，比如导致事件的元素、发生的事件类型、可能与特定事件相关的任何其他数据等。
+每个事件处理函数都有一个形参 event，这个 **event **就可以在函数中被当做 event 对象来使用。
+// event 是一个参数，系统会自动将事件对象传给他。 document.onclick = function (event) { 	console.log(event); }; srcElement 表示触发当前事件的事件源对象。
+可以用event.target来获取事件的 srcElement。
+Button 表示触发当前事件是鼠标的左键还是右键，又或者是滚轮。
+0 表示鼠标左键，1 表示鼠标滚轮，2 表示鼠标右键。
+div.onmousedown = function (event) { 	if (event.button == 0) { 	console.log(&amp;#39;Left Click&amp;#39;); 	} else if (event.button == 1) { 	console.log(&amp;#39;Roller&amp;#39;); 	} else if (event.button == 2) { 	console.log(&amp;#39;Right Click&amp;#39;); 	} }; charCode 键盘事件的事件对象上的属性，返回按下的键的ASCII 码 。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 区分点击事件与长按事件</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E5%8C%BA%E5%88%86%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E4%B8%8E%E9%95%BF%E6%8C%89%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E5%8C%BA%E5%88%86%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E4%B8%8E%E9%95%BF%E6%8C%89%E4%BA%8B%E4%BB%B6/</guid>
+      <description>区分点击事件与长按事件 HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt;  &amp;lt;title&amp;gt;区分点击事件与长按事件.m&amp;lt;/title&amp;gt;  &amp;lt;style&amp;gt;  div {  width: 100px;  height: 100px;  background-color: rgb(15, 190, 131);  }  &amp;lt;/style&amp;gt;  &amp;lt;/head&amp;gt;   &amp;lt;body&amp;gt;  &amp;lt;div style=&amp;#34;position:absolute;left:0;top:0;&amp;#34;&amp;gt;该拖曳只对内联样式有效&amp;lt;/div&amp;gt;  &amp;lt;/body&amp;gt;  &amp;lt;script src=&amp;#34;./js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;/html&amp;gt; JavaScrip var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];  var firstTime = new Date(); var lastTime = new Date(); var key = false; // 元素按下时的时间 document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 定时器</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/%E5%AE%9A%E6%97%B6%E5%99%A8/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/%E5%AE%9A%E6%97%B6%E5%99%A8/</guid>
+      <description>定时器 定时操作的方法全是 Window 对象的方法，这些方法中的 this 都指向 Window
+setIntereval() 每隔多少毫秒再循环执行一次回调函数中的代码。
+需要注意，这个间隔时间一旦定义就无法被修改。
+非常不准确，可以用时间戳来证明。
+返回值是一个 id 数值，这个 id 作为当前定时器的唯一标识符。
+// 定时器 var time = 1000; setInterval(function () { 	console.log(&amp;#39;定时器&amp;#39;); }, time); // 修改 time，虽然 time 被修改了，但定时器中的 time 依旧也是 1000 time = 10; console.log(time); clearIntereval() 清除由 setInterval() 设置的定时操作。
+参数是一个数值。
+var i = 0; var time = setInterval(function () { 	console.log(i++); 	if (i &amp;gt; 10) { 	clearInterval(time); 	console.log(&amp;#39;定时器已暂停&amp;#39;); 	} }, 100); setTimeout() 在指定毫秒数之后执行回调函数中的代码。回调函数中的代码只会执行因此。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 拖拽元素</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E6%8B%96%E6%8B%BD%E5%85%83%E7%B4%A0/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E6%8B%96%E6%8B%BD%E5%85%83%E7%B4%A0/</guid>
+      <description>拖拽元素 HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt;  &amp;lt;title&amp;gt;拖拽元素&amp;lt;/title&amp;gt;  &amp;lt;style&amp;gt;  div {  width: 100px;  height: 100px;  background-color: rgb(15, 190, 131);   }  &amp;lt;/style&amp;gt;  &amp;lt;/head&amp;gt;   &amp;lt;body&amp;gt;  &amp;lt;div style=&amp;#34;position:absolute;left:0;top:0;&amp;#34;&amp;gt;该拖曳只对内联样式有效&amp;lt;/div&amp;gt;  &amp;lt;/body&amp;gt;  &amp;lt;script src=&amp;#34;./js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;/html&amp;gt; JavaScrip function drag(elem) { 	var disX, disY; 	// 鼠标 	elem.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 脚本化 CSS</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%84%9A%E6%9C%AC%E5%8C%96-css/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%84%9A%E6%9C%AC%E5%8C%96-css/</guid>
+      <description>脚本化 CSS 用 JavaScrip 间接操作 CSS，它是通过内联样式表去间接控制 CSS。
+间接操作 CSS 时，只有ele.style.attr是读写操作，除此之外的任何操作都是只读操作。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 自动阅读</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/</guid>
+      <description>自动阅读 JavaScrip var start = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var stop = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var time;// 定义一个 key，用来判断自动阅读是否暂停// 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）var key = &amp;#39;自动阅读已暂停&amp;#39;;start.onclick = function () {// 判断自动阅读的状态if (key == &amp;#39;自动阅读已暂停&amp;#39;) {// 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动time = setInterval(function () {window.scrollBy(0, 10);}, 100);// 自动阅读已开始key = &amp;#39;自动阅读已开始&amp;#39;;}};// 自动阅读已暂停stop.onclick = function () {clearInterval(time);key = &amp;#39;自动阅读已暂停&amp;#39;;}; </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 返回父元素节点.</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%BF%94%E5%9B%9E%E7%88%B6%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E5%AE%9E%E4%BE%8B/%E8%BF%94%E5%9B%9E%E7%88%B6%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9/</guid>
+      <description>返回父元素节点. JavaScrip function re(e, n) {  // 如果 e 不为 null 并且 n 不为 0  while (e &amp;amp;&amp;amp; n) {  // 获取当前节点的父元素  e = e.parentElement;  // 每次循环一次，则想上找一层的父元素，直到 n 为 0  n--;  }  return e }  var i = document.getElementsByTagName(&amp;#39;i&amp;#39;)[0]  var result = re(i, 3) console.log(result) </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 阻止默认事件</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E9%98%BB%E6%AD%A2%E9%BB%98%E8%AE%A4%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Thu, 05 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BA%8B%E4%BB%B6/%E9%98%BB%E6%AD%A2%E9%BB%98%E8%AE%A4%E4%BA%8B%E4%BB%B6/</guid>
+      <description>阻止默认事件 默认事件：表单提交、a 元素跳转、右键菜单等。
+reture false 阻止某个对象的默认事件，只支持阻止事件句柄 onclick，不支持addEventListener()。
+document.oncontextmenu = function () { 	console.log(&amp;#39;鼠标右击事件&amp;#39;); 	return false; };  document.onclick = function () { 	console.log(&amp;#39;文档被点击&amp;#39;); 	return false; }; preventDefault() 阻止某个对象的默认事件，支持事件句柄，以及addEventListener()。
+ document.addEventListener( 	&amp;#39;contextmenu&amp;#39;, 	function (event) {  console.log(&amp;#39;鼠标右击事件&amp;#39;); 	event.preventDefault(); 	}, 	false ); document.onconte xtmenu = function (event) { 	console.log(&amp;#39;鼠标右击事件&amp;#39;); 	event.preventDefault(); }; returnValue() 兼容 IE，与preventDefault()一样，支持阻止事件句柄、以及addEventListener()。
+ document.oncontextmenu = function (event) { 	console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/javascrip/</link>
+      <pubDate>Tue, 03 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/javascrip/</guid>
+      <description>JavaScript JavaScrip 是单线程的语言的原因是因为 JavaScrip 需要对 HTML 页面进行操作，无法一边操作 HTML 文档，一边又加载 HTML 文档。</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 异步加载 JS</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD-js/</link>
+      <pubDate>Tue, 03 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD-js/</guid>
+      <description>异步加载 JS 有时候，我们需要加载一些工具包，这些工具包与加载 HTML 文档无关，因此，我们就需要异步加载 JavaScrip，即实现 JavaScrip 的多线程。
+aysnc=&amp;ldquo;aysnc&amp;rdquo; 异步加载，加载 JavaScrip 文件完就执行，aysnc 只能加载外部 JavaScrip，并不能将 JavaScrip 代码写到 script 元素中。
+defer = &amp;ldquo;defer&amp;rdquo; 异步加载，即一边加载 JavaScrip 文件，一边加载 HTML 文档，但是，它需要等 DOM 文档解析完毕后，才会执行其中的 JavaScrip 代码，相当于window.onload，IE 独有。
+可以将JavaScrip 代码写到 script 元素中。
+&amp;lt;script src=&amp;#34;vue.js&amp;#34; defer=&amp;#34;defer&amp;#34;&amp;gt;  console.log(&amp;#39;IE 异步加载&amp;#39;)  &amp;lt;/script&amp;gt; 按需异步加载 JS 当我们用创建一个 script 元素，那么需要将它插入到页面中，才会执行这个 JavaScrip 文件。如果不插入的话，仅仅只执行加载这个JavaScrip 文件，这样，我们就实现了一个异步加载 JavaScrip 的过程。
+因为加载 JavaScrip 文件需要一个过程，而程序执行代码的时候，并不会等 main.js 文件下载完毕才继续执行后续代码，因此，这时候如果立即执行 main.js 中的某个方法，会报错。
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 异步和同步</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%82%E6%AD%A5%E5%92%8C%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Tue, 03 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%82%E6%AD%A5%E5%92%8C%E5%90%8C%E6%AD%A5/</guid>
+      <description>异步和同步 同步 异步 异步是目的，多线程是手段。
+异步是和同步相对的。同步即阻塞，也即在做A的时候做不了B，AB可以同时做互不干扰就叫异步。为了实现异步，可以利用多线程。</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 浏览器渲染页面</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Tue, 03 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93%E9%A1%B5%E9%9D%A2/</guid>
+      <description>浏览器渲染页面 构建 DOM 树 解析 DOM 节点，将 HTML 元素以树形结构（二叉树）的方式添加到 DOM 树上，解析的时候只解析节点本身，不解析节点的属性或其包含的文本。
+此时还未加载 DOM 树，仅仅只是解析 DOM 节点。
+构建 CSS 树 构建 Render 树 DOMTree + CSSTree = RenderTree
+RenderTree 构建完成之后，浏览器渲染引擎才正式开始绘制页面
+reFlow 该过程需要重新构建整个文档，非常浪费性能。
+指的是网络浏览器为了重新渲染部分或全部的文档而重新计算文档中元素的位置和几何结构的过程。例如 dom 节点的删除与添加、dom 节点的宽高发生变化、节点的位置变变化等。
+repaint 该过程只重新绘制部分元素。
+一个元素的外观的改变所触发的浏览器行为，浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。例如改变 vidibility、outline、背景色等属性。
+节点布局 页面渲染 </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Element 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Mon, 02 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E5%B1%9E%E6%80%A7/</guid>
+      <description>Element 属性 innerHTML 设置或返回指定元素的内容。返回的内容包含这个元素所包含的子元素以及文本信息。
+设置的内容可以直接是 html 代码。
+设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+可以在元素内容的后面追加新内容。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerHTML = &amp;#39;123&amp;#39;; // 追加内容 div.innerHTML += &amp;#39;456&amp;#39;; // 写入 html 元素 div.innerHTML += &amp;#39;&amp;lt;span&amp;gt;写入的元素&amp;lt;/span&amp;gt;&amp;#39;; childElementCount 返回指定元素节点的子元素节点的个数，不包含子元素节点的子元素节点。
+firstElementChild 返回指定元素节点的第一个元素节点。
+lastElementChild 返回指定元素节点的最后一个元素节点。
+children 返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Element 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 02 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E6%96%B9%E6%B3%95/</guid>
+      <description>Element 方法 setAttribute() 设置指定元素的属性和属性的值。设置的属性名可以是自定义的属性。
+如果这个指定的属性已存在，则仅更改值。
+getAttribute() 返回指定属性名的属性值。
+getBoundingClientRect() 返回元素的尺寸，以及相对于视口的位置。
+如果是标准盒子模型，元素的宽高等于width/height + padding + border-width的总和。如果box-sizing: border-box，元素的宽高等于 width/height。
+返回的结果不是事实的，是静态的。
+var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; var ele = div.getBoundingClientRect(); </description>
+    </item>
+    
+    <item>
+      <title>JavaScript Node 属性</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/node/node-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Mon, 02 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/node/node-%E5%B1%9E%E6%80%A7/</guid>
+      <description>Node 属性 用来遍历节点树。
+parentElement 返回当前元素节点的父元素节点。
+parentNode 返回指定节点的父节点，一个节点的父节点只有一个。
+childNodes 返回指定节点所包含的所有子节点。
+firstChild 返回指定节点所包含的最后一个节点
+lastChild 返回指定节点所包含的第一个节点
+nextSibling 返回在指定节点后面的兄弟节点，如果指定节点为最后一个节点，则返回 null。
+previousSibling 返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 操作节点</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Mon, 02 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9/</guid>
+      <description>操作节点 增加节点 createElement() 创建一个元素节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var div = document.createElement(&amp;#39;div&amp;#39;) createTextNod() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var text = document.createTextNode(&amp;#39;我是文本节点&amp;#39;) createComment() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var comment = document.createComment(&amp;#39;我是一个注释&amp;#39;) createDocumentFragment(&amp;rsquo;&#39;) 创建了一虚拟的节点对象，也可以说是创建一个文档碎片
+var fragment = document.createDocumentFragment(&amp;#39;&amp;#39;) 插入节点 ele.appendChild(subEle) 在 ele 节点的最后一个子节点之后添加 subEle 节点。
+如果 subEle 节点已经在文档中存在，那么会将 subEle 节点移动到 ele 节点中。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.createElement(&amp;#39;div&amp;#39;); var text = document.createTextNode(&amp;#39;插入的文本&amp;#39;); body.appendChild(div); div.appendChild(text); ele.insertBefore(subEleOne,subEleTwo) 在 ele 节点的子节点 subEleTwo 之前插入一个subEleOne 节点。
+var body = document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 类数组</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%B1%BB%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Mon, 02 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%B1%BB%E6%95%B0%E7%BB%84/</guid>
+      <description>类数组 类数组是可以当作数组来使用的对象
+类数组虽然在写法上跟数组一样，但它实际上是 object，且数组能调用的方法它都不能调用的数组。
+比如 arguments，函数的第一个参数是 argument[0]，写法上跟数组一样，但是不是数组，它的原型是 Object，它也不能调用数组的一些方法。
+特点 具有对象和数组的特性，既可以当作对象来用，也可以当作数组来用（并不是所有的数组方法都能使用，可以自己手动添加）</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip JSON</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json/</guid>
+      <description>JOSN 一种轻量级的数据传输格式。本质上就是对象，用来传输的对象。
+它在与后端的数据交互中有较为广泛的应用。
+优点 JSON 比 XML 更小、更快，更易解析。
+语法 客户端与服务端的交互数据无非就是两种：
+ 数组 对象  于是乎，JSON 所表示的数据要么就是对象，要么就是数组。
+JSON 数组 var employees = [ 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Bill&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Gates&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;George&amp;#34; , &amp;#34;lastName&amp;#34;:&amp;#34;Bush&amp;#34; }, 	{ &amp;#34;firstName&amp;#34;:&amp;#34;Thomas&amp;#34; , &amp;#34;lastName&amp;#34;: &amp;#34;Carter&amp;#34; } 	]; JSON 对象 var obj = {   age: 20,  str: &amp;#34;zhongfucheng&amp;#34;,  method: function () {  alert(&amp;#34;我爱学习&amp;#34;);  }   }; </description>
+    </item>
+    
+    <item>
+      <title>JavaScrip JSON 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/json-%E6%96%B9%E6%B3%95/</guid>
+      <description>JSON 方法 stringify() 将一个对象或值转换为 JSON 字符串。
+ var obj = { 	name: &amp;#39;rainy&amp;#39;, 	age: &amp;#39;20&amp;#39;, }; var result = JSON.stringify(obj); // 对象 console.log(obj);  // 字符串 console.log(result); parse() 将 JSON 字符串转换为对象。
+var json = &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;rainy&amp;#34;, &amp;#34;age:&amp;#34;:20}&amp;#39;;var obj = JSON.parse(json);// 字符串console.log(json);// 对象console.log(obj); </description>
+    </item>
+    
     <item>
       <title>JavaScript DOM</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/dom/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/dom/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/dom/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/dom/</guid>
       <description>DOM DOM （文档对象模型）中提供了一系列的方法，DOM 是这一些列方法的统称。这些方法使得我们可以操作 HTML 和 XML。
 DOM 就像一棵节点树一样，从文档的根（document），依次分支展开，每一个元素，都可以看作是树的一个节点，每一个元素都是一个对象。
-使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（/body 之前的代码 ），再加载 JS 文件；因为没有完整的 DOM 模型，所以 DOM 的一些操作就无法完成，会导致报错。</description>
+使用 DOM 操作文档中的元素时，必须先加载整个 HTML 文档（body 之前的代码 ），再加载 JS 文件；因为没有完整的 DOM 模型，DOM 的一些操作就无法完成，会导致报错。
+graph TD;Node --&amp;gt; Document;Node --&amp;gt; CharacterData;Node --&amp;gt; Element;Node --&amp;gt; Atrr;Document --&amp;gt; HTMLDocument;Document --&amp;gt; XMLDocument;CharacterData --&amp;gt; TextCharacterData --&amp;gt; CommentElement --&amp;gt; HTMLElementAttrHTMLElement --&amp;gt; HTMLHeadElementHTMLElement --&amp;gt; HTMLBodyElementHTMLElement --&amp;gt; HTMLTitleElementHTMLElement --&amp;gt; HTMLParagraphlement Node 最终指向 Object.prototype。
+getElementById() getElementById() 定义在了 Document.prototype 上，这说明 XMLDocument 和 HTMLDocument 都能使用 getElementById()，但Element 不能使用 getElementById()。</description>
     </item>
     
     <item>
       <title>JavaScript ES5 严格模式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/es5-%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/</guid>
       <description>ES5 严格模式 ECMAScript 是 JavaScript 的一个标准。
 ES5 严格模式指的是：我们应该对 ES3 和 ES5 产生冲突的部分使用哪个版本的规则？
 当我们开启 ES5 严格模式后，那么 ES3 和 ES5 产生冲突的部分会遵循 ES5 的规则，否则会使用 ES3（浏览器默认遵循 ES3 的规则）
@@ -35,10 +560,10 @@ Uncaught TypeError: &amp;#39;caller&amp;#39;, &amp;#39;callee&amp;#39;, and &amp
     
     <item>
       <title>JavaScript Try Catch</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%8E%A7%E5%88%B6%E6%B5%81/try-catch/</guid>
       <description>Try Catch 为了容错，防止程序报错后引起整个程序的终止运行
 try 中有错误信息 就会执行 catch 中的代码，没有这不会执行 catch 之中的代码
 catch 有一个参数，参数名自定义 比如 e
@@ -53,10 +578,10 @@ URlError：URI 处理函数使用不当</description>
     
     <item>
       <title>JavaScript with</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%85%B6%E4%BB%96/with/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%85%B6%E4%BB%96/with/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%85%B6%E4%BB%96/with/</guid>
       <description>with with(ogj)函数可以改变自身代码块中的代码的作用域链，它会将 obj 放到它自己代码块中的代码的作用域链的最顶端，也就是会先去 obj 的作用域中去寻找变量。
 ES5 中不支持 with 函数。
  var obj = {  age: &amp;#34;456&amp;#34;,  name: &amp;#34;your&amp;#34;, }  function test() {  var age = &amp;#39;123&amp;#39;;  var name = &amp;#39;my&amp;#39;;  with (obj) {  // 下面的输出不会返回自身作用域（test 函数的作用域）下的 age 和 name。  // 只会返回全局作用域下的 obj 对象的 age 和 name，因为作用域被 with 函数改变了。  console.log(age);  console.log(name);  } } test(); 替代链式调用 with (document) {  write(&amp;#34;with 调用&amp;#34; + &amp;#34;&amp;lt;br/&amp;gt;&amp;#34;) }  //等同于 document.</description>
@@ -64,10 +589,10 @@ ES5 中不支持 with 函数。
     
     <item>
       <title>var 和 let 的区别</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%A3%B0%E6%98%8E/var-%E5%92%8C-let-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>var 和 let 的区别 作用域不同 var 是函数作用域，let 是块作用域。
 在函数中声明了 var，整个函数内都是有效的，比如说在 for 循环内定义的一个 var 变量，实际上其在 for 循环以外也是可以访问的
 而 let 由于是块作用域，所以如果在块作用域内定义的变量，比如说在 for 循环内，在其外面是不可被访问的，所以 for 循环推荐用 let
@@ -77,23 +602,23 @@ let 不能被重新定义，但是 var 是可以的 </description>
     
     <item>
       <title>JavaScript arguments</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/arguments/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/arguments/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/arguments/</guid>
       <description>arguments 它是一个与函数的实参有映射关系的数组类对象。
-arguments 的属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
+属性 Callee 该属性包含当前正在执行的函数。在哪个函数中调用的方法 arguments.calle，该 calle 中就包含这个函数的函数体。
 注意 arguments 对象是所有（非箭头）函数中都可用的局部变量。你可以使用 arguments 对象在函数中引用函数的实参；此对象包含传递给函数的每个实参，第一个实参的索引为 0。
 arguments 对象不是一个 Array ；但它类似于 Array，但除了有 length 属性和索引的特性之外没有任何其他 Array 属性。</description>
     </item>
     
     <item>
-      <title>JavaScript eval</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</link>
+      <title>JavaScript eval()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</guid>
-      <description>eval eval()函数会将传入的字符串当做 JavaScript 代码来执行。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/eval/</guid>
+      <description>eval() 它会将传入的字符串当做 JavaScript 代码来执行。
 在 JavaScript 中，有一句话叫：
 eval 是魔鬼。
 console.log(eval(&amp;#39;2 + 2&amp;#39;)); </description>
@@ -101,45 +626,55 @@ console.log(eval(&amp;#39;2 + 2&amp;#39;)); </description>
     
     <item>
       <title>JavaScript Function</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/function/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function/</guid>
       <description>Function 每个 JavaScript 函数实际上都是一个 Function 对象。Function 构造函数创建一个新的 Function 对象。
 全局的 Function 对象没有自己的属性和方法，但是，因为它本身也是一个函数，所以它也会通过原型链从自己的原型链 Function.prototype 上继承一些属性和方法。
-Function 的方法 call() 该方法用于调用一个构造函数并改变该函数 this 的指向，并将该函数的参数书写到 this 之后。
-注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为函数 x 中的 this 指向，之后的参数为被调用函数的形参。
-该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
-function demo(name, age) { 	this.name = name; 	this.age = age; 	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.</description>
+方法 </description>
     </item>
     
     <item>
       <title>JavaScript function</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</guid>
-      <description>function 地方</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/function/</guid>
+      <description>function 它可以用来在一个表达式中定义一个函数。
+function Fun(parameter) { 	console.log(&amp;#39;我是一个函数&amp;#39;); } </description>
     </item>
     
     <item>
-      <title>JavaScript isNaN</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</link>
+      <title>JavaScript Function 方法</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function-%E6%96%B9%E6%B3%95/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</guid>
-      <description>isNaN isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/function/function-%E6%96%B9%E6%B3%95/</guid>
+      <description>Function 方法 call(obj) 调用构造函数并改变该构造函数 this 的指向为 obj。
+注意 在 x.call() 中，x 为被调用的构造函数，() 中第一个参数为构造函数 x 中的 this 指向，之后的参数为被调用函数的形参。
+该方法的语法和作用与 apply() 方法类似，唯一的区别就是传参的列表不同， call() 方法接收的是函数的形参列表，而 apply() 方法接收的是函数的 arguments。
+function demo(name, age) { 	this.name = name; 	this.age = age; 	// 构造函数 demo 中的 this 指向被下面的 call 方法变为对象 test， 	// 所以这里相当于 test.name 与 test.age } var a = new demo(&amp;#39;zxy&amp;#39;, 100); var test = {}; demo.call(test, &amp;#39;zxy&amp;#39;, 100); // 用 call 方法改变构造函数 demo 中 this 的指向为对象 test， // 使对象 test 拥有构造函数 demo 的属性；类似于对象 test 将函数 demo 的属性与方法借来使用。 console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript isNaN()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/isnan/</guid>
+      <description>isNaN() isNaN(value) 用于判定 value 是否为 NaN，是则返回 true，否则返回 false。
 如果 value 不是 Number 类型，那么该函数会用 Number() 方法将 value 隐式转换，然后再判断转换后的结果是否为 NaN。因此，被测试的值在被强制转换成数值时会不会返回 IEEE-754 中所谓的不是数值，隐式转换调用的都是显式转换方法。
 返回 false 的值  0 除以 0 NaN undefined {}（空对象）  </description>
     </item>
     
     <item>
-      <title>JavaScript Math</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</link>
+      <title>JavaScript Math()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</guid>
-      <description>Math 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/math/</guid>
+      <description>Math() 它是一个内置对象，它拥有一些数字常数属性和数学函数方法，它不是一个函数对象。
 引用圆周率的写法是 Math.PI，调用正余弦函数的写法是 Math.sin(x)，x 是要传入的参。
 计算时精度不准 0.14 * 100 = 14.000000000000002；0.1 + 0.2 = 0.30000000000000004；这些运算后的值都是因为 js 计算精度不准的导致。
 在 js 中整数和浮点数都属于 Number 数据类型，所有数字都是以 64 位浮点数形式储存。JavaScript 里的数字是采用 IEEE 754 标准的 64 位双精度浮点数，计算机进行计算的时候，会把数字转换为二进制，进行运算之后再转换为十进制，但是运算过程中小数部分最多支持 52 位，就会出现运算精度不准的问题。
@@ -149,20 +684,20 @@ function One() { 	for (var c = 0; c &amp;lt; 18; c++) { 	var d = Math.random().t
     
     <item>
       <title>JavaScript new</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%B7%A6%E4%BE%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F/new/</guid>
       <description>new 用于创建一个对象类型的实例或具有构造函数的内置对象的实例。
 调用构造函数 创建或返回一个新的对象实例，并将构造函数的作用域赋给新的对象实例（因此构造函数中的 this 的指向就变为了这个新的对象实例）。</description>
     </item>
     
     <item>
-      <title>JavaScript Number</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</link>
+      <title>JavaScript Number()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/number/</guid>
       <description>Number 该对象是经过封装的能被处理数字值的对象；该对象由 Number() 构造器创建。
 Number 的方法 toString() NumObj.toString(radix)
  将 NumObj 转为为 radix 进制的数，若 NumObj 无法被转换为 radix 进制的数，则返回 string 类型的 NaN；rRadix 的取值范围为 2 - 36，如果未指定 radix 参数，则默认值为 10。 当在 NumObj 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。 因为 Number 对象覆盖了 Object 对象上的 toString() 方法（系统将 Number 对象的 toString 方法重写了），因此它并不继承自 Object.prototype.toString()。  十进制转十六进制 var a = 1971; var b = 10; var c = 16; var d = parseInt(a, b); // 将变量 a 当做 b 进制的数，并将 b 转换为十进制的数。 var e = d.</description>
@@ -170,91 +705,73 @@ Number 的方法 toString() NumObj.toString(radix)
     
     <item>
       <title>JavaScript Object</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%9F%BA%E6%9C%AC%E5%AF%B9%E8%B1%A1/object/</guid>
       <description>Object 创建一个对象包装器；它的每个值都是对象的属性，且每个属性必须要有属性值，属性值的类型可以是任何数据类型。
 创建 Object 的方式 对象字面量 var n = &amp;#39;世雨&amp;#39;; var a = &amp;#39;&amp;#39;; var object = { 	//var obj ={} 相当于 var obj = new Object()，一般情况都使用前者。 	b: &amp;#39;臣&amp;#39;, 	// b 为属性名，臣为属性值 	c: n, }; a = object.b + object.c; // 用变量 a 接收对象 object 的属性 b 与 c 的值。 console.log(a); // 返回臣世雨 工厂模式 function ThreeOne(color) { 	this.color = color; 	// color为可选参数 	this.name = &amp;#39;bird&amp;#39;; 	this.</description>
     </item>
     
     <item>
-      <title>JavaScript parseFloat</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</link>
+      <title>JavaScript parseFloat()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</guid>
-      <description>parseFloat parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parsefloat/</guid>
+      <description>parseFloat() parseFloat(string)，将 string 显式转换为 number 类型浮点数（小数）。若 string 无法被转换为浮点数，则返回 number 类型的 NaN。</description>
     </item>
     
     <item>
-      <title>JavaScript parselnt</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</link>
+      <title>JavaScript parselnt()</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</guid>
-      <description>parselnt parseInt(string, radix) 该函数解析一个字符串并返回指定基数的十进制整数。
-将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 类型的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
-当在 string 中，遇到不在 radix 中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0%E5%B1%9E%E6%80%A7/parselnt/</guid>
+      <description>parseInt() parseInt(string, radix) 函数解析一个字符串并返回指定基数的十进制整数。
+将 string 看作 radix 进制的数，并将 string 显式转换为十进制且为 number 的整数（radix 为介于 2-36 之间的数，它是可选值，表示被解析字符串的基数），若 string 无法被转换为整数，则返回 number 类型的 NaN。
+当在 string 中，遇到不在 radix 进制中的字符，则将忽略该字符以及所有后续字符，并返回在这之前已解析的整数值。
 若 radix 为 0 时，部分浏览器（比如 IE）会报错，部分浏览器会将 0 当做 10 进行转换。
-// n 进制转十进制-------------------------------------------------- var n = 10010; var c = 2; // 变量 n 可为 8，16，32。 var a = parseInt(n, c); // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 console.log(a); </description>
+N 进制转十进制 var n = 10010; var c = 2; // 变量 n 可为 8，16，32。 var a = parseInt(n, c); // 将 n 当作 c 进制的数，并将 n 显式转换为十进制的整数。 console.log(a); </description>
     </item>
     
     <item>
       <title>JavaScript return</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/return/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/return/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/return/</guid>
       <description>return 用于终止函数的执行，并返回一个指定的值；若没有指定返回值，则返回 undefined。
 字符串转数字 var n = &amp;#39;18&amp;#39;; function demo(n) { 	return +n; 	// 用加号 + 隐式调用 Number() 方法，将字符串 n 转换为数字并作为返回值 } var a = demo(n); console.log(typeof a + &amp;#39;:&amp;#39; + a); </description>
     </item>
     
     <item>
       <title>JavaScript this</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%B8%BB%E8%A6%81%E8%A1%A8%E8%BE%BE%E5%BC%8F/this/</guid>
       <description>this 在全局中，无论是否在严格模式下，this 指的都是全局对象（window）。
-通常情况，函数的调用方式决定了 this 的值；非严格模式下， this 一般指向一个调用它的对象（即 this 指向调用者，即哪个对象中的方法调用的 this，这个 this 就指向调用这个方法的对象 ），即第一人称我，严格模式下可以指向任意值。</description>
+通常情况，函数的调用方式决定了 this 的值；严格模式下， this 一般指向一个调用它的对象（即 this 的调用者，哪个对象的方法调用了 this，那么这个 this 就指向调用这个方法的对象 ），即第一人称我，
+严格模式下可以指向任意值。</description>
     </item>
     
     <item>
-      <title>JavaScript Window 对象</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</link>
+      <title>JavaScript Window</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/window-%E5%AF%B9%E8%B1%A1/</guid>
-      <description>Window 对象 Window 对象表示浏览器中打开的窗口。
-如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。
-Window 对象的方法 setInterval() 用于每隔一段时间调用一个函数或一个代码片段。
-setTimeout() 使函数或代码在经过一段指定的时间才开始执行。
-clearInterval 取消先前通过 setInterval() 设置的重复定时任务。</description>
-    </item>
-    
-    <item>
-      <title>JavaScript XMLHttpRequest</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/xmlhttprequest/</guid>
-      <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
-XMLHttpRequest 的属性 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
-状态码  0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 XHR 对象的 open 方法已经被调用。 2 表示 XHR 对象的 send 方法已经被调用，并且头部和状态已经可获得。 3 表示 XHR 对象的服务端的文本正在下载中，且 responseText 属性已经包含部分数据。 4 表示 XHR 对象的服务端的文本下载操作已完成。  status 返回了 XMLHttpRequest 响应时的数字状态码。
-responseText 当一个请求被发送后，该属性会返回服务器端的文本。
-onreadystatechange 该属性会在属性 readyState 发生改变的时候被调用。
-XMLHttpRequest 的方法 open 用于初始化一个请求。
-send 用于向服务端发送一个 HTTP 请求。
-注意 如果是异步请求（默认为异步请求），则此方法会在请求发送后立即返回（不会等待响应返回）；如果是同步请求，则此方法会直到响应返回到达后才会返回。</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/window/window/</guid>
+      <description>Window Window 对象表示一个包含 DOM 文档的窗口，其 document 属性指向窗口中载入的 DOM 文档 。
+如果文档包含框架（frame 或 iframe 标签），浏览器会为 HTML 文档创建一个 window 对象，并为每个框架创建一个额外的 window 对象。</description>
     </item>
     
     <item>
       <title>JavaScript 作用域</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BD%9C%E7%94%A8%E5%9F%9F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E4%BD%9C%E7%94%A8%E5%9F%9F/</guid>
       <description>作用域 作用域（scope）定义了代码在运行时的某些特定的变量、函数、对象的可调用范围。
 每个函数都会创建 scope（作用域对象），scope 中储存是一个个的全局作用域与局部作用域），即 scope 中存储的是作用域的集合（作用域链）。
 父函数不能调用子函数的变量 当调用一个变量时，调用者会去作用域链（scope）的顶端依次向下寻找这个变量；又因为子函数的 AO 中含有父函数 AO 的引用地址，所以子函数可以调用父函数的变量；反之，因为父函数的 AO 不能含有子函数 AO 的引用，所以父函数不能调用子函数的变量。
@@ -268,23 +785,23 @@ send 用于向服务端发送一个 HTTP 请求。
     
     <item>
       <title>JavaScript 函数</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
       <description>函数 函数又叫方法，它是用来执行某些特定功能的代码；且允许我们在程序中随时进行调用。
 每一个函数其实都是一个 Function 类型的对象。
 函数中若没有使用 return 语句，则它默认返回 undefined；要想返回一个指定的值，则需使用 return 语句来指定一个返回值（使用 new 关键字调用一个构造函数除外）。
-声明方式 基本方式 直接通过 function 关键字进行声明。
+基本方式 直接通过 function 关键字进行声明。
 function demo(a, b) { 	// 声明一个函数，demo 为函数名，a 与 b为形式参数（形参）。 	console.log(a + b); 	// 返回形参 a 与 b 的和 3。 } demo(1, 2); // 使用执行符 () 调用函数 demo，1 与 2 为实际参数（实参） var c = demo.name; // 函数 demo 的属性 name 为指定函数的（这里为 demo）名字， // 该属性的值永远等于跟在 function 关键字后面的标识符（变量名），匿名函数的属性 name 为空。 console.log(c); // 返回函数 demo 的函数名  //匿名函数方式-------------------------------------------------- var demo = function () { 	console.</description>
     </item>
     
     <item>
       <title>JavaScript 函数的参数</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0/</guid>
       <description>函数的参数 形参 形式参数，由于它不是实际存在变量，所以又称虚拟变量；它是指在定义函数名和函数体的时候使用的参数，目的是用来接收调用该函数时传入的实际参数。
 在调用函数时，实参将赋值给形参；因而，必须使实参的个数与类型应与形参一一的对应，且传入的实参必须要有确定的值。
 函数的形参比实参数量多的情况 若形参比实参的数量多，则多余的形参会返回 undefined（默认参数）。
@@ -295,10 +812,10 @@ function demo(a, b) { 	// 定义两个形参。 	var f, 	g = &amp;#39;&amp;#39;;
     
     <item>
       <title>JavaScript 分支与循环</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%88%86%E6%94%AF%E4%B8%8E%E5%BE%AA%E7%8E%AF/</guid>
       <description>分支与循环 if 单一的 if 语句 if (条件) { 	要执行的语句块; } if else 语句 if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 多重 if 语句嵌套 if (条件) { 	要执行的语句块; } else if (条件) { 	要执行的语句块; } else { 	要执行的语句块; } 为什么 if 语句中不能进行函数声明 因为程序执行时，程序会在本页代码之内寻找函数声明，并进行函数声明提升，而不会去查找需要条件的 if 之内的内容，
 另外，可以用函数表达式定义函数？
 switch 将表达式的值与 case 的子表达式匹配，并执行与之匹配成功后相关联的语句。
@@ -307,10 +824,10 @@ n = &amp;#39;老虎&amp;#39;; switch (n) { 	// 将表达式 n 与下面的 case 
     
     <item>
       <title>JavaScript 包装类</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8C%85%E8%A3%85%E7%B1%BB/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8C%85%E8%A3%85%E7%B1%BB/</guid>
       <description>包装类 在 JavaScript 中，因为原始值不能有属性和方法，所以当给原始值添加属性与方法时，系统会自动且隐式的将原始类型的数据转换为对象，然后再调用这个对象的属性和方法，调用完以后，在将其转换为原始值，这个过程叫做包装类。
 因为 undefined 与 null 不能有属性，所以它们不能进行包装类。
 Number 将原始类型的数值，转换为 Number 对象，它的原型是 Number.prototyp。
@@ -324,21 +841,21 @@ var a = new Number(123); var b = new String(&amp;#39;yxz&amp;#39;); var c = new 
     
     <item>
       <title>JavaScript 区分对象与数组</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8C%BA%E5%88%86%E5%AF%B9%E8%B1%A1%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
       <description>区分对象与数组 Constructor var arr = []; var obj = {}; var a = arr.constructor; console.log(a); // 返回数组。 var b = obj.constructor; console.log(b); // 返回对象。 Instanceof var arr = [];  var obj = {};  var a = arr instanceof Array; console.log(a); // 返回 true，因为变量 arr 是一个数组。 var a = arr instanceof Object; console.log(a); // 返回 true，因为变量 arr 是一个数组类对象。 var b = obj instanceof Array; console.log(b); // 返回 flase，因为变量 obj 不是一个数组。 var b = obj instanceof Object; console.</description>
     </item>
     
     <item>
       <title>JavaScript 原型</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</guid>
-      <description>原型 原型对象（prototype），它是只有函数才拥有的系统隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
-__proto__  每一个对象都有一个属性 proto，指定该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B/</guid>
+      <description>原型 原型对象（prototype），它是只有函数才拥有的隐式属性（使用 null 作为构造函数的原型的情况下，原型不能通过自定义进行添加）；通过原型这种机制，JavaScript 中的对象可以从其他的对象那里继承一些功能。
+__proto__  每一个对象都有一个属性 proto，这个属性指向该对象的原型对象。 该属性 proto 的指向（值）可以修改，即一个用构造函数创建出的对象实例的原型是可以通过该属性修改的。 当调用一个对象的属性时，如果这个对象没有这个属性，那么就会到构造该对象的构造函数的原型所指向的对象（可以称之为父对象）中去寻找这个属性，如果父对象也没有这个属性，则到该父对象的构造函数的原型所指向的对象（可以称之为为爷爷对象）里去寻找这个属性，如果还没找到，则继续往上找…，直到原型链终端为 Object.prototype；Object.prototype 中有一个 null，相当于到 null 中去取值，即调用一个对象所没有的值，会返回 undefined；这种通过属性 proto 连接原型对象直到 Object.prototype（null）的一条链为原型链。 通常情况，大部分对象最终都会继承自 Object.prototype，因为 Object.create() 方法中可以将 null 放进去当做原型。 在 JavaScript 中，null 与 undefined 没有原型且不是对象。  作用 可以让一个构造函数所创建的多个对象都可以使用公用的属性和方法。
 声明一个构造函数之后，该构造函数中会有一个属性 prototype，这个属性指向的就是该构造函数对应的原型对象。
 原型对象中有一个属性 constructor，该属性用于指向这个对象的构造函数。
 // Demo.prototype = {} 是构造函数 Demo 的原型，它默认是一个空对象（原型对象） // 当构造函数 Demo 被定义完成时，同时该函的原型对象 Demo.prototype = {} 也被定义完成； // Demo.prototype.name = &amp;#34;原型的名字&amp;#34;; // Demo.prototype.size = &amp;#34;500&amp;#34;; // Demo.prototype.height = &amp;#34;1400&amp;#34;; // Demo.prototype.width = &amp;#34;800&amp;#34;; //上面代码可以简化为： Demo.</description>
@@ -346,10 +863,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原型链</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E5%8E%9F%E5%9E%8B%E9%93%BE/</guid>
       <description>原型链 每个实例对象（ object ）都有一个私有属性（ proto ），用于指向它的构造函数的原型对象（prototype）；该原型对象也有一个自己的私有属性（proto ），层层向上直到原型对象 Object.prototype 为 null；而 null 没有原型，它作为这个原型链的终端，它的值为 undefined。
 几乎所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
 可以使用对象的属性 proto 实现继承。</description>
@@ -357,10 +874,10 @@ __proto__  每一个对象都有一个属性 proto，指定该对象的原型对
     
     <item>
       <title>JavaScript 原始值和引用值</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8%E5%80%BC/</guid>
       <description>原始值和引用值 在 ECMAScript 中，变量有两种类型的值，即原始值和引用值。
 原始值 一种非对象也没有方法和属性的数据类型，也叫基本类型（基本数值或基本数据类型）。所有的原始值都是不可改变的。
 Number 数值，用整数或浮点数表示，它允许任意位的小数。
@@ -376,10 +893,10 @@ Null 空指针，它也只有一个值 null，表示一个不存在的或无效 
     
     <item>
       <title>JavaScript 变量的声明方式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%A3%B0%E6%98%8E/%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E6%96%B9%E5%BC%8F/</guid>
       <description>变量的声明方式 变量 变量名也叫标识符，它用于储存程序中各种类型的数据。
 var var 可以声明局部变量与全局变量。
 使用 var 声明的遍变量，无论在何处进行的声明，都将在执行任何代码之前进行预编译处理。
@@ -388,40 +905,31 @@ var var 可以声明局部变量与全局变量。
     
     <item>
       <title>JavaScript 命名空间</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4/</guid>
       <description>命名空间 命名空间（package），它可以帮助我们更好地整理代码，并可避免变量命名冲突。
 简单地说，我们可以创建一个简单对象字面量来打包所有的相关函数和变量。这个简单对象字面量模拟了命名空间的作用。
 作用 私有化变量 function Demo() { 	var healthy = 0; 	// 该变量为私有化变量，这个变量只能通过构造函数的指定方法进行调用， 	// 不能直接作为对象的属性或变量进行调用。 	this.cure = function () { 	healthy++; 	};  	this.injured = function () { 	healthy--; 	};  	this.view = function () { 	console.log(healthy); 	}; }  var demo = new Demo();  demo.view(); // 返回 0，调用构造函数的属性 view。 demo.cure(); // 调用构造函数的属性 cure。，使变量 healthy 自增 1。 demo.</description>
     </item>
     
     <item>
-      <title>JavaScript 字符串截取</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</link>
-      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%AA%E5%8F%96/</guid>
-      <description>字符串截取 Str.slice(n) 从指定字符串 Str 的第 n 位字符开始截取，一直截取到字符串最末。</description>
-    </item>
-    
-    <item>
       <title>JavaScript 属性调用</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%B1%9E%E6%80%A7%E8%B0%83%E7%94%A8/</guid>
       <description>属性调用 通常调用属性的格式一般为 fun.arr，实际上系统会隐式将 fun.arr 变为 fun[&amp;ldquo;arr&amp;rdquo;]，因为前者调用更加灵活且简洁。
 var demo = { 	wife1: { name: &amp;#39;lei&amp;#39; }, 	wife2: { name: &amp;#39;zheng&amp;#39; }, 	wife3: { name: &amp;#39;xing&amp;#39; }, 	wife4: { name: &amp;#39;zhu&amp;#39; }, 	fun: function (num) { 	var a = [&amp;#39;wife&amp;#39; + num]; 	console.log(a); 	return this[&amp;#39;wife&amp;#39; + num]; 	// 看不太懂 	}, };  demo.fun(1); demo.fun(2); demo.fun(3); demo.fun(4); </description>
     </item>
     
     <item>
       <title>JavaScript 开发原则</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99/</guid>
       <description>开发原则 渐进增强 不要使用 JavaScript 代码添加网页的核心内容，应该先保证核心内容脱离与 CSS 与 JavaScript 代码之外。
 平稳退化 确保网页在没有 JavaScript 与 CSS 的情况下也能使用核心功能，而且渐进增强的实现必然支持平稳退化。
 向后兼容 使用对象检测的方式来检测浏览器对 JavaScript 的支持程度，确保老版本的浏览器不会因为不支持某些 JavaScript 代码而报错。
@@ -432,13 +940,13 @@ var demo = { 	wife1: { name: &amp;#39;lei&amp;#39; }, 	wife2: { name: &amp;#39;z
     
     <item>
       <title>JavaScript 立即执行函数</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</guid>
       <description>立即执行函数 立即执行函数（IIFE），指一个在被定义后就会立即执行的函数，不需要被调用，执行完毕后就会被立即释放。
 用于创建一个独立的作用域，主要用于初始化功能。这个作用域中的变量，外面的任何位置访问不到，用于避免变量污染和命名冲突。
-它具有普通的函数一样的功能（参数、返回值、执行期上下文等等）。
+它具有普通的函数一样的功能（参数、返回值、执行期上下文等）。
 只有函数表达式可以被执行符 () 执行，被执行符所执行的函数表达式的函数名会被自动忽略，即该函数表达式变为了 IIFE。
 多个 IIFE 之间要加分号。
 var demo = (function (a, b) { 	// 用变量 demo 接收 IIFE 的返回值 	a = Number(a); 	b = Number(b); 	var c = (a + b) * 10; 	// 将变量 a 与 b 的和乘 10 的结果赋给变量 c 	return c; 	// 将变量 c 作为该 IIFE 的返回值 })(10, 20); // 10 与 20 为实参 console.log(demo); IIFE 的立即释放的特性 var a = (function demo() { 	// 用变量 a 接收函数 demo，因函数 demo 执行一次后就会被释放，则会导致变量 a 的值变为 undefined 	// 因此再次调用变量 a 会返回 undefined 	console.</description>
@@ -446,37 +954,50 @@ var demo = (function (a, b) { 	// 用变量 demo 接收 IIFE 的返回值 	a = N
     
     <item>
       <title>JavaScript 继承方式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E7%BB%A7%E6%89%BF%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/%E7%BB%A7%E6%89%BF%E6%96%B9%E5%BC%8F/</guid>
       <description>继承方式 原型链继承 缺点 会使一个对象过多继承一些没用或不需要的属性，则会导致代码的执行效率大大降低。反对反对反对法大幅度发反对发的
 Grand.prototype.blue = &amp;#39;blue&amp;#39;; function Grand() {}  var grandfather = new Grand();  Father.prototype = grandfather;  function Father() { 	this.red = &amp;#39;red&amp;#39;; 	this.money = { 	card: &amp;#39;pencil&amp;#39;, 	}; 	this.value = &amp;#39;100&amp;#39;; }  var father = new Father();  Son.prototype = father;  function Son() { 	this.orange = &amp;#39;orange&amp;#39;; } var son = new Son();  console.log(son.orange); // 返回 orange。 console.</description>
     </item>
     
     <item>
       <title>JavaScript 节点</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/%E8%8A%82%E7%82%B9/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E8%8A%82%E7%82%B9/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/dom/%E8%8A%82%E7%82%B9/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E8%8A%82%E7%82%B9/</guid>
       <description>节点 在文档中，几乎每一样东西都是一个节点（Node），包括空格和换行符都会被解释为节点。
-元素节点 指文档中的元素。
-文本节点 指文档中元素所包含着的文本。
-属性节点 指文档中元素的属性；属性都被包含在元素中。
-节点的属性 childNodes 返回一个指定节点所包含的所有子节点的集合。
-nodeValue 返回或设置当前节点的值。
-注意 一个元素节点的 nodeValue 是一个空值 null ，若需要获取这个元素节点所包含的文本内容，则需要属性 childNodes 来获取这个元素节点所包含的文本节点的文本内容。
-nodeName 返回指定节点的大写字母形式的节点名。
-nextSibling 返回紧跟在指定节点后面的节点，如果指定节点为最后一个节点，则返回 null。</description>
+文档的根节点不是 html，而是 document。
+分类 元素节点 文档中的元素，nodeType 的值为 1。
+属性节点 文档中元素节点的属性，属性节点都被包含在元素节点中。
+nodeType 的值为 2。
+文本节点 文档中元素所包含的文本。 nodeType 的值为 3。
+注释节点 文档中的注释。
+nodeType 的值为 8.
+document 节点 nodeType 的值为 9。
+属性 每一个节点都有四个基本属性。
+nodeValue 返回或设置指定点的值。
+只用文本节点或注释节点才有 nodeValue。
+而其他节点的 nodeValue 是 null 。
+nodeName 返回指定节点的大写字母形式的节点名，它是一个只读属性。
+nodeType 返回指定节点的类型，只读属性。
+元素节点返回 1。
+属性节点返回 2。
+文本节点返回 3。
+注释节点返回 8。
+document 节点返回 9。
+attributes 返回指定节点的所有属性节点。
+方法 hasChildNodes() 判断一个元素是否包含子节点，返回一个布尔值。</description>
     </item>
     
     <item>
       <title>JavaScript 运算符</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
 ++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
 操作数前置或后置
@@ -500,10 +1021,10 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 递归</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/</guid>
       <description>递归  找规律（符合人的思维过程）。 找出口（用已知的条件当做终止条件，用实际性的数去返回结果），避免无限递归（无限循环），导致浏览器崩溃。 一般格式为 return + 规律公式。 特别复杂的程序一定不能使用递归。  递归的优缺点 优点：使代码更加简洁。
 缺点：影响程序的效率与性能。
 递归实现阶乘 var n = 5; function OneOne(n) { 	if (n == 1) { 	//将当 n 等于 1 时作为结束条件 	return 1; 	// 返回值为 1 	} 	return (n = n * OneOne(n - 1)); 	// 用公式将阶乘的规律表示出来，因为会无限的循环并且计算，所以需要找到结束条件 	// 使用递归计算 5 的阶乘的过程： 	// OneOne(5); 5 = 5 * (4 * 6);(OneOne(5 - 1)); 	// OneOne(4); 4 = 4 * (2 * 3);(OneOne(4 - 1)); 	// OneOne(3); 3 = 3 * (2 * 1);(OneOne(3 - 1)); 	// OneOne(2); 2 = 2 * (1 * 1);(OneOne(2 - 1)); 	// OneOne(1); 当 n 等于 1 时，直接返回 1; } console.</description>
@@ -511,22 +1032,22 @@ Instanceof 通常用于判断一个对象是否是由指定构造函数构造出
     
     <item>
       <title>JavaScript 链式调用</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8/</guid>
       <description>链式调用 模仿一个 jQuery 链式调用的方式。
 var demo = { 	a: function () { 	console.log(123); 	return this; 	// 将函数自身返回。 	},  	b: function () { 	console.log(456); 	return this; 	// 将函数自身返回。 	},  	c: function () { 	console.log(789); 	return this; 	//将函数自身返回。 	}, }; demo.a().b().c(); // 呈链式(连续)的调用对象 demo 的属性。 </description>
     </item>
     
     <item>
       <title>JavaScript 闭包</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%97%AD%E5%8C%85/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%97%AD%E5%8C%85/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%97%AD%E5%8C%85/</guid>
       <description>闭包 在函数（父函数）中创建另一个函数（子函数）时；当子函数被父函数 return 到了外部时，会生成闭包。
-生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被完全释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
+生成了闭包后，虽然父函数的 AO 已经被释放了，但子函数却保存了父函数的 AO，且这个 AO 不会因为父函数的执行完毕而被释放，因为父函数的 AO 已经被子函数给保存了起来，且可以随意调用。
 闭包的优缺点 优点 避免全局变量的污染。
 使变量长期储存在内存中。
 缺点 使用不当会导致原有的作用域链不释放，造成内存泄露（过多占用内存的剩余空间，导致可用空间越来越少）。
@@ -535,10 +1056,10 @@ function demo() { 	function test() { 	var d = 345; 	console.log(c); 	// 虽然�
     
     <item>
       <title>JavaScript 预编译</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%A2%84%E7%BC%96%E8%AF%91/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/js/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E9%A2%84%E7%BC%96%E8%AF%91/</guid>
       <description>预编译 JavaScript 是脚本语言，因此不会进行传统的预编译，但它会经过一个特殊的预编译过程，这个预编译过程发生在代码执行前的极短时间内。
 预编译发生在代码执行之前的一瞬间，用于在内存中创建一些空间来存储一些变量与函数；预编译时，会无视 if 语句中的条件，会直接将 if 语句中的代码块内的变量的声明与函数声明进行提升。
 函数声明提升 定义一个函数时，该函数会被提升到当前作用域链的顶端，即调用该函数时，不管在哪调用该函数，都可以调用成功；但函数表达式并不会。

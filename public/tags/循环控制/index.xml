@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>循环控制 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/</link>
     <description>Recent content in 循环控制 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%BE%AA%E7%8E%AF%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C for</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/for/</guid>
       <description>for 执行 1，判断 2，当 2 为 true 时则执行 A，之后再执行 3，此后一直判断 2，直到 2 为 false 时并结束循环；如果 2 为 false，则直接结束循环。
 for(1; 2; 3) {  A; } 其中：
 1 只执行一次。

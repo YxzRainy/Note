@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 函数",
 	    "headline" : "C 函数",
-	    "description" : "函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。\n函数还有很多叫法，比如方法、子例程或程序，等等。\n#include \u0026lt;iostream\u0026gt; \/\/ void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i \u0026gt; j)  {  printf(\u0026#34;%d\\n\u0026#34;,i);  }  else  {  printf(\u0026#34;%d\\n\u0026#34;,j);  } }  \/\/ int 表示 main 函数返回一个整型的值 \/\/ 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）",
+	    "description" : "函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。\n函数还有很多叫法，比如方法、子例程或程序，等等。\n#include \u0026lt;iostream\u0026gt; \/\/ void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i \u0026gt; j)  {  printf(\u0026#34;%d\\n\u0026#34;,i);  }  else  {  printf(\u0026#34;%d\\n\u0026#34;,j);  } }  \/\/ int 表示 main 函数返回一个整型的值 \/\/ 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 优点  避免了重复性的操作。 有利于程序的模块化。  特点 能够接受参数，（但也可以不接收）",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2022",
 	    "datePublished": "2022-02-23 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2022-02-23 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%87%BD%E6%95%B0\/%E5%87%BD%E6%95%B0\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%87%BD%E6%95%B0\/%E5%87%BD%E6%95%B0\/",
 	    "keywords" : [ "C","函数","学习笔记", ]
 	}
 </script><title>C 函数</title>
@@ -40,15 +40,15 @@
     <meta property="og:type" content="article" />
     <meta property="og:description" content="函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
 函数还有很多叫法，比如方法、子例程或程序，等等。
-#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）" />
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 优点  避免了重复性的操作。 有利于程序的模块化。  特点 能够接受参数，（但也可以不接收）" />
     <meta name="description" content="函数 每个 C 程序都至少有一个函数，即主函数 main() ，所有简单的程序都可以定义其他额外的函数。
 函数还有很多叫法，比如方法、子例程或程序，等等。
-#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 为什么需要函数  避免了重复性的操作 有利于程序的模块化  什么是函数 能够接受参数，（但也可以不接收）" />
+#include &amp;lt;iostream&amp;gt; // void 表示这个 max 函数没有返回值（但可以有 reture，但不能 reture 表达式） void max(int i,int j) {  if(i &amp;gt; j)  {  printf(&amp;#34;%d\n&amp;#34;,i);  }  else  {  printf(&amp;#34;%d\n&amp;#34;,j);  } }  // int 表示 main 函数返回一个整型的值 // 程序从 main 函数进入 void 表示该函数不能接收参数。 int main(void) {  int a = 1;  int b = 5;  max(a,b); } 优点  避免了重复性的操作。 有利于程序的模块化。  特点 能够接受参数，（但也可以不接收）" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -107,15 +107,15 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">max</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">b</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="为什么需要函数">为什么需要函数</h2>
+</span></span></code></pre></div><h2 id="优点">优点</h2>
 <ul>
-<li>避免了重复性的操作</li>
-<li>有利于程序的模块化</li>
+<li>避免了重复性的操作。</li>
+<li>有利于程序的模块化。</li>
 </ul>
-<h2 id="什么是函数">什么是函数</h2>
+<h2 id="特点">特点</h2>
 <p>能够接受参数，（但也可以不接收）</p>
-<p>能够对接收的参数进行梳理</p>
-<p>有返回值（也可以没有返回值）</p>
+<p>能够对接收的参数进行处理</p>
+<p>有返回值（但也可以没有返回值）</p>
 <h2 id="函数的返回值以函数名前面的关键字为准">函数的返回值以函数名前面的关键字为准</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 函数名 fun 前面的 int 是该函数的类型，也是该函数返回值的类型
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 就算该函数 return 其他类型的值（比如 char 类型的 A），、
@@ -186,8 +186,8 @@
         
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#为什么需要函数">为什么需要函数</a></li>
-    <li><a href="#什么是函数">什么是函数</a></li>
+    <li><a href="#优点">优点</a></li>
+    <li><a href="#特点">特点</a></li>
     <li><a href="#函数的返回值以函数名前面的关键字为准">函数的返回值以函数名前面的关键字为准</a></li>
     <li><a href="#return-的作用">return 的作用</a></li>
     <li><a href="#函数的分类">函数的分类</a></li>
@@ -205,11 +205,12 @@
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 分组查询",
+	    "headline" : "MySQL 分组查询",
+	    "description" : "分组查询 通过一定的规则将一个数据集划分为若干个小组，然后对这些小组中的数据进行处理。\n语法 SELECT字段名FROM表名WHERE分组前的筛选条件GROUPBY依照哪个字段进行分组ORDERBY排序列表HAVING分组后的筛选条件查询列表必须特殊，必须实分组函数和 GROUP BY后面出现的字段。\n分组查询的筛选条件被分为分组前的筛选和分组后的筛选\nWHERE 和 HAVING WHERE，分组之前的筛选条件，数据来源是原始表。\nHAVING，分组之后的筛选条件，数据来源是经过 WHERE 筛选后的表。\n用先用 WHERE 来进行筛选的，优先考虑先用 WHERE 来进行筛选。\n按单个字段分组 查询每个工种的最高工资 SELECTMAX(salary),job_idFROMemployeesGROUPBYjob_id查询每个部门，邮箱中包含 a 字符的平均工资 SELECTAVG(salary),department_idFROMemployeesWHEREemailLIKE\u0026#39;%a%\u0026#39;GROUPBYdepartment_id查询每个领导手下有奖金的员工的最高工资 SELECTMAX(salary),manager_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYmanager_id查询哪些部门的员工数 \u0026gt; 2 SELECTCOUNT(*)AS员工个数,department_idFROMemployeesGROUPBYdepartment_idHAVING员工个数\u0026gt;2;查询哪些工种编号的最高工资 \u0026gt; 12000 SELECTMAX(salary)AS最高工资,job_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYjob_idHAVING最高工资\u0026gt;12000;查询哪些领导编号 \u0026gt;102 ，且最低工资 \u0026gt; 5000 SELECTMIN(salary)AS最低工资,manager_idFROMemployeesWHEREmanager_id\u0026gt;102GROUPBYmanager_idHAVING最低工资\u0026gt;5000;按表达式或函数分组 按员工姓的长度分组，查询每组员工个数 \u0026gt;5 的组 SELECTCOUNT(*)AS员工个数,LENGTH(last_name)AS这些员工的姓名长度FROMemployeesGROUPBYLENGTH(last_name)HAVING员工个数\u0026gt;5按多个字段分组 将GROUP BY后面的多个字段用,隔开即可。\n查询每个部门和每个工种的员工的平均工资 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesGROUPBYdepartment_id,job_id;查询每个不为 NULL 的部门和每个工种的 \u0026gt; 10000 的平均工资，并且按平均工资的高低显示 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesWHEREdepartment_idISNOTNULLGROUPBYjob_id,department_idHAVING平均工资\u0026gt;10000ORDERBY平均工资DESC;",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-25 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/dql\/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2\/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2\/",
+	    "keywords" : [ "SQL","DQL","MySQL","分组查询","学习笔记", ]
+	}
+</script><title>MySQL 分组查询</title>
+    <meta property="og:title" content="MySQL 分组查询" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="分组查询 通过一定的规则将一个数据集划分为若干个小组，然后对这些小组中的数据进行处理。
+语法 SELECT字段名FROM表名WHERE分组前的筛选条件GROUPBY依照哪个字段进行分组ORDERBY排序列表HAVING分组后的筛选条件查询列表必须特殊，必须实分组函数和 GROUP BY后面出现的字段。
+分组查询的筛选条件被分为分组前的筛选和分组后的筛选
+WHERE 和 HAVING WHERE，分组之前的筛选条件，数据来源是原始表。
+HAVING，分组之后的筛选条件，数据来源是经过 WHERE 筛选后的表。
+用先用 WHERE 来进行筛选的，优先考虑先用 WHERE 来进行筛选。
+按单个字段分组 查询每个工种的最高工资 SELECTMAX(salary),job_idFROMemployeesGROUPBYjob_id查询每个部门，邮箱中包含 a 字符的平均工资 SELECTAVG(salary),department_idFROMemployeesWHEREemailLIKE&amp;#39;%a%&amp;#39;GROUPBYdepartment_id查询每个领导手下有奖金的员工的最高工资 SELECTMAX(salary),manager_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYmanager_id查询哪些部门的员工数 &amp;gt; 2 SELECTCOUNT(*)AS员工个数,department_idFROMemployeesGROUPBYdepartment_idHAVING员工个数&amp;gt;2;查询哪些工种编号的最高工资 &amp;gt; 12000 SELECTMAX(salary)AS最高工资,job_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYjob_idHAVING最高工资&amp;gt;12000;查询哪些领导编号 &amp;gt;102 ，且最低工资 &amp;gt; 5000 SELECTMIN(salary)AS最低工资,manager_idFROMemployeesWHEREmanager_id&amp;gt;102GROUPBYmanager_idHAVING最低工资&amp;gt;5000;按表达式或函数分组 按员工姓的长度分组，查询每组员工个数 &amp;gt;5 的组 SELECTCOUNT(*)AS员工个数,LENGTH(last_name)AS这些员工的姓名长度FROMemployeesGROUPBYLENGTH(last_name)HAVING员工个数&amp;gt;5按多个字段分组 将GROUP BY后面的多个字段用,隔开即可。
+查询每个部门和每个工种的员工的平均工资 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesGROUPBYdepartment_id,job_id;查询每个不为 NULL 的部门和每个工种的 &amp;gt; 10000 的平均工资，并且按平均工资的高低显示 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesWHEREdepartment_idISNOTNULLGROUPBYjob_id,department_idHAVING平均工资&amp;gt;10000ORDERBY平均工资DESC;" />
+    <meta name="description" content="分组查询 通过一定的规则将一个数据集划分为若干个小组，然后对这些小组中的数据进行处理。
+语法 SELECT字段名FROM表名WHERE分组前的筛选条件GROUPBY依照哪个字段进行分组ORDERBY排序列表HAVING分组后的筛选条件查询列表必须特殊，必须实分组函数和 GROUP BY后面出现的字段。
+分组查询的筛选条件被分为分组前的筛选和分组后的筛选
+WHERE 和 HAVING WHERE，分组之前的筛选条件，数据来源是原始表。
+HAVING，分组之后的筛选条件，数据来源是经过 WHERE 筛选后的表。
+用先用 WHERE 来进行筛选的，优先考虑先用 WHERE 来进行筛选。
+按单个字段分组 查询每个工种的最高工资 SELECTMAX(salary),job_idFROMemployeesGROUPBYjob_id查询每个部门，邮箱中包含 a 字符的平均工资 SELECTAVG(salary),department_idFROMemployeesWHEREemailLIKE&amp;#39;%a%&amp;#39;GROUPBYdepartment_id查询每个领导手下有奖金的员工的最高工资 SELECTMAX(salary),manager_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYmanager_id查询哪些部门的员工数 &amp;gt; 2 SELECTCOUNT(*)AS员工个数,department_idFROMemployeesGROUPBYdepartment_idHAVING员工个数&amp;gt;2;查询哪些工种编号的最高工资 &amp;gt; 12000 SELECTMAX(salary)AS最高工资,job_idFROMemployeesWHEREcommission_pctISNOTNULLGROUPBYjob_idHAVING最高工资&amp;gt;12000;查询哪些领导编号 &amp;gt;102 ，且最低工资 &amp;gt; 5000 SELECTMIN(salary)AS最低工资,manager_idFROMemployeesWHEREmanager_id&amp;gt;102GROUPBYmanager_idHAVING最低工资&amp;gt;5000;按表达式或函数分组 按员工姓的长度分组，查询每组员工个数 &amp;gt;5 的组 SELECTCOUNT(*)AS员工个数,LENGTH(last_name)AS这些员工的姓名长度FROMemployeesGROUPBYLENGTH(last_name)HAVING员工个数&amp;gt;5按多个字段分组 将GROUP BY后面的多个字段用,隔开即可。
+查询每个部门和每个工种的员工的平均工资 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesGROUPBYdepartment_id,job_id;查询每个不为 NULL 的部门和每个工种的 &amp;gt; 10000 的平均工资，并且按平均工资的高低显示 SELECTAVG(salary)AS平均工资,department_id,job_idFROMemployeesWHEREdepartment_idISNOTNULLGROUPBYjob_id,department_idHAVING平均工资&amp;gt;10000ORDERBY平均工资DESC;" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 分组查询</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-25 06:00:00 UTC">
+                        2022-04-25
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="分组查询">分组查询</h1>
+<p>通过一定的规则将一个数据集划分为若干个小组，然后对这些小组中的数据进行处理。</p>
+<h2 id="语法">语法</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#a40000">字段名</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">表名</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">分组前的筛选条件</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">依照哪个字段进行分组</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">ORDER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">排序列表</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">分组后的筛选条件</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>查询列表必须特殊，必须实分组函数和 <code>GROUP BY</code>后面出现的字段。</p>
+<p>分组查询的筛选条件被分为<strong>分组前的筛选</strong>和<strong>分组后的筛选</strong></p>
+<h2 id="where-和-having">WHERE 和 HAVING</h2>
+<p>WHERE，分组之前的筛选条件，数据来源是原始表。</p>
+<p>HAVING，分组之后的筛选条件，数据来源是经过 WHERE 筛选后的表。</p>
+<p>用先用 WHERE 来进行筛选的，优先考虑先用 WHERE 来进行筛选。</p>
+<h2 id="按单个字段分组">按单个字段分组</h2>
+<h3 id="查询每个工种的最高工资">查询每个工种的最高工资</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">MAX</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">),</span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询每个部门邮箱中包含--a--字符的平均工资">查询每个部门，邮箱中包含  a  字符的平均工资</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">AVG</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">),</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">email</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">LIKE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;%a%&#39;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询每个领导手下有奖金的员工的最高工资">查询每个领导手下有奖金的员工的最高工资</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">MAX</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">),</span><span style="color:#000">manager_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">IS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NOT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">manager_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询哪些部门的员工数--2">查询哪些部门的员工数 &gt; 2</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">COUNT</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">员工个数</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">员工个数</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#0000cf;font-weight:bold">2</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询哪些工种编号的最高工资--12000">查询哪些工种编号的最高工资 &gt; 12000</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">MAX</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">最高工资</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">commission_pct</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">IS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NOT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">最高工资</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#0000cf;font-weight:bold">12000</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询哪些领导编号-102-且最低工资--5000">查询哪些领导编号 &gt;102 ，且最低工资 &gt; 5000</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">MIN</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">最低工资</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">manager_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">manager_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">102</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">manager_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">最低工资</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">5000</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="按表达式或函数分组">按表达式或函数分组</h2>
+<h3 id="按员工姓的长度分组查询每组员工个数-5-的组">按员工姓的长度分组，查询每组员工个数 &gt;5 的组</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">COUNT</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">员工个数</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">LENGTH</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">这些员工的姓名长度</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">LENGTH</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">员工个数</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="按多个字段分组">按多个字段分组</h2>
+<p>将<code>GROUP BY</code>后面的多个字段用<code>,</code>隔开即可。</p>
+<h3 id="查询每个部门和每个工种的员工的平均工资">查询每个部门和每个工种的员工的平均工资</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AVG</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">平均工资</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">department_id</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">department_id</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">job_id</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="查询每个不为-null-的部门和每个工种的--10000-的平均工资并且按平均工资的高低显示">查询每个不为 NULL 的部门和每个工种的 &gt; 10000 的平均工资，并且按平均工资的高低显示</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AVG</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">salary</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">平均工资</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">department_id</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">job_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">IS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NOT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">NULL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">GROUP</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">job_id</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">HAVING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">平均工资</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">10000</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">ORDER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">BY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">平均工资</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">DESC</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/">
+                    分组查询
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#语法">语法</a></li>
+    <li><a href="#where-和-having">WHERE 和 HAVING</a></li>
+    <li><a href="#按单个字段分组">按单个字段分组</a>
+      <ul>
+        <li><a href="#查询每个工种的最高工资">查询每个工种的最高工资</a></li>
+        <li><a href="#查询每个部门邮箱中包含--a--字符的平均工资">查询每个部门，邮箱中包含  a  字符的平均工资</a></li>
+        <li><a href="#查询每个领导手下有奖金的员工的最高工资">查询每个领导手下有奖金的员工的最高工资</a></li>
+        <li><a href="#查询哪些部门的员工数--2">查询哪些部门的员工数 &gt; 2</a></li>
+        <li><a href="#查询哪些工种编号的最高工资--12000">查询哪些工种编号的最高工资 &gt; 12000</a></li>
+        <li><a href="#查询哪些领导编号-102-且最低工资--5000">查询哪些领导编号 &gt;102 ，且最低工资 &gt; 5000</a></li>
+      </ul>
+    </li>
+    <li><a href="#按表达式或函数分组">按表达式或函数分组</a>
+      <ul>
+        <li><a href="#按员工姓的长度分组查询每组员工个数-5-的组">按员工姓的长度分组，查询每组员工个数 &gt;5 的组</a></li>
+      </ul>
+    </li>
+    <li><a href="#按多个字段分组">按多个字段分组</a>
+      <ul>
+        <li><a href="#查询每个部门和每个工种的员工的平均工资">查询每个部门和每个工种的员工的平均工资</a></li>
+        <li><a href="#查询每个不为-null-的部门和每个工种的--10000-的平均工资并且按平均工资的高低显示">查询每个不为 NULL 的部门和每个工种的 &gt; 10000 的平均工资，并且按平均工资的高低显示</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

@@ -2,16 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>补码 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/categories/%E8%A1%A5%E7%A0%81/</link>
+    <link>https://yxzi.xyz/Sub/Blog/categories/%E8%A1%A5%E7%A0%81/</link>
     <description>Recent content in 补码 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="http://yxzi.xyz/Sub/Blog/categories/%E8%A1%A5%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/%E8%A1%A5%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>补码</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</link>
+      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/computer/%E8%A1%A5%E7%A0%81/</guid>
       <description>补码 在计算机中，数值一律用补码来表示和存储
 已知十进制求二进制的补码 求正整数的二进制补码 除 2 取余，直至商为 0，余数倒序即可
 求负整数的二进制补码 先求与该负数的相反数的二进制数，然后将所有位取反，末尾位加 1，不够位数，左侧补 1。
@@ -21,7 +22,7 @@ FFFFFFFD
 已知二进制补码求十进制 如果二进制补码首位是 0，则表示这个数是正整数。
 直接转十进制即可。
 如果二进制补码首位是 1，则表示这个数是负整数。
-将所有位取反，末位加 1，所得数字就是该负数的绝对值。
+将所有位取反，末位加 1，所得数字就是该负数的绝对值加 1。
 1001010 —&amp;gt; 0110101 —&amp;gt; 0110110 —&amp;gt; 57 —&amp;gt; -54
 如果二进制补码全是零，则表示这个数字是 0。
 原码 原码不能直接参加运算

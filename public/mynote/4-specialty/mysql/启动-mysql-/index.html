@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%90%AF%E5%8A%A8-mysql-/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%90%AF%E5%8A%A8-mysql-/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "启动 MySQL",
+	    "headline" : "启动 MySQL",
+	    "description" : "启动 MySQL 使用命令行 Window 操作系统中 Ctrl \u002b Alt 打开 CMD，通过下面两条命令启动或关闭MySQL\nnetstartmysql#启动MySQLnetstopmysql#关闭MySQL提示服务名无效 C:\\Windows\\system32\u0026gt;netstartmysql服务名无效。请键入NETHELPMSG2185以获得更多的帮助。在 MySQL 安装目录下的 bin 目录下打开管理员的 cmd，并输入命令**.\\mysqld.exe install**，回车即可：\nD:\\AppInstallPath\\PhpStudy\\phpstudy_pro\\Extensions\\MySQL5.7.26\\bin\u0026gt;.\\mysqld.exeinstallServicesuccessfullyinstalled.使用 PHPStudy 首页，直接启动 MySQL即可，如果提示端口被占用，修改端口号即可。\n登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。\n-P表示端口号。\n-u表示用户名。\n-p表示密码。\n输入命令后 Enter。\nMySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。\nMySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：\nMySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：\nMySQL-uroot-p123456注意，这里的-p123456是不能有空格的。\n\u0026gt;MySQL-hlocalhost-P3306-uroot-p123456MySQL:[Warning]Usingapasswordonthecommandlineinterfacecanbeinsecure.WelcometotheMySQLmonitor.Commandsendwith;or\\g.YourMySQLconnectionidis4Serverversion:5.7.26MySQLCommunityServer(GPL)MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。\n退出服务端 使用exit命令或者 Ctrl \u002b C。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%90%AF%E5%8A%A8-mysql-\/",
+	    "keywords" : [ "SQL","MySQL","学习笔记", ]
+	}
+</script><title>启动 MySQL</title>
+    <meta property="og:title" content="启动 MySQL" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="启动 MySQL 使用命令行 Window 操作系统中 Ctrl &#43; Alt 打开 CMD，通过下面两条命令启动或关闭MySQL
+netstartmysql#启动MySQLnetstopmysql#关闭MySQL提示服务名无效 C:\Windows\system32&amp;gt;netstartmysql服务名无效。请键入NETHELPMSG2185以获得更多的帮助。在 MySQL 安装目录下的 bin 目录下打开管理员的 cmd，并输入命令**.\mysqld.exe install**，回车即可：
+D:\AppInstallPath\PhpStudy\phpstudy_pro\Extensions\MySQL5.7.26\bin&amp;gt;.\mysqld.exeinstallServicesuccessfullyinstalled.使用 PHPStudy 首页，直接启动 MySQL即可，如果提示端口被占用，修改端口号即可。
+登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。
+-P表示端口号。
+-u表示用户名。
+-p表示密码。
+输入命令后 Enter。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：
+MySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：
+MySQL-uroot-p123456注意，这里的-p123456是不能有空格的。
+&amp;gt;MySQL-hlocalhost-P3306-uroot-p123456MySQL:[Warning]Usingapasswordonthecommandlineinterfacecanbeinsecure.WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis4Serverversion:5.7.26MySQLCommunityServer(GPL)MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。
+退出服务端 使用exit命令或者 Ctrl &#43; C。" />
+    <meta name="description" content="启动 MySQL 使用命令行 Window 操作系统中 Ctrl &#43; Alt 打开 CMD，通过下面两条命令启动或关闭MySQL
+netstartmysql#启动MySQLnetstopmysql#关闭MySQL提示服务名无效 C:\Windows\system32&amp;gt;netstartmysql服务名无效。请键入NETHELPMSG2185以获得更多的帮助。在 MySQL 安装目录下的 bin 目录下打开管理员的 cmd，并输入命令**.\mysqld.exe install**，回车即可：
+D:\AppInstallPath\PhpStudy\phpstudy_pro\Extensions\MySQL5.7.26\bin&amp;gt;.\mysqld.exeinstallServicesuccessfullyinstalled.使用 PHPStudy 首页，直接启动 MySQL即可，如果提示端口被占用，修改端口号即可。
+登录服务端 隐藏密码登录 MySQL-hlocalhost-P3306-uroot-p-h表示主机。
+-P表示端口号。
+-u表示用户名。
+-p表示密码。
+输入命令后 Enter。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:输入密码，登录成功。
+MySQL-hlocalhost-P3306-uroot-pEnterpassword:******WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis3Serverversion:5.7.26MySQLCommunityServer(GPL).......显示密码登录 当然，我们也可以直接以显示密码的方式登录：
+MySQL-hlocalhost-P3306-uroot-p123456上面的命令可以简写为：
+MySQL-uroot-p123456注意，这里的-p123456是不能有空格的。
+&amp;gt;MySQL-hlocalhost-P3306-uroot-p123456MySQL:[Warning]Usingapasswordonthecommandlineinterfacecanbeinsecure.WelcometotheMySQLmonitor.Commandsendwith;or\g.YourMySQLconnectionidis4Serverversion:5.7.26MySQLCommunityServer(GPL)MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。
+退出服务端 使用exit命令或者 Ctrl &#43; C。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">启动 MySQL</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-21 06:00:00 UTC">
+                        2022-04-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="启动-mysql">启动 MySQL</h1>
+<h2 id="使用命令行">使用命令行</h2>
+<p>Window 操作系统中 Ctrl + Alt 打开 CMD，通过下面两条命令启动或关闭MySQL</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">net</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">start</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">启动</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">net</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">stop</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">#</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">关闭</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="提示服务名无效">提示服务名无效</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">C</span><span style="color:#000;font-weight:bold">:</span><span style="color:#a40000">\</span><span style="color:#000">Windows</span><span style="color:#a40000">\</span><span style="color:#000">system32</span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#000">net</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">start</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">mysql</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#a40000">服务名无效。</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#a40000">请键入</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">NET</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">HELPMSG</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">2185</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">以获得更多的帮助。</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>在 MySQL 安装目录下的 bin 目录下打开管理员的 cmd，并输入命令**.\mysqld.exe install**，回车即可：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">D</span><span style="color:#000;font-weight:bold">:</span><span style="color:#a40000">\</span><span style="color:#000">AppInstallPath</span><span style="color:#a40000">\</span><span style="color:#000">PhpStudy</span><span style="color:#a40000">\</span><span style="color:#000">phpstudy_pro</span><span style="color:#a40000">\</span><span style="color:#000">Extensions</span><span style="color:#a40000">\</span><span style="color:#000">MySQL5</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">26</span><span style="color:#a40000">\</span><span style="color:#000">bin</span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#000;font-weight:bold">.</span><span style="color:#a40000">\</span><span style="color:#000">mysqld</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">exe</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">install</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Service</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">successfully</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">installed</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="使用-phpstudy">使用 PHPStudy</h2>
+<p>首页，直接启动 MySQL即可，如果提示端口被占用，修改端口号即可。</p>
+<h2 id="登录服务端">登录服务端</h2>
+<h3 id="隐藏密码登录">隐藏密码登录</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p><code>-h</code>表示主机。</p>
+<p><code>-P</code>表示端口号。</p>
+<p><code>-u</code>表示用户名。</p>
+<p><code>-p</code>表示密码。</p>
+<p>输入命令后 Enter。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Enter</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">password</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span></code></pre></div><p>输入密码，登录成功。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Enter</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">password</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">******</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Welcome</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">to</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">the</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">monitor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#000">Commands</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">end</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">or</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">\</span><span style="color:#204a87;font-weight:bold">g</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Your</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">connection</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">is</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">26</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Community</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">GPL</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000;font-weight:bold">.......</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h3 id="显示密码登录">显示密码登录</h3>
+<p>当然，我们也可以直接以显示密码的方式登录：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p123456</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>上面的命令可以简写为：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p123456</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>注意，这里的<code>-p123456</code>是不能有空格的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">h</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">localhost</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">P</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3306</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">u</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">root</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#000">p123456</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">MySQL</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">Warning</span><span style="color:#000;font-weight:bold">]</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">Using</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">a</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">password</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">on</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">the</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">command</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">line</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">interface</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">can</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">be</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">insecure</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Welcome</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">to</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">the</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">monitor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#000">Commands</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">end</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">or</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">\</span><span style="color:#204a87;font-weight:bold">g</span><span style="color:#000;font-weight:bold">.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Your</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">connection</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">is</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">7</span><span style="color:#000;font-weight:bold">.</span><span style="color:#0000cf;font-weight:bold">26</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MySQL</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Community</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Server</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">GPL</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>MySQL 会提示我们用这种方式登录服务端是不安全的，所以还是建议使用第一种方式登录服务端。</p>
+<h2 id="退出服务端">退出服务端</h2>
+<p>使用<code>exit</code>命令或者 Ctrl + C。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#000">mysql</span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">exit</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">Bye</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用命令行">使用命令行</a>
+      <ul>
+        <li><a href="#提示服务名无效">提示服务名无效</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用-phpstudy">使用 PHPStudy</a></li>
+    <li><a href="#登录服务端">登录服务端</a>
+      <ul>
+        <li><a href="#隐藏密码登录">隐藏密码登录</a></li>
+        <li><a href="#显示密码登录">显示密码登录</a></li>
+      </ul>
+    </li>
+    <li><a href="#退出服务端">退出服务端</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

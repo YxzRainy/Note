@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>eNSP on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/ensp/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/ensp/</link>
     <description>Recent content in eNSP on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 21 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/ensp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/ensp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>eMSP 配置 trunk 和 Access</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</link>
       <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</guid>
       <description>配置 trunk 和 Access 添加静态mac
 改名，配置 IP和子网掩码
 第一台pc ping 其他pc
@@ -39,10 +39,10 @@ quit
     
     <item>
       <title>eNSP 交换机端口模式</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</guid>
       <description>交换机端口模式 Access 接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃
 发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃
 trunk 接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃
@@ -58,10 +58,10 @@ vid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决
     
     <item>
       <title>eNSP 路由命令</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</guid>
       <description>路由命令 system-view 系统界面
 current- 当前配置
 undo info-center enable（删除或禁用 xx）
@@ -87,10 +87,10 @@ mac-address static 0099-cd11-1111 Eth 接口 vlan 1</description>
     
     <item>
       <title>eNSP 配置 Web 服务器</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>配置 Web 服务器 第一台客户机 10.0.1.10
 10.0.1.1
 域名服务器

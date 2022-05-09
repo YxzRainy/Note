@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%99%AE%E9%80%9A%E5%AD%97%E7%AC%A6/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E6%99%AE%E9%80%9A%E5%AD%97%E7%AC%A6/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "正则表达式 普通字符",
+	    "headline" : "正则表达式 普通字符",
+	    "description" : "普通字符 [] 它是一个表达式，一个[]就表示一个字符，比如[ab][ab]就表示匹配两个相连的字符，并且这个两个字符必须是sd。\n它匹配[]中所含有的字符，[]中是一个要匹配的区间。\n[]可以写元字符\n例子   [str]，匹配包含 str 的字符。\n  [A-Z]，匹配 A-Z 的字符。\n  [a-z]，匹配 a - z 的字符。\n  [0-9]，匹配 0 - 9 的字符。\n  [A-z] = 匹配[A-Z] \u002b [a-z]的字符\n  [^rainy]，匹配除 rainy 之外的任意字符。\n  var reg = \/[0-9][A-z][a-z]\/gm;  var str = \u0026#39;111Exg54gGfg000\u0026#39;;  var result = str.match(reg); console.log(result); ()",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F\/%E6%99%AE%E9%80%9A%E5%AD%97%E7%AC%A6\/",
+	    "keywords" : [ "学习笔记","正则表达式", ]
+	}
+</script><title>正则表达式 普通字符</title>
+    <meta property="og:title" content="正则表达式 普通字符" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="普通字符 [] 它是一个表达式，一个[]就表示一个字符，比如[ab][ab]就表示匹配两个相连的字符，并且这个两个字符必须是sd。
+它匹配[]中所含有的字符，[]中是一个要匹配的区间。
+[]可以写元字符
+例子   [str]，匹配包含 str 的字符。
+  [A-Z]，匹配 A-Z 的字符。
+  [a-z]，匹配 a - z 的字符。
+  [0-9]，匹配 0 - 9 的字符。
+  [A-z] = 匹配[A-Z] &#43; [a-z]的字符
+  [^rainy]，匹配除 rainy 之外的任意字符。
+  var reg = /[0-9][A-z][a-z]/gm;  var str = &amp;#39;111Exg54gGfg000&amp;#39;;  var result = str.match(reg); console.log(result); ()" />
+    <meta name="description" content="普通字符 [] 它是一个表达式，一个[]就表示一个字符，比如[ab][ab]就表示匹配两个相连的字符，并且这个两个字符必须是sd。
+它匹配[]中所含有的字符，[]中是一个要匹配的区间。
+[]可以写元字符
+例子   [str]，匹配包含 str 的字符。
+  [A-Z]，匹配 A-Z 的字符。
+  [a-z]，匹配 a - z 的字符。
+  [0-9]，匹配 0 - 9 的字符。
+  [A-z] = 匹配[A-Z] &#43; [a-z]的字符
+  [^rainy]，匹配除 rainy 之外的任意字符。
+  var reg = /[0-9][A-z][a-z]/gm;  var str = &amp;#39;111Exg54gGfg000&amp;#39;;  var result = str.match(reg); console.log(result); ()" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">正则表达式 普通字符</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-09 06:00:00 UTC">
+                        2022-05-09
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="普通字符">普通字符</h1>
+<h2 id="heading">[]</h2>
+<p>它是一个表达式，一个<code>[]</code>就表示一个字符，比如<code>[ab][ab]</code>就表示匹配两个相连的字符，并且这个两个字符必须是sd。</p>
+<p>它匹配<code>[]</code>中所含有的字符，<code>[]</code>中是一个要匹配的区间。</p>
+<p><code>[]</code>可以写元字符</p>
+<h3 id="例子">例子</h3>
+<ul>
+<li>
+<p><code>[str]</code>，匹配包含 str 的字符。</p>
+</li>
+<li>
+<p><code>[A-Z]</code>，匹配 A-Z 的字符。</p>
+</li>
+<li>
+<p><code>[a-z]</code>，匹配 a - z 的字符。</p>
+</li>
+<li>
+<p><code>[0-9]</code>，匹配 0 - 9 的字符。</p>
+</li>
+<li>
+<p><code>[A-z]</code> = 匹配<code>[A-Z]</code> + <code>[a-z]</code>的字符</p>
+</li>
+<li>
+<p><code>[^rainy]</code>，匹配除 rainy 之外的任意字符。</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/[0-9][A-z][a-z]/gm</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;111Exg54gGfg000&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>()</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                    正则表达式
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#heading">[]</a>
+      <ul>
+        <li><a href="#例子">例子</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

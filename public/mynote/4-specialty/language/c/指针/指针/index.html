@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/%E6%8C%87%E9%92%88/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 指针",
 	    "headline" : "C 指针",
-	    "description" : "指针 指针是 C 语言的灵魂。\n指针是一个地址；\n地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。\n指针本质就是一个操作受限的非负整数。\n指针只能进行减法运算，不能进行加乘除等运算。\n指针变量是存放编号的变量。\n八位（Bit）是一个字节，一个字节就是一个内存单元。\nint* 是 指向整型变量的指针，\n作用   表示一些复杂的数据结构（树、图）。\n  快速的传递数据，并且减少了内存的耗费。\n  使函数返回一个以上的值。\n  可以直接访问硬件。\n  更方便的处理字符串（\u0026rsquo;\\0\u0026rsquo;）。\n  ",
+	    "description" : "指针 指针是 C 语言的灵魂。\n指针是一个地址，地址是内存单元的编号，它是一个从零开始的非负整数；比如在 32 位系统中，地址的取值范围是 0 — 4 G（4095）。\n指针本质就是一个操作受限的非负整数。\n指针只能进行减法运算，不能进行加乘除等运算。\n指针变量是存放编号的变量。\n八位（Bit）是一个字节，一个字节就是一个内存单元。\nint* 是 指向整型变量的指针，\n作用   表示一些复杂的数据结构（树、图）。\n  快速的传递数据，并且减少了内存的耗费。\n  使函数返回一个以上的值。\n  可以直接访问硬件。\n  更方便的处理字符串（\u0026rsquo;\\0\u0026rsquo;）。\n  ",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,15 +32,14 @@
 	    "copyrightYear" : "2022",
 	    "datePublished": "2022-02-17 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2022-02-17 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E6%8C%87%E9%92%88\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/%E6%8C%87%E9%92%88\/",
 	    "keywords" : [ "C","指针","学习笔记", ]
 	}
 </script><title>C 指针</title>
     <meta property="og:title" content="C 指针" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="指针 指针是 C 语言的灵魂。
-指针是一个地址；
-地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针是一个地址，地址是内存单元的编号，它是一个从零开始的非负整数；比如在 32 位系统中，地址的取值范围是 0 — 4 G（4095）。
 指针本质就是一个操作受限的非负整数。
 指针只能进行减法运算，不能进行加乘除等运算。
 指针变量是存放编号的变量。
@@ -53,8 +52,7 @@ int* 是 指向整型变量的指针，
   更方便的处理字符串（&amp;rsquo;\0&amp;rsquo;）。
   " />
     <meta name="description" content="指针 指针是 C 语言的灵魂。
-指针是一个地址；
-地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。
+指针是一个地址，地址是内存单元的编号，它是一个从零开始的非负整数；比如在 32 位系统中，地址的取值范围是 0 — 4 G（4095）。
 指针本质就是一个操作受限的非负整数。
 指针只能进行减法运算，不能进行加乘除等运算。
 指针变量是存放编号的变量。
@@ -68,9 +66,9 @@ int* 是 指向整型变量的指针，
   " />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -105,13 +103,12 @@ int* 是 指向整型变量的指针，
                 
                 <h1 id="指针">指针</h1>
 <p>指针是 C 语言的灵魂。</p>
-<p>指针是一个地址；</p>
-<p>地址是内存单元的编号，它是一个从零开始的非负整数；拿 32 位系统来说，那么地址的范围是 0 — 4 G（4095）。</p>
+<p>指针是一个地址，地址是内存单元的编号，它是一个从零开始的非负整数；比如在 32 位系统中，地址的取值范围是 0 — 4 G（4095）。</p>
 <p>指针本质就是一个操作受限的非负整数。</p>
 <p>指针只能进行减法运算，不能进行加乘除等运算。</p>
 <p><strong>指针变量是存放编号的变量。</strong></p>
 <p>八位（Bit）是一个字节，一个字节就是一个内存单元。</p>
-<p><code>int*</code> 是 <code>指向整型变量的指针</code>，</p>
+<p><code>int*</code> 是 <strong>指向整型变量的指针</strong>，</p>
 <h2 id="作用">作用</h2>
 <ol>
 <li>
@@ -166,11 +163,12 @@ int* 是 指向整型变量的指针，
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

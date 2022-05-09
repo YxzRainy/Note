@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/set-%E6%96%B9%E6%B3%95/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F/date/set-%E6%96%B9%E6%B3%95/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript set 方法",
+	    "headline" : "JavaScript set 方法",
+	    "description" : "set 方法 setDate() 以数值 1-31 设置日\nvar date = new Date(); \/\/ 设置日期中的第 18 天 var d = date.setDate(18); console.log(d); \/\/ 输出被更改后的时间戳，因为日变了，所以日对应的周也会跟着变。 console.log(date); 定时执行某个代码\n用 set 方法设置一个未来的时间点，然后判断当 getTime() 的毫秒数与 set 的毫秒数相差小于 1000 的时候，相当于此刻的时间点已经和设置的时间点重合，可以执行一些需要在这个时间点所执行的操作。\n用它可以实现倒计时抢漏、闹钟等功能。\nsetTime() 设置从 1970 年 1 月 1 日至今的毫秒数。\nvar date = new Date(); \/\/ 将 date 设置为从格林威治时间至今的毫秒数（毫秒数会转换为日期） date.setTime(12343546557501); \/\/ 返回设置的日期 console.log(date); 闹钟 var date = new Date(); \/\/ 设置未来的某个时间点的分和秒，当格林威治时间到达我们设置的时间戳，会执行某个操作 date.setMinutes(10); date.setSeconds(5);  \/\/ 定时器，每隔 1000 毫秒会执行一次回调函数 setInterval(function () { \t\/\/ 判断格林威治时间是否和设置的时间点相差小于 1000 毫秒（小于 1000 毫秒则表示格林威治时间已经到大我们设置的时间戳） \tif (new Date().",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E6%95%B0%E5%AD%97%E5%92%8C%E6%97%A5%E6%9C%9F\/date\/set-%E6%96%B9%E6%B3%95\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript set 方法</title>
+    <meta property="og:title" content="JavaScript set 方法" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="set 方法 setDate() 以数值 1-31 设置日
+var date = new Date(); // 设置日期中的第 18 天 var d = date.setDate(18); console.log(d); // 输出被更改后的时间戳，因为日变了，所以日对应的周也会跟着变。 console.log(date); 定时执行某个代码
+用 set 方法设置一个未来的时间点，然后判断当 getTime() 的毫秒数与 set 的毫秒数相差小于 1000 的时候，相当于此刻的时间点已经和设置的时间点重合，可以执行一些需要在这个时间点所执行的操作。
+用它可以实现倒计时抢漏、闹钟等功能。
+setTime() 设置从 1970 年 1 月 1 日至今的毫秒数。
+var date = new Date(); // 将 date 设置为从格林威治时间至今的毫秒数（毫秒数会转换为日期） date.setTime(12343546557501); // 返回设置的日期 console.log(date); 闹钟 var date = new Date(); // 设置未来的某个时间点的分和秒，当格林威治时间到达我们设置的时间戳，会执行某个操作 date.setMinutes(10); date.setSeconds(5);  // 定时器，每隔 1000 毫秒会执行一次回调函数 setInterval(function () { 	// 判断格林威治时间是否和设置的时间点相差小于 1000 毫秒（小于 1000 毫秒则表示格林威治时间已经到大我们设置的时间戳） 	if (new Date()." />
+    <meta name="description" content="set 方法 setDate() 以数值 1-31 设置日
+var date = new Date(); // 设置日期中的第 18 天 var d = date.setDate(18); console.log(d); // 输出被更改后的时间戳，因为日变了，所以日对应的周也会跟着变。 console.log(date); 定时执行某个代码
+用 set 方法设置一个未来的时间点，然后判断当 getTime() 的毫秒数与 set 的毫秒数相差小于 1000 的时候，相当于此刻的时间点已经和设置的时间点重合，可以执行一些需要在这个时间点所执行的操作。
+用它可以实现倒计时抢漏、闹钟等功能。
+setTime() 设置从 1970 年 1 月 1 日至今的毫秒数。
+var date = new Date(); // 将 date 设置为从格林威治时间至今的毫秒数（毫秒数会转换为日期） date.setTime(12343546557501); // 返回设置的日期 console.log(date); 闹钟 var date = new Date(); // 设置未来的某个时间点的分和秒，当格林威治时间到达我们设置的时间戳，会执行某个操作 date.setMinutes(10); date.setSeconds(5);  // 定时器，每隔 1000 毫秒会执行一次回调函数 setInterval(function () { 	// 判断格林威治时间是否和设置的时间点相差小于 1000 毫秒（小于 1000 毫秒则表示格林威治时间已经到大我们设置的时间戳） 	if (new Date()." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript set 方法</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-05 06:00:00 UTC">
+                        2022-05-05
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="set-方法">set 方法</h1>
+<h2 id="setdate">setDate()</h2>
+<p>以数值 1-31 设置日</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">date</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87">Date</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 设置日期中的第 18 天
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">d</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setDate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">d</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 输出被更改后的时间戳，因为日变了，所以日对应的周也会跟着变。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">date</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>定时执行某个代码</p>
+<p>用 set 方法设置一个未来的时间点，然后判断当 getTime() 的毫秒数与 set 的毫秒数相差小于 1000 的时候，相当于此刻的时间点已经和设置的时间点重合，可以执行一些需要在这个时间点所执行的操作。</p>
+<p>用它可以实现倒计时抢漏、闹钟等功能。</p>
+<h2 id="settime">setTime()</h2>
+<p>设置从 1970 年 1 月 1 日至今的毫秒数。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">date</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87">Date</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 将 date 设置为从格林威治时间至今的毫秒数（毫秒数会转换为日期）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setTime</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">12343546557501</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 返回设置的日期
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">date</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="闹钟">闹钟</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">date</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87">Date</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 设置未来的某个时间点的分和秒，当格林威治时间到达我们设置的时间戳，会执行某个操作
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setMinutes</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setSeconds</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 定时器，每隔 1000 毫秒会执行一次回调函数
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">setInterval</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#8f5902;font-style:italic">// 判断格林威治时间是否和设置的时间点相差小于 1000 毫秒（小于 1000 毫秒则表示格林威治时间已经到大我们设置的时间戳）
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>	<span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">new</span> <span style="color:#204a87">Date</span><span style="color:#000;font-weight:bold">().</span><span style="color:#000">getTime</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#000">date</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getTime</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#0000cf;font-weight:bold">1000</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#8f5902;font-style:italic">// 到达我们设置的时间点后所执行的操作
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>		<span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;闹钟！&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">},</span> <span style="color:#0000cf;font-weight:bold">1000</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setdate">setDate()</a></li>
+    <li><a href="#settime">setTime()</a>
+      <ul>
+        <li><a href="#闹钟">闹钟</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

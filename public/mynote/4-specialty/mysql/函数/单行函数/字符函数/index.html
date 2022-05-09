@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%8D%95%E8%A1%8C%E5%87%BD%E6%95%B0/%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%87%BD%E6%95%B0/%E5%8D%95%E8%A1%8C%E5%87%BD%E6%95%B0/%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 字符函数",
+	    "headline" : "MySQL 字符函数",
+	    "description" : "字符函数 用于对字符进行处理，并返回一个字符串值。\n字符串的索引都是从 1 开始的。\nLENGTH(str) 返回 str 的字节长度。\n在不同的字符集中，一个汉字和一个英文字母的字节长度都是不一样的。\nSELECT# 在 uft-8 字符集中，一个英文和一个空格只占一个字符，一个汉字占三个字节 LENGTH(\u0026#39;Rainy 是憨憨\u0026#39;)AS字符长度;CONCAT(str1,str2,\u0026hellip;) 将 str 1 与 str2 拼接起来，支持多个字符串。\nSELECTCONCAT(last_name,\u0026#39;-\u0026#39;,first_name)AS姓名FROMemployees;UPPER(str) 将 str 中的小写字母转为大写字母。\nSELECTUPPER(\u0026#39;rainy\u0026#39;)AS转大写LOWER(str) 将 str 中的大写字母转为小写字母。\nSELECTLOWER(\u0026#39;RAINY\u0026#39;)AS转小写SUBSTR(str FROM pos FOR len) 指定一个 str，从索引为 pot 的字符开始截取，一直截取到索引 len 的字符为止。若只有 pot ，则截取到最后，\nSELECTSUBSTR(\u0026#39;臣世雨是个憨憨\u0026#39;,6)AS截取至最后,SUBSTR(\u0026#39;臣世雨是个憨憨\u0026#39;,4,6)AS截取至指定位置INSTR(str,substr) 返回 substr 在 str 中第一次出现的索引，如果 str 中不存在 substr，则返回 0。\nSELECTINSTR(\u0026#39;臣世雨是个憨憨\u0026#39;,\u0026#39;憨憨\u0026#39;);TRIM([remstr FROM] str) 过滤 str 中的 remstr 字符串，默认过滤的是首尾的空格。\nLEADING 是过滤首字符。\nBOTH 过滤首尾字符。\nTRAILING 过滤 尾字符。\n# 默认过滤空格 SELECTTRIM(\u0026#39; 臣世雨 \u0026#39;);# 相当于： # 过滤指定的首字符 a SELECTTRIM(LEADING\u0026#39;a\u0026#39;FROM\u0026#39;aaaRainybbb\u0026#39;);# 过滤指定的首尾字符 a SELECTTRIM(BOTH\u0026#39;a\u0026#39;FROM\u0026#39;aaaRainyaaa\u0026#39;);# 也可以省去 BOTH 关键字，也是去掉前后的字符。 SELECTTRIM(\u0026#39;a\u0026#39;FROM\u0026#39;aaaRainyaaa\u0026#39;);# 过滤指定的尾字符 b SELECTTRIM(TRAILING\u0026#39;b\u0026#39;FROM\u0026#39;aaaRainybbb\u0026#39;);LPAD(str,len,padstr) 在 str 的左侧重复插入 padstr，直到字符串总长度达到 len 为止。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/%E5%87%BD%E6%95%B0\/%E5%8D%95%E8%A1%8C%E5%87%BD%E6%95%B0\/%E5%AD%97%E7%AC%A6%E5%87%BD%E6%95%B0\/",
+	    "keywords" : [ "SQL","函数","MySQL","单行函数","学习笔记", ]
+	}
+</script><title>MySQL 字符函数</title>
+    <meta property="og:title" content="MySQL 字符函数" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="字符函数 用于对字符进行处理，并返回一个字符串值。
+字符串的索引都是从 1 开始的。
+LENGTH(str) 返回 str 的字节长度。
+在不同的字符集中，一个汉字和一个英文字母的字节长度都是不一样的。
+SELECT# 在 uft-8 字符集中，一个英文和一个空格只占一个字符，一个汉字占三个字节 LENGTH(&amp;#39;Rainy 是憨憨&amp;#39;)AS字符长度;CONCAT(str1,str2,&amp;hellip;) 将 str 1 与 str2 拼接起来，支持多个字符串。
+SELECTCONCAT(last_name,&amp;#39;-&amp;#39;,first_name)AS姓名FROMemployees;UPPER(str) 将 str 中的小写字母转为大写字母。
+SELECTUPPER(&amp;#39;rainy&amp;#39;)AS转大写LOWER(str) 将 str 中的大写字母转为小写字母。
+SELECTLOWER(&amp;#39;RAINY&amp;#39;)AS转小写SUBSTR(str FROM pos FOR len) 指定一个 str，从索引为 pot 的字符开始截取，一直截取到索引 len 的字符为止。若只有 pot ，则截取到最后，
+SELECTSUBSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,6)AS截取至最后,SUBSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,4,6)AS截取至指定位置INSTR(str,substr) 返回 substr 在 str 中第一次出现的索引，如果 str 中不存在 substr，则返回 0。
+SELECTINSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,&amp;#39;憨憨&amp;#39;);TRIM([remstr FROM] str) 过滤 str 中的 remstr 字符串，默认过滤的是首尾的空格。
+LEADING 是过滤首字符。
+BOTH 过滤首尾字符。
+TRAILING 过滤 尾字符。
+# 默认过滤空格 SELECTTRIM(&amp;#39; 臣世雨 &amp;#39;);# 相当于： # 过滤指定的首字符 a SELECTTRIM(LEADING&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainybbb&amp;#39;);# 过滤指定的首尾字符 a SELECTTRIM(BOTH&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainyaaa&amp;#39;);# 也可以省去 BOTH 关键字，也是去掉前后的字符。 SELECTTRIM(&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainyaaa&amp;#39;);# 过滤指定的尾字符 b SELECTTRIM(TRAILING&amp;#39;b&amp;#39;FROM&amp;#39;aaaRainybbb&amp;#39;);LPAD(str,len,padstr) 在 str 的左侧重复插入 padstr，直到字符串总长度达到 len 为止。" />
+    <meta name="description" content="字符函数 用于对字符进行处理，并返回一个字符串值。
+字符串的索引都是从 1 开始的。
+LENGTH(str) 返回 str 的字节长度。
+在不同的字符集中，一个汉字和一个英文字母的字节长度都是不一样的。
+SELECT# 在 uft-8 字符集中，一个英文和一个空格只占一个字符，一个汉字占三个字节 LENGTH(&amp;#39;Rainy 是憨憨&amp;#39;)AS字符长度;CONCAT(str1,str2,&amp;hellip;) 将 str 1 与 str2 拼接起来，支持多个字符串。
+SELECTCONCAT(last_name,&amp;#39;-&amp;#39;,first_name)AS姓名FROMemployees;UPPER(str) 将 str 中的小写字母转为大写字母。
+SELECTUPPER(&amp;#39;rainy&amp;#39;)AS转大写LOWER(str) 将 str 中的大写字母转为小写字母。
+SELECTLOWER(&amp;#39;RAINY&amp;#39;)AS转小写SUBSTR(str FROM pos FOR len) 指定一个 str，从索引为 pot 的字符开始截取，一直截取到索引 len 的字符为止。若只有 pot ，则截取到最后，
+SELECTSUBSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,6)AS截取至最后,SUBSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,4,6)AS截取至指定位置INSTR(str,substr) 返回 substr 在 str 中第一次出现的索引，如果 str 中不存在 substr，则返回 0。
+SELECTINSTR(&amp;#39;臣世雨是个憨憨&amp;#39;,&amp;#39;憨憨&amp;#39;);TRIM([remstr FROM] str) 过滤 str 中的 remstr 字符串，默认过滤的是首尾的空格。
+LEADING 是过滤首字符。
+BOTH 过滤首尾字符。
+TRAILING 过滤 尾字符。
+# 默认过滤空格 SELECTTRIM(&amp;#39; 臣世雨 &amp;#39;);# 相当于： # 过滤指定的首字符 a SELECTTRIM(LEADING&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainybbb&amp;#39;);# 过滤指定的首尾字符 a SELECTTRIM(BOTH&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainyaaa&amp;#39;);# 也可以省去 BOTH 关键字，也是去掉前后的字符。 SELECTTRIM(&amp;#39;a&amp;#39;FROM&amp;#39;aaaRainyaaa&amp;#39;);# 过滤指定的尾字符 b SELECTTRIM(TRAILING&amp;#39;b&amp;#39;FROM&amp;#39;aaaRainybbb&amp;#39;);LPAD(str,len,padstr) 在 str 的左侧重复插入 padstr，直到字符串总长度达到 len 为止。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 字符函数</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-22 06:00:00 UTC">
+                        2022-04-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="字符函数">字符函数</h1>
+<p>用于对字符进行处理，并返回一个字符串值。</p>
+<p>字符串的索引都是从 1 开始的。</p>
+<h2 id="lengthstr">LENGTH(str)</h2>
+<p>返回 str 的字节长度。</p>
+<p>在不同的字符集中，一个汉字和一个英文字母的字节长度都是不一样的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 在 uft-8 字符集中，一个英文和一个空格只占一个字符，一个汉字占三个字节
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">LENGTH</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;Rainy 是憨憨&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">字符长度</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="concatstr1str2">CONCAT(str1,str2,&hellip;)</h2>
+<p>将 str 1 与 str2 拼接起来，支持多个字符串。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">CONCAT</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;-&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">first_name</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">姓名</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="upperstr">UPPER(str)</h2>
+<p>将 str 中的小写字母转为大写字母。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">UPPER</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;rainy&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">转大写</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="lowerstr">LOWER(str)</h2>
+<p>将 str 中的大写字母转为小写字母。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">LOWER</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;RAINY&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">转小写</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="substrstr-from-pos-for-len">SUBSTR(str FROM pos FOR len)</h2>
+<p>指定一个 str，从索引为 pot 的字符开始截取，一直截取到索引 len 的字符为止。若只有 pot ，则截取到最后，</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">SUBSTR</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;臣世雨是个憨憨&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">6</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">截取至最后</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">SUBSTR</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;臣世雨是个憨憨&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">4</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">6</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">AS</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#a40000">截取至指定位置</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="instrstrsubstr">INSTR(str,substr)</h2>
+<p>返回 substr 在 str 中第一次出现的索引，如果 str 中不存在 substr，则返回 0。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">INSTR</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;臣世雨是个憨憨&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;憨憨&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="trimremstr-from-str">TRIM([remstr FROM] str)</h2>
+<p>过滤 str 中的 remstr 字符串，默认过滤的是首尾的空格。</p>
+<p>LEADING 是过滤首字符。</p>
+<p>BOTH 过滤首尾字符。</p>
+<p>TRAILING 过滤 尾字符。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># 默认过滤空格
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">TRIM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;  臣世雨   &#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 相当于：
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># 过滤指定的首字符 a
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">TRIM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">LEADING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;a&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;aaaRainybbb&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">  
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 过滤指定的首尾字符 a
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">TRIM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">BOTH</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;a&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;aaaRainyaaa&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 也可以省去 BOTH 关键字，也是去掉前后的字符。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">TRIM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;a&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;aaaRainyaaa&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">    
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 过滤指定的尾字符 b
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">TRIM</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">TRAILING</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;b&#39;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#4e9a06">&#39;aaaRainybbb&#39;</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">  
+</span></span></span></code></pre></div><h2 id="lpadstrlenpadstr">LPAD(str,len,padstr)</h2>
+<p>在 str 的左侧重复插入 padstr，直到字符串总长度达到 len 为止。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#  总字符长度未达到 len ，则重复插入 padstr
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">LPAD</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;原字符&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;新的&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># 插入 padstr 后，总字符长度达到len 就停止了
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">LPAD</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;原字符&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;这是新的&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="rpadstrlenpadstr">RPAD(str,len,padstr)</h2>
+<p>在 str 的右侧重复插入 padstr，直到字符串总长度达到 len 为止。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">RPAD</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;原字符&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;是新的&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">RPAD</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;原字符&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">5</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;是很新的&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="replacestrfrom_strto_str">REPLACE(str,from_str,to_str)</h2>
+<p>将 str 中的 from_str 替换 to_str</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">REPLACE</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;字符呀&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;呀&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;串&#39;</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%87%BD%E6%95%B0/">
+                    函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%8D%95%E8%A1%8C%E5%87%BD%E6%95%B0/">
+                    单行函数
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#lengthstr">LENGTH(str)</a></li>
+    <li><a href="#concatstr1str2">CONCAT(str1,str2,&hellip;)</a></li>
+    <li><a href="#upperstr">UPPER(str)</a></li>
+    <li><a href="#lowerstr">LOWER(str)</a></li>
+    <li><a href="#substrstr-from-pos-for-len">SUBSTR(str FROM pos FOR len)</a></li>
+    <li><a href="#instrstrsubstr">INSTR(str,substr)</a></li>
+    <li><a href="#trimremstr-from-str">TRIM([remstr FROM] str)</a></li>
+    <li><a href="#lpadstrlenpadstr">LPAD(str,len,padstr)</a></li>
+    <li><a href="#rpadstrlenpadstr">RPAD(str,len,padstr)</a></li>
+    <li><a href="#replacestrfrom_strto_str">REPLACE(str,from_str,to_str)</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

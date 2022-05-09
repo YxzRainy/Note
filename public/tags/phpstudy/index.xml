@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHPStudy on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/phpstudy/</link>
+    <description>Recent content in PHPStudy on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/phpstudy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>启动服务器时报错</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%97%B6%E6%8A%A5%E9%94%99/</guid>
+      <description>启动服务器时报错 今天，我在 PHPStudy 中启动 Apache 和 Nginx 的时候，启动失败，提示AH&amp;hellip;
+这是因为 PHPStudy 不能被安装到带有空格的文件夹中，否则 Apache 或 Nginx 就会会无法启动。</description>
+    </item>
+    
+    <item>
+      <title>提示 hosts 不同步</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%8F%90%E7%A4%BA-hosts-%E4%B8%8D%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%8F%90%E7%A4%BA-hosts-%E4%B8%8D%E5%90%8C%E6%AD%A5/</guid>
+      <description>提示 hosts 不同步 大概率是C:\Windows\System32\drivers\etc 路径中的 hosts 出现了一下问题：
+ hosts 文件的后缀名不对，hosts 文件没有后缀名。 hosts 中的内容为空。 hosts 内容底部没有添加网站域名  # Copyright (c) 1993-1999 Microsoft Corp.# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.# This file contains the mappings of IP addresses to host names. Each# entry should be kept on an individual line. The IP address should# be placed in the first column followed by the corresponding host name.# The IP address and the host name should be separated by at least one# space.</description>
+    </item>
+    
+    <item>
+      <title>无法启动 MySQL</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8-mysql/</link>
+      <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/phpstudy/%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8-mysql/</guid>
+      <description>无法启动 MySQL 错误一 打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。
+5.7.26 解决方案 管理员运行 CMD 输入：
+net stop mysqlsc delete mysql 提示[SC] DeleteService 成功后，重新打开 PHPStudy，会发现 MySQL 可以正常启动了。
+错误二 提示错误信息：
+1045 access denied for user &amp;#39;root&amp;#39;@&amp;#39;localhost&amp;#39; using password yes 5.7.26 解决方案   停用MySQL服务 没启动的可以省略
+net stop mysql   找到 MySQL 安装路径下的 my.ini
+  打开 my.ini 找到 [mysqld] 然后在下面加上 skip_grant_tables，表示启动 MySQL 服务的时候跳过权限表认证
+  启动数据库修改密码
+  刷新权限 flush privileges</description>
+    </item>
+    
+  </channel>
+</rss>

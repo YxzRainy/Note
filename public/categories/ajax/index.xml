@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ajax on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/categories/ajax/</link>
+    <description>Recent content in Ajax on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/ajax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ajax IE 缓存问题</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ie-%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ie-%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/</guid>
+      <description>Ajax IE 缓存问题 IE 浏览器会会对Ajax 请求的的结果进行缓存，这会导致下次请求服务器的时候，使用的是本地的缓存，而不是服务器响应的最新数据，这会对一些时效性比较强的一些场景产生影响。
+JavaScript 在 open 方法种中的 url 路径中加上一个参数...?t=&#39; + Date.now()即可。该值是获取当前时间戳。
+const div = document.getElementById(&amp;#39;result&amp;#39;); const btn = document.getElementById(&amp;#39;btn&amp;#39;); btn.onclick = function () {  const xhr = new XMLHttpRequest();  // 获取时间戳，解决IE 浏览器缓存的问题  xhr.open(&amp;#39;POST&amp;#39;, &amp;#39;http://localhost:8000/ie?t=&amp;#39; + Date.now())  xhr.setRequestHeader(&amp;#39;Content-Type&amp;#39;, &amp;#39;application/x-www-form-urlencoded&amp;#39;)  xhr.setRequestHeader(&amp;#39;name&amp;#39;, &amp;#39;Rainy&amp;#39;)  xhr.send(&amp;#39;a=100&amp;amp;b=200&amp;#39;);  xhr.onreadystatechange = function () {  if (xhr.readyState == 4) {  if (xhr.status &amp;gt;= 200 &amp;amp;&amp;amp; xhr.status &amp;lt; 300) {  div.</description>
+    </item>
+    
+    <item>
+      <title>Ajax Jsonp 实现原理</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/jsonp-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/jsonp-%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</guid>
+      <description>Jsonp 实现原理 script标签本身具有跨域的特性，JSONP 借助这个特定来解决的跨域问题。
+服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/jsonp&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 定义数据  const data = {  name: &amp;#34;Rainy&amp;#34;  }  // 将数据转为字符串  let str = JSON.stringify(data)  // 响应结果，一个函数调用，函数已经在前端提前声明  response.end(`handle(${str})`); })  app.listen(port, () =&amp;gt; {  console.</description>
+    </item>
+    
+    <item>
+      <title>Ajax POST 请求</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/post-%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/post-%E8%AF%B7%E6%B1%82/</guid>
+      <description>POST 请求 使用 POST 的方式向服务端发送一个请求。
+服务端 const express = require(&amp;#39;express&amp;#39;) const app = express() const port = 8000 // 创建路由规则，允许所有方式的请求 app.all(&amp;#39;/server&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  response.send(&amp;#39;Hello World! POST&amp;#39;) })  app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;  &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt;  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;./css/main.css&amp;#34;&amp;gt;  &amp;lt;title&amp;gt;POST 请求&amp;lt;/title&amp;gt;  &amp;lt;/head&amp;gt;   &amp;lt;body&amp;gt;  &amp;lt;button id=&amp;#34;btn&amp;#34;&amp;gt;点击按钮，发送q&amp;lt;/button&amp;gt;  &amp;lt;div id=&amp;#34;result&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;   &amp;lt;/body&amp;gt;  &amp;lt;script src=&amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title>Ajax 手动取消请求</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E6%89%8B%E5%8A%A8%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E6%89%8B%E5%8A%A8%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82/</guid>
+      <description>手动取消请求 服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/delay&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 设置延时响应  setTimeout(() =&amp;gt; {  response.send(&amp;#39;Hello IE&amp;#39;);  }, 1000) }) app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Ajax 请求超时设置</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%AF%B7%E6%B1%82%E8%B6%85%E6%97%B6%E8%AE%BE%E7%BD%AE/</guid>
+      <description>请求超时设置 服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  // 针对 ie 缓存的设置 app.all(&amp;#39;/delay&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 设置延时响应  setTimeout(() =&amp;gt; {  response.send(&amp;#39;Hello IE&amp;#39;);  }, 3000) })   app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Ajax 跨域</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/%E8%B7%A8%E5%9F%9F/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/%E8%B7%A8%E5%9F%9F/</guid>
+      <description>跨域 同源策略 同源策略是一种出于浏览器安全方面的考虑而出台的一种策略，它可以保证用户信息的安全，防止恶意的网站窃取。同源策略只允许与本域下的接口交互，不同源的客户端脚本在没有明确授权的情况下，不能读写对方的资源。
+同源：同协议、同域名、同端口，必须完全相同，违背同源策略，就是跨域。
+同源策略的限制范围  Cookie，localStorage，IndexDB 无法读取 DOM 无法获得 AJAX 请求不能发送  如何解决跨域问题 JSONP JSONP 是浏览器与客户端跨域通信常用的一种方法。
+script标签本身具有跨域的特性，JSONP 就是借助这个特定来解决跨域的问题的。
+CORS CORS的全称是跨源资源共享，是一种 ajax 跨域请求资源的方式.
+// * 表示所有网站都可以跨域请求当前服务器 response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;) // 也可以只有某个网站才能对服务器发送跨域请求  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;yxzi.xyz&amp;#39;) </description>
+    </item>
+    
+    <item>
+      <title>Ajax 重复发送请求的问题</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E9%87%8D%E5%A4%8D%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>重复发送请求的问题 当用户重复发送同一个请求的时候，我们为了服务器的效率考虑，需要将之前发送的请求取消掉，只发送一个最新的请求，这样，服务器所受到的压力就要小很多。
+服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/delay&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 设置延时响应  setTimeout(() =&amp;gt; {  response.send(&amp;#39;Hello IE&amp;#39;);  }, 1000) })   app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Axios</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/axios/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/axios/</guid>
+      <description>Axios Axios 是一个基于 promise 的 HTTP 库，简单的讲就是可以发送get、post请求。说到get、post，大家应该第一时间想到的就是Jquery吧，毕竟前几年Jquery比较火的时候，大家都在用他。但是由于Vue、React等框架的出现，Jquery也不是那么吃香了。也正是Vue、React等框架的出现，促使了Axios轻量级库的出现，因为Vue等，不需要操作Dom，所以不需要引入Jquery.js了。
+安装 npm install axios CND &amp;lt;script src=&amp;#34;https://cdn.bootcdn.net/ajax/libs/axios/0.27.2/axios.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Axios 发送 Ajax 请求</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/axios-%E5%8F%91%E9%80%81-ajax/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/axios-%E5%8F%91%E9%80%81-ajax/</guid>
+      <description>Axios 发送 Ajax 请求 服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/axios&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)   const data = { name: &amp;#39;Rainy&amp;#39; }  const str = JSON.stringify(data);  response.send(data) })   app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Fetch 发送 Ajax</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/fetch-%E5%8F%91%E9%80%81-ajax/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/fetch-%E5%8F%91%E9%80%81-ajax/</guid>
+      <description>Fetch 发送 Ajax 服务端 const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/fetch&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)   const data = { name: &amp;#39;Rainy&amp;#39; }  const str = JSON.stringify(data);  response.send(data) })   app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Jquery 发送 Ajax</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/jquery-%E5%8F%91%E9%80%81-ajax/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/jquery-%E5%8F%91%E9%80%81-ajax/</guid>
+      <description>Jquery 发送 Ajax 服务端 HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;   &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34;&amp;gt;  &amp;lt;script src=&amp;#34;https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;./css/main.css&amp;#34;&amp;gt;  &amp;lt;title&amp;gt;Jquery 发送 Ajax&amp;lt;/title&amp;gt;  &amp;lt;/head&amp;gt;   &amp;lt;body&amp;gt;  &amp;lt;button id=&amp;#34;btn&amp;#34;&amp;gt;点击按钮，发送 GET 请求&amp;lt;/button&amp;gt;  &amp;lt;button id=&amp;#34;btnTwo&amp;#34;&amp;gt;点击按钮，发送 POST 请求&amp;lt;/button&amp;gt;  &amp;lt;button id=&amp;#34;btnThree&amp;#34;&amp;gt;点击按钮，发送通用方式请求&amp;lt;/button&amp;gt;   &amp;lt;div id=&amp;#34;result&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;   &amp;lt;/body&amp;gt;  &amp;lt;script src=&amp;#34;./js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;  &amp;lt;/html&amp;gt; CSS #result{  width: 200px;  height: 100px;  border: 1px solid #999; } JavaScrip // get 方式 $(&amp;#39;#btn&amp;#39;).</description>
+    </item>
+    
+    <item>
+      <title>Jquery 发送 Jsonp</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/jquery-%E5%8F%91%E9%80%81-jsonp/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/jquery-%E5%8F%91%E9%80%81-jsonp/</guid>
+      <description>Jquery 发送 Jsonp 服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/jquery_jsonp&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 定义数据  const data = {  city: &amp;#39;贵州&amp;#39;,  }  // 将数据转为字符串  let str = JSON.stringify(data)  // 接受 callback  let cb = request.query.callback  // 响应结果，  response.</description>
+    </item>
+    
+    <item>
+      <title>原生 Jsonp 的实现</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/%E5%8E%9F%E7%94%9F-jsonp-%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Sun, 01 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E8%B7%A8%E5%9F%9F/%E5%8E%9F%E7%94%9F-jsonp-%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <description>原生 Jsonp 的实现 服务端  const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  const app = express()  const port = 8000  app.all(&amp;#39;/check&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 定义数据  const data = {  exist: 1,  msg: &amp;#39;用户已经存在&amp;#39;  }  // 将数据转为字符串  let str = JSON.stringify(data)  // 响应结果，一个函数调用，函数已经在前端提前声明  response.end(`handle(${str})`); })  app.listen(port, () =&amp;gt; {  console.</description>
+    </item>
+    
+    <item>
+      <title>Ajax</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ajax/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/ajax/</guid>
+      <description>Ajax 可以理解为异步的 JavaScript 和 xml。
+它是一种在无需重新加载整个网页的情况下，能够更新部分网页内容的技术。
+它不是一种新的编程语言，而是一种将现有标准组合在一起使用的新方式。
+优点 可以无需刷新页面与服务器进行通信。
+允许根据用户事件来更新部分页面内容。
+缺点 没有浏览历史，无法进行网页后退或前进的操作。
+存在跨域问题。默认情况下，不同的域名之间，无法发送 Ajax 请求。
+对 SEO 的优化不友好，Ajax 返回当数据不会在网页源代码中存在。</description>
+    </item>
+    
+    <item>
+      <title>Ajax GET 请求</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/get-%E8%AF%B7%E6%B1%82/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/get-%E8%AF%B7%E6%B1%82/</guid>
+      <description>GET 请求 使用 GET 的方式向服务端发送一个请求。
+服务端 const express = require(&amp;#39;express&amp;#39;) const app = express() const port = 8000 app.get(&amp;#39;/server&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.send(&amp;#39;Hello World! GET&amp;#39;) }) // 允许 get 方式的请求 app.get(&amp;#39;/server&amp;#39;, (request, response) =&amp;gt; {   response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.send(&amp;#39;Hello World!&amp;#39;) }) app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;  &amp;lt;head&amp;gt;  &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;  &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34;&amp;gt;  &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.</description>
+    </item>
+    
+    <item>
+      <title>Ajax 响应 JSON 数据</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E5%93%8D%E5%BA%94-json-%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/%E5%93%8D%E5%BA%94-json-%E6%95%B0%E6%8D%AE/</guid>
+      <description>响应 JSON 数据 服务端 const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;) const app = express() const port = 8000 app.all(&amp;#39;/json-server&amp;#39;, (request, response) =&amp;gt; {  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 响应一个数据  const data = {  name: &amp;#39;Rainy&amp;#39;,  age: &amp;#39;18&amp;#39;  }  // 将对象转换为字符串类型的数据  let str = JSON.stringify(data);  // 设置响应体，响应体只能是一个字符串  response.send(str) })  app.listen(port, () =&amp;gt; {  console.log(`服务已经启动`) }) HTML &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>Nodemon</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/nodemon/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/nodemon/</guid>
+      <description>Nodemon 当我们开发一个 node 后端服务时，每次更改服务端文件，均需重启一下服务才能生效。这使我们的开发效率降低了很多。Nodemon 的出现，放我们可以随时监听文件的变更，自动重启服务，我们开发时只需关注代码即可，不再需要手动重启服务。
+安装 终端运行
+npm install -g nodemon 使用 nodemon server.js </description>
+    </item>
+    
+    <item>
+      <title>XML</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/xml/</link>
+      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/json/xml/</guid>
+      <description>XML 可扩展标记语言，主要用来传输和存储数据。
+XML 和 HTML类似，不同的是 HTML 中都是预定义的标签，用来呈现数据；而 XML 中没有预定义标签，都是自定义标签，用来表示一些数据。
+不过，现在地 XML 已经被 JSON 取代了。</description>
+    </item>
+    
+    <item>
+      <title>Ajax XMLHttpRequest</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/xmlhttprequest/</link>
+      <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/ajax/xmlhttprequest/</guid>
+      <description>XMLHttpRequest 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
+判断浏览器是否支持XHR // 如果浏览器支持 XHR if (Xhr) { ... }else{  alert(&amp;#39;Sorry, your browser doesn\&amp;#39;t support XMLHttpXhr&amp;#39;); } 创建XHR对象 const xhr = new XMLHttpRequest(); 方法 readyState 返回 XMLHttpRequest 的当前所处状态的 状态码。
+ 0 表示 XHR 对象已经被创建，但尚未调用 open() 方法。 1 表示 open 方法已经被调用完毕。 2 表示 send 方法已经被调用完毕，并且头部和状态已经可获得。 3 表示服务端已经返回了部分结果，但并没有返回所有结果，且 ResponseText 属性已经包含部分数据。 4 表示服务端已经返回了所有结果。  status 返回 XMLHttpRequest 响应时的数字状态码。
+200，状态码 &amp;gt;= 200 且 &amp;gt; 300 都算请求成功。
+404
+403
+401
+500
+statusText 状态字符串</description>
+    </item>
+    
+  </channel>
+</rss>

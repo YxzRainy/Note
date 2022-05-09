@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/git/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/git/</link>
     <description>Recent content in Git on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vs Code 使用 Git</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E4%BD%BF%E7%94%A8-git/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</guid>
-      <description>Vs Code 使用 Git 注意本地密钥是否和远程的密钥一样。</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E4%BD%BF%E7%94%A8-git/</guid>
+      <description>使用 Git 注意本地密钥是否和远程的密钥一样。</description>
     </item>
     
     <item>
       <title>Git git add</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-add/</guid>
       <description>git add 将我们需要提交的代码从工作区添加到暂存区，也就是告诉 git ，我们要提交哪些文件。之后就可以使用git commit命令进行提交了。
 git add . 添加当前目录所有的文件，. 表示当前目录的所有文件夹。
 git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要被添加的文件的名字，比如 git add ReadMe.txt，即表示添加这个 ReadMe.txt 文件，
@@ -30,10 +30,10 @@ git add FileName 添加文件名为 FileNmae 的文件，FileNmae 代表需要�
     
     <item>
       <title>Git git add</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-branch/</guid>
       <description>git branch 一般用于对分支的操作，比如创建分支，查看分支等等，
 git branch 不带参数：列出本地已经存在的分支，并且在当前分支的前面用*****标记
 一个新的本地仓库，必须在git add且git commit之后，再使用git branch命令，才能显示出本地分支master。
@@ -44,10 +44,10 @@ git branch &amp;ndash;set-upstream-to=origin/dev LocalDev 将名为LocalDev的�
     
     <item>
       <title>Git git checkout</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-checkout/</guid>
       <description>git checkout $ git checkout &amp;ndash;File 清空名为File文件的修改，注意不要忘记中间的 &amp;ndash;，，如果不加 &amp;ndash;，就变成了切换到 FileName 分支的命令。
 $ git checkout -- ReadMe.txt git checkout . 清空在工作区中，对文件所作的所有修改，**.**表示当前目录的所有文件夹。
 git checkout Branch to track remote branch &amp;#39;BranchName&amp;#39; from &amp;#39;origin&amp;#39;. 将当前分支切换到名为BranchName的分支
@@ -58,10 +58,10 @@ git branch BranchName git checkout BranchName git checkout -b LocalBranch origin
     
     <item>
       <title>Git git cherry-pick</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-cherry-pick/</guid>
       <description>git cherry-pick 对于多分支的代码库，将代码从一个分支转移到另一个分支是常见需求。
 这时分两种情况。一种情况是，你需要另一个分支的所有代码变动，那么就采用合并（git merge）。另一种情况是，你只需要部分代码变动（某几个提交），这时可以采用 Cherry pick。
 git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这会在当前分支产生一个新的提交，当然它们的哈希值会不一样。</description>
@@ -69,20 +69,20 @@ git cherry-pick commitHash 将指定的commitHash，应用于当前分支。这�
     
     <item>
       <title>Git git clone</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-clone/</guid>
       <description>git clone 拷贝一个远程库到本地，让自己能够查看该项目，或者进行修改。
 git clone RemoteAddress 克一个RemoteAddress到本地。</description>
     </item>
     
     <item>
       <title>Git git commit</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-commit/</guid>
       <description>git commit 将暂存区中的内容添加到本地仓库，相当于确认提交暂存区中的内容。
 每次使用git commit命令我们都会在本地版本库生成一个 40 位的哈希值，这个哈希值也叫 commit-id， commit-id 在版本回退的时候是非常有用的，它相当于一个快照，可以在未来的任何时候通过与git reset的组合命令回到这里.
 git commit -m ‘message’ -m 参数表示可以直接输入后面的 “message”，如果不加 -m 参数，那么是不能直接输入 message 的，而是会调用一个编辑器一般是 vim 来让你输入这个 message。message 即是我们用来简要说明这次提交的语句，比如对文件进行了哪些修改、谁进行的修改等等。
@@ -93,39 +93,39 @@ git commit -m &amp;#34;first commit&amp;#34; </description>
     
     <item>
       <title>Git git config alias</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-alias/</guid>
       <description>git config alias git config alias.ShorthandName OriginalName 将git OriginalName命令修改（通常为简写）为git ShorthandName，且只对当前 Git 仓库有效，配置文件在当前仓库的**.git/config**中。
 git config &amp;ndash;global alias.ShorthandName OriginalName 加上--global参数可以对当前用户下的所有仓库起作用，配置文件在 C 盘用户目录下的一个**.gitconfig**文件中。</description>
     </item>
     
     <item>
       <title>Git git config user</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-config-user/</guid>
       <description>git config user git config user.name &amp;ldquo;UserName&amp;rdquo; git config user.email &amp;ldquo;Email&amp;rdquo; 对当前仓库设置名为UserName的用户名和名为Email的邮箱。
 git config &amp;ndash;global user.name &amp;ldquo;UserName&amp;rdquo; git config &amp;ndash;global user.email &amp;ldquo;Email&amp;rdquo; git config命令的–global参数，表示你这台机器上所有的 Git 仓库都会使用这个配置，当然也可以对不同的仓库指定不同的用户名和 Email 地址。</description>
     </item>
     
     <item>
       <title>Git git diff</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-diff/</guid>
       <description>git diff git diff 比较暂存区与工作区中文件之间的差异，可以让我们知道这些文件具体修改了些什么。</description>
     </item>
     
     <item>
       <title>Git git log</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-log/</guid>
       <description>git log 可以让我们查看从最近到最远所有的历史提交日志，每条日志中有对应的版本号，这个版本号可以让我们回退到指定版本号的那个版本。
 git log &amp;ndash;pretty=oneline 每条日志都只显示一行 多屏显示控制方式空格向下翻页 b 向上翻页 q 退出
 git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。</description>
@@ -133,10 +133,10 @@ git log &amp;ndash;graph 用于查看分支的合并图，也叫做点线图。<
     
     <item>
       <title>Git git merge</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-merge/</guid>
       <description>git merge 用于合并指定分支到当前分支
 git merge BranchName 将名为 BranchName 的分支合并到当前分支。
 git merge &amp;ndash;no-ff -m &amp;ldquo;merge with no-ff&amp;rdquo; BranchName 合并名为 BranchName 的分支到当前分支，并创建一个新的 commit，所以加上-m参数，将 commit 的描述写进去。</description>
@@ -144,10 +144,10 @@ git merge &amp;ndash;no-ff -m &amp;ldquo;merge with no-ff&amp;rdquo; BranchName 
     
     <item>
       <title>Git git pull</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-pull/</guid>
       <description>git pull 用于从远程获取代码并合并本地。
 git pull origin master:dev 将远程仓库origin的master分支拉取过来，与本地的dev分支合并。
 git pull origin master 如果远程分支是与当前分支合并，则冒号后面的部分可以省略。
@@ -156,10 +156,10 @@ git pull origin master 如果远程分支是与当前分支合并，则冒号后
     
     <item>
       <title>Git git push</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-push/</guid>
       <description>git push 在使用git commit命令将你进行的修改从暂存区提交到本地版本库后，只剩下最后一步将本地版本库的分支推送到远程服务器上对应的分支了。
 git push的一般形式为git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt; &amp;lt;远程分支名&amp;gt;，例如git push origin master：refs/for/master，即是将本地的 master 分支推送到远程主机 origin 上的 master 分支， origin 是远程主机名。第一个 master 是本地分支名，第二个 master 是远程分支名，分支名是可以修改的。
 git push origin master 将本地master分支内容推送到远程库origin的master分支上，这里的master表示是远程服务器上的master分支和本地分支重名后的简写。
@@ -172,10 +172,10 @@ git push origin &amp;ndash;tags 推送全部未推送到远程库的本地标签
     
     <item>
       <title>Git git rebase</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-rebase/</guid>
       <description>git rebase 用于把一个分支的所有修改（commit）合并到当前分支。
 rebase 操作可以把本地未 push 的分叉提交历史整理成直线；
 git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃掉，并且把它们临时保存为patch(这些patch放到**.git/rebase目录中)，然后将BranchName分支上的commit更新到master分支上，最后把保存的这些补丁应用到更新后的master**分支上。
@@ -186,29 +186,29 @@ git rebase BranchName git rebase会把当前分支master的每个 commit 丢弃�
     
     <item>
       <title>Git git reflog</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reflog/</guid>
       <description>git reflog 可以查看所有分支的所有操作记录（包括已经被删除的git commit记录和git reset的操作）</description>
     </item>
     
     <item>
       <title>Git git remote</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-remote/</guid>
       <description>git remote git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 将一个已有的本地仓库与远程库相关联。
 git remote -v 查看远程库信息</description>
     </item>
     
     <item>
       <title>Git git reset</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-reset/</guid>
       <description>git reset 用于回退版本。
 git reset &amp;ndash;hard VersionNumber 可以指定回退到某一次提交后的版本号上，VersionNumber 为commit id
 git reset HEAD FileNmae 将 FileName 在暂存区的修改回退到工作区，即把 FileNmae 在暂存区中删除。这里的 HEAD 表示 FileNmae 最新的版本。
@@ -217,20 +217,20 @@ git reset &amp;ndash;hard HEAD^ 在 Git 中，用HEAD表示当前版本，上一
     
     <item>
       <title>Git git show</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-show/</guid>
       <description>git show 查看最新的 commit 提交。
 git show TagName 查看标签名为TagName的 commit 提交。</description>
     </item>
     
     <item>
       <title>Git git stash</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-stash/</guid>
       <description>git stash 将当前工作区的文件先暂存起来，等 bug 修改完成后，再将暂存的工作区文件内容拿出来继续工作。
 git stash apply 恢复后，stash内容并不删除，你需要用git stash drop来删除；
 git stash pop 恢复的同时把stash内容也删了。
@@ -239,10 +239,10 @@ git stash list 查看将前被暂存的工作区。</description>
     
     <item>
       <title>Git git switch</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-switch/</guid>
       <description>git switch 用于切换分支。与git checkout命令的区别在于，使用新的git switch命令，比git checkout要更容易理解。
 git switch -c Dev 创建并切换到新的Dev分支。
 git switch Dev 直接切换到名为Dev的分支。</description>
@@ -250,10 +250,10 @@ git switch Dev 直接切换到名为Dev的分支。</description>
     
     <item>
       <title>Git git tag</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-tag/</guid>
       <description>git tag 用于查看本地仓库的所有标签。tag 是 git 版本库的一个标记，指向某个 commit 提交的指针，它比commit id方便我们记忆。
 git tag TagName 给当前分支上的HEAD打上名为TagName的标签。
 git tag TagName CommitId 给 commit id 为CommitId的提交打上名为TagName的标签。
@@ -263,10 +263,10 @@ git tag -d TagName 删除名为TagName的本地标签。</description>
     
     <item>
       <title>Git 与 Github</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/git-%E4%B8%8E-github/</guid>
       <description>Git 与 Github Git Git 是一款免费、开源、并且是目前世界上最先进的分布式版本控制系统。
 它是 Linus 花了两周时间自己用 C 写了一个分布式版本控制系统，这就是 Git！一个月之内，Linux 系统的源码已经由 Git 管理了！何为大佬？
 Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，GitHub 网站上线了，Github 是一个 Git 做版本控制的代码托管平台，Github 为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括 jQuery，PHP，Ruby 等等。
@@ -275,10 +275,10 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
     
     <item>
       <title>Git 临时分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF/</guid>
       <description>临时分支 在开发过程中，Bug 就像家常便饭一样，在 Git 中，当你接到一个修复一个代号 19 的 bug 的任务时，或者接到了一个新任务，开发代号为 R 的新功能时，但现在手头上的工作进度还没有完成，这时候该怎么办呢？
 这种时候我们通常可以创建一个临时的分支，在这个临时的分支上进行修复 bug 或开发新功能，最后在将这个分支合并到主分支。
 暂存当前的工作进度 git stash 我们当前处于dev分支上，在这个分支上暂存工作进度
@@ -290,10 +290,10 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
     
     <item>
       <title>Git 什么是分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E5%88%86%E6%94%AF/</guid>
       <description>什么是分支 分支就是科幻电影里面的平行宇宙，当你正在电脑前努力学习 Git 的时候，另一个你正在另一个平行宇宙里努力学习 SVN。
 当两个平行宇宙互不干扰时，那对现在的你也没啥影响。不过，在某个时间点，两个平行宇宙合并了，结果，你既学会了 Git 又学会了 SVN！
 分支有什么用 假设你准备开发一个新功能，但是需要两周才能完成，第一周你写了 50% 的代码，如果立刻提交，由于代码还没写完，不完整的代码库会导致别人无法干活了。如果等代码全部写完再一次提交，又存在丢失每天进度的巨大风险。
@@ -302,10 +302,10 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
     
     <item>
       <title>Git 什么是版本控制系统</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>什么是版本控制系统 所有的版本控制系统，其实 只能跟踪文本文件的改动，比如 TXT 文件，HTML，所有的程序代码文档等等，Git 也不例外。版本控制系统可以告诉你每次的改动，比如在第 5 行加了一个单词 Linux ，在第 8 行删了一个单词 Windows 。
 而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件内容（二进制编码）的变化，只能把二进制文件每次改动串起来，也就是只知道图片从 100KB 改成了 120KB，但具体改了啥，在文件的哪里作了修改，版本控制系统并不知道，也没法知道。这里值得注意的是，Microsoft 的 Word 格式是二进制格式，因此，版本控制系统是没法跟踪 Word 文件的改动的。
 因此，我这里比较推荐使用 markdown 作为文本编辑的格式，以及我个人比较喜欢使用 Typora 编辑 markdown 文件，之后再用 Vs code + git，推送到 GitHub 上，非常的方便。</description>
@@ -313,10 +313,10 @@ Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，G
     
     <item>
       <title>Git 克隆远程库</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
       <description>克隆远程库 通常，当我们在 Github 上创建了一个远程库时，有时候需要多个人协作共同修改这个远程库，这时候我们就可以在多台设备上克隆这个远程库，并将它放到本地
 克隆远程库 接下来我们使用git clone RemoteAddress命令将我们刚刚创建的远程库克隆到本地。
 git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆地址不止一个，还可以用https://github.com/michaelliao/gitskills.git这样的地址。实际上，Git 支持多种协议，默认的git://使用 ssh，但也可以使用https等其他协议。
@@ -325,10 +325,10 @@ git clone git@github.com:YxzRainy/YxzRainy.github.io.git GitHub 给出的克隆�
     
     <item>
       <title>Git 分支是如何工作的</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/</guid>
       <description>分支是如何工作的 主分支 在 Git 里，有一个默认的主分支，即master。HEAO严格来说并不是指向当前版本，而是指向的master，master才是指向当前版本的。所以，HEAD指向的就是当前分支，而当前分支的指针就是指向的当前版本。
 commit 后分支的变化 每次提交，master都会向前进一个版本，这样，随着你不断提交，master的线也越来越长。
 当我们新建一个dev分支，指向与master相同的提交，再把HEAD指向dev，就表示我们当前在dev上工作。
@@ -339,10 +339,10 @@ commit 后分支的变化 每次提交，master都会向前进一个版本，这
     
     <item>
       <title>Git 分支管理策略</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/</guid>
       <description>分支管理策略 在实际开发中，我们应该按照几个基本原则进行分支管理：
 首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
 那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
@@ -352,10 +352,10 @@ commit 后分支的变化 每次提交，master都会向前进一个版本，这
     
     <item>
       <title>Git 创建并合并分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF/</guid>
       <description>创建并合并分支 创建文件 目前我们处于 Git 给我们创建的默认 maser 分支下，我们需要在这个分支下进行一些工作。
 我们先创建一个文件 ReadMe.txt 来作为我们的本次的工作文件。
 提交文件 我们需要在maser分支上进行一次提交，以确保我们在默认分支下是进行过提交的。
@@ -373,10 +373,10 @@ git merge --no-ff -m &amp;#34;merge describe&amp;#34; dev 删除分支 合并完
     
     <item>
       <title>Git 创建标签</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE/</guid>
       <description>创建标签 切换到需要打标签的分支上
 git checkout master 使用命令git tag &amp;lt;name&amp;gt;就可以打一个新标签：
 git tag v1.0 可以用命令git tag查看所有标签
@@ -388,10 +388,10 @@ git log --pretty=oneline --abbrev-commitgit tag v2.0 c0e9bf4 创建带说明的
     
     <item>
       <title>Git 创建版本库</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%9B%E5%BB%BA%E7%89%88%E6%9C%AC%E5%BA%93/</guid>
       <description>创建版本库 什么是版本库 版本库又名仓库（Repository），你可以简单理解成一个目录，这个目录里面的所有文件都可以被 Git 管理起来，每个文件的修改、删除，Git 都能跟踪，以便任何时刻都可以追踪历史，并且以后随时回退到某个历史版本。
 初始化 Git 目录 我们创建一个文件夹 GitFolder（文件名随意），并进入到这个文件夹，然后在命令行输入git init命令将这个目录变成可以用 Git 来管理的仓库。
 git init 当目录中出现一个 .git 文件夹，就说明你的 Git 仓库初始化完成了。
@@ -407,10 +407,10 @@ git commit -m &amp;#34;Description of this submission&amp;#34; 执行成功后�
     
     <item>
       <title>Git 合并冲突</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81/</guid>
       <description>合并冲突 有时候，我们在使用git merge命令进行合并的时候，会出现以下提示。
 Auto-merging Rainy.txt CONFLICT (content): Merge conflict in Rainy.txt Automatic merge failed; fix conflicts and then commit the result. 会发现使用git merge自动合并失败了，git 提示我们需要手动 修复冲突，然后提交结果。
 如何解决冲突 我们只需要把 Git 合并失败的文件手动编辑为我们希望的内容，再git commit即可。</description>
@@ -418,10 +418,10 @@ Auto-merging Rainy.txt CONFLICT (content): Merge conflict in Rainy.txt Automatic
     
     <item>
       <title>Git 工作区与暂存区</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA/</guid>
       <description>工作区与暂存区 工作区 工作区就是你在电脑中看到的一个文件夹。它包括你实际更改的文件和当前修改但未使用git add存入暂存区的文件。
 这个文件夹中有一个隐藏的目录**.git**，这个不算是工作区，它只是 Git 的版本库。
 这个版本库 .git 里存了许多东西，其中最重要的就是我们的暂存区和一个 Git 自动为我们创建的第一个分支 master，以及指向这个master的一个指针HEAD。
@@ -436,10 +436,10 @@ On branch master nothing to commit, working tree clean </description>
     
     <item>
       <title>Git 忽略特殊文件</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%BF%BD%E7%95%A5%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6/</guid>
       <description>忽略特殊文件 在某些情况下，我们不想某些在工作区中的文件被提交，也就是不被git add .命令添加到暂存区，就非常有要将这些文件忽略掉（让 Git 对他们视而不见）。
 我们可以在 Git 工作区的根目录下创建一个特殊的**.gitignore**文件，然后把要忽略的文件名填进去，Git 就会在git add的时候忽略这些文件。
 .gitignore文件可以放到版本库里，这样可以对**.gitignore**做版本管理。
@@ -450,10 +450,10 @@ git add Rainy.classThe following paths are ignored by one of your .gitignore fi
     
     <item>
       <title>Git 推送分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF/</guid>
       <description>推送分支 添加文件并提交 git add . git commit -m &amp;#34;提交信息&amp;#34; 拉取分支 git pull origin master 为什么要先拉取分支呢？是因为远程库的最新提交和你试图推送的本地库不同步所导致的，因此需要先用git pull把最新的提交从origin/master上拉取到本地即可。
 分支名的问题 在使用git pull origin master命令将本地分支与远程分支同步，结果出现下面的报错信息：
 fatal: couldn&amp;#39;t find remote ref master 大致意思就是找不到 master 这个远程分支。
@@ -467,10 +467,10 @@ master master (fetch first)Updates were rejected because the remote contains wo
     
     <item>
       <title>Git 撤销修改</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9/</guid>
       <description>撤销修改 人哪有不犯错的，因此，当你修改了一个文件时，之后发现这次修改不太合理，想撤销这次修改的时候，怎么办呢？
 这个时候，你可以直接使用git checkout -- FileName 来撤销 FileName 文件在工作区的全部修改。这个命令分为几种情况
 文件未被添加到暂存区 对文件FileName进行修改后，但还没有将它添加到暂存区，我们这个时候使用git checkout -- FileName，FileName就会回到修改前的状态。
@@ -480,10 +480,10 @@ master master (fetch first)Updates were rejected because the remote contains wo
     
     <item>
       <title>Git 操作标签</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%93%8D%E4%BD%9C%E6%A0%87%E7%AD%BE/</guid>
       <description>操作标签 删除标签 git tag -d v0.1 因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
 如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除，然后，从远程删除。
 git push origin :refs/tags/v0.9 要看看是否真的从远程库删除了标签，可以登陆 GitHub 查看。
@@ -494,10 +494,10 @@ git push origin v1.0 推送全部尚未推送到远程的本地标签到远程�
     
     <item>
       <title>Git 标签管理</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86/</guid>
       <description>标签管理 发布一个版本时，我们通常先在版本库中打一个标签（tag），这样，就唯一确定了打标签时刻的版本。将来无论什么时候，取某个标签的版本，就是把那个打标签的时刻的历史版本取出来。所以，标签也是版本库的一个快照。
 Git 的标签虽然是版本库的快照，但其实它就是指向某个 commit 的指针（跟分支很像对不对？但是分支可以移动，标签不能移动），所以，创建和删除标签都是瞬间完成的。
 Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打包发布，commit 号是 6a5819e&amp;hellip;
@@ -510,10 +510,10 @@ Git 有 commit，为什么还要引入 tag？ 请把上周一的那个版本打�
     
     <item>
       <title>Git 添加第一个远程库</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%A6%96%E6%AC%A1%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
       <description>添加第一个远程库 什么是远程仓库 当我们需要多个人协助开发时，必然会遇到一个问题，就是双方的信息如何进行传递同步。 这个时候，就需要搭建一个远程服务器，每个人都从这个远程服务器克隆一份到自己的电脑上，并且把自己需要提交推送到服务器仓库里，也可以从服务器仓库中拉取别人的提交。
 创建远程库 注册一个 Github 账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名随意， 。
 关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
@@ -525,22 +525,22 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
     
     <item>
       <title>Git 添加第二个远程库</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E6%96%B0%E7%9A%84%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
-      <description>添加第二个远程库 创建远程库 在 GitHub 上创建一个远程库。
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/</guid>
+      <description>添加第二个远程库 将 GitHub 上的远程库与一个本地库关联起来。
 关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
-git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 添加文件并提交 git add .git commit -m &amp;#34;提交信息&amp;#34; 推送分支 git push origin master 将本地库master分支上的内容推送到远程库master上去，用git push命令。
-推送成功后，可以立刻在 GitHub 页面中看到远程库的内容已经和本地的一模一样了。</description>
+git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git # 远程库链接 添加文件并提交 git add . git commit -m &amp;#34;提交信息&amp;#34; 推送分支 git push origin master 将本地库master分支上的内容推送到远程库master上去.
+推送成功后，可以立刻在我们的 GitHub 仓库种中看到远程库的内容已经和本地的一模一样了。</description>
     </item>
     
     <item>
       <title>Git 清空远程分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B8%85%E7%A9%BA%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF/</guid>
       <description>清空远程分支 将清空后的本地分支推送到远程分支，以达到清空远程分支的目的。
 删除全部文件 打开本地仓库文件夹，删除不需要的文件，仅保留 .git 文件夹和 ReadMe.md 文件.
 输入命令 git add . git commit -m &amp;#39;清空远程仓库&amp;#39; git push origin master </description>
@@ -548,10 +548,10 @@ git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git 添加文�
     
     <item>
       <title>Git 版本回退</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/</guid>
       <description>版本回退 类似存档 现在我们新建一个文件text.txt，并对这个文件进行第一次修改和提交，得到text.txt 1.0 版本。
  重复以上步骤，对text.txt进行修改和提交，得到text.txt 2.0版本， 再次对text.txt进行修改和提交，得到text.txt 3.0版本。 目前为止，我们对这个文件修改并提交了三次，分别得到1.0、2.0、3.0三个版本。  不知道你有没有发现，修改一个文件后并提交与通过一关游戏并存档有着相似之处。
 这就好比玩闯关游戏时，每通过一关，系统就会自动把游戏进度存档，如果某一关没过去，你还可以选择读取前一关的存档，有些时候，在打 Boss 之前，你会手动存档，以便万一打 Boss 失败了，可以从最近的地方重新开始。
@@ -568,10 +568,10 @@ Git 的版本回退速度非常快，因为 Git 在内部有个指向当前版�
     
     <item>
       <title>Git 管理修改</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E7%AE%A1%E7%90%86%E4%BF%AE%E6%94%B9/</guid>
       <description>管理修改 你也许很疑惑为什么 Git 比其他版本控制系统设计得优秀，那是因为 Git 跟踪并管理的是修改，而非文件。
 第二次修改为什么没有被提交 现在假设我我们对一个文件 ReadMe.txt 进行了以下操作：
 修改 ReadMe.txt，得到 ReadMe.txt 2.0 版本
@@ -585,20 +585,20 @@ git add ReadMe.txt 修改 ReadMe.txt 2.0 版本，得到 ReadMe.txt 3.</descript
     
     <item>
       <title>Git 远程库更改默认分支</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%87%8D%E5%91%BD%E5%90%8D%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%90%8E/</guid>
       <description>远程库更改默认分支 我们在 Github 上更改仓库的默认分支后，或更改了分支名后，我们需要在本地库下执行以下代码
 git branch -m master Diary git fetch origin git branch -u origin/Diary Diary git remote set-head origin -a </description>
     </item>
     
     <item>
       <title>Git 配置别名</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D/</guid>
       <description>配置别名 命令简写 $ git config --global alias.st status $ git config --global alias.co checkout $ git config --global alias.ci commit $ git config --global alias.br branch 以上命令将：
 git status简写为git st；
 git checkout简写为git co；
@@ -612,10 +612,10 @@ $ git ci -m &amp;#34;this is shorthand&amp;#34; 配置别名 配置 Git 的时�
     
     <item>
       <title>Git 配置用户信息</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF/</guid>
       <description>配置用户信息 安装好 Git 后，在命令行或终端中使用下面的命令可以设置 Git 自己的名字和电子邮件。这是因为 Git 是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和 Email 地址。
 git config --global user.name &amp;#34;YxzRainy&amp;#34;git config --global user.email &amp;#34;1@qq.com&amp;#34; 查看配置 配置好之后可以使用git config -l查看配置：
 git config -l </description>
@@ -623,10 +623,10 @@ git config -l </description>
     
     <item>
       <title>Git 集中式与分布式的区别</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E9%9B%86%E4%B8%AD%E5%BC%8F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>集中式与分布式的区别 前言 集中式版本控制系统最大的毛病就是必须联网才能工作，如果网速快还好，上传的也快，可当遇到网速慢的时候，可能提交一个 10M 的文件就需要 5 分钟，这还不得把人给憋死啊。
 联网性 首先，分布式版本控制系统根本没有“中央服务器”，每个人的电脑上都是一个完整的版本库，这样，你工作的时候，就不需要联网了，因为版本库就在你自己的电脑上。既然每个人电脑上都有一个完整的版本库，那多个人如何协作呢？比方说你在自己电脑上改了文件 A，你的同事也在他的电脑上改了文件 A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。
 安全性 与集中式版本控制系统相比，分布式版本控制系统的安全性要高很多，因为每个人电脑里都有完整的版本库，某一个人的电脑坏掉了不要紧，随便从其他人那里复制一个就可以了。而集中式版本控制系统的中央服务器要是出了问题，所有人都没法干活了。
@@ -635,10 +635,10 @@ git config -l </description>
     
     <item>
       <title>同时推送到Gtihub和Gitee</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%90%8C%E6%97%B6%E6%8E%A8%E9%80%81%E5%88%B0gtihub%E5%92%8Cgitee/</guid>
       <description>同时推送到Gtihub和Gitee 修改 Git 的配置文件config
 找到**[remote &amp;ldquo;origin&amp;rdquo;]下的url**
 增加需要添加的远程库url即可</description>
@@ -646,10 +646,10 @@ git config -l </description>
     
     <item>
       <title>安装 Git</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5/%E5%AE%89%E8%A3%85-git/</guid>
       <description>安装 Git 官网下载并安装 Git (git-scm.com)，下载完成后，默认选项安装即可。
 安装完成后，右击后在菜单中选择 Git Bash ，蹦出一个类似命令行窗口的东西，就说明 Git 安装成功了！
 Rainy@Rainy MINGW64 /e/Rainy 配置个人信息 因为 Git 是分布式版本控制系统，所以，每台设备都必须自报家门，也就是在命令行输入你的 Github 用户名和 Email 地址。
@@ -659,10 +659,10 @@ git config --global user name &amp;#34;Your Github UserName&amp;#34; git config 
     
     <item>
       <title>Git 删除文件</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</link>
       <pubDate>Thu, 14 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</guid>
       <description>删除文件 git rm FileName 命令git rm用于删除一个文件。
 如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容
 删错文件怎么办 有时候，你误删了一个文件 FileName，但因为版本库里还有，所以可以使用git checkout -- FileName把误删的文件恢复到最新版本
@@ -671,20 +671,20 @@ git checkout -- FileName </description>
     
     <item>
       <title>Git git status</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</link>
       <pubDate>Tue, 12 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/git-status/</guid>
       <description>git status 查看当前 git 的状态，即查看工作区代码相对于暂存区的差别。比如哪些文件还在工作区（还没git add）、哪些文件还在暂存区（还没git commit）等等，及时了解当前的 git 状态可以避免一些误操作。
 但git status并不能让我们知道这些文件具体修改了什么内容。</description>
     </item>
     
     <item>
       <title>Hexo 将博客作为站点子页面</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E5%B0%86%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%BA%E7%AB%99%E7%82%B9%E5%AD%90%E9%A1%B5%E9%9D%A2/</guid>
       <description>Hexo 将博客作为站点子页面 前言 如果你想如何在 GitHub 的 repository 中上传自己写的网页作为首页，hexo 生成的博客页作为其子页？即自己写的页面作为 UserName.github.io 的页面，将 hexo 博客放在 UserName.github.io/blog 上，那么，这个教程也许可以帮到你。
 本教程的前提是你已经用 hexo 将博客搭建在 UserName.github.io 的仓库上了。
 新建仓库 在 github 上新建一个仓库，名字随意，我的是 Blog。
@@ -695,10 +695,10 @@ git checkout -- FileName </description>
     
     <item>
       <title>Hexo 搭建博客</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>Hexo 搭建博客 创建 Github 仓库 注册一个Github账号 创建 Github Repository 在 Github 上创建一个仓库，仓库名必须为 UserName.github.io，注意，这是固定的写法 。
 将 Git 与 Github 关联 下载并安装Git 配置个人信息 git config --global user.name &amp;#34;Your UserName&amp;#34; git config --global user.email &amp;#34;YourEmail@qq.com&amp;#34; 生成 ssh 密钥文件 hexo d 到远程仓库，因为每一台电脑中的私钥只有只有一个，因此当你想给另一个 github 账号配置博客时，必须重新生成公钥和私钥
 ssh-keygen -t rsa -C &amp;#34;Your GitHub 的邮箱&amp;#34; 复制 id_rsa pub 文件中的密钥 三个回车，默认不需要设置密码，之后到所显示的路径中找到生成的 ssh 的文件夹中的 id_rsa pub 密钥，将其中内容全部复制
@@ -707,10 +707,10 @@ new SSH Key 打开你的 Github 的主页，点击头像，选择 Settings，再
     
     <item>
       <title>Hexo 更改博客主题</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hexo/%E6%9B%B4%E6%94%B9%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98/</guid>
       <description>Hexo 更改博客主题 前言 配置完了 Hexo，你是否对自带的主题不满意呢？本篇文章将教你如何更改及美化 Hexo 主题。
 下载主题 去 Hexo 的Hexo Themes下载一个你认为不错的主题。这里推荐 Next主题
 更改基本站点信息 在你的博客根目录下打开**_config.yml**，将 Site 下的信息改为你自己的

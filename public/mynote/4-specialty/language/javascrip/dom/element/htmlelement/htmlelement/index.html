@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/htmlelement/htmlelement/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript HTMLElement",
+	    "headline" : "JavaScript HTMLElement",
+	    "description" : "HTMLElement offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。\noffsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。\noffsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border\n如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。\noffsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border\n如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。\noffsetParent 返回距离当前元素最近的定位父元素。\n如果当前元素的父元素中没有定位元素，则返回 body。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/element\/htmlelement\/htmlelement\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript HTMLElement</title>
+    <meta property="og:title" content="JavaScript HTMLElement" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="HTMLElement offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。" />
+    <meta name="description" content="HTMLElement offsetHeight 它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。
+offsetWidth 它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。
+offsetLeft 返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetTop 它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border
+如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。
+offsetParent 返回距离当前元素最近的定位父元素。
+如果当前元素的父元素中没有定位元素，则返回 body。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript HTMLElement</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-05 06:00:00 UTC">
+                        2022-05-05
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="htmlelement">HTMLElement</h1>
+<h2 id="offsetheight">offsetHeight</h2>
+<p>它返回该元素的像素高度，高度包含该元素的垂直内边距和边框，且是一个整数。</p>
+<h2 id="offsetwidth">offsetWidth</h2>
+<p>它返回该元素的像素宽度，宽度包含该元素的水平内边距和边框，且是一个整数。</p>
+<h2 id="offsetleft">offsetLeft</h2>
+<p>返回当前元素左边界相对于最近的定位父元素的左边界的像素值。该值包含 border</p>
+<p>如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。</p>
+<h2 id="offsettop">offsetTop</h2>
+<p>它返回当前元素顶边界相对于最近的定位父元素的顶边界的像素值。该值包含 border</p>
+<p>如果当前元素的父元素中没有定位元素，则返回相对文档左边界的像素值。</p>
+<h2 id="offsetparent">offsetParent</h2>
+<p>返回距离当前元素最近的定位父元素。</p>
+<p>如果当前元素的父元素中没有定位元素，则返回 body。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#offsetheight">offsetHeight</a></li>
+    <li><a href="#offsetwidth">offsetWidth</a></li>
+    <li><a href="#offsetleft">offsetLeft</a></li>
+    <li><a href="#offsettop">offsetTop</a></li>
+    <li><a href="#offsetparent">offsetParent</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

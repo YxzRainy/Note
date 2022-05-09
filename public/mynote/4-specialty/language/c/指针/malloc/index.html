@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%8C%87%E9%92%88/malloc/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,7 +17,7 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C malloc",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2022",
 	    "datePublished": "2022-04-03 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2022-04-03 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/malloc\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E6%8C%87%E9%92%88\/malloc\/",
 	    "keywords" : [ "C","指针","学习笔记", ]
 	}
 </script><title>C malloc</title>
@@ -46,9 +46,9 @@ malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.
 malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int a = 5; // a 是一个 int 变量，它是静态分配的  int * p = (int *)malloc(4); // 动态分配  *p = 5;// *p 也是一个 int 变量，但它是动态分配的  free(p); // 手动释放动态分配的内存  printf(&amp;#34;%d\n&amp;#34;,*p);  printf(&amp;#34;%d\n&amp;#34;,p); }  使用 malloc 函数，需要添加头文件 malloc.h malloc 函数只有一个形参，并且形参是整型。 malloc(4)表示请求系统为我们分配 4 个字节 malloc 函数只能返回第一个字节的地址，即 p 只保存了第一个字节的整型地址 int * 是为了让系统知道我们分配这个 4 个字节的地址是整型地址。 int * p = (int *)malloc(4)这行代码总共分配了 8 个字节，int * p分配了 4 个字节，(int *)malloc(4)分配了 84 个字节一共 8 个字节。 p（int * p）本身所占的内存是静态分配的，但 p 所指向的内存(int *)malloc(4)是动态分配的。 free(p)表示将 p 所指向的内存给释放掉，使得 p 指向的内存无法被读写。但是，p 本身的内存是静态的，不能被我们用free()函数手动释放，p 本身的内存只能在 p 变量所在的函数运行结束后，被系统自动释放。 *p = 5和int a = 5的区别在于前者的内存分配方式是动态分配的，后者的内存分配方式是静态分配的。 *p = 5 中，其中*p指的是用(int *)malloc(4)动态分配了 4 个字节的内存空间，而*p = 5，则是将 5 这个 int 数值放入这动态分配的 4 个字节的内存中。而 p 则只保存了其中第 1 个字节的地址。  " />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -145,11 +145,12 @@ malloc 函数的使用 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PFP on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/pfp/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/pfp/</link>
     <description>Recent content in PFP on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 10 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/pfp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/pfp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PHP 变量</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</link>
       <pubDate>Thu, 10 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/php/%E5%8F%98%E9%87%8F/</guid>
       <description>变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。 $_ GET：获取所有表单以 get 方式提交的数据。 $_ POST：POST 提交的数据都会保存在此。 $_ REQUEST：GET 和 POST 提交的都会保存。 $GLOBALS：PHP 中所有的全局变量。 $_ SERVER：服务器信息。 $_ SESSION：session 会话数据。 $_ COOKIE：cookie 会话数据。 $_ ENV：环境信息。 $_ FILES：用户上传的文件信息。
 可变变量 // 找到 $a，将其赋值为 b， // 将 $$a 前面的 $ 符号与前面的结果结合，得到了 $b， $a = &amp;#39;b&amp;#39;; // 最后再将 $b 赋为 bb $b = &amp;#39;bb&amp;#39;; echo $$a; 变量传值 指的是将一个变量的值赋给另外一个变量。
 变量传值一共有两种方式：值传递和引用传递。 值传递：将一个变量的值复制一份， 然后将新的值赋给另外一个变量（两个变量没有关系）。 引用传递：将一个变量的值的内存地址，传递给另外一个变量，两个变量的内存地址所指向的是同一块内存空间（两个变量所指向的都是同一个值，他们互相影响，其中一个变量被改变，另一个也会跟着被改变）。

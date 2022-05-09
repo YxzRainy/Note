@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/ddl/alter/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/ddl/alter/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL ALTER",
+	    "headline" : "MySQL ALTER",
+	    "description" : "ALTER 修改数据表名或者修改数据表的字段.\n修改表名 ALTER TABLE 旧表名 RENAME 新表名。\nALTERTABLErainyRENAMESu;修改字段 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型。\nALTERTABLEsuCHANGErainyappleVARCHAR(20);修改字段的排列位置 ALTER TABLE 表名 MODIFY 字段名 1 VARCHAR(20) AFTER 字段名 2;\nALTERTABLEsuMODIFYrainyVARCHAR(20)AFTERtwo;删除字段",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-22 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/ddl\/alter\/",
+	    "keywords" : [ "SQL","DDL","MySQL","学习笔记", ]
+	}
+</script><title>MySQL ALTER</title>
+    <meta property="og:title" content="MySQL ALTER" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="ALTER 修改数据表名或者修改数据表的字段.
+修改表名 ALTER TABLE 旧表名 RENAME 新表名。
+ALTERTABLErainyRENAMESu;修改字段 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型。
+ALTERTABLEsuCHANGErainyappleVARCHAR(20);修改字段的排列位置 ALTER TABLE 表名 MODIFY 字段名 1 VARCHAR(20) AFTER 字段名 2;
+ALTERTABLEsuMODIFYrainyVARCHAR(20)AFTERtwo;删除字段" />
+    <meta name="description" content="ALTER 修改数据表名或者修改数据表的字段.
+修改表名 ALTER TABLE 旧表名 RENAME 新表名。
+ALTERTABLErainyRENAMESu;修改字段 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型。
+ALTERTABLEsuCHANGErainyappleVARCHAR(20);修改字段的排列位置 ALTER TABLE 表名 MODIFY 字段名 1 VARCHAR(20) AFTER 字段名 2;
+ALTERTABLEsuMODIFYrainyVARCHAR(20)AFTERtwo;删除字段" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL ALTER</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-22 06:00:00 UTC">
+                        2022-04-22
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="alter">ALTER</h1>
+<p>修改数据表名或者修改数据表的字段.</p>
+<h2 id="修改表名">修改表名</h2>
+<p>ALTER TABLE 旧表名 RENAME 新表名。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">ALTER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">TABLE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">rainy</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">RENAME</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Su</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="修改字段">修改字段</h2>
+<p>ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">ALTER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">TABLE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">su</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">CHANGE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">rainy</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">apple</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">VARCHAR</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">);</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="修改字段的排列位置">修改字段的排列位置</h2>
+<p>ALTER TABLE 表名 MODIFY 字段名 1 VARCHAR(20) AFTER 字段名 2;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">ALTER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">TABLE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">su</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">MODIFY</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">rainy</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">VARCHAR</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">)</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">AFTER</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">two</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><p>删除字段</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/ddl/">
+                    DDL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#修改表名">修改表名</a></li>
+    <li><a href="#修改字段">修改字段</a></li>
+    <li><a href="#修改字段的排列位置">修改字段的排列位置</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

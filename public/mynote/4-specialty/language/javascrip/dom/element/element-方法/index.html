@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E6%96%B9%E6%B3%95/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E6%96%B9%E6%B3%95/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript Element 方法",
+	    "headline" : "JavaScript Element 方法",
+	    "description" : "Element 方法 setAttribute() 设置指定元素的属性和属性的值。设置的属性名可以是自定义的属性。\n如果这个指定的属性已存在，则仅更改值。\ngetAttribute() 返回指定属性名的属性值。\ngetBoundingClientRect() 返回元素的尺寸，以及相对于视口的位置。\n如果是标准盒子模型，元素的宽高等于width\/height \u002b padding \u002b border-width的总和。如果box-sizing: border-box，元素的宽高等于 width\/height。\n返回的结果不是事实的，是静态的。\nvar div = document.getElementsByTagName(\u0026#39;div\u0026#39;)[0]; var ele = div.getBoundingClientRect(); ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/element\/element-%E6%96%B9%E6%B3%95\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript Element 方法</title>
+    <meta property="og:title" content="JavaScript Element 方法" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Element 方法 setAttribute() 设置指定元素的属性和属性的值。设置的属性名可以是自定义的属性。
+如果这个指定的属性已存在，则仅更改值。
+getAttribute() 返回指定属性名的属性值。
+getBoundingClientRect() 返回元素的尺寸，以及相对于视口的位置。
+如果是标准盒子模型，元素的宽高等于width/height &#43; padding &#43; border-width的总和。如果box-sizing: border-box，元素的宽高等于 width/height。
+返回的结果不是事实的，是静态的。
+var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; var ele = div.getBoundingClientRect(); " />
+    <meta name="description" content="Element 方法 setAttribute() 设置指定元素的属性和属性的值。设置的属性名可以是自定义的属性。
+如果这个指定的属性已存在，则仅更改值。
+getAttribute() 返回指定属性名的属性值。
+getBoundingClientRect() 返回元素的尺寸，以及相对于视口的位置。
+如果是标准盒子模型，元素的宽高等于width/height &#43; padding &#43; border-width的总和。如果box-sizing: border-box，元素的宽高等于 width/height。
+返回的结果不是事实的，是静态的。
+var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; var ele = div.getBoundingClientRect(); " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript Element 方法</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-02 06:00:00 UTC">
+                        2022-05-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="element-方法">Element 方法</h1>
+<h2 id="setattribute">setAttribute()</h2>
+<p>设置指定元素的属性和属性的值。设置的属性名可以是自定义的属性。</p>
+<p>如果这个指定的属性已存在，则仅更改值。</p>
+<h2 id="getattribute">getAttribute()</h2>
+<p>返回指定属性名的属性值。</p>
+<h2 id="getboundingclientrect">getBoundingClientRect()</h2>
+<p>返回元素的尺寸，以及相对于视口的位置。</p>
+<p>如果是标准盒子模型，元素的宽高等于<strong>width/height</strong> + <strong>padding</strong> + border-width的总和。如果<code>box-sizing: border-box</code>，元素的宽高等于 width/height。</p>
+<p>返回的结果不是事实的，是静态的。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">ele</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getBoundingClientRect</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#setattribute">setAttribute()</a></li>
+    <li><a href="#getattribute">getAttribute()</a></li>
+    <li><a href="#getboundingclientrect">getBoundingClientRect()</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

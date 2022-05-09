@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E5%85%83%E5%AD%97%E7%AC%A6/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/%E5%85%83%E5%AD%97%E7%AC%A6/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "正则表达式 元字符",
+	    "headline" : "正则表达式 元字符",
+	    "description" : "元字符 \\w 匹配字母、数字、下划线。等价于[A-Za-z0-9_]。\nvar reg = \/\\wcd2\/g;  var str = \u0026#39;bcd2\u0026#39;;  var result = str.match(reg); console.log(result); \\W 匹配非字母、数字、下划线。等价于 [^A-Za-z0-9_]。\nvar reg = \/\\Wcd2\/g;  var str = \u0026#39;b*cd2\u0026#39;;  var result = str.match(reg); console.log(result); \\d 匹配一个数字字符。等价于 [0-9]。\n\\D 匹配一个非数字字符。等价于 [^0-9]。\n\\s 匹配任何空白字符，包括空格符、制表符\\t、回车符\\r、换行符\\n、垂直制表符\\v、换页符\\f。\n等价于 [ \\f\\n\\r\\t\\v]。\n\\S 匹配任何非空白字符。等价于 [^ \\f\\n\\r\\t\\v]。\n\\b 匹配一个单词边界，也就是指单词和空格间的位置。\n例如， er\\b可以匹配 never 中的 \u0026rsquo;er\u0026rsquo;，但不能匹配 verb 中的 er。\nvar reg = \/\\bname\/g;  var str = \u0026#39;my name is rainy\u0026#39;;  var result = str.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-09 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F\/%E5%85%83%E5%AD%97%E7%AC%A6\/",
+	    "keywords" : [ "学习笔记","正则表达式", ]
+	}
+</script><title>正则表达式 元字符</title>
+    <meta property="og:title" content="正则表达式 元字符" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="元字符 \w 匹配字母、数字、下划线。等价于[A-Za-z0-9_]。
+var reg = /\wcd2/g;  var str = &amp;#39;bcd2&amp;#39;;  var result = str.match(reg); console.log(result); \W 匹配非字母、数字、下划线。等价于 [^A-Za-z0-9_]。
+var reg = /\Wcd2/g;  var str = &amp;#39;b*cd2&amp;#39;;  var result = str.match(reg); console.log(result); \d 匹配一个数字字符。等价于 [0-9]。
+\D 匹配一个非数字字符。等价于 [^0-9]。
+\s 匹配任何空白字符，包括空格符、制表符\t、回车符\r、换行符\n、垂直制表符\v、换页符\f。
+等价于 [ \f\n\r\t\v]。
+\S 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。
+\b 匹配一个单词边界，也就是指单词和空格间的位置。
+例如， er\b可以匹配 never 中的 &amp;rsquo;er&amp;rsquo;，但不能匹配 verb 中的 er。
+var reg = /\bname/g;  var str = &amp;#39;my name is rainy&amp;#39;;  var result = str." />
+    <meta name="description" content="元字符 \w 匹配字母、数字、下划线。等价于[A-Za-z0-9_]。
+var reg = /\wcd2/g;  var str = &amp;#39;bcd2&amp;#39;;  var result = str.match(reg); console.log(result); \W 匹配非字母、数字、下划线。等价于 [^A-Za-z0-9_]。
+var reg = /\Wcd2/g;  var str = &amp;#39;b*cd2&amp;#39;;  var result = str.match(reg); console.log(result); \d 匹配一个数字字符。等价于 [0-9]。
+\D 匹配一个非数字字符。等价于 [^0-9]。
+\s 匹配任何空白字符，包括空格符、制表符\t、回车符\r、换行符\n、垂直制表符\v、换页符\f。
+等价于 [ \f\n\r\t\v]。
+\S 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。
+\b 匹配一个单词边界，也就是指单词和空格间的位置。
+例如， er\b可以匹配 never 中的 &amp;rsquo;er&amp;rsquo;，但不能匹配 verb 中的 er。
+var reg = /\bname/g;  var str = &amp;#39;my name is rainy&amp;#39;;  var result = str." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">正则表达式 元字符</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-09 06:00:00 UTC">
+                        2022-05-09
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="元字符">元字符</h1>
+<h2 id="w">\w</h2>
+<p>匹配字母、数字、下划线。等价于<code>[A-Za-z0-9_]</code>。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\wcd2/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;bcd2&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="w-1">\W</h2>
+<p>匹配非字母、数字、下划线。等价于 <code>[^A-Za-z0-9_]</code>。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\Wcd2/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;b*cd2&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="d">\d</h2>
+<p>匹配一个数字字符。等价于 <code>[0-9]</code>。</p>
+<h2 id="d-1">\D</h2>
+<p>匹配一个非数字字符。等价于 <code>[^0-9]</code>。</p>
+<h2 id="s">\s</h2>
+<p>匹配任何空白字符，包括<strong>空格符、制表符<code>\t</code>、回车符<code>\r</code>、换行符<code>\n</code>、垂直制表符<code>\v</code>、换页符<code>\f</code></strong>。</p>
+<p>等价于 <code>[ \f\n\r\t\v]</code>。</p>
+<h2 id="s-1">\S</h2>
+<p>匹配任何非空白字符。等价于 <code>[^ \f\n\r\t\v]</code>。</p>
+<h2 id="b">\b</h2>
+<p>匹配一个单词边界，也就是指单词和空格间的位置。</p>
+<p>例如， <code>er\b</code>可以匹配 never 中的 &rsquo;er&rsquo;，但不能匹配 verb 中的 er。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\bname/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;my name is rainy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="b-1">\B</h2>
+<p>匹配非单词边界。<code>er\B</code>能匹配 verb 中的 er，但不能匹配 never 中的 er。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JS" data-lang="JS"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\Bname\B/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;mynameis rainy&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="t">\t</h2>
+<p>匹配一个制表符。等价于 <code>\x09</code> 和 <code>\cI</code>。</p>
+<p>匹配的制表符必须是字符串中所存在的<code>\t</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\tc/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;\tc&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="u">\u</h2>
+<p>匹配一个用四个十六进制数字表示的 Unicode 字符。</p>
+<p>例如， <code>\u4e2d\u56fd</code>的匹配项是：中国。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/\u0072\u0061\u0069\u006e\u0079\u0020\u662f\u61a8\u61a8/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;rainy 是憨憨&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>Unicode 字符也可以使用区间的方式进行匹配，下面是匹配一切字符。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/[\u0000-\uffff]/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;(?)&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>匹配一切的字符，也可以用补集的方式：<strong>原集合 + 原集合的补集 = All</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 数字字符 + 非数字字符 = 一切字符
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/[\d\D]/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;123abc...china牛逼？&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="heading">.</h2>
+<p>匹配除换行符<code>\n</code>和回车符<code>\r</code>之外的任何单个字符。相当于 <code>[^\n\r]</code>。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/./g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;臣世雨&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p><code>.</code>不能写在<code>[]</code>中，若写到<code>[]</code>中，会匹配到 null。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">reg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">/[.]/g</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;臣世雨&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">result</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">str</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">match</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">reg</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">result</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                    正则表达式
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#w">\w</a></li>
+    <li><a href="#w-1">\W</a></li>
+    <li><a href="#d">\d</a></li>
+    <li><a href="#d-1">\D</a></li>
+    <li><a href="#s">\s</a></li>
+    <li><a href="#s-1">\S</a></li>
+    <li><a href="#b">\b</a></li>
+    <li><a href="#b-1">\B</a></li>
+    <li><a href="#t">\t</a></li>
+    <li><a href="#u">\u</a></li>
+    <li><a href="#heading">.</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

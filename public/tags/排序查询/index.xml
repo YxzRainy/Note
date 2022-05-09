@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>排序查询 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/</link>
+    <description>Recent content in 排序查询 on Rainy · Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 22 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 排序查询</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Fri, 22 Apr 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/</guid>
+      <description>排序查询 语法 SELECT查询列表FROM表名WHERE筛选条件ORDERBY排序列表ASCDESC升序/降序特点  ASC 代表升序，DESC 代表降序，如果不写，则默认是升序。 支持单个字段、多个字段、表达式、函数、别名等。 一般放在查询语句的最后面，limit 语句除外。  按字段排序 查询员工信息，并按工资从高至低排序 SELECT*FROMemployeesWHEREsalary# 降序 用 DESC ，升序用 ASC ORDERBYsalaryDESC;按多个字段排序 查询员工信息，并先按工资升序，再按员工编号降序 如果有两种排序规则，若第一种排序规则中有相同的数据，那么这两个数据应该哪个在前，哪个在后呢？这时候会按照第二种排序规则进行排序，决定第一种排序规则中的相同数据的先后顺序。
+SELECT*,salaryAS工资,employee_idAS员工编号FROMemployeesORDERBYsalaryASC,employee_idDESC;按表达式排序 查询部门编号 &amp;gt;= 90 的员工信息，并按入职的先后顺序排序 SELECT*FROMemployeesWHEREdepartment_id&amp;gt;=90# 降序 用 DESC ，升序用 ASC ORDERBYsalaryASC;按表达式排序 SELECT*,# 因为表中没有年薪这个字段，所以我们需要用表达式来计算每个员工的年薪 salary*12*(1+IFNULL(commission_pct,0))AS年薪FROMemployeesORDERBYsalary*12*(1+IFNULL(commission_pct,0))DESC;按别名排序 查询员工的信息和年薪，并按年薪的高低排序 SELECT*,# 因为表中没有年薪这个字段，所以我们需要用表达式来计算每个员工的年薪 salary*12*(1+IFNULL(commission_pct,0))AS年薪FROMemployees# 用表达式所对应的别名来替代表达式，使得语句更好理解 ORDERBY年薪DESC;按函数排序 查询远东的姓名和工资，并按姓的字节长度从多到少排序 SELECTLENGTH(last_name)AS字节长度,last_name,salaryFROMemployeesORDERBYLENGTH(last_name)DESC; </description>
+    </item>
+    
+  </channel>
+</rss>

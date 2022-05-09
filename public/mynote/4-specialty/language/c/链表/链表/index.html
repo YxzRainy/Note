@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 链表",
 	    "headline" : "C 链表",
-	    "description" : "链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。\n链表靠节点的指针域中存放的指针地址来寻找下一个元素。\n确定一个链表，只需要知道头指针即可。\n优点 存取数据效率高。\n不需要一个太大的内存。\n缺点 查找某个位置的元素时，效率很低。\n节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。\n链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。\n首节点 链表中存放第一个有效数据的节点。\n尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。\n头结点 头结点的数据类型和首节点的类型一模一样。\n头结点是首节点前面的那个节点。\n头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。\n设置头结点的目的是为了方便对链表的操作。\n头指针 用于存放头结点地址。\n链表实例 # include \u0026lt;stdio.h\u0026gt; # include \u0026lt;malloc.h\u0026gt; # include \u0026lt;stdlib.h\u0026gt;  \/\/ 定义一个链表 struct Node {  \/\/ 定义链表中节点的数据域  int data;  \/\/ 定义链表中节点的指针域。  \/\/ 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  \/\/ 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  \/\/ 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  \/\/ 调用 CreateList() 函数来创建一个链表 ，  \/\/ 然后因为 CreateList() reture 了该链表的头指针，  \/\/ 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  \/\/ 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  \/\/ 遍历链表中的节点  \/\/ 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  \/\/ 用于存放有效节点的个数  int len;  \/\/  int i;  \/\/ 用于临时存放用户输入的节点的值  int val;  \/\/ 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(\u0026#34;分配失败，程序终止！\\n\u0026#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-\u0026gt;pNext = NULL;   printf(\u0026#34;请输入需要生成的链表节点的个数：\u0026#34;);  scanf(\u0026#34;%d\u0026#34;,\u0026amp;len);   for(i = 0; i\u0026lt;len; i\u002b\u002b)  {  printf(\u0026#34;请输入地%d个节点的值：\u0026#34;,i\u002b1);  scanf(\u0026#34;%d\u0026#34;,\u0026amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(\u0026#34;分配失败，程序终止！\\n\u0026#34;);  exit(-1);  }  pNew -\u0026gt;data = val;  pTail -\u0026gt;pNext = pNew;  pNew -\u0026gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -\u0026gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(\u0026#34;链表为空！\\n\u0026#34;);  }  else  {  struct Node * p = pHead-\u0026gt;pNext;  while(NULL !",
+	    "description" : "链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。\n链表靠节点的指针域中存放的指针地址来寻找下一个元素。\n确定一个链表，只需要知道头指针即可。\n优点 存取数据效率高。\n不需要一个太大的内存。\n缺点 查找某个位置的元素时，效率很低。\n节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。\n链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。\n首节点 链表中存放第一个有效数据的节点。\n尾节点 链表中存放最后一个有效数据的节点，尾节点的指针域为 Null。\n头结点 头结点的数据类型和首节点的类型一模一样。\n头结点是首节点前面的那个节点。\n头结点的数据域通常不存放任何有效数据，但头结点的指针域存放的是首节点的地址。\n设置头结点的目的是为了方便对链表的操作。\n任何一个链表都有一个头结点\n空链表，指的是头结点的指针域为 Null 的链表，非空链表，指的是头结点的指针域有指向的链表。\n头指针 它不是链表的节点，只是一个指针变量，用于存放头结点指针地址。\n链表实例 # include \u0026lt;stdio.h\u0026gt; # include \u0026lt;malloc.h\u0026gt; # include \u0026lt;stdlib.h\u0026gt;  \/\/ 定义一个链表 struct Node {  \/\/ 定义链表中节点的数据域  int data;  \/\/ 定义链表中节点的指针域。  \/\/ 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  \/\/ 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  \/\/ 定义头指针 pHead，用来存放链表的头结点的地址，  \/\/ 也就是我们可以通过 pHead 中存放中的地址，找到链表的头结点.",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2022",
 	    "datePublished": "2022-04-18 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2022-04-18 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E9%93%BE%E8%A1%A8\/%E9%93%BE%E8%A1%A8\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E9%93%BE%E8%A1%A8\/%E9%93%BE%E8%A1%A8\/",
 	    "keywords" : [ "C","链表","学习笔记", ]
 	}
 </script><title>C 链表</title>
@@ -47,13 +47,15 @@
 节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。
 链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。
 首节点 链表中存放第一个有效数据的节点。
-尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。
+尾节点 链表中存放最后一个有效数据的节点，尾节点的指针域为 Null。
 头结点 头结点的数据类型和首节点的类型一模一样。
 头结点是首节点前面的那个节点。
-头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
+头结点的数据域通常不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
 设置头结点的目的是为了方便对链表的操作。
-头指针 用于存放头结点地址。
-链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  // 调用 CreateList() 函数来创建一个链表 ，  // 然后因为 CreateList() reture 了该链表的头指针，  // 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  // 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  // 遍历链表中的节点  // 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  // 用于存放有效节点的个数  int len;  //  int i;  // 用于临时存放用户输入的节点的值  int val;  // 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-&amp;gt;pNext = NULL;   printf(&amp;#34;请输入需要生成的链表节点的个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);   for(i = 0; i&amp;lt;len; i&#43;&#43;)  {  printf(&amp;#34;请输入地%d个节点的值：&amp;#34;,i&#43;1);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  pNew -&amp;gt;data = val;  pTail -&amp;gt;pNext = pNew;  pNew -&amp;gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -&amp;gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(&amp;#34;链表为空！\n&amp;#34;);  }  else  {  struct Node * p = pHead-&amp;gt;pNext;  while(NULL !" />
+任何一个链表都有一个头结点
+空链表，指的是头结点的指针域为 Null 的链表，非空链表，指的是头结点的指针域有指向的链表。
+头指针 它不是链表的节点，只是一个指针变量，用于存放头结点指针地址。
+链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针 pHead，用来存放链表的头结点的地址，  // 也就是我们可以通过 pHead 中存放中的地址，找到链表的头结点." />
     <meta name="description" content="链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。
 链表靠节点的指针域中存放的指针地址来寻找下一个元素。
 确定一个链表，只需要知道头指针即可。
@@ -63,18 +65,20 @@
 节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。
 链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。
 首节点 链表中存放第一个有效数据的节点。
-尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。
+尾节点 链表中存放最后一个有效数据的节点，尾节点的指针域为 Null。
 头结点 头结点的数据类型和首节点的类型一模一样。
 头结点是首节点前面的那个节点。
-头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
+头结点的数据域通常不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
 设置头结点的目的是为了方便对链表的操作。
-头指针 用于存放头结点地址。
-链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  // 调用 CreateList() 函数来创建一个链表 ，  // 然后因为 CreateList() reture 了该链表的头指针，  // 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  // 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  // 遍历链表中的节点  // 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  // 用于存放有效节点的个数  int len;  //  int i;  // 用于临时存放用户输入的节点的值  int val;  // 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-&amp;gt;pNext = NULL;   printf(&amp;#34;请输入需要生成的链表节点的个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);   for(i = 0; i&amp;lt;len; i&#43;&#43;)  {  printf(&amp;#34;请输入地%d个节点的值：&amp;#34;,i&#43;1);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  pNew -&amp;gt;data = val;  pTail -&amp;gt;pNext = pNew;  pNew -&amp;gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -&amp;gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(&amp;#34;链表为空！\n&amp;#34;);  }  else  {  struct Node * p = pHead-&amp;gt;pNext;  while(NULL !" />
+任何一个链表都有一个头结点
+空链表，指的是头结点的指针域为 Null 的链表，非空链表，指的是头结点的指针域有指向的链表。
+头指针 它不是链表的节点，只是一个指针变量，用于存放头结点指针地址。
+链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针 pHead，用来存放链表的头结点的地址，  // 也就是我们可以通过 pHead 中存放中的地址，找到链表的头结点." />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -122,14 +126,16 @@
 <h2 id="首节点">首节点</h2>
 <p>链表中存放第一个有效数据的节点。</p>
 <h2 id="尾节点">尾节点</h2>
-<p>链表中存放最后一个有效数据的节点，尾节的指针域为 Null。</p>
+<p>链表中存放最后一个有效数据的节点，尾节点的指针域为 Null。</p>
 <h2 id="头结点">头结点</h2>
 <p>头结点的数据类型和首节点的类型一模一样。</p>
 <p>头结点是首节点前面的那个节点。</p>
-<p>头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。</p>
+<p>头结点的数据域通常不存放任何有效数据，但头结点的指针域存放的是首节点的地址。</p>
 <p>设置头结点的目的是为了方便对链表的操作。</p>
+<p>任何一个链表都有一个头结点</p>
+<p>空链表，指的是头结点的指针域为 Null 的链表，非空链表，指的是头结点的指针域有指向的链表。</p>
 <h2 id="头指针">头指针</h2>
-<p>用于存放头结点地址。</p>
+<p>它不是链表的节点，只是一个指针变量，用于存放头结点指针地址。</p>
 <h2 id="链表实例">链表实例</h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># include &lt;stdio.h&gt;
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># include &lt;malloc.h&gt;
@@ -151,20 +157,21 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 定义头指针pHead，用来存放链表头结点的地址
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">pHead</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">NULL</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 定义头指针 pHead，用来存放链表的头结点的地址，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 也就是我们可以通过 pHead 中存放中的地址，找到链表的头结点.
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 也就是，pHead 就是头结点，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// pHead -&gt; pNext 是头结点的指针域，pHead -&gt; pData  是头结点的数据域，通常不存放任何有效数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 调用 CreateList() 函数来创建一个链表 ，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 然后因为 CreateList() reture 了该链表的头指针，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因为 CreateList() reture 了该链表的头指针，
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 此行无法运行，因为未定义 CreateList() 函数
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">pHead</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">CreateList</span><span style="color:#000;font-weight:bold">();</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 遍历链表中的节点
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 此行无法运行，因为未定义 TraverseList() 函数
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">TraverseList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">CreateList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 定义一个链表
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">CreateList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 用于存放有效节点的个数
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span><span style="color:#000;font-weight:bold">;</span>
@@ -182,12 +189,14 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pTail</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">pTail</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">NULL</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入需要生成的链表节点的个数：&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输入链表个数
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入需要生成的链表节点的个数：&#34;</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">len</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">&lt;</span><span style="color:#000">len</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入地%d个节点的值：&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 输入每个节点的值
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入第%d个节点的值：&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">val</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">pNew</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">malloc</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span><span style="color:#000;font-weight:bold">));</span>
@@ -201,34 +210,53 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#000">pNew</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">NULL</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000">pTail</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pNew</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// pHead 中存放的是头结点的地址，pHead 变量也是头指针
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">bool</span> <span style="color:#000">empty_list</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 定一个 EmptyList() 来判断一个链表是否为空链表
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 函数形参为头结点的指针地址，也就是头指针
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">bool</span> <span style="color:#000">EmptyList</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">if</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pHead</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#204a87">NULL</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 判断一个链表是否为扣空链表
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 如果头指针（pHead）所指向的头结点  pNext 的指针域为 Null
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">if</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pHead</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#204a87">NULL</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">true</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 为空链表则 reture true
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">true</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">else</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">false</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 不为空链表则 reture false
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">false</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">TraverseList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 定义一个遍历链表的函数，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 函数参数是头结点的地址，也就是头指针
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">TraverseList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">empty_list</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">))</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#8f5902;font-style:italic">// 判断 pHead 链表是否是空链表
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">EmptyList</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pHead</span><span style="color:#000;font-weight:bold">))</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;链表为空！</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 是空链表则直接提示
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;链表为空！</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">else</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pHead</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">NULL</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#000">p</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 不为空链表则用 while 循环遍历链表中的节点，从首节点开始遍历
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#8f5902;font-style:italic">// 定义 struct Node * 类型的指针变量 p，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#8f5902;font-style:italic">// 将头结点的指针域（首节点的地址）赋给 p，所以，p 就是首节点
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Node</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pHead</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 判断 p 这个指针变量中所存放的节点地址是否存在，是否为 Null，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#8f5902;font-style:italic">// 存在则不为Null，则可以开始遍历当前节点，直到没有节点（p 为 Null）停止遍历。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">while</span><span style="color:#000;font-weight:bold">(</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#204a87">NULL</span> <span style="color:#000;font-weight:bold">)</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;链表中有：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">data</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// 输出当前节点中数据域中的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;链表中有：%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">data</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// 此时，p 中所存放的地址所指向的节点，我们已经遍历了，
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#8f5902;font-style:italic">// 在这之后，我们需要遍历 p 这个节点的指针域所指向的下一个节点，也就是第 N 个节点。
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">p</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">pNext</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
@@ -277,11 +305,12 @@
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

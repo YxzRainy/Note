@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GO on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/go/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/go/</link>
     <description>Recent content in GO on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo 安装</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/hugo/%E5%AE%89%E8%A3%85-hugo-/</guid>
       <description>Hugo 安装 源码编译安装，首先安装好依赖的工具
  Git Mercurial Go 1.3+ (Go 1.4+ on Windows)  我的环境是 windows，选择的安装方法是Chocolatey (Windows)，步骤如下：
  用管理员身份打开 windows 中的Windows PowerShell（命令提示符）。（windows 中搜索 powershell，右键“用管理员身份运行”） 复制下方代码，然后执行  Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))  输入 choco，查看是否安装成功。 复制下方代码，然后执行  choco install hugo -confirm </description>

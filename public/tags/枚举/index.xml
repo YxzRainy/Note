@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>枚举 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/%E6%9E%9A%E4%B8%BE/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%9E%9A%E4%B8%BE/</link>
     <description>Recent content in 枚举 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 17 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E6%9E%9A%E4%B8%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%9E%9A%E4%B8%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C 枚举</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%9E%9A%E4%B8%BE/</guid>
       <description>枚举 将一个事物所有可能的取值给一一列举出来。
 优点 使代码更加安全。
 使代码更加直观。

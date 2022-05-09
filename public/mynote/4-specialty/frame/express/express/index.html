@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/express/express/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/frame/express/express/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Express",
+	    "headline" : "Express",
+	    "description" : "Express 基于 Node.js 的 Web 开发框架，可以快速地搭建一个完整功能的网站。\n安装 新建一个工作区，输入npm install express --save即可。\n基本使用 新建一个名为Express.js的 js 文件，输入代码：\n \/\/ 引入 express const { json } = require(\u0026#39;body-parser\u0026#39;) const express = require(\u0026#39;express\u0026#39;)  \/\/ 创建应用对象 const app = express()  \/\/ 设置端口号 const port = 8000   \/\/ 创建路由规则，允许所有方 式的请求 app.all(\u0026#39;\/json-server\u0026#39;, (request, response) =\u0026gt; {  \/\/ 设置响应头，允许跨域  response.setHeader(\u0026#39;Access-Control-Allow-Origin\u0026#39;, \u0026#39;*\u0026#39;)  \/\/ 允许接收所有类型的响应头  response.setHeader(\u0026#39;Access-Control-Allow-Headers\u0026#39;, \u0026#39;*\u0026#39;)  \/\/ 响应一个数据  const data = {  name: \u0026#39;Rainy\u0026#39;,  age: \u0026#39;18\u0026#39;  }  \/\/ 将对象转换为字符串类型的数据  let str = JSON.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-30 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-30 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/frame\/express\/express\/",
+	    "keywords" : [ "NPM","学习笔记", ]
+	}
+</script><title>Express</title>
+    <meta property="og:title" content="Express" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Express 基于 Node.js 的 Web 开发框架，可以快速地搭建一个完整功能的网站。
+安装 新建一个工作区，输入npm install express --save即可。
+基本使用 新建一个名为Express.js的 js 文件，输入代码：
+ // 引入 express const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  // 创建应用对象 const app = express()  // 设置端口号 const port = 8000   // 创建路由规则，允许所有方 式的请求 app.all(&amp;#39;/json-server&amp;#39;, (request, response) =&amp;gt; {  // 设置响应头，允许跨域  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  // 允许接收所有类型的响应头  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 响应一个数据  const data = {  name: &amp;#39;Rainy&amp;#39;,  age: &amp;#39;18&amp;#39;  }  // 将对象转换为字符串类型的数据  let str = JSON." />
+    <meta name="description" content="Express 基于 Node.js 的 Web 开发框架，可以快速地搭建一个完整功能的网站。
+安装 新建一个工作区，输入npm install express --save即可。
+基本使用 新建一个名为Express.js的 js 文件，输入代码：
+ // 引入 express const { json } = require(&amp;#39;body-parser&amp;#39;) const express = require(&amp;#39;express&amp;#39;)  // 创建应用对象 const app = express()  // 设置端口号 const port = 8000   // 创建路由规则，允许所有方 式的请求 app.all(&amp;#39;/json-server&amp;#39;, (request, response) =&amp;gt; {  // 设置响应头，允许跨域  response.setHeader(&amp;#39;Access-Control-Allow-Origin&amp;#39;, &amp;#39;*&amp;#39;)  // 允许接收所有类型的响应头  response.setHeader(&amp;#39;Access-Control-Allow-Headers&amp;#39;, &amp;#39;*&amp;#39;)  // 响应一个数据  const data = {  name: &amp;#39;Rainy&amp;#39;,  age: &amp;#39;18&amp;#39;  }  // 将对象转换为字符串类型的数据  let str = JSON." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Express</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-30 06:00:00 UTC">
+                        2022-04-30
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="express">Express</h1>
+<p>基于 Node.js 的 Web 开发框架，可以快速地搭建一个完整功能的网站。</p>
+<h2 id="安装">安装</h2>
+<p>新建一个工作区，输入<code>npm install express --save</code>即可。</p>
+<h2 id="基本使用">基本使用</h2>
+<p>新建一个名为<strong>Express.js</strong>的 js 文件，输入代码：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 引入 express
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">json</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">require</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body-parser&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">express</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">require</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;express&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 创建应用对象
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">app</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">express</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 设置端口号
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">port</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">8000</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 创建路由规则，允许所有方 式的请求
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">app</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">all</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;/json-server&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">request</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">response</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 设置响应头，允许跨域
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setHeader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;*&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 允许接收所有类型的响应头
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setHeader</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;Access-Control-Allow-Headers&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;*&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 响应一个数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">name</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;Rainy&#39;</span><span style="color:#000;font-weight:bold">,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#000">age</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#39;18&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 将对象转换为字符串类型的数据
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">str</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">JSON</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">stringify</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 设置响应体，响应体只能是一个字符串
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">response</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">send</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">str</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 监听端口
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">app</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">listen</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">port</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">`服务已经启动`</span><span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">})</span>
+</span></span></code></pre></div><p>完成后在当前目录下打开终端，输入<code>node Express.js</code>命令启动服务器。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>PS E:<span style="color:#4e9a06">\C</span>ode<span style="color:#4e9a06">\W</span>eb<span style="color:#4e9a06">\T</span>est&gt; node Express.js
+</span></span><span style="display:flex;"><span>服务已经启动
+</span></span></code></pre></div><p>打开浏览器，输入 localhost:8000 即可出现<code>Hello World!</code></p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/npm/">
+                    NPM
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#基本使用">基本使用</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

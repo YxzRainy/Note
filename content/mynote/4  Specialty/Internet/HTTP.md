@@ -41,9 +41,8 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-
 Cookie: Hm_lvt_a2e2e465098d883036e3cfad66f7203d=1633793709; Hm_lvt_bf329994f1e3ebf56f3712e11a46cb4a=1633794836; Hm_lvt_8516e418a4e3ac3474b3c13bdb4687e7=1638612924; _uab_collina=164345858532791240726438
 Host: 127.0.0.1:5500
+Content-Type # 设置请求体n类型
 ```
-
-
 
 ### 请求空行
 

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/sql-99/%E5%86%85%E9%93%BE%E6%8E%A5/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/sql-99/%E5%86%85%E9%93%BE%E6%8E%A5/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 内链接",
+	    "headline" : "MySQL 内链接",
+	    "description" : "内连接 该语法比 SQL 92 的链接查询语法的可读性要高。\nSELECT 查询列表\rFROM 表一 别名 链接类型\rJOIN 表二 别名\r# SQL 92 用 WHERE，SQL99 用 ON\rON 链接条件\rWHERE ",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-28 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-28 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/dql\/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2\/sql-99\/%E5%86%85%E9%93%BE%E6%8E%A5\/",
+	    "keywords" : [ "SQL","DQL","MySQL","链接查询","学习笔记", ]
+	}
+</script><title>MySQL 内链接</title>
+    <meta property="og:title" content="MySQL 内链接" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="内连接 该语法比 SQL 92 的链接查询语法的可读性要高。
+SELECT 查询列表FROM 表一 别名 链接类型JOIN 表二 别名# SQL 92 用 WHERE，SQL99 用 ONON 链接条件WHERE " />
+    <meta name="description" content="内连接 该语法比 SQL 92 的链接查询语法的可读性要高。
+SELECT 查询列表FROM 表一 别名 链接类型JOIN 表二 别名# SQL 92 用 WHERE，SQL99 用 ONON 链接条件WHERE " />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 内链接</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-28 06:00:00 UTC">
+                        2022-04-28
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="内连接">内连接</h1>
+<p>该语法比 SQL 92 的链接查询语法的可读性要高。</p>
+<pre tabindex="0"><code>SELECT 查询列表
+FROM 表一 别名 链接类型
+JOIN 表二 别名
+# SQL 92 用 WHERE，SQL99 用 ON
+ON 链接条件
+WHERE
+</code></pre>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/">
+                    链接查询
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents"></nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

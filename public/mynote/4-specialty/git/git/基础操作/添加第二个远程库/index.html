@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/git/git/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "Git 添加第二个远程库",
+	    "headline" : "Git 添加第二个远程库",
+	    "description" : "添加第二个远程库 将 GitHub 上的远程库与一个本地库关联起来。\n关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。\ngit remote add origin git@github.com:YxzRainy\/YxzRainy.github.io.git # 远程库链接 添加文件并提交 git add . git commit -m \u0026#34;提交信息\u0026#34; 推送分支 git push origin master 将本地库master分支上的内容推送到远程库master上去.\n推送成功后，可以立刻在我们的 GitHub 仓库种中看到远程库的内容已经和本地的一模一样了。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2021",
+	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/git\/git\/%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C\/%E6%B7%BB%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AA%E8%BF%9C%E7%A8%8B%E5%BA%93\/",
+	    "keywords" : [ "Git","Github","学习笔记", ]
+	}
+</script><title>Git 添加第二个远程库</title>
+    <meta property="og:title" content="Git 添加第二个远程库" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="添加第二个远程库 将 GitHub 上的远程库与一个本地库关联起来。
+关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
+git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git # 远程库链接 添加文件并提交 git add . git commit -m &amp;#34;提交信息&amp;#34; 推送分支 git push origin master 将本地库master分支上的内容推送到远程库master上去.
+推送成功后，可以立刻在我们的 GitHub 仓库种中看到远程库的内容已经和本地的一模一样了。" />
+    <meta name="description" content="添加第二个远程库 将 GitHub 上的远程库与一个本地库关联起来。
+关联远程库 我们使用git remote add origin命令把本地库与一个远程库关联起来。
+git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git # 远程库链接 添加文件并提交 git add . git commit -m &amp;#34;提交信息&amp;#34; 推送分支 git push origin master 将本地库master分支上的内容推送到远程库master上去.
+推送成功后，可以立刻在我们的 GitHub 仓库种中看到远程库的内容已经和本地的一模一样了。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">Git 添加第二个远程库</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
+                        2021-10-21
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="添加第二个远程库">添加第二个远程库</h1>
+<p>将 GitHub 上的远程库与一个本地库关联起来。</p>
+<h2 id="关联远程库">关联远程库</h2>
+<p>我们使用<code>git remote add origin</code>命令把本地库与一个远程库关联起来。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add origin git@github.com:YxzRainy/YxzRainy.github.io.git <span style="color:#8f5902;font-style:italic"># 远程库链接</span>
+</span></span></code></pre></div><h2 id="添加文件并提交">添加文件并提交</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#4e9a06">&#34;提交信息&#34;</span>
+</span></span></code></pre></div><h2 id="推送分支">推送分支</h2>
+<pre tabindex="0"><code>git push origin master
+</code></pre><p>将本地库<strong>master</strong>分支上的内容推送到远程库<strong>master</strong>上去.</p>
+<p>推送成功后，可以立刻在我们的 GitHub 仓库种中看到远程库的内容已经和本地的一模一样了。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/git/">
+                    Git
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/github/">
+                    Github
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#关联远程库">关联远程库</a></li>
+    <li><a href="#添加文件并提交">添加文件并提交</a></li>
+    <li><a href="#推送分支">推送分支</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

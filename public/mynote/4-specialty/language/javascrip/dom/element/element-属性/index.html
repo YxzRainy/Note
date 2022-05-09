@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E5%B1%9E%E6%80%A7/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/element/element-%E5%B1%9E%E6%80%A7/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript Element 属性",
+	    "headline" : "JavaScript Element 属性",
+	    "description" : "Element 属性 innerHTML 设置或返回指定元素的内容。返回的内容包含这个元素所包含的子元素以及文本信息。\n设置的内容可以直接是 html 代码。\n设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。\n可以在元素内容的后面追加新内容。\nvar body = document.getElementsByTagName(\u0026#39;body\u0026#39;)[0]; var div = document.getElementsByTagName(\u0026#39;div\u0026#39;)[0]; \/\/ 设置内容 div.innerHTML = \u0026#39;123\u0026#39;; \/\/ 追加内容 div.innerHTML \u002b= \u0026#39;456\u0026#39;; \/\/ 写入 html 元素 div.innerHTML \u002b= \u0026#39;\u0026lt;span\u0026gt;写入的元素\u0026lt;\/span\u0026gt;\u0026#39;; childElementCount 返回指定元素节点的子元素节点的个数，不包含子元素节点的子元素节点。\nfirstElementChild 返回指定元素节点的第一个元素节点。\nlastElementChild 返回指定元素节点的最后一个元素节点。\nchildren 返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/element\/element-%E5%B1%9E%E6%80%A7\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript Element 属性</title>
+    <meta property="og:title" content="JavaScript Element 属性" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Element 属性 innerHTML 设置或返回指定元素的内容。返回的内容包含这个元素所包含的子元素以及文本信息。
+设置的内容可以直接是 html 代码。
+设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+可以在元素内容的后面追加新内容。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerHTML = &amp;#39;123&amp;#39;; // 追加内容 div.innerHTML &#43;= &amp;#39;456&amp;#39;; // 写入 html 元素 div.innerHTML &#43;= &amp;#39;&amp;lt;span&amp;gt;写入的元素&amp;lt;/span&amp;gt;&amp;#39;; childElementCount 返回指定元素节点的子元素节点的个数，不包含子元素节点的子元素节点。
+firstElementChild 返回指定元素节点的第一个元素节点。
+lastElementChild 返回指定元素节点的最后一个元素节点。
+children 返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。" />
+    <meta name="description" content="Element 属性 innerHTML 设置或返回指定元素的内容。返回的内容包含这个元素所包含的子元素以及文本信息。
+设置的内容可以直接是 html 代码。
+设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
+可以在元素内容的后面追加新内容。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0]; // 设置内容 div.innerHTML = &amp;#39;123&amp;#39;; // 追加内容 div.innerHTML &#43;= &amp;#39;456&amp;#39;; // 写入 html 元素 div.innerHTML &#43;= &amp;#39;&amp;lt;span&amp;gt;写入的元素&amp;lt;/span&amp;gt;&amp;#39;; childElementCount 返回指定元素节点的子元素节点的个数，不包含子元素节点的子元素节点。
+firstElementChild 返回指定元素节点的第一个元素节点。
+lastElementChild 返回指定元素节点的最后一个元素节点。
+children 返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript Element 属性</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-02 06:00:00 UTC">
+                        2022-05-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="element-属性">Element 属性</h1>
+<h2 id="innerhtml">innerHTML</h2>
+<p>设置或返回指定元素的内容。返回的内容包含这个元素所包含的子元素以及文本信息。</p>
+<p>设置的内容可以直接是 html 代码。</p>
+<p>设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。</p>
+<p>可以在元素内容的后面追加新内容。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 设置内容
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">innerHTML</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;123&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 追加内容
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">innerHTML</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#4e9a06">&#39;456&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 写入 html 元素
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">innerHTML</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#4e9a06">&#39;&lt;span&gt;写入的元素&lt;/span&gt;&#39;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span></code></pre></div><h2 id="childelementcount">childElementCount</h2>
+<p>返回指定元素节点的子元素节点的个数，不包含子元素节点的子元素节点。</p>
+<h2 id="firstelementchild">firstElementChild</h2>
+<p>返回指定元素节点的第一个元素节点。</p>
+<h2 id="lastelementchild">lastElementChild</h2>
+<p>返回指定元素节点的最后一个元素节点。</p>
+<h2 id="children">children</h2>
+<p>返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#innerhtml">innerHTML</a></li>
+    <li><a href="#childelementcount">childElementCount</a></li>
+    <li><a href="#firstelementchild">firstElementChild</a></li>
+    <li><a href="#lastelementchild">lastElementChild</a></li>
+    <li><a href="#children">children</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

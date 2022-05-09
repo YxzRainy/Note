@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/dom/%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "JavaScript 操作节点",
+	    "headline" : "JavaScript 操作节点",
+	    "description" : "操作节点 增加节点 createElement() 创建一个元素节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。\nvar div = document.createElement(\u0026#39;div\u0026#39;) createTextNod() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。\nvar text = document.createTextNode(\u0026#39;我是文本节点\u0026#39;) createComment() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。\nvar comment = document.createComment(\u0026#39;我是一个注释\u0026#39;) createDocumentFragment(\u0026rsquo;\u0027) 创建了一虚拟的节点对象，也可以说是创建一个文档碎片\nvar fragment = document.createDocumentFragment(\u0026#39;\u0026#39;) 插入节点 ele.appendChild(subEle) 在 ele 节点的最后一个子节点之后添加 subEle 节点。\n如果 subEle 节点已经在文档中存在，那么会将 subEle 节点移动到 ele 节点中。\nvar body = document.getElementsByTagName(\u0026#39;body\u0026#39;)[0]; var div = document.createElement(\u0026#39;div\u0026#39;); var text = document.createTextNode(\u0026#39;插入的文本\u0026#39;); body.appendChild(div); div.appendChild(text); ele.insertBefore(subEleOne,subEleTwo) 在 ele 节点的子节点 subEleTwo 之前插入一个subEleOne 节点。\nvar body = document.",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-02 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/dom\/%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9\/",
+	    "keywords" : [ "前端","学习笔记","JavaScript", ]
+	}
+</script><title>JavaScript 操作节点</title>
+    <meta property="og:title" content="JavaScript 操作节点" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="操作节点 增加节点 createElement() 创建一个元素节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var div = document.createElement(&amp;#39;div&amp;#39;) createTextNod() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var text = document.createTextNode(&amp;#39;我是文本节点&amp;#39;) createComment() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var comment = document.createComment(&amp;#39;我是一个注释&amp;#39;) createDocumentFragment(&amp;rsquo;&#39;) 创建了一虚拟的节点对象，也可以说是创建一个文档碎片
+var fragment = document.createDocumentFragment(&amp;#39;&amp;#39;) 插入节点 ele.appendChild(subEle) 在 ele 节点的最后一个子节点之后添加 subEle 节点。
+如果 subEle 节点已经在文档中存在，那么会将 subEle 节点移动到 ele 节点中。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.createElement(&amp;#39;div&amp;#39;); var text = document.createTextNode(&amp;#39;插入的文本&amp;#39;); body.appendChild(div); div.appendChild(text); ele.insertBefore(subEleOne,subEleTwo) 在 ele 节点的子节点 subEleTwo 之前插入一个subEleOne 节点。
+var body = document." />
+    <meta name="description" content="操作节点 增加节点 createElement() 创建一个元素节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var div = document.createElement(&amp;#39;div&amp;#39;) createTextNod() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var text = document.createTextNode(&amp;#39;我是文本节点&amp;#39;) createComment() 创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。
+var comment = document.createComment(&amp;#39;我是一个注释&amp;#39;) createDocumentFragment(&amp;rsquo;&#39;) 创建了一虚拟的节点对象，也可以说是创建一个文档碎片
+var fragment = document.createDocumentFragment(&amp;#39;&amp;#39;) 插入节点 ele.appendChild(subEle) 在 ele 节点的最后一个子节点之后添加 subEle 节点。
+如果 subEle 节点已经在文档中存在，那么会将 subEle 节点移动到 ele 节点中。
+var body = document.getElementsByTagName(&amp;#39;body&amp;#39;)[0]; var div = document.createElement(&amp;#39;div&amp;#39;); var text = document.createTextNode(&amp;#39;插入的文本&amp;#39;); body.appendChild(div); div.appendChild(text); ele.insertBefore(subEleOne,subEleTwo) 在 ele 节点的子节点 subEleTwo 之前插入一个subEleOne 节点。
+var body = document." />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">JavaScript 操作节点</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-02 06:00:00 UTC">
+                        2022-05-02
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="操作节点">操作节点</h1>
+<h2 id="增加节点">增加节点</h2>
+<h3 id="createelement">createElement()</h3>
+<p>创建一个元素节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h3 id="createtextnod">createTextNod()</h3>
+<p>创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">text</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createTextNode</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;我是文本节点&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h3 id="createcomment">createComment()</h3>
+<p>创建一个文本节点，但还没有插入到文档中，需要用 appendChild() 将元素插入到文档中。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">comment</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createComment</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;我是一个注释&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h3 id="createdocumentfragment">createDocumentFragment(&rsquo;')</h3>
+<p>创建了一虚拟的节点对象，也可以说是创建一个文档碎片</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">fragment</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createDocumentFragment</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;&#39;</span><span style="color:#000;font-weight:bold">)</span>
+</span></span></code></pre></div><h2 id="插入节点">插入节点</h2>
+<h3 id="eleappendchildsubele">ele.appendChild(subEle)</h3>
+<p>在 ele 节点的最后一个子节点之后添加 subEle 节点。</p>
+<p>如果 subEle 节点已经在文档中存在，那么会将 subEle 节点移动到 ele 节点中。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JS" data-lang="JS"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">text</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createTextNode</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;插入的文本&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">appendChild</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">appendChild</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">text</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="eleinsertbeforesubeleonesubeletwo">ele.insertBefore(subEleOne,subEleTwo)</h3>
+<p>在 ele 节点的子节点 subEleTwo 之前插入一个subEleOne 节点。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">span</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;span&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 将 span 插入到 body 的末尾
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">appendChild</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">span</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 在 body 的子元素 span 之前插入 div 元素
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">insertBefore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">span</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="删除节点">删除节点</h2>
+<h3 id="eleremovechildsubele">ele.removeChild(subEle)</h3>
+<p>将 ele 节点的子节点 subEle 删除并返回，后续如果需要，还可以使用整个子节点。</p>
+<p>如果删除成功，可返回被删除的节点，如果删除失败，则返回 NULL。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">re</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">removeChild</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">div</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;被删除的节点：&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">re</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="eleremove">ele.remove()</h3>
+<p>将 ele 节点彻底删除，并不会返回。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">re</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">div</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;被删除的节点：&#39;</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">re</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="替换节点">替换节点</h2>
+<h3 id="elereplacechildsubeleone-subeletwo">ele.replaceChild(subEleOne, subEleTwo)</h3>
+<p>将 ele 的子节点 subEleOne 替换为新节点 subEleTwo。</p>
+<p>被替换的节点会被返回，并没有被彻底删除。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">body</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;body&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">div</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getElementsByTagName</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;div&#39;</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">span</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">document</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">createElement</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;span&#39;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">rep</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">body</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">replaceChild</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">span</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">div</span><span style="color:#000;font-weight:bold">);</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 返回被替换的节点
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">rep</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div>
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/javascript/">
+                    JavaScript
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#增加节点">增加节点</a>
+      <ul>
+        <li><a href="#createelement">createElement()</a></li>
+        <li><a href="#createtextnod">createTextNod()</a></li>
+        <li><a href="#createcomment">createComment()</a></li>
+        <li><a href="#createdocumentfragment">createDocumentFragment(&rsquo;')</a></li>
+      </ul>
+    </li>
+    <li><a href="#插入节点">插入节点</a>
+      <ul>
+        <li><a href="#eleappendchildsubele">ele.appendChild(subEle)</a></li>
+        <li><a href="#eleinsertbeforesubeleonesubeletwo">ele.insertBefore(subEleOne,subEleTwo)</a></li>
+      </ul>
+    </li>
+    <li><a href="#删除节点">删除节点</a>
+      <ul>
+        <li><a href="#eleremovechildsubele">ele.removeChild(subEle)</a></li>
+        <li><a href="#eleremove">ele.remove()</a></li>
+      </ul>
+    </li>
+    <li><a href="#替换节点">替换节点</a>
+      <ul>
+        <li><a href="#elereplacechildsubeleone-subeletwo">ele.replaceChild(subEleOne, subEleTwo)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

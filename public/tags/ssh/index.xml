@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSH on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/ssh/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/ssh/</link>
     <description>Recent content in SSH on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SHH 密钥登录</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
       <description>SHH 密钥登录 用 xshell 生成密钥 新建用户密钥生成向导
 输入密钥长度，比如 2024，下一步
 输入密钥名称、密码，下一步
@@ -27,10 +27,10 @@ AuthorizedKeysFile .ssh/authorized_keysPasswordAuthentication no</description>
     
     <item>
       <title>WinSCP SSH 密钥登录</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
       <description>WinSCP SSH 密钥登录 WinSCP -&amp;gt; 高级 -&amp;gt; SSH -&amp;gt; 验证 -&amp;gt; 密钥文件</description>
     </item>
     

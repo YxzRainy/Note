@@ -1,4 +1,4 @@
-baseURL = "http://yxzi.xyz/Sub/Blog"
+baseURL = "https://yxzi.xyz/Sub/Blog"
 languageCode = "zh-cn"
 title = "Rainy · Blog"
 theme = "Rainy"
@@ -26,7 +26,7 @@ paginate = 12
 
 [params]
   mainSections = ["mynote"]
-  favicon = 'http://yxzi.xyz/Logo.ico'
+  favicon = 'https://yxzi.xyz/Logo.ico'
 
 
 

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/doctype/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/html/doctype/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "HTML DOCTYPE",
+	    "headline" : "HTML DOCTYPE",
+	    "description" : "DOCTYPE 用来告知浏览器该使用了哪种渲染方式来渲染当前文档。\n文档首行是\u0026lt;!DOCTYPE html\u0026gt;，则浏览器渲染模式为标准模式；首行不是或没有\u0026lt;!DOCTYPE html\u0026gt;则浏览器的渲染模式为怪异模式。\n目前浏览器的渲染引擎使用三种模式：怪异模式、接近标准模式、以及标准模式。\n历史问题 在很久以前的网络上，页面通常有两种版本：为网景的 Navigator 准备的版本，以及为微软的 Internet Explorer 准备的版本。\n当 W3C 创立网络标准后，为了不破坏当时既有的网站，浏览器不能直接弃用这些标准。因此，浏览器采用了两种模式，用以把能符合新规范的网站和老旧网站区分开。\n标准模式 在标准模式下，行为即由 HTML 与 CSS 的规范描述的行为。\n在接近标准模式下，只有少数的怪异行为被实现。\n怪异模式 在怪异模式下，文档会兼容之前的网页。也叫混杂模式。\ncompatMode 返回当前浏览器采用的渲染方式。\nBackCompat 标准兼容模式关闭，当document.compatMode等于BackCompat时，浏览器客户区宽度为 document.body.clientWidth;\nCSS1Compat 标准兼容模式开启,当document.compatMode等于CSS1Compat时浏览器客户区宽度为document.documentElement.clientWidth;",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-05-05 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/html\/doctype\/",
+	    "keywords" : [ "前端","HTML","学习笔记", ]
+	}
+</script><title>HTML DOCTYPE</title>
+    <meta property="og:title" content="HTML DOCTYPE" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="DOCTYPE 用来告知浏览器该使用了哪种渲染方式来渲染当前文档。
+文档首行是&amp;lt;!DOCTYPE html&amp;gt;，则浏览器渲染模式为标准模式；首行不是或没有&amp;lt;!DOCTYPE html&amp;gt;则浏览器的渲染模式为怪异模式。
+目前浏览器的渲染引擎使用三种模式：怪异模式、接近标准模式、以及标准模式。
+历史问题 在很久以前的网络上，页面通常有两种版本：为网景的 Navigator 准备的版本，以及为微软的 Internet Explorer 准备的版本。
+当 W3C 创立网络标准后，为了不破坏当时既有的网站，浏览器不能直接弃用这些标准。因此，浏览器采用了两种模式，用以把能符合新规范的网站和老旧网站区分开。
+标准模式 在标准模式下，行为即由 HTML 与 CSS 的规范描述的行为。
+在接近标准模式下，只有少数的怪异行为被实现。
+怪异模式 在怪异模式下，文档会兼容之前的网页。也叫混杂模式。
+compatMode 返回当前浏览器采用的渲染方式。
+BackCompat 标准兼容模式关闭，当document.compatMode等于BackCompat时，浏览器客户区宽度为 document.body.clientWidth;
+CSS1Compat 标准兼容模式开启,当document.compatMode等于CSS1Compat时浏览器客户区宽度为document.documentElement.clientWidth;" />
+    <meta name="description" content="DOCTYPE 用来告知浏览器该使用了哪种渲染方式来渲染当前文档。
+文档首行是&amp;lt;!DOCTYPE html&amp;gt;，则浏览器渲染模式为标准模式；首行不是或没有&amp;lt;!DOCTYPE html&amp;gt;则浏览器的渲染模式为怪异模式。
+目前浏览器的渲染引擎使用三种模式：怪异模式、接近标准模式、以及标准模式。
+历史问题 在很久以前的网络上，页面通常有两种版本：为网景的 Navigator 准备的版本，以及为微软的 Internet Explorer 准备的版本。
+当 W3C 创立网络标准后，为了不破坏当时既有的网站，浏览器不能直接弃用这些标准。因此，浏览器采用了两种模式，用以把能符合新规范的网站和老旧网站区分开。
+标准模式 在标准模式下，行为即由 HTML 与 CSS 的规范描述的行为。
+在接近标准模式下，只有少数的怪异行为被实现。
+怪异模式 在怪异模式下，文档会兼容之前的网页。也叫混杂模式。
+compatMode 返回当前浏览器采用的渲染方式。
+BackCompat 标准兼容模式关闭，当document.compatMode等于BackCompat时，浏览器客户区宽度为 document.body.clientWidth;
+CSS1Compat 标准兼容模式开启,当document.compatMode等于CSS1Compat时浏览器客户区宽度为document.documentElement.clientWidth;" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">HTML DOCTYPE</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-05-05 06:00:00 UTC">
+                        2022-05-05
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="doctype">DOCTYPE</h1>
+<p>用来告知浏览器该使用了哪种渲染方式来渲染当前文档。</p>
+<p>文档首行是<code>&lt;!DOCTYPE html&gt;</code>，则浏览器渲染模式为标准模式；首行不是或没有<code>&lt;!DOCTYPE html&gt;</code>则浏览器的渲染模式为怪异模式。</p>
+<p>目前浏览器的渲染引擎使用三种模式：<strong>怪异模式、接近标准模式、以及标准模式。</strong></p>
+<h2 id="历史问题">历史问题</h2>
+<p>在很久以前的网络上，页面通常有两种版本：为网景的 Navigator 准备的版本，以及为微软的 Internet Explorer 准备的版本。</p>
+<p>当 W3C 创立网络标准后，为了不破坏当时既有的网站，浏览器不能直接弃用这些标准。因此，浏览器采用了两种模式，用以把能符合新规范的网站和老旧网站区分开。</p>
+<h2 id="标准模式">标准模式</h2>
+<p>在标准模式下，行为即由 HTML 与 CSS 的规范描述的行为。</p>
+<p>在接近标准模式下，只有少数的怪异行为被实现。</p>
+<h2 id="怪异模式">怪异模式</h2>
+<p>在怪异模式下，文档会兼容之前的网页。也叫混杂模式。</p>
+<h2 id="compatmode">compatMode</h2>
+<p>返回当前浏览器采用的渲染方式。</p>
+<h3 id="backcompat">BackCompat</h3>
+<p>标准兼容模式关闭，当document.compatMode等于BackCompat时，浏览器客户区宽度为 document.body.clientWidth;</p>
+<h3 id="css1compat">CSS1Compat</h3>
+<p>标准兼容模式开启,当document.compatMode等于CSS1Compat时浏览器客户区宽度为document.documentElement.clientWidth;</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
+                    前端
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/html/">
+                    HTML
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#历史问题">历史问题</a></li>
+    <li><a href="#标准模式">标准模式</a></li>
+    <li><a href="#怪异模式">怪异模式</a></li>
+    <li><a href="#compatmode">compatMode</a>
+      <ul>
+        <li><a href="#backcompat">BackCompat</a></li>
+        <li><a href="#css1compat">CSS1Compat</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

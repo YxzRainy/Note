@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>链表 on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/</link>
     <description>Recent content in 链表 on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C 链表</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
       <description>链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。
 链表靠节点的指针域中存放的指针地址来寻找下一个元素。
 确定一个链表，只需要知道头指针即可。
@@ -22,13 +22,15 @@
 节点 链表由一个个的节点所组成，每个节点左侧是数据域，右侧是指针域，数据域用来存放当前节点的有效数据，指针域用来存放下一个节点的指针地址。
 链表中一个个的元素，被称之为节点，每个节点都有数据域和指针域。
 首节点 链表中存放第一个有效数据的节点。
-尾节点 链表中存放最后一个有效数据的节点，尾节的指针域为 Null。
+尾节点 链表中存放最后一个有效数据的节点，尾节点的指针域为 Null。
 头结点 头结点的数据类型和首节点的类型一模一样。
 头结点是首节点前面的那个节点。
-头结点的数据域并不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
+头结点的数据域通常不存放任何有效数据，但头结点的指针域存放的是首节点的地址。
 设置头结点的目的是为了方便对链表的操作。
-头指针 用于存放头结点地址。
-链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针pHead，用来存放链表头结点的地址  struct Node *pHead = NULL;  // 调用 CreateList() 函数来创建一个链表 ，  // 然后因为 CreateList() reture 了该链表的头指针，  // 所以最终会将这个链表的头指针（头结点的地址）保存到 pHead 中。  // 此行无法运行，因为未定义 CreateList() 函数  pHead = CreateList();  // 遍历链表中的节点  // 此行无法运行，因为未定义 TraverseList() 函数  TraverseList(pHead);  return 0; }  struct Node *CreateList(void) {  // 用于存放有效节点的个数  int len;  //  int i;  // 用于临时存放用户输入的节点的值  int val;  // 动态分配了一个不存放有效数据的头结点  struct Node * pHead = (struct Node * )malloc(sizeof(struct Node));  if(NULL == pHead)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  struct Node * pTail = pHead;  pTail-&amp;gt;pNext = NULL;   printf(&amp;#34;请输入需要生成的链表节点的个数：&amp;#34;);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;len);   for(i = 0; i&amp;lt;len; i++)  {  printf(&amp;#34;请输入地%d个节点的值：&amp;#34;,i+1);  scanf(&amp;#34;%d&amp;#34;,&amp;amp;val);   struct Node *pNew = (struct Node *)malloc(sizeof(struct Node));  if(NULL == pNew)  {  printf(&amp;#34;分配失败，程序终止！\n&amp;#34;);  exit(-1);  }  pNew -&amp;gt;data = val;  pTail -&amp;gt;pNext = pNew;  pNew -&amp;gt;pNext = NULL;  pTail = pNew;  }  return pHead; };  bool empty_list (struct Node * pHead) {  if(pHead -&amp;gt;pNext == NULL)  {  return true;  }  else  {  return false;  } }  void TraverseList(struct Node * pHead) {  if (empty_list(pHead))  {  printf(&amp;#34;链表为空！\n&amp;#34;);  }  else  {  struct Node * p = pHead-&amp;gt;pNext;  while(NULL !</description>
+任何一个链表都有一个头结点
+空链表，指的是头结点的指针域为 Null 的链表，非空链表，指的是头结点的指针域有指向的链表。
+头指针 它不是链表的节点，只是一个指针变量，用于存放头结点指针地址。
+链表实例 # include &amp;lt;stdio.h&amp;gt; # include &amp;lt;malloc.h&amp;gt; # include &amp;lt;stdlib.h&amp;gt;  // 定义一个链表 struct Node {  // 定义链表中节点的数据域  int data;  // 定义链表中节点的指针域。  // 指针域是一个 struct Node *类型的 pNext，其中 pNext 中存放的是 struct Node 变量的地址  struct Node * pNext; };  // 函数声明 struct Node * CreateList(void); void TraverseList(struct Node *);  int main(void) {  // 定义头指针 pHead，用来存放链表的头结点的地址，  // 也就是我们可以通过 pHead 中存放中的地址，找到链表的头结点.</description>
     </item>
     
   </channel>

@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vs Code on Rainy · Blog</title>
-    <link>http://yxzi.xyz/Sub/Blog/tags/vs-code/</link>
+    <link>https://yxzi.xyz/Sub/Blog/tags/vs-code/</link>
     <description>Recent content in Vs Code on Rainy · Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="http://yxzi.xyz/Sub/Blog/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/vs-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vs Code 使用 Git</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E4%BD%BF%E7%94%A8-git/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E4%BD%BF%E7%94%A8-git/</guid>
-      <description>Vs Code 使用 Git 注意本地密钥是否和远程的密钥一样。</description>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E4%BD%BF%E7%94%A8-git/</guid>
+      <description>使用 Git 注意本地密钥是否和远程的密钥一样。</description>
     </item>
     
     <item>
-      <title>Vs Code 插件</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</link>
+      <title>Vs Code 扩展</title>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E6%89%A9%E5%B1%95/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/software/vs-code/vs-code-%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/softwareuse/vs-code/%E6%89%A9%E5%B1%95/</guid>
       <description>Vs Code 插件 Bracket Pair Colorizer 给匹配的括号着色
 Path Intellisense 自动完成文件名
 Material Icon Theme 好看的文件图标
@@ -33,15 +33,16 @@ HTML Snippets 非常实用的 HTML 代码片段以及提示
 Atuo Rename Tag 修改 html 标签，自动帮你完成尾部闭合标签的同步修改
 Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等
 Easy LESS 保存less文件后，自动生成css文件到当前路径
-px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。</description>
+px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。
+Markdown Preview Mermaid Support </description>
     </item>
     
     <item>
       <title>Vs Code 配置 Java</title>
-      <link>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
+      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</link>
       <pubDate>Sun, 03 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
+      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/java/vs-code-%E9%85%8D%E7%BD%AE-java/</guid>
       <description>Vs Code 配置 Java 安装 vscode 安装 JDK 配置系统环境变量 打开系统系统环境变量配置界面   右击此电脑
   属性
   高级系统设置

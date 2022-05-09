@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Rainy" />
-    <meta property="og:url" content="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" />
-    <link rel="canonical" href="http://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" /><link rel="apple-touch-icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="http://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="http://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="http://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
 
     <script type="application/ld+json">
 	{
@@ -17,12 +17,12 @@
 	    "@type" : "BlogPosting",
 	    "mainEntityOfPage": {
 	         "@type": "WebPage",
-	         "@id": "http:\/\/yxzi.xyz\/Sub\/Blog"
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
 	    },
 	    "articleSection" : "mynote",
 	    "name" : "C 预备知识",
 	    "headline" : "C 预备知识",
-	    "description" : "预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。\n因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。\nCPU 再对内存中的数据进行处理。\n因为 CPU、内存、显卡（控制显示器的正确显示）、硬盘都是安装在主板上的，因此主板是一个组织它们如何有效运行的硬件。\n程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。\n软件不能直接控制硬件。\n什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。\nint a; \/\/调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; \/\/将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。\n垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC\u002b\u002b 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。\n软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。\n一个软件运行时，它所占的储存空间不会再分配给其他程序使用。\n当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。\n常量的表示 整数。 八进制：前面加 0 ，018。\n十进制：传统写法，18。\n十六进制：前面加 0x 或 0X，0x18。\n浮点数。 传统写法，1.8。\n科学计数法，1.8e2（1.8 * 10 的 2 次方）。",
+	    "description" : "预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。\n因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。\nCPU 再对内存中的数据进行处理。\n因为 CPU、内存、显卡（控制显示器的正确显示）、硬盘都是安装在主板上的，因此主板是一个组织它们如何有效运行的硬件。\n程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。\n软件不能直接控制硬件。\n什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。\nint a; \/\/调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; \/\/将 3 放入变量 a 的内存空间内。  软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。\n一个软件运行时，它所占的储存空间不会再分配给其他程序使用。\n当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。\n常量的表示 整数。 八进制：前面加 0 ，018。\n十进制：传统写法，18。\n十六进制：前面加 0x 或 0X，0x18。\n浮点数。 传统写法，1.8。\n科学计数法，1.8e2（1.8 * 10 的 2 次方）。\n字符 单个字符用单引号括起来，\u0026lsquo;Y\u0026rsquo;。\n多个字符或单个字符都可以用双引号括起来，所有的字符串都会在末尾添加 \\0（结束符），\u0026ldquo;Y\\0\u0026rdquo;。\n常量是怎么存储在计算机中的 整数是以补码的形式转换为二进制储存在计算机中。",
 	    "inLanguage" : "en-US",
 	    "author" : "Rainy",
 	    "creator" : "Rainy",
@@ -32,7 +32,7 @@
 	    "copyrightYear" : "2021",
 	    "datePublished": "2021-10-03 06:00:00 \u002b0000 UTC",
 	    "dateModified" : "2021-10-03 06:00:00 \u002b0000 UTC",
-	    "url" : "http:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%9F%BA%E7%A1%80\/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86\/",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%9F%BA%E7%A1%80\/%E9%A2%84%E5%A4%87%E7%9F%A5%E8%AF%86\/",
 	    "keywords" : [ "C","学习笔记", ]
 	}
 </script><title>C 预备知识</title>
@@ -45,16 +45,17 @@ CPU 再对内存中的数据进行处理。
 程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。
 软件不能直接控制硬件。
 什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。
-int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
-垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC&#43;&#43; 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。
-软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
+int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。  软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
 一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
 当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
 常量的表示 整数。 八进制：前面加 0 ，018。
 十进制：传统写法，18。
 十六进制：前面加 0x 或 0X，0x18。
 浮点数。 传统写法，1.8。
-科学计数法，1.8e2（1.8 * 10 的 2 次方）。" />
+科学计数法，1.8e2（1.8 * 10 的 2 次方）。
+字符 单个字符用单引号括起来，&amp;lsquo;Y&amp;rsquo;。
+多个字符或单个字符都可以用双引号括起来，所有的字符串都会在末尾添加 \0（结束符），&amp;ldquo;Y\0&amp;rdquo;。
+常量是怎么存储在计算机中的 整数是以补码的形式转换为二进制储存在计算机中。" />
     <meta name="description" content="预备知识 六大硬件的关系 双击（操作系统给用户提供的一个操作）打开一个存放在硬盘中的视频。
 因为 CPU 并不能直接处理硬盘上的数据，所以会将硬盘上的视频数据拷贝到内存中。
 CPU 再对内存中的数据进行处理。
@@ -62,21 +63,22 @@ CPU 再对内存中的数据进行处理。
 程序是如何运行的 编译 —— 建立链接（生成一个格式为 exe 的可执行文件）—— 调用操作系统，操作系统再调用 CPU 并执行这个 exe 文件，最后会在显示器上看到这个软件的运行结果 。
 软件不能直接控制硬件。
 什么是变量 变量的本质是将一个空闲的内存空间与某个变量产生联系。
-int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。 变量为什么要初始化 释放 指的是某个内存空间可以被另外的程序使用。
-垃圾值 垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC&#43;&#43; 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。
-软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
+int a; //调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系 a = 3; //将 3 放入变量 a 的内存空间内。  软件运行与内存的关系 一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。
 一个软件运行时，它所占的储存空间不会再分配给其他程序使用。
 当软件运行完毕后，操作系统将释放该储存空间，（但操作系统并不会清空该内存空间中软件残留下来的数据，所以下次使用该内存空间时，很可能该内存空间中存在着其他软件所残留的垃圾数据。），以便再次分配给其他软件使用。
 常量的表示 整数。 八进制：前面加 0 ，018。
 十进制：传统写法，18。
 十六进制：前面加 0x 或 0X，0x18。
 浮点数。 传统写法，1.8。
-科学计数法，1.8e2（1.8 * 10 的 2 次方）。" />
+科学计数法，1.8e2（1.8 * 10 的 2 次方）。
+字符 单个字符用单引号括起来，&amp;lsquo;Y&amp;rsquo;。
+多个字符或单个字符都可以用双引号括起来，所有的字符串都会在末尾添加 \0（结束符），&amp;ldquo;Y\0&amp;rdquo;。
+常量是怎么存储在计算机中的 整数是以补码的形式转换为二进制储存在计算机中。" />
     <meta property="og:locale" content="zh-cn" />
 
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="http://yxzi.xyz/Sub/Blog/css/Hover.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
 
     
     <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
@@ -124,11 +126,7 @@ int a; //调用操作系统在内存条中创建一个空的内存空间，并�
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//调用操作系统在内存条中创建一个空的内存空间，并将变量 a 自动分配到该内存空间中，使得变量 a 与该内存空间的地址编号产生一个一一对应的关系
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//将 3 放入变量 a 的内存空间内。
-</span></span></span></code></pre></div><h2 id="变量为什么要初始化">变量为什么要初始化</h2>
-<h3 id="释放">释放</h3>
-<p>指的是某个内存空间可以被另外的程序使用。</p>
-<h3 id="垃圾值">垃圾值</h3>
-<p>垃圾值（随机值）指的是其他程序使用某个储存空间所遗留下来的值。VC++ 若发现某个变量的内存空间内有垃圾值（即该变量没进行初始化），它会将该垃圾值替换为填充值，也就是 -858993460。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没进行初始化。因此，<strong>变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值</strong>。</p>
+</span></span></span></code></pre></div><h2 id="heading"></h2>
 <h2 id="软件运行与内存的关系">软件运行与内存的关系</h2>
 <p>一个软件在运行前需要请求操作系统将硬盘中的数据拷贝到内存中，并使用 CPU 启动该软件。</p>
 <p>一个软件运行时，它所占的储存空间不会再分配给其他程序使用。</p>
@@ -183,12 +181,7 @@ int a; //调用操作系统在内存条中创建一个空的内存空间，并�
     <li><a href="#六大硬件的关系">六大硬件的关系</a></li>
     <li><a href="#程序是如何运行的">程序是如何运行的</a></li>
     <li><a href="#什么是变量">什么是变量</a></li>
-    <li><a href="#变量为什么要初始化">变量为什么要初始化</a>
-      <ul>
-        <li><a href="#释放">释放</a></li>
-        <li><a href="#垃圾值">垃圾值</a></li>
-      </ul>
-    </li>
+    <li><a href="#heading"></a></li>
     <li><a href="#软件运行与内存的关系">软件运行与内存的关系</a></li>
     <li><a href="#常量的表示">常量的表示</a>
       <ul>
@@ -211,11 +204,12 @@ int a; //调用操作系统在内存条中创建一个空的内存空间，并�
     </svg>
 </a>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
 <script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="http://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9D%E5%A7%8B%E5%8C%96/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E5%9F%BA%E7%A1%80/%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9D%E5%A7%8B%E5%8C%96/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "C 变量为什么要初始化",
+	    "headline" : "C 变量为什么要初始化",
+	    "description" : "变量为什么要初始化 初始化，也叫赋值，变量不进行初始化，那么这个变量中所存放的数据就是垃圾值。\n垃圾值 垃圾值（随机值）指的是其他程序使用某个内存空间所遗留下来的值。\nVC\u002b\u002b 若发现某个变量的内存空间内有垃圾值（即该变量没进行初化），那么它会将该垃圾值替换为填充值。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没有进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-20 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E5%9F%BA%E7%A1%80\/%E5%8F%98%E9%87%8F%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9D%E5%A7%8B%E5%8C%96\/",
+	    "keywords" : [ "C","学习笔记", ]
+	}
+</script><title>C 变量为什么要初始化</title>
+    <meta property="og:title" content="C 变量为什么要初始化" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="变量为什么要初始化 初始化，也叫赋值，变量不进行初始化，那么这个变量中所存放的数据就是垃圾值。
+垃圾值 垃圾值（随机值）指的是其他程序使用某个内存空间所遗留下来的值。
+VC&#43;&#43; 若发现某个变量的内存空间内有垃圾值（即该变量没进行初化），那么它会将该垃圾值替换为填充值。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没有进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。" />
+    <meta name="description" content="变量为什么要初始化 初始化，也叫赋值，变量不进行初始化，那么这个变量中所存放的数据就是垃圾值。
+垃圾值 垃圾值（随机值）指的是其他程序使用某个内存空间所遗留下来的值。
+VC&#43;&#43; 若发现某个变量的内存空间内有垃圾值（即该变量没进行初化），那么它会将该垃圾值替换为填充值。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没有进行初始化。因此，变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">C 变量为什么要初始化</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-20 06:00:00 UTC">
+                        2022-04-20
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="变量为什么要初始化">变量为什么要初始化</h1>
+<p>初始化，也叫赋值，变量不进行初始化，那么这个变量中所存放的数据就是垃圾值。</p>
+<h3 id="垃圾值">垃圾值</h3>
+<p>垃圾值（随机值）指的是其他程序使用某个内存空间所遗留下来的值。</p>
+<p>VC++ 若发现某个变量的内存空间内有垃圾值（即该变量没进行初化），那么它会将该垃圾值替换为填充值。目的是为了避免开发者将垃圾值当做一个正常值来使用，也就是提醒开发者这个变量没有进行初始化。因此，<strong>变量若未进行初始化，该变量的内存空间内存放的是一个垃圾值</strong>。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/c/">
+                    C
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#垃圾值">垃圾值</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>

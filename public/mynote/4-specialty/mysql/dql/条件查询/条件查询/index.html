@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.96.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Rainy" />
+    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/" />
+    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
+    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
+
+    <script type="application/ld+json">
+	{
+	    "@context" : "http://schema.org",
+	    "@type" : "BlogPosting",
+	    "mainEntityOfPage": {
+	         "@type": "WebPage",
+	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
+	    },
+	    "articleSection" : "mynote",
+	    "name" : "MySQL 条件查询",
+	    "headline" : "MySQL 条件查询",
+	    "description" : "条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无指定名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  \u0026gt; 大于。\n查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary\u0026gt;12000;\u0026lt; 小于。\n= 等于。\n\u0026lt;\u0026gt; 不等于，也可以用 !=，但是在 MySQL 中 建议中 \u0026lt;\u0026gt;。\n查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id\u0026lt;\u0026gt;90;\u0026gt;= 大于等于。\n\u0026lt;= 小于等于。",
+	    "inLanguage" : "en-US",
+	    "author" : "Rainy",
+	    "creator" : "Rainy",
+	    "publisher": "Rainy",
+	    "accountablePerson" : "Rainy",
+	    "copyrightHolder" : "Rainy",
+	    "copyrightYear" : "2022",
+	    "datePublished": "2022-04-06 06:00:00 \u002b0000 UTC",
+	    "dateModified" : "2022-04-06 06:00:00 \u002b0000 UTC",
+	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/mysql\/dql\/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2\/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2\/",
+	    "keywords" : [ "SQL","DQL","MySQL","条件查询","学习笔记", ]
+	}
+</script><title>MySQL 条件查询</title>
+    <meta property="og:title" content="MySQL 条件查询" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无指定名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  &amp;gt; 大于。
+查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary&amp;gt;12000;&amp;lt; 小于。
+= 等于。
+&amp;lt;&amp;gt; 不等于，也可以用 !=，但是在 MySQL 中 建议中 &amp;lt;&amp;gt;。
+查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id&amp;lt;&amp;gt;90;&amp;gt;= 大于等于。
+&amp;lt;= 小于等于。" />
+    <meta name="description" content="条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无指定名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  &amp;gt; 大于。
+查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary&amp;gt;12000;&amp;lt; 小于。
+= 等于。
+&amp;lt;&amp;gt; 不等于，也可以用 !=，但是在 MySQL 中 建议中 &amp;lt;&amp;gt;。
+查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id&amp;lt;&amp;gt;90;&amp;gt;= 大于等于。
+&amp;lt;= 小于等于。" />
+    <meta property="og:locale" content="zh-cn" />
+
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
+    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
+
+    
+    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
+            title="Rainy · Blog">
+    <script>
+        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
+    </script>
+
+    
+    
+
+</head>
+    
+
+    <body class="Wrap">
+        <article class="Post BorderBox  ">
+            <header class="PostHeader">
+                <h1 id="Title" class="post-title">MySQL 条件查询</h1>
+                
+                <div class="DateArea">
+                    
+                    <time class="PostDate" datetime=" 2022-04-06 06:00:00 UTC">
+                        2022-04-06
+                    </time>
+                    
+                </div>
+                
+            </header>
+
+            
+            <div class="PostContent">
+                
+                <h1 id="条件查询">条件查询</h1>
+<h2 id="语法">语法</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">select</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 3、查询
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#f8f8f8;text-decoration:underline">	</span><span style="color:#000">QueryList</span><span style="color:#f8f8f8;text-decoration:underline"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">from</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 1、寻找库中有无指定名
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">TableName</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#8f5902;font-style:italic"># 2、筛选满足条件的字段
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#f8f8f8;text-decoration:underline">	</span><span style="color:#000">Conditional</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Expression</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="分类">分类</h2>
+<ul>
+<li>按条件表达式查询，主要用条件运算符</li>
+<li>按逻辑表达式查询，主要用逻辑运算符</li>
+<li>模糊查询，主要用模糊关键字</li>
+</ul>
+<h2 id="heading">&gt;</h2>
+<p>大于。</p>
+<h3 id="查询工资大于-12000-的员工信息">查询工资大于 12000 的员工信息</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">salary</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">12000</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="heading-1">&lt;</h2>
+<p>小于。</p>
+<h2 id="heading-2">=</h2>
+<p>等于。</p>
+<h2 id="heading-3">&lt;&gt;</h2>
+<p>不等于，也可以用 !=，但是在 MySQL 中 建议中 &lt;&gt;。</p>
+<h3 id="查询部门编号不等于-90-号的员工名和部门编号">查询部门编号不等于 90 号的员工名和部门编号</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-mysql" data-lang="mysql"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">SELECT</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">last_name</span><span style="color:#000;font-weight:bold">,</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">FROM</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">employees</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">WHERE</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">department_id</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#ce5c00;font-weight:bold">&lt;&gt;</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">90</span><span style="color:#000;font-weight:bold">;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="heading-4">&gt;=</h2>
+<p>大于等于。</p>
+<h2 id="heading-5">&lt;=</h2>
+<p>小于等于。</p>
+
+            </div>
+            
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/sql/">
+                    SQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/dql/">
+                    DQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/mysql/">
+                    MySQL
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/">
+                    条件查询
+                </a>
+            </div>
+            
+            <div class="PostTag">
+                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                    学习笔记
+                </a>
+            </div>
+            
+        </article>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#语法">语法</a></li>
+    <li><a href="#分类">分类</a></li>
+    <li><a href="#heading">&gt;</a>
+      <ul>
+        <li><a href="#查询工资大于-12000-的员工信息">查询工资大于 12000 的员工信息</a></li>
+      </ul>
+    </li>
+    <li><a href="#heading-1">&lt;</a></li>
+    <li><a href="#heading-2">=</a></li>
+    <li><a href="#heading-3">&lt;&gt;</a>
+      <ul>
+        <li><a href="#查询部门编号不等于-90-号的员工名和部门编号">查询部门编号不等于 90 号的员工名和部门编号</a></li>
+      </ul>
+    </li>
+    <li><a href="#heading-4">&gt;=</a></li>
+    <li><a href="#heading-5">&lt;=</a></li>
+  </ul>
+</nav>
+
+        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
+    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
+        <use href="#Icon-ToTop"></use>
+    </svg>
+</a>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
+<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
+    </body>
+
+</html>
