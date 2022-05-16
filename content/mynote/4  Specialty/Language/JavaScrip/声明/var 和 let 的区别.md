@@ -1,7 +1,7 @@
 ---
-title: var 和 let 的区别
-date: 2021-10-28 6:00:00
-updated: 2021-10-28 6:00:00
+title: JavaScrip var、let、count
+date: 2022-05-13 6:00:00
+updated: 2022-05-13 6:00:00
 categories:
         - 编程语言
 tags:
@@ -10,7 +10,7 @@ tags:
         - JavaScript
 ---
 
-# var 和 let 的区别
+# var、let、count
 
 ## 作用域不同
 

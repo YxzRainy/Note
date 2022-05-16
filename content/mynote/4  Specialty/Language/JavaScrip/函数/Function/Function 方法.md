@@ -120,3 +120,7 @@ function Car(size, style, color, comfort, length, width, height, type) {
 }
 var Lamborghini = new Car(50, '线性', 'black', '真皮', 1.7, 2.5, 5.2, 'SuperRun');
 ```
+
+## bind(x)
+
+返回一个新的函数，这个新的函数的 this 的指向变为`x`，而其余参数将作为新函数的参数，供调用时使用。

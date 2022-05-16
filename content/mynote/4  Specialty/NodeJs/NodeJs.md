@@ -9,10 +9,9 @@ tags:
         - 学习笔记
 ---
 
-# NodeJs
+# Node.js
 
 Node.js不是一种独立的语言，也不是一个JavaScript的框架，Node.js只是一个让JavaScript运行在浏览器之外的平台。
 
-## 安装[NodeJs](http://nodejs.cn/download/)
+## 安装 [Node.js](http://nodejs.cn/download/)
 
-## 
