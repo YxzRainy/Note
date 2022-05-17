@@ -1,5 +1,5 @@
 ---
-title: JavaScrip NodeJs 模块化
+title: JavaScrip NodeJs 实现模块化
 date: 2022-05-15 6:00:00
 updated: 2022-05-15 6:00:00
 categories:
@@ -12,13 +12,13 @@ tags:
 
 ---
 
-# NodeJs 模块化
+# NodeJs 实现模块化
 
 基于`node.js`服务器端实现模块化。
 
 ## 创建项目结构
 
-`./modules`：项目所依赖的自定义模块目录。
+`./modules`：模块目录。
 
 `./modules/module1.js`：自定义模块一。
 
@@ -26,9 +26,7 @@ tags:
 
 `./modules/module3.js`：自定义模块三。
 
-`./app.js`：程序主入口文件。
-
-`./package.json`：项目配置文件。可以手动创建，也可使用`npm init` 创建，推荐后者。
+`./app.js`：主模块。
 
 ## 安装模块
 
@@ -65,8 +63,7 @@ module.exports = function () {
 **module3.js**
 
 ```js
-// 向外暴露 2 个函数，1 个数组
-
+// 暴露 2 个函数，1 个数组
 exports.f = function () {
 	console.log('modul three f1');
 };
@@ -82,18 +79,21 @@ exports.arr = [199, 9, 3];
 **app.js**
 
 ```js
-// 导入模块第三方模块 uniq
+// 导入第三方模块
 // uniq 是一个函数，用于对数组进行操作
 var uniq = require('uniq');
 
-aar module1 = require('./modules/module1');
+// 导入自定义模块
+var module1 = require('./modules/module1');
 var module2 = require('./modules/module2');
 var module3 = require('./modules/module3');
 
+// 使用自定义模块
 module1.fun();
 module2();
 module3.f();
-// 用 uniq 函数处理 arr
+
+// 使用第三方模块
 var result = uniq(module3.arr);
 console.log(result);
 

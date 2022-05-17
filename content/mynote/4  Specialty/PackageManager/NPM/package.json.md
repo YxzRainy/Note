@@ -13,7 +13,7 @@ tags:
 
 # package.json
 
-项目配置文件。
+项目或模块的描述文件。
 
 使用`npm install`安装模块的时候，会自动读取项目中`package.json`里面的 `dependencies` 和`devDependencies`的配置，来安装需要依赖的模块。
 

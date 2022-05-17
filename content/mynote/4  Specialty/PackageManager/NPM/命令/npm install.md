@@ -12,13 +12,21 @@ tags:
 
 # npm install
 
-在当前项目中，读取`package.json`里面的 `dependencies` 和`devDependencies`的配置来安装需要依赖的模块
+在当前项目中，读取`package.json`里面的 `dependencies` 和`devDependencies`的配置来安装需要依赖的模块。
 
 `install` 可简写为 `i`。
 
+## npm install jquery
+
+在当前项目中安装 jquery 模块，默认安装的是最新版本。
+
 ## npm install jquery -g
 
-全局安装 jquery 模块
+全局安装 jquery 模块，默认安装的是最新版本。
+
+## npm install jquery@3
+
+安装 jquery 3.X.X 中的最新版本。
 
 ## npm install jquery@3.0.1
 
