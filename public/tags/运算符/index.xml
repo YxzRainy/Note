@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>运算符 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+    <link>https://yxzi.xyz/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
     <description>Recent content in 运算符 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 19 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C 三目运算符</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Tue, 19 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>三目运算符 a ? b : c 相当于 if 语句
 if (a);  b; else  c; return 0; </description>
     </item>
     
     <item>
       <title>C 逗号表达式</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Tue, 19 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/c/%E8%BF%90%E7%AE%97%E7%AC%A6/%E9%80%97%E5%8F%B7%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>逗号表达式 (a,b,c,d) 从左向右执行，表达式最终的值是 d 的值。
 #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; int main() {  int i;  int c = 2;  i = (c++, ++c, c + 2, c - 3);  // 执行了 c++ 与 ++c 后，c 变为了 4，然后执行 c + 2，  // 但此时并没有将 c + 2 的结果赋给 c，因此此时的 c 依旧为 4，  // 再 c - 3，则 i = 1.  printf(&amp;#34;%d&amp;#34;, i);  // return 1  return 0; } </description>
     </item>

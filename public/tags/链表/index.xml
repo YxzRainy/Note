@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>链表 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/</link>
+    <link>https://yxzi.xyz/tags/%E9%93%BE%E8%A1%A8/</link>
     <description>Recent content in 链表 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E9%93%BE%E8%A1%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C 链表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/c/%E9%93%BE%E8%A1%A8/%E9%93%BE%E8%A1%A8/</guid>
       <description>链表 链表主要是便于管理长度或数量不确定的数据，相对于数组，链表处理这种数据时比较节省内存。
 链表靠节点的指针域中存放的指针地址来寻找下一个元素。
 确定一个链表，只需要知道头指针即可。

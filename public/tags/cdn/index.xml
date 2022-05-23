@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CDN on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/cdn/</link>
+    <link>https://yxzi.xyz/tags/cdn/</link>
     <description>Recent content in CDN on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/cdn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CDN</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/internet/cdn/</link>
       <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/internet/cdn/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cdn/</guid>
       <description>CDN 使网址的加载速度变快。</description>
     </item>
     

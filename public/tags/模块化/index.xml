@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>模块化 on Rainy · Blog</title>
+    <link>https://yxzi.xyz/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+    <description>Recent content in 模块化 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 15 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E6%A8%A1%E5%9D%97%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScrip AMD</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd/</guid>
+      <description>AMD 专门用于浏览器端，实现异步加载模块，该规范依赖于 require.js。
+不是所有模块都支持 AMD 规范，比如 angular.js，但也可以通过 shim配置来使用angular.js
+定义模块 定义没有依赖的模块：
+define(function () {  // 暴露模块 	return module; }); 定义有依赖的模块：
+// 显式声明依赖注入 define([&amp;#39;module1&amp;#39;, &amp;#39;module2&amp;#39;, &amp;#39;module2&amp;#39;], function (m1Obj, m2Obj, m3Obj) {  // 暴露模块 	return module; }); 导入模块 require([ 	&amp;#39;module1&amp;#39;, 	&amp;#39;module2&amp;#39;, 	&amp;#39;module3&amp;#39;, 	function (m1Obj, m2Obj, m3Obj) { 	// 使用 m1Obj, m2Obj, m3Obj 	}, ]); 实现 使用require.js。</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip AMD 实现模块化</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <description>AMD 实现模块化 将require.js导入到项目目录./libs/require.js
+创建项目结构 ./libs/：第三方模块目录。
+./modules/：自定义模块目录。
+./libs/jquery.js：第三方模块。
+./libs/require.js：第三方模块。
+./modules/alerter.js：有依赖的自定义模块。
+./modules/dataService.js无依赖的自定义模块。
+./main.js：主模块。
+./index.html：入口文件。
+模块化编码 alerter.js
+// 定义无依赖的模块 define(function () { 	var name = &amp;#39;no have dependencies&amp;#39;; 	function fun() { 	return name; 	} 	// 暴露模块的 fun() 	return { fun }; }); dataService.js
+// 定义有依赖的模块，该模块依赖 dataService、jquery define([&amp;#39;dataService&amp;#39;, &amp;#39;jquery&amp;#39;], function (dataService, $) { 	var msg = &amp;#39;have dependencies&amp;#39;; 	function showMsg() { 	console.log(msg, dataService.fun()); 	} 	$(&amp;#39;body&amp;#39;).</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip Browserify 实现模块化</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/browserify-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/browserify-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <description>Browserify 实现模块化 基于本地浏览器端实现模块化，需要用 Browserify来打包。
+创建项目结构 ./dist：打包生成的文件目录。
+./src：模块目录。
+./src/module1.js：自定义模块一。
+./src/module2.js：自定义模块二。
+./src/module3.js：自定义模块三。
+./app.js：主模块。
+./index.html：入口文件。
+模块化编码 module1.js
+// 暴露对象 module.exports = { 	msg: &amp;#39;module one&amp;#39;, 	fun() { 	console.log(this.msg); 	}, }; module2.js
+// 暴露函数 module.exports = function () { 	console.log(&amp;#39;module two&amp;#39;); }; module3.js
+// 向暴露 2 个函数，1 个数组  exports.f = function () { 	console.log(&amp;#39;modul three f1&amp;#39;); };  exports.f2 = function () { 	console.log(&amp;#39;module three f2&amp;#39;); };  exports.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip CMD</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd/</guid>
+      <description>CMD 专用于浏览器端，异步加载模块。
+惰性加载模块，即使用模块时才会加载。
+实现该规范使用Sea.js
+定义模块 注意，回调函数中的三个参数require, exports, module必须加上，否则会报错。
+定义没有依赖的模块：
+define(function (require, exports, module) { 	// 暴露模块，通常用后者 	exports.xxx = value; 	module.exports = value; }); 定义有依赖的模块：
+define(function (require, exports, module) { 	// 同步导入模块 	var module2 = require(&amp;#39;./module2&amp;#39;); 	// 异步导入依赖模块 	require.async(&amp;#39;./module3&amp;#39;, function (m3Obj) { 	// 使用 m3Obj 	});  // 暴露模块 	exports.xxx = value; }); 导入模块 define(function (require) { 	var m1 = require(&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip CMD 实现模块化</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <description>CMD 实现模块化 创建项目结构 ./libs：第三方模块目录。
+./libs/sea.js：第三方模块。
+./modules：自定义模块目录。
+./modules/module1.js：自定义模块一。
+./modules/module2.js：自定义模块二。
+./modules/module3.js：自定义模块三。
+./modules/module4.js：自定义模块四。
+modules/main.js：主模块。
+./index.html：入口文件
+模块化编码 module1.js
+// 定义没有依赖的模块 define(function (require, exports, module) { 	var msg = &amp;#39;module1&amp;#39;; 	function fun() { 	return msg; 	} 	// 暴露模块 	module.exports = { fun }; }); module2.js
+// 定义没有依赖的模块 define(function (require, exports, module) { 	var msg = &amp;#39;module2&amp;#39;; 	function fun2() { 	console.log(msg); 	} 	// 暴露模块 	module.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip CommonJS</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/commonjs/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/commonjs/</guid>
+      <description>CommonJS 一种为 JS 的表现指定的规范，它希望 JavaScrip 可以运行在任何地方，Node.js采用了这个规范。
+一个单独文件就是一个模块，通过require()来同步加载要依赖的模块，然后通过extports或则module.exports来暴露模块的接口。
+定义模块 两种方式所暴露的模块都是一个对象。
+module.expots 将需要暴露的属性或方法保存到exports对象中。
+// ExposedObjects() 将会保存到 exports 对象中，并暴露出去 module.expots = ExposedObjects(){ }; exports.xxx 给exports定义不同的xxx 对象，可以暴露不同属性或方法。
+// 不同的对象暴露不同的方法或属性 expots.obj = ExposedObjects(){ }; expots.obj2 = ExposedObjects2(){ } expots.obj3 = ExposedObjects3(){ } 导入模块 // 导入第三方模块 require(&amp;#39;jquery&amp;#39;); // 导入自定义模块 require(&amp;#39;modules.js&amp;#39;); 实现 服务器端 直接使用 Node.js，加载模块时是同步加载，这会导致阻塞（等待），但因为是在服务器端，影响也不是很大，无非是加载的时间比较长。
+浏览器端 加载模块时是同步加载，也会导致阻塞，且因为是在浏览器端，加载的时间非常长，用户体验不好（页面白屏），因此，我们需要将模块进行编译打包，以此来缩短加载时间。
+打包工具：Browserify.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip ES6 Module</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-module/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-module/</guid>
+      <description>ES6 Module 配置 package.json 项目或模块的描述文件。
+{  &amp;#34;name&amp;#34;: &amp;#34;es6-module&amp;#34;,  &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;,  &amp;#34;dependencies&amp;#34;: {  &amp;#34;jquery&amp;#34;: &amp;#34;^3.6.0&amp;#34;,  &amp;#34;uniq&amp;#34;: &amp;#34;^1.0.1&amp;#34;  },  &amp;#34;devDependencies&amp;#34;: {  &amp;#34;@babel/cli&amp;#34;: &amp;#34;^7.17.10&amp;#34;,  &amp;#34;@babel/core&amp;#34;: &amp;#34;^7.17.12&amp;#34;,  &amp;#34;@babel/preset-env&amp;#34;: &amp;#34;^7.17.12&amp;#34;,  &amp;#34;browserify&amp;#34;: &amp;#34;^17.0.0&amp;#34;  } } 安装 babel/cli Babel 自带的一个内置的 CLI 命令行工具，可通过命令行编译文件。
+npm install --save-dev @babel/core @babel/cli 其中@babel/core是 babel 的核心库。
+babel/preset-env 一个智能预设，允许您使用最新的JavaScript，而无需微观管理目标环境需要哪些语法转换（以及可选的浏览器 polyfills）
+npm install --save-dev @babel/preset-env 安装 Browserify 用来打包编译模块。
+npm install -g browserify 配置 babel.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip ES6 模块化规范</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/</guid>
+      <description>ES6 模块化规范 在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。
+ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。
+依赖模块需要借助 Browserify来打包。
+暴露模块 使用export来暴露模块，它用于规定模块的对外接口。
+分别暴露 export function fun1() { 	console.log(&amp;#39;fun1 module1&amp;#39;); } export function fun11() { 	console.log(&amp;#39;fun11 module1&amp;#39;); } export var arr = [9999, 34, 5, 6, 7565, 757, 6]; 统一暴露 function fun2() { 	console.log(&amp;#39;fun2 module2&amp;#39;); } function fun22() { 	console.log(&amp;#39;fun2 module2&amp;#39;); } export { fun2, fun22 }; 默认暴露 使用默认暴露，可以暴露任意数据类型；暴露的是什么数据类型，接收到的就是什么数据类型；还可以使用任意的变量来接收。
+在同一个模块中，只允许用export default 暴露一次。</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip NodeJs 实现模块化</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/nodejs-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/nodejs-%E5%AE%9E%E7%8E%B0%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <description>NodeJs 实现模块化 基于node.js服务器端实现模块化。
+创建项目结构 ./modules：模块目录。
+./modules/module1.js：自定义模块一。
+./modules/module2.js：自定义模块二。
+./modules/module3.js：自定义模块三。
+./app.js：主模块。
+安装模块 安装 uniq
+npm install uniq 模块化编码 module1.js
+// 暴露对象 module.exports = { 	msg: &amp;#39;module one&amp;#39;, 	fun() { 	console.log(this.msg); 	}, }; module2.js
+// 暴露函数 module.exports = function () { 	console.log(&amp;#39;module two&amp;#39;); }; module3.js
+// 暴露 2 个函数，1 个数组 exports.f = function () { 	console.log(&amp;#39;modul three f1&amp;#39;); };  exports.f2 = function () { 	console.log(&amp;#39;module three f2&amp;#39;); };  exports.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 模块化</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/%E6%A8%A1%E5%9D%97%E5%8C%96/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/%E6%A8%A1%E5%9D%97%E5%8C%96/</guid>
+      <description>模块化 将一个复杂的 JavaScrip程序依据一定的规范封装成几个块（文件），并组合在一起的过程就是模块化。块的内部数据是私有的，只向外部暴露了一些接口与外部其他模块通信。
+模块 向外提供特定功能的 JavaScrip 文件，一个 JavaScrip 文件就是一个模块。
+作用  降低复杂度。 提高解耦性，降低耦合度。 部署方便，功能点明确。  优点  避免变量污染。 更好的分离，按需加载。 更高的复用性。 更高的可维护性。  常见的模块化标准 CommonJS.
+ES6 Module.
+AMD.
+CMD.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip 模块化的发展史</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%B2/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%9A%84%E5%8F%91%E5%B1%95%E5%8F%B2/</guid>
+      <description>模块化的发展史 全局函数模式 将不同的函数封装成不同的全局函数。
+缺点
+变量非常不安全，会直接污染全局中的变量。
+JavaScrip One
+// msg 变量并不安全，会被其他文件中的 js 代码修改。 var msg = &amp;#39;全局函数模式&amp;#39;; function fun() { 	console.log(msg); } JavaScrip Two
+fun() msg = &amp;#39;全局中的 msg 被其他文件中的 js 代码修改了&amp;#39; fun() 命名空间 将全局中的变量定义到一个对象中，以减少 Global 上的变量。
+缺点
+本质是对象，依旧可以通过对象去修改该对象中的变量，变量依旧不安全。
+JavaScrip One
+var obj = { 	// 将全局中的变量定义为对象的属性，以减少全局中的变量 	msg: &amp;#39;命名空间模式&amp;#39;, 	fun() { 	console.log(this.msg); 	}, }; JavaScrip Two
+obj.fun() obj.msg = &amp;#39;对象中的 msg 被其他文件中的 js 代码修改了&amp;#39; obj.fun() IIFE 模式 将变量和函数定义到立即执行函数内部，并将方法暴露给 window，以一个匿名闭包（将一个模块暴露给 window 对象，然后在其其他模块中用 window 对象来访问这个这个模块）的方式实现了模块化。</description>
+    </item>
+    
+  </channel>
+</rss>

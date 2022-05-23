@@ -1,5 +1,5 @@
 ---
-v-ontitle: Vue v-on
+title: Vue v-on
 date: 2022-05-10 6:00:00
 updated: 2022-05-10 6:00:00
 categories:

@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>写作 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%86%99%E4%BD%9C/</link>
+    <link>https://yxzi.xyz/tags/%E5%86%99%E4%BD%9C/</link>
     <description>Recent content in 写作 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Sep 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何提高文笔</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</link>
       <pubDate>Mon, 06 Sep 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/writing/%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E6%96%87%E7%AC%94/</guid>
       <description>如何提高文笔 经常阅读
 随时记录灵感。
 写文章第一天先把想写的写下来，连系段落随意写下。

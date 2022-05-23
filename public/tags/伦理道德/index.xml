@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>伦理道德 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/</link>
+    <link>https://yxzi.xyz/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/</link>
     <description>Recent content in 伦理道德 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 19 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E4%BC%A6%E7%90%86%E9%81%93%E5%BE%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>杀一救百是否正义</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E6%9D%80%E4%B8%80%E6%95%91%E7%99%BE%E6%98%AF%E5%90%A6%E6%AD%A3%E4%B9%89/</link>
+      <link>https://yxzi.xyz/mynote/2-view/society/%E6%9D%80%E4%B8%80%E6%95%91%E7%99%BE%E6%98%AF%E5%90%A6%E6%AD%A3%E4%B9%89/</link>
       <pubDate>Tue, 19 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E6%9D%80%E4%B8%80%E6%95%91%E7%99%BE%E6%98%AF%E5%90%A6%E6%AD%A3%E4%B9%89/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/society/%E6%9D%80%E4%B8%80%E6%95%91%E7%99%BE%E6%98%AF%E5%90%A6%E6%AD%A3%E4%B9%89/</guid>
       <description>杀一救百是否正义 不正义
 有一句话可以很好的回答这个问题：
 你每个器官都能救一条人命，请。

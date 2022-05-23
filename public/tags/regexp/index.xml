@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RegExp on Rainy · Blog</title>
+    <link>https://yxzi.xyz/tags/regexp/</link>
+    <description>Recent content in RegExp on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 10 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/regexp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RegExp 属性</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/regexp-%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Tue, 10 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/regexp-%E5%B1%9E%E6%80%A7/</guid>
+      <description>RegExp 属性 lastIndex 从 0 开始，表示字符在进行下一次匹配时的起始位置，这个属性会被exec()和test()用到。
+该属性可以被手动修改。
+var reg = /ab/g;  var str = &amp;#39;abababab&amp;#39;;  // 第一次匹配，lastIndex 变为 2 console.log(reg.exec(str)); // lastIndex = 2 console.log(reg.lastIndex); //手动修改 lastIndex reg.lastIndex = 0; // 修改成功，lastIndex = 2 console.log(reg.exec(str)); </description>
+    </item>
+    
+    <item>
+      <title>RegExp 量词</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E9%87%8F%E8%AF%8D/</link>
+      <pubDate>Tue, 10 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E9%87%8F%E8%AF%8D/</guid>
+      <description>量词 表示数量。
+n+ 匹配 n 一次或多次，等价于 {1,}。
+var reg = /a+/g;  var str = &amp;#39;aavva&amp;#39;;  var result = str.match(reg); console.log(result); n* 匹配 n 零次或多次。等价于{0,}。
+var reg = /a*/g;  var str = &amp;#39;aavva&amp;#39;;  var result = str.match(reg); console.log(result); n? 匹配 n 零次或一次。等价于 {0,1}。
+var reg = /a?/g;  var str = &amp;#39;aavva&amp;#39;;  var result = str.match(reg); console.log(result); n{x} 匹配 n 表达式 x 次。x 是一个非负整数。
+var reg = /o{2}/g;  var str = &amp;#39;boooody&amp;#39;;  var result = str.</description>
+    </item>
+    
+    <item>
+      <title>RegExp</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>RegExp 一种查找以及字符串替换的操作。
+直接量（推荐使用） var reg = /abcde/i;  var str = &amp;#39;abCDE&amp;#39;;  var result = reg.test(str); console.log(result); new RegExp var str = &amp;#39;abCDE&amp;#39;; var reg = new RegExp(&amp;#39;abc&amp;#39;, &amp;#39;i&amp;#39;); var result = reg.test(str); console.log(result); 贪婪匹配 匹配时，能多匹配，就不会少匹配。
+正则表达式默认的匹配模式就是贪婪匹配。
+非贪婪匹配 匹配时，能少匹配，就不会多匹配。
++? 重复 1 次或更多次，但尽可能少重复。
+var str = &amp;#39;aaaa&amp;#39;; var reg = /a+?/g; var result = str.match(reg); console.log(result); 除了+?，还有：
+*? 重复任意次，但尽可能少重复。
+?? 重复 0 次或 1 次，但尽可能少重复。
+{n,m}? 重复 n 到 m 次，但尽可能少重复。</description>
+    </item>
+    
+    <item>
+      <title>RegExp 修饰符</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      <description>修饰符 i 不区分大小写，即 A 和 a 没有区别。
+var reg = /abcde/i;  var str = &amp;#39;abCDE&amp;#39;;  var result = reg.test(str); console.log(result); g 全局匹配。查找字符串中所有的匹配项。
+即匹配到一个匹配项后，还会继续匹配后续的字符串，它找出字符串中所有的匹配项。
+var reg = /ab/g; var str = &amp;#39;abababababab&amp;#39;;  var result = str.match(reg); console.log(result); 如果不加该修饰符，则只匹配一个匹配项：
+var reg = /ab/; var str = &amp;#39;abababababab&amp;#39;;  var result = str.match(reg); console.log(result); m 多行匹配，通常需要配合g来用。用边界字符^表示只匹配每一行的开头，用$匹配每一行的结尾，注意时是多行匹配，而不是整个字符串的开头和结尾。
+var reg = /^a/gm;  var str = &amp;#39;abcababa\nabab&amp;#39;;  var result = str.match(reg); console.</description>
+    </item>
+    
+    <item>
+      <title>RegExp 元字符</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E5%85%83%E5%AD%97%E7%AC%A6/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E5%85%83%E5%AD%97%E7%AC%A6/</guid>
+      <description>元字符 \n 将 n 标记为一个特殊字符（将特殊字符进行转义）、或一个原义字符、或一个向后引用、或一个八进制转义符。
+\w 匹配字母、数字、下划线。等价于[A-Za-z0-9_]。
+var reg = /\wcd2/g;  var str = &amp;#39;bcd2&amp;#39;;  var result = str.match(reg); console.log(result); \W 匹配非字母、数字、下划线。等价于 [^A-Za-z0-9_]。
+var reg = /\Wcd2/g;  var str = &amp;#39;b*cd2&amp;#39;;  var result = str.match(reg); console.log(result); \d 匹配一个数字字符。等价于 [0-9]。
+\D 匹配一个非数字字符。等价于 [^0-9]。
+\s 匹配任何空白字符，包括空格符、制表符\t、回车符\r、换行符\n、垂直制表符\v、换页符\f。
+等价于 [ \f\n\r\t\v]。
+\S 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。
+\b 匹配一个单词边界，也就是指单词和空格间的位置。
+例如， er\b可以匹配 never 中的 &amp;rsquo;er&amp;rsquo;，但不能匹配 verb 中的 er。
+var reg = /\bname/g;  var str = &amp;#39;my name is rainy&amp;#39;;  var result = str.</description>
+    </item>
+    
+    <item>
+      <title>RegExp 实例</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E5%AE%9E%E4%BE%8B/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E5%AE%9E%E4%BE%8B/</guid>
+      <description>实例 匹配字符串首或尾是数字的字符串 var reg = /^\d|\d$/g;  var str = &amp;#39;2dfds&amp;#39;;  var result = str.match(reg); console.log(result); 匹配字符串首尾都是数字的字符串 var reg = /^\d[\s\S]*\d$/g;  var str = &amp;#39;2dfds2&amp;#39;;  var result = str.match(reg); console.log(result); 将以 - 分割的字符串变为小驼峰式的字符串 var str = &amp;#39;the-first-name&amp;#39;; var reg = /-(\w)/g; var result = str.replace(reg, function ($, $1) { 	return $1.toUpperCase(); }); console.log(result); 字符串去重 var str = &amp;#39;aaaabbbbccccddddd&amp;#39;; var reg = /(\w)\1+/g; var result = str.replace(reg, &amp;#39;$1&amp;#39;); console.</description>
+    </item>
+    
+    <item>
+      <title>RegExp 方法</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/regexp-%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/regexp-%E6%96%B9%E6%B3%95/</guid>
+      <description>RegExp 方法 exec() 如果匹配模式带有g修饰符，则每匹配一次，匹配结束的位置就是下一次匹配的起始位置。
+如果匹配模式不带g修饰符，则不管匹配多少次，匹配的起始位置始终都只从lastIndex = 0开始。即不管匹配多少次，lastIndex 都只为 0。
+加 g 修饰符 // 加 g 修饰符 var reg = /ab/g;  var str = &amp;#39;abababab&amp;#39;;  // 第一次匹配，lastIndex 从 0 开始匹配，匹配完后 lastIndex = 2 console.log(reg.exec(str));  // 第二次匹配，lastIndex 从 2 开始匹配，匹配完后 lastIndex = 4 console.log(reg.exec(str));  // 第三次匹配，lastIndex 从 4 开始匹配，匹配完后 lastIndex = 6 console.log(reg.exec(str));  // 第四次匹配，lastIndex 从 6 开始匹配，匹配后 lastIndex = 8 console.log(reg.exec(str));  // 第五次匹配，lastIndex 从 8 开始匹配， // 因为从 8 开始匹配，无法匹配到任何值，因此此处返回 null // 返回 null 之后，lastIndex 从起始位置 0 开始，即现在的 lastIndex = 0， console.</description>
+    </item>
+    
+    <item>
+      <title>RegExp 普通字符</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/</link>
+      <pubDate>Mon, 09 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/javascrip/regexp/%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6/</guid>
+      <description>普通字符 () 匹配与()中的字表达式相同的字符。可以用()来标记一个子表达式的开始和结束位置，后面我们可以用\1（反向引用）来引用第一个()中的字表达式。
+// 表示匹配与 \w 相同的四个连续的字符 var reg = /(\w)\1\1\1/g;  var str = &amp;#39;aaaabbbbccccc&amp;#39;;  var result = str.match(reg);  console.log(result); 也可以使用\2来引用第二个子表达式：
+var reg = /(\w)\1(\w)\2/g;  var str = &amp;#39;ccddvvffff&amp;#39;;  var result = str.match(reg);  console.log(result); 普通字符 () 标记一个子表达式的开始和结束位置，即匹配与()中的字表达式相同的字符，之后我们可以用\1（反向引用）来引用第一个()中的字表达式。
+// 表示匹配与 \w 相同的四个连续的字符 var reg = /(\w)\1\1\1/g;  var str = &amp;#39;aaaabbbbccccc&amp;#39;;  var result = str.match(reg);  console.log(result); 也可以使用\2来引用第二个子表达式：
+var reg = /(\w)\1(\w)\2/g;  var str = &amp;#39;ccddvvffff&amp;#39;;  var result = str.</description>
+    </item>
+    
+  </channel>
+</rss>

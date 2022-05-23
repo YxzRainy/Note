@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>选择控制 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
+    <link>https://yxzi.xyz/tags/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/</link>
     <description>Recent content in 选择控制 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 03 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E9%80%89%E6%8B%A9%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C if</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/if/</guid>
       <description>if 在程序当中,并不是所有的语句都是自上而下依次的执行，有时候会依据条件来选择性的执行某段代码，这个时候就需要用到 if 语句。
 如果 1 为真，则执行 A；如果 1 为假，则不执行 A。
 #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (1) 	A； } #include &amp;lt;stdio.h&amp;gt;int main(void) { 	if (2 &amp;gt; 1) 	printf(&amp;#34;if 语句为 true\n&amp;#34;); } if 语句默认只能控制 A，不能控制 B（即无论 1 为 true 还是 false， B 都会执行）。
@@ -21,10 +24,10 @@
     
     <item>
       <title>C switch</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</link>
       <pubDate>Mon, 03 Jan 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/language/c/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/switch/</guid>
       <description>switch 它是一种选择控制语句。
 switch 是选择控制语句，而不是循环控制语句，如果在 switch 中出现了 berak 语句，该语句的功
 能只是退出 switch 语句并转去执行这个 switch 下面的语句。

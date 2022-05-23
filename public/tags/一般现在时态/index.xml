@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>一般现在时态 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
+    <link>https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
     <description>Recent content in 一般现在时态 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 31 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Mar 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English 主（三单）谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Thu, 31 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
       <description>主（三单）谓宾 所谓第三人称单数，指的是：不是我，也不是你，而是第三者（人或物），并且这个第三者一定是一个单数
 比如 your father，因为有一个有一个 your，所以很多人误以为这是第二人称，但实际上这依旧是第三人称，因为这里的 your 只是一个定语，“你的爸爸”，不是“你”，也不是“我”，是除我们之外的第三者，而且“你的爸爸”是一个单数概念，因为“你的爸爸”是一个人，不是两个或三个。
 我们把主语 （第三人称单数）+ 谓语 + 宾语这个句型分成更具体的四个小句型。
@@ -27,10 +30,10 @@
     
     <item>
       <title>English 一般现在时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
       <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</guid>
       <description>一般现在时态 指的是从过去到现在直至将来的一段时间内发生的动作或存在的状态
 一般现在时态的用法 当表示经常性、习惯性、有规律性的动作和状态的时候 另外，表示真理性、客观性的动作和状态也要使用一般现在时态。
 比如：地球是圆的，太阳从东边升起，1 + 1 = 2.
@@ -44,10 +47,10 @@
     
     <item>
       <title>English 主（非三单）谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
       <description>主（非三单）谓宾 我们把主语 （非第三人称单数）+ 谓语 + 宾语这个句型分成四个更具体详细的小句型。
 人称代词主格（主语）+不及物动词原型（谓语）+状语 这个小句型中的主语都是 I/we/you/they.
  We run every day. They walk every day.  名词复数（主语）+不及物动词原型（谓语）+ 状语 这个小句型中的名词最好是表示人的名词的复数形式。
@@ -57,10 +60,10 @@
     
     <item>
       <title>English 主语 &#43; be &#43; 表语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Sun, 27 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 我们把主语 + be + 表语这个句型分成了四个更小更具体详细的小句型。
 人称代词主格（主语） + is/are/am + 形容词（表语）  i am happy. She is rich.  名词（主语） + is/are + 形容词（表语） 这个句型，我们用名称充当主语，在用形容词充当表语，因为只有 I 才能用 am，所以当我们用名词作主语的时候，只有系动词 is 和 are.
 一个人名或一个地名作主语的时候用 is  Rainy is busy. Rainy is famous.  如果是并列的人名或地名作主语的时候用 are.

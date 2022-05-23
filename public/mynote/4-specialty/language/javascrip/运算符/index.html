@@ -1,256 +1,97 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.96.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
-
-    <script type="application/ld+json">
-	{
-	    "@context" : "http://schema.org",
-	    "@type" : "BlogPosting",
-	    "mainEntityOfPage": {
-	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
-	    },
-	    "articleSection" : "mynote",
-	    "name" : "JavaScript 运算符",
-	    "headline" : "JavaScript 运算符",
-	    "description" : "运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。\n\u002b\u002b a\u002b\u002b 或 \u002b\u002ba，自增（递增）。使操作数加 1，并返回自增后的值。\n操作数前置或后置\n若位于数值的之后（a\u002b\u002b），则会自增之前返回数值。\n若位于数值的之前（\u002b\u002ba），则会自增之后返回数值。\n\u0026ndash; a\u0026ndash; 或 \u0026ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。\n操作数前置或后置\n若位于数值的之后（a\u0026ndash;），则会递减之前返回数值。\n若位于数值的之前（\u0026ndash;a），则会递减之后返回数值。\n比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。\n对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。\n对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。\n对于关系运算符（ \u0026lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。\n字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。\n原始值比较的是值，引用值比较的是引用地址。\nIn 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。\nInstanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。\n2 \u0026gt; 3 \u0026lt; 1\n先对 2 \u0026gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 \u0026lt; 1 ，会返回 true，所以最终返回 true。",
-	    "inLanguage" : "en-US",
-	    "author" : "Rainy",
-	    "creator" : "Rainy",
-	    "publisher": "Rainy",
-	    "accountablePerson" : "Rainy",
-	    "copyrightHolder" : "Rainy",
-	    "copyrightYear" : "2021",
-	    "datePublished": "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "dateModified" : "2021-10-21 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/javascrip\/%E8%BF%90%E7%AE%97%E7%AC%A6\/",
-	    "keywords" : [ "前端","学习笔记","JavaScript", ]
-	}
-</script><title>JavaScript 运算符</title>
-    <meta property="og:title" content="JavaScript 运算符" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
-&#43;&#43; a&#43;&#43; 或 &#43;&#43;a，自增（递增）。使操作数加 1，并返回自增后的值。
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>JavaScript 运算符 | Rainy · Blog</title><meta name=keywords content="前端,学习笔记,JavaScript"><meta name=description content="运算符 算数运算符 算术运算符都会将操作数用 Number() 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
 操作数前置或后置
-若位于数值的之后（a&#43;&#43;），则会自增之前返回数值。
-若位于数值的之前（&#43;&#43;a），则会自增之后返回数值。
-&amp;ndash; a&amp;ndash; 或 &amp;ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&ndash; a&ndash; 或 &ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
 操作数前置或后置
-若位于数值的之后（a&amp;ndash;），则会递减之前返回数值。
-若位于数值的之前（&amp;ndash;a），则会递减之后返回数值。
+若位于数值的之后（a&ndash;），则会递减之前返回数值。
+若位于数值的之前（&ndash;a），则会递减之后返回数值。
 比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
 对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
 对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
-对于关系运算符（ &amp;lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+对于关系运算符（ <=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
 字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
 原始值比较的是值，引用值比较的是引用地址。
 In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
-Instanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。
-2 &amp;gt; 3 &amp;lt; 1
-先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。" />
-    <meta name="description" content="运算符 算数运算符 算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
-&#43;&#43; a&#43;&#43; 或 &#43;&#43;a，自增（递增）。使操作数加 1，并返回自增后的值。
+Instanceof 用于判断一个对象是否是由指定构造函数构造出来的。
+// 如果 mycar 不是 vue 的实例对象 if (!(mycar instanceof Car)) {  console.log('No') } 也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。
+function Car(make, model, year) {  this.make = make;  this."><meta name=author content="Me"><link rel=canonical href=https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/><link crossorigin=anonymous href=/assets/css/stylesheet.min.ec8da366ca2fb647537ccb7a8f6fa5b4e9cd3c7a0d3171dd2d3baad1e49c8bfc.css integrity="sha256-7I2jZsovtkdTfMt6j2+ltOnNPHoNMXHdLTuq0eSci/w=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://yxzi.xyz/Logo.ico><link rel=icon type=image/png sizes=16x16 href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://yxzi.xyz/apple-touch-icon.png><link rel=mask-icon href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="JavaScript 运算符"><meta property="og:description" content="运算符 算数运算符 算术运算符都会将操作数用 Number() 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
 操作数前置或后置
-若位于数值的之后（a&#43;&#43;），则会自增之前返回数值。
-若位于数值的之前（&#43;&#43;a），则会自增之后返回数值。
-&amp;ndash; a&amp;ndash; 或 &amp;ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&ndash; a&ndash; 或 &ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
 操作数前置或后置
-若位于数值的之后（a&amp;ndash;），则会递减之前返回数值。
-若位于数值的之前（&amp;ndash;a），则会递减之后返回数值。
+若位于数值的之后（a&ndash;），则会递减之前返回数值。
+若位于数值的之前（&ndash;a），则会递减之后返回数值。
 比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
 对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
 对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
-对于关系运算符（ &amp;lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+对于关系运算符（ <=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
 字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
 原始值比较的是值，引用值比较的是引用地址。
 In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
-Instanceof 通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。
-2 &amp;gt; 3 &amp;lt; 1
-先对 2 &amp;gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &amp;lt; 1 ，会返回 true，所以最终返回 true。" />
-    <meta property="og:locale" content="zh-cn" />
-
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
-
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
-
-    
-    
-
-</head>
-    
-
-    <body class="Wrap">
-        <article class="Post BorderBox  ">
-            <header class="PostHeader">
-                <h1 id="Title" class="post-title">JavaScript 运算符</h1>
-                
-                <div class="DateArea">
-                    
-                    <time class="PostDate" datetime=" 2021-10-21 06:00:00 UTC">
-                        2021-10-21
-                    </time>
-                    
-                </div>
-                
-            </header>
-
-            
-            <div class="PostContent">
-                
-                <h1 id="运算符">运算符</h1>
-<h2 id="算数运算符">算数运算符</h2>
-<p>算术运算符都会将操作数用 Number() 方法隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。</p>
-<h3 id="heading">++</h3>
-<p>a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。</p>
-<p><strong>操作数前置或后置</strong></p>
-<p>若位于数值的之后（a++），则会自增之前返回数值。</p>
-<p>若位于数值的之前（++a），则会自增之后返回数值。</p>
-<h3 id="--">&ndash;</h3>
-<p>a&ndash; 或 &ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。</p>
-<p><strong>操作数前置或后置</strong></p>
-<p>若位于数值的之后（a&ndash;），则会递减之前返回数值。</p>
-<p>若位于数值的之前（&ndash;a），则会递减之后返回数值。</p>
-<h2 id="比较运算符">比较运算符</h2>
-<p>JavaScript 有两种比较方式：<strong>严格比较和转换类型比较</strong>。</p>
-<p>对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。</p>
-<p>对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。</p>
-<p>对于关系运算符（ &lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。</p>
-<p>字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。</p>
-<p>原始值比较的是值，引用值比较的是引用地址。</p>
-<h3 id="in">In</h3>
-<p>用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。</p>
-<h3 id="instanceof">Instanceof</h3>
-<p>通常用于判断一个对象是否是由指定构造函数构造出来的，是则返回 true，否则报错。但也用于判断一个实例对象的原型链中有没有另一个变量的原型，并返回一个布尔值。</p>
-<p><strong>2 &gt; 3 &lt; 1</strong></p>
-<p>先对 2 &gt; 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &lt; 1 ，会返回 true，所以最终返回 true。</p>
-<p><strong>NaN == NaN</strong></p>
-<p>当 NaN == NaN 进行比较时，会返回 false，因为 NaN 是非数，它不等于任何值（包括它本身）。</p>
-<p><strong>undefined == null</strong>，返回 true。</p>
-<p><strong>undefined === null</strong>，返回 false。</p>
-<h2 id="逻辑运算符">逻辑运算符</h2>
-<p>通常情况，该运算符会将表达式转换为一个布尔值，然后返回这个布尔值；特殊情况，会返回一个指定操作数的值。</p>
-<p>逻辑运算符的特殊情况</p>
-<ul>
-<li>若匹配到不能转换的值，则返回 number 类型的 NaN。</li>
-<li>若匹配到 null，则会返回 object 类型的 null。</li>
-<li>若匹配到 undefined，则会返回 undefined 类型的 undefined。</li>
-</ul>
-<h3 id="转换后逻辑值为-false-的值有">转换后逻辑值为 false 的值有：</h3>
-<ul>
-<li>null</li>
-<li>NaN</li>
-<li>0</li>
-<li>空字符串（&quot;&quot;、&rsquo;&rsquo;）</li>
-<li>undefined</li>
-</ul>
-<h3 id="heading-1">||</h3>
-<p>a || b || c，逻辑或；若匹配到隐式转换后为 true 的表达式，则返回该表达式的值；若表达式都为 false，则返回最后一个 false 表达式的值。</p>
-<h3 id="heading-2">&amp;&amp;</h3>
-<p>a &amp;&amp; b &amp;&amp; c，逻辑与；若匹配到隐式转换后为 false 的表达式，则返回该表达式的值；若表达式隐式转换后都为 true，则返回最后一个 true 表达式的值</p>
-<h4 id="短路语句">短路语句</h4>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">b</span> <span style="color:#ce5c00;font-weight:bold">&amp;&amp;</span> <span style="color:#000">console</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">log</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;前面的表达式为 true，你才能看到我&#39;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 如果表达式 a &gt; b 隐式转换后为 true，那么会执行该表达式之后的语句，否则不执行之后的语句。
-</span></span></span></code></pre></div><h3 id="heading-3">！</h3>
-<p>! a， 逻辑非；将操作数转换为布尔值，然后返回这个布尔值的反。</p>
-<h2 id="按位运算符">按位运算符</h2>
-<h3 id="heading-4">&amp;</h3>
-<p>按位与</p>
-<h4 id="如何运算">如何运算</h4>
-<p>规则：上下一与，相同为 1，不同为 0。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">1</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#8f5902;font-style:italic">// 1
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 1  在二进制里表示为  1
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 3  在二进制里表示为  11
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 对 1 进行补位：00000001
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 对 11 进行补位：00000011
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 根据与运算的规则：上下一与，相同为 1，不同为 0
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 1：     00000001
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 3：     00000011
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 结果：00000001
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">//因 00000001 转为十进制等于 1，因此最终结果为 1
-</span></span></span></code></pre></div>
-            </div>
-            
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/%E5%89%8D%E7%AB%AF/">
-                    前端
-                </a>
-            </div>
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                    学习笔记
-                </a>
-            </div>
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/javascript/">
-                    JavaScript
-                </a>
-            </div>
-            
-        </article>
-        
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#算数运算符">算数运算符</a>
-      <ul>
-        <li><a href="#heading">++</a></li>
-        <li><a href="#--">&ndash;</a></li>
-      </ul>
-    </li>
-    <li><a href="#比较运算符">比较运算符</a>
-      <ul>
-        <li><a href="#in">In</a></li>
-        <li><a href="#instanceof">Instanceof</a></li>
-      </ul>
-    </li>
-    <li><a href="#逻辑运算符">逻辑运算符</a>
-      <ul>
-        <li><a href="#转换后逻辑值为-false-的值有">转换后逻辑值为 false 的值有：</a></li>
-        <li><a href="#heading-1">||</a></li>
-        <li><a href="#heading-2">&amp;&amp;</a></li>
-        <li><a href="#heading-3">！</a></li>
-      </ul>
-    </li>
-    <li><a href="#按位运算符">按位运算符</a>
-      <ul>
-        <li><a href="#heading-4">&amp;</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTop"></use>
-    </svg>
-</a>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-    </body>
-
-</html>
+Instanceof 用于判断一个对象是否是由指定构造函数构造出来的。
+// 如果 mycar 不是 vue 的实例对象 if (!(mycar instanceof Car)) {  console.log('No') } 也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。
+function Car(make, model, year) {  this.make = make;  this."><meta property="og:type" content="article"><meta property="og:url" content="https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/"><meta property="og:image" content="https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="mynote"><meta property="article:published_time" content="2021-10-21T06:00:00+00:00"><meta property="article:modified_time" content="2021-10-21T06:00:00+00:00"><meta property="og:site_name" content="ExampleSite"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="JavaScript 运算符"><meta name=twitter:description content="运算符 算数运算符 算术运算符都会将操作数用 Number() 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。
+++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。
+操作数前置或后置
+若位于数值的之后（a++），则会自增之前返回数值。
+若位于数值的之前（++a），则会自增之后返回数值。
+&ndash; a&ndash; 或 &ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。
+操作数前置或后置
+若位于数值的之后（a&ndash;），则会递减之前返回数值。
+若位于数值的之前（&ndash;a），则会递减之后返回数值。
+比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。
+对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。
+对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。
+对于关系运算符（ <=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。
+字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。
+原始值比较的是值，引用值比较的是引用地址。
+In 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。
+Instanceof 用于判断一个对象是否是由指定构造函数构造出来的。
+// 如果 mycar 不是 vue 的实例对象 if (!(mycar instanceof Car)) {  console.log('No') } 也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。
+function Car(make, model, year) {  this.make = make;  this."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mynotes","item":"https://yxzi.xyz/mynote/"},{"@type":"ListItem","position":2,"name":"JavaScript 运算符","item":"https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"JavaScript 运算符","name":"JavaScript 运算符","description":"运算符 算数运算符 算术运算符都会将操作数用 Number() 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。\n++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。\n操作数前置或后置\n若位于数值的之后（a++），则会自增之前返回数值。\n若位于数值的之前（++a），则会自增之后返回数值。\n\u0026ndash; a\u0026ndash; 或 \u0026ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。\n操作数前置或后置\n若位于数值的之后（a\u0026ndash;），则会递减之前返回数值。\n若位于数值的之前（\u0026ndash;a），则会递减之后返回数值。\n比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。\n对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。\n对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。\n对于关系运算符（ \u0026lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。\n字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。\n原始值比较的是值，引用值比较的是引用地址。\nIn 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。\nInstanceof 用于判断一个对象是否是由指定构造函数构造出来的。\n// 如果 mycar 不是 vue 的实例对象 if (!(mycar instanceof Car)) {  console.log(\u0026#39;No\u0026#39;) } 也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。\nfunction Car(make, model, year) {  this.make = make;  this.","keywords":["前端","学习笔记","JavaScript"],"articleBody":"运算符 算数运算符 算术运算符都会将操作数用 Number() 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。\n++ a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。\n操作数前置或后置\n若位于数值的之后（a++），则会自增之前返回数值。\n若位于数值的之前（++a），则会自增之后返回数值。\n– a– 或 –a， 递减（自减）。使操作数减 1，并返回自减后的值。\n操作数前置或后置\n若位于数值的之后（a–），则会递减之前返回数值。\n若位于数值的之前（–a），则会递减之后返回数值。\n比较运算符 JavaScript 有两种比较方式：严格比较和转换类型比较。\n对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。\n对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。\n对于关系运算符（ 字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。\n原始值比较的是值，引用值比较的是引用地址。\nIn 用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。\nInstanceof 用于判断一个对象是否是由指定构造函数构造出来的。\n// 如果 mycar 不是 vue 的实例对象 if (!(mycar instanceof Car)) {  console.log('No') } 也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。\nfunction Car(make, model, year) {  this.make = make;  this.model = model;  this.year = year; } const auto = new Car('Honda', 'Accord', 1998);  console.log(auto instanceof Car); // expected output: true  console.log(auto instanceof Object); // expected output: true 2  3 先对 2  3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 NaN == NaN\n当 NaN == NaN 进行比较时，会返回 false，因为 NaN 是非数，它不等于任何值（包括它本身）。\nundefined == null，返回 true。\nundefined === null，返回 false。\n逻辑运算符 通常情况，该运算符会将表达式转换为一个布尔值，然后返回这个布尔值；特殊情况，会返回一个指定操作数的值。\n逻辑运算符的特殊情况\n 若匹配到不能转换的值，则返回 number 类型的 NaN。 若匹配到 null，则会返回 object 类型的 null。 若匹配到 undefined，则会返回 undefined 类型的 undefined。  转换后逻辑值为 false 的值有：  null NaN 0 空字符串（\"\"、’’） undefined  || a || b || c，逻辑或；若匹配到隐式转换后为 true 的表达式，则返回该表达式的值；若表达式都为 false，则返回最后一个 false 表达式的值。\n\u0026\u0026 a \u0026\u0026 b \u0026\u0026 c，逻辑与；若匹配到隐式转换后为 false 的表达式，则返回该表达式的值；若表达式隐式转换后都为 true，则返回最后一个 true 表达式的值\n短路语句 var a = 0; var b = -1; a  b \u0026\u0026 console.log('前面的表达式为 true，你才能看到我'); // 如果表达式 a  b 隐式转换后为 true，那么会执行该表达式之后的语句，否则不执行之后的语句。 ！ ! a， 逻辑非；将操作数转换为布尔值，然后返回这个布尔值的反。\n按位运算符 \u0026 按位与\n如何运算\n规则：上下一与，相同为 1，不同为 0。\nvar a = 1 \u0026 3; // 1 // 1 在二进制里表示为 1 // 3 在二进制里表示为 11 // 对 1 进行补位：00000001 // 对 11 进行补位：00000011 // 根据与运算的规则：上下一与，相同为 1，不同为 0 // 1： 00000001 // 3： 00000011 // 结果：00000001 //因 00000001 转为十进制等于 1，因此最终结果为 1 三目运算符 a ? b : c 相当于 if 语句\nif (a) { \tb; } else { \tc; } ","wordCount":"277","inLanguage":"en","datePublished":"2021-10-21T06:00:00Z","dateModified":"2021-10-21T06:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E8%BF%90%E7%AE%97%E7%AC%A6/"},"publisher":{"@type":"Organization","name":"Rainy · Blog","logo":{"@type":"ImageObject","url":"https://yxzi.xyz/Logo.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://yxzi.xyz/ accesskey=h title="Home (Alt + H)"><img src=https://yxzi.xyz/apple-touch-icon.png alt=logo aria-label=logo height=35>Home</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://yxzi.xyz/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://yxzi.xyz/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://yxzi.xyz/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://yxzi.xyz/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>JavaScript 运算符</h1><div class=post-meta><span title="2021-10-21 06:00:00 +0000 UTC">October 21, 2021</span>&nbsp;·&nbsp;277 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=# rel="noopener noreferrer" target=_blank></a></div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#算数运算符>算数运算符</a><ul><li><a href=#heading>++</a></li><li><a href=#-->&ndash;</a></li></ul></li><li><a href=#比较运算符>比较运算符</a><ul><li><a href=#in>In</a></li><li><a href=#instanceof>Instanceof</a></li></ul></li><li><a href=#逻辑运算符>逻辑运算符</a><ul><li><a href=#转换后逻辑值为-false-的值有>转换后逻辑值为 false 的值有：</a></li><li><a href=#heading-1>||</a></li><li><a href=#heading-2>&&</a></li><li><a href=#heading-3>！</a></li></ul></li><li><a href=#按位运算符>按位运算符</a><ul><li><a href=#heading-4>&</a></li></ul></li><li><a href=#三目运算符>三目运算符</a></li></ul></nav></div></details></div><div class=post-content><h1 id=运算符>运算符<a hidden class=anchor aria-hidden=true href=#运算符>#</a></h1><h2 id=算数运算符>算数运算符<a hidden class=anchor aria-hidden=true href=#算数运算符>#</a></h2><p>算术运算符都会将操作数用 <code>Number()</code> 隐式转换，然后再进行运算；若遇到无法转换的值，则会返回 number 类型的 NaN。</p><h3 id=heading>++<a hidden class=anchor aria-hidden=true href=#heading>#</a></h3><p>a++ 或 ++a，自增（递增）。使操作数加 1，并返回自增后的值。</p><p><strong>操作数前置或后置</strong></p><p>若位于数值的之后（a++），则会自增之前返回数值。</p><p>若位于数值的之前（++a），则会自增之后返回数值。</p><h3 id=-->&ndash;<a hidden class=anchor aria-hidden=true href=#-->#</a></h3><p>a&ndash; 或 &ndash;a， 递减（自减）。使操作数减 1，并返回自减后的值。</p><p><strong>操作数前置或后置</strong></p><p>若位于数值的之后（a&ndash;），则会递减之前返回数值。</p><p>若位于数值的之前（&ndash;a），则会递减之后返回数值。</p><h2 id=比较运算符>比较运算符<a hidden class=anchor aria-hidden=true href=#比较运算符>#</a></h2><p>JavaScript 有两种比较方式：<strong>严格比较和转换类型比较</strong>。</p><p>对于严格比较运算符（===）来说，仅当两个操作数的类型相同且值相等为 true。</p><p>对于比较运算符（==）来说，会先将将两个操作数转换成相同的类型，再进行值的比较运算。</p><p>对于关系运算符（ &lt;=）来说，会先将操作数转为原始值，使它们类型相同，再进行值的比较运算。</p><p>字符串比较则是使用基于标准字典的 Unicode 值来进行比较的。</p><p>原始值比较的是值，引用值比较的是引用地址。</p><h3 id=in>In<a hidden class=anchor aria-hidden=true href=#in>#</a></h3><p>用于判断一个对象的指定的属性是否在该对象或其原型链中，在则 in 运算符返回 true，不在则返回 false。</p><h3 id=instanceof>Instanceof<a hidden class=anchor aria-hidden=true href=#instanceof>#</a></h3><p>用于判断一个对象是否是由指定构造函数构造出来的。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// 如果 mycar 不是 vue 的实例对象
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span>(<span style=color:#a6e22e>mycar</span> <span style=color:#66d9ef>instanceof</span> <span style=color:#a6e22e>Car</span>)) {
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;No&#39;</span>)
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>也可以用于判断一个实例对象的原型链中有没有另一个变量的原型。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>Car</span>(<span style=color:#a6e22e>make</span>, <span style=color:#a6e22e>model</span>, <span style=color:#a6e22e>year</span>) {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>make</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>make</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>model</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>model</span>;
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>year</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>year</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>auto</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Car</span>(<span style=color:#e6db74>&#39;Honda&#39;</span>, <span style=color:#e6db74>&#39;Accord&#39;</span>, <span style=color:#ae81ff>1998</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>auto</span> <span style=color:#66d9ef>instanceof</span> <span style=color:#a6e22e>Car</span>);
+</span></span><span style=display:flex><span><span style=color:#75715e>// expected output: true
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>auto</span> <span style=color:#66d9ef>instanceof</span> Object);
+</span></span><span style=display:flex><span><span style=color:#75715e>// expected output: true
+</span></span></span></code></pre></div><p><strong>2 > 3 &lt; 1</strong></p><p>先对 2 > 3 进行比较，比较完成之后返回 false，又因为 false = 0，在用 0 与 1 比较，因 0 &lt; 1 ，会返回 true，所以最终返回 true。</p><p><strong>NaN == NaN</strong></p><p>当 NaN == NaN 进行比较时，会返回 false，因为 NaN 是非数，它不等于任何值（包括它本身）。</p><p><strong>undefined == null</strong>，返回 true。</p><p><strong>undefined === null</strong>，返回 false。</p><h2 id=逻辑运算符>逻辑运算符<a hidden class=anchor aria-hidden=true href=#逻辑运算符>#</a></h2><p>通常情况，该运算符会将表达式转换为一个布尔值，然后返回这个布尔值；特殊情况，会返回一个指定操作数的值。</p><p>逻辑运算符的特殊情况</p><ul><li>若匹配到不能转换的值，则返回 number 类型的 NaN。</li><li>若匹配到 null，则会返回 object 类型的 null。</li><li>若匹配到 undefined，则会返回 undefined 类型的 undefined。</li></ul><h3 id=转换后逻辑值为-false-的值有>转换后逻辑值为 false 的值有：<a hidden class=anchor aria-hidden=true href=#转换后逻辑值为-false-的值有>#</a></h3><ul><li>null</li><li>NaN</li><li>0</li><li>空字符串（""、&rsquo;&rsquo;）</li><li>undefined</li></ul><h3 id=heading-1>||<a hidden class=anchor aria-hidden=true href=#heading-1>#</a></h3><p>a || b || c，逻辑或；若匹配到隐式转换后为 true 的表达式，则返回该表达式的值；若表达式都为 false，则返回最后一个 false 表达式的值。</p><h3 id=heading-2>&&<a hidden class=anchor aria-hidden=true href=#heading-2>#</a></h3><p>a && b && c，逻辑与；若匹配到隐式转换后为 false 的表达式，则返回该表达式的值；若表达式隐式转换后都为 true，则返回最后一个 true 表达式的值</p><h4 id=短路语句>短路语句<a hidden class=anchor aria-hidden=true href=#短路语句>#</a></h4><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>b</span> <span style=color:#f92672>=</span> <span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>;
+</span></span><span style=display:flex><span><span style=color:#a6e22e>a</span> <span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>b</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#e6db74>&#39;前面的表达式为 true，你才能看到我&#39;</span>);
+</span></span><span style=display:flex><span><span style=color:#75715e>// 如果表达式 a &gt; b 隐式转换后为 true，那么会执行该表达式之后的语句，否则不执行之后的语句。
+</span></span></span></code></pre></div><h3 id=heading-3>！<a hidden class=anchor aria-hidden=true href=#heading-3>#</a></h3><p>! a， 逻辑非；将操作数转换为布尔值，然后返回这个布尔值的反。</p><h2 id=按位运算符>按位运算符<a hidden class=anchor aria-hidden=true href=#按位运算符>#</a></h2><h3 id=heading-4>&<a hidden class=anchor aria-hidden=true href=#heading-4>#</a></h3><p>按位与</p><p><strong>如何运算</strong></p><p>规则：上下一与，相同为 1，不同为 0。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-JavaScript data-lang=JavaScript><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>&amp;</span> <span style=color:#ae81ff>3</span>; <span style=color:#75715e>// 1
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 1  在二进制里表示为  1
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 3  在二进制里表示为  11
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 对 1 进行补位：00000001
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 对 11 进行补位：00000011
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 根据与运算的规则：上下一与，相同为 1，不同为 0
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 1：     00000001
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 3：     00000011
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 结果：00000001
+</span></span></span><span style=display:flex><span><span style=color:#75715e>//因 00000001 转为十进制等于 1，因此最终结果为 1
+</span></span></span></code></pre></div><h2 id=三目运算符>三目运算符<a hidden class=anchor aria-hidden=true href=#三目运算符>#</a></h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>a <span style=color:#f92672>?</span> b : c
+</span></span></code></pre></div><p>相当于 if 语句</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>a</span>) {
+</span></span><span style=display:flex><span>	<span style=color:#a6e22e>b</span>;
+</span></span><span style=display:flex><span>} <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>	<span style=color:#a6e22e>c</span>;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://yxzi.xyz/tags/%E5%89%8D%E7%AB%AF/>前端</a></li><li><a href=https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/>学习笔记</a></li><li><a href=https://yxzi.xyz/tags/javascript/>JavaScript</a></li></ul><nav class=paginav><a class=prev href=https://yxzi.xyz/mynote/4-specialty/language/javascrip/dom/%E8%8A%82%E7%82%B9/><span class=title>« Prev</span><br><span>JavaScript 节点</span></a>
+<a class=next href=https://yxzi.xyz/mynote/4-specialty/language/javascrip/%E5%87%BD%E6%95%B0/%E9%80%92%E5%BD%92/><span class=title>Next »</span><br><span>JavaScript 递归</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://yxzi.xyz/>Rainy · Blog</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerHTML="copy";function s(){e.innerHTML="copied!",setTimeout(()=>{e.innerHTML="copy"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script></body></html>

@@ -1,344 +1,200 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.96.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Rainy" />
-    <meta property="og:url" content="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/" />
-    <link rel="canonical" href="https://yxzi.xyz/Sub/Blog/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/" /><link rel="apple-touch-icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="icon" href="https://yxzi.xyz/Logo.ico" />
-    <link rel="shortcut" href="https://yxzi.xyz/Logo.ico" /><link rel="alternate" type="application/atom+xml" href="https://yxzi.xyz/Sub/Blogindex.xml" title="Rainy · Blog" />
-
-    <script type="application/ld+json">
-	{
-	    "@context" : "http://schema.org",
-	    "@type" : "BlogPosting",
-	    "mainEntityOfPage": {
-	         "@type": "WebPage",
-	         "@id": "https:\/\/yxzi.xyz\/Sub\/Blog"
-	    },
-	    "articleSection" : "mynote",
-	    "name" : "C 结构体的使用",
-	    "headline" : "C 结构体的使用",
-	    "description" : "结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。\n  先初始化一个结构体，后续再一个变量一个变量的进行赋值。\n  #include \u0026lt;iostream\u0026gt;#include \u0026lt;malloc.h\u0026gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  \/\/ 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,\u0026#39;N\u0026#39;};  \/\/ 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = \u0026#39;V\u0026#39;;  printf(\u0026#34;%d %f %c\\n\u0026#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(\u0026#34;%d %f %c\u0026#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-\u0026gt;成员变量名 = *(指针变量名).",
-	    "inLanguage" : "en-US",
-	    "author" : "Rainy",
-	    "creator" : "Rainy",
-	    "publisher": "Rainy",
-	    "accountablePerson" : "Rainy",
-	    "copyrightHolder" : "Rainy",
-	    "copyrightYear" : "2022",
-	    "datePublished": "2022-04-15 06:00:00 \u002b0000 UTC",
-	    "dateModified" : "2022-04-15 06:00:00 \u002b0000 UTC",
-	    "url" : "https:\/\/yxzi.xyz\/Sub\/Blog\/mynote\/4-specialty\/language\/c\/%E7%BB%93%E6%9E%84%E4%BD%93\/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8\/",
-	    "keywords" : [ "C","结构体","学习笔记", ]
-	}
-</script><title>C 结构体的使用</title>
-    <meta property="og:title" content="C 结构体的使用" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>C 结构体的使用 | Rainy · Blog</title><meta name=keywords content="C,结构体,学习笔记"><meta name=description content="结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
   先初始化一个结构体，后续再一个变量一个变量的进行赋值。
-  #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,&amp;#39;N&amp;#39;};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = &amp;#39;V&amp;#39;;  printf(&amp;#34;%d %f %c\n&amp;#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&amp;#34;%d %f %c&amp;#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-&amp;gt;成员变量名 = *(指针变量名)." />
-    <meta name="description" content="结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
+  #include <iostream>#include <malloc.h> struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,'N'};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = 'V';  printf(&#34;%d %f %c\n&#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&#34;%d %f %c&#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名->成员变量名 = *(指针变量名)."><meta name=author content="Me"><link rel=canonical href=https://yxzi.xyz/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/><link crossorigin=anonymous href=/assets/css/stylesheet.min.ec8da366ca2fb647537ccb7a8f6fa5b4e9cd3c7a0d3171dd2d3baad1e49c8bfc.css integrity="sha256-7I2jZsovtkdTfMt6j2+ltOnNPHoNMXHdLTuq0eSci/w=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://yxzi.xyz/Logo.ico><link rel=icon type=image/png sizes=16x16 href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://yxzi.xyz/apple-touch-icon.png><link rel=mask-icon href=https://yxzi.xyz/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="C 结构体的使用"><meta property="og:description" content="结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
   先初始化一个结构体，后续再一个变量一个变量的进行赋值。
-  #include &amp;lt;iostream&amp;gt;#include &amp;lt;malloc.h&amp;gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,&amp;#39;N&amp;#39;};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = &amp;#39;V&amp;#39;;  printf(&amp;#34;%d %f %c\n&amp;#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&amp;#34;%d %f %c&amp;#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-&amp;gt;成员变量名 = *(指针变量名)." />
-    <meta property="og:locale" content="zh-cn" />
-
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/index.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Base.css" />
-    <link rel="stylesheet" href="https://yxzi.xyz/Sub/Blog/css/Hover.css" />
-
-    
-    <link href="/Sub/Blog/%20index.xml" rel="alternate" type="application/rss+xml"
-            title="Rainy · Blog">
-    <script>
-        (function (undefined) { }.call(('object' === typeof window && window) || ('object' === typeof self && self) || ('object' === typeof global && global) || {}));
-    </script>
-
-    
-    
-
-</head>
-    
-
-    <body class="Wrap">
-        <article class="Post BorderBox  ">
-            <header class="PostHeader">
-                <h1 id="Title" class="post-title">C 结构体的使用</h1>
-                
-                <div class="DateArea">
-                    
-                    <time class="PostDate" datetime=" 2022-04-15 06:00:00 UTC">
-                        2022-04-15
-                    </time>
-                    
-                </div>
-                
-            </header>
-
-            
-            <div class="PostContent">
-                
-                <h1 id="结构体的使用">结构体的使用</h1>
-<h2 id="初始化和赋值">初始化和赋值</h2>
-<ol>
-<li>
-<p>初始化一个结构体的时候，可以同时进行赋值。</p>
-</li>
-<li>
-<p>先初始化一个结构体，后续再一个变量一个变量的进行赋值。</p>
-</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;malloc.h&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 初始化结构体，同时进行赋值
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">Rainy</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">98.3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;N&#39;</span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 初始化结构体，后续再一个变量一个变量的进行赋值
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">21</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">score</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">95.6</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sex</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;V&#39;</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d %f %c</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d %f %c&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="访问结构体中的变量">访问结构体中的变量</h2>
-<ol>
-<li>通过<strong>结构体变量名.成员变量</strong>名的方式去访问结构体中的变量</li>
-<li>通过<strong>指针变量名-&gt;成员变量名</strong> = *<em>(<em>指针变量名).成员变量名</em></em></li>
-</ol>
-<p>虽然这两种访问方式不一样，但是本质上是一样的。但是第二种方式更常用。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;malloc.h&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 初始化结构体，同时进行赋值
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">Rainy</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#0000cf;font-weight:bold">18</span><span style="color:#000;font-weight:bold">,</span><span style="color:#0000cf;font-weight:bold">98.3</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;N&#39;</span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 定义一个指针变量 Student，变量名为 Rainys，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 用来存放 Rainy 的地址
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 下面的代码其实就是将 Rainy 的成员变量都修改了
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因为Rainys 中存放的其实是 Rainy 的地址，即Rainys就是Rainy
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因此，最后的输出才都是相同的，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">21</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">score</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">95.6</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">Rainys</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">sex</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#39;V&#39;</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输出内容一样，因为Rainy中的成员变量被我们通过 Rainy 修改了
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d %f %c</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainy</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d %f %c&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">Rainys</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// Rainys -&gt; age 在计算机内部会被转换成(*Rainys).age。这是一种规定。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 所以 Rainys -&gt; age 等价于 (*Rainys).age 也等价于 Rainy.age
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="结构体变量和结构体指针变量作为函数参数传递的问题">结构体变量和结构体指针变量作为函数参数传递的问题</h2>
-<p>用函数修改结构体的成员或给结构体的成员赋值，传入函数的实参必须是结构体变量的地址。</p>
-<p>用函数输出结构体中的成员，可以直接将<strong>结构体变量</strong>作为函数的实参，也可以使用<strong>结构体变量的指针</strong>作为函数的实参。但是，我依旧推荐你将结构体的指针地址作为实参，因为这会让你节省内存地占用，并且还能提高你的程序的执行效率。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;string.h&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 声明函数的参数为指针变量
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">InputStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">OutStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">OutPStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">st</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输出 st 所占的字节总数 108。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">st</span><span style="color:#000;font-weight:bold">));</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 给 st 中的成员赋值，因为需要修改结构体中的成员，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 所以该函数的实参必须是 st 的地址
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>     <span style="color:#000">InputStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">st</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>     <span style="color:#8f5902;font-style:italic">// 直接传入 st，输出 st 中的成员，只输出，不修改，所以该函数的实参可以不是 st 的指针地址。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>     <span style="color:#8f5902;font-style:italic">// 当然， 也可以 是 st 的地址
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>     <span style="color:#000">OutStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">st</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>     <span style="color:#8f5902;font-style:italic">// 也可以传入 st 的指针地址，输出 st 中的成员，我们推荐你使用这种方式。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>     <span style="color:#000">OutPStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">st</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>     <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// pstu 只占 4 个字节，因为它是指针变量
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// * pstu = st
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// pstu = st 的地址
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">InputStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pstu</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// (*pstu).age = pstu-&gt;age =10;
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000;font-weight:bold">(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">pstu</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">age</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 将指定字符串&#34;女&#34;赋值到指定地址的内存空间，返回值为char
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">strcpy</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pstu</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;女&#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// pstu-&gt;score = 100 = (*pstu).score = 100;
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">pstu</span><span style="color:#ce5c00;font-weight:bold">-&gt;</span><span style="color:#000">score</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 直接传入 st，输出 st 中的成员，不推荐这种方法，因为这相当于重新定义了一个 out 结构体，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 并将 st 中的内容复制到 out 中，即：相当于多用了 108 个字节的内存空间
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">OutStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">out</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输出 out 所占字节数， 和 st 所占字节数是一样的。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">));</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;传入 st 内容的输出方式：%d %.2f %s</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// 传入 st 的指针地址，输出 st 中的成员
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">OutPStudent</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">outP</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输出 outP 所占字节数，只占 8 个字节（指针变量只占 8 个字节。32 位系统占 4 个字节，64 位系统占 8个字节）
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 用这种方式输出，比上面那种直接传入 st 的内容要节约所占的内存空间，
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#8f5902;font-style:italic">// 因为这样就不用将 st 中的所有内容都赋值到 * out，只需要将 st 第一个字节的地址赋值到 * out 就可以了。
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">outP</span><span style="color:#000;font-weight:bold">));</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;传入 st 地址的输出方式：%d %.2f %s</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">outP</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">,(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">outP</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">,(</span><span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000">outP</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">sex</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="结构体变量的运算">结构体变量的运算</h2>
-<p>结构体成员不能相加、不能相减，也不能相互乘除。</p>
-<p>但结构体成员可以互相赋值。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;iostream&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">#include</span> <span style="color:#8f5902;font-style:italic">&lt;string.h&gt;</span><span style="color:#8f5902;font-style:italic">
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">sex</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">st1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">st2</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#8f5902;font-style:italic">// st1 + st2 
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#8f5902;font-style:italic">// st1 * st2 
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#8f5902;font-style:italic">// st1 / st2
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>   <span style="color:#8f5902;font-style:italic">// st1 = st2 或 st2 = st1 都是正确的
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div><h2 id="动态构造存放学生信息的结构体数组">动态构造存放学生信息的结构体数组</h2>
-<p>动态的构造一个存放学生信息（姓名、成绩、年龄）的数组。</p>
-<p>用冒泡排序对这个数组中的学生进行升序，升序规则依照的是学生的成绩。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># include &lt;stdio.h&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"># include &lt;malloc.h&gt;
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#8f5902;font-style:italic">// 构造储存学生信息的变量
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">char</span> <span style="color:#000">name</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">100</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">age</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">float</span> <span style="color:#000">score</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">};</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">void</span> <span style="color:#000">sort</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">t</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]){</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">t</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">t</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">main</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">void</span><span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">len</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#000">t</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入学生的个数：</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;学生个数为： &#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">len</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 动态构造一维数组来存放每个 Student 的信息，并将第一个 Student 的地址存放到 pArr 中
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#000">pArr</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span> <span style="color:#ce5c00;font-weight:bold">*</span><span style="color:#000;font-weight:bold">)</span><span style="color:#000">malloc</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#204a87;font-weight:bold">sizeof</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">struct</span> <span style="color:#000">Student</span><span style="color:#000;font-weight:bold">));</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 输入学生信息
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;请输入第 %d 个学生的信息：</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;name = &#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>         <span style="color:#8f5902;font-style:italic">// name 是数组名，本身就已经是数组首元素的地址，所以不需要加 &amp;
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%s&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;age = &#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%d&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;score = &#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">scanf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%f&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#ce5c00;font-weight:bold">&amp;</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#8f5902;font-style:italic">// 对学生的成绩进行升序
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>    <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span> <span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#ce5c00;font-weight:bold">-</span> <span style="color:#000">i</span><span style="color:#000;font-weight:bold">;</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#8f5902;font-style:italic">// 以 pArr 中的成绩来比较，并进行升序，将 &gt; 改为 &lt; 就进行降序
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">score</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">t</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">];</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">j</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">t</span><span style="color:#000;font-weight:bold">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#8f5902;font-style:italic">// 输出学生信息
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#204a87;font-weight:bold">for</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">int</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">&lt;</span> <span style="color:#000">len</span><span style="color:#000;font-weight:bold">;</span> <span style="color:#ce5c00;font-weight:bold">++</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">){</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;%s的信息是：</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;name =  %s</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">name</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;age = %d</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">age</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;score = %.0f</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">pArr</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">].</span><span style="color:#000">score</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000;font-weight:bold">}</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#000">printf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
-</span></span></code></pre></div>
-            </div>
-            
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/c/">
-                    C
-                </a>
-            </div>
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/%E7%BB%93%E6%9E%84%E4%BD%93/">
-                    结构体
-                </a>
-            </div>
-            
-            <div class="PostTag">
-                <a href="/Sub/Blog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                    学习笔记
-                </a>
-            </div>
-            
-        </article>
-        
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#初始化和赋值">初始化和赋值</a></li>
-    <li><a href="#访问结构体中的变量">访问结构体中的变量</a></li>
-    <li><a href="#结构体变量和结构体指针变量作为函数参数传递的问题">结构体变量和结构体指针变量作为函数参数传递的问题</a></li>
-    <li><a href="#结构体变量的运算">结构体变量的运算</a></li>
-    <li><a href="#动态构造存放学生信息的结构体数组">动态构造存放学生信息的结构体数组</a></li>
-  </ul>
-</nav>
-
-        <a id="ToTheTop" href="#Title" class="hvr-icon-float">
-    <svg class="Icon TransitionOne hvr-icon" aria-hidden="true">
-        <use href="#Icon-ToTop"></use>
-    </svg>
-</a>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-<script src="//at.alicdn.com/t/font_2643512_y3jltpxrbur.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Search.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/Main.js"></script>
-<script src="https://yxzi.xyz/Sub/Blog/js/CopyBtn.js"></script>
-    </body>
-
-</html>
+  #include <iostream>#include <malloc.h> struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,'N'};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = 'V';  printf(&#34;%d %f %c\n&#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&#34;%d %f %c&#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名->成员变量名 = *(指针变量名)."><meta property="og:type" content="article"><meta property="og:url" content="https://yxzi.xyz/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/"><meta property="og:image" content="https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="mynote"><meta property="article:published_time" content="2022-04-15T06:00:00+00:00"><meta property="article:modified_time" content="2022-04-15T06:00:00+00:00"><meta property="og:site_name" content="ExampleSite"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="C 结构体的使用"><meta name=twitter:description content="结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。
+  先初始化一个结构体，后续再一个变量一个变量的进行赋值。
+  #include <iostream>#include <malloc.h> struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,'N'};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = 'V';  printf(&#34;%d %f %c\n&#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(&#34;%d %f %c&#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名->成员变量名 = *(指针变量名)."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mynotes","item":"https://yxzi.xyz/mynote/"},{"@type":"ListItem","position":2,"name":"C 结构体的使用","item":"https://yxzi.xyz/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"C 结构体的使用","name":"C 结构体的使用","description":"结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。\n  先初始化一个结构体，后续再一个变量一个变量的进行赋值。\n  #include \u0026lt;iostream\u0026gt;#include \u0026lt;malloc.h\u0026gt; struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,\u0026#39;N\u0026#39;};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = \u0026#39;V\u0026#39;;  printf(\u0026#34;%d %f %c\\n\u0026#34;,Rainy.age,Rainy.score,Rainy.sex);  printf(\u0026#34;%d %f %c\u0026#34;,Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-\u0026gt;成员变量名 = *(指针变量名).","keywords":["C","结构体","学习笔记"],"articleBody":"结构体的使用 初始化和赋值   初始化一个结构体的时候，可以同时进行赋值。\n  先初始化一个结构体，后续再一个变量一个变量的进行赋值。\n  #include #include  struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,'N'};  // 初始化结构体，后续再一个变量一个变量的进行赋值  struct Student Rainys;  Rainys.age = 21;  Rainys.score = 95.6;  Rainys.sex = 'V';  printf(\"%d %f %c\\n\",Rainy.age,Rainy.score,Rainy.sex);  printf(\"%d %f %c\",Rainys.age,Rainys.score,Rainys.sex);  } 访问结构体中的变量  通过结构体变量名.成员变量名的方式去访问结构体中的变量 通过指针变量名-成员变量名 = *(指针变量名).成员变量名  虽然这两种访问方式不一样，但是本质上是一样的。但是第二种方式更常用。\n#include #include  struct Student{  int age;  float score;  char sex; };  int main(void) {  // 初始化结构体，同时进行赋值  struct Student Rainy = {18,98.3,'N'};  // 定义一个指针变量 Student，变量名为 Rainys，  // 用来存放 Rainy 的地址  struct Student *Rainys = \u0026Rainy;  // 下面的代码其实就是将 Rainy 的成员变量都修改了  // 因为Rainys 中存放的其实是 Rainy 的地址，即Rainys就是Rainy  // 因此，最后的输出才都是相同的，  Rainys - age = 21;  Rainys - score = 95.6;  Rainys- sex = 'V';  // 输出内容一样，因为Rainy中的成员变量被我们通过 Rainy 修改了  printf(\"%d %f %c\\n\",Rainy.age,Rainy.score,Rainy.sex);  printf(\"%d %f %c\",Rainys - age,Rainys - score,Rainys - sex);  // Rainys - age 在计算机内部会被转换成(*Rainys).age。这是一种规定。  // 所以 Rainys - age 等价于 (*Rainys).age 也等价于 Rainy.age } 结构体变量和结构体指针变量作为函数参数传递的问题 用函数修改结构体的成员或给结构体的成员赋值，传入函数的实参必须是结构体变量的地址。\n用函数输出结构体中的成员，可以直接将结构体变量作为函数的实参，也可以使用结构体变量的指针作为函数的实参。但是，我依旧推荐你将结构体的指针地址作为实参，因为这会让你节省内存地占用，并且还能提高你的程序的执行效率。\n#include #include  struct Student{  int age;  float score;  char sex[100]; }; // 声明函数的参数为指针变量 void InputStudent(struct Student *); void OutStudent(struct Student); void OutPStudent(struct Student *); int main(void) {  struct Student st;  // 输出 st 所占的字节总数 108。  printf(\"%d\\n\",sizeof(st));  // 给 st 中的成员赋值，因为需要修改结构体中的成员，  // 所以该函数的实参必须是 st 的地址  InputStudent(\u0026st);  // 直接传入 st，输出 st 中的成员，只输出，不修改，所以该函数的实参可以不是 st 的指针地址。  // 当然， 也可以 是 st 的地址  OutStudent(st);  // 也可以传入 st 的指针地址，输出 st 中的成员，我们推荐你使用这种方式。  OutPStudent(\u0026st);  return 0; } // pstu 只占 4 个字节，因为它是指针变量 // * pstu = st // pstu = st 的地址 void InputStudent(struct Student * pstu){  // (*pstu).age = pstu-age =10;  (*pstu).age = 10;  // 将指定字符串\"女\"赋值到指定地址的内存空间，返回值为char  strcpy(pstu-sex,\"女\");  // pstu-score = 100 = (*pstu).score = 100;  pstu-score = 100; } // 直接传入 st，输出 st 中的成员，不推荐这种方法，因为这相当于重新定义了一个 out 结构体， // 并将 st 中的内容复制到 out 中，即：相当于多用了 108 个字节的内存空间 void OutStudent(struct Student out){  // 输出 out 所占字节数， 和 st 所占字节数是一样的。  printf(\"%d\\n\",sizeof(out));  printf(\"传入 st 内容的输出方式：%d %.2f %s\\n\",out.age,out.score,out.sex); }  // 传入 st 的指针地址，输出 st 中的成员 void OutPStudent(struct Student *outP){  // 输出 outP 所占字节数，只占 8 个字节（指针变量只占 8 个字节。32 位系统占 4 个字节，64 位系统占 8个字节）  // 用这种方式输出，比上面那种直接传入 st 的内容要节约所占的内存空间，  // 因为这样就不用将 st 中的所有内容都赋值到 * out，只需要将 st 第一个字节的地址赋值到 * out 就可以了。  printf(\"%d\\n\",sizeof(outP));  printf(\"传入 st 地址的输出方式：%d %.2f %s\\n\",(*outP).age,(*outP).score,(*outP).sex); } 结构体变量的运算 结构体成员不能相加、不能相减，也不能相互乘除。\n但结构体成员可以互相赋值。\n#include #include  struct Student{  int age;  char sex;  char name[10]; }; int main(void) {  struct Student st1,st2;  // st1 + st2  // st1 * st2  // st1 / st2  // st1 = st2 或 st2 = st1 都是正确的 } 动态构造存放学生信息的结构体数组 动态的构造一个存放学生信息（姓名、成绩、年龄）的数组。\n用冒泡排序对这个数组中的学生进行升序，升序规则依照的是学生的成绩。\n# include  # include  // 构造储存学生信息的变量 struct Student {  char name[100];  int age;  float score; }; void sort(int * a, int len){  int i,j,t;  for (i = 0; i  len-1;i ++){  for(j = 0;j  len - 1- i;j++){  if (a[j]  a[j+1]){  t = a[j];  a[j] = a [j+1];  a[j + 1] = t;  }  }  } } int main(void) {  int len;  struct Student * pArr;  int i,j;  struct Student t;   printf(\"请输入学生的个数：\\n\");  printf(\"学生个数为： \");  scanf(\"%d\",\u0026len);  // 动态构造一维数组来存放每个 Student 的信息，并将第一个 Student 的地址存放到 pArr 中  pArr = (struct Student *)malloc(len * sizeof(struct Student));   // 输入学生信息  for(int i = 0; i  len; ++i){  printf(\"请输入第 %d 个学生的信息：\\n\",i + 1);   printf(\"name = \");  // name 是数组名，本身就已经是数组首元素的地址，所以不需要加 \u0026  scanf(\"%s\",pArr[i].name);   printf(\"age = \");  scanf(\"%d\",\u0026pArr[i].age);   printf(\"score = \");  scanf(\"%f\",\u0026pArr[i].score);  }  // 对学生的成绩进行升序  for (i = 0; i  len-1;i ++){  for(j = 0;j  len - 1- i;j++){  // 以 pArr 中的成绩来比较，并进行升序，将  改为  if (pArr[j].score  pArr[j+1].score){  t = pArr[j];  pArr[j] = pArr[j+1];  pArr[j + 1] = t;  }  }  }  // 输出学生信息  for(int i = 0; i  len; ++i){  printf(\"%s的信息是：\\n\",pArr[i].name);  printf(\"name = %s\\n\",pArr[i].name);  printf(\"age = %d\\n\",pArr[i].age);  printf(\"score = %.0f\\n\",pArr[i].score);  }  printf(\"\\n\"); } ","wordCount":"579","inLanguage":"en","datePublished":"2022-04-15T06:00:00Z","dateModified":"2022-04-15T06:00:00Z","author":{"@type":"Person","name":"Me"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yxzi.xyz/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8/"},"publisher":{"@type":"Organization","name":"Rainy · Blog","logo":{"@type":"ImageObject","url":"https://yxzi.xyz/Logo.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://yxzi.xyz/ accesskey=h title="Home (Alt + H)"><img src=https://yxzi.xyz/apple-touch-icon.png alt=logo aria-label=logo height=35>Home</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://yxzi.xyz/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://yxzi.xyz/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://yxzi.xyz/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li><li><a href=https://yxzi.xyz/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class=post-title>C 结构体的使用</h1><div class=post-meta><span title="2022-04-15 06:00:00 +0000 UTC">April 15, 2022</span>&nbsp;·&nbsp;579 words&nbsp;·&nbsp;Me&nbsp;|&nbsp;<a href=# rel="noopener noreferrer" target=_blank></a></div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><nav id=TableOfContents><ul><li><a href=#初始化和赋值>初始化和赋值</a></li><li><a href=#访问结构体中的变量>访问结构体中的变量</a></li><li><a href=#结构体变量和结构体指针变量作为函数参数传递的问题>结构体变量和结构体指针变量作为函数参数传递的问题</a></li><li><a href=#结构体变量的运算>结构体变量的运算</a></li><li><a href=#动态构造存放学生信息的结构体数组>动态构造存放学生信息的结构体数组</a></li></ul></nav></div></details></div><div class=post-content><h1 id=结构体的使用>结构体的使用<a hidden class=anchor aria-hidden=true href=#结构体的使用>#</a></h1><h2 id=初始化和赋值>初始化和赋值<a hidden class=anchor aria-hidden=true href=#初始化和赋值>#</a></h2><ol><li><p>初始化一个结构体的时候，可以同时进行赋值。</p></li><li><p>先初始化一个结构体，后续再一个变量一个变量的进行赋值。</p></li></ol><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;malloc.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>struct</span> Student{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>float</span> score;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> sex;
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>void</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 初始化结构体，同时进行赋值
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>struct</span> Student Rainy <span style=color:#f92672>=</span> {<span style=color:#ae81ff>18</span>,<span style=color:#ae81ff>98.3</span>,<span style=color:#e6db74>&#39;N&#39;</span>};
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 初始化结构体，后续再一个变量一个变量的进行赋值
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>struct</span> Student Rainys;
+</span></span><span style=display:flex><span>    Rainys.age <span style=color:#f92672>=</span> <span style=color:#ae81ff>21</span>;
+</span></span><span style=display:flex><span>    Rainys.score <span style=color:#f92672>=</span> <span style=color:#ae81ff>95.6</span>;
+</span></span><span style=display:flex><span>    Rainys.sex <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;V&#39;</span>;
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;%d %f %c</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,Rainy.age,Rainy.score,Rainy.sex);
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;%d %f %c&#34;</span>,Rainys.age,Rainys.score,Rainys.sex);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=访问结构体中的变量>访问结构体中的变量<a hidden class=anchor aria-hidden=true href=#访问结构体中的变量>#</a></h2><ol><li>通过<strong>结构体变量名.成员变量</strong>名的方式去访问结构体中的变量</li><li>通过<strong>指针变量名->成员变量名</strong> = *<em>(<em>指针变量名).成员变量名</em></em></li></ol><p>虽然这两种访问方式不一样，但是本质上是一样的。但是第二种方式更常用。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;malloc.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>struct</span> Student{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>float</span> score;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> sex;
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>void</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 初始化结构体，同时进行赋值
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>struct</span> Student Rainy <span style=color:#f92672>=</span> {<span style=color:#ae81ff>18</span>,<span style=color:#ae81ff>98.3</span>,<span style=color:#e6db74>&#39;N&#39;</span>};
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 定义一个指针变量 Student，变量名为 Rainys，
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 用来存放 Rainy 的地址
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span>Rainys <span style=color:#f92672>=</span> <span style=color:#f92672>&amp;</span>Rainy;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 下面的代码其实就是将 Rainy 的成员变量都修改了
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 因为Rainys 中存放的其实是 Rainy 的地址，即Rainys就是Rainy
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 因此，最后的输出才都是相同的，
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    Rainys <span style=color:#f92672>-&gt;</span> age <span style=color:#f92672>=</span> <span style=color:#ae81ff>21</span>;
+</span></span><span style=display:flex><span>    Rainys <span style=color:#f92672>-&gt;</span> score <span style=color:#f92672>=</span> <span style=color:#ae81ff>95.6</span>;
+</span></span><span style=display:flex><span>    Rainys<span style=color:#f92672>-&gt;</span> sex <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;V&#39;</span>;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 输出内容一样，因为Rainy中的成员变量被我们通过 Rainy 修改了
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    printf(<span style=color:#e6db74>&#34;%d %f %c</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,Rainy.age,Rainy.score,Rainy.sex);
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;%d %f %c&#34;</span>,Rainys <span style=color:#f92672>-&gt;</span> age,Rainys <span style=color:#f92672>-&gt;</span> score,Rainys <span style=color:#f92672>-&gt;</span> sex);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Rainys -&gt; age 在计算机内部会被转换成(*Rainys).age。这是一种规定。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 所以 Rainys -&gt; age 等价于 (*Rainys).age 也等价于 Rainy.age
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><h2 id=结构体变量和结构体指针变量作为函数参数传递的问题>结构体变量和结构体指针变量作为函数参数传递的问题<a hidden class=anchor aria-hidden=true href=#结构体变量和结构体指针变量作为函数参数传递的问题>#</a></h2><p>用函数修改结构体的成员或给结构体的成员赋值，传入函数的实参必须是结构体变量的地址。</p><p>用函数输出结构体中的成员，可以直接将<strong>结构体变量</strong>作为函数的实参，也可以使用<strong>结构体变量的指针</strong>作为函数的实参。但是，我依旧推荐你将结构体的指针地址作为实参，因为这会让你节省内存地占用，并且还能提高你的程序的执行效率。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C data-lang=C><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;string.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>struct</span> Student{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>float</span> score;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> sex[<span style=color:#ae81ff>100</span>];
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span><span style=color:#75715e>// 声明函数的参数为指针变量
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>InputStudent</span>(<span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>OutStudent</span>(<span style=color:#66d9ef>struct</span> Student);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>OutPStudent</span>(<span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span>);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>void</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>struct</span> Student st;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 输出 st 所占的字节总数 108。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    printf(<span style=color:#e6db74>&#34;%d</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,<span style=color:#66d9ef>sizeof</span>(st));
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 给 st 中的成员赋值，因为需要修改结构体中的成员，
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 所以该函数的实参必须是 st 的地址
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>     InputStudent(<span style=color:#f92672>&amp;</span>st);
+</span></span><span style=display:flex><span>     <span style=color:#75715e>// 直接传入 st，输出 st 中的成员，只输出，不修改，所以该函数的实参可以不是 st 的指针地址。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>     <span style=color:#75715e>// 当然， 也可以 是 st 的地址
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>     OutStudent(st);
+</span></span><span style=display:flex><span>     <span style=color:#75715e>// 也可以传入 st 的指针地址，输出 st 中的成员，我们推荐你使用这种方式。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>     OutPStudent(<span style=color:#f92672>&amp;</span>st);
+</span></span><span style=display:flex><span>     <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>// pstu 只占 4 个字节，因为它是指针变量
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// * pstu = st
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// pstu = st 的地址
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>InputStudent</span>(<span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span> pstu){
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// (*pstu).age = pstu-&gt;age =10;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    (<span style=color:#f92672>*</span>pstu).age <span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>;
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 将指定字符串&#34;女&#34;赋值到指定地址的内存空间，返回值为char
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    strcpy(pstu<span style=color:#f92672>-&gt;</span>sex,<span style=color:#e6db74>&#34;女&#34;</span>);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// pstu-&gt;score = 100 = (*pstu).score = 100;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    pstu<span style=color:#f92672>-&gt;</span>score <span style=color:#f92672>=</span> <span style=color:#ae81ff>100</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#75715e>// 直接传入 st，输出 st 中的成员，不推荐这种方法，因为这相当于重新定义了一个 out 结构体，
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 并将 st 中的内容复制到 out 中，即：相当于多用了 108 个字节的内存空间
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>OutStudent</span>(<span style=color:#66d9ef>struct</span> Student out){
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 输出 out 所占字节数， 和 st 所占字节数是一样的。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    printf(<span style=color:#e6db74>&#34;%d</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,<span style=color:#66d9ef>sizeof</span>(out));
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;传入 st 内容的输出方式：%d %.2f %s</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,out.age,out.score,out.sex);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 传入 st 的指针地址，输出 st 中的成员
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>OutPStudent</span>(<span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span>outP){
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 输出 outP 所占字节数，只占 8 个字节（指针变量只占 8 个字节。32 位系统占 4 个字节，64 位系统占 8个字节）
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 用这种方式输出，比上面那种直接传入 st 的内容要节约所占的内存空间，
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>// 因为这样就不用将 st 中的所有内容都赋值到 * out，只需要将 st 第一个字节的地址赋值到 * out 就可以了。
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    printf(<span style=color:#e6db74>&#34;%d</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,<span style=color:#66d9ef>sizeof</span>(outP));
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;传入 st 地址的输出方式：%d %.2f %s</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,(<span style=color:#f92672>*</span>outP).age,(<span style=color:#f92672>*</span>outP).score,(<span style=color:#f92672>*</span>outP).sex);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=结构体变量的运算>结构体变量的运算<a hidden class=anchor aria-hidden=true href=#结构体变量的运算>#</a></h2><p>结构体成员不能相加、不能相减，也不能相互乘除。</p><p>但结构体成员可以互相赋值。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C data-lang=C><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;iostream&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#include</span> <span style=color:#75715e>&lt;string.h&gt;</span><span style=color:#75715e>
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>struct</span> Student{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> sex;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> name[<span style=color:#ae81ff>10</span>];
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>void</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>struct</span> Student st1,st2;
+</span></span><span style=display:flex><span>   <span style=color:#75715e>// st1 + st2 
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>   <span style=color:#75715e>// st1 * st2 
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>   <span style=color:#75715e>// st1 / st2
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>   <span style=color:#75715e>// st1 = st2 或 st2 = st1 都是正确的
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><h2 id=动态构造存放学生信息的结构体数组>动态构造存放学生信息的结构体数组<a hidden class=anchor aria-hidden=true href=#动态构造存放学生信息的结构体数组>#</a></h2><p>动态的构造一个存放学生信息（姓名、成绩、年龄）的数组。</p><p>用冒泡排序对这个数组中的学生进行升序，升序规则依照的是学生的成绩。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-C data-lang=C><span style=display:flex><span><span style=color:#75715e># include &lt;stdio.h&gt;
+</span></span></span><span style=display:flex><span><span style=color:#75715e># include &lt;malloc.h&gt;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e>// 构造储存学生信息的变量
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>struct</span> Student {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>char</span> name[<span style=color:#ae81ff>100</span>];
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> age;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>float</span> score;
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>sort</span>(<span style=color:#66d9ef>int</span> <span style=color:#f92672>*</span> a, <span style=color:#66d9ef>int</span> len){
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> i,j,t;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> len<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>;i <span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span>(j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;j <span style=color:#f92672>&lt;</span> len <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>-</span> i;j<span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> (a[j] <span style=color:#f92672>&gt;</span> a[j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>]){
+</span></span><span style=display:flex><span>                t <span style=color:#f92672>=</span> a[j];
+</span></span><span style=display:flex><span>                a[j] <span style=color:#f92672>=</span> a [j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span>                a[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> t;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>(<span style=color:#66d9ef>void</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> len;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span> pArr;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> i,j;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>struct</span> Student t;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;请输入学生的个数：</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>);
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;学生个数为： &#34;</span>);
+</span></span><span style=display:flex><span>    scanf(<span style=color:#e6db74>&#34;%d&#34;</span>,<span style=color:#f92672>&amp;</span>len);
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 动态构造一维数组来存放每个 Student 的信息，并将第一个 Student 的地址存放到 pArr 中
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    pArr <span style=color:#f92672>=</span> (<span style=color:#66d9ef>struct</span> Student <span style=color:#f92672>*</span>)malloc(len <span style=color:#f92672>*</span> <span style=color:#66d9ef>sizeof</span>(<span style=color:#66d9ef>struct</span> Student));
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 输入学生信息
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> len; <span style=color:#f92672>++</span>i){
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;请输入第 %d 个学生的信息：</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,i <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;name = &#34;</span>);
+</span></span><span style=display:flex><span>         <span style=color:#75715e>// name 是数组名，本身就已经是数组首元素的地址，所以不需要加 &amp;
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        scanf(<span style=color:#e6db74>&#34;%s&#34;</span>,pArr[i].name);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;age = &#34;</span>);
+</span></span><span style=display:flex><span>        scanf(<span style=color:#e6db74>&#34;%d&#34;</span>,<span style=color:#f92672>&amp;</span>pArr[i].age);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;score = &#34;</span>);
+</span></span><span style=display:flex><span>        scanf(<span style=color:#e6db74>&#34;%f&#34;</span>,<span style=color:#f92672>&amp;</span>pArr[i].score);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// 对学生的成绩进行升序
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>for</span> (i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> len<span style=color:#f92672>-</span><span style=color:#ae81ff>1</span>;i <span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span>(j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;j <span style=color:#f92672>&lt;</span> len <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span><span style=color:#f92672>-</span> i;j<span style=color:#f92672>++</span>){
+</span></span><span style=display:flex><span>            <span style=color:#75715e>// 以 pArr 中的成绩来比较，并进行升序，将 &gt; 改为 &lt; 就进行降序
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>            <span style=color:#66d9ef>if</span> (pArr[j].score <span style=color:#f92672>&gt;</span> pArr[j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>].score){
+</span></span><span style=display:flex><span>                t <span style=color:#f92672>=</span> pArr[j];
+</span></span><span style=display:flex><span>                pArr[j] <span style=color:#f92672>=</span> pArr[j<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>];
+</span></span><span style=display:flex><span>                pArr[j <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>] <span style=color:#f92672>=</span> t;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// 输出学生信息
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> len; <span style=color:#f92672>++</span>i){
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;%s的信息是：</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,pArr[i].name);
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;name =  %s</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,pArr[i].name);
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;age = %d</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,pArr[i].age);
+</span></span><span style=display:flex><span>        printf(<span style=color:#e6db74>&#34;score = %.0f</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>,pArr[i].score);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://yxzi.xyz/tags/c/>C</a></li><li><a href=https://yxzi.xyz/tags/%E7%BB%93%E6%9E%84%E4%BD%93/>结构体</a></li><li><a href=https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/>学习笔记</a></li></ul><nav class=paginav><a class=prev href=https://yxzi.xyz/mynote/4-specialty/language/c/%E7%BB%93%E6%9E%84%E4%BD%93/%E7%BB%93%E6%9E%84%E4%BD%93/><span class=title>« Prev</span><br><span>C 结构体</span></a>
+<a class=next href=https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/><span class=title>Next »</span><br><span>English at</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://yxzi.xyz/>Rainy · Blog</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(t=>{const n=t.parentNode.parentNode,e=document.createElement("button");e.classList.add("copy-code"),e.innerHTML="copy";function s(){e.innerHTML="copied!",setTimeout(()=>{e.innerHTML="copy"},2e3)}e.addEventListener("click",o=>{if("clipboard"in navigator){navigator.clipboard.writeText(t.textContent),s();return}const e=document.createRange();e.selectNodeContents(t);const n=window.getSelection();n.removeAllRanges(),n.addRange(e);try{document.execCommand("copy"),s()}catch(e){}n.removeRange(e)}),n.classList.contains("highlight")?n.appendChild(e):n.parentNode.firstChild==n||(t.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?t.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(e):t.parentNode.appendChild(e))})</script></body></html>

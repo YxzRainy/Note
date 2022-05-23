@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>好友 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%A5%BD%E5%8F%8B/</link>
+    <link>https://yxzi.xyz/tags/%E5%A5%BD%E5%8F%8B/</link>
     <description>Recent content in 好友 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%A5%BD%E5%8F%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E5%A5%BD%E5%8F%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>朋友间的关系是如何变淡的</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</guid>
       <description>好友间的关系是如何变淡的 为什么没人承认，是社会资源地位见识差距变大，
 你的苦闷他无法理解，他的彷徨在你而言，是变相炫耀。
 两个人无话可说，只能叙旧，直到过去被反复咀嚼，淡而无味，
@@ -29,10 +32,10 @@
     
     <item>
       <title>社交的本质</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%A4%BE%E4%BA%A4%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E7%A4%BE%E4%BA%A4%E7%9A%84%E6%9C%AC%E8%B4%A8/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%A4%BE%E4%BA%A4%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E7%A4%BE%E4%BA%A4%E7%9A%84%E6%9C%AC%E8%B4%A8/</guid>
       <description>社交的本质 我想用这一篇文章阐明社交的本质，从而在根本上终结所有的社交问题。
 这篇文章一共七千多字，写到最后的时候我有一种预感，这篇文章可能会改变很多人的一生。
 社交在本质上分为两种。

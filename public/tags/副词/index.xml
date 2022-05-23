@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>副词 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%89%AF%E8%AF%8D/</link>
+    <link>https://yxzi.xyz/tags/%E5%89%AF%E8%AF%8D/</link>
     <description>Recent content in 副词 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%89%AF%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E5%89%AF%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English 地点副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</guid>
       <description>地点副词 大部分表示地点、方位的词语都是用介词短语来表示。地点副词也是主要作地点状语，当然，也不是每一个地点副词都可以作地点状语的。
  here there upstairs  地点副词和时间副词不同的，地点副词作地点状语的时候通常不受时态的影响，只要符合逻辑，基本大部分时态都可以用地点副词作状语。
 一般情况，当一句话中同时出现地点状语和时间状语，那么，地点状语通常在前面，时间副词在后面
@@ -22,10 +25,10 @@
     
     <item>
       <title>English 方式副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</guid>
       <description>方式副词 表示动作的方式的词语。
  Very much Loudly. fast.  方式副词只能作方式状语，并且只能修饰实义动词，所以方式副词只能用在动作的句子里面。
 方式副词绝大部分放在句尾，少数情况可以放在中间和句首。
@@ -36,10 +39,10 @@
     
     <item>
       <title>English 时间副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</guid>
       <description>时间副词 表示时间的副词，就是时间副词。
  just now early before recently already just  时间副词数量比较少，副词数量少的原因主要是，表示时间的词语大部分由介词短语构成。
 同一句话，其实可以跟两个或两个以上的时间状语，但是要注意逻辑和顺序。通常是短（小范围）的时间状语在前，长（大范围—）的间状语在后。
@@ -52,10 +55,10 @@
     
     <item>
       <title>English 程度副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
       <description>程度副词 表示某种程度的词语。
 比如表示“很、非常、特别、超好、超、相当好、如此、格外的、真正的、完全”的单词。
 程度副词相当于一种限定词的作用，主要修饰形容词和方式副词，放在被修饰的形容词和方式副词的前面。
@@ -68,10 +71,10 @@
     
     <item>
       <title>English 频度副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
       <description>频度副词 频度副词也作状语只是位置不同。频度副词放在实义动词前面，放在系动词、助动词、情态动词后面。
  I often eat rice. I always busy. He usually gets up at six.  </description>
     </item>

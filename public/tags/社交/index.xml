@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>社交 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BA%A4/</link>
+    <link>https://yxzi.xyz/tags/%E7%A4%BE%E4%BA%A4/</link>
     <description>Recent content in 社交 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E7%A4%BE%E4%BA%A4/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E7%A4%BE%E4%BA%A4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>点菜时人人都说随便点的局面</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B1%80%E9%9D%A2/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B1%80%E9%9D%A2/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B1%80%E9%9D%A2/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E7%82%B9%E8%8F%9C%E6%97%B6%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%AF%B4%E9%9A%8F%E4%BE%BF%E7%82%B9%E7%9A%84%E5%B1%80%E9%9D%A2/</guid>
       <description>点菜时人人都说随便点的局面 讲真，多年点菜的经验让我明白一点：凡是点菜时说随便的人，其意往往并非是字面意义上的“随便”。
 而是告诉你：他们要的不是选择权，而是决定权。
 领导们说“随便”，实在是因为点菜这种事是做下属的分内之事，不需要领导亲力亲为；
@@ -37,10 +40,10 @@
     
     <item>
       <title>不可论断他人</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%8D%E5%8F%AF%E8%AE%BA%E6%96%AD%E4%BB%96%E4%BA%BA/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E4%B8%8D%E5%8F%AF%E8%AE%BA%E6%96%AD%E4%BB%96%E4%BA%BA/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E4%B8%8D%E5%8F%AF%E8%AE%BA%E6%96%AD%E4%BB%96%E4%BA%BA/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E4%B8%8D%E5%8F%AF%E8%AE%BA%E6%96%AD%E4%BB%96%E4%BA%BA/</guid>
       <description>不可论断他人 不可论断人是非常重要的原则。
 但是与此同时，人却又没有办法不去论断人。
 比如，你要聘用员工，你就需要在几个人中间挑一个；
@@ -109,10 +112,10 @@
     
     <item>
       <title>感情中的决策与试探</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</link>
+      <link>https://yxzi.xyz/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/bisexual/%E6%84%9F%E6%83%85%E4%B8%AD%E7%9A%84%E5%86%B3%E7%AD%96%E4%B8%8E%E8%AF%95%E6%8E%A2/</guid>
       <description>感情中的决策与试探 男生通常像狗，思路是决策型的。
 女生通常像猫，思路是试探型的。
 你一回家，猫跟狗都蹲在门边。
@@ -143,10 +146,10 @@
     
     <item>
       <title>朋友间的关系是如何变淡的</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E5%A5%BD%E5%8F%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB%E6%98%AF%E5%A6%82%E4%BD%95%E5%8F%98%E6%B7%A1%E7%9A%84/</guid>
       <description>好友间的关系是如何变淡的 为什么没人承认，是社会资源地位见识差距变大，
 你的苦闷他无法理解，他的彷徨在你而言，是变相炫耀。
 两个人无话可说，只能叙旧，直到过去被反复咀嚼，淡而无味，

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Yarn on Rainy · Blog</title>
+    <link>https://yxzi.xyz/tags/yarn/</link>
+    <description>Recent content in Yarn on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 15 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/yarn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yarn</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/packagemanager/yarn/yarn/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/packagemanager/yarn/yarn/</guid>
+      <description>Yarn Yarn 在 npm5 之前，优势明显，但在 npm5 之后，两者差别不大。
+安装 全局安装：
+npm install -g yarn 如果以后要将 Yarn 更新到最新版本，请运行：
+yarn set version latest 优点 速度快
+ 并行安装。 离线模式  安装版本统一
+更简洁的输出。
+多注册来源处理。
+更好的命令语义化。</description>
+    </item>
+    
+    <item>
+      <title>yarn 命令</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/packagemanager/yarn/yarn-add/</link>
+      <pubDate>Sun, 15 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/packagemanager/yarn/yarn-add/</guid>
+      <description>命令 yarn add 添加模块。
+yarn remove 删除模块。
+yarn add jquery &amp;ndash;dev 安装开发环境的jquery依赖。</description>
+    </item>
+    
+  </channel>
+</rss>

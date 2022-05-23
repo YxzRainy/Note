@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>English on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/categories/english/</link>
+    <link>https://yxzi.xyz/categories/english/</link>
     <description>Recent content in English on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/english/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/english/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English against</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/against/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/against/</link>
       <pubDate>Thu, 28 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/against/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/against/</guid>
       <description>against 表示接触 against + 人或事物的词语 表示靠着某人某物。强调两个事物的直接接触。
   He sat against the tree.
   She stood against each other.
@@ -24,39 +27,39 @@
     
     <item>
       <title>English along</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/along/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/along/</link>
       <pubDate>Thu, 28 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/along/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/along/</guid>
       <description>along 表示运动 along + 地点或位置的词语 表示沿着某个地方运动。喜欢与动作表示动作趋向的不及物动词搭配。
  We go along the river.  </description>
     </item>
     
     <item>
       <title>English among</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/among/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/among/</link>
       <pubDate>Thu, 28 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/among/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/among/</guid>
       <description>among among + 名词的复数或表示复数的代词 表示在三者或三者以上的人或人或事物当中
  I am the poorest among all my friend.  </description>
     </item>
     
     <item>
       <title>English beyond</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beyond/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beyond/</link>
       <pubDate>Thu, 28 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beyond/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beyond/</guid>
       <description>beyondqian 表示位置 beyond + 比较远的位置的词语 表示**在&amp;hellip;外边。**强调在很远的地方的那一边。</description>
     </item>
     
     <item>
       <title>English across</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/across/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/across/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/across/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/across/</guid>
       <description>across 表示穿过/横穿 across + 物体的词语 表示在物体的表面穿过。经常与一些表示动作趋向的不及物动词搭配。
  We walk across the road. The children run across the street.  表示位置 across + 位置的词语 表示在&amp;hellip;对面
  My parents live across the street.  </description>
@@ -64,29 +67,29 @@
     
     <item>
       <title>English into</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/into/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/into/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/into/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/into/</guid>
       <description>into 表示运动 动作趋势的不及物动词 + into 表示**&amp;hellip;进/进入&amp;hellip;**</description>
     </item>
     
     <item>
       <title>English outside</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/outside/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/outside/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/outside/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/outside/</guid>
       <description>outside 表示位置 outside + 位置或地点的词语 表示在某个地方的外面或外部。
  The temperature outside my house is ver low.  </description>
     </item>
     
     <item>
       <title>English with</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/with/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/with/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/with/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/with/</guid>
       <description>with 表示同伴 with +人或动物的词语 表示与&amp;hellip;一起。
  I go to the park with my daughter every day. I take the bus with her. She was with her friend last night.  表示具有/携带 with + 事物的词语
 表示具有&amp;hellip;。
@@ -96,20 +99,20 @@
     
     <item>
       <title>English within</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/within/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/within/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/within/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/within/</guid>
       <description>within 表示时间 within +一段时间的词语 表示在一段时间之内。
  We will be famous within five years. We will finsh our course within a month.  </description>
     </item>
     
     <item>
       <title>English without</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/without/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/without/</link>
       <pubDate>Wed, 27 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/without/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/without/</guid>
       <description>without 表示没有 without + 事物的词语 表示没有带某个物品 。强调本来应该带某物，但是因为疏忽或其他原因没有带就去做其他事情的情况
  He went out without his hat. He went to the restaurant without money.  without + 动名词/动名词短语 表示没有做某事，就去做另外一件事去了。
  She always attends my class without eating dinner.  表示条件 without + 某人/某物 表示如果没有，就&amp;hellip;
@@ -118,10 +121,10 @@
     
     <item>
       <title>English around</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/around/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/around/</link>
       <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/around/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/around/</guid>
       <description>around 表示运动 around + 人或物的词语 表示围着&amp;hellip;环绕。
  The earth goes around the sun. We walk around the lake. The mouse ran around the room.  表示地点 around + 地点或位置的词语 表示在&amp;hellip;周围/附近。
  The man sells DVDs around the station. The children sat around the teacher. The banana trees are around the pond.  表示数量 around 修饰数词 表示大约&amp;hellip;。
@@ -130,10 +133,10 @@
     
     <item>
       <title>English to</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/to/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/to/</link>
       <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/to/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/to/</guid>
       <description>to 表示方向 表示动作位移的词语 + to + 地方的词语 表示向某个地方移动。
  I will to Chongqing tomorrow. I walk to the park every morning.  表示时间/程度/结果 from&amp;hellip;to 表示从&amp;hellip;到&amp;hellip;。
  He works from morning to night. He will fly from the moon to the earth.  表示目的 to + 一些词语 表示为了&amp;hellip;
@@ -143,10 +146,10 @@
     
     <item>
       <title>English under</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/under/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/under/</link>
       <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/under/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/under/</guid>
       <description>under 表示位置 under + 位置的词语 表示在&amp;hellip;下方。强调的是垂直 90 度的下方。
  The are palying mahjong under the tree. The man under the bridge is Jeff.  表示年龄 under + 年龄/数量/重量的词语 表示不到&amp;hellip;/在&amp;hellip;以下。
  He is under ten years old.  表示过程 under + 某些词语 表示在&amp;hellip;过程中。
@@ -155,10 +158,10 @@
     
     <item>
       <title>English up</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/up/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/up/</link>
       <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/up/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/up/</guid>
       <description>up 表示运动方向 运动趋势的词语 +up + 位置或地点名词 表示向&amp;hellip;上/沿着&amp;hellip;。
  He ran up the hill. We went up the house.  表示位置 up + 位置的名词 表示在&amp;hellip;上面
  They live up the street. The cath fish up the river.  </description>
@@ -166,10 +169,10 @@
     
     <item>
       <title>English near</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/near/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/near/</link>
       <pubDate>Mon, 25 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/near/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/near/</guid>
       <description>near 表示时间、空间 near + 地点或位置的词语 表示接近某个地方，对于 beside 和 by 来说，near 更加强调空间上的靠近或接近，而不是单一的在&amp;hellip;旁边。
 另外 near 还表示相对的近。比如广西和广东，相对于中国来说，就他们离得很近，但是如果相对于人来说，依旧离得很远。
  You sit near me. I live near a river. The lake near my house is very big.  near + 具体时间点的词语 表示快要接近某个时间点了。
@@ -178,10 +181,10 @@
     
     <item>
       <title>English of</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/of/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/of/</link>
       <pubDate>Mon, 25 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/of/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/of/</guid>
       <description>of 表示&amp;hellip;的 of + 无生命的名词所有格/动名词短语/代词/数词 表示**&amp;hellip;的**
  The price of this coat. The color of my shirt.  of + 比较长的生命的名词 表示.&amp;hellip;的
  It is the story of my lady Mary, Queen of Scots. She is the daughter of my English teacher, Nick.  </description>
@@ -189,10 +192,10 @@
     
     <item>
       <title>English off</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/off/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/off/</link>
       <pubDate>Mon, 25 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/off/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/off/</guid>
       <description>off 表示离开 固定搭配 off 作介词短时候，用法跟 from、out、of 很相似。
 off 大多数情况都要跟一些特定的动词搭配，构成一个介词短语。
  Keep off the grass He fell the ladder She fell off the roof  </description>
@@ -200,10 +203,10 @@ off 大多数情况都要跟一些特定的动词搭配，构成一个介词短�
     
     <item>
       <title>English past</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/past/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/past/</link>
       <pubDate>Mon, 25 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/past/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/past/</guid>
       <description>past 表示时间 数词（几分钟） + past + 几点钟 表示几点过了几分钟，而且，只能表示半小时以及半小时之内的时间。
  30 past 7 = 7:30 = half past 7（表示 7 点过了 30 分钟）  但这种结构，不能作介词短语，因为它仅仅只是一个表示时间的数词。想要作时间状语造句，必须跟其他介词构成介词短语。
  I begin my class at 25 past 7.  有时候 past 构成的数词也可以直接作表语。
@@ -214,10 +217,10 @@ It is + 数词 + past +几点 表示现在是几点钟。
     
     <item>
       <title>English for</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/for/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/for/</link>
       <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/for/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/for/</guid>
       <description>for 表示目的、目标、用途  为了&amp;hellip; 替代&amp;hellip; 对于&amp;hellip; 帮&amp;hellip; 给&amp;hellip;  为了&amp;hellip; for + 一个人/物，表示为了某个目标或为了某个人。
  Many people learn English for work. Girls make up for men. I run every morning for health.  给&amp;hellip; 需要，当 for 表示“给&amp;hellip;”的意思的时候，这时候的 for 不是动词“给”的意思。
  The letter is for you. The apple is for you. The packet is for me.  对于&amp;hellip; for + 一些词语构成固定搭配，可以表示“对于&amp;hellip;”的意思。
@@ -226,10 +229,10 @@ It is + 数词 + past +几点 表示现在是几点钟。
     
     <item>
       <title>English from</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/from/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/from/</link>
       <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/from/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/from/</guid>
       <description>from 表示时间和地点的起点  从&amp;hellip; 自&amp;hellip;  From +时间点 + to/till + 另一个时间点，这个句型表示从一个时间点到另一个时间点。
  We have a class from 20:00 to 22:00 every evening.  from + 一个地点 + to + 另外一个地点，这个句型表示从一个地方到林另外一个地方。
  The beggar asks for food from door to door. I run from my house ro the school. She walked from her house to the park yesterday.  from 是一个非常特别的介词，一般的介词后面不能跟地点副词，但是from 可以。
@@ -238,10 +241,10 @@ It is + 数词 + past +几点 表示现在是几点钟。
     
     <item>
       <title>English inside</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/inside/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/inside/</link>
       <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/inside/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/inside/</guid>
       <description>inside in 和 inside 的区别主要有两个。
 inside 一般不能表示时间概念，特殊情况除外，in 经常可以表示时间的概念。inside 一般不能 + 大地方名词，而 in 可以 + 大地方名词/小地方的名词。
 表示时间、地点 inside + 小地方 inside + 表示地点的词构成介词短语作地点状语，表示在某个地方里。
@@ -250,10 +253,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English like</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/like/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/like/</link>
       <pubDate>Wed, 20 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/like/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/like/</guid>
       <description>like 表示像某个东西 like + 表示人或物的词语 表示像某个人或某个物一样。
  The leaf is like a heart. She is like her mother. You should marry a man like me.  固定搭配 look like + 名词/代词宾格 表示看起来某个事物。
  She looks like a singer. The moom looks likes a silver plate. It looks like rain today.  </description>
@@ -261,10 +264,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English before</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/before/</guid>
       <description>before 表示在某个时间点以前 before + 表示几点钟的数词  I get up before 7:00 every day.  before + 表示具体的时间或具体时间点的词  We must finish our lessons before this year.  before + 表示几岁的词  Rainy will marry a good man before 40 years old.  before + 表示年份的词  We sill be very rich before 2030.  before 后面不能加一段时间：before three days。
 如果要表示”三天之前“，可以用 ago 这个副词：three days ago。
 表示位置 before + 地点/场所/人 这种情况表示在某个地点或某个人的前面。
@@ -273,10 +276,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English behind</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/behind/</guid>
       <description>behind 表示时间 behind + 时间点 这种情况表示晚于某个时间点。
  your idea is behind the times.  表示位置 behind + 地点 这种情况表示在某个地方都后面或在某个人的后面。
  The cat is behind the door. The tree behind my house is very big.  表示力量、能力 behind + 表示能力的词 这种情况表示能力落后/不如或低于某人。
@@ -285,10 +288,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English below</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/below/</guid>
       <description>below 表示位置 below + 表示地点的词语 这种情况表示在某个地点的下面。
  Your cellphone is below the wall.  表示数量、年龄、价值 below + 表示数量、程度、价值、年龄、温度的词语 这种情况表示低于某个临界点或在某个临界点等。
  She is below 20 years old. It is below 20 ℃. The people below 18 years old cant attend my course.  </description>
@@ -296,10 +299,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English beside</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/beside/</guid>
       <description>beside 表示位置 beside + 表示地点的名词 表示在这个某个地点的旁边或者附近。
   The room beside the bathroom is mine.
   She is beside the bathroom.
@@ -310,10 +313,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English between</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/between/</guid>
       <description>between 表示时间、位置、数量  在&amp;hellip;之间。  between + 两个事物/两个人 表示在两者之间。
 注意，Among 才是表示三者以上，包括三者。
  He does busines between America and China. They don&amp;rsquo;t know the secret between you and me.  between + 两个时间点 表示在两个时间点之内的这段时间。
@@ -323,10 +326,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English at</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</link>
       <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/at/</guid>
       <description>at 表示地点 at + 小地方 at + 小地方容易和 in + 小地方混淆，前者表示在某个地方的范围或附近，而后者表示在某个地方的内部或里面。
  They met me at the station. They are at the balcony. My mother planted some flowers at the balcony.  需要注意的是 at 不能加大地方。
 表示时间 在&amp;hellip;时刻 at 都是加一个基数词，表示在几点钟。
@@ -335,10 +338,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English 实义动词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</link>
       <pubDate>Fri, 15 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%AE%9E%E4%B9%89%E5%8A%A8%E8%AF%8D/</guid>
       <description>实义动词 表示有实际意义的动词，除了系动词、助动词、情态动词，剩下的就是实义动词。
 任何一个实义动词都有五种形式（原型、过去式、过去分词、现在分词、第三人称单数格式）。
 虽然一个实义动词有五种格式，但是这五种格式都是同一个意思，比如 work、worked、works，都是工作的意思。
@@ -354,10 +357,10 @@ inside 一般不能表示时间概念，特殊情况除外，in 经常可以表�
     
     <item>
       <title>English about</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/about/</guid>
       <description>about 表示有关，关于 about + 名词  about Rainy. about Chongqing. about English.  about + 代词的宾格  about + me.  about 动名词短语  about haveing a party. about buying a ship.  当 about 表示关于的时候，只能作后置定语和表语，一般情况不能作状语。
 The news about Rainy is not true.
 The story is about Susu and Rainy.
@@ -368,10 +371,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English after</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/after/</guid>
       <description>after 表示时间/顺序 after + 时间点 after 可以放在一个表示具体时间点的词语的前面，表示在&amp;hellip;之后。
  I sleep after 10:00 every day. I Fitness after work. She Play the game after class. I will retire after 35 years old . I born after 2001. I class after Sunday.  after + 一段时间 after 跟表示时间段的词语 。
  He come back after a week. after an hour. after three years.  after + 动名词短语  After getting up every morning, I turn on my computer.</description>
@@ -379,20 +382,20 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English as</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/as/</guid>
       <description>as 表示当作/作为 as + 一个表示人的名词  As a good wife, you should know how to cook. As a good husband, I must earn much money. As a Englishs teacher, I am happy.  as + 名词 这个时候 as + 名词是放在句尾作状语，这个时候 as 后面的名词不一定是表示人的名词。
  I eat rice gruel as breakfast.（把稀饭当作早餐） I chose the novel as my textbook. Don’t treat me as  </description>
     </item>
     
     <item>
       <title>English by</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/by/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/by/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/by/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/by/</guid>
       <description>by by 有时候是介词，有时候也会和其他的词组成一些介词短语。
  stand by pass by  这里主要说一些 by 作普通介词短情况。
 表示时间  到&amp;hellip;为止。  By + 表示时间的词语，表示到某个时间点为止。
@@ -402,20 +405,20 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English during</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/during/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/during/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/during/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/during/</guid>
       <description>during 表示时间  在&amp;hellip;期间 在&amp;hellip;的时候  during + 表示特定时间的名词构成介词短语，但是 during 后面这个名词必须在意义上含有一段时间，又不能是表示时间点的词语，所以不能直接跟数词.
  during 5:10 She eared one million dollars during the ten days. He came during your absence.  </description>
     </item>
     
     <item>
       <title>English in</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/in/</guid>
       <description>in 表示在某个地方。 in + 大地方 这种情况，表示在某个地方，没有里面的意思。
  We live in the world. The people in Asia are poor. She is in Shanghai.  in + 小地方 这种情况，表示在某个地方内部。
  They are making shoes in the factory. They make shoes in the factory every. The girl in the factory are young.  另外，还有一些含有 in 的固定介词短语，这些固定的介词短语，有固定的意思和用法。
@@ -424,10 +427,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English on</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</link>
       <pubDate>Thu, 14 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E8%AF%A6%E8%A7%A3/on/</guid>
       <description>on 表示位置 在&amp;hellip;上面 on 加一个表示物体的名词，表示在这个物体的上面，并且强调跟物体的表面接触。
  Children are playing a game on the floor, The picture on the wall is expensive. My book is one the bed.  表示时间 在..时候 on + 表示时间的名词构成介词短语的时候，一般表示一天之内的时间（具体某一天），比如某日、星期几、日期、或某日的上午/中午/下午/晚上等等。
  The handsome man met Pandora on the morning of May 10,2003. We will have a party on July 15. He came on the morning of My 1st.  表示状态 处于&amp;hellip;状态  Who is on duty today? The house is on fire.</description>
@@ -435,10 +438,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 专有名词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</guid>
       <description>专用名词 专有名词，就是人名、地名、专门机构等。
 大多数的专有名词是不可数名词，在某些情况下可以复数使用，或者转换为普通名词的单数/复数使用。
 专有名词的首字母必须大写。
@@ -448,10 +451,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 普通名词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</guid>
       <description>普通名词 普通名词 除了专业名词以外的词都是普通名词。
 普通名词被分为可数名词和不可数名词。
 专有名词复数使用，专业名词转换普通名词  There are two Jacks in our class Millions of Lei Fengs have emerged in China Hey, Tom, have a Mrs. Carl is waiting for you  可数名词 可数名词（单数复数都可以，可以用数词计算）
@@ -466,10 +469,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 量词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</guid>
       <description>量词 我们可以用量词来表示不可数名词的数量。但不是每一个量词都可以修饰每一个不可数名词。
 当不可数名词的单复数变化时，只需将量词从单数变为复数。
 量词中的 of 时没有意思的，它主要就是为了修饰不可数名词，作前置定语，另外，量词也可以修饰可数名词的复数形式，但不能修饰可数名词的的单数形式。毕竟一个名词用量词修饰，说明这个名词不止一个，如果这个名词还用单数形式的话，就不合理了。
@@ -479,10 +482,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 介词短语的构成</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</link>
       <pubDate>Mon, 11 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E6%9E%84%E6%88%90/</guid>
       <description>介词短语的构成 要学好介词短语，先要掌握一个概念：介词宾语。
 介词和介词宾语在一起构成的短语叫作介词短语：介词 + 介词宾语 = 介词短语
 介词短语可以被分成四种类型。
@@ -498,10 +501,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 介词短语的用法</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</link>
       <pubDate>Mon, 11 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD%E7%9A%84%E7%94%A8%E6%B3%95/</guid>
       <description>介词短语的用法 作状语 介词短语作状语的时候，可以在主谓宾或主系表中充当时间状语和地点状语，有时候还可以充当方式状语。
 作地点状语 当介词作地点状语的时候，这个介词就可以在句子中充当地点状语的作用
 主系表 + 介词短语作地点状语
@@ -513,10 +516,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%89%AF%E8%AF%8D/</guid>
       <description>副词 用于修饰动词或形容词，有时也可以修饰数词、介词、连词、名词或一整个句子。
 副词是表示行为或状态特征的词，主要作状语、也可以作表语、定语、补足语或介词宾语。
  I ate two apple quickly  当一个句子中同时出现多个不同的副词的时候，书写顺序如下：方式副词 —— 地点副词 —— 时间副词
@@ -527,10 +530,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 地点副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E5%9C%B0%E7%82%B9%E5%89%AF%E8%AF%8D/</guid>
       <description>地点副词 大部分表示地点、方位的词语都是用介词短语来表示。地点副词也是主要作地点状语，当然，也不是每一个地点副词都可以作地点状语的。
  here there upstairs  地点副词和时间副词不同的，地点副词作地点状语的时候通常不受时态的影响，只要符合逻辑，基本大部分时态都可以用地点副词作状语。
 一般情况，当一句话中同时出现地点状语和时间状语，那么，地点状语通常在前面，时间副词在后面
@@ -540,10 +543,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 方式副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%96%B9%E5%BC%8F%E5%89%AF%E8%AF%8D/</guid>
       <description>方式副词 表示动作的方式的词语。
  Very much Loudly. fast.  方式副词只能作方式状语，并且只能修饰实义动词，所以方式副词只能用在动作的句子里面。
 方式副词绝大部分放在句尾，少数情况可以放在中间和句首。
@@ -554,10 +557,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 时间副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E6%97%B6%E9%97%B4%E5%89%AF%E8%AF%8D/</guid>
       <description>时间副词 表示时间的副词，就是时间副词。
  just now early before recently already just  时间副词数量比较少，副词数量少的原因主要是，表示时间的词语大部分由介词短语构成。
 同一句话，其实可以跟两个或两个以上的时间状语，但是要注意逻辑和顺序。通常是短（小范围）的时间状语在前，长（大范围—）的间状语在后。
@@ -570,10 +573,10 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 程度副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E7%A8%8B%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
       <description>程度副词 表示某种程度的词语。
 比如表示“很、非常、特别、超好、超、相当好、如此、格外的、真正的、完全”的单词。
 程度副词相当于一种限定词的作用，主要修饰形容词和方式副词，放在被修饰的形容词和方式副词的前面。
@@ -586,20 +589,20 @@ The story is about Susu and Rainy.
     
     <item>
       <title>English 频度副词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</link>
       <pubDate>Sat, 09 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%89%AF%E8%AF%8D/%E9%A2%91%E5%BA%A6%E5%89%AF%E8%AF%8D/</guid>
       <description>频度副词 频度副词也作状语只是位置不同。频度副词放在实义动词前面，放在系动词、助动词、情态动词后面。
  I often eat rice. I always busy. He usually gets up at six.  </description>
     </item>
     
     <item>
       <title>English 现在进行时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/</link>
       <pubDate>Thu, 07 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/</guid>
       <description>现在进行时态 表示主语此时此刻正在进行的动作。一般情况，这个时态没有状态的句子，只有动作的句子。
 现在进行时态的注意事项 有一部分动词是不可以用在现在进行时态里面的。
 比如表示知觉、结果、态度、情感的词语。
@@ -614,10 +617,10 @@ see 表示“看到、看见”的意思，而“看到”是一个结果，没�
     
     <item>
       <title>English be going to 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>be going to 主系表 一般将来时态除了用wil来构成一般来时，还可以使用短语 be going to，它和 will 都是助动词，意义也一样，没有中文意思。
 be going to 有三种格式，这也是它很麻烦的地方。
  单数用 is going to. 复数用 are going to. I 用 am going to.  主语 + be going to + be + 表语 + 将来时间状语  I am going to be busy tomorrow.（这句话等于 I will be busy tomorrow） You are going to be happy tomorrow. She is going to be beautiful tomorrow.  主语 + be going to + be + 表语 + 将来时间状语句型变一般疑问规则 将 be going to 里面的 be（is/am/are）移动到句首，主语和表语一般不需要变化，当然， 有时候根据生活逻辑，主语的人称也需要改变一下，并且，如果主语的人称发生改变，对应的 be（is/am/are）也要跟着改变。</description>
@@ -625,10 +628,10 @@ be going to 有三种格式，这也是它很麻烦的地方。
     
     <item>
       <title>English be going to 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>be going to 主谓宾 主谓宾和主系表是差不多的。但是千万必要将主谓宾和主系表混搭在一起！主谓宾不需要系动词 be.
 主语 + is/are am going to + 不及物动词原型 + 宾语 + 将来时间状语  She is going to swim tomorrow. They are going to sleep tomorrow. Rainy is going to bake corn tomorrow.  主谓宾句型变一般疑问句规则 将 be going to 里面的 be（is/am/are）移动到句首，主语和表语一般不需要变化，当然， 有时候根据生活逻辑，主语的人称也需要改变一下，并且，如果主语的人称发生改变，对应的 be（is/am/are）也要跟着改变。
  I am going to buy a house next day. Are you going to buy a house next day.  主谓宾句型变否定句规则 在 be going to 中的 be（is/am/are）后面加否定词 not 就可以了，主语和表语保持不变，另外，is not 和 are not 都可以缩写为 isn&amp;rsquo;t、aren&amp;rsquo;t。</description>
@@ -636,10 +639,10 @@ be going to 有三种格式，这也是它很麻烦的地方。
     
     <item>
       <title>English be going to 和 will</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</guid>
       <description>be going to 和 will 一般情况，助动词 will 和 be going to 几乎没有区别，可以互换使用，但是在特殊情况下，will 强调的是一种“意志、意愿”，而 be going to 只是纯粹的表示将来或比较确定即将要发生的动作或状态。
 比如：
  I am going to master English in three yeares（be going to） I will master English in three years.  这两句话平时没有区别，都表示“我要在三年后掌握英语”，但是如果在特定的情况下或有前提的情况下，可能需要用 I will master English 来表示“我一定会掌握英语”，这时候强调的是一种意志或意愿，且一般不加时间状语。而 I am going to master english 就无法表达出这种意义，依旧是纯粹的表示将来。
@@ -648,10 +651,10 @@ will 本身可以作名词，表示“意志、意愿”。</description>
     
     <item>
       <title>English 一般将来时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</guid>
       <description>一般将来时态 表示未来即将要发生的动作和状态，也就是说，这些动作和状态还没有发生，但是在将来的某个时间要发生。
 一般将来时态有两种构成方式，will 和 be going to，这两个都是助动词，没有中文意思。虽然它们写法不一样，但是作用是一样的。
 一般将来时态的时间状语 一般情况，一般将来时态都需要加上表示将来的时间状语。
@@ -664,10 +667,10 @@ Next + 表示时间名词的单数  I will travel next year.  After + 具体时�
     
     <item>
       <title>English 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 只要把 be 变成 will be，然后再加上表示将来的时间状语就可以了。另外，不管主语是什么人称，都是用 will be + 表语。
 我们把主语 + will be + 表语分成四个更具体的小句型。
 Be + 职业的时候，这里的 be 表示“成为，做”的意思。
@@ -678,10 +681,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 只需要在谓语动词原型前面加上 will，然后加上表示将来的时间状语就可以了。
 我们把主语 + 谓语 + 宾语分成 4 个更详细的小句型。
 人称代词主格（主语） + will + 不及物动词原型（复合谓语） + 将来时间状语 在不及物动词原型（复合谓语）的前面加一个助动词 will，在加上一个将来时间状语就可以了。
@@ -691,10 +694,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 动词短语和介词短语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</link>
       <pubDate>Sun, 03 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E5%8A%A8%E8%AF%8D%E7%9F%AD%E8%AF%AD%E5%92%8C%E4%BB%8B%E8%AF%8D%E7%9F%AD%E8%AF%AD/</guid>
       <description>动词短语和介词短语 它们的区别 动词短语 动词短语虽然由多个词语构成，但它实际上是一个整体，只能将它当作一个词语看待，因为它与普通的动词是一样的。
 动词和介词构成的动词短语也叫复合动词，属于实义动词的范畴。
  look at get up look for  介词短语 介词短语的介词是放在开头的，后面跟一个名词/代词/数词/动名词/可以构成一个介词短语。
@@ -706,10 +709,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Sat, 02 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 一般过去时态的主谓宾句型，构成方式很简单，不需要考虑主语的人称和单复数变化，只需要把谓语动词变成过去式就可以了。
 注意，不要在动词过去式的前面乱加 was/were，因为这样是错的（主谓宾和主系表不能混用）。
 同样的，我们把主语 + 谓语 + 宾语分成四个小句型。
@@ -719,10 +722,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 一般过去时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
       <pubDate>Fri, 01 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</guid>
       <description>一般过去时态 表示的曾经发生的一些动作和状态，也就是已经过去的一些事物。
 一般过去时态的时间状语 一般情况，一般过去时态需要加上表示过去的时间状语。
  yesterday. just now. before.  大部分表示过去的时间状语，都是由介词或副词跟其他的词语构成的，一般有下面一种构成方式。
@@ -734,10 +737,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Fri, 01 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 构成方式很简单，就是把里面的 be 变成 was/were. 当主语是 I 或单数的时候就用 was，当主语是 you 或复数的时候用 were，主语和表语都不需要变化。
 当然，如果是可数名词作主语或表语，要注意可数名词的问题）
 我们把主语 + be + 表语这个句型分成了四个更具体详细的小句型。
@@ -748,10 +751,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Fri, 01 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E7%8E%B0%E5%9C%A8%E8%BF%9B%E8%A1%8C%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 主语 + be + 实义动词的现在分词 + 宾语 这个句型里面的 be 不是系动词，而是助动词，没有中文意思，它的作用是辅助我们构成现在进行时态的句子。be + 实义动词的现在分词一起构成复合谓语。
  I am working now.  这里的 am working now 就是现在进行时态的复合谓语。
 因为这个时态本身就说明了时间是时此时此刻，所以一般情况不需要加时间状语，当然也可以加极少数表示此时此刻的时间状语。比如：
@@ -763,10 +766,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主（三单）谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Thu, 31 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
       <description>主（三单）谓宾 所谓第三人称单数，指的是：不是我，也不是你，而是第三者（人或物），并且这个第三者一定是一个单数
 比如 your father，因为有一个有一个 your，所以很多人误以为这是第二人称，但实际上这依旧是第三人称，因为这里的 your 只是一个定语，“你的爸爸”，不是“你”，也不是“我”，是除我们之外的第三者，而且“你的爸爸”是一个单数概念，因为“你的爸爸”是一个人，不是两个或三个。
 我们把主语 （第三人称单数）+ 谓语 + 宾语这个句型分成更具体的四个小句型。
@@ -781,10 +784,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 一般现在时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</link>
       <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/</guid>
       <description>一般现在时态 指的是从过去到现在直至将来的一段时间内发生的动作或存在的状态
 一般现在时态的用法 当表示经常性、习惯性、有规律性的动作和状态的时候 另外，表示真理性、客观性的动作和状态也要使用一般现在时态。
 比如：地球是圆的，太阳从东边升起，1 + 1 = 2.
@@ -798,10 +801,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主（非三单）谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Wed, 30 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E9%9D%9E%E4%B8%89%E5%8D%95%E8%B0%93%E5%AE%BE/</guid>
       <description>主（非三单）谓宾 我们把主语 （非第三人称单数）+ 谓语 + 宾语这个句型分成四个更具体详细的小句型。
 人称代词主格（主语）+不及物动词原型（谓语）+状语 这个小句型中的主语都是 I/we/you/they.
  We run every day. They walk every day.  名词复数（主语）+不及物动词原型（谓语）+ 状语 这个小句型中的名词最好是表示人的名词的复数形式。
@@ -811,10 +814,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 时态是什么</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E6%97%B6%E6%80%81%E6%98%AF%E4%BB%80%E4%B9%88/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E6%97%B6%E6%80%81%E6%98%AF%E4%BB%80%E4%B9%88/</link>
       <pubDate>Mon, 28 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E6%97%B6%E6%80%81%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E6%97%B6%E6%80%81%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
       <description>时态是什么 时态其实就是一个谓语动词随着时间的变化而发生不同形态的变化。
 不同的时态用来表示不同的时间状态。
  I bought a book yesterday. I will a book tomorrow. I buy a book ever day.  可以看出，英语的谓语动词发生了多种形式的变化：bought、will buy、buy，另外中文的时间状语放在中间，而英文的时间状语放在句尾（是少数情况下也会放在句尾，比如书面语）。
@@ -824,10 +827,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主语 &#43; be &#43; 表语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Sun, 27 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E7%8E%B0%E5%9C%A8%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 我们把主语 + be + 表语这个句型分成了四个更小更具体详细的小句型。
 人称代词主格（主语） + is/are/am + 形容词（表语）  i am happy. She is rich.  名词（主语） + is/are + 形容词（表语） 这个句型，我们用名称充当主语，在用形容词充当表语，因为只有 I 才能用 am，所以当我们用名词作主语的时候，只有系动词 is 和 are.
 一个人名或一个地名作主语的时候用 is  Rainy is busy. Rainy is famous.  如果是并列的人名或地名作主语的时候用 are.
@@ -836,20 +839,20 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 英语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%8B%B1%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%8B%B1%E8%AF%AD/</link>
       <pubDate>Mon, 14 Mar 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%8B%B1%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%8B%B1%E8%AF%AD/</guid>
       <description>英语中的很多单词都有格式变化，喜欢用变化来表达一个词语的不同意义，这是英语的一大特点。
 时态是英语语法的一大特色，也是和中文语法最大的区别之一</description>
     </item>
     
     <item>
       <title>English A4 纸泛背单词法</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/a4-%E7%BA%B8%E6%B3%9B%E8%83%8C%E5%8D%95%E8%AF%8D%E6%B3%95/</guid>
       <description>A4 纸泛背法 适用于在短时间内记住某个单词的中文翻译等。
 开始  在一张空白 A4 纸的任意地方写出这个单词 看着单词并默念五遍其翻译 接着找一个空白处写出下一个单词，执行步骤 2 回到上一个单词，执行步骤 2，相当于将上一个单词复习一遍 根据自身情况可以改变单词默念的次数以及复习的次数  核心 快速的记忆，多次的重复。
 睡前复习一次旧单词，醒来复习一次旧单词，日常复习一次旧单词，并背当天的 新单词
@@ -860,10 +863,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English How</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/how/</guid>
       <description>How how +形容词/副词 + 主语 + 谓语
 How careful he is！（他多细心啊！)
 How fast he runs！（他跑得多快啊！）
@@ -873,10 +876,10 @@ How cute a dog it is!(它是多么可爱的一只狗啊！)</description>
     
     <item>
       <title>English What</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/what/</guid>
       <description>What what + 冠词（a、an） + 形容词 + 可数名词的单数 + 主语 + 谓语
 What a beautiful photo it is!（这照片它多美啊！）
 what + 形容词 + 不可数名词/名词复数 + 主语 + 谓语
@@ -886,10 +889,10 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 一般疑问句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E4%B8%80%E8%88%AC%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
       <description>一般疑问句 可以用 yes、no 回答。
 一般疑问句通常是由陈述句变过来的，下面列举陈述句变一般疑问句的几种方式。
 提前系动词（be 动词、感官动词） 主 + 系 + 表 ——&amp;gt; 系 + 主 + 表
@@ -905,10 +908,10 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 两大句型</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%A4%E5%A4%A7%E5%8F%A5%E5%9E%8B/</guid>
       <description>两大句型 在英语中，主谓宾和主系表结构不能混用。
 主谓宾 You apeak good English.
 主系表 Your english is very good.</description>
@@ -916,10 +919,10 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 主语 ＋ 系动词 ＋ 表语（形容主语）
 系动词用于链接前面的主语和后面的表语。
 系动词 = be 动词（is、are、am） + 感官动词（看、听、闻、尝、感觉、似乎、抱持、证明）
@@ -929,10 +932,10 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 主语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E4%B8%BB%E8%AF%AD/</guid>
       <description>主语 一个句子的主体，也可以说是一句话主要叙述的对象或者这句话主要讲的内容。
 大部分代词都可以作主语，尤其是人称代词的主格，宾格不能作主语。
 例句  I like watching TV Chinese is hard.  </description>
@@ -940,20 +943,20 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 主谓</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93/</guid>
       <description>主谓 主语 ＋ 不及物动词。
  The universe remains. I can draw. He likes singing. I work every day. I run every day.  </description>
     </item>
     
     <item>
       <title>English 主谓双宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%8F%8C%E5%AE%BE/</guid>
       <description>主谓双宾 主语 ＋ 谓语（双及物动词） + 间宾 ＋直宾。
 双宾的特点是两个宾语都能承受这个动作（双及物动词），以及两个宾语都能被作为主语。如果不能都被作为主语，那这个句子就是宾补。
 一个句子中的间宾和直宾都能被作为被动语态主语，且双宾必须是一个人一个物，那么这个句子就是双宾，否则是宾补。
@@ -962,20 +965,20 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 主体 ＋ 谓语（单及物动词） ＋ 动作的承受者。
  I love you. He took his bag and left. I read English every morning.  </description>
     </item>
     
     <item>
       <title>English 主谓宾宾补</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E9%99%88%E8%BF%B0%E5%8F%A5/%E4%B8%BB%E8%B0%93%E5%AE%BE%E5%AE%BE%E8%A1%A5/</guid>
       <description>主谓宾宾补 主语 + 谓语（少数特定的及物动词） ＋ 宾语 + 宾语补足语。
 为什么要跟一个宾补，因为如果不跟宾补的话，句子的意思会不完整。
 宾补中的宾语和宾补都是指同一个人或同一个事物，它们通常是同位语关系。
@@ -984,10 +987,10 @@ What brilliant dogs they are!（多聪明的狗啊！）</description>
     
     <item>
       <title>English 介词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%8B%E8%AF%8D/%E4%BB%8B%E8%AF%8D/</guid>
       <description>介词 用于表示位置，方向等，使句子形成结构，介词没有实际意义
 主要用来表明名词和代词与其他句子成分的关系。
  I ate three apple with chopsticks.  介词也叫前置词，是一种虚词，不能单独做句子成分，一般只能用在名词或者代词、数词和动名词的前面。介词可以与这些词语构成介词短语，才能在句子红充当一个句子成分。
@@ -1001,10 +1004,10 @@ In 在&amp;hellip;地方 in China.
     
     <item>
       <title>English 代词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E4%BB%A3%E8%AF%8D/</guid>
       <description>代词 用于代替名词的词，从而避免对话或语句中重复名词。
  I am person. she is beautiful.  人称代词 用于指代人，当然，也有些人称代词页可以指代事物
 i、it、you、he、she、we、they 等等都是人称代词。
@@ -1022,10 +1025,10 @@ i、it、you、he、she、we、they 等等都是人称代词。
     
     <item>
       <title>English 冠词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%86%A0%E8%AF%8D/</guid>
       <description>冠词 用于说明名词的意义，通常在名词前后，形成特指或泛指的作用，不能单独使用。
 定冠词 定冠词 the，表示这个或那个，特指某个名词。可以修饰可数名词单数/复数名词，或不可数名词。
 凡是特指某个事物的名词，都要加定冠词 a、an、the，反之，如果时泛指某类事物的名词，则不需要加冠词。
@@ -1034,10 +1037,10 @@ i、it、you、he、she、we、they 等等都是人称代词。
     
     <item>
       <title>English 动词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%8A%A8%E8%AF%8D/%E5%8A%A8%E8%AF%8D/</guid>
       <description>动词 表示动的行为或心理活动的词。
 谓语动词 它是谓语的一部分，用于表达动作的时间、状态、语气、否定、可能性、必须性等，但想发挥这些作用，需要用到助动词。
 前五种谓语动词，对应了五种简单句，同时也囊括了五种句子成分。
@@ -1056,10 +1059,10 @@ be、do、have、will、would、shall、should.
     
     <item>
       <title>English 反义疑问句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E5%8F%8D%E4%B9%89%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
       <description>反义疑问句 可以用 yes，no 回答。
 前肯后否，前否后肯 陈述句部分是肯定，疑问句部分用否定句 He is your teacher, isn‘t he？(他是你的老师，不是吗？)
 根据事实回答：Yes, he is
@@ -1077,20 +1080,20 @@ Don’t open the door, will you?
     
     <item>
       <title>English 同位语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%90%8C%E4%BD%8D/</guid>
       <description>同位语 用于将主语或宾语重新说一遍。使得两个不同的词语都表示同一个事物或人。
  Rainy,an english teacher,is very strict.  </description>
     </item>
     
     <item>
       <title>English 名词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E5%90%8D%E8%AF%8D/</guid>
       <description>名词 表示人或物的名称。
  Rainy is a person  名词所有格 表示一种所有关系。
 比如小明的书包，其中小明的就是所有格，因为书包是属于小明的。
@@ -1114,10 +1117,10 @@ Of the carrot
     
     <item>
       <title>English 命令、警告</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E5%91%BD%E4%BB%A4%E8%AD%A6%E5%91%8A/</guid>
       <description>命令、警告 Get out！（滚！）
 Be quiet, please.（请安静）
 Be careful（小心）</description>
@@ -1125,19 +1128,19 @@ Be careful（小心）</description>
     
     <item>
       <title>English 复合句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/</guid>
       <description>复合句 表示用简单句所组成的从属关系的句子；也就是表示一个句子套另一个句子，这两个句子分别叫做主句和从句。</description>
     </item>
     
     <item>
       <title>English 定语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%9A%E8%AF%AD/</guid>
       <description>定语 用于修饰名词或代词，也可以说定语是广义的形容词，通常情况，哪里有名词，哪里就有定语。
 定语可以将名词具体化，缩小名词的范围.比如你去帮我买香蕉，这句话并不具体，因为没有表示要买多少根香蕉，或者买什么种类的香蕉，因此，我们需要加上一些具体的词，使我们的句子更加合理化，这些词就是定语。
 在英语中，普通名词才能用定语修饰 ，专有名词是不能用定语修饰的，特殊情况除外。
@@ -1148,10 +1151,10 @@ Be careful（小心）</description>
     
     <item>
       <title>English 定语从句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%90%8D%E8%AF%8D%E6%80%A7%E4%BB%8E%E5%8F%A5/</guid>
       <description>名词性从句 名词性从句 主语从句 将简单句修改，使它可以充当另一个句子的主语。
 宾语从句 将简单句修改，使它可以充当另一个句子的宾语。
 表语从句 将简单句修改，使它可以充当另一个句子的表语。
@@ -1160,19 +1163,19 @@ Be careful（小心）</description>
     
     <item>
       <title>English 定语从句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E5%AE%9A%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
       <description>定语从句 将简单句修改，使它成为另一个句子的定语。</description>
     </item>
     
     <item>
       <title>English 宾补</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%A1%A5/</guid>
       <description>宾补 对宾语进行补充说明，使得句子意思完整。
 宾补只跟宾语有关系，跟主语没关系。
  He made the English class funny I make you rich. We keep the room clean.  </description>
@@ -1180,10 +1183,10 @@ Be careful（小心）</description>
     
     <item>
       <title>English 宾语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E5%AE%BE%E8%AF%AD/</guid>
       <description>宾语 指动作（谓语）的承受者。
 能作主语的词都可以作宾语，不能作主语的，也不能作宾语。但要注意的是，如果是人称代词作宾语，则必须用宾格，不能用主格。
  I buy a book every year. You believe us I want two apples.  和表语不同，宾语前面不需要也不能有系动词 be.
@@ -1197,10 +1200,10 @@ I gave her a book.</description>
     
     <item>
       <title>English 形容词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%BD%A2%E5%AE%B9%E8%AF%8D/</guid>
       <description>形容词 用于修饰名词的词，简称 adj.
 普通形容词 单独一个单词的形容词。
 当形容词作定语的时候，前面必须加一个冠词 。
@@ -1215,10 +1218,10 @@ A 超过 B A + be + 形容词比较级 + than + B.</description>
     
     <item>
       <title>English 感叹词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%84%9F%E5%8F%B9%E8%AF%8D/</guid>
       <description>感叹词 用于表示感叹或发出某种情感，通常处于句子的最前面或最后面，一般与句子本身没有实际的直接联系，简称 int.
 比如 What、yum、blah 等都是叹词。
 在 Ah，the apple is tasty 中，Ah 是叹词。</description>
@@ -1226,10 +1229,10 @@ A 超过 B A + be + 形容词比较级 + than + B.</description>
     
     <item>
       <title>English 数词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E6%95%B0%E8%AF%8D/</guid>
       <description>数词 用于表示数量、数字、第几的词.
 例句  The first is important. Eight is a number  基数词 表示数量的数词，比如一、二、三。
 100 ~ 999 一 = one
@@ -1251,10 +1254,10 @@ five hundreds of（五百左右）</description>
     
     <item>
       <title>English 特殊疑问句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E7%89%B9%E6%AE%8A%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
       <description>特殊疑问句 不可以用 yes、no 回答。
 特殊疑问句是对句子中的某个句子成分提问，用特殊疑问词开头，下面列举一些特殊疑问词。
 特殊疑问词 Who 提问人：Who’s next？（谁下一个？）
@@ -1271,10 +1274,10 @@ Which 提问选择：Which is your choice？（你选哪个？）</description>
     
     <item>
       <title>English 状语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E7%8A%B6%E8%AF%AD/</guid>
       <description>状语 用于修饰谓语动词，它只跟谓语有关系。
 xxx 的执行某个动作，xxx 就是状语。
  The rabbit ate quickly I teach English in Beijing I am happy in Guizhou I am happy today I am busy now I will buy a book tomorrow I speak English slowly  一句话里面可以使用多个状语，但有的时候可能逻辑不对。
@@ -1285,19 +1288,19 @@ xxx 的执行某个动作，xxx 就是状语。
     
     <item>
       <title>English 状语从句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E5%A4%8D%E5%90%88%E5%8F%A5/%E7%8A%B6%E8%AF%AD%E4%BB%8E%E5%8F%A5/</guid>
       <description>状语从句 将简单句修改，使它成为另一个句子的状语。</description>
     </item>
     
     <item>
       <title>English 简单</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/</guid>
       <description>简单句 陈述句 肯定式 i have money
 肯定式边否定式，助动词（do）后面，加否定词（not）
 否定式 i don’t have money
@@ -1306,10 +1309,10 @@ xxx 的执行某个动作，xxx 就是状语。
     
     <item>
       <title>English 表语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%A1%A8%E8%AF%AD/</guid>
       <description>表语 说明主语怎么怎么样，是谓语的一部分。
 表语和系动词 be 不能分开使用，没有系动词就没有表语，没有表语就没有系动词，因此，系动词后面的词大部分都是表语。
   I am rich
@@ -1320,10 +1323,10 @@ xxx 的执行某个动作，xxx 就是状语。
     
     <item>
       <title>English 语气词 &#43; 感叹号</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E6%84%9F%E5%8F%B9%E5%8F%A5/%E8%AF%AD%E6%B0%94%E8%AF%8D-&#43;-%E6%84%9F%E5%8F%B9%E5%8F%B7/</guid>
       <description>语气词 + 感叹号 Wow! That’s totally awesome!
 哇！真是厉害！
 Oh! You’re Peter！
@@ -1332,20 +1335,20 @@ Oh! You’re Peter！
     
     <item>
       <title>English 请求、祝愿</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%A5%88%E4%BD%BF%E5%8F%A5/%E8%AF%B7%E6%B1%82%E7%A5%9D%E6%84%BF/</guid>
       <description>请求、祝愿 Have a good day（祝你有美好的一天）
 Let me help you（让我帮你）</description>
     </item>
     
     <item>
       <title>English 谓语</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%AD%90%E6%88%90%E5%88%86/%E8%B0%93%E8%AF%AD/</guid>
       <description>谓语 一般在主语之后，用于说明主语的动作、状态、特征和行为。
 动作型谓语 用于说明主语做什么。
 一般由谓语动词构成。
@@ -1356,20 +1359,20 @@ Let me help you（让我帮你）</description>
     
     <item>
       <title>English 连词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E8%BF%9E%E8%AF%8D/</guid>
       <description>连词 用来连接词与词、词组与词组、句子与句子，使得形成某种逻辑关系或语法结构的词。简称 conj.
 连词可以表并列、承接、转折、因果、选择、假设、比较、让步等关系</description>
     </item>
     
     <item>
       <title>English 选择疑问句</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</link>
       <pubDate>Thu, 21 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E5%8F%A5%E5%9E%8B/%E7%AE%80%E5%8D%95%E5%8F%A5/%E7%96%91%E9%97%AE%E5%8F%A5/%E9%80%89%E6%8B%A9%E7%96%91%E9%97%AE%E5%8F%A5/</guid>
       <description>选择疑问句 不可以用 yes，no 回答
 选择疑问句用 or 连接，一般是提问两个以上的句子内容，我们选择其中一个进行回答。
 选择疑问句：Do you like to play football or basketball?（你喜欢踢球还是打篮球？）

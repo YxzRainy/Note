@@ -1,5 +1,5 @@
 ---
-v-ontitle: Vue v-pre
+title: Vue v-pre
 date: 2022-05-22 6:00:00
 updated: 2022-05-22 6:00:00
 categories:

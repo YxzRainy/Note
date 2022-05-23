@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>游戏 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%B8%B8%E6%88%8F/</link>
+    <link>https://yxzi.xyz/tags/%E6%B8%B8%E6%88%8F/</link>
     <description>Recent content in 游戏 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 18 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>提倡禁止游戏</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E6%8F%90%E5%80%A1%E7%A6%81%E6%AD%A2%E6%B8%B8%E6%88%8F/</link>
+      <link>https://yxzi.xyz/mynote/2-view/society/%E6%8F%90%E5%80%A1%E7%A6%81%E6%AD%A2%E6%B8%B8%E6%88%8F/</link>
       <pubDate>Mon, 18 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/society/%E6%8F%90%E5%80%A1%E7%A6%81%E6%AD%A2%E6%B8%B8%E6%88%8F/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/society/%E6%8F%90%E5%80%A1%E7%A6%81%E6%AD%A2%E6%B8%B8%E6%88%8F/</guid>
       <description>提倡禁止游戏 因为我不 xx，所以可以禁 xx 支持禁止游戏的人，都是不玩游戏的人。
 我支持禁止抽烟，因为我不抽烟。
 我支持禁止喝酒，因为我不喝酒

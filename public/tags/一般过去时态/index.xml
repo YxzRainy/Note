@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>一般过去时态 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
+    <link>https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
     <description>Recent content in 一般过去时态 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 02 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Sat, 02 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 一般过去时态的主谓宾句型，构成方式很简单，不需要考虑主语的人称和单复数变化，只需要把谓语动词变成过去式就可以了。
 注意，不要在动词过去式的前面乱加 was/were，因为这样是错的（主谓宾和主系表不能混用）。
 同样的，我们把主语 + 谓语 + 宾语分成四个小句型。
@@ -22,10 +25,10 @@
     
     <item>
       <title>English 一般过去时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</link>
       <pubDate>Fri, 01 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/</guid>
       <description>一般过去时态 表示的曾经发生的一些动作和状态，也就是已经过去的一些事物。
 一般过去时态的时间状语 一般情况，一般过去时态需要加上表示过去的时间状语。
  yesterday. just now. before.  大部分表示过去的时间状语，都是由介词或副词跟其他的词语构成的，一般有下面一种构成方式。
@@ -37,10 +40,10 @@
     
     <item>
       <title>English 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Fri, 01 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E8%BF%87%E5%8E%BB%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 构成方式很简单，就是把里面的 be 变成 was/were. 当主语是 I 或单数的时候就用 was，当主语是 you 或复数的时候用 were，主语和表语都不需要变化。
 当然，如果是可数名词作主语或表语，要注意可数名词的问题）
 我们把主语 + be + 表语这个句型分成了四个更具体详细的小句型。

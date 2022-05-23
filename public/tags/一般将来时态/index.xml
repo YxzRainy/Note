@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>一般将来时态 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
+    <link>https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
     <description>Recent content in 一般将来时态 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 05 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English be going to 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>be going to 主系表 一般将来时态除了用wil来构成一般来时，还可以使用短语 be going to，它和 will 都是助动词，意义也一样，没有中文意思。
 be going to 有三种格式，这也是它很麻烦的地方。
  单数用 is going to. 复数用 are going to. I 用 am going to.  主语 + be going to + be + 表语 + 将来时间状语  I am going to be busy tomorrow.（这句话等于 I will be busy tomorrow） You are going to be happy tomorrow. She is going to be beautiful tomorrow.  主语 + be going to + be + 表语 + 将来时间状语句型变一般疑问规则 将 be going to 里面的 be（is/am/are）移动到句首，主语和表语一般不需要变化，当然， 有时候根据生活逻辑，主语的人称也需要改变一下，并且，如果主语的人称发生改变，对应的 be（is/am/are）也要跟着改变。</description>
@@ -20,10 +23,10 @@ be going to 有三种格式，这也是它很麻烦的地方。
     
     <item>
       <title>English be going to 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>be going to 主谓宾 主谓宾和主系表是差不多的。但是千万必要将主谓宾和主系表混搭在一起！主谓宾不需要系动词 be.
 主语 + is/are am going to + 不及物动词原型 + 宾语 + 将来时间状语  She is going to swim tomorrow. They are going to sleep tomorrow. Rainy is going to bake corn tomorrow.  主谓宾句型变一般疑问句规则 将 be going to 里面的 be（is/am/are）移动到句首，主语和表语一般不需要变化，当然， 有时候根据生活逻辑，主语的人称也需要改变一下，并且，如果主语的人称发生改变，对应的 be（is/am/are）也要跟着改变。
  I am going to buy a house next day. Are you going to buy a house next day.  主谓宾句型变否定句规则 在 be going to 中的 be（is/am/are）后面加否定词 not 就可以了，主语和表语保持不变，另外，is not 和 are not 都可以缩写为 isn&amp;rsquo;t、aren&amp;rsquo;t。</description>
@@ -31,10 +34,10 @@ be going to 有三种格式，这也是它很麻烦的地方。
     
     <item>
       <title>English be going to 和 will</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/be-going-to-%E5%92%8C-will/</guid>
       <description>be going to 和 will 一般情况，助动词 will 和 be going to 几乎没有区别，可以互换使用，但是在特殊情况下，will 强调的是一种“意志、意愿”，而 be going to 只是纯粹的表示将来或比较确定即将要发生的动作或状态。
 比如：
  I am going to master English in three yeares（be going to） I will master English in three years.  这两句话平时没有区别，都表示“我要在三年后掌握英语”，但是如果在特定的情况下或有前提的情况下，可能需要用 I will master English 来表示“我一定会掌握英语”，这时候强调的是一种意志或意愿，且一般不加时间状语。而 I am going to master english 就无法表达出这种意义，依旧是纯粹的表示将来。
@@ -43,10 +46,10 @@ will 本身可以作名词，表示“意志、意愿”。</description>
     
     <item>
       <title>English 一般将来时态</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/</guid>
       <description>一般将来时态 表示未来即将要发生的动作和状态，也就是说，这些动作和状态还没有发生，但是在将来的某个时间要发生。
 一般将来时态有两种构成方式，will 和 be going to，这两个都是助动词，没有中文意思。虽然它们写法不一样，但是作用是一样的。
 一般将来时态的时间状语 一般情况，一般将来时态都需要加上表示将来的时间状语。
@@ -59,10 +62,10 @@ Next + 表示时间名词的单数  I will travel next year.  After + 具体时�
     
     <item>
       <title>English 主系表</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E7%B3%BB%E8%A1%A8/</guid>
       <description>主系表 只要把 be 变成 will be，然后再加上表示将来的时间状语就可以了。另外，不管主语是什么人称，都是用 will be + 表语。
 我们把主语 + will be + 表语分成四个更具体的小句型。
 Be + 职业的时候，这里的 be 表示“成为，做”的意思。
@@ -73,10 +76,10 @@ Be + 职业的时候，这里的 be 表示“成为，做”的意思。
     
     <item>
       <title>English 主谓宾</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</link>
       <pubDate>Tue, 05 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E6%97%B6%E6%80%81/%E4%B8%80%E8%88%AC%E5%B0%86%E6%9D%A5%E6%97%B6%E6%80%81/%E4%B8%BB%E8%B0%93%E5%AE%BE/</guid>
       <description>主谓宾 只需要在谓语动词原型前面加上 will，然后加上表示将来的时间状语就可以了。
 我们把主语 + 谓语 + 宾语分成 4 个更详细的小句型。
 人称代词主格（主语） + will + 不及物动词原型（复合谓语） + 将来时间状语 在不及物动词原型（复合谓语）的前面加一个助动词 will，在加上一个将来时间状语就可以了。

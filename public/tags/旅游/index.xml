@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>旅游 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E6%B8%B8/</link>
+    <link>https://yxzi.xyz/tags/%E6%97%85%E6%B8%B8/</link>
     <description>Recent content in 旅游 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 24 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E6%97%85%E6%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>没有思想的旅行，行万里路也无异于邮差</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/thinking/%E6%B2%A1%E6%9C%89%E6%80%9D%E6%83%B3%E7%9A%84%E6%97%85%E8%A1%8C%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF%E4%B9%9F%E6%97%A0%E5%BC%82%E4%BA%8E%E9%82%AE%E5%B7%AE/</link>
+      <link>https://yxzi.xyz/mynote/2-view/thinking/%E6%B2%A1%E6%9C%89%E6%80%9D%E6%83%B3%E7%9A%84%E6%97%85%E8%A1%8C%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF%E4%B9%9F%E6%97%A0%E5%BC%82%E4%BA%8E%E9%82%AE%E5%B7%AE/</link>
       <pubDate>Sun, 24 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/thinking/%E6%B2%A1%E6%9C%89%E6%80%9D%E6%83%B3%E7%9A%84%E6%97%85%E8%A1%8C%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF%E4%B9%9F%E6%97%A0%E5%BC%82%E4%BA%8E%E9%82%AE%E5%B7%AE/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/thinking/%E6%B2%A1%E6%9C%89%E6%80%9D%E6%83%B3%E7%9A%84%E6%97%85%E8%A1%8C%E8%A1%8C%E4%B8%87%E9%87%8C%E8%B7%AF%E4%B9%9F%E6%97%A0%E5%BC%82%E4%BA%8E%E9%82%AE%E5%B7%AE/</guid>
       <description>没有思想的旅行，行万里路也无异于邮差 在欧洲旅行，常见的景点之一就是许多古堡和教堂。
 首次见到这些景点，大家还会赞叹两句（高大、富丽堂皇之类）。
 但等再次遇到这类景点，就会感到索然乏味，很多人甚至是过门而不入。

@@ -1,0 +1,35 @@
+baseURL = "https://yxzi.xyz/Sub/Blog"
+languageCode = "zh-cn"
+title = "Rainy · Blog"
+theme = "One"
+paginate = 12
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""  
+    noClasses = true
+    style = "tango"
+    tabWidth = 4
+    anchorlinenos = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+
+[author]
+  name = "Rainy"
+
+[params]
+  mainSections = ["mynote"]
+  favicon = 'https://yxzi.xyz/Logo.ico'
+
+
+
+
+
+

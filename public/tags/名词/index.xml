@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>名词 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E5%90%8D%E8%AF%8D/</link>
+    <link>https://yxzi.xyz/tags/%E5%90%8D%E8%AF%8D/</link>
     <description>Recent content in 名词 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 13 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E5%90%8D%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E5%90%8D%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English 专有名词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E4%B8%93%E6%9C%89%E5%90%8D%E8%AF%8D/</guid>
       <description>专用名词 专有名词，就是人名、地名、专门机构等。
 大多数的专有名词是不可数名词，在某些情况下可以复数使用，或者转换为普通名词的单数/复数使用。
 专有名词的首字母必须大写。
@@ -22,10 +25,10 @@
     
     <item>
       <title>English 普通名词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E6%99%AE%E9%80%9A%E5%90%8D%E8%AF%8D/</guid>
       <description>普通名词 普通名词 除了专业名词以外的词都是普通名词。
 普通名词被分为可数名词和不可数名词。
 专有名词复数使用，专业名词转换普通名词  There are two Jacks in our class Millions of Lei Fengs have emerged in China Hey, Tom, have a Mrs. Carl is waiting for you  可数名词 可数名词（单数复数都可以，可以用数词计算）
@@ -40,10 +43,10 @@
     
     <item>
       <title>English 量词</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</link>
+      <link>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</link>
       <pubDate>Wed, 13 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</guid>
+      <guid>https://yxzi.xyz/mynote/5-subject/english/%E8%AF%8D%E7%B1%BB/%E5%90%8D%E8%AF%8D/%E9%87%8F%E8%AF%8D/</guid>
       <description>量词 我们可以用量词来表示不可数名词的数量。但不是每一个量词都可以修饰每一个不可数名词。
 当不可数名词的单复数变化时，只需将量词从单数变为复数。
 量词中的 of 时没有意思的，它主要就是为了修饰不可数名词，作前置定语，另外，量词也可以修饰可数名词的复数形式，但不能修饰可数名词的的单数形式。毕竟一个名词用量词修饰，说明这个名词不止一个，如果这个名词还用单数形式的话，就不合理了。

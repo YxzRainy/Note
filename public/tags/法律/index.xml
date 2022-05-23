@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>法律 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%B3%95%E5%BE%8B/</link>
+    <link>https://yxzi.xyz/tags/%E6%B3%95%E5%BE%8B/</link>
     <description>Recent content in 法律 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%B3%95%E5%BE%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E6%B3%95%E5%BE%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开车撞人后怎么处理最理智</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</link>
+      <link>https://yxzi.xyz/mynote/2-view/gam/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</link>
       <pubDate>Thu, 28 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/2-view/gam/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</guid>
+      <guid>https://yxzi.xyz/mynote/2-view/gam/%E5%BC%80%E8%BD%A6%E6%92%9E%E4%BA%BA%E5%90%8E%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%E6%9C%80%E7%90%86%E6%99%BA/</guid>
       <description>开车撞人后怎么处理最理智 一位资深警察的微信，有车的朋友一定要存！(从此理直气壮）
 一 出了事故不要害怕，立刻打 110 和保险公司。对方伤重请直接打 120，你留在现场等交警。
 二 不要垫付，如果交警要扣车，你就让他扣，所有他需要的资料都给他。

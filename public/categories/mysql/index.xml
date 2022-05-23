@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MySQL on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/categories/mysql/</link>
+    <link>https://yxzi.xyz/categories/mysql/</link>
     <description>Recent content in MySQL on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Mon, 04 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL 安装</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/mysql/%E5%AE%89%E8%A3%85/</guid>
       <description>安装 去官方下载PHPStudy并安装，这玩意自带 MySQL 和 Apache。
 配置环境变量 赋值 MySQL 目录下的 bin 路径，然后将这个路径添加到系统环境变量Path中。
 我这里添加环境变量是的是：D:\AppInstallPath\PhpStudy\phpstudy_pro\Extensions\MySQL5.7.26\bin*</description>
@@ -20,17 +23,13 @@
     
     <item>
       <title>MySQL 常用命令</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 04 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/mysql/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description>常用命令 查询MySQL 版本号 打开cmd，直接使用 DOS 命令查看：
 # 第一种命令查询 C:\Windows\system32&amp;gt;mysql --version mysql Ver 14.14 Distrib 5.7.26, for Win64 (x86_64) # 第二种命令查询 C:\Windows\system32&amp;gt;mysql -V mysql Ver 14.14 Distrib 5.7.26, for Win64 (x86_64) 显示数据库 使用show databases;命令来查看数据库，需要注意的是 database 后面的 s 和;符号。
-mysql&amp;gt;showdatabases;+--------------------+ |Database|+--------------------+ |information_schema||mysql||performance_schema||study||sys||typecho||wordpress|+--------------------+ 7rowsinset(0.02sec)打开数据库 使用use DatabaseName;命令来打开 typecho 数据库，DatabaseName 是数据库的名称。
-mysql&amp;gt;usetypecho;Databasechanged查看表 使用show tables;命令来查看 typecho 数据库中的表。
-mysql&amp;gt;showtables;+-----------------------+|Tables_in_typecho|+-----------------------+|typecho_comments||typecho_contents||typecho_fields||typecho_metas||typecho_options||typecho_relationships||typecho_users|+-----------------------+7rowsinset(0.00sec)还可以使用show tables from DatabaseName;命令来查看表，更加方便。
-DatabaseName 是数据库的名称。
-mysql&amp;gt;showtablesfromtypecho;+-----------------------+|Tables_in_typecho|+-----------------------+|typecho_comments||typecho_contents||typecho_fields||typecho_metas||typecho_options||typecho_relationships||typecho_users|+-----------------------+7rowsinset(0.00sec)查看表结构 使用 DESCRIBE TableName;来查看数据库中的表结构，TableName 是要查询的表的名称，DESCRIBE 可以缩写为 DSEC。</description>
+mysql&amp;gt; show databases; +--------------------+ | Database | +--------------------+ | information_schema | | mysql | | performance_schema | | study | | sys | | typecho | | wordpress | +--------------------+ 7 rows in set (0.</description>
     </item>
     
   </channel>

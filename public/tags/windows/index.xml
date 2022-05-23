@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Windows on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/windows/</link>
+    <link>https://yxzi.xyz/tags/windows/</link>
     <description>Recent content in Windows on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>登录宝塔</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
       <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
       <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
 轻量云服务器 CentOS 7.6 64bit
 Putty 用于 Windows 从本地登陆到远程 Linux 服务器

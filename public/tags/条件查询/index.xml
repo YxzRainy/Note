@@ -1,67 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>条件查询 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/Sub/Blog/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+    <link>https://yxzi.xyz/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
     <description>Recent content in 条件查询 on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 23 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/Sub/Blog/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MySQL 模糊查询</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
       <pubDate>Sat, 23 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
       <description>模糊查询 LIKE 查询某个字段中所有包含单个或多个字符的数据
 查询员工名中第三个字符为n，第五个字符为 l 的员工名和工资 _通配符，表示匹配任意单个字符。
-SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE#第三个字符为n，第五个字符为l的数据&amp;#39;__n_l%&amp;#39;;查询员工名中第二个字符为 _ 的员工名 \转义字符，表示特殊的控制意义，一般用于格式控制。
-SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_\_%&amp;#39;;ESCAPE关键字可以让我们自定义转义字符。
-SELECTlast_name,salaryFROMemployeesWHERElast_nameLIKE&amp;#39;_$_%&amp;#39;#自定义一个转义字符$ESCAPE&amp;#39;$&amp;#39;;查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。
-SELECT*FROMemployeesWHERElast_nameLIKE#%表示匹配任意内容的意思#这里的%表示匹配a字符前面和后面都有任意字符的数据&amp;#39;%a%&amp;#39;;BETWEEN AND 查询某个字段中所有在&amp;hellip;和&amp;hellip;之间的数据。
-可以提高语句简洁度。
-包含两个临界值。
-查询员工编号在 100 - 120 之间的员工信息 方式一（推荐）
-SELECT*FROMemployeesWHEREemployee_idBETWEEN100AND120;方式二
-SELECT*FROMemployeesWHEREemployee_id&amp;gt;=100ANDemployee_id&amp;lt;=120;IN 查询某个字段中所有等于 in 列表中指定字符串的数据。
-可以提高语句简洁的。
-in 列表中的值的类型必须统一。
-in 列表中的字符串不支持通配符。
-查询员工的工种编号是 IT _PROG、AD_VP、AD_PRES 中的一个员工名和工种编号 方式一（推荐）
-SELECTlast_name,job_idFROMemployeesWHEREjob_idin(&amp;#39;IT_PROT&amp;#39;,&amp;#39;AD_VP&amp;#39;,&amp;#39;AD_PRES&amp;#39;);方式二
-SELECTlast_name,job_idFROMemployeesWHEREjob_id=&amp;#39;IT_PROT&amp;#39;ORjob_id=&amp;#39;AD_VP&amp;#39;ORjob_id=&amp;#39;AD_PRES&amp;#39;;IS NULL 查询某个字段中所有等于 Null 的数据。
-因为在 MySQL 中， = 和&amp;lt;&amp;gt; 不能判断Null，也就是不能写成= Null或 &amp;lt;&amp;gt; Null，
-所以只能用is Null来判断某个字段中的数据是否等于Null
-查询没有奖金的员工名和奖金率 SELECTlast_name,commission_pctFROMemployeesWHEREcommission_pctISNULL# 安全等于 # commission_pct &amp;lt;=&amp;gt; NULL IS NOT NULL 查询某个字段中所有不等于 Null 的数据。</description>
+SELECT last_name, salary FROM employees WHERE last_name LIKE # 第三个字符为 n，第五个字符为 l 的数据 &amp;#39;__n_l%&amp;#39;; 查询员工名中第二个字符为 _ 的员工名 \转义字符，表示特殊的控制意义，一般用于格式控制。
+SELECT last_name, salary FROM employees WHERE last_name LIKE &amp;#39;_\_%&amp;#39;; ESCAPE关键字可以让我们自定义转义字符。
+SELECT last_name, salary FROM employees WHERE last_name LIKE &amp;#39;_$_%&amp;#39; # 自定义一个转义字符 $ ESCAPE &amp;#39;$&amp;#39;; 查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。
+SELECT * FROM employees WHERE last_name LIKE # % 表示匹配任意内容的意思 # 这里的 % 表示匹配 a 字符前面和后面都有任意字符的数据 &amp;#39;%a%&amp;#39;; BETWEEN AND 查询某个字段中所有在&amp;hellip;和&amp;hellip;之间的数据。</description>
     </item>
     
     <item>
       <title>MySQL 条件查询</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
       <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
-      <description>条件查询 语法 select# 3、查询 QueryListfrom# 1、寻找库中有无指定名 TableNameWHERE# 2、筛选满足条件的字段 ConditionalExpression;分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  &amp;gt; 大于。
-查询工资大于 12000 的员工信息 SELECT*FROMemployeesWHEREsalary&amp;gt;12000;&amp;lt; 小于。
+      <guid>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>条件查询 语法 select # 3、查询 	QueryList from # 1、寻找库中有无指定名 TableName WHERE # 2、筛选满足条件的字段 	Conditional Expression; 分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  &amp;gt; 大于。
+查询工资大于 12000 的员工信息 SELECT * FROM employees WHERE salary &amp;gt; 12000; &amp;lt; 小于。
 = 等于。
 &amp;lt;&amp;gt; 不等于，也可以用 !=，但是在 MySQL 中 建议中 &amp;lt;&amp;gt;。
-查询部门编号不等于 90 号的员工名和部门编号 SELECTlast_name,department_idFROMemployeesWHEREdepartment_id&amp;lt;&amp;gt;90;&amp;gt;= 大于等于。
+查询部门编号不等于 90 号的员工名和部门编号 SELECT last_name, department_id FROM employees WHERE department_id &amp;lt;&amp;gt; 90; &amp;gt;= 大于等于。
 &amp;lt;= 小于等于。</description>
     </item>
     
     <item>
       <title>MySQL 逻辑查询</title>
-      <link>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</link>
+      <link>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</link>
       <pubDate>Wed, 06 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/Sub/Blog/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</guid>
+      <guid>https://yxzi.xyz/mynote/4-specialty/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</guid>
       <description>逻辑查询 AND 与运算符，也可以用 &amp;amp;&amp;amp;，但是在 MySQL 中，建议用 and。
 当表达式都为 true 时，结果才为 true，否则结果为 false。
-查询工资在 10000-20000 之间的员工名、工资以及奖金 SELECTlast_name,salary,commission_pctFROMemployeesWHEREsalary&amp;gt;=12000ANDsalary&amp;lt;=20000;OR 或运算符，但也可以用 ||，但是在 MySQL 中，建议用 or。
+查询工资在 10000-20000 之间的员工名、工资以及奖金 SELECT last_name, salary, commission_pct FROM employees WHERE salary &amp;gt;= 12000 AND  salary &amp;lt;= 20000; OR 或运算符，但也可以用 ||，但是在 MySQL 中，建议用 or。
 当表达式都为 false 时，结果才为 false，否则结果为 true。
-查询部门编号不在 90 - 100 之间，或者工资高于 15000 的员工信息 SELECT*FROMemployeesWHERE#筛选部门id小于90或大于100ddepartment_id&amp;lt;90ORdepartment_id&amp;gt;110ORsalary&amp;gt;15000;NOT 非运算符，但也可以用 !，但是在 MySQL 中，建议用 not。
-表达式的结果取反。
-查询部门编号不在 90 - 100 之间，或者工资高于 15000 的员工信息 SELECT*FROMemployeesWHERE#筛选部门id不在90-110之间的数据NOT(department_id&amp;gt;=90ANDdepartment_id&amp;lt;=110)ORsalary&amp;gt;15000;</description>
+查询部门编号不在 90 - 100 之间，或者工资高于 15000 的员工信息 SELECT * FROM employees WHERE # 筛选部门 id 小于 90 或 大于 100 d department_id &amp;lt; 90 OR department_id &amp;gt; 110 OR  salary &amp;gt; 15000; NOT 非运算符，但也可以用 !</description>
     </item>
     
   </channel>
