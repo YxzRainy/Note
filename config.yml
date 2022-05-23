@@ -52,6 +52,8 @@ params:
     apple_touch_icon: "apple-touch-icon.png"
     safari_pinned_tab: "<link / abs url>"
 
+  label:
+    text: "Home"
 
   # home-info mode
   homeInfoParams:
