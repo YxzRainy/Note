@@ -1,7 +1,6 @@
 ---
 title: JavaScript ES5 严格模式
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 编程语言
 tags:

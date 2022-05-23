@@ -1,7 +1,6 @@
 ---
 title: Vue computd
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # computd
@@ -80,4 +78,3 @@ computed: {
     },
 },
 ```
-

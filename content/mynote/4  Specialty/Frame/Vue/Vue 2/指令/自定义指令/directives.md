@@ -1,7 +1,6 @@
 ---
 title: Vue directives
 date: 2022-05-22 6:00:00
-updated: 2022-05-22 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # directives
@@ -23,7 +21,7 @@ tags:
 函数中有两个参数：
 
 - `element`：指令所在的 DOM 元素。
-- `binding`：一个对象，其中的`value` 属性就是自定义指令的属性值。 
+- `binding`：一个对象，其中的`value` 属性就是自定义指令的属性值。
 
 ### 会在什么时候被调用？
 
@@ -31,15 +29,13 @@ tags:
 
 - 指令所在的模板被重新解析时。
 
-
 **HTML**
 
 ```html
-
 <div id="app">
-    <h2>当前 n 的值为：{{n}}</h2>
-    <h3>放大十倍后的 n 为 ：<span v-big="n"></span></h3>
-    <button @click="n++">点击后 n++</button>
+	<h2>当前 n 的值为：{{n}}</h2>
+	<h3>放大十倍后的 n 为 ：<span v-big="n"></span></h3>
+	<button @click="n++">点击后 n++</button>
 </div>
 ```
 
@@ -59,7 +55,6 @@ var vm = new Vue({
 });
 
 Vue.config.productionTip = false;
-
 ```
 
 ## 对象式
@@ -74,9 +69,10 @@ Vue.config.productionTip = false;
 
 ```html
 <div id="app">
-    <h2>当前 n 的值为：{{n}}</h2>
-    <h2>放大 100 倍的值：</h2><input type="text" name="" id="" v-focus-bind="n">
-    <button @click="n++">点击后 n++</button>
+	<h2>当前 n 的值为：{{n}}</h2>
+	<h2>放大 100 倍的值：</h2>
+	<input type="text" name="" id="" v-focus-bind="n" />
+	<button @click="n++">点击后 n++</button>
 </div>
 ```
 
@@ -106,4 +102,3 @@ var vm = new Vue({
 Vue.config.productionTip = false;
 
 ```
-

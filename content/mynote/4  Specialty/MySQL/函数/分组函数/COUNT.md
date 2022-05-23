@@ -1,7 +1,6 @@
 ---
 title: MySQL COUNT
 date: 2022-04-25 6:00:00
-updated: 2022-04-25 6:00:00
 categories:
         - 数据库
 tags:
@@ -14,7 +13,7 @@ tags:
 
 # COUNT
 
-## COUNT(*)
+## COUNT(\*)
 
 统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。
 

@@ -1,7 +1,6 @@
 ---
 title: MySQL
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 数据库
 tags:

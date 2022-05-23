@@ -1,7 +1,6 @@
 ---
 title: English at
 date: 2022-04-15 6:00:00
-updated: 2022-04-15 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # at
@@ -52,6 +50,3 @@ at 都是加一个基数词，表示在几点钟。
 ## 跟一个集体性名词构成介词短语
 
 - She met a handsome man at her friend's birthday party.
-
-
-

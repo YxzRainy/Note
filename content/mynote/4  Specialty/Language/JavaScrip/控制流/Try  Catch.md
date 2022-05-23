@@ -1,7 +1,6 @@
 ---
 title: JavaScript Try Catch
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 编程语言
 tags:
@@ -9,6 +8,7 @@ tags:
         - 学习笔记
         - JavaScript
 ---
+
 # Try Catch
 
 为了容错，防止程序报错后引起整个程序的终止运行

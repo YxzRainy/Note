@@ -1,14 +1,12 @@
 ---
 title: JavaScript Window 方法
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # Window 方法
@@ -19,7 +17,7 @@ tags:
 
 ```js
 //让水平的滚动条滚动到 100 像素的位置，再让垂直滚动条滚动到 200 像素的位置
-scrollTo(100,200)
+scrollTo(100, 200);
 ```
 
 ## scrollBy()
@@ -28,9 +26,9 @@ scrollTo(100,200)
 
 ```js
 //　让垂直滚动条滚动 10px，
-scrollTo(0,10)
+scrollTo(0, 10);
 // 重复执行的话，滚动条会再滚动 10px
-scrollTo(0,10)
+scrollTo(0, 10);
 ```
 
 ## getComputedStyle()

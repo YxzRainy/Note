@@ -1,7 +1,6 @@
 ---
 title: Css keyframes
 date: 2021-10-09 6:00:00
-updated: 2021-10-20 6:00:00
 categories:
         - 编程语言
 tags:
@@ -18,16 +17,16 @@ tags:
 
 ```css
 .map2 {
-  width: 8.0375rem;
-  height: 8.0375rem;
-  background-image: url(../images/lbx.png);
-  opacity: 0.6;
-  animation: rotate 15s linear infinite;
-  z-index: 2;
+	width: 8.0375rem;
+	height: 8.0375rem;
+	background-image: url(../images/lbx.png);
+	opacity: 0.6;
+	animation: rotate 15s linear infinite;
+	z-index: 2;
 }
 ```
 
-### keyframes 
+### keyframes
 
 ```css
 @keyframes rotate {
@@ -41,4 +40,3 @@ tags:
 	}
 }
 ```
-

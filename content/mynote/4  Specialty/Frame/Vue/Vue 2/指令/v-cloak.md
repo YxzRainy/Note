@@ -1,7 +1,6 @@
 ---
 title: Vue v-cloak
 date: 2022-05-22 6:00:00
-updated: 2022-05-22 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # v-cloak
@@ -30,7 +28,7 @@ Vue 实例创建完毕后，元素上的 `v-cloak`被删除。
 
 ```css
 [v-cloak] {
-  display: none;
+	display: none;
 }
 ```
 

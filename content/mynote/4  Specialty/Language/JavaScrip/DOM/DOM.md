@@ -1,7 +1,6 @@
 ---
 title: JavaScript DOM
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 编程语言
 tags:
@@ -40,15 +39,15 @@ Node 最终指向 Object.prototype。
 
 ### getElementById()
 
-getElementById() 定义在了 Document.prototype 上，这说明 XMLDocument 和 HTMLDocument 都能使用 getElementById()，但Element 不能使用 getElementById()。
+getElementById() 定义在了 Document.prototype 上，这说明 XMLDocument 和 HTMLDocument 都能使用 getElementById()，但 Element 不能使用 getElementById()。
 
 ### getElementsByName()
 
-getElementsByName() 定义在了 HTMLDocument.prototype 上，这说明XMLDocument 和 Element  不能使用 getElementsByName()。
+getElementsByName() 定义在了 HTMLDocument.prototype 上，这说明 XMLDocument 和 Element 不能使用 getElementsByName()。
 
 ### getElementsByTagName()
 
-getElementsByTagName() 定义在了 Docunment.prototype 和 Element.prototype上，这说明 getElementsByTagName() 的兼容性最好，即文档中的元素也可以调用 getElementsByTagName()。
+getElementsByTagName() 定义在了 Docunment.prototype 和 Element.prototype 上，这说明 getElementsByTagName() 的兼容性最好，即文档中的元素也可以调用 getElementsByTagName()。
 
 像这样：
 
@@ -81,4 +80,3 @@ HTMLElement.prototype.fun = '自定义方法'
 var body = document.getElementsByTagName('body')[0]
 var head = document.getElementsByTagName('head')[0]
 ```
-

@@ -1,7 +1,6 @@
 ---
 title: C printf
 date: 2022-01-04 6:00:00
-updated: 2022-01-04 6:00:00
 categories:
         - 编程语言
 tags:

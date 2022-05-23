@@ -1,7 +1,6 @@
 ---
 title: Vue 虚拟 DOM 树
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # 虚拟 DOM 树
@@ -22,14 +20,13 @@ tags:
 
 ## 数据响应式
 
-当数据更改时，会将更改后的内容编译成一棵新的虚拟 DOM 树，然后将其与旧的虚拟 DOM 树比对（`diff`算法），**仅将两棵虚拟 DOM  属有差异的节点渲染为真实 DOM 树，没有差异的节点则直接使用旧虚拟 DOM 树所对应的真实 DOM 树上的节点**（复用）。这样可最小程度的改动真实 DOM，提升页面渲染效率。
+当数据更改时，会将更改后的内容编译成一棵新的虚拟 DOM 树，然后将其与旧的虚拟 DOM 树比对（`diff`算法），**仅将两棵虚拟 DOM 属有差异的节点渲染为真实 DOM 树，没有差异的节点则直接使用旧虚拟 DOM 树所对应的真实 DOM 树上的节点**（复用）。这样可最小程度的改动真实 DOM，提升页面渲染效率。
 
 因此，对于 Vue 而言，提升效率重点在于两个方面：
 
 1. 减少新的虚拟 DOM 的生成。
 
 2. 保证虚拟 DOM 树对比之后，只有必要的节点发生变化。
-
 
 ## 如何生成虚拟 DOM 树
 
@@ -71,7 +68,6 @@ var app = new Vue({
     `,
 });
 Vue.config.productionTip = false;
-
 ```
 
 ## 模板
@@ -79,7 +75,7 @@ Vue.config.productionTip = false;
 模板的作用，是为了生成虚拟 DOM 树。
 
 ```vue
- <div id="app">
+<div id="app">
             <h1>{{ title }}</h1>
             <ul>
                 <li v-for='(item ,i) in product'>
@@ -97,21 +93,20 @@ Vue.config.productionTip = false;
 
 ```html
 <div id="app">
-    <h1>vue 加载成功!</h1>
-    <ul>
-        <li>
-            名称：JavaScrip 熟悉程度：3
-            <button>删除</button> <button>增加</button>
-        </li>
-        <li>
-            名称：C 熟悉程度：2
-            <button>删除</button> <button>增加</button>
-        </li>
-        <li>
-            名称：Go 熟悉程度：1
-            <button>删除</button> <button>增加</button>
-        </li>
-    </ul>
+	<h1>vue 加载成功!</h1>
+	<ul>
+		<li>
+			名称：JavaScrip 熟悉程度：3
+			<button>删除</button> <button>增加</button>
+		</li>
+		<li>
+			名称：C 熟悉程度：2
+			<button>删除</button> <button>增加</button>
+		</li>
+		<li>
+			名称：Go 熟悉程度：1
+			<button>删除</button> <button>增加</button>
+		</li>
+	</ul>
 </div>
 ```
-

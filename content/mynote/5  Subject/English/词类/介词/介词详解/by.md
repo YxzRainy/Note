@@ -1,7 +1,6 @@
 ---
 title: English by
 date: 2022-04-14 6:00:00
-updated: 2022-04-14 6:00:00
 categories:
         - English
 tags:
@@ -36,7 +35,7 @@ By + 表示时间的词语，表示到某个时间点为止。
 2. 在...旁边。
 3. 在...身边。
 
-by 可以表示位置，与 beside 是同义词。区别就是 beside 用的多，by用的少，后者更强调靠近的意思。
+by 可以表示位置，与 beside 是同义词。区别就是 beside 用的多，by 用的少，后者更强调靠近的意思。
 
 - She lives by the sea.
 - The house by the sea is beautiful.
@@ -71,4 +70,3 @@ by + 动词短语，可以表示经过某个地方。
 3. 根据
 
 by + 某些词语构成介词短语，表示根据某种标去做某事。
-

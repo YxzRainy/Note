@@ -1,7 +1,6 @@
 ---
 title: Hugo 安装
 date: 2021-10-22 6:00:00
-updated: 2021-10-22 17:48:00
 categories:
         - 前端框架
 tags:

@@ -1,7 +1,6 @@
 ---
 title: JavaScript Function 方法
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 6:00:00
 categories:
         - 编程语言
 tags:
@@ -37,7 +36,7 @@ demo.call(test, 'zxy', 100);
 console.log(test);
 ```
 
-### 使用 call 
+### 使用 call
 
 ```JavaScript
 function Tyre(size, style) {

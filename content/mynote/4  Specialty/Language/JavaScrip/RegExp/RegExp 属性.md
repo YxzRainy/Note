@@ -1,13 +1,11 @@
 ---
 title: RegExp 属性
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 编程语言
 tags:
-        - RegExp 
+        - RegExp
         - 学习笔记
-
 ---
 
 # RegExp 属性
@@ -31,6 +29,4 @@ console.log(reg.lastIndex);
 reg.lastIndex = 0;
 // 修改成功，lastIndex = 2
 console.log(reg.exec(str));
-
 ```
-

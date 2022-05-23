@@ -1,7 +1,6 @@
 ---
 title: Vue MVVM
 date: 2022-05-14 6:00:00
-updated: 2022-05-14 6:00:00
 categories:
         - 前端框架
 tags:

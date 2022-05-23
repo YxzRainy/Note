@@ -1,7 +1,6 @@
 ---
 title: English without
 date: 2022-04-27 6:00:00
-updated: 2022-04-27 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # without
@@ -36,4 +34,3 @@ tags:
 表示**如果没有，就...**
 
 - without air, we could not live.
-

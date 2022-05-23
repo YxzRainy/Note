@@ -1,7 +1,6 @@
 ---
 title: Cisco 配置单区域 OSPFv2
 date: 2021-12-12 6:00:00
-updated: 2021-12-12 6:00:00
 categories:
         - 网络技术
 tags:
@@ -10,6 +9,7 @@ tags:
         - 学习笔记
         - Cisco 实验
 ---
+
 # 配置单区域 OSPFv2
 
 ## 配置 R1
@@ -25,6 +25,7 @@ network 172.16.3.0 0.0.0.3 area 0
 network 192.168.10.4 0.0.0.3 area 0
 passive-interface GigabitEthernet0/0
 ```
+
 ## 配置 R2
 
 ```
@@ -52,4 +53,3 @@ network 192.168.10.4 0.0.0.3 area 0
 network 192.168.10.8 0.0.0.3 area 0
 passive-interface GigabitEthernet0/0
 ```
-

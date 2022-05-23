@@ -1,7 +1,6 @@
 ---
 title: English past
 date: 2022-04-25 6:00:00
-updated: 2022-04-25 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # past
@@ -26,7 +24,7 @@ tags:
 
 - I begin my class at 25 past 7.
 
- 有时候 past 构成的数词也可以直接作表语。
+有时候 past 构成的数词也可以直接作表语。
 
 ### It is + 数词 + past +几点
 
@@ -42,4 +40,3 @@ tags:
 表示超过某个年龄或超过某个数量。
 
 - He is past sixty year old.
-

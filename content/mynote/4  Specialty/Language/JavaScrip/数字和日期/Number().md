@@ -1,7 +1,6 @@
 ---
 title: JavaScript Number()
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 22:30:00
 categories:
         - 编程语言
 tags:

@@ -1,7 +1,6 @@
 ---
 title: CodeBlocks 的使用
 date: 2022-02-19 6:00:00
-updated: 2022-02-19 6:00:00
 categories:
         - 编程语言
 tags:
@@ -18,7 +17,7 @@ tags:
 
 使用`Ctrl + Shift + C`快速注释。
 
- 使用`Ctrl + Shift + X`取消注释。
+使用`Ctrl + Shift + X`取消注释。
 
 ## 汉化 CodeBlocks
 

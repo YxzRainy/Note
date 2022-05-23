@@ -1,7 +1,6 @@
 ---
 title: Vs Code 使用 Git
 date: 2021-10-22 6:00:00
-updated: 2021-10-22 6:00:00
 categories:
         - 软件使用
 tags:

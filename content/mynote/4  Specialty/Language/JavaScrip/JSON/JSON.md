@@ -1,7 +1,6 @@
 ---
 title: JavaScrip JSON
 date: 2022-04-30 6:00:00
-updated: 2022-04-30 6:00:00
 categories:
         - 编程语言
 tags:
@@ -33,23 +32,20 @@ JSON 比 XML 更小、更快，更易解析。
 
 ```js
 var employees = [
-	{ "firstName":"Bill" , "lastName":"Gates" },
-	{ "firstName":"George" , "lastName":"Bush" },
-	{ "firstName":"Thomas" , "lastName": "Carter" }
-	];
+	{ firstName: 'Bill', lastName: 'Gates' },
+	{ firstName: 'George', lastName: 'Bush' },
+	{ firstName: 'Thomas', lastName: 'Carter' },
+];
 ```
 
 ### JSON 对象
 
 ```js
 var obj = {
-
-            age: 20,
-            str: "zhongfucheng",
-            method: function () {
-                alert("我爱学习");
-            }
-
-        };
+	age: 20,
+	str: 'zhongfucheng',
+	method: function () {
+		alert('我爱学习');
+	},
+};
 ```
-

@@ -1,7 +1,6 @@
 ---
-title: Cisco Vlan 
+title: Cisco Vlan
 date: 2021-09-12 6:00:00
-updated: 2021-12-02 6:00:00
 categories:
         - 网络技术
 tags:
@@ -36,7 +35,7 @@ no switchport access vlan
 no vlan 20
 ```
 
-## 配置 Vlan 的 IP 
+## 配置 Vlan 的 IP
 
 ```txt
 enable

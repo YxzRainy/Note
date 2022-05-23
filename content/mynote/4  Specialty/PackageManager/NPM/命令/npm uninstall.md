@@ -1,11 +1,10 @@
 ---
 title: npm uninstall
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 包管理器
 tags:
-        - NPM 
+        - NPM
         - NodeJs
         - 学习笔记
 ---

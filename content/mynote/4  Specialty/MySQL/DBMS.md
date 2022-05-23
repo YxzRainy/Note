@@ -1,14 +1,12 @@
 ---
 title: MySql DBMS
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 数据库
 tags:
         - SQL
         - MySQL
         - 学习笔记
-
 ---
 
 # DBMS
@@ -21,9 +19,8 @@ tags:
 
 比如微软的 Access
 
-## 基于C/S架构
+## 基于 C/S 架构
 
- 基于客户机/服务器的 DBMS。需要安装客户端和服务端
+基于客户机/服务器的 DBMS。需要安装客户端和服务端
 
 比如 MySQL、Oracle、SqlSever。
-

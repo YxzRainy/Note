@@ -1,14 +1,12 @@
 ---
 title: JavaScript String 方法
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # String 方法
@@ -24,14 +22,12 @@ tags:
 参数通常是一个正则表达式，
 
 ```js
-
 var reg = /ab/g;
 
 var str = 'abababababab';
 
 var result = str.match(reg);
 console.log(result);
-
 ```
 
 ## slice()
@@ -52,12 +48,11 @@ var reg = /(\w)\1(\w)\2/g;
 var result = str.search(reg);
 
 console.log(result);
-
 ```
 
 ## split()
 
-使用指定的分隔符字符串将一个字符串对象分割成子字符串数组，以一个**指定的分割字串**来决定每个拆分的位置。 
+使用指定的分隔符字符串将一个字符串对象分割成子字符串数组，以一个**指定的分割字串**来决定每个拆分的位置。
 
 除了会返回匹配结果，还会返回`()`中第一次匹配的**子表达式的值**，并且这些值是类数组的数据位，它们存在于类数组的索引位中。
 
@@ -69,7 +64,6 @@ var reg = /(\w)\1/g;
 var result = str.split(reg);
 
 console.log(result);
-
 ```
 
 ### 用数之来分割字符串
@@ -82,7 +76,6 @@ var reg = /\d/g;
 var result = str.split(reg);
 
 console.log(result);
-
 ```
 
 ## replace()
@@ -105,7 +98,6 @@ var reg = /a/g;
 // 字符串中全部的 a 都被替换为了 y
 var result = str.replace(reg, 'y');
 console.log(result);
-
 ```
 
 ### $ 反向引用
@@ -115,13 +107,11 @@ console.log(result);
 $1 表示正则表达式中第一个(`)`中的内容；$2 表示正则表达式中第二个`()`中的内容，以此类推...
 
 ```js
-
 var str = 'aabbaabb';
 var reg = /(\w)\1(\w)\2/g;
 
 var result = str.replace(reg, '$2$2$1$1');
 console.log(result);
-
 ```
 
 ### 回调函数
@@ -131,8 +121,8 @@ console.log(result);
 如果是全局匹配，每匹配一次，回调函数都会执行一次。如果不是全局匹配，则只匹配一次，回调函数也只执行一次。
 
 - 函数的第一个参数是正则表达式匹配到结果。
-- 函数的第二个参数是**正则表达式中第一个`()`中的内容。
-- 函数的第三个参数是**正则表达式中第二个`()`中的内容。
+- 函数的第二个参数是\*\*正则表达式中第一个`()`中的内容。
+- 函数的第三个参数是\*\*正则表达式中第二个`()`中的内容。
 - 以此类推...
 
 ```js
@@ -143,7 +133,6 @@ var result = str.replace(reg, function ($, $1, $2) {
 	return $2 + $2 + $1 + $1;
 });
 console.log(result);
-
 ```
 
 甚至还可以自定义返回 reture 的值：
@@ -157,7 +146,6 @@ var result = str.replace(reg, function ($, $1, $2) {
 	return $2 + $2 + $1 + $1 + 'hollo';
 });
 console.log(result);
-
 ```
 
 ## toUpperCase()
@@ -169,7 +157,6 @@ var sentence = 'my name is rainy';
 
 // return MY NAME IS RAINY
 console.log(sentence.toUpperCase());
-
 ```
 
 ## toLowerCase()
@@ -179,7 +166,6 @@ var sentence = 'MY NAME IS RAINY';
 
 // return my name is rainy
 console.log(sentence.toLowerCase());
-
 ```
 
 ## substring()

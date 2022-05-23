@@ -1,7 +1,6 @@
 ---
 title: Vue v-show
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # v-show
@@ -30,8 +28,7 @@ tags:
 ```js
 var app = new Vue({
 	el: '#app',
-	data: {		url: 'https://img1.baidu.com/it/u=999074466,1525171260&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=333',
-	},
+	data: { url: 'https://img1.baidu.com/it/u=999074466,1525171260&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=333' },
 });
 Vue.config.productionTip = false;
 ```

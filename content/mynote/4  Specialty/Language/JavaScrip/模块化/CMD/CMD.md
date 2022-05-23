@@ -1,7 +1,6 @@
 ---
 title: JavaScrip CMD
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -10,7 +9,6 @@ tags:
         - 学习笔记
         - 模块化规范
         - JavaScript
-
 ---
 
 # CMD
@@ -45,7 +43,7 @@ define(function (require, exports, module) {
 	require.async('./module3', function (m3Obj) {
 		// 使用 m3Obj
 	});
-    // 暴露模块
+	// 暴露模块
 	exports.xxx = value;
 });
 ```

@@ -1,7 +1,6 @@
 ---
 title: Css Body 背景图
 date: 2021-10-09 6:00:00
-updated: 2021-10-20 6:00:00
 categories:
         - 编程语言
 tags:

@@ -1,7 +1,6 @@
 ---
 title: JavaScrip ES6 模块化规范
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:

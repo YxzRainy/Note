@@ -1,13 +1,11 @@
 ---
 title: Nodemon
 date: 2022-04-30 6:00:00
-updated: 2022-04-30 6:00:00
 categories:
         - Ajax
 tags:
         - 前端
         - 学习笔记
-
 ---
 
 # Nodemon
@@ -27,4 +25,3 @@ npm install -g nodemon
 ```sh
 nodemon server.js
 ```
-

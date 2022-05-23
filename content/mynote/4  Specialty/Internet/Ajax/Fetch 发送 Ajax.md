@@ -1,13 +1,11 @@
 ---
 title: Fetch 发送 Ajax
 date: 2022-05-01 6:00:00
-updated: 2022-05-01 6:00:00
 categories:
         - Ajax
 tags:
         - 前端
         - 学习笔记
-
 ---
 
 # Fetch 发送 Ajax
@@ -36,8 +34,6 @@ app.listen(port, () => {
     console.log(`服务已经启动`)
 })
 ```
-
-
 
 ## HTML
 
@@ -80,26 +76,26 @@ app.listen(port, () => {
 ## JavaScrip
 
 ```js
-
 // fetch方式
 $('#btn').click(function () {
-    fetch('http://localhost:8000/fetch', {
-        // 请求方式
-        method: 'post',
-        // 请求头
-        headers: {
-            name: 'rainy'
-        },
-        // 请求体
-        body: 'username=admin'
-    }).then(response => {
-        // 返回字符串
-        // return response.text();
-        // 返回json对象
-        return response.json();
-    }).then(response => {
-        console.log(response)
-    })
-})
+	fetch('http://localhost:8000/fetch', {
+		// 请求方式
+		method: 'post',
+		// 请求头
+		headers: {
+			name: 'rainy',
+		},
+		// 请求体
+		body: 'username=admin',
+	})
+		.then((response) => {
+			// 返回字符串
+			// return response.text();
+			// 返回json对象
+			return response.json();
+		})
+		.then((response) => {
+			console.log(response);
+		});
+});
 ```
-

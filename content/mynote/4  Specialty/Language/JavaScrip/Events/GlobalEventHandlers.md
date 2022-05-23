@@ -1,14 +1,12 @@
 ---
 title: JavaScript GlobalEventHandlers
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # GlobalEventHandlers
@@ -49,7 +47,7 @@ div.onclick = function () {
 ```js
 div.onclick = function () {
 	console.log(4555);
-    // 使 onclick 事件只能被触发一次
+	// 使 onclick 事件只能被触发一次
 	div.onclick = null;
 };
 ```
@@ -100,14 +98,12 @@ onmouseleave 是 HTML 5 新规范中的属性。
 
 **只能监听键盘上的字母键和数字键**，不能监听一些特殊按键（ALT、CTRL、SHIFT、ESC、箭头等）。
 
-可以将按键的 charCode 转换为 ASCII码。
+可以将按键的 charCode 转换为 ASCII 码。
 
 ```js
-
 document.onkeypress = function (e) {
 	console.log(String.fromCharCode(e.charCode));
 };
-
 ```
 
 ## onkeyup
@@ -116,7 +112,7 @@ document.onkeypress = function (e) {
 
 ## oninput
 
- input 中的文本（value）每次发生变化时，所触发的事件。
+input 中的文本（value）每次发生变化时，所触发的事件。
 
 ## onfocus
 
@@ -124,7 +120,7 @@ document.onkeypress = function (e) {
 
 ## onchange
 
- input 元素中的文本（value）被修改，并且失去焦点时，所触发的事件。如果文本没有被修改，则事件不会被触发。
+input 元素中的文本（value）被修改，并且失去焦点时，所触发的事件。如果文本没有被修改，则事件不会被触发。
 
 ## onblur
 

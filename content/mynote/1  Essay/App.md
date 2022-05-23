@@ -1,7 +1,6 @@
 ---
 title: App 推荐
 date: 2021-10-18 6:00:00
-updated: 2021-10-22 6:00:00
 categories:
         - 随笔
 tags:
@@ -40,7 +39,7 @@ Javascript 的运行环境，能够使得 javascript 脱离浏览器运行。
 
 ## [Python](https://www.python.org/downloads/)
 
- Python 的运行环境。
+Python 的运行环境。
 
 ## [VsCode](https://code.visualstudio.com/)
 
@@ -68,7 +67,7 @@ markdown 编辑器。
 
 ## [XiaoYaoEmulator](https://www.xyaz.cn/)
 
- Android 模拟器。
+Android 模拟器。
 
 ## [VMware](https://www.vmware.com/cn/products/workstation-pro/workstation-pro-evaluation.html)
 

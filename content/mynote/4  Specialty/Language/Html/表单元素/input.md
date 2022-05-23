@@ -1,14 +1,12 @@
 ---
 title: HTML input
 date: 2022-05-20 6:00:00
-updated: 2022-05-20 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - HTML
         - 学习笔记
-
 ---
 
 # input
@@ -25,7 +23,6 @@ tags:
 
 ```html
 性别：
-<input type="radio" name="sex" id="">
-<input type="radio" name="sex" id="">
+<input type="radio" name="sex" id="" />
+<input type="radio" name="sex" id="" />
 ```
-

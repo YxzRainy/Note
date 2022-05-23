@@ -1,7 +1,6 @@
 ---
 title: Git git status
 date: 2021-10-12 6:00:00
-updated: 2021-10-23 20:15:00
 categories:
         - Git
 tags:

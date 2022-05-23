@@ -1,7 +1,6 @@
 ---
 title: JavaScrip AMD 实现模块化
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -9,7 +8,6 @@ tags:
         - 模块化
         - 学习笔记
         - JavaScript
-
 ---
 
 # AMD 实现模块化
@@ -48,7 +46,6 @@ define(function () {
 	// 暴露模块的 fun()
 	return { fun };
 });
-
 ```
 
 **dataService.js**
@@ -61,10 +58,9 @@ define(['dataService', 'jquery'], function (dataService, $) {
 		console.log(msg, dataService.fun());
 	}
 	$('body').css('background', 'red');
-    // 暴露模块的 showMsg()
+	// 暴露模块的 showMsg()
 	return { showMsg };
 });
-
 ```
 
 **main.js**
@@ -80,7 +76,7 @@ define(['dataService', 'jquery'], function (dataService, $) {
 		paths: {
 			dataService: 'modules/dataService',
 			alerter: 'modules/alerter',
-            // jquery 支持 AMD 规范，它内置 jquery 模块（源码中 define 了一个 jquery，因此，这里需要用 jquery，而不是 jQuery）
+			// jquery 支持 AMD 规范，它内置 jquery 模块（源码中 define 了一个 jquery，因此，这里需要用 jquery，而不是 jQuery）
 			jquery: 'libs/jquery',
 		},
 	});
@@ -88,7 +84,6 @@ define(['dataService', 'jquery'], function (dataService, $) {
 		alerter.showMsg();
 	});
 })();
-
 ```
 
 **index.htm**
@@ -96,24 +91,19 @@ define(['dataService', 'jquery'], function (dataService, $) {
 ```html
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-        <title>AMD 模块化</title>
-    </head>
-    <body>
-        <div class="wrap">
-   AMD 模块化
-        </div>
-    </body>
-    <!-- 引入 require.js 库 -->
-    <!-- data-main 表示当前项目主模块路径 -->
-    <script data-main="main.js" src="./libs/require.js"></script>
-    <script>
-    </script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<title>AMD 模块化</title>
+	</head>
+	<body>
+		<div class="wrap">AMD 模块化</div>
+	</body>
+	<!-- 引入 require.js 库 -->
+	<!-- data-main 表示当前项目主模块路径 -->
+	<script data-main="main.js" src="./libs/require.js"></script>
+	<script></script>
 </html>
 ```
-

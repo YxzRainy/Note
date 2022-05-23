@@ -1,7 +1,6 @@
 ---
 title: English beyond
 date: 2022-04-28 6:00:00
-updated: 2022-04-28 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # beyondqian
@@ -19,6 +17,3 @@ tags:
 ### beyond + 比较远的位置的词语
 
 表示**在...外边。**强调在很远的地方的那一边。
-
-
-

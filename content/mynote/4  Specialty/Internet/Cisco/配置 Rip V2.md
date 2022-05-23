@@ -1,7 +1,6 @@
 ---
 title: Cisco 配置 Rip V2
 date: 2021-12-03 6:00:00
-updated: 2021-12-03 6:00:00
 categories:
         - 网络技术
 tags:
@@ -10,6 +9,7 @@ tags:
         - 学习笔记
         - Cisco 实验
 ---
+
 # 配置 Rip V2
 
 ## 配置 R1
@@ -27,8 +27,6 @@ passive-interface gig 0/0
 default-information originate
 ```
 
-
-
 ## 配置 R2
 
 ```
@@ -43,8 +41,6 @@ network 192.168.4.0
 passive-interface gig 0/0
 ```
 
-
-
 ## 配置 R3
 
 ```
@@ -57,4 +53,3 @@ network 192.168.4.0
 network 192.168.5.0
 passive-interface gig 0/0
 ```
-

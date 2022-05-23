@@ -1,7 +1,6 @@
 ---
 title: Css table 空隙
 date: 2021-10-11 6:00:00
-updated: 2021-10-20 6:00:00
 categories:
         - 编程语言
 tags:

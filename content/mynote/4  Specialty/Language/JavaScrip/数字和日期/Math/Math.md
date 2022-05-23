@@ -1,7 +1,6 @@
 ---
 title: JavaScript Math
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 6:00:00
 categories:
         - 编程语言
 tags:
@@ -43,4 +42,3 @@ One();
 ```
 
 使用 **Math.floor()** 方法或 **Math.ceil()** 方法即可解决这个问题。
-

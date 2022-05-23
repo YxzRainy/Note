@@ -1,11 +1,10 @@
 ---
 title: 为什么要使用 npm
 date: 2021-11-21 6:00:00
-updated: 2021-11-21 6:00:00
 categories:
         - 包管理器
 tags:
-        - NPM 
+        - NPM
         - NodeJs
         - 学习笔记记
 ---

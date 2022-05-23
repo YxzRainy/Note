@@ -1,14 +1,12 @@
 ---
 title: JavaScript HTMLElement 属性
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # HTMLElement 属性
@@ -19,14 +17,14 @@ tags:
 
 另外，设置元素内容的时候，如果元素内容中有子元素，则这些子元素也会被覆盖。
 
-innerText 很容易 与textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText可操作已被渲染的内容， 而 textContent 则不会。
+innerText 很容易 与 textContent 混淆, 但这两个属性间实际上有很重要的区别. 大体来说, innerText 可操作已被渲染的内容， 而 textContent 则不会。
 
 ```js
 var body = document.getElementsByTagName('body')[0];
 var div = document.getElementsByTagName('div')[0];
 // 设置内容
 div.innerText = '123';
-/textContent 
+/textContent
 div.textContent = '456';
 ```
 

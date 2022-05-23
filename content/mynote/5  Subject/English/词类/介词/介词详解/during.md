@@ -1,7 +1,6 @@
 ---
 title: English during
 date: 2022-04-14 6:00:00
-updated: 2022-04-14 6:00:00
 categories:
         - English
 tags:

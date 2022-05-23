@@ -1,7 +1,6 @@
 ---
 title: English from
 date: 2022-04-20 6:00:00
-updated: 2022-04-20 6:00:00
 categories:
         - English
 tags:
@@ -25,10 +24,10 @@ From +时间点 + to/till + 另一个时间点，这个句型表示从一个时�
 from + 一个地点 + to + 另外一个地点，这个句型表示从一个地方到林另外一个地方。
 
 - The beggar asks for food from door to door.
-- I run from my house ro  the school.
+- I run from my house ro the school.
 - She walked from her house to the park yesterday.
 
-from 是一个非常特别的介词，一般的介词后面不能跟地点副词，但是from 可以。
+from 是一个非常特别的介词，一般的介词后面不能跟地点副词，但是 from 可以。
 
 - from here.
 - from abroad.
@@ -87,18 +86,3 @@ from 的这种用法主要用在固定句型：
 - The sauce is made from hair.
 - The glass is made from sand.
 - The chair is made of wood.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

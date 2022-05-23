@@ -1,7 +1,6 @@
 ---
 title: English after
 date: 2022-04-14 6:00:00
-updated: 2022-04-14 6:00:00
 categories:
         - English
 tags:
@@ -15,7 +14,7 @@ tags:
 
 ## 表示时间/顺序
 
-### after + 时间点 
+### after + 时间点
 
 after 可以放在一个表示具体时间点的词语的前面，表示在...之后。
 
@@ -24,7 +23,7 @@ after 可以放在一个表示具体时间点的词语的前面，表示在...�
 - She Play the game after class.
 - I will retire after 35 years old .
 - I born after 2001.
-- I class after Sunday. 
+- I class after Sunday.
 
 ### after + 一段时间
 
@@ -56,4 +55,3 @@ after 跟表示时间段的词语 。
 ## 表示依照/仿照
 
 - read after me
-

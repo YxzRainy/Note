@@ -1,7 +1,6 @@
 ---
 title: JavaScript get 方法
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
@@ -24,7 +23,7 @@ tags:
 
 ## getMonth()
 
-返回一年终的某月0 — 11。
+返回一年终的某月 0 — 11。
 
 注意，0 表示一月，11 表示 12 月
 
@@ -36,7 +35,7 @@ tags:
 
 ## getHours()
 
-获取小时 0 — 23 
+获取小时 0 — 23
 
 ## getMinutes()
 
@@ -59,7 +58,6 @@ tags:
 用于验证执行某个程序所花费的毫秒数。
 
 ```js
-
 // for 执行前的时间戳
 var firstTime = new Date().getTime();
 
@@ -72,5 +70,4 @@ var lastTime = new Date().getTime();
 // 执行完 for 的时间戳减去 for 执行前的时间戳
 // 就可以算出执行 for 循环所花费的时间
 console.log(lastTime - firstTime);
-
 ```

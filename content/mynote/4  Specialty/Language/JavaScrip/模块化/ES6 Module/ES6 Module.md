@@ -1,7 +1,6 @@
 ---
 title: JavaScrip ES6 Module
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -19,18 +18,18 @@ tags:
 
 ```json
 {
-  "name": "es6-module",
-  "version": "1.0.0",
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "uniq": "^1.0.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.17.10",
-    "@babel/core": "^7.17.12",
-    "@babel/preset-env": "^7.17.12",
-    "browserify": "^17.0.0"
-  }
+	"name": "es6-module",
+	"version": "1.0.0",
+	"dependencies": {
+		"jquery": "^3.6.0",
+		"uniq": "^1.0.1"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.17.10",
+		"@babel/core": "^7.17.12",
+		"@babel/preset-env": "^7.17.12",
+		"browserify": "^17.0.0"
+	}
 }
 ```
 
@@ -48,7 +47,7 @@ npm install --save-dev @babel/core @babel/cli
 
 ### babel/preset-env
 
-一个智能预设，允许您使用最新的JavaScript，而无需微观管理目标环境需要哪些语法转换（以及可选的浏览器 polyfills）
+一个智能预设，允许您使用最新的 JavaScript，而无需微观管理目标环境需要哪些语法转换（以及可选的浏览器 polyfills）
 
 ```sh
 npm install --save-dev @babel/preset-env
@@ -68,20 +67,20 @@ bable 的配置文件。
 
 ```json
 {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "edge": "17",
-            "firefox": "60",
-            "chrome": "67",
-            "safari": "11.1"
-          }
-        }
-      ]
-    ]
-  }
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"edge": "17",
+					"firefox": "60",
+					"chrome": "67",
+					"safari": "11.1"
+				}
+			}
+		]
+	]
+}
 ```
 
 ## 创建项目结构
@@ -118,7 +117,6 @@ function fun22() {
 }
 
 export { fun2, fun22 };
-
 ```
 
 **modules3.js**
@@ -156,14 +154,11 @@ var result = uniq(arr);
 console.log(result);
 
 $('body').css('background', 'black');
-
 ```
 
 **index.js**
 
-
-
-## 模块向后兼容 
+## 模块向后兼容
 
 解析 `src` 目录下的所有 JavaScript 文件，并应用我们所指定的代码转换功能，然后把每个文件输出到 `lib` 目录下。
 
@@ -184,4 +179,3 @@ browserify ./lib/main.js -o bundle.js
 ```HTML
 <script src="./dist/build.js"></script>
 ```
-

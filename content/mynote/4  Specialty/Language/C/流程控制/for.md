@@ -1,14 +1,12 @@
 ---
 title: C for
 date: 2022-04-03 6:00:00
-updated: 2022-04-12 6:00:00
 categories:
         - 编程语言
 tags:
         - C
         - 循环控制
         - 学习笔记
-
 ---
 
 # for

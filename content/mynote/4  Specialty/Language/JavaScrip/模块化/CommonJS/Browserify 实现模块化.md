@@ -1,7 +1,6 @@
 ---
 title: JavaScrip Browserify 实现模块化
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -9,8 +8,6 @@ tags:
         - 模块化
         - 学习笔记
         - JavaScript
-
-
 ---
 
 # Browserify 实现模块化
@@ -54,7 +51,6 @@ module.exports = {
 module.exports = function () {
 	console.log('module two');
 };
-
 ```
 
 **module3.js**
@@ -71,7 +67,6 @@ exports.f2 = function () {
 };
 
 exports.arr = [199, 9, 3];
-
 ```
 
 **app.js**
@@ -101,17 +96,17 @@ console.log(result);
 ```html
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-        <title>Browserify 模块化</title>
-    </head>
-    <body>
-        <div class="wrap">Browserify 模块化</div>
-    </body>
-    <script src="./dist/bundle.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<title>Browserify 模块化</title>
+	</head>
+	<body>
+		<div class="wrap">Browserify 模块化</div>
+	</body>
+	<script src="./dist/bundle.js"></script>
 </html>
 ```
 
@@ -125,7 +120,7 @@ npm install -g browserify
 
 **不仅要全局安装，当前项目也要安装**。
 
-‎现在，使用 ‎‎browserify‎‎ 命令递归地将所有需要的模块‎从 `./src/app.js‎‎` 打包编译到`./dist/bundle.js`：‎
+‎ 现在，使用 ‎‎browserify‎‎ 命令递归地将所有需要的模块 ‎ 从 `./src/app.js‎‎` 打包编译到`./dist/bundle.js`：‎
 
 `-o`表示输出。
 
@@ -138,4 +133,3 @@ browserify ./src/app.js -o ./dist/bundle.js
 ```html
 <script src="./dist/bundle.js"></script>
 ```
-

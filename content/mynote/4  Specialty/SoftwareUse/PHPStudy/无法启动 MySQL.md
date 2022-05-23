@@ -1,7 +1,6 @@
 ---
 title: 无法启动 MySQL
 date: 2022-04-20 6:00:00
-updated: 2022-04-20 6:00:00
 categories:
         - 软件使用
 tags:
@@ -13,7 +12,7 @@ tags:
 
 ## 错误一
 
-打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动MySQL。
+打开 PHPStudy，启动 MySQL 失败，但用 CMD 可以正常启动 MySQL。
 
 ### 5.7.26 解决方案
 
@@ -36,20 +35,20 @@ sc delete mysql
 
 ### 5.7.26 解决方案
 
-- 停用MySQL服务  没启动的可以省略
+- 停用 MySQL 服务 没启动的可以省略
 
-  ```sh
-  net stop mysql 
-  ```
+     ```sh
+     net stop mysql
+     ```
 
-- 找到 MySQL  安装路径下的 **my.ini**
+- 找到 MySQL 安装路径下的 **my.ini**
 
-- 打开 my.ini  找到  [mysqld]  然后在下面加上 **skip_grant_tables**，表示启动 MySQL 服务的时候跳过权限表认证
+- 打开 my.ini 找到 [mysqld] 然后在下面加上 **skip_grant_tables**，表示启动 MySQL 服务的时候跳过权限表认证
 
 - 启动数据库修改密码
 
 - 刷新权限 flush privileges
 
-- 再将的**my.ini**里的**skip_grant_tables** 去掉，因为启动 MySQL 服务的时候不能让它跳过权限表认证 
+- 再将的**my.ini**里的**skip_grant_tables** 去掉，因为启动 MySQL 服务的时候不能让它跳过权限表认证
 
 - 最后重启 MySQL 即可。

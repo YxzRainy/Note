@@ -1,7 +1,6 @@
 ---
 title: English of
 date: 2022-04-25 6:00:00
-updated: 2022-04-25 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # of
@@ -29,4 +27,3 @@ tags:
 
 - It is the story of my lady Mary, Queen of Scots.
 - She is the daughter of my English teacher, Nick.
-

@@ -1,13 +1,11 @@
 ---
 title: RegExp 方法
 date: 2022-05-09 6:00:00
-updated: 2022-05-09 6:00:00
 categories:
         - 编程语言
 tags:
-        - RegExp 
+        - RegExp
         - 学习笔记
-
 ---
 
 # RegExp 方法
@@ -48,7 +46,6 @@ console.log(reg.exec(str));
 
 // reture  2
 console.log(reg.lastIndex);
-
 ```
 
 ### 不加 g 修饰符
@@ -79,7 +76,6 @@ console.log(reg.exec(str));
 
 // reture  0
 console.log(reg.lastIndex);
-
 ```
 
 ### 与`()`的使用
@@ -94,7 +90,6 @@ var str = 'ccddvvffff';
 var result = reg.exec(str);
 
 console.log(result);
-
 ```
 
 第一次匹配的子表达式的内容是 **cc** 和 **dd**。

@@ -1,7 +1,6 @@
 ---
 title: English to
 date: 2022-04-26 6:00:00
-updated: 2022-04-26 6:00:00
 categories:
         - English
 tags:
@@ -41,9 +40,8 @@ tags:
 
 ## 表示比较
 
-### by +  数词 + to + 数词
+### by + 数词 + to + 数词
 
 表示**几比几**。
 
 - We won the game by 5 to 3.
-

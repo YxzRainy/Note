@@ -1,7 +1,6 @@
 ---
 title: Mustache
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -29,11 +28,11 @@ Mustache 是一个 轻逻辑放**模板解析引擎**。
 
 ### {{\#keyName}} {{/keyName}}
 
-以#开始、以/结束表示区块，它会根据当前上下文中的键值来对区块进行一次或多次渲染。它的功能很强大，有类似 if、foreach的功能。
+以#开始、以/结束表示区块，它会根据当前上下文中的键值来对区块进行一次或多次渲染。它的功能很强大，有类似 if、foreach 的功能。
 
 ### {{^keyName}} {{/keyName}}
 
-该语法与{{#keyName}} {{/keyName}} 类似，不同在于它是当keyName 值为 null, undefined, false 时才渲染输出该区块内容。
+该语法与{{#keyName}} {{/keyName}} 类似，不同在于它是当 keyName 值为 null, undefined, false 时才渲染输出该区块内容。
 
 ### {{.}}
 
@@ -46,4 +45,3 @@ Mustache 是一个 轻逻辑放**模板解析引擎**。
 ### {{>partials}}
 
 以>开始表示子模块，当结构比较复杂时，我们可以使用该语法将复杂的结构拆分成几个小的子模块。
-

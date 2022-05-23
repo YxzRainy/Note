@@ -1,7 +1,6 @@
 ---
 title: English off
 date: 2022-04-25 6:00:00
-updated: 2022-04-25 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # off
@@ -25,4 +23,3 @@ off 大多数情况都要跟一些特定的动词搭配，构成一个介词短�
 - Keep off the grass
 - He fell the ladder
 - She fell off the roof
-

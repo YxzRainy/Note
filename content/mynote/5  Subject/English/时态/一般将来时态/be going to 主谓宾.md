@@ -1,12 +1,11 @@
 ---
 title: English be going to 主谓宾
 date: 2022-04-05 6:00:00
-updated: 2022-04-05 6:00:00
 categories:
         - English
 tags:
         - 时态
-        - 学习笔记 
+        - 学习笔记
         - 一般将来时态
 ---
 
@@ -29,7 +28,7 @@ tags:
 
 ## 主谓宾句型变否定句规则
 
-在 be going to 中的 be（is/am/are）后面加否定词 not 就可以了，主语和表语保持不变，另外，is not 和 are not  都可以缩写为 isn't、aren't。
+在 be going to 中的 be（is/am/are）后面加否定词 not 就可以了，主语和表语保持不变，另外，is not 和 are not 都可以缩写为 isn't、aren't。
 
 I am going to buy a book next month.
 

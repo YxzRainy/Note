@@ -1,14 +1,12 @@
 ---
 title: MySQL SHOW
 date: 2022-04-23 6:00:00
-updated: 2022-04-23 6:00:00
 categories:
         - 数据库
 tags:
         - SQL
         - MySQL
         - 学习笔记
-
 ---
 
 # SHOW
@@ -20,8 +18,6 @@ tags:
 ```sql
 SHOW ENGINES;
 ```
-
-
 
 ```sql
 # 显示二进制文件以及文件大小（需要开启二进制日志记录功能）

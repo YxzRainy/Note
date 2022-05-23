@@ -1,14 +1,12 @@
 ---
 title: npm
 date: 2021-11-21 6:00:00
-updated: 2021-11-21 6:00:00
 categories:
         - 包管理器
 tags:
-        - NPM 
+        - NPM
         - NodeJs
         - 学习笔记
-
 ---
 
 # npm
@@ -21,4 +19,4 @@ npm 提供了命令行工具，可以方便地下载、安装、升级、删除�
 
 ## 安装
 
-安装 [Node.js](http://nodejs.cn/download/)自带 npm，所以安装Node.js
+安装 [Node.js](http://nodejs.cn/download/)自带 npm，所以安装 Node.js

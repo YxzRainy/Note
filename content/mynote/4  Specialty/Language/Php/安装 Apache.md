@@ -1,7 +1,6 @@
 ---
 title: 安装 Apache
 date: 2021-01-07 6:00:00
-updated: 2021-01-07 6:00:00
 categories:
         - 编程语言
 tags:

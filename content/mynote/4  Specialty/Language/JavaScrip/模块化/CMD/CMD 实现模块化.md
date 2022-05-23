@@ -1,7 +1,6 @@
 ---
 title: JavaScrip CMD 实现模块化
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -9,7 +8,6 @@ tags:
         - 模块化
         - 学习笔记
         - JavaScript
-
 ---
 
 # CMD 实现模块化
@@ -48,7 +46,6 @@ define(function (require, exports, module) {
 	// 暴露模块
 	module.exports = { fun };
 });
-
 ```
 
 **module2.js**
@@ -63,7 +60,6 @@ define(function (require, exports, module) {
 	// 暴露模块
 	module.exports = fun2;
 });
-
 ```
 
 **module3.js**
@@ -127,27 +123,23 @@ define(function (require) {
 ```html
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<title>CMD 模块化</title>
+	</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
-        <title>CMD 模块化</title>
-    </head>
-
-    <body>
-        <div class="wrap">
-        </div>
-    </body>
-    <!-- 导入 sea.js -->
-    <script src="./libs/sea.js"></script>
-    <!-- 使用 sea.js  -->
-    <script>
-        // 使用主模块
-        seajs.use('./modules/main.js')
-    </script>
-
+	<body>
+		<div class="wrap"></div>
+	</body>
+	<!-- 导入 sea.js -->
+	<script src="./libs/sea.js"></script>
+	<!-- 使用 sea.js  -->
+	<script>
+		// 使用主模块
+		seajs.use('./modules/main.js');
+	</script>
 </html>
 ```
-

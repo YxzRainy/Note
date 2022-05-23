@@ -1,7 +1,6 @@
 ---
 title: English between
 date: 2022-04-17 6:00:00
-updated: 2022-04-17 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # between
@@ -43,4 +41,3 @@ tags:
 这种情况，一般作后置定语，表示两者之间的关系/比较两者等。
 
 - What is the difference between American English an British English.
-

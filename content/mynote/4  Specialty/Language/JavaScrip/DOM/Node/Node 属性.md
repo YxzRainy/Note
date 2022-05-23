@@ -1,14 +1,12 @@
 ---
 title: JavaScript Node 属性
 date: 2022-05-02 6:00:00
-updated: 2022-05-02 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # Node 属性
@@ -42,4 +40,3 @@ tags:
 ## previousSibling
 
 返回在指定节点前面的兄弟节点，如果指定节点为第一个节点，则返回 null。
-

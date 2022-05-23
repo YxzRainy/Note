@@ -1,7 +1,6 @@
 ---
 title: Vue set
 date: 2022-05-14 6:00:00
-updated: 2022-05-14 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # set

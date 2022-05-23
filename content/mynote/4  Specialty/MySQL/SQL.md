@@ -1,7 +1,6 @@
 ---
 title: MySQL SQL
 date: 2022-04-04 6:00:00
-updated: 2022-04-04 6:00:00
 categories:
         - 数据库
 tags:
@@ -18,7 +17,7 @@ tags:
 
 SQL 语言不是某个特定 DBMS 所专有的语言，相反，近乎所有的 DBMS 都支持 SQL。
 
-## SQL的语言分类
+## SQL 的语言分类
 
 ### DQL
 
@@ -38,5 +37,4 @@ CREATE、ALTER、DROP、TRUNCATE、COMMENT、GRANT、REVOKE
 
 ### DCL
 
-事务控制语言COMMIT、SAVEPOINT、ROLLBACK、SET TRANSACTION
-
+事务控制语言 COMMIT、SAVEPOINT、ROLLBACK、SET TRANSACTION

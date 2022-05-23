@@ -1,7 +1,6 @@
 ---
 title: English about
 date: 2022-04-14 6:00:00
-updated: 2022-04-14 6:00:00
 categories:
         - English
 tags:
@@ -28,7 +27,7 @@ tags:
 ### about 动名词短语
 
 - about haveing a party.
-- about buying a ship.  
+- about buying a ship.
 
 当 about 表示关于的时候，只能作后置定语和表语，一般情况不能作状语。
 

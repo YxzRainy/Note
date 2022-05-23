@@ -1,7 +1,6 @@
 ---
 title: Echarts
 date: 2022-05-16 6:00:00
-updated: 2022-05-16 6:00:00
 categories:
         - 前端库
 tags:

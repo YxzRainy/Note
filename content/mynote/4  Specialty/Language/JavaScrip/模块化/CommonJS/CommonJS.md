@@ -1,7 +1,6 @@
 ---
 title: JavaScrip CommonJS
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -10,7 +9,6 @@ tags:
         - 学习笔记
         - 模块化规范
         - JavaScript
-
 ---
 
 # CommonJS
@@ -47,7 +45,7 @@ expots.obj3 = ExposedObjects3(){
 }
 ```
 
-##  导入模块
+## 导入模块
 
 ```js
 // 导入第三方模块
@@ -67,8 +65,3 @@ require('modules.js');
 加载模块时是同步加载，也会导致阻塞，且因为是在浏览器端，加载的时间非常长，用户体验不好（页面白屏），因此，我们需要将**模块进行编译打包**，以此来缩短加载时间。
 
 打包工具：[Browserify](https://browserify.org/).
-
-
-
-
-

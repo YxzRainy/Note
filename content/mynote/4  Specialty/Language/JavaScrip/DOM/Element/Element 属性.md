@@ -1,14 +1,12 @@
 ---
 title: JavaScript Element 属性
 date: 2022-05-02 6:00:00
-updated: 2022-05-02 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # Element 属性
@@ -49,4 +47,3 @@ div.innerHTML += '<span>写入的元素</span>';
 ## children
 
 返回当前元素节点的所有子元素节点，不包含子元素节点的子元素节点。
-

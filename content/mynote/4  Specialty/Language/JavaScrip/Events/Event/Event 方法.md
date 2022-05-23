@@ -1,7 +1,6 @@
 ---
 title: JavaScript Event
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
@@ -37,11 +36,9 @@ wrapper.addEventListener(
 		console.log('点击了子元素');
 
 		event.stopPropagation();
-        // IE 独有，但 Chrome 也可以使用
+		// IE 独有，但 Chrome 也可以使用
 		event.cancelBubble = true;
 	},
 	false
 );
-
 ```
-

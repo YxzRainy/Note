@@ -1,7 +1,6 @@
 ---
 title: Pull Requests
 date: 2021-10-03 6:00:00
-updated: 2021-10-23 19:38:00
 categories:
         - Github
 tags:

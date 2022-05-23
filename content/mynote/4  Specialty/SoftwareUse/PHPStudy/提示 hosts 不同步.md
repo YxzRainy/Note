@@ -1,7 +1,6 @@
 ---
 title: 提示 hosts 不同步
 date: 2022-04-20 6:00:00
-updated: 2022-04-20 6:00:00
 categories:
         - 软件使用
 tags:
@@ -47,4 +46,3 @@ tags:
 
 127.0.0.1 a.com
 ```
-

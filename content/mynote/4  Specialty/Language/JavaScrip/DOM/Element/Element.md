@@ -1,7 +1,6 @@
 ---
 title: JavaScript Element
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
@@ -13,4 +12,3 @@ tags:
 # Element
 
 用来遍历元素节点。
-

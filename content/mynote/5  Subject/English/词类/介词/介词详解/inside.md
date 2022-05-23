@@ -1,7 +1,6 @@
 ---
 title: English inside
 date: 2022-04-20 6:00:00
-updated: 2022-04-20 6:00:00
 categories:
         - English
 tags:

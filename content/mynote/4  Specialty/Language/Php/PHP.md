@@ -1,7 +1,6 @@
 ---
 title: PHP
 date: 2021-01-30 6:00:00
-updated: 2021-10-27 6:00:00
 categories:
         - 编程语言
 tags:

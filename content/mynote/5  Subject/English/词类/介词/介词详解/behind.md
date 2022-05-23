@@ -1,7 +1,6 @@
 ---
 title: English behind
 date: 2022-04-17 6:00:00
-updated: 2022-04-17 6:00:00
 categories:
         - English
 tags:

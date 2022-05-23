@@ -1,7 +1,6 @@
 ---
 title: Vue filters
 date: 2022-05-21 6:00:00
-updated: 2022-05-21 6:00:00
 categories:
         - 前端框架
 tags:
@@ -30,31 +29,27 @@ tags:
 ```html
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
+		<title>j</title>
+		<style></style>
+	</head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-        <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
-        <title>j</title>
-        <style>
-
-        </style>
-    </head>
-
-    <body>
-        <div id="app">
-            <!-- 过滤器 -->
-            <h3>Vue - filters：{{time | timeFmt}}</h3>
-            <!-- 过滤器地传参 -->
-            <h3>Vue - filters：{{time | timeFmt('YYYY——MM——DD')}}</h3>
-            <!-- 过滤器串联 -->
-            <h3>Vue - filters：{{time | timeFmt('YYYY——MM——DD') | mySlice('YYYY')}}</h3>
-        </div>
-    </body>
-    <script src="./js/main.js"></script>
-
+	<body>
+		<div id="app">
+			<!-- 过滤器 -->
+			<h3>Vue - filters：{{time | timeFmt}}</h3>
+			<!-- 过滤器地传参 -->
+			<h3>Vue - filters：{{time | timeFmt('YYYY——MM——DD')}}</h3>
+			<!-- 过滤器串联 -->
+			<h3>Vue - filters：{{time | timeFmt('YYYY——MM——DD') | mySlice('YYYY')}}</h3>
+		</div>
+	</body>
+	<script src="./js/main.js"></script>
 </html>
 ```
 
@@ -78,5 +73,4 @@ var vm = new Vue({
 });
 
 Vue.config.productionTip = false;
-
 ```

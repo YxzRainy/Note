@@ -1,7 +1,6 @@
 ---
 title: JavaScrip AMD
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -10,7 +9,6 @@ tags:
         - 学习笔记
         - 模块化规范
         - JavaScript
-
 ---
 
 # AMD
@@ -25,7 +23,7 @@ tags:
 
 ```js
 define(function () {
-    // 暴露模块
+	// 暴露模块
 	return module;
 });
 ```
@@ -35,7 +33,7 @@ define(function () {
 ```js
 // 显式声明依赖注入
 define(['module1', 'module2', 'module2'], function (m1Obj, m2Obj, m3Obj) {
-    // 暴露模块
+	// 暴露模块
 	return module;
 });
 ```
@@ -56,4 +54,3 @@ require([
 ## 实现
 
 使用[require.js](https://requirejs.org/docs/download.html)。
-

@@ -1,7 +1,6 @@
 ---
 title: Vue watch
 date: 2022-05-18 6:00:00
-updated: 2022-05-18 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,7 +8,6 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # watch
@@ -21,31 +19,26 @@ tags:
 ```html
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
+		<title>Vue</title>
+		<style></style>
+	</head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.js"></script>
-        <title>Vue</title>
-        <style>
-
-        </style>
-    </head>
-
-    <body>
-        <div id="app">
-            <h2>今天天气很{{weather}}</h2>
-            <button @click='handoff'>切换天气</button>
-            <h2>{{number.a}}</h2>
-            <button @click="number.a++">深度监听a</button>
-            <h2>{{number.b}}</h2>
-            <button @click="number.b++">深度监听b</button>
-        </div>
-
-    </body>
-    <script src="./js/main.js"></script>
-
+	<body>
+		<div id="app">
+			<h2>今天天气很{{weather}}</h2>
+			<button @click="handoff">切换天气</button>
+			<h2>{{number.a}}</h2>
+			<button @click="number.a++">深度监听a</button>
+			<h2>{{number.b}}</h2>
+			<button @click="number.b++">深度监听b</button>
+		</div>
+	</body>
+	<script src="./js/main.js"></script>
 </html>
 ```
 
@@ -90,7 +83,6 @@ var vm = new Vue({
 });
 
 Vue.config.productionTip = false;
-
 ```
 
 ## handler()
@@ -123,12 +115,12 @@ Vue 实例自身可以侦听到对象属性的改变，但 Vue 实例的`watch`�
 
 1. `computed`能完成的功能，`watch`都可以完成。
 1. 当用`computed`和`watch`都能实现某一个功能的时候，优先使用`computed`。
-2. `watch`能完成的功能，`computed`不一 定 能完成，比如 `watch`可 以进行异步操作，`computed`却不能（return 无法异步执行）。
+1. `watch`能完成的功能，`computed`不一 定 能完成，比如 `watch`可 以进行异步操作，`computed`却不能（return 无法异步执行）。
 
 ## 重要的小原则：
 
 1. 所有被 Vue 管理的函数，最好使用普通函数，这样 `this` 的指向才是 Vue 实例或组件实例对象。
-2. 所有不被  Vue 管理的函数（定时器的回调函数、ajax 的回调函数等)，最好使用箭头函数，这样 `this` 的指向才是 Vue 实例对象。
+2. 所有不被 Vue 管理的函数（定时器的回调函数、ajax 的回调函数等)，最好使用箭头函数，这样 `this` 的指向才是 Vue 实例对象。
 
 ## 简写
 
@@ -141,4 +133,3 @@ watch: {
     },
 },
 ```
-

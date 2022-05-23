@@ -1,17 +1,15 @@
 ---
 title: JavaScript Object 方法
 date: 2022-05-11 6:00:00
-updated: 2022-05-11 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
-#  Object 方法
+# Object 方法
 
 ## defineProperty()
 
@@ -64,7 +62,6 @@ Object.defineProperty(person, 'age', {
 		number = value;
 	},
 });
-
 ```
 
 ## keys()

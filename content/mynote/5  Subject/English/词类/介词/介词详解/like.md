@@ -1,7 +1,6 @@
 ---
 title: English like
 date: 2022-04-20 6:00:00
-updated: 2022-04-20 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # like
@@ -33,4 +31,3 @@ tags:
 - She looks like a singer.
 - The moom looks likes a silver plate.
 - It looks like rain today.
-

@@ -1,7 +1,6 @@
 ---
 title: Git git config alias
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 20:12:00
 categories:
         - Git
 tags:

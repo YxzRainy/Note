@@ -1,7 +1,6 @@
 ---
 title: English across
 date: 2022-04-27 6:00:00
-updated: 2022-04-27 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # across
@@ -30,4 +28,3 @@ tags:
 表示**在...对面**
 
 - My parents live across the street.
-

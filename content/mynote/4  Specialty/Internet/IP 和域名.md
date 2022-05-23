@@ -1,7 +1,6 @@
 ---
 title: IP 和域名
 date: 2021-01-04 6:00:00
-updated: 2021-01-04 6:00:00
 categories:
         - 网络技术
 tags:

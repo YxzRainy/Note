@@ -1,7 +1,6 @@
 ---
 title: Vue 实例
 date: 2022-04-10 6:00:00
-updated: 2022-04-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -9,12 +8,11 @@ tags:
         - 前端
         - Vue 2
         - 学习笔记
-
 ---
 
 # Vue 实例
 
- new  一个 Vue 实例，并将其赋给一个配置对象 ：
+new 一个 Vue 实例，并将其赋给一个配置对象 ：
 
 ```vue
 var vm = new Vue({})

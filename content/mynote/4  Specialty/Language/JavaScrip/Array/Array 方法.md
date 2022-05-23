@@ -1,14 +1,12 @@
 ---
 title: JavaScript Array 方法
 date: 2022-05-02 6:00:00
-updated: 2022-05-02 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # Array 方法
@@ -56,7 +54,6 @@ var result = arr.sort(function (a, b) {
 });
 
 console.log(arr);
-
 ```
 
 **数字降序：**
@@ -68,7 +65,6 @@ var result = arr.sort(function (a, b) {
 });
 
 console.log(arr);
-
 ```
 
 ## pop()

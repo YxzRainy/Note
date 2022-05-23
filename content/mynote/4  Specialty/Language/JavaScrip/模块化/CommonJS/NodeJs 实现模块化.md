@@ -1,7 +1,6 @@
 ---
 title: JavaScrip NodeJs 实现模块化
 date: 2022-05-15 6:00:00
-updated: 2022-05-15 6:00:00
 categories:
         - 编程语言
 tags:
@@ -9,7 +8,6 @@ tags:
         - 模块化
         - 学习笔记
         - JavaScript
-
 ---
 
 # NodeJs 实现模块化
@@ -48,7 +46,6 @@ module.exports = {
 		console.log(this.msg);
 	},
 };
-
 ```
 
 **module2.js**
@@ -73,7 +70,6 @@ exports.f2 = function () {
 };
 
 exports.arr = [199, 9, 3];
-
 ```
 
 **app.js**
@@ -96,6 +92,4 @@ module3.f();
 // 使用第三方模块
 var result = uniq(module3.arr);
 console.log(result);
-
 ```
-

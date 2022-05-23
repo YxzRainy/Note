@@ -1,7 +1,6 @@
 ---
 title: Ajax XMLHttpRequest
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 6:00:00
 categories:
         - Ajax
 tags:
@@ -13,7 +12,7 @@ tags:
 
 该对象用于与服务器交互；通过它可以在不重新刷新页面的情况下请求特定 URL，获取数据，这样就可以使得网页在不影响用户操作的情况下，更新页面的局部内容。
 
-## 判断浏览器是否支持XHR
+## 判断浏览器是否支持 XHR
 
 ```js
 // 如果浏览器支持 XHR
@@ -24,7 +23,7 @@ if (Xhr) {
 }
 ```
 
-## 创建XHR对象
+## 创建 XHR 对象
 
 ```js
 const xhr = new XMLHttpRequest();
@@ -77,7 +76,7 @@ const xhr = new XMLHttpRequest();
 用于初始化一个请求，设置请求方式与请求路径、请求参数。
 
 ```js
-xhr.open('GET', 'http://localhost:8000/server?a=100&b=300')
+xhr.open('GET', 'http://localhost:8000/server?a=100&b=300');
 ```
 
 `?a=100&b=300`就是请求参数 a 和 b，多个参数用`&`隔开。

@@ -1,7 +1,6 @@
 ---
 title: HTML DOCTYPE
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
@@ -40,8 +39,8 @@ tags:
 
 ### BackCompat
 
-标准兼容模式关闭，当document.compatMode等于BackCompat时，浏览器客户区宽度为 document.body.clientWidth;
+标准兼容模式关闭，当 document.compatMode 等于 BackCompat 时，浏览器客户区宽度为 document.body.clientWidth;
 
 ### CSS1Compat
 
-标准兼容模式开启,当document.compatMode等于CSS1Compat时浏览器客户区宽度为document.documentElement.clientWidth;
+标准兼容模式开启,当 document.compatMode 等于 CSS1Compat 时浏览器客户区宽度为 document.documentElement.clientWidth;

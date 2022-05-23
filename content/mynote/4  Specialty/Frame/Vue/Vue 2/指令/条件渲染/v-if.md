@@ -1,7 +1,6 @@
 ---
 title: Vue v-if
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -41,4 +40,3 @@ var app = new Vue({
 });
 Vue.config.productionTip = false;
 ```
-

@@ -1,14 +1,12 @@
 ---
 title: JavaScrip JSON 方法
 date: 2022-04-30 6:00:00
-updated: 2022-04-30 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # JSON 方法
@@ -18,7 +16,6 @@ tags:
 将一个对象或值转换为 JSON 字符串。
 
 ```js
-
 var obj = {
 	name: 'rainy',
 	age: '20',
@@ -29,7 +26,6 @@ console.log(obj);
 
 // 字符串
 console.log(result);
-
 ```
 
 ## parse()
@@ -48,4 +44,3 @@ console.log(json);
 console.log(obj);
 
 ```
-

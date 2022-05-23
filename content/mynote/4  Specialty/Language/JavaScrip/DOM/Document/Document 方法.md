@@ -1,14 +1,12 @@
 ---
 title: JavaScript Document 方法
 date: 2022-05-07 6:00:00
-updated: 2022-05-07 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # Document 方法
@@ -24,7 +22,7 @@ tags:
 选择文档中指定 id 的元素，id 是唯一的，所以是 getElement，不是 getElements
 
 ```js
-var ele = document.getElementById('only')
+var ele = document.getElementById('only');
 ```
 
 ## getElementsByTagName()
@@ -32,15 +30,15 @@ var ele = document.getElementById('only')
 选择文档中指定标签名的元素，返回结果是一个类数组
 
 ```js
-var ele = document.getElementsByTagName('span')
+var ele = document.getElementsByTagName('span');
 ```
 
-## getElementsByTagName('*')
+## getElementsByTagName('\*')
 
 选择文档中的所有元素。
 
 ```js
-var ele = document.getElementsByTagName('*')
+var ele = document.getElementsByTagName('*');
 ```
 
 ## getElementsByName()
@@ -48,7 +46,7 @@ var ele = document.getElementsByTagName('*')
 选择文档中指定 name 的元素，ele 是一个类数组，需要注意，该元素只有部分元素才能生效
 
 ```js
-var ele = document.getElementsByName('span')
+var ele = document.getElementsByName('span');
 ```
 
 ## getElementsByClassName()
@@ -56,7 +54,7 @@ var ele = document.getElementsByName('span')
 选择文档中指定 class 的元素
 
 ```js
-var ele = document.getElementsByClassName('build')
+var ele = document.getElementsByClassName('build');
 ```
 
 ## querySelector()
@@ -64,7 +62,7 @@ var ele = document.getElementsByClassName('build')
 选择匹配指定选择器的第一个元素。不实时
 
 ```js
-var ele = document.querySelector('div > span a .test')
+var ele = document.querySelector('div > span a .test');
 ```
 
 ## querySelectorAll()
@@ -72,7 +70,7 @@ var ele = document.querySelector('div > span a .test')
 选择匹配指定选择器的所有元素。不实时
 
 ```js
-var eles = document.querySelectorAll('div')
+var eles = document.querySelectorAll('div');
 ```
 
 ## open()

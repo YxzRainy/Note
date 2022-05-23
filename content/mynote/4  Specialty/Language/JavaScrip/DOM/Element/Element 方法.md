@@ -1,7 +1,6 @@
 ---
 title: JavaScript Element 方法
 date: 2022-05-02 6:00:00
-updated: 2022-05-02 6:00:00
 categories:
         - 编程语言
 tags:
@@ -26,7 +25,7 @@ tags:
 
 返回元素的尺寸，以及相对于视口的位置。
 
-如果是标准盒子模型，元素的宽高等于**width/height** + **padding** + border-width的总和。如果`box-sizing: border-box`，元素的宽高等于 width/height。
+如果是标准盒子模型，元素的宽高等于**width/height** + **padding** + border-width 的总和。如果`box-sizing: border-box`，元素的宽高等于 width/height。
 
 返回的结果不是事实的，是静态的。
 

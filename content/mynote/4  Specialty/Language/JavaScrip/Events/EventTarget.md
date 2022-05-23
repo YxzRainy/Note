@@ -1,14 +1,12 @@
 ---
 title: JavaScript EventTarget
 date: 2022-05-05 6:00:00
-updated: 2022-05-05 6:00:00
 categories:
         - 编程语言
 tags:
         - 前端
         - 学习笔记
         - JavaScript
-
 ---
 
 # EventTarget
@@ -42,7 +40,6 @@ div.addEventListener(
 	},
 	false
 );
-
 ```
 
 ### attachEvent()
@@ -58,7 +55,7 @@ var li = document.getElementsByTagName('li');
 
 var len = li.length;
 for (var i = 0; i < len; i++) {
-    // 用立即执行函数解决闭包内存泄漏的问题
+	// 用立即执行函数解决闭包内存泄漏的问题
 	(function (i) {
 		li[i].addEventListener(
 			'click',
@@ -69,7 +66,6 @@ for (var i = 0; i < len; i++) {
 		);
 	})(i);
 }
-
 ```
 
 ### removeEventListener()
@@ -91,6 +87,4 @@ function fun() {
 	// 移除 addEventListener 事件
 	div.removeEventListener('click', fun, false);
 }
-
 ```
-

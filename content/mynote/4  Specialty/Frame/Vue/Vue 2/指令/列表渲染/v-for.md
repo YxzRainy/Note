@@ -1,7 +1,6 @@
 ---
 title: Vue v-for
 date: 2022-05-10 6:00:00
-updated: 2022-05-10 6:00:00
 categories:
         - 前端框架
 tags:
@@ -24,19 +23,15 @@ tags:
 **HTML**
 
 ```html
- <div id="app">
-            <ul>
-                <li v-for="(p,index) in persons" :key="index">
-                    {{p.name}} and {{p.age}}
-                </li>
-            </ul>
+<div id="app">
+	<ul>
+		<li v-for="(p,index) in persons" :key="index">{{p.name}} and {{p.age}}</li>
+	</ul>
 
-            <ul>
-                <li v-for="(f,index) in fruits" :key="index">
-                    {{f}}
-                </li>
-            </ul>
-        </div>
+	<ul>
+		<li v-for="(f,index) in fruits" :key="index">{{f}}</li>
+	</ul>
+</div>
 ```
 
 **JavaScrip**
@@ -61,6 +56,4 @@ var vm = new Vue({
 });
 
 Vue.config.productionTip = false;
-
 ```
-

@@ -1,7 +1,6 @@
 ---
 title: 安装 Git
 date: 2021-10-21 6:00:00
-updated: 2021-10-23 19:57:00
 categories:
         - Git
 tags:

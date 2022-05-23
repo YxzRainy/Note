@@ -1,7 +1,6 @@
 ---
 title: Less
 date: 2022-05-14 6:00:00
-updated: 2022-05-14 6:00:00
 categories:
         - 编程语言
 tags:
@@ -28,10 +27,10 @@ npm install -g less
 引入：
 
 ```html
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js"></script>
 ```
 
-## [将 less 编译为 css](https://less.bootcss.com/usage/) 
+## [将 less 编译为 css](https://less.bootcss.com/usage/)
 
 在 less 文件的目录引入执行，就会得到一个 编译后的 css 文件。
 
@@ -39,5 +38,4 @@ npm install -g less
 lessc styles.less > styles.css
 ```
 
-当然，如果你使用的是 Vs Code，那么直接安装**Easy Less**扩展即可，**每当你保存 less 文件的时候，它会自动将 less 文件编译为 css文件**，方便的很。
-
+当然，如果你使用的是 Vs Code，那么直接安装**Easy Less**扩展即可，**每当你保存 less 文件的时候，它会自动将 less 文件编译为 css 文件**，方便的很。

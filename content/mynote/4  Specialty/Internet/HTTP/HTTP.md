@@ -1,7 +1,6 @@
 ---
 title: HTTP
 date: 2022-04-30 6:00:00
-updated: 2022-04-30 6:00:00
 categories:
         - 网络技术
 tags:
@@ -28,7 +27,7 @@ URL 。
 HTTP 协议的版本。
 
 ```json
-GET 
+GET
 /ValidateLogin?&userI=4234234&password=234234 HTTP/1.1
 ```
 
@@ -69,7 +68,7 @@ HTTP 版本
 响应状态字符串
 
 ```json
-HTTP/1.1 
+HTTP/1.1
 200
 OK
 ```
@@ -91,4 +90,3 @@ Content-Encoding: gzip
 ## 响应体
 
 主要的返回结果
-

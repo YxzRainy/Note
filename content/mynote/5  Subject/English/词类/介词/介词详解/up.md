@@ -1,7 +1,6 @@
 ---
 title: English up
 date: 2022-04-26 6:00:00
-updated: 2022-04-26 6:00:00
 categories:
         - English
 tags:
@@ -9,7 +8,6 @@ tags:
         - 介词
         - 介词详解
         - 学习笔记
-
 ---
 
 # up
@@ -30,5 +28,4 @@ tags:
 表示**在...上面**
 
 - They live up the street.
-- The cath fish up the  river.
-
+- The cath fish up the river.

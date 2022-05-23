@@ -1,7 +1,6 @@
 ---
 title: English in
 date: 2022-04-14 6:00:00
-updated: 2022-04-14 6:00:00
 categories:
         - English
 tags:
@@ -35,25 +34,23 @@ tags:
 
 ## 表示时间
 
-
 ### in + 年份/月份
 
 - I set up my website **in 2021**.
 - I met my wife **in 2021**.
 - We are busy **in summer**.
 
-### in  + 时间长度
+### in + 时间长度
 
 时间长度可以理解为**一段时间**。
 
-**in 2020**这个介词短语表示**在2020年**，而**in 2020 years**表示**2020 年之后**（一段时间之后）
+**in 2020**这个介词短语表示**在 2020 年**，而**in 2020 years**表示**2020 年之后**（一段时间之后）
 
 - I will be a rich man **in five years**.
 - Jeff will buy a big house **in five years**.
 - He will come bake **in a week**.
 
 ## 表示状态/情况/服饰
-
 
 ### in + 表示颜色的名词
 
@@ -88,26 +85,3 @@ tags:
 
 - He put a pen **in his bag**.
 - I keep my books **in the box**.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
