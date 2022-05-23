@@ -17,10 +17,8 @@
       
       <guid>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E7%BB%84%E4%BB%B6/</guid>
       <description>组件 用来实现局部（特定）功能效果的代码集合。
-与 Vue 实例的区别：
- 无el配置项。 data 必须是一个函数，该函数返回的对象作为数据。 由于没有el，组件的虚拟DOM 树必须定义在template 或 render()中。  非单文件组件 一个文件中包含 N 个组件。
-单文件组件 一个文件中只包含 1 个组件。
-定义组件 // 定义组件 var Title = { 	template: `&amp;lt;h1&amp;gt;标题&amp;lt;/h1&amp;gt;`, }; var app = new Vue({ 	el: &amp;#39;#app&amp;#39;, }); Vue.config.productionTip = false; </description>
+非单文件组件 一个文件中包含 N 个组件。
+单文件组件 一个文件中只包含 1 个组件。</description>
     </item>
     
     <item>
@@ -387,6 +385,26 @@ vue 实例上的所有属性，以及 Vue 原型上的所有属性，在 Vue 模
     </item>
     
     <item>
+      <title>Vue 使用组件</title>
+      <link>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Fri, 13 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6/</guid>
+      <description>使用组件 使用组件分为三步：
+ 定义组件。 注册组件。 应用组件。  HTML
+JavaScript
+组件名 -命名法：任何环境都可以使用。
+大坨峰命名法：只能在脚手架环境下使用（更推荐）。
+组件名应尽可能避免与 HTML 已有的元素重名。
+定义组件 组件无el配置项。
+data 必须是一个函数，该函数返回的对象作为该组件的数据。避免组件被复用时，其数据还存在引用关系。
+由于没有el，组件的虚拟 DOM 树必须定义在template 或 render()中。
+创建组件的时候，可以使用 name配置项指定当前组件在 Vue 开发者工具中所呈现的名字。
+const Student = Vue.extend({  // 指定组件名 	name: &amp;#39;Rainy&amp;#39;, 	template: ` &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;{{studentName}}&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; `, 	data() { 	return { 	studentName: &amp;#39;忧心&amp;#39;, 	}; 	}, }); 简写 简写的方式去定义组件，虽然我们没有调用Vue.extend()方法，但实际上Vue 在注册组件的时候也会帮我们调用。
+const School = { 	template: ` &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;{{schoolName}}&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt; `, 	data() { 	return { 	schoolName: &amp;#39;哈佛&amp;#39;, 	}; 	}, }; 注册组件 局部注册组件 只能在当前实例 el 配置所指定的容器中使用。</description>
+    </item>
+    
+    <item>
       <title>Vue 向组件传递数据</title>
       <link>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E5%90%91%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE/</link>
       <pubDate>Fri, 13 May 2022 06:00:00 +0000</pubDate>
@@ -406,21 +424,6 @@ var MyComp = { 	props: [&amp;#39;title&amp;#39;], 	template: `&amp;lt;h1&amp;gt;
       <description>插槽 单个插槽。将一个组件的内容，传递到&amp;lt;slot&amp;gt;&amp;lt;/solt&amp;gt;中。
 &amp;lt;slot&amp;gt;&amp;lt;/slot&amp;gt; 具名插槽 有时我们需要多个插槽，就需要给 &amp;lt;slot&amp;gt; 带上一个名字。
 一个不带 name 的 &amp;lt;slot&amp;gt; 出口会带有隐含的名字“default”。</description>
-    </item>
-    
-    <item>
-      <title>Vue 注册组件</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6/</link>
-      <pubDate>Fri, 13 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/frame/vue/vue-2/%E7%BB%84%E4%BB%B6/%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6/</guid>
-      <description>注册组件 注册组件有两种方式，全局注册和局部注册。
-但一般不会使用全局注册
-全局注册 一旦全局注册了一个组件，整个应用中任何地方都可以使用该组件。
-使用Vue.component()来组成组件，第一个参数是组件的名字，第二个参数是组件的内容。
-// 定义组件 var Title = { 	template: `&amp;lt;h1&amp;gt;标题&amp;lt;/h1&amp;gt;`, }; // 注册全局组件 Vue.component(&amp;#39;MyComp&amp;#39;, Title);  var app = new Vue({ 	el: &amp;#39;#app&amp;#39;, 	template: `&amp;lt;div&amp;gt; &amp;lt;MyComp&amp;gt;&amp;lt;/MyComp&amp;gt; &amp;lt;/div&amp;gt;`, }); Vue.config.productionTip = false; 局部注册 局部注册就是哪里要用到该组件，就在哪里注册。
-在 Vue 实例中使用components: {}来组成一个局部组件，建议组件名和组件值名字相同。
-// 定义 var Title = { 	template: `&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt;`, };  var app = new Vue({ 	el: &amp;#39;#app&amp;#39;, 	components: { 	// MyComp 组件名字 Title 组件值 	MyComp: Title, 	}, 	template: `&amp;lt;div&amp;gt; &amp;lt;MyComp&amp;gt;&amp;lt;/MyComp&amp;gt; &amp;lt;/div&amp;gt;`, }); Vue.</description>
     </item>
     
     <item>

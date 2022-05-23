@@ -32,7 +32,7 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -46,16 +46,12 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "https://yxzi.xyz/Logo.ico"
-    favicon16x16: "https://yxzi.xyz/Logo.ico"
-    favicon32x32: "https://yxzi.xyz/Logo.ico"
+    favicon: "/Logo.png"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
     apple_touch_icon: "apple-touch-icon.png"
     safari_pinned_tab: "<link / abs url>"
 
-  label:
-    text: "Blog"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
 
   # home-info mode
   homeInfoParams:
