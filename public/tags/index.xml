@@ -9,7 +9,43 @@
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue</title>
+      <link>https://yxzi.xyz/tags/vue/</link>
+      <pubDate>Mon, 23 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue 2</title>
+      <link>https://yxzi.xyz/tags/vue-2/</link>
+      <pubDate>Mon, 23 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/vue-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>https://yxzi.xyz/tags/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Mon, 23 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/%E5%89%8D%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>学习笔记</title>
+      <link>https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 23 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>JavaScript</title>
       <link>https://yxzi.xyz/tags/javascript/</link>
@@ -25,42 +61,6 @@
       <pubDate>Sun, 22 May 2022 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/tags/vs-code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vue</title>
-      <link>https://yxzi.xyz/tags/vue/</link>
-      <pubDate>Sun, 22 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/vue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vue 2</title>
-      <link>https://yxzi.xyz/tags/vue-2/</link>
-      <pubDate>Sun, 22 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/vue-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>前端</title>
-      <link>https://yxzi.xyz/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Sun, 22 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/%E5%89%8D%E7%AB%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>学习笔记</title>
-      <link>https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sun, 22 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     

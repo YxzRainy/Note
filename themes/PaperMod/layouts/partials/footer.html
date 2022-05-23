@@ -3,13 +3,14 @@
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    <div id="Record">
+        <a class="RecordNumber TransitionOne" href="https://beian.miit.gov.cn/" target="_blank">黔ICP备2021007565号</a>
+        <a class="PublicSecurityRecord"
+                href=" http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52010202002678" target="_blank">
+            <p class="RecordNumber TransitionOne">贵公网安备 52010202002678号</p>
+        </a>
+    </div>
 </footer>
 {{- end }}
 

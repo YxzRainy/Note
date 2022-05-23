@@ -1,4 +1,4 @@
-baseURL: "https://yxzi.xyz/"
+baseURL: "https://yxzi.xyz"
 title: Rainy · Blog
 paginate: 10
 theme: PaperMod
@@ -47,13 +47,13 @@ params:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "https://yxzi.xyz/Logo.ico"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
+    favicon16x16: "https://yxzi.xyz/Logo.ico"
+    favicon32x32: "https://yxzi.xyz/Logo.ico"
     apple_touch_icon: "apple-touch-icon.png"
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Blog"
     icon: /apple-touch-icon.png
     iconHeight: 35
 

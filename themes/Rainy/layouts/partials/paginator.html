@@ -1,4 +1,0 @@
-{{ $paginator := .Paginate (where .Pages "Type" "PostsLine") }}
-{{ template "_internal/pagination.html" . }}
-{{ range $paginator.Pages }}
-{{ end }}
