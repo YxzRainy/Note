@@ -1,235 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Cisco on Rainy · Blog</title>
-    <link>https://yxzi.xyz/tags/cisco/</link>
-    <description>Recent content in Cisco on Rainy · Blog</description>
-    <image>
-      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Dec 2021 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/cisco/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cisco 配置单区域 OSPFv2</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
-      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
-      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
-    </item>
-    
-    <item>
-      <title>OSPF 协议</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ospf-%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ospf-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>OSPF 协议 OSPF 是目前网络界耳熟能详的协议了。
-用带宽来判断路径的优劣弥补了RIP的缺陷（光凭带宽也不是很好），同时使用划分区域网络，可以更好的控制管理和扩展网络。
-还有各种小特点比如 DR、BDR 机制，和适合不同网络类型机制，以及使用不同LSA传递各种信息，各种LSA的特性也不通。
-所有综合来讲OSPF是比较适合大众选择的一款路由协议
-router ospf 10 配置 OSPF 路由，进程 ID 为 10
-router-id 1.1.1.1 配置路由器的路由器 ID
-子网掩码的反掩码 IP 地址：192.168.10.8/30，那么它的子网掩码为 255.255.255.252
-则它的子网掩码的反掩码为 255.255.255.255 减去 255.255.255.252 等于 0.0.0.3，
-即配置 OSPFv2 的网络通告为：
-network 192.168.10.8 0.0.0.3 area 0 其中 area 是自治系统区域的标识</description>
-    </item>
-    
-    <item>
-      <title>交换机</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
-      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
-      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
-access 只允许通通过单个 VLAN。</description>
-    </item>
-    
-    <item>
-      <title>Cisco 静态和动态路由的优缺点</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
-      <pubDate>Tue, 07 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
-      <description>静态和动态路由的优缺点 静态路由的优点：  占用资源较多。 便于管理员了解路由。 易于配置。  静态路由的缺点：  配置和维护耗费时间。 配置容易出错，尤其对于大型网络。 需要管理员维护变化的路由信息。 不能随着网络的增长而扩展；维护会越来越麻烦。 需要完全了解整个网络的情况才能进行操作。  动态路由的优点  增加或删除网络时，管理员维护路由配置的工作量较少。 网络拓扑结构发生变化时，协议可以自动做出调整。 配置不容易出错。 扩展性好，网络增长时不会出现问题。  动态路由的缺点  需要占用路由器资源（CPU 时间、内存和链路带宽）。 管理员需要掌握更多的网络知识才能进行配置、验证和故障排除工作。  </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置 Rip V2</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
-      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</guid>
-      <description>配置 Rip V2 配置 R1 enableconfigure terminalip route 0.0.0.0 0.0.0.0 s0/0/1router ripversion 2no auto-summarynetwork 192.168.1.0network 192.168.2.0passive-interface gig 0/0default-information originate 配置 R2 enableconf trouter ripversion 2no auto-summarynetwork 192.168.2.0network 192.168.3.0network 192.168.4.0passive-interface gig 0/0 配置 R3 enableconf trouter ripversion 2no auto-summarynetwork 192.168.4.0network 192.168.5.0passive-interface gig 0/0 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置静态路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置静态路由 配置R1 enableconfigure terminalip route 172.31.0.0 255.255.255.0 172.31.1.193ip route 172.31.1.196 255.255.255.252 172.31.1.193ip route 172.31.1.128 255.255.255.192 172.31.1.193 配置R2 enableconfigure terminalip route 172.31.1.0 255.255.255.128 172.31.1.194ip route 172.31.1.0 255.255.255.192 172.31.1.198ip route 172.31.1.128 255.255.255.192 172.31.1.198 配置R3 enableconfigure terminalip route 0.0.0.0 0.0.0.0 172.31.1.197 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Thu, 02 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E8%B7%AF%E7%94%B1/</guid>
-      <description>路由 ipv6 unicast-routing 全局开启 IPV6 路由功能
-show ip route static 显示该路由器路由表中的静态路由
-其他概念 PC 的默认网关必须和路由器对应接口（比如g0/0和g0/1）的ip地址相同。
-路由表中没有目标ip，要么丢弃ip，要么发给默认网关
-直连网络 指的是与当前路由器直接相链接的网络。
-远程网络 对于一个路由器来说，除了直连网络之外的网络都是远程网络。
-主机位和网络位 一个 IP 地址的网络位是该地址的前三位。
-一个 IP 地址的主机位是该地址的第四位。
-当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址
-当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址
-下一跳路由 仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由
-直连静态路由 仅指定当前路由器的送出接口的端口号
-默认静态路由 指定下一跳 IP 地址或当前路由器送出接口
-ip route 0.0.0.0 0.0.0.0 192.168.1.2 ip route 0.0.0.0 0.0.0.0 s0/0/0 完全指定静态路由 指定下一跳 IP 地址和当前路由器送出接口，
-ip route 0.0.0.0 0.0.0.0 192.168.1.2 s0/0/1 末节路由 指的是只有一个与之相连的路由器，</description>
-    </item>
-    
-    <item>
-      <title>Cisco 静态路由故障排除</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</link>
-      <pubDate>Thu, 02 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</guid>
-      <description>配置 R2 进入全局模式
-enableconfigure terminal 故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198ip route 172.31.1.0 255.255.255.128 172.31.1.194 故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194ip route 172.31.1.128 255.255.255.192 172.31.1.198 配置R3 进入全局模式
-enableconfigure terminal 故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置默认网关</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</link>
-      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</guid>
-      <description>配置默认网关 enableconfigure terminalip default-gateway 192.168.10.1 </description>
-    </item>
-    
-    <item>
-      <title>Cisco Rip 协议</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/rip-%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/rip-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>Rip 协议 RIP协议是比较老的一款动态路由协议，这款协议现在用的已经很少了；
-RIP协议在 IPv4 里分成两个版本，目前就 RIPv2 版本来讲的话，其实也有很多问题，
-比如
- 根据路由器或者三层转发设备的条数来判断路径优劣这种判断机制是不准确的。 最大条数只有15跳也限制了RIP的网络规模。 RIP运行的速度比较慢，而且可能产生环路对网络有很大的影响。  router rip 启用 Rip
-version 2 切换到 RipV2 版本
-network 通告该路由器的所有直连网络，通告之后，
-该路由器的路由表就会显示除了通告外的所有网络的路由表的本地接口和远程网络的数量是一样的.
-show ip protocol 显示该路由器的路由协议，路由表前面的大写字母叫做路由来源
-no auto-summary 禁用该路由器上的自动汇总
-passive-interface g0/1 将连接局域网的接口 g 0/1 配置为被动接口，
-default-information originate 配置路由器的完全指定默认路由的默认信息来源</description>
-    </item>
-    
-    <item>
-      <title>Cisco SSH 取代 Telnet</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ssh-%E5%8F%96%E4%BB%A3-telnet/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>SSH 取代 Telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
-输入密码并登录。
-保护密码
-进入特权模式，保存
-加密密码 在全局模式下：
-Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa </description>
-    </item>
-    
-    <item>
-      <title>Cisco 琐碎知识点</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
-      <description>琐碎知识点 C 直连网络
-L 本地接口
-S 静态路由
-汇总路由的作用 将多条路由汇总为一条，减少路由表体积
-浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离
-默认静态路由的ipv4地址 0.0.0.0 0.0.0.0
-ACL 是控制列表
-控制列表最后一条是默认拒绝语句
-ACL 的两种类型 标准 ACL ，扩展类型 ACL
-通配符掩码中的 0 是全匹配 1是全忽略
-通配符掩码是 子网反掩码
-host 表示 0.0.0.0
-静态路由 目标地址 送出接口或吓一跳
-递归静态路由（吓一跳静态路由）
-完全指定路由（接口和下一跳都配置）
-子网掩码 24 可以包含多少个网络位
-网络位 只有八位
-全 0 为 网络地址
-全1 为广播地址
-rip 动态协议
-汇总路由
-进站 in
-出站 out
-三个接口
-每个接口有都有一个in或out
-一共可以写6个ACL
-每个in和每个out都可以写ipv4或ipv6的地址
-Access list 10 deny ip地址 反码
-搭建网络需要考虑哪些因素
-命令题，动态路由
-ACL host 等同于 0.</description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置中继</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
-      <description>配置中继 进交换机的全局
-interface f 0/1 switchport mode trunk switchport trunk native vlan 99 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置交换机端口安全</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
-      <description>配置交换机端口安全 配置 S1
-enable configure terminal 配置端口模式 interface f 0/1 switchport mode access 打开端口的安全模式 switch port-security //开启f0/1端口的安全功能 switchport port-security maximum 1 // 配置该端口的最大连接数为 1（最大能配置为128 switch） switchport port-security mac-address sticky // 让交换机口主动记下最先插入设备的 MAC 地址。 switchport port-security violation restrict //针对不合法的MAC地址连接该端口，配置端口的处理模式为：（protect[丢弃数据包，不发警告] | restrict[丢弃数据包，在 console 发警告] | shutdown[关]） no shutdown 、 exit </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置单臂路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置单臂路由 拓扑图 三台 PC
-中间一台交换机
-一台路由器在交换机上方
-将交换机与路由器连起来
-配置 S1 进全局模式 enable configure terminal hostname S1  vlan 10 exit  vlan 20 exit  vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi 将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk 配置 R1 enableconfigure terminalhostname R1 配置虚拟子端口 interface g 0/0.</description>
-    </item>
-    
-    <item>
-      <title>Cisco Vlan</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/vlan/</link>
-      <pubDate>Sun, 12 Sep 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/vlan/</guid>
-      <description>Vlan 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 enable configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 IP enable configure terminal interface vlan 1 ip address 192.168.10.1 255.255.255.0 </description>
-    </item>
-    
-  </channel>
-</rss>

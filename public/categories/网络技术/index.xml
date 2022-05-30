@@ -1,466 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>网络技术 on Rainy · Blog</title>
-    <link>https://yxzi.xyz/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</link>
-    <description>Recent content in 网络技术 on Rainy · Blog</description>
-    <image>
-      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HTTP</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/http/http/</link>
-      <pubDate>Sat, 30 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/http/http/</guid>
-      <description>HTTP 超文本传输协议。详细规定了浏览器和万维网服务器之间互相通信的规则。
-请求报文 浏览器向服务器发送内容的过程叫做请求。
-请求报文一般包含四部分：行、头、空行、体。
-请求行 请求类型：GET、POST 等。
-URL 。
-HTTP 协议的版本。
-GET /ValidateLogin?&amp;amp;userI=4234234&amp;amp;password=234234 HTTP/1.1 请求头 请求头的格式通常时键名:键值
-Accept-Encoding: gzip, deflate, br Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en- Cookie: Hm_lvt_a2e2e465098d883036e3cfad66f7203d=1633793709; Hm_lvt_bf329994f1e3ebf56f3712e11a46cb4a=1633794836; Hm_lvt_8516e418a4e3ac3474b3c13bdb4687e7=1638612924; _uab_collina=164345858532791240726438 Host: 127.0.0.1:5500 Content-Type # 设置请求体n类型 请求空行 空行必须有。
-请求体 GET 的请求体是空的。
-POST 的请求体可以不为空，也可以为空。
-响应报文 服务器给客户端/浏览器返回结果的过程叫做响应。
-响应报文一般包含四部分：行、头、空行、体。
-响应行 HTTP 版本
-响应状态码
-响应状态字符串
-HTTP/1.1 200 OK 响应头 Server: JSP3/2.0.14 Date: Sat, 30 Apr 2022 08:16:27 GMT Content-Type: text/javascript; charset=utf-8 Content-Length: 15758 Content-Encoding: gzip 响应空行 必须有</description>
-    </item>
-    
-    <item>
-      <title>CDN</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cdn/</link>
-      <pubDate>Sun, 10 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cdn/</guid>
-      <description>CDN 使网址的加载速度变快。</description>
-    </item>
-    
-    <item>
-      <title>eMSP 配置 trunk 和 Access</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</link>
-      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-trunk-%E5%92%8C-access/</guid>
-      <description>配置 trunk 和 Access 添加静态mac
-改名，配置 IP和子网掩码
-第一台pc ping 其他pc
-显示 mac 地址
-设置 mac 地址
-划分vlan
-改名
-显示 vlan
-其中一台 pc ping 剩余 pc
-创建 vlan batch 1
-进入接口1和2
-port link-type access
-port defult vlan 10
-quit
-进入接口3和4
-port link-type access
-port defult vlan 20
-quit
-相同 vlan 互相 ping
-两台交换机分别有四台 pc
-第一台交换机下有vlan 10 和 vlan 20
-第二台交换机下有vlan 10 和 vlan 20</description>
-    </item>
-    
-    <item>
-      <title>eNSP 交换机端口模式</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</link>
-      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E6%A8%A1%E5%BC%8F/</guid>
-      <description>交换机端口模式 Access 接收，没有 vid 的帧打上 tag，有 vid 的帧则比较 vid 和 vpvid，相同，则剥离 vid 转发，不同则丢弃
-发送，vid 等于 pvid 剥离 vid 并发送，不等于 则丢弃
-trunk 接收，没有 vid 的帧，打上 pvid 标签，查询是否在允许列表中，如果在，则转发，不在则丢弃。有 vid 的帧，直接查询是否在允许列表中，在则转发，不在则丢弃
-发送，vid 在允许列表内，vid 等于 pvid 剥离 vid 并发送，
-vid 不等于 pvid，保留 vid 并转发
-vid 不在运行列表，直接丢弃
-hybrid 接收，同 trunk，
-发送
-vid 不在允许列表中，直接丢弃
-vid 在运行列表中，不管 vid 是否等于 pvid，都需要通过命令决定是否保留这个 vid （tagged 和 untagged）
-启用 gvrp 必须是 trunk</description>
-    </item>
-    
-    <item>
-      <title>eNSP 路由命令</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E8%B7%AF%E7%94%B1%E5%91%BD%E4%BB%A4/</guid>
-      <description>路由命令 system-view 系统界面
-current- 当前配置
-undo info-center enable（删除或禁用 xx）
-sysname Namr 重命名设备
-display vlan 查看 vlan
-display interface 显示交换机的所有接口信息
-display interface 接口名
-display this 显示当前端口信息
-display vlan 显示 vlan
-vlan
-display port vlan 显示 vlan
-quit 退出
-save 保存
-reboot 重启设备
-reset save-configuration 选择 y or n 重置设备配置
-display mac-address 显示 mac 地址
-display interface Ethernet brief 以太网摘要情况
-undo negotiation auto 开启接口自动协商功能
-duplex full 设置双工模式
-speeed 100 修改接口速率
-mac-address static 0099-cd11-1111 Eth 接口 vlan 1</description>
-    </item>
-    
-    <item>
-      <title>eNSP 配置 Web 服务器</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/ensp/%E9%85%8D%E7%BD%AE-web-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>配置 Web 服务器 第一台客户机 10.0.1.10
-10.0.1.1
-域名服务器
-10.0.2.10
-Server
-10.0.2.10
-10.0.2.1
-域名服务器
-10.0.2.10
-配置 router
-sys
-int e 0/0/0
-ip add 10.0.2.1 255.255.255.0
-quit
-int g0/0/0
-ip add 10.0.1.1 255.255.255.0
-quit
-save
-配置 lsw
-sys
-int g0/0/1
-port link type access
-quit
-int g0/0/2
-port link type trunk
-打开 client
-目的 10.0.2.10
-打开 Server
-目的 10.0.1.10
-新建本地
-创建文件夹 ftp 和 http
-新建 flag.txt
-新建 index.html
-分别启动
-打开 Server
-服务器信息
-ftp 选择文件根目录</description>
-    </item>
-    
-    <item>
-      <title>私有地址</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/%E7%A7%81%E6%9C%89%E5%9C%B0%E5%9D%80/</link>
-      <pubDate>Mon, 21 Mar 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/%E7%A7%81%E6%9C%89%E5%9C%B0%E5%9D%80/</guid>
-      <description>私有地址 私有 IP 地址是一段保留的 IP 地址。只使用在局域网中，无法在 Internet 上使用。
-NAT－Network Address Translation 网络地址转换
-私有地址范围： A 类 10.0.0.0/8， 即 10.0.0.0&amp;ndash;10.255.255.255
-B 类 172.16.0.0/12， 即 172.16.0.0&amp;ndash;172.31.255.255
-C 类 192.168.0.0/ 16， 即 192.168.0.0&amp;ndash;192.168.255.255</description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置单区域 OSPFv2</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</link>
-      <pubDate>Sun, 12 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E5%8C%BA%E5%9F%9F-ospfv2/</guid>
-      <description>配置单区域 OSPFv2 配置 R1 enableconfigure terminalrouter ospf 10router-id 1.1.1.1network 172.16.1.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.4 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R2 enableconfigure terminalrouter ospf 10router-id 2.2.2.2network 172.16.2.0 0.0.0.255 area 0network 172.16.3.0 0.0.0.3 area 0network 192.168.10.8 0.0.0.3 area 0passive-interface GigabitEthernet0/0 配置 R3 enableconfigure terminalrouter ospf 10router-id 3.3.3.3network 192.168.1.0 0.0.0.255 area 0network 192.</description>
-    </item>
-    
-    <item>
-      <title>OSPF 协议</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ospf-%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ospf-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>OSPF 协议 OSPF 是目前网络界耳熟能详的协议了。
-用带宽来判断路径的优劣弥补了RIP的缺陷（光凭带宽也不是很好），同时使用划分区域网络，可以更好的控制管理和扩展网络。
-还有各种小特点比如 DR、BDR 机制，和适合不同网络类型机制，以及使用不同LSA传递各种信息，各种LSA的特性也不通。
-所有综合来讲OSPF是比较适合大众选择的一款路由协议
-router ospf 10 配置 OSPF 路由，进程 ID 为 10
-router-id 1.1.1.1 配置路由器的路由器 ID
-子网掩码的反掩码 IP 地址：192.168.10.8/30，那么它的子网掩码为 255.255.255.252
-则它的子网掩码的反掩码为 255.255.255.255 减去 255.255.255.252 等于 0.0.0.3，
-即配置 OSPFv2 的网络通告为：
-network 192.168.10.8 0.0.0.3 area 0 其中 area 是自治系统区域的标识</description>
-    </item>
-    
-    <item>
-      <title>交换机</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</link>
-      <pubDate>Thu, 09 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E4%BA%A4%E6%8D%A2%E6%9C%BA/</guid>
-      <description>交换机 Trunk 和 Access trunk 行通过多个 VLAN。
-access 只允许通通过单个 VLAN。</description>
-    </item>
-    
-    <item>
-      <title>Cisco 静态和动态路由的优缺点</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</link>
-      <pubDate>Tue, 07 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E8%B7%AF%E7%94%B1%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9/</guid>
-      <description>静态和动态路由的优缺点 静态路由的优点：  占用资源较多。 便于管理员了解路由。 易于配置。  静态路由的缺点：  配置和维护耗费时间。 配置容易出错，尤其对于大型网络。 需要管理员维护变化的路由信息。 不能随着网络的增长而扩展；维护会越来越麻烦。 需要完全了解整个网络的情况才能进行操作。  动态路由的优点  增加或删除网络时，管理员维护路由配置的工作量较少。 网络拓扑结构发生变化时，协议可以自动做出调整。 配置不容易出错。 扩展性好，网络增长时不会出现问题。  动态路由的缺点  需要占用路由器资源（CPU 时间、内存和链路带宽）。 管理员需要掌握更多的网络知识才能进行配置、验证和故障排除工作。  </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置 Rip V2</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</link>
-      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE-rip-v2/</guid>
-      <description>配置 Rip V2 配置 R1 enableconfigure terminalip route 0.0.0.0 0.0.0.0 s0/0/1router ripversion 2no auto-summarynetwork 192.168.1.0network 192.168.2.0passive-interface gig 0/0default-information originate 配置 R2 enableconf trouter ripversion 2no auto-summarynetwork 192.168.2.0network 192.168.3.0network 192.168.4.0passive-interface gig 0/0 配置 R3 enableconf trouter ripversion 2no auto-summarynetwork 192.168.4.0network 192.168.5.0passive-interface gig 0/0 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置静态路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Fri, 03 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置静态路由 配置R1 enableconfigure terminalip route 172.31.0.0 255.255.255.0 172.31.1.193ip route 172.31.1.196 255.255.255.252 172.31.1.193ip route 172.31.1.128 255.255.255.192 172.31.1.193 配置R2 enableconfigure terminalip route 172.31.1.0 255.255.255.128 172.31.1.194ip route 172.31.1.0 255.255.255.192 172.31.1.198ip route 172.31.1.128 255.255.255.192 172.31.1.198 配置R3 enableconfigure terminalip route 0.0.0.0 0.0.0.0 172.31.1.197 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Thu, 02 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E8%B7%AF%E7%94%B1/</guid>
-      <description>路由 ipv6 unicast-routing 全局开启 IPV6 路由功能
-show ip route static 显示该路由器路由表中的静态路由
-其他概念 PC 的默认网关必须和路由器对应接口（比如g0/0和g0/1）的ip地址相同。
-路由表中没有目标ip，要么丢弃ip，要么发给默认网关
-直连网络 指的是与当前路由器直接相链接的网络。
-远程网络 对于一个路由器来说，除了直连网络之外的网络都是远程网络。
-主机位和网络位 一个 IP 地址的网络位是该地址的前三位。
-一个 IP 地址的主机位是该地址的第四位。
-当一个 IP 地址的主机位全为 0 的时候，这个IP 地址为网络地址
-当一个 IP 地址的主机位全为 1 的时候，这个IP 地址为广播地址
-下一跳路由 仅指定下一个目标路由器的接口的 IP 地址，也叫递归静态路由
-直连静态路由 仅指定当前路由器的送出接口的端口号
-默认静态路由 指定下一跳 IP 地址或当前路由器送出接口
-ip route 0.0.0.0 0.0.0.0 192.168.1.2 ip route 0.0.0.0 0.0.0.0 s0/0/0 完全指定静态路由 指定下一跳 IP 地址和当前路由器送出接口，
-ip route 0.0.0.0 0.0.0.0 192.168.1.2 s0/0/1 末节路由 指的是只有一个与之相连的路由器，</description>
-    </item>
-    
-    <item>
-      <title>Cisco 静态路由故障排除</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</link>
-      <pubDate>Thu, 02 Dec 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%9D%99%E6%80%81%E8%B7%AF%E7%94%B1%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</guid>
-      <description>配置 R2 进入全局模式
-enableconfigure terminal 故障一 no ip route 172.31.1.0 255.255.255.128 172.31.1.198ip route 172.31.1.0 255.255.255.128 172.31.1.194 故障二 no ip route 172.31.1.128 255.255.255.192 172.31.1.194ip route 172.31.1.128 255.255.255.192 172.31.1.198 配置R3 进入全局模式
-enableconfigure terminal 故障三 ip route 172.31.1.0 255.255.255.128 172.31.1.197 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置默认网关</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</link>
-      <pubDate>Wed, 27 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E9%BB%98%E8%AE%A4%E7%BD%91%E5%85%B3/</guid>
-      <description>配置默认网关 enableconfigure terminalip default-gateway 192.168.10.1 </description>
-    </item>
-    
-    <item>
-      <title>Cisco Rip 协议</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/rip-%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/rip-%E5%8D%8F%E8%AE%AE/</guid>
-      <description>Rip 协议 RIP协议是比较老的一款动态路由协议，这款协议现在用的已经很少了；
-RIP协议在 IPv4 里分成两个版本，目前就 RIPv2 版本来讲的话，其实也有很多问题，
-比如
- 根据路由器或者三层转发设备的条数来判断路径优劣这种判断机制是不准确的。 最大条数只有15跳也限制了RIP的网络规模。 RIP运行的速度比较慢，而且可能产生环路对网络有很大的影响。  router rip 启用 Rip
-version 2 切换到 RipV2 版本
-network 通告该路由器的所有直连网络，通告之后，
-该路由器的路由表就会显示除了通告外的所有网络的路由表的本地接口和远程网络的数量是一样的.
-show ip protocol 显示该路由器的路由协议，路由表前面的大写字母叫做路由来源
-no auto-summary 禁用该路由器上的自动汇总
-passive-interface g0/1 将连接局域网的接口 g 0/1 配置为被动接口，
-default-information originate 配置路由器的完全指定默认路由的默认信息来源</description>
-    </item>
-    
-    <item>
-      <title>Cisco SSH 取代 Telnet</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ssh-%E5%8F%96%E4%BB%A3-telnet/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/ssh-%E5%8F%96%E4%BB%A3-telnet/</guid>
-      <description>SSH 取代 Telnet 远程登录 进入 PC 的 Desktop，选择 Command Prompt，
-输入密码并登录。
-保护密码
-进入特权模式，保存
-加密密码 在全局模式下：
-Serverce password-encryption SSH 加密通信 ip domian-name usernameip ssh version 2crypto key generate rsa </description>
-    </item>
-    
-    <item>
-      <title>Cisco 琐碎知识点</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
-      <description>琐碎知识点 C 直连网络
-L 本地接口
-S 静态路由
-汇总路由的作用 将多条路由汇总为一条，减少路由表体积
-浮动静态路由的作用 配置静态路由的同时，再后面手动配置一个默认的管理距离
-默认静态路由的ipv4地址 0.0.0.0 0.0.0.0
-ACL 是控制列表
-控制列表最后一条是默认拒绝语句
-ACL 的两种类型 标准 ACL ，扩展类型 ACL
-通配符掩码中的 0 是全匹配 1是全忽略
-通配符掩码是 子网反掩码
-host 表示 0.0.0.0
-静态路由 目标地址 送出接口或吓一跳
-递归静态路由（吓一跳静态路由）
-完全指定路由（接口和下一跳都配置）
-子网掩码 24 可以包含多少个网络位
-网络位 只有八位
-全 0 为 网络地址
-全1 为广播地址
-rip 动态协议
-汇总路由
-进站 in
-出站 out
-三个接口
-每个接口有都有一个in或out
-一共可以写6个ACL
-每个in和每个out都可以写ipv4或ipv6的地址
-Access list 10 deny ip地址 反码
-搭建网络需要考虑哪些因素
-命令题，动态路由
-ACL host 等同于 0.</description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置中继</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%BB%A7/</guid>
-      <description>配置中继 进交换机的全局
-interface f 0/1 switchport mode trunk switchport trunk native vlan 99 </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置交换机端口安全</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AB%AF%E5%8F%A3%E5%AE%89%E5%85%A8/</guid>
-      <description>配置交换机端口安全 配置 S1
-enable configure terminal 配置端口模式 interface f 0/1 switchport mode access 打开端口的安全模式 switch port-security //开启f0/1端口的安全功能 switchport port-security maximum 1 // 配置该端口的最大连接数为 1（最大能配置为128 switch） switchport port-security mac-address sticky // 让交换机口主动记下最先插入设备的 MAC 地址。 switchport port-security violation restrict //针对不合法的MAC地址连接该端口，配置端口的处理模式为：（protect[丢弃数据包，不发警告] | restrict[丢弃数据包，在 console 发警告] | shutdown[关]） no shutdown 、 exit </description>
-    </item>
-    
-    <item>
-      <title>Cisco 配置单臂路由</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</link>
-      <pubDate>Fri, 22 Oct 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/%E9%85%8D%E7%BD%AE%E5%8D%95%E8%87%82%E8%B7%AF%E7%94%B1/</guid>
-      <description>配置单臂路由 拓扑图 三台 PC
-中间一台交换机
-一台路由器在交换机上方
-将交换机与路由器连起来
-配置 S1 进全局模式 enable configure terminal hostname S1  vlan 10 exit  vlan 20 exit  vlan 30 exit 将指定 access 端口分配给指定 vlan interface f 0/2switchport acces vlan 10exitinterface f 0/3switchport acces vlan 20exitinterface f 0/4switchport acces vlan 30exi 将二层端口配置成 trunk 模式 interface g 0/1switchport mode trunk 配置 R1 enableconfigure terminalhostname R1 配置虚拟子端口 interface g 0/0.</description>
-    </item>
-    
-    <item>
-      <title>Cisco Vlan</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/cisco/vlan/</link>
-      <pubDate>Sun, 12 Sep 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/cisco/vlan/</guid>
-      <description>Vlan 重命名 Vlan enable configure terminal vlan 10 name MyVlan 删除 Vlan 分配 enable configure terminal interface f 0/18 no switchport access vlan 删除 Vlan no vlan 20 配置 Vlan 的 IP enable configure terminal interface vlan 1 ip address 192.168.10.1 255.255.255.0 </description>
-    </item>
-    
-    <item>
-      <title>网站访问流程</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</link>
-      <pubDate>Wed, 06 Jan 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E6%B5%81%E7%A8%8B/</guid>
-      <description>网站访问流程 静态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.html DNS 服务器，先找本地 DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.html），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.html）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache。 通过 Apache，就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.html），即可获取到服务器上文件名为 index.html 的文件。 Apache 会读取这个文件中的数据，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  动态网站  通过电脑打开浏览器输入 URL（资源的绝对路径），比如https://yxzi.xyz/:80/index.pnh DNS 服务器，先找本地 DNS（本地 hosts 文件），再找网络 DNS ，然后将域名（https://yxzi.xyz/）解析为 IP（192.168.1.0:80/index.php），最后将解析出来的 IP 返回给浏览器。 浏览器通过 IP（192.168.1.0:80/index.php）找到服务器， 再通过端口（80）找到服务器上的服务软件 Apache Apache 就可以得到 一个 URI（资源都相对路径），Apache 根据这个 URI（/index.php），即可获取到服务器上文件名为 index.php 的文件。 但又因为网站是动态的，所以 Apache 是无法识别后缀为 PHP 的文件的，因此在这里需要一个叫 PHP 引擎的东西，Apache 将 这个 PHP 文件交给 PHP 引擎，PHP 引擎读取 PHP 文件之后，需要将这个文件解析为 html 文件 ，注意，这时的 PHP 引擎可能会去寻找数据库，并对数据库进行一些操作（读取、放入、修改数据库等等）。最后，PHP 引擎会将解析后的 HTML 数据（PHP 文件中的数据和数据库中的数据），全部返回给 Apache。 Apache 会读取 PHP 引擎返回的内容，并将最终结果返回给浏览器，反之，如果服务器上的文件不存在，那么浏览器会返回给浏览器一个错误，比如 404（链接所指向的网页不存在） 错误。 浏览器得到 Apache 返回的数据之后，它会解析这些数据，并将这些数据以某种方式呈现给用户。  </description>
-    </item>
-    
-    <item>
-      <title>DNS 和端口</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</link>
-      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/dns-%E5%92%8C%E7%AB%AF%E5%8F%A3/</guid>
-      <description>DNS 和端口 DNS DNS 是互联网的一项服务，它作为将域名和 IP 地址相互映射的一个分布式数据库，能够使人更方便地访问互联网。
-简单的讲 DNS 就是翻译官，比如它会将http://www.baidu.com翻译成220.181.111.188让机器理解。
-DNS 有什么用 DNS 是用来做域名解析的，它会在你上网输入网址后，把它转换成 IP，然后去访问这个 IP 所指定的服务器，没有它，你想上百度就要记住百度的 IP，上 163 就要记住 163 的 IP，有了 DNS 的处理，你只需要记住对应网站的域名（网址），比如https://yxzi.xyz/。
-DNS 是一个按层次结构排列的分布式系统，由许多 DNS 服务器组成。DNS 服务器是注册加入 DNS 的任何计算机。它具有域名和 IP 地址的索引，并且在请求时，它可以告诉你与域名关联的当前 IP 地址。
-如果它不知道，那么它将尝试从其他 DNS 服务器中找出。
-因此，当您在浏览器中键入域名时，浏览器会询问 DNS 服务器该域的 IP 地址是什么，DNS 服务器会尝试告诉你。
-端口 简单来说：
- 在一台计算机上，端口用来指定你想要访问这台物理设备上的哪个程序。
- IP 能锁定一台物理机器，对应着一张网卡，网卡会接收外界发来的数据包。但是问题来了，网卡给程序提供了接口，你监听一下我，要是有消息来了，我就转发给你，这样应用程序就能收到数据了。
-但是问题来了，程序 A 和程序 B 都需要监听网卡接发数据，网卡说那我把接到的数据都发给你两，你们自己看着办吧。
-好，小 A 小 B 都接收了。
-但是又来了 CDEF&amp;hellip;&amp;hellip;，不行了，每个包都被发到了所有应用程序，每个应用程序都累得不行，最终垮了。
-好，那网卡说我给你们加个表示吧，我们之间可以用一个号码来作为标识，我和小 A 之间就用 1 来标识，
-如果外界发给 1 号标识的数据我就转发给你，你监听我的时候得告诉我你监听的是 1，我就转发 1 的数据包给你。</description>
-    </item>
-    
-    <item>
-      <title>IP 和域名</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</link>
-      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/ip-%E5%92%8C%E5%9F%9F%E5%90%8D/</guid>
-      <description>IP 和域名 IP IP 具有唯一性，像人的身份证一样，是唯一的。
-通俗地讲就是互联网世界的门牌号，通过 IP 地址就可以准确无误的找到某台计算机的位置，它具有唯一性，所以当我们访问某个 IP 的时候才不会出现错误，他就像我们的身份证号码那样独一无二，我们可以和别人同名，但是绝不可能和别人有同样的身份证号码。
-首先要确定你的 IP 地址是否是以 192.168 开头，如果是这个地址的话，不需要担心。这是内网的 IP 地址，在外网是无法直接访问的。如果不是内网的地址，有可能会遭到黑客的攻击。这需要一定的专业技术，普通人很难进行攻击，而且你的电脑应该需要有很强的利用价值，才会让人费时费力对你发起攻击之心，所以知道你 IP 对于大多数人来说不能对你做什么。
-域名 IP 不方便我们记忆，而域名，则是为了我们更好的记忆某一个网站的地址。
-域名（Domain Name）是由一串字符组成的，它指向某一个具体的 IP 地址。</description>
-    </item>
-    
-    <item>
-      <title>服务器</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 04 Jan 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/internet/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>服务器 在网络环境下，根据服务器提供的服务类型不同，分为文件服务器，数据库服务器，应 用程序服务器，WEB 服务器等。
-一台个人计算机也可以成为一台服务器，只要这台计算机可以提供服务，那么，如何让这台计算机提供服务呢？
-只需要在这台计算机上安装可以提供服务的软件（服务软件）。
-比如一台 Web 服务器，它如果要提供 Web 服务（网站访问），就需要安装 Web 服务软件，Apache，Tomcat， Iis 等等
-服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。
-提到服务器对于电脑爱好者来说一定不陌生，一般我们很难看到真正的服务器，因为服务器一般均放置在机房重点，闲人一般均是免进的，所以说起服务器，好多未接触的朋友都觉的很陌生，介于此，斯百德就为不明白服务器是什么的小伙伴们，揭开服务器神秘的面纱。
-其实服务器的模样就和电脑的主机很相似，但是服务器是网站的灵魂，是打开网站的必要载体，没有服务器的网站用户无法浏览。服务器就像一块敲门砖，就算网站在搜索引擎里的排名再好，网站打不开，用户无法浏览，网站就没有用户体验可言，网站能被打开是第一个重点。比如我们每天浏览的网站，其实数据均在服务器，服务器一般都在一些 IDC 数据中心机房以及电信等网络大厦里面。
-服务器，也称伺服器。服务器是网络环境中的高性能计算机，它侦听网络上的其他计算机（客户机）提交的服务请求，并提供相应的服务，为此，服务器必须具有承担服务并且保障服务的能力。我们这里提到的服务器，主要是指的 Web 服务器，我们也称之为专用服务器，是专为网站业务应用的服务器，这种服务器可以向发出请求的浏览器提供文档的程序。Web 服务器也是一种被动的程序，只有当服务器接收到浏览器发出的请求时，服务器才会响应。
-由于Web 服务器是一种被动的程序，所以不同类型的网站对 Web 服务器的要求差别很大。企业网站和个人网站一般都是展示型网站，所以他们对服务器的性能要求一般都不高。电子商务型网站以及门户型等网站一般访问量用户比较大，这些大型网站对服务器的需要则较高。
-目前，用户使用最多的 web 服务器软件有两个：微软的信息服务器（iis）和 Apache。而架设 Web 服务器比较常见的操作系统有 Windows，Linux 和 Unix。Linux 的安全性在这三个系统中最高，同时可以支持多个硬件平台，而且其是开源软件，市场价格更低，甚至用户可以下载免费的代码来搭建 Web 服务器。Web 服务器的操作更简单，性能更优越，目前使用率非常的高，Unix 则比较小众！</description>
-    </item>
-    
-  </channel>
-</rss>

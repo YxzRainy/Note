@@ -1,91 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Less on Rainy · Blog</title>
-    <link>https://yxzi.xyz/tags/less/</link>
-    <description>Recent content in Less on Rainy · Blog</description>
-    <image>
-      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/less/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E5%9F%BA%E7%A1%80/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E5%9F%BA%E7%A1%80/</guid>
-      <description>基础 注释 // 开头的注释，less 不会将其编译到 css 文件中。
-/**/ 包裹的注释，less 才会将其编译到 css 文件中
-// 该注释不可见/* 该注释可见 */ 变量 使用@来申明一个变量: @color: #008c8c。
-作为普通属性值只来使用：使用@color
-作为选择器和属性名或URL：@{attr}、@{class}、@{ur1}的形式。
-// 属性值变量@color2: #2775e0;@color: #198484;// 选择器变量@class: .indiv;// 属性名变量@attr:width;div {// 使用属性名变量@{attr}: 100px;height: 100px;// 使用属性值变量background-color: @color2;// 使用选择器变量@{class}{width: 40px;height: 50px;background-color: @color;}} 被编译为：
-div {  width: 100px;  height: 100px;  background-color: #2775e0; } div .</description>
-    </item>
-    
-    <item>
-      <title>Less</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/less/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/less/</guid>
-      <description>Less Less 一门向后兼容的 CSS 扩展语言。它扩展了 CSS，使 CSS 更易于维护和扩展。
-Less 官方文档
-安装 Node.js：
-npm install -g less 引入：
-&amp;lt;script src=&amp;#34;//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js&amp;#34; &amp;gt;&amp;lt;/script&amp;gt; 将 less 编译为 css 在 less 文件的目录引入执行，就会得到一个 编译后的 css 文件。
-lessc styles.less &amp;gt; styles.css 当然，如果你使用的是 Vs Code，那么直接安装Easy Less扩展即可，每当你保存 less 文件的时候，它会自动将 less 文件编译为 css文件，方便的很。</description>
-    </item>
-    
-    <item>
-      <title>Less 继承</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E7%BB%A7%E6%89%BF/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E7%BB%A7%E6%89%BF/</guid>
-      <description>继承 使用 :extend()将混合规则集继承给指定的选择器。extend 是一个 Less 伪类
-继承规则集不能带()。
-// 定义一个继承，它不能有().center {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);}.wrap {width: 300px;height: 300px;background-color: aqua;.inner {// 将 .center 中的规则集继承到 .wrap .inner{} 中// 使用 all&amp;amp;:extend(.center);&amp;amp;:nth-child(1) {width: 500px;height: 100px;background-color: pink;}&amp;amp;:nth-child(2) {width: 80px;height: 80px;background-color: rgb(210, 29, 59);}}} </description>
-    </item>
-    
-    <item>
-      <title>Less &amp; 使用</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</link>
-      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/-%E7%AC%A6%E5%8F%B7/</guid>
-      <description>Less &amp;amp; 使用 在类前面添加了&amp;amp;之后，编译之后的 css 变为且的关系，而没有使用&amp;amp;的 css 是父子的关系
-&amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有 &amp;amp; 符号，则这个内层选择器会被解析为父选择器的后代。
-如果内层选择器前面有一个 &amp;amp; 符号，则内层选择器会被解析为父选择器自身或父选择器的伪类。
-Less 代码 .mainbox {display: flex;min-width: 1024px;max-width: 1920px;margin: 0 auto;padding: 0.125rem 0 0.125rem 0;.column {background-color: yellowgreen;flex: 3;&amp;amp;:nth-child(2) {flex: 5;}}} 解析后的 Css 代码 .mainbox .column:nth-child(2) { 	flex: 5; } 去掉 &amp;amp; 后的 Css 代码 .mainbox .column :nth-child(2) { 	flex: 5; } </description>
-    </item>
-    
-    <item>
-      <title>Less 嵌套</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E5%B5%8C%E5%A5%97/</link>
-      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E5%B5%8C%E5%A5%97/</guid>
-      <description>嵌套 #header {  color: black; } #header .navigation {  font-size: 12px; } #header .logo {  width: 300px; } 用 less 可以这样书写：
-#header {color: black;.navigation {font-size: 12px;}.logo {width: 300px;}} &amp;amp; 在选择器前面添加了 &amp;amp; ，表示与父元素是并且关系，而没有使用&amp;amp;的 css 是父子的关系。
-&amp;amp; 符号可以表示对父选择器的引用。 在一个内层选择器的前面，如果没有&amp;amp;符号，则这个内层选择器会被编译为父选择器的后代。
-如果内层选择器到前面有一个&amp;amp;符号，则内层选择器会被编译为父选择器自身或父选择器的伪类、伪元素等。
-div {width: 100px;height: 100px;background-color: firebrick;.indiv {width: 50px;height: 50px;background-color: salmon;&amp;amp;:hover {background-color: aquamarine;}}} 被编译为：</description>
-    </item>
-    
-    <item>
-      <title>Less 混合</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E6%B7%B7%E5%90%88/</link>
-      <pubDate>Tue, 02 Nov 2021 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/language/css/less/%E6%B7%B7%E5%90%88/</guid>
-      <description>混合 将一个包含一组属性的规则集引入到另一个规则集的方式。
-普通混合 当 less 编译成 css，混合规则集也会被编译到 css 中。这会导致 css 文件过大。
-// .MixColor 会被编译到 css 文件中.MixColor {width: 100px;height: 100px;background-color: #008c8c;}.wrap {width: 200px;height: 200px;background-color: firebrick;.indiv {.MixColor;}.indiv2 {.MixColor;}} 为混合规则集加上()，则混合规则集不会被编译到 css 中。
-//.MixColor 会被编译到 css 文件中.MixColor() {width: 100px;height: 100px;background-color: #008c8c;}.wrap {width: 200px;height: 200px;background-color: firebrick;.indiv {.MixColor;}.</description>
-    </item>
-    
-  </channel>
-</rss>

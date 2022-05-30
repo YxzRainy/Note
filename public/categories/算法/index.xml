@@ -9,99 +9,26 @@
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Apr 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>哈夫曼树</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
+      <title>冒泡排序</title>
+      <link>https://yxzi.xyz/blog/technology/datastructure/algorithm/sort/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/</guid>
-      <description>哈夫曼树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt;#include &amp;lt;queue&amp;gt;using namespace std;  typedef struct node{ 	int data; 	struct node *lchild, *rchild; } n;  //创建一个节点 node * get_a_node(int data){ 	node *c = (node *)malloc(sizeof(node)); 	c-&amp;gt;data = data; 	c-&amp;gt;lchild = 0; 	c-&amp;gt;rchild = 0; 	return c; }   int main(){ 	queue&amp;lt;node *&amp;gt;q; 	//构建一棵树 	node *t = get_a_node(1); 	t-&amp;gt;lchild = get_a_node(2); 	t-&amp;gt;rchild = get_a_node(3); 	t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5); 	t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7); 	t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);  	q.</description>
-    </item>
-    
-    <item>
-      <title>二叉树的最大深度</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</link>
-      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/</guid>
-      <description>二叉树的最大深度 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  //二叉树的最大深度 int max_depth(node *p) {  int left = 0;  int right = 0;  if (p-&amp;gt;lchild)  {  left = max_depth(p-&amp;gt;lchild);  }  if (p-&amp;gt;rchild)  {  right = max_depth(p-&amp;gt;rchild);  }  if (left &amp;gt; right)  return left + 1;  else  return right + 1; }  int main(void) {  // 构建树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   // 二叉树的最大深度  int depth = max_depth(t);  printf(&amp;#34;二叉树的深度为：%d\n&amp;#34;,depth);  return 0; } </description>
-    </item>
-    
-    <item>
-      <title>判断是否为完全二叉树</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
-      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AE%8C%E5%85%A8%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
-      <description>判断是否为完全二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  //创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  /* //5 判断一棵树是否是完全二叉树，如果是返回1，如果否返回0 int is_complete(node *p){ //请完善这里 } */ int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   return 0; } </description>
-    </item>
-    
-    <item>
-      <title>判断是否为对称二叉树</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
-      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
-      <description>判断是否为对称二叉树 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  bool isSymHeper(node* left,node* right); //3 判断是否是对称的二叉树，如果是返回1，如果否返回0 bool isSym(node* p) {  if(p == NULL)  return true;  return isSymHeper(p-&amp;gt;lchild,p-&amp;gt;rchild); } bool isSymHeper(node* left,node* right) {  if(left == NULL &amp;amp;&amp;amp; right == NULL)  return true;  if(left == NULL || right == NULL || left-&amp;gt;data !</description>
-    </item>
-    
-    <item>
-      <title>翻转二叉树</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
-      <pubDate>Tue, 26 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
-      <description>翻转二叉树 #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt;  typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }  //4 翻转二叉树，返回树根 node *node_reverse(node* p) {  if (p == NULL)  return NULL;  node_reverse(p-&amp;gt;lchild);  node_reverse(p-&amp;gt;rchild);  node * t = p-&amp;gt;lchild;  p-&amp;gt;lchild = p-&amp;gt;rchild;  p-&amp;gt;rchild = t;   return p; }  int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);    // 翻转二叉树  node* newt = node_reverse(t);  printf(&amp;#34;翻转后的二叉树根节点：%d\n&amp;#34;,newt-&amp;gt;lchild-&amp;gt;lchild-&amp;gt;rchild-&amp;gt;data );    return 0; } </description>
-    </item>
-    
-    <item>
-      <title>二叉树的节点数量</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E6%95%B0%E9%87%8F/</link>
-      <pubDate>Thu, 21 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%A0%91/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%8A%82%E7%82%B9%E6%95%B0%E9%87%8F/</guid>
-      <description>二叉树的节点数量 #include &amp;lt;stdio.h&amp;gt;#include &amp;lt;stdlib.h&amp;gt; typedef struct node {  int data;  struct node *lchild, *rchild; } n;  // 创建一个节点 node * get_a_node(int data) {  node *c = (node *)malloc(sizeof(node));  c-&amp;gt;data = data;  c-&amp;gt;lchild = 0;  c-&amp;gt;rchild = 0;  return c; }   // 求树的节点数量 int node_num(node *p) {  int left = 0;  int right = 0;  if (p-&amp;gt;lchild)  {  left = node_num(p-&amp;gt;lchild);  }  if (p-&amp;gt;rchild)  {  right = node_num(p-&amp;gt;rchild);  }  int nums = left + right +1;  return nums; }   int main(void) {  //构建一棵树  node *t = get_a_node(1);  t-&amp;gt;lchild = get_a_node(2);  t-&amp;gt;rchild = get_a_node(3);  t-&amp;gt;lchild-&amp;gt;rchild = get_a_node(5);  t-&amp;gt;rchild-&amp;gt;rchild = get_a_node(7);  t-&amp;gt;rchild-&amp;gt;rchild-&amp;gt;lchild = get_a_node(14);   // 树的结点个数  int num = node_num(t);  printf(&amp;#34;树的结点个数为：%d\n&amp;#34;,num);   return 0; } </description>
-    </item>
-    
-    <item>
-      <title>选择排序</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%8E%92%E5%BA%8F/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
-      <pubDate>Thu, 21 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%8E%92%E5%BA%8F/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
-      <description>选择排序 #include &amp;lt;stdio.h&amp;gt;void main(){  int r[] = {5,7,1,3,8,12,2,9};  for(int e = 0;e &amp;lt; 8;e++){ 	int k = e; 	for(int i = e; i &amp;lt; 8;i++){ 	if(r[i] &amp;lt; r[k]){ 	k=i; 	} 	} 	int t = r[k]; 	r[k] = r[e]; 	r[e] = t; }   	for(int j = 0;j &amp;lt; 8;j++){ 	printf(&amp;#34;%d &amp;#34;,r[j]); 	} } </description>
-    </item>
-    
-    <item>
-      <title>算法</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E7%AE%97%E6%B3%95/</guid>
-      <description>算法 通俗定义 解题的方法和步骤。
-狭义定义 对存储数据的操作。
-对不同的数据结构，要完成某一个功能所执行的操作是不一样的。
-比如，输出数组所有的元素和输出链表中所有的元素的操作是不一样的。这说明，算法是依附于数据结构，不同的数据结构，所执行的算法是不一样的。
-广义定义 广义的算法也叫泛型。无论数据是如何存储的，对该数据的操作都是一样的。
-我们至少可以通过两种结构来存储数据：
- 数组 链表  衡量算法的标准 时间复杂度 程序执行的大概次数，而非执行时间。
-为什么执行时间来计算呢，这是因为在不同的机器上，同一个程序的执行时间是不同的（机器的性能不一样）。
-空间复杂度 算法执行过程中，大概所占用的最大内存。
-可读性 算法是否容易让人理解。
-健壮性 指一个算法对不合理数据输入的反应能力和处理能力，也称为算法容错性。</description>
+      <guid>https://yxzi.xyz/blog/technology/datastructure/algorithm/sort/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
+      <description>冒泡排序 流程   比较相邻的两个元素，升序则交换两个数的位置，降序则位置不变。
+  对每一对相邻元素作同样的操作，从开始第一对到结尾的最后一对。直到产生一个最大或者最小的数（这取决于你是升序还是降序）。升序是产生最大的数，降序是产生最小的数。
+  重新开始下一轮遍历，但无需遍历上轮遍历时所产生的最大数。
+  实现升序 # include &amp;lt;stdio.h&amp;gt;  // *arr 数组 // len 数组长度 void BubbleSort(int * arr, int len){   // 整体比较轮数  int i;   // 元素与元素的比较次数  int j;   // 媒介变量，用于交换两个元素的位置  int t;   // 整体比较轮数  // 需要b len-1 轮，每轮整体比较都需要进行元素与元素的比较。  for (i = 0; i &amp;lt; len-1;i ++){   // 元素与元素的比较次数  // 每进行一轮比较，都会在数组末尾产生一个最大元素。  // 下次比较时，这个最大元素将不再参与和其他元素的比较，因此，元素与元素的比较次数为 j &amp;lt; len - 1 - i。  for(j = 0;j &amp;lt; len - 1- i;j++){   // 元素与元素的比较 	// 从第一个元素 a[j] 与第二个元素 a[j+1] 开始依次比较。  if (arr[j] &amp;gt; arr[j+1]){   // 交换两个元素的位置。  t = arr[j];  arr[j] = arr[j+1];  arr[j + 1] = t;  }  }  } }  int main(void) {  int arr[] = {10,2,8,-8,11,0};  BubbleSort(arr,6);  for(int i = 0; i &amp;lt; 6;i++){  printf(&amp;#34;%d &amp;#34;,arr[i]);  }  printf(&amp;#34;\n&amp;#34;); </description>
     </item>
     
     <item>
       <title>冒泡排序</title>
-      <link>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</link>
+      <link>https://yxzi.xyz/blog/technology/datastructure/algorithm/sort/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/mynote/4-specialty/datastructure/algorithm/%E6%8E%92%E5%BA%8F/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</guid>
-      <description>冒泡排序 冒泡排序（Bubble Sort）也是一种简单直观的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢&amp;quot;浮&amp;quot;到数列的顶端。
-步骤 比较相邻的元素。如果第一个比第二个大，就交换它们两个。
-对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，会产生一个最大或者最小的数（这取决于你是升序还是降序）。升序是产生最小的数，降序是产生最大的数。
-C 代码实现 # include &amp;lt;stdio.h&amp;gt; // 定义冒泡排序函数，将数组中的元素按从小到大的顺序排列 // 形参是数组中第一个元素的地址和数组的长度 // 以 sort(a,6); 来举例 void sort(int * a, int len){  int i,j,t;  // 定义总共需要几次循环才能对数组中每个元素都进行比较  // 首次循环 ：i = 5，所以想要将这个数组进行排序，总共需要进行 5 次比较。  for (i = 0; i &amp;lt; len-1;i ++){  // 每一次整体比较结束后，需要进行比较的元素就要少一个，  // 因为每一次比较后，都会产生一个最小的元素，而这个最小的元素，将不再参加后续的比较，  // 因此，每次整体比较后，都会少一个元素参加后续的比较  // 当 i = 0 时：数组中会进行 5 次依次比较  // 当 i = 1 时：数组中会进行 4 次依次比较  // 当 i = 2 时：数组中会进行 3 次依次比较  // 当 i = 3 时：数组中会进行 2 次依次比较  // 当 i = 4 时：数组中会进行 1 次依次比较  for(j = 0;j &amp;lt; len - 1- i;j++){  // 开始进行元素的交换，&amp;gt; 表示升序，&amp;lt; 表示降序  // 如果数组中第一个元素（a[0]）大于第二个元素（a[1]）  // 注意，此时是第一个元素在前，第二个元素在后  // 每次依次比较后，j 都会 + 1，也就是最小的元素将不再参与比较  if (a[j] &amp;gt; a[j+1]){  // 将较大的元素赋给 t  t = a[j];  // 将较小的元素赋给 a[0]，  // 也就是互换它们的位置，将较小的元素放到较大的元素的前面  a[j] = a [j+1];  // 在将 t（a[0]）,也就是较大的元素放到较小的元素的后面，  // 最终，成功交换这两个元素的位置。  a[j + 1] = t;  }  }  } } int main(void) {  int a[] = {10,2,8,-8,11,0};   // // 将数组中第一个元素的地址和数组长度作为实参  sort(a,6);  // 输出最终的冒泡排序的结果  for(int i = 0; i &amp;lt; 6;i++){  printf(&amp;#34;%d &amp;#34;,a[i]);  }  printf(&amp;#34;\n&amp;#34;); } JAVA 代码实现 public static void main(String[] args) {  //定义数组  int[] arr = {6, 4, 8, 2, 9};  System.</description>
+      <guid>https://yxzi.xyz/blog/technology/datastructure/algorithm/sort/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
+      <description>选择排序 流程  在未排序的元素中找到最小（或最大）元素，将其存放到该数组的起始位置， 跳过已排序数，从剩余未排序的元素中继续寻找最小（或最大）元素，放到已排序数组的末尾。 以此类推，直到所有元素均排序完毕。  实现升序 #include &amp;lt;stdio.h&amp;gt; void SelectionSort(int *arr,int len) {   // 已排序元素的末尾位置  int i;   // 未排序元素的起始位置  int j;   int k;   // 媒介变量，用于交换两个元素的位置  int t;   // 整体比较轮数  // 需要比较 len 轮  for(i = 0; i &amp;lt; len; i++)  {   // 跳过已排序的数  int k = i;   // 忽略已排序的数，直接从未排序的数开始比较，找出未排序数中的最小数  for(j = i; j &amp;lt; len; j++)  {  printf(&amp;#34;%d\n&amp;#34;,i);  if(arr[j] &amp;lt; arr[k])  {  // 将一对数中较小的数的索引赋给 k  k = j;  }  }   // 将最小的那个数移到数组最前面  t = arr[k];  arr[k] = arr[i];  arr[i] = t;  } }  int main() {  int arr[] = {5,7,1,3,8,12,2,9};  SelectionSort(arr,8);  for(int j = 0; j &amp;lt; 8; j++)  {  printf(&amp;#34;%d &amp;#34;,arr[j]);  } } </description>
     </item>
     
   </channel>
