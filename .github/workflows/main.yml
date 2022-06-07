@@ -1,20 +1,30 @@
-on: [push] # push 代码时触发
-jobs: 
-    deploy: 
-        runs-on: ubuntu-latest
-        name: Tencent Cloudbase Github Action Example
-        steps: 
-        - name: Checkout
-          uses: actions/checkout@v2
-        # 使用云开发 Github Action 部署
-        - name: Deploy static to Tencent CloudBase
-          id: deployStatic
-          uses: TencentCloudBase/cloudbase-action@v1.1.1
-          with: 
-            # 云开发的访问密钥 secretId 和 secretKey
-            secretId: ${{ secrets.SECRET_ID }}
-            secretKey: ${{ secrets.SECRET_KEY }}
-            # 云开发的环境id
-            envId: ${{ secrets.ENV_ID }}
-            # Github 项目静态文件的路径
-            staticSrcPath: public
+name: deploying Hexo project to GitHub pages
+on:
+  push:
+    branches:
+      - main # main 分支有 push 行为时就触发这个 action
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
+        env:
+          PERSONAL_TOKEN: ${{ secrets.HEXO_KEEP_DEPLOY }}
+          PUBLISH_REPOSITORY: XavierJiezou/xavierjiezou.github.io
+          BRANCH: gh-pages
+          PUBLISH_DIR: ./public
+
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@main
+        env:
+            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+            ARGS: -rltgoDzvO --delete
+            SOURCE: ./public/
+            REMOTE_HOST: ghgxj.xyz
+            REMOTE_USER: root
+            TARGET: /www/wwwroot/ghgxj.xyz/
