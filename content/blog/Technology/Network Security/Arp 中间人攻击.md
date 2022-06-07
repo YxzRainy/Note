@@ -11,9 +11,7 @@ tags:
 
 # Arp 中间人攻击
 
-## 预备
-
-### 所需工具
+## 所需工具
 
 kali linux 虚拟机（攻击机）
 
@@ -25,21 +23,25 @@ kali linux 虚拟机（攻击机）
 
 windows 7 虚拟机（模拟受害机）
 
-### 配置 kali
-
-**apt-get update**
+## 配置 kali
 
 更新kali软件列表
 
-**apt-get install dsniff**
+```sh
+apt-get update
+```
 
-**安装dsniff工具**
+安装dsniff工具
+
+```sh
+apt-get install dsniff
+```
 
 ## 使目标机器断网
 
 查看内网 ip
 
-```
+```sh
 ifconfig
 ```
 
