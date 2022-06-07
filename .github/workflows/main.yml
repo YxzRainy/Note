@@ -1,8 +1,9 @@
-name: deploying Hexo project to GitHub pages
+name: DeployBlog
 on:
   push:
     branches:
-      - main # main 分支有 push 行为时就触发这个 action
+    # Blog 分支有 push 行为时就触发这个 action
+      - Blog 
 
 jobs:
   build-and-deploy:
@@ -14,17 +15,18 @@ jobs:
       - name: Build and Deploy
         uses: theme-keep/hexo-deploy-github-pages-action@master
         env:
-          PERSONAL_TOKEN: ${{ secrets.HEXO_KEEP_DEPLOY }}
-          PUBLISH_REPOSITORY: XavierJiezou/xavierjiezou.github.io
+          PERSONAL_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages
           PUBLISH_DIR: ./public
+        
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+            SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
             ARGS: -rltgoDzvO --delete
             SOURCE: ./public/
-            REMOTE_HOST: ghgxj.xyz
-            REMOTE_USER: root
-            TARGET: /www/wwwroot/ghgxj.xyz/
+            PORT: ${{ secrets.PORT }}
+            REMOTE_HOST: ${{ secrets.HOST }}
+            REMOTE_USER: ${{ secrets.USERNAME}}
+            TARGET: ${{ secrets.PATH }}
