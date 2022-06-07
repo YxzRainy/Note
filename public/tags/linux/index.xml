@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Note on Rainy · Blog</title>
-    <link>https://yxzi.xyz/tags/note/</link>
-    <description>Recent content in Note on Rainy · Blog</description>
+    <title>Linux on Rainy · Blog</title>
+    <link>https://yxzi.xyz/tags/linux/</link>
+    <description>Recent content in Linux on Rainy · Blog</description>
     <image>
       <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/note/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arp 中间人攻击</title>
       <link>https://yxzi.xyz/blog/technology/network-security/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
@@ -35,23 +35,6 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的�
 如图已经开始 arp 攻击了：
 这时候我们就会发现受害机已经 ping 不通了：
 至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。</description>
-    </item>
-    
-    <item>
-      <title>笔记和博客的区别</title>
-      <link>https://yxzi.xyz/blog/essay/%E7%AC%94%E8%AE%B0%E5%92%8C%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/blog/essay/%E7%AC%94%E8%AE%B0%E5%92%8C%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>笔记和博客的区别 笔记 笔记是给自己看的，是自己知识的沉积，更是自己思考的结果。
-笔记是工具，而非目的，不应该追求美观完善，而是要简洁、清晰、成体系。方便自己查找和复习。
-记笔记时，更不应该局限于某个软件，或局限于某些方式。比如有的人只喜欢用纯文本记笔记。
-从而忽略了其他方式所带来的优势，比如思维导图。
-博客 博客是给其他人看的，是自己知识的升华，更是思想的交汇之所。
-博客说白了就是个人网站、或者个人的网络笔记本，别人也可以去看，但需要别人很主动的去看。
-因此，博客不能写的太随意，要把来龙去脉说清楚，尽可能让别人理解你想表达的东西。毕竟，要把一件事情讲明白，讲道理挺难的。
-对自己来说，博客不适合构建知识体系，因为博客的结构是松散的，不适合快速查找知识。
-但是，博客可以是一个表达自己、展示自己的平台。</description>
     </item>
     
   </channel>

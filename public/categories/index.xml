@@ -9,13 +9,13 @@
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 21 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Algorithm</title>
-      <link>https://yxzi.xyz/categories/algorithm/</link>
-      <pubDate>Sat, 21 May 2022 06:00:00 +0000</pubDate>
+      <title>Network Security</title>
+      <link>https://yxzi.xyz/categories/network-security/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/categories/algorithm/</guid>
+      <guid>https://yxzi.xyz/categories/network-security/</guid>
       <description></description>
     </item>
     
@@ -25,33 +25,6 @@
       <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/categories/essay/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer</title>
-      <link>https://yxzi.xyz/categories/computer/</link>
-      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/categories/computer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>https://yxzi.xyz/categories/data-structure/</link>
-      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/categories/data-structure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>算法</title>
-      <link>https://yxzi.xyz/categories/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/categories/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     

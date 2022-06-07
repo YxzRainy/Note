@@ -9,13 +9,31 @@
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 21 May 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Technology Note</title>
-      <link>https://yxzi.xyz/tags/technology-note/</link>
-      <pubDate>Sat, 21 May 2022 06:00:00 +0000</pubDate>
+      <title>Arp</title>
+      <link>https://yxzi.xyz/tags/arp/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/tags/technology-note/</guid>
+      <guid>https://yxzi.xyz/tags/arp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://yxzi.xyz/tags/linux/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note</title>
+      <link>https://yxzi.xyz/tags/note/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/note/</guid>
       <description></description>
     </item>
     
@@ -29,65 +47,11 @@
     </item>
     
     <item>
-      <title>Note</title>
-      <link>https://yxzi.xyz/tags/note/</link>
-      <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/note/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Recommend</title>
       <link>https://yxzi.xyz/tags/recommend/</link>
       <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/tags/recommend/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>https://yxzi.xyz/tags/c/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tree</title>
-      <link>https://yxzi.xyz/tags/tree/</link>
-      <pubDate>Sat, 14 May 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/tree/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>https://yxzi.xyz/tags/data-structure/</link>
-      <pubDate>Mon, 18 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/data-structure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Positional Notation</title>
-      <link>https://yxzi.xyz/tags/positional-notation/</link>
-      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/positional-notation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sort Algorithm</title>
-      <link>https://yxzi.xyz/tags/sort-algorithm/</link>
-      <pubDate>Sun, 17 Apr 2022 06:00:00 +0000</pubDate>
-      
-      <guid>https://yxzi.xyz/tags/sort-algorithm/</guid>
       <description></description>
     </item>
     
