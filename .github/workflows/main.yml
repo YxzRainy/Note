@@ -23,6 +23,12 @@ jobs:
       - name: Build
         run: hugo --minify
         
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@4.1
+        with:
+          # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
+          switches: -avzh
+        
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
