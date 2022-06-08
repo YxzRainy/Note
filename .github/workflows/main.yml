@@ -21,7 +21,7 @@ jobs:
       
            
       - name: Install Rsync
-        run: sudo yum install -y rsync
+        run: npm install rsync
         
      # - name: Setup Hugo
       #  uses: peaceiris/actions-hugo@v2
