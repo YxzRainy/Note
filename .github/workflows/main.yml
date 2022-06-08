@@ -6,14 +6,12 @@ on:
       - Blog 
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-18.04
+  Build-and-Deploy:
+    runs-on: windows-2019
     steps:
+      - name: Check Out
       - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          
+
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
