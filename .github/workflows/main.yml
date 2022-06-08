@@ -29,8 +29,8 @@ jobs:
      #     hugo-version: '0.91.2'
       #    extended: true
       
-      - name: Build Hugo
-        run: hugo --minify
+      #- name: Build Hugo
+      #  run: hugo --minify
         
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
