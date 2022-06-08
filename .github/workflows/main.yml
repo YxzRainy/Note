@@ -26,10 +26,10 @@ jobs:
       - name: Deploy
         uses: burnett01/rsync-deployments@5.2
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
-            SOURCE: ./public/*
-            ARGS: "-avzr --delete"
-            PORT: ${{ secrets.PORT }}
-            REMOTE_HOST: ${{ secrets.HOST }}
-            REMOTE_USER: ${{ secrets.USERNAME }}
-            TARGET: ${{ secrets.PATH }}
+          switches: -avzr --delete --exclude="" --include="" --filter=""
+          path: ./public
+          remote_path: ${{ secrets.PATH }}
+          remote_host: ${{ secrets.HOST }}
+          remote_port: ${{ secrets.PORT }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.SSH_KEY }}
