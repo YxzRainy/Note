@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GitHub on Rainy · Blog</title>
+    <link>https://yxzi.xyz/tags/github/</link>
+    <description>Recent content in GitHub on Rainy · Blog</description>
+    <image>
+      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo 自动化部署到服务器</title>
+      <link>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>Hugo 自动化部署到服务器 准备 Git
+Linux 服务器
+GitHub 仓库
+Windows 本地环境</description>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; GitHub 搭建个人博客</title>
+      <link>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</link>
+      <pubDate>Thu, 22 Jul 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</guid>
+      <description>Hugo + GitHub 搭建个人博客 准备 Git
+Github 仓库
+Windows 本地环境
+安装 Chocolatey 因为我会用它来安装 Hugo，所以需要先安装 Chocolatey.
+使用管理员身份运行 windows 中的 Windows PowerShell（不是 CMD），并执行：
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://community.chocolatey.org/install.ps1&amp;#39;)) 输入 choco，查看 Chocolatey 是否安装成功。
+安装 Hugo Hugo 有两个版本，一个是普通版本，不支持Sass/SCSS，另一个扩展版本，支持Sass/SCSS.
+安装普通版本
+choco install hugo -confirm 安装支持Sass/SCSS 的版本
+choco install hugo-extended -confirm 创建站点 桌面右击打开 Git Bash Here，然后执行;
+hugo new site ./site 我们会发现在桌面上多出了一个 site 文件夹：
+新建文章 站点已经创建好，接下来我们新建一篇文章，进入 site 文件夹，在当前目录下打开 Git Bash Here：</description>
+    </item>
+    
+  </channel>
+</rss>

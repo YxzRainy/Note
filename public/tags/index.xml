@@ -20,6 +20,42 @@
     </item>
     
     <item>
+      <title>Frame</title>
+      <link>https://yxzi.xyz/tags/frame/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/frame/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://yxzi.xyz/tags/git/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://yxzi.xyz/tags/github/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://yxzi.xyz/tags/hugo/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://yxzi.xyz/tags/linux/</link>
       <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
@@ -29,11 +65,20 @@
     </item>
     
     <item>
-      <title>Note</title>
-      <link>https://yxzi.xyz/tags/note/</link>
+      <title>Network Security</title>
+      <link>https://yxzi.xyz/tags/network-security/</link>
       <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/tags/note/</guid>
+      <guid>https://yxzi.xyz/tags/network-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vmware</title>
+      <link>https://yxzi.xyz/tags/vmware/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/vmware/</guid>
       <description></description>
     </item>
     
@@ -43,6 +88,15 @@
       <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Note</title>
+      <link>https://yxzi.xyz/tags/note/</link>
+      <pubDate>Wed, 18 May 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/tags/note/</guid>
       <description></description>
     </item>
     

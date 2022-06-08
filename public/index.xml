@@ -12,18 +12,16 @@
     <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arp 中间人攻击</title>
-      <link>https://yxzi.xyz/blog/technology/network-security/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
+      <link>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
       <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/network-security/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
-      <description>Arp 中间人攻击 预备 所需工具 kali linux 虚拟机（攻击机）
-安装：
- disniff(用于自动化完成 arp 欺骗) nbtscan（用于内网主机发现）、 wirshark（用于嗅探受害机网络流量包）  windows 7 虚拟机（模拟受害机）
-配置 kali apt-get update
-更新kali软件列表
-apt-get install dsniff
-安装dsniff工具
-使目标机器断网 查看内网 ip
+      <guid>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
+      <description>Arp 中间人攻击 准备 Linux 虚拟机（模拟攻击机）
+Windows 7 虚拟机（模拟受害机）
+Windows 本地环境
+配置 kali 更新 Linux 软件列表
+apt-get update 安装 dsniff 工具
+apt-get install dsniff 使目标机器断网 查看内网 ip
 ifconfig 扫描内网网段
 nbtscan -r 192.168.54.0/24 可以看到探测到了 ip 为 192.168.54.249、名为 WIN7-2022BXTBSK
 HA受害机。
@@ -34,7 +32,31 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的�
 第一个参数可通过扫描确定，第二个参数可在攻击机中输入netstat -rn来查看：
 如图已经开始 arp 攻击了：
 这时候我们就会发现受害机已经 ping 不通了：
-至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。</description>
+至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。
+并且开启本地防火墙并不能拦截我们的 arp 欺骗。
+嗅探受害机的网络数据包 接下来，我们开始进行第二个阶段的攻击，嗅探受害机的网络数据包</description>
+    </item>
+    
+    <item>
+      <title>Hugo 自动化部署到服务器</title>
+      <link>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>Hugo 自动化部署到服务器 准备 Git
+Linux 服务器
+GitHub 仓库
+Windows 本地环境</description>
+    </item>
+    
+    <item>
+      <title>Win Server 2012 搭建 FTP 服务器</title>
+      <link>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>Win Server 2012 搭建 FTP 服务器 准备 Windows 本地环境
+Window Sever 2012 虚拟器</description>
     </item>
     
     <item>
@@ -161,6 +183,26 @@ Notepad++ 轻量、快速的文本编辑器</description>
       <description>Hello World 2021 年 10 月 1 日，
 我的站点正式发布。
 愿你被世界温柔以待。</description>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; GitHub 搭建个人博客</title>
+      <link>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</link>
+      <pubDate>Thu, 22 Jul 2021 06:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</guid>
+      <description>Hugo + GitHub 搭建个人博客 准备 Git
+Github 仓库
+Windows 本地环境
+安装 Chocolatey 因为我会用它来安装 Hugo，所以需要先安装 Chocolatey.
+使用管理员身份运行 windows 中的 Windows PowerShell（不是 CMD），并执行：
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString(&amp;#39;https://community.chocolatey.org/install.ps1&amp;#39;)) 输入 choco，查看 Chocolatey 是否安装成功。
+安装 Hugo Hugo 有两个版本，一个是普通版本，不支持Sass/SCSS，另一个扩展版本，支持Sass/SCSS.
+安装普通版本
+choco install hugo -confirm 安装支持Sass/SCSS 的版本
+choco install hugo-extended -confirm 创建站点 桌面右击打开 Git Bash Here，然后执行;
+hugo new site ./site 我们会发现在桌面上多出了一个 site 文件夹：
+新建文章 站点已经创建好，接下来我们新建一篇文章，进入 site 文件夹，在当前目录下打开 Git Bash Here：</description>
     </item>
     
     
