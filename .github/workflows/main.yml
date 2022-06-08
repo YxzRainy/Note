@@ -11,12 +11,6 @@ jobs:
     steps:
       - name: Check Out
         uses: actions/checkout@v2
-           
-      - name: Install Rsync 
-        run: npm install rsync -g
-        
-      - name: Install Sudo
-        run: apt-get install sudo
         
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -27,7 +21,7 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
         
-      - name: Deploy to Server
+      - name: Deploy To Server
         uses: easingthemes/ssh-deploy@main
         env:
             SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
