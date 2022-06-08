@@ -20,9 +20,6 @@ jobs:
       
       - name: Build Hugo
         run: hugo --minify
-
-      - name: Install Sudo
-        run: sudo -s
         
       - name: Deploy
         uses: easingthemes/ssh-deploy@main
