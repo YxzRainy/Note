@@ -12,6 +12,8 @@ jobs:
       - name: Check Out
         uses: actions/checkout@v2
         
+      
+        
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -22,7 +24,7 @@ jobs:
         run: hugo --minify
         
       - name: Deploy
-        uses: easingthemes/ssh-deploy@main
+        uses: YxzRainy/ssh-deploy@main
         env:
             SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
             SOURCE: ./public/*
