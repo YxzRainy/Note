@@ -22,7 +22,7 @@ jobs:
         run: hugo --minify
 
       - name: Install Sudo
-        run: yum install sudo
+        run: apt install sudo
         
       - name: Deploy
         uses: easingthemes/ssh-deploy@main
