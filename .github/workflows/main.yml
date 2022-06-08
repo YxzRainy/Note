@@ -22,7 +22,7 @@ jobs:
         run: hugo --minify
         
       - name: Deploy To Server
-        uses: easingthemes/ssh-deploy@main
+        uses: yeshan333/rsync-deploy-action@v1.0.0
         env:
             SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
             SOURCE: ./public/
