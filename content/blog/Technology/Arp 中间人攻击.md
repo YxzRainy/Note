@@ -2,36 +2,33 @@
 title: Arp 中间人攻击
 date: 2022-06-06 6:00:00
 categories:
-        - Network Security
+        - Technology
 tags:
         - Arp
         - Linux
-        - Note
+        - Vmware
+        - Network Security
 ---
 
 # Arp 中间人攻击
 
-## 所需工具
+## 准备
 
-kali linux 虚拟机（攻击机）
+Linux 虚拟机（模拟攻击机）
 
-安装：
+Windows 7 虚拟机（模拟受害机）
 
-- disniff(用于自动化完成 arp 欺骗)
-- nbtscan（用于内网主机发现）、
-- wirshark（用于嗅探受害机网络流量包）
-
-windows 7 虚拟机（模拟受害机）
+Windows 本地环境
 
 ## 配置 kali
 
-更新kali软件列表
+更新 Linux 软件列表
 
 ```sh
 apt-get update
 ```
 
-安装dsniff工具
+安装 dsniff 工具
 
 ```sh
 apt-get install dsniff
@@ -79,7 +76,8 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76
 
 这时候我们就会发现受害机已经 ping 不通了：
 
-![ping 不通](http://image.yxzi.xyz/image/2022/06/07/ping 不通.png)
+![ping不通](http://image.yxzi.xyz/image/2022/06/07/ping不通.png)
+
 至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。
 
 并且开启本地防火墙并不能拦截我们的 arp 欺骗。
