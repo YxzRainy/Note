@@ -18,17 +18,26 @@ jobs:
         uses: actions/setup-node@v1
         with:
             node-version: '10.x'
+      
            
       - name: Install Rsync
         run: npm install rsync
         
-
+     # - name: Setup Hugo
+      #  uses: peaceiris/actions-hugo@v2
+      #  with:
+     #     hugo-version: '0.91.2'
+      #    extended: true
+      
+      - name: Build Hugo
+        run: hugo --minify
         
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
             SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
             SOURCE: ./public/
+            ARGS: "-rltgoDzvO"
             PORT: ${{ secrets.PORT }}
             REMOTE_HOST: ${{ secrets.HOST }}
             REMOTE_USER: ${{ secrets.USERNAME}}
