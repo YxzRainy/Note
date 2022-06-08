@@ -15,6 +15,9 @@ jobs:
       - name: Install Rsync 
         run: npm install rsync -g
         
+      - name: Install Sudo
+        run: apt-get install sudo
+        
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
