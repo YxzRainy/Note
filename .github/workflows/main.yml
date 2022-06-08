@@ -12,8 +12,8 @@ jobs:
       - name: Check Out
         uses: actions/checkout@v2
            
-      #- name: Install Rsync 
-      #  run: npm install rsync -g
+      - name: Install Rsync 
+        run: npm install rsync -g
         
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
