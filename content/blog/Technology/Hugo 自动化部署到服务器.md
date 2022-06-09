@@ -1,6 +1,6 @@
 ---
 title: Hugo 自动化部署到服务器
-date: 2022-06-06 6:00:00
+date: 2022-06-06
 categories:
         - Technology
 tags:
@@ -22,6 +22,3 @@ Linux 服务器
 GitHub 仓库
 
 Windows 本地环境
-
-
-

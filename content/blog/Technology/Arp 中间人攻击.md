@@ -1,6 +1,6 @@
 ---
 title: Arp 中间人攻击
-date: 2022-06-06 6:00:00
+date: 2022-06-06
 categories:
         - Technology
 tags:
@@ -22,7 +22,9 @@ Windows 本地环境
 
 ## 配置 kali
 
-更新 Linux 软件列表
+
+
+## 更新 Linux 软件列表
 
 ```sh
 apt-get update
@@ -48,7 +50,7 @@ ifconfig
 nbtscan -r 192.168.54.0/24
 ```
 
-![扫描内网网段](http://image.yxzi.xyz/image/2022/06/07/扫描内网网段.png)
+![扫描内网网段](https://image.yxzi.xyz/image/2022/06/07/扫描内网网段.png)
 
 可以看到探测到了 ip 为 192.168.54.249、名为 WIN7-2022BXTBSK 
 
@@ -68,15 +70,15 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76
 
 第一个参数可通过扫描确定，第二个参数可在攻击机中输入`netstat -rn`来查看：
 
-![查看内网默网关](http://image.yxzi.xyz/image/2022/06/07/查看内网默认网关.png)
+![查看内网默网关](https://image.yxzi.xyz/image/2022/06/07/查看内网默认网关.png)
 
 如图已经开始 arp 攻击了：
 
-![开始攻击](http://image.yxzi.xyz/image/2022/06/07/开始攻击.png)
+![开始攻击](https://image.yxzi.xyz/image/2022/06/07/开始攻击.png)
 
 这时候我们就会发现受害机已经 ping 不通了：
 
-![ping不通](http://image.yxzi.xyz/image/2022/06/07/ping不通.png)
+![ping不通](https://image.yxzi.xyz/image/2022/06/07/ping不通.png)
 
 至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。
 
@@ -100,7 +102,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 打开流量分析神器 wireshark 并选择刚刚进行 arp 欺骗时所选择的那张网卡：
 
-![选择网卡](http://image.yxzi.xyz/image/2022/06/07/选择网卡.png)
+![选择网卡](https://image.yxzi.xyz/image/2022/06/07/选择网卡.png)
 
 ## 开始抓包
 
@@ -116,7 +118,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 5. 查看数据看包，存储着我们刚刚输入的明文用户名、密码。
 
-![查看数据包](http://image.yxzi.xyz/image/2022/06/07/查看数据包.png)
+![查看数据包](https://image.yxzi.xyz/image/2022/06/07/查看数据包.png)
 
 
 

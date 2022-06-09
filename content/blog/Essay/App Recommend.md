@@ -1,6 +1,6 @@
 ---
 title: App Recommend
-date: 2022-05-18 6:00:00
+date: 2022-05-18
 categories:
         - Essay
 tags:

@@ -1,6 +1,6 @@
 ---
-title: Hugo + GitHub 搭建个人博客 
-date: 2021-07-22 6:00:00
+title: Hugo + GitHub 搭建个人博客
+date: 2021-07-22
 categories:
         - Technology
 tags:
@@ -9,7 +9,7 @@ tags:
         - Note
 ---
 
-# Hugo + GitHub 搭建个人博客 
+# Hugo + GitHub 搭建个人博客
 
 ## 准备
 
@@ -74,14 +74,13 @@ hugo new post/article.md
 ```markdown
 ---
 title: hello world
-date: 2021-06-22 6:00:00
+date: 2021-06-22
 categories:
         - New
 tags:
         - Hugo
         - GitHub
 ---
-
 
 This is my first article!
 ```
@@ -116,9 +115,7 @@ theme = "yinyang"
 
 ## 本地预览站点
 
-![本地预览站点](http://image.yxzi.xyz/image/2022/06/08/本地预览站点.png )
-
-
+![本地预览站点](http://image.yxzi.xyz/image/2022/06/08/本地预览站点.png)
 
 ## 部署到 Github Page
 
