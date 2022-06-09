@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify
         
       - name: Deploy
-        uses: burnett01/rsync-deployments@5.2
+        uses: contention/rsync-deployments@v1.0.0
         env:
           switches: -avzr --delete
           path: ./public
