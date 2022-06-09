@@ -30,6 +30,6 @@ jobs:
           path: ./public
           remote_path: ${{ secrets.PATH }}
           remote_host: ${{ secrets.HOST }}
-          remote_port: ${{ secrets.PORT }}
+          remote_port: 1971
           remote_user: ${{ secrets.USERNAME }}
           remote_key: ${{ secrets.SSH_KEY }}
