@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Rainy · Blog</title>
-    <link>https://yxzi.xyz/categories/</link>
+    <link>https://note.yxzi.xyz/categories/</link>
     <description>Recent content in Categories on Rainy · Blog</description>
     <image>
-      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technology</title>
-      <link>https://yxzi.xyz/categories/technology/</link>
+      <link>https://note.yxzi.xyz/categories/technology/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/categories/technology/</guid>
+      <guid>https://note.yxzi.xyz/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Essay</title>
-      <link>https://yxzi.xyz/categories/essay/</link>
+      <link>https://note.yxzi.xyz/categories/essay/</link>
       <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/categories/essay/</guid>
+      <guid>https://note.yxzi.xyz/categories/essay/</guid>
       <description></description>
     </item>
     

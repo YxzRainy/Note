@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Technology on Rainy · Blog</title>
-    <link>https://yxzi.xyz/categories/technology/</link>
+    <link>https://note.yxzi.xyz/categories/technology/</link>
     <description>Recent content in Technology on Rainy · Blog</description>
     <image>
-      <url>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arp 中间人攻击</title>
-      <link>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
+      <link>https://note.yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
+      <guid>https://note.yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
       <description>Arp 中间人攻击 准备 Linux 虚拟机（模拟攻击机）
 Windows 7 虚拟机（模拟受害机）
 Windows 本地环境
@@ -38,10 +38,10 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的�
     
     <item>
       <title>Hugo 自动化部署到服务器</title>
-      <link>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://note.yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://note.yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>Hugo 自动化部署到服务器 准备 Git
 Linux 服务器
 GitHub 仓库
@@ -50,29 +50,29 @@ Windows 本地环境</description>
     
     <item>
       <title>Linux 环境安装 Hugo</title>
-      <link>https://yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</link>
+      <link>https://note.yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</guid>
+      <guid>https://note.yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Win Server 2012 搭建 FTP 服务器</title>
-      <link>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://note.yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://note.yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>Win Server 2012 搭建 FTP 服务器 准备 Windows 本地环境
 Window Sever 2012 虚拟器</description>
     </item>
     
     <item>
       <title>Hugo &#43; GitHub 搭建个人博客</title>
-      <link>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</link>
+      <link>https://note.yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</guid>
+      <guid>https://note.yxzi.xyz/blog/technology/hugo-&#43;-github-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-/</guid>
       <description>Hugo + GitHub 搭建个人博客 准备 Git
 Github 仓库
 Windows 本地环境
