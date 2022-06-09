@@ -9,18 +9,17 @@
       <link>https://yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 06:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/arp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yxzi.xyz/tags/arp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Arp 中间人攻击</title>
       <link>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
-      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
       <description>Arp 中间人攻击 准备 Linux 虚拟机（模拟攻击机）
 Windows 7 虚拟机（模拟受害机）
 Windows 本地环境
-配置 kali 更新 Linux 软件列表
-apt-get update 安装 dsniff 工具
+配置 kali 更新 Linux 软件列表 apt-get update 安装 dsniff 工具
 apt-get install dsniff 使目标机器断网 查看内网 ip
 ifconfig 扫描内网网段
 nbtscan -r 192.168.54.0/24 可以看到探测到了 ip 为 192.168.54.249、名为 WIN7-2022BXTBSK
@@ -38,9 +37,18 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的�
     </item>
     
     <item>
+      <title>Linux 环境安装 Hugo</title>
+      <link>https://yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Win Server 2012 搭建 FTP 服务器</title>
       <link>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 06 Jun 2022 06:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>Win Server 2012 搭建 FTP 服务器 准备 Windows 本地环境
