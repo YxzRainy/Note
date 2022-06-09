@@ -26,10 +26,9 @@ jobs:
       - name: Deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
-          switches: -avzr --delete
-          path: ./public
-          remote_path: /www/wwwroot/note.yxzi.xyz/
-          remote_host: 106.52.17.191
-          remote_port: '2222'
-          remote_user: root
-          remote_key: ${{ secrets.SSH_KEY }}
+         SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+         ARGS: "-rltgoDzvO"
+         SOURCE: "public/"
+         REMOTE_HOST: 106.52.17.191
+         REMOTE_USER: root
+         TARGET: /www/wwwroot/note.yxzi.xyz/
