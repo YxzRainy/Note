@@ -28,8 +28,8 @@ jobs:
         env:
           switches: -avzr --delete
           path: ./public
-          remote_path: ${{ secrets.PATH }}
-          remote_host: ${{ secrets.HOST }}
+          remote_path: /www/wwwroot/note.yxzi.xyz
+          remote_host: 106.52.17.191
           remote_port: 1971
-          remote_user: ${{ secrets.USERNAME }}
+          remote_user: root
           remote_key: ${{ secrets.SSH_KEY }}
