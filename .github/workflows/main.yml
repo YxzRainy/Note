@@ -31,4 +31,5 @@ jobs:
          SOURCE: "public/"
          REMOTE_HOST: 106.52.17.191
          REMOTE_USER: root
+         REMOTE_PORT: '2222'
          TARGET: /www/wwwroot/note.yxzi.xyz/
