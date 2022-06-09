@@ -6,29 +6,30 @@ on:
       - Blog 
 
 jobs:
-  build-and-deploy:
+  Build-and-Deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          
+      - name: Check Out
+        uses: actions/checkout@v2
+        
+      
+        
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.91.2'
+          extended: true
       
       - name: Build Hugo
         run: hugo --minify
         
-
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@main
+      - name: Deploy
+        uses: burnett01/rsync-deployments@5.2
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
-            SOURCE: ./public/
-            PORT: ${{ secrets.PORT }}
-            REMOTE_HOST: ${{ secrets.HOST }}
-            REMOTE_USER: ${{ secrets.USERNAME}}
-            TARGET: ${{ secrets.PATH }}
+          switches: -avzr --delete
+          path: ./public
+          remote_path: ${{ secrets.PATH }}
+          remote_host: ${{ secrets.HOST }}
+          remote_port: ${{ secrets.PORT }}
+          remote_user: ${{ secrets.USERNAME }}
+          remote_key: ${{ secrets.SSH_KEY }}
