@@ -30,6 +30,6 @@ jobs:
           path: ./public
           remote_path: /www/wwwroot/note.yxzi.xyz
           remote_host: 106.52.17.191
-          remote_port: 222
+          remote_port: 2222
           remote_user: root
           remote_key: ${{ secrets.SSH_KEY }}
