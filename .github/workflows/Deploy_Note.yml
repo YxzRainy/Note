@@ -1,12 +1,12 @@
-name: Deploy Blog
+name: Deploy Note
 on:
   push:
     branches:
-    # Blog 分支有 push 行为时就触发这个 action
-      - Blog 
+    # Note 分支有 push 行为时就触发这个 action
+      - Note
 
 jobs:
-  Build_AND_Deploy:
+  Build_And_Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out
