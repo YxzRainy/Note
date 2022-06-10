@@ -32,4 +32,4 @@ jobs:
          REMOTE_HOST: ${{ secrets.HOST }}
          REMOTE_USER: ${{ secrets.USERNAME }}
          REMOTE_PORT: '2222'
-         TARGET: ${{ secrets.PATH }}
+         TARGET: /www/wwwroot/note.yxzi.xyz/
