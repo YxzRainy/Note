@@ -23,7 +23,7 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
         
-      - name: Deploys
+      - name: Deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
