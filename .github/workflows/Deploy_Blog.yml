@@ -1,4 +1,4 @@
-name: DeployBlog
+name: Deploy Blog
 on:
   push:
     branches:
@@ -6,14 +6,12 @@ on:
       - Blog 
 
 jobs:
-  Build-and-Deploy:
+  Build_AND_Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out
         uses: actions/checkout@v2
-        
-      
-        
+           
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -23,13 +21,13 @@ jobs:
       - name: Build Hugo
         run: hugo --minify
         
-      - name: Deploys
+      - name: Deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
-         SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
          ARGS: "-rltgoDzvO"
-         SOURCE: "public/"
-         REMOTE_HOST: ${{ secrets.HOST }}
-         REMOTE_USER: ${{ secrets.USERNAME }}
-         REMOTE_PORT: ${{ secrets.PORT }}
-         TARGET: ${{ secrets.PATH }}
+         SOURCE: ${{ secrets.SOURCE }}
+         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+         REMOTE_USER: ${{ secrets.REMOTE_USER }}
+         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+         TARGET: ${{ secrets.TARGET }}
