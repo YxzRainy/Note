@@ -24,7 +24,7 @@ jobs:
       - name: Deploy
         uses: easingthemes/ssh-deploy@v2.2.11
         env:
-         SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
          ARGS: "-rltgoDzvO"
          SOURCE: ${{ secrets.SOURCE }}
          REMOTE_HOST: ${{ secrets.HOST }}
