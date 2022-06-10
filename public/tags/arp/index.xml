@@ -16,24 +16,22 @@
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://note.yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
-      <description>Arp 中间人攻击 准备 Linux 虚拟机（模拟攻击机）
-Windows 7 虚拟机（模拟受害机）
-Windows 本地环境
-配置 kali 更新 Linux 软件列表 apt-get update 安装 dsniff 工具
-apt-get install dsniff 使目标机器断网 查看内网 ip
+      <description>Arp 中间人攻击 使用 Windows 7 登录到 Window Sever 2012 上搭建好的 FTP 服务器。
+使用 kali
+准备 Linux，用来模拟攻击机，本文用的是系统为 kali，其他系统可以参考。
+Windows 7，用来模拟受害机。
+Window Sever 2012，用于搭建 FTP 服务器，
+Windows 本地环境，在 VMware 配置三台虚拟机
+搭建 FTP 站点 打开服务器管理器的仪表板。
+右上角管理 ，添加角色 Web 服务器：
+勾选后一直下一步，在角色服务找到 FTP 服务器并勾选 ：
+确认选项点击安装，等待安全完成即可。
+配置 Linux 更新 Linux 软件列表
+apt-get update 安装 dsniff 工具
+apt-get install dsniff 使目标机器断网 我们现在要使受害机断网，先查看内网 ip
 ifconfig 扫描内网网段
-nbtscan -r 192.168.54.0/24 可以看到探测到了 ip 为 192.168.54.249、名为 WIN7-2022BXTBSK
-HA受害机。
-开启 arp 欺骗攻击
-arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的某一张网卡来进行攻击，
--t第一个 ip 指定受害机的ip，第二个 ip 为内网默认网关（一般
-来说是路由器）的 ip。
-第一个参数可通过扫描确定，第二个参数可在攻击机中输入netstat -rn来查看：
-如图已经开始 arp 攻击了：
-这时候我们就会发现受害机已经 ping 不通了：
-至此，我们已经完成了 arp 欺骗的第一个目的：使目标机器断网。
-并且开启本地防火墙并不能拦截我们的 arp 欺骗。
-嗅探受害机的网络数据包 接下来，我们开始进行第二个阶段的攻击，嗅探受害机的网络数据包</description>
+nbtscan -r 192.168.54.0/24 可以看到探测到了 ip 为 192.168.54.249，名为 WIN7-2022BXTBSK 的受害机。
+开启 arp 欺骗攻击：</description>
     </item>
     
     <item>
@@ -43,16 +41,6 @@ arpspoof -i eth0 -t 192.168.54.249 192.168.54.76 其中，-i 指定攻击机的�
       
       <guid>https://note.yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Win Server 2012 搭建 FTP 服务器</title>
-      <link>https://note.yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://note.yxzi.xyz/blog/technology/win-server-2012-%E6%90%AD%E5%BB%BA-ftp-%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>Win Server 2012 搭建 FTP 服务器 准备 Windows 本地环境
-Window Sever 2012 虚拟器</description>
     </item>
     
   </channel>
