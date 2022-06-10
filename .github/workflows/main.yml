@@ -30,6 +30,6 @@ jobs:
          ARGS: "-rltgoDzvO"
          SOURCE: "public/"
          REMOTE_HOST: ${{ secrets.HOST }}
-         REMOTE_USER: root
+         REMOTE_USER: ${{ secrets.USERNAME }}
          REMOTE_PORT: '2222'
          TARGET: /www/wwwroot/note.yxzi.xyz/
