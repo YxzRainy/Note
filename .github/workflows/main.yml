@@ -30,6 +30,6 @@ jobs:
          ARGS: "-rltgoDzvO"
          SOURCE: "public/"
          REMOTE_HOST: ${{ secrets.HOST }}
-         REMOTE_USER: ${{ secrets.USERNAME }}
+         REMOTE_USER: ${{ secrets.USER_NAME }}
          REMOTE_PORT: ${{ secrets.PORT }}
          TARGET: ${{ secrets.TARGET }}
