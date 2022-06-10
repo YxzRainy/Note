@@ -29,7 +29,7 @@ jobs:
          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
          ARGS: "-rltgoDzvO"
          SOURCE: "public/"
-         REMOTE_HOST: 106.52.17.191
-         REMOTE_USER: root
-         REMOTE_PORT: '2222'
-         TARGET: /www/wwwroot/note.yxzi.xyz/
+         REMOTE_HOST: ${{ secrets.HOST }}
+         REMOTE_USER: ${{ secrets.USERNAME }}
+         REMOTE_PORT: ${{ secrets.PORT }}
+         TARGET: ${{ secrets.PATH }}
