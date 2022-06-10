@@ -1,5 +1,5 @@
 baseURL: "https://note.yxzi.xyz"
-title: Rainy · Blog
+title: Rainy · Note
 paginate: 10
 theme: PaperMod
 
@@ -97,20 +97,20 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: Categories
-      name: Categories
+    - identifier: Category
+      name: Category
       url: /Categories/
       weight: 10
-    - identifier: Tags
-      name: Tags
+    - identifier: Tag
+      name: Tag
       url: /Tags/
       weight: 20
     - identifier: Search
       name: Search
       url: /Search/
       weight: 20
-    - identifier: Archives
-      name: Archives
+    - identifier: Archive
+      name: Archive
       url: /Archives/
       weight: 20
 

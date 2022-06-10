@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DDL on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/ddl/</link>
+    <description>Recent content in DDL on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 24 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/ddl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL CREATE</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/ddl/create/</link>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/ddl/create/</guid>
+      <description>创建表 mysql&amp;gt; create table rainy(  -&amp;gt; id int,  -&amp;gt; name varchar(20)); Query OK, 0 rows affected (0.01 sec) </description>
+    </item>
+    
+    <item>
+      <title>MySQL ALTER</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/ddl/alter/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/ddl/alter/</guid>
+      <description>ALTER 修改数据表名或者修改数据表的字段.
+修改表名 ALTER TABLE 旧表名 RENAME 新表名。
+ALTER TABLE rainy RENAME Su; 修改字段 ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型。
+ALTER TABLE su CHANGE rainy apple VARCHAR(20); 修改字段的排列位置 ALTER TABLE 表名 MODIFY 字段名 1 VARCHAR(20) AFTER 字段名 2;
+ALTER TABLE su MODIFY rainy VARCHAR(20) AFTER two; 删除字段 </description>
+    </item>
+    
+  </channel>
+</rss>

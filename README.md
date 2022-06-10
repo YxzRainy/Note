@@ -1,6 +1,4 @@
-# Rainy 的博客
+# Rainy's notes
 
-## 前言
-
-一个 Hogo 博客的配置文件。 
+A configuration file for Hogo notes.
 

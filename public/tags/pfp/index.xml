@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PFP on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/pfp/</link>
+    <description>Recent content in PFP on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 26 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/pfp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP 指针函数</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E7%BB%84/%E6%8C%87%E9%92%88%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Thu, 26 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E7%BB%84/%E6%8C%87%E9%92%88%E5%87%BD%E6%95%B0/</guid>
+      <description>指针函数 next()和prex()会移动指针，有可能导致指针移出数组，导致
+数组不能使用，此时，无法通过next() 和prex()使指针回到数组，只能通过end()或reset()重置指针。</description>
+    </item>
+    
+    <item>
+      <title>PHP closure</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/closure/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/closure/</guid>
+      <description>closure php 的 Closure，v 也就是匿名函数。
+匿名函数中，默认无法访问外部函数中的变量。
+function demo() {  $a = 1;  function fun()  {  // 无法使用 demo() 中的 $a  echo $a;  };  fun(); }; demo(); 通过 use()将外部变量传入到内部函数的作用域内：
+function demo() {  $a = 1;  $fun = function () use ($a) {   echo $a;  };  $fun(); };  demo(); 闭包 匿名函数中的use()，其作用就是从父作用域继承变量，继承之后，就会形成一个闭包。
+function demo() {  $a = 1;  $fun = function () use ($a) {   echo $a;  };  return $fun; };  $closure = demo();  $closure(); </description>
+    </item>
+    
+    <item>
+      <title>PHP echo() 、print()、var_dump()的区别</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/echo-printvar_dump%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/echo-printvar_dump%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>echo() 、print()、var_dump()的区别 echo() 输出一个或多个字符串。
+echo() 实际不是一个函数（而是语言结构），因此可以不使用()。
+print() 输出一个或多个字符串。
+print() 实际不是一个函数（而是语言结构），因此可以不使用()。
+var_dump() 返回变量的类型与值。
+区别  echo()能接受多个字符串类型的参数，能同时输出多个字符串。当echo()接受多个参数时，不能使用括号。 print()只能接收 1 个字符串类型的参数；只能同时输出一个字符串； print()打印的值能直接赋值给一个变量：`$a = print “123” echo()输出的速度比 print() 快。 echo()没有返回值，而print()有返回值，其返回值永远为int类型的 1。  </description>
+    </item>
+    
+    <item>
+      <title>PHP static</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E5%8F%98%E9%87%8F/static/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E5%8F%98%E9%87%8F/static/</guid>
+      <description>static 静态全局变量与普通全局变量的区别 非静态全局变量的作用域是整个源程序， 当一个源程序由多个源文件组成时，非静态全局变量在各个源文件中都是有效的。
+静态全局变量的作用域只在当前源文件内， 在同一源程序的其它源文件中不能使用它，因此可以避免变量污染。
+静态局部变量与普通局部变量 静态局部变量只被初始化一次，变量下一次的值依据的是上次的结果值。
+静态函数与普通函数 静态函数在内存中只有一份，普通函数在每个被调用中维持一份拷贝。
+作用 拥挤函数的执行次数。
+统计函数多次调用的不同结果。</description>
+    </item>
+    
+    <item>
+      <title>PHP 伪类型</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E4%BC%AA%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E4%BC%AA%E7%B1%BB%E5%9E%8B/</guid>
+      <description>伪类型 用于在 PHP 文档里指示参数可以使用的类型和值，但实际上伪类型在 PHP 中不存在。
+mixed mixed 说明一个参数可以接受多种不同的(但不一定是所有的)类型。
+例如：gettype()可以接受所有的 PHP 类型，str_replace()可以接受字符串和数组，
+number number 说明一个参数可以是 integer 或者 float。
+callback 本文档中在 PHP5.4 引入 callable 类型之前使用了 callback 伪类型，二者涵义完全相同，
+array|object array|object 意思是参数既可以是 array 也可以是 object，
+void void 作为返回类型意味着函数的返回值是无用的，
+void 作为参数列表意味着函数不接受任何参数，</description>
+    </item>
+    
+    <item>
+      <title>PHP 变量</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E5%8F%98%E9%87%8F/%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E5%8F%98%E9%87%8F/%E5%8F%98%E9%87%8F/</guid>
+      <description>变量 预定义变量 指的是系统提前定义的变量，存储许多需要用到的数据，并且，预定义变量都 是数组。
+$_GET：获取所有表单以 get 方式提交的数据。
+$_POST：获取所有表单以 post 方式提交的 value。
+$_REQUEST：GET 和 POST 提交的都会保存。
+$_GLOBALS：PHP 中所有的全局变量。
+$_SERVER：服务器信息。
+$_SESSION：获取 session 会话数据。
+$_COOKIE：获取 cookie 的会话数据。
+$_ENV：环境信息。
+$_FILES：用户上传的文件信息。
+可变变量 可变变量就是变量的变量。
+$a = &amp;#39;b&amp;#39;; $b = &amp;#39;bb&amp;#39;; // $$a = $ + $a = $ + b = $b = bb echo $$a;  </description>
+    </item>
+    
+    <item>
+      <title>PHP 转换数据类型</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E8%BD%AC%E6%8D%A2%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E8%BD%AC%E6%8D%A2%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>转换数据类型 在很多的条件下，需要将指定的数据类型，转换成目标数据类型。
+自动转换 系统根据需求判定并转换（用的比较多，效率偏低）。
+$a = &amp;#39;abc1.1.1&amp;#39;; $b = &amp;#39;1.1.1abc&amp;#39;;  // 0 + 1.1 echo $a + $b; 强制转换 它会先复制一份需要被转换的数据，然后在对这份被复制的数据进行处理（不会处理实际的数据，它处理的是自己拷贝的）。
+() 在变量之前增加一个 ()，括号中的参数为目标数据类型。
+$a = &amp;#39;我是字符串呀&amp;#39;; $b = 123;  // 强制转换，使 a 中的数据变为浮点型 // 但 a 本身的数据并没有变为 float echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;, (float)$a; echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; // 0 echo &amp;#39;a = &amp;#39; . $a; //string echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;;  echo &amp;#39;此时 a 的数据类型依旧为：&amp;#39; . gettype($a); echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; echo &amp;#39;&amp;lt;hr/&amp;gt;&amp;#39;; settype() 设定数据类型，但与前面的强制转换()不同，它会直接改变数据本身。
+&amp;lt;?php $a = &amp;#39;我是字符串呀&amp;#39;; $b = 123;  // 强制设置数据类型 //true var_dump(settype($a, &amp;#39;int&amp;#39;)); echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; // a 的数据类型直接被设置成了 integer，和强制转换大不一样 echo &amp;#39;a 的数据类型为：&amp;#39; .</description>
+    </item>
+    
+    <item>
+      <title>PHP 判断数据类型</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</guid>
+      <description>判断变量类型 is_XX() 判断一个变量是否为指定数据类型，最终返回这个变量所保存数据的数据类型。
+Bool 类型不能用 echo 来查看，需要使用 var_dump() 查看。
+// true var_dump(is_int($a)); echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;;  // false var_dump(is_int($b)); echo &amp;#39;&amp;lt;hr/&amp;gt;&amp;#39;; gettype() 获取变量的类型，得到的是该类型对应的字符串。
+// string echo &amp;#39;a 的数据类型为：&amp;#39; . gettype($a); echo &amp;#39;&amp;lt;br/&amp;gt;&amp;#39;; // integer echo &amp;#39;b 的数据类型为：&amp;#39; . gettype($b);  echo &amp;#39;&amp;lt;hr/&amp;gt;&amp;#39;; </description>
+    </item>
+    
+    <item>
+      <title>PHP 数组</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%95%B0%E7%BB%84/%E6%95%B0%E7%BB%84/</guid>
+      <description>数组 索引数组 用数字作为键名的数组一般叫做索引数组。用字符串表示键的数组就是下面要介绍的关联数组。索引数组的键是整数，而且从 0 开始以此类推。
+关联数组 数组的key是字符串。
+特点   可以使用整数或字符串作为下标。
+  下标为整数则为索引数组。
+  下标都为字符串，则为关联数组。
+    不同的下标（字符串、整数）可以混合存在，则为混合数组。
+  数组中元素的顺序以放入顺序为准，与指定的下标无关。
+  特殊的下标自动转换：false、true、null。
+  </description>
+    </item>
+    
+    <item>
+      <title>PHP 文件包含</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/</guid>
+      <description>文件包含 在一个 PHP 脚本中，将另一个文件的代码插入到当前文件，并使用另一个文件中的方法、变量等等。
+用于实现代码模块化。
+被包含的文件是单独进行编译的
+包含方式 include() 一般放在程序的流程控制中，当程序执行时碰到才会引用，简化程序的执行流程。
+include()引入的文件有错误时，会继续执行，并返回一个警告。
+include once() 检查当前文件是否已经在前面被引入过了，如果已经引入过，则不在引入。
+可以避免某写代码重新执行而报错，比如重复引入导致常量重复定义。
+require() 一般放在 PHP 文件的最前面，程序在执行前就会先导入要引用的文件。
+require()引入的文件有错误时，执行会中断，并返回一个致命错误。
+require onec() 检查当前文件是否已经在前面被引入过了，如果已经引入过，则不在引入。
+可以避免某写代码重新执行而报错，比如重复引入导致常量重复定义。</description>
+    </item>
+    
+    <item>
+      <title>PHP 流程控制代替语法</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%BB%A3%E6%9B%BF%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%BB%A3%E6%9B%BF%E8%AF%AD%E6%B3%95/</guid>
+      <description>流程控制代替语法 代替 for PHP 本身是嵌入到 HTML 中的脚本语言，因此，我们可以这样书写：
+// 生成了九个一级标题元素。 &amp;lt;?php for ($i = 1; $i &amp;lt; 10; $i++) { ?&amp;gt;&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt; &amp;lt;?php } ?&amp;gt; 但是，如果我们以上面这种方式将 PHP 代码嵌入到 HTML 中，那么{}给我们所带来的观感是非常不好的。
+因此， PHP 提供了一种代替{}的机制：
+&amp;lt;?php for ($i = 1; $i &amp;lt; 10; $i++) : ?&amp;gt;&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt; &amp;lt;?php endfor; ?&amp;gt; 同样的，除了for，PHP 还支持 if、switch、while、foreach：
+&amp;lt;?php if (1 &amp;lt; 2) : ?&amp;gt;&amp;lt;h1&amp;gt;一级标题&amp;lt;/h1&amp;gt; &amp;lt;?php endif; ?&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>PHP 运算符</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <description>运算符 错误抑制符 在 PHP 中 有一些错误可以提前预知，但是这些错误可能无法避免，但又不希望报错给用户看，可以使用错误抑制符@()处理。
+&amp;lt;?php $a = 10; $b = 0; @($c = $a / $b);  echo $c; 错误抑制符通常在生产环境（上线）会用到，在开发的时候不会用系统本身最好没有任何。</description>
+    </item>
+    
+    <item>
+      <title>PHP 函数</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 形参默认值 定义函数时，指定形参的默认值。这个默认值会在调用该函数且并未传入实参的时候，当作该函数的默认实参传入。
+function fun($a = 1) {  echo $a; } fun(); 可变函数 将定义好的函数名赋值给一个变量，然后通过这个变量来调用。
+function sysFun($fun, $num) {  $num = $num + 10;  // 函数调用  return $fun($num); }  function userFun($num) {  return $num * $num * $num * $num; } echo sysFun(&amp;#39;userFun&amp;#39;, 10); </description>
+    </item>
+    
+    <item>
+      <title>PHP 操作数据库</title>
+      <link>https://note.yxzi.xyz/note/technology/language/php/%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/php/%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+      <description>操作数据库 // 链接数据库 $link = mysqli_connect(&amp;#39;localhost&amp;#39;, &amp;#39;root&amp;#39;, &amp;#39;123456&amp;#39;, &amp;#39;my_shop&amp;#39;, &amp;#39;3306&amp;#39;); if (!$link) {  exit(&amp;#39;数据库链接失败&amp;#39;); }  // 对数据库进行一次查询 $res = mysqli_query($link, &amp;#39;select * from hr_goods&amp;#39;);  // 获取查询结果中的所有字段，每个字段都是一个数组 while ($row = mysqli_fetch_array($res)) {  echo $row[1] . &amp;#39;、&amp;#39;; }  </description>
+    </item>
+    
+  </channel>
+</rss>

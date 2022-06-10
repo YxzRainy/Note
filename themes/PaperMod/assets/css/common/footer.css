@@ -60,9 +60,10 @@ a {
 
 #Record {
 	position: absolute;
-	left: 1rem;
+	left: 50%;
 	padding-bottom: 1rem;
 	display: inline-block;
+	transform: translate(-50%);
 }
 
 #Record .PublicSecurityRecord {

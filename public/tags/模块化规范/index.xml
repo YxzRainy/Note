@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>模块化规范 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/</link>
+    <description>Recent content in 模块化规范 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 15 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScrip AMD</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/amd/amd/</guid>
+      <description>AMD 专门用于浏览器端，实现异步加载模块，该规范依赖于 require.js。
+不是所有模块都支持 AMD 规范，比如 angular.js，但也可以通过 shim配置来使用angular.js
+定义模块 定义没有依赖的模块：
+define(function () { 	// 暴露模块 	return module; }); 定义有依赖的模块：
+// 显式声明依赖注入 define([&amp;#39;module1&amp;#39;, &amp;#39;module2&amp;#39;, &amp;#39;module2&amp;#39;], function (m1Obj, m2Obj, m3Obj) { 	// 暴露模块 	return module; }); 导入模块 require([ 	&amp;#39;module1&amp;#39;, 	&amp;#39;module2&amp;#39;, 	&amp;#39;module3&amp;#39;, 	function (m1Obj, m2Obj, m3Obj) { 	// 使用 m1Obj, m2Obj, m3Obj 	}, ]); 实现 使用require.js。</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip CMD</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/cmd/cmd/</guid>
+      <description>CMD 专用于浏览器端，异步加载模块。
+惰性加载模块，即使用模块时才会加载。
+实现该规范使用Sea.js
+定义模块 注意，回调函数中的三个参数require, exports, module必须加上，否则会报错。
+定义没有依赖的模块：
+define(function (require, exports, module) { 	// 暴露模块，通常用后者 	exports.xxx = value; 	module.exports = value; }); 定义有依赖的模块：
+define(function (require, exports, module) { 	// 同步导入模块 	var module2 = require(&amp;#39;./module2&amp;#39;); 	// 异步导入依赖模块 	require.async(&amp;#39;./module3&amp;#39;, function (m3Obj) { 	// 使用 m3Obj 	}); 	// 暴露模块 	exports.xxx = value; }); 导入模块 define(function (require) { 	var m1 = require(&amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip CommonJS</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/commonjs/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/commonjs/commonjs/</guid>
+      <description>CommonJS 一种为 JS 的表现指定的规范，它希望 JavaScrip 可以运行在任何地方，Node.js采用了这个规范。
+一个单独文件就是一个模块，通过require()来同步加载要依赖的模块，然后通过extports或则module.exports来暴露模块的接口。
+定义模块 两种方式所暴露的模块都是一个对象。
+module.expots 将需要暴露的属性或方法保存到exports对象中。
+// ExposedObjects() 将会保存到 exports 对象中，并暴露出去 module.expots = ExposedObjects(){ }; exports.xxx 给exports定义不同的xxx 对象，可以暴露不同属性或方法。
+// 不同的对象暴露不同的方法或属性 expots.obj = ExposedObjects(){ }; expots.obj2 = ExposedObjects2(){ } expots.obj3 = ExposedObjects3(){ } 导入模块 // 导入第三方模块 require(&amp;#39;jquery&amp;#39;); // 导入自定义模块 require(&amp;#39;modules.js&amp;#39;); 实现 服务器端 直接使用 Node.js，加载模块时是同步加载，这会导致阻塞（等待），但因为是在服务器端，影响也不是很大，无非是加载的时间比较长。
+浏览器端 加载模块时是同步加载，也会导致阻塞，且因为是在浏览器端，加载的时间非常长，用户体验不好（页面白屏），因此，我们需要将模块进行编译打包，以此来缩短加载时间。
+打包工具：Browserify.</description>
+    </item>
+    
+    <item>
+      <title>JavaScrip ES6 模块化规范</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E6%A8%A1%E5%9D%97%E5%8C%96/es6-module/es6-%E6%A8%A1%E5%9D%97%E5%8C%96%E8%A7%84%E8%8C%83/</guid>
+      <description>ES6 模块化规范 在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。
+ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。
+依赖模块需要借助 Browserify来打包。
+暴露模块 使用export来暴露模块，它用于规定模块的对外接口。
+分别暴露 export function fun1() { 	console.log(&amp;#39;fun1 module1&amp;#39;); } export function fun11() { 	console.log(&amp;#39;fun11 module1&amp;#39;); } export var arr = [9999, 34, 5, 6, 7565, 757, 6]; 统一暴露 function fun2() { 	console.log(&amp;#39;fun2 module2&amp;#39;); } function fun22() { 	console.log(&amp;#39;fun2 module2&amp;#39;); } export { fun2, fun22 }; 默认暴露 使用默认暴露，可以暴露任意数据类型；且暴露的是什么数据类型，接收到的就是什么数据类型；可以使用任意的变量来接收。
+在同一个模块中，只允许用export default 暴露一次。</description>
+    </item>
+    
+  </channel>
+</rss>

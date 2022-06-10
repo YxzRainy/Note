@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WinSCP on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/winscp/</link>
+    <description>Recent content in WinSCP on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/winscp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WinSCP SSH 密钥登录</title>
+      <link>https://note.yxzi.xyz/note/technology/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
+      <description>WinSCP SSH 密钥登录 WinSCP -&amp;gt; 高级 -&amp;gt; SSH -&amp;gt; 验证 -&amp;gt; 密钥文件</description>
+    </item>
+    
+  </channel>
+</rss>

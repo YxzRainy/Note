@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>分组函数 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/</link>
+    <description>Recent content in 分组函数 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 25 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL COUNT</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/count/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/count/</guid>
+      <description>COUNT COUNT(*) 统计表的行数，在统计结果的时候，不会忽略字段值为 NULL 的行。
+这种写法用的比较多，因为在一般的存储引擎下，COUNT(*)的效率通常比较高。
+COUNT(1) 忽略所有字段，1 表示一个固定值，也可以用 COUNT(2)、COUNT(3) 代替，在统计结果的时候，不会忽略字段值为 NULL 的行。
+COUNT(字段名) 统计指定字段名的值有多少行，字段值为 NULL 的行会被忽略统计。
+COUNT(DISTINCT 字段名) 统计指定字段名的值有多少行，，字段值为 NULL 或重复的行会被忽略统计。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 分组函数</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/%E5%88%86%E7%BB%84%E5%87%BD%E6%95%B0/</guid>
+      <description>分组函数 与分组函数一同查询的字段要求是GROUP BY后的字段。
+SUM 统计表中字段的和。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECT SUM(salary) FROM employees; AVG 统计表中字段的平均值。
+一般用于处理数值类型，计算时会忽略 NULL 值。
+SELECT AVG(salary) FROM employees; MAX 统计表中字段的最大值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECT MAX(salary) FROM employees; MIN 统计表中字段的最小值，可以处理任何数据类型，计算时会忽略 NULL 值。
+SELECT MIN(salary) FROM employees; COUNT 统计表的行数，可以处理任何数据类型，计算时会忽略 NULL 值。
+查询总行数 SELECT COUNT(*)FROM employees </description>
+    </item>
+    
+  </channel>
+</rss>

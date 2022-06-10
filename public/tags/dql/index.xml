@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DQL on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/dql/</link>
+    <description>Recent content in DQL on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/dql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 外连接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%A4%96%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%A4%96%E8%BF%9E%E6%8E%A5/</guid>
+      <description>外连接 查询主表中的所有记录，如果从表中有与其匹配的记录，则显示该记录的值；如果从表中没有与其匹配的记录，则显示 Null。
+左外链接 LEFT JOIN 的左侧是主表。
+查询男朋友不在男神表的女神名 SELECT b.name AS Name FROM beauty AS b LEFT OUTER JOIN boys boy ON b.boyfriend_id = boy.id WHERE boy.boyName IS NULL 查询哪些部门没有员工 SELECT department_name FROM departments AS d LEFT OUTER JOIN employees e ON d.department_id = e.department_id WHERE e.department_id IS NULL 右外链接 RIGHT JOIN 的右侧是主表。
+查询男朋友不在男神表的女神名 SELECT b.name AS Name FROM boys boy RIGHT OUTER JOIN beauty AS b ON b.boyfriend_id = boy.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>等值链接 判断不同表中都包含的字段是否相等，相等则显示，不等则过滤。且一般都用=来判断。
+一般需要为表起别名。
+查询员工名、部门名、工种名、并按部门名降序（三表链接） SELECT last_name, department_name,job_title FROM employees e INNER JOIN departments d ON e.department_id = d.department_id INNER JOIN jobs j ON e.job_id = j.job_id ORDER BY department_name DESC; </description>
+    </item>
+    
+    <item>
+      <title>MySQL 自链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E8%87%AA%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E8%87%AA%E8%BF%9E%E6%8E%A5/</guid>
+      <description>自链接 判断同一张表中的不同字段是否相等，相等则显示，不相等则过滤。需要给同一张表取不同的别名，让系统分清同一张表中的不同字段。
+查询员工名所对应的领导名 SELECT e.last_name AS employeeName,m.last_name AS managerName FROM employees AS e INNER JOIN employees AS m ON e.manager_id = m.employee_id </description>
+    </item>
+    
+    <item>
+      <title>MySQL 非等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>非等值链接 查询员工的工资和工资级别，并按工资级别降序 SELECT salary,grade_level FROM employees AS e INNER JOIN job_grades AS g ON e.salary BETWEEN g.lowest_sal AND g.highest_sal ORDER BY grade_level DESC </description>
+    </item>
+    
+    <item>
+      <title>MySQL 交叉链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E4%BA%A4%E5%8F%89%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E4%BA%A4%E5%8F%89%E9%93%BE%E6%8E%A5/</guid>
+      <description>交叉链接 返回左表中的所有行，左表中的每一行与右表中的所有行组合。交叉联接也称作笛卡尔积
+笛卡尔乘积错误 表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。****
+SELECT b.name,boy.boyName FROM beauty AS b,boys AS boy 笛卡尔乘积也叫交叉链接：
+SELECT b.name,boy.boyName FROM beauty AS b CROSS JOIN boys boy 导致错误的原因是因为没有添加有效的链接条件。
+只需要添加有效的链接条件即可：
+SELECT b.name,boy.boyName FROM beauty AS b LEFT OUTER JOIN boys AS boy # 链接条件 ON b.boyfriend_id = boy.id </description>
+    </item>
+    
+    <item>
+      <title>MySQL  内链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/%E5%86%85%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/%E5%86%85%E9%93%BE%E6%8E%A5/</guid>
+      <description>内链接 查询的是多张表交集部分的记录。
+SQL 99 内链接 SQL 99 支持内链接、外连接以及交叉链接，并且该版本的链接查询语法要比 SQL 92 的可读性要高）。
+SELECT 查询列表 FROM 表一 别名 INNER JOIN 表二 别名 # SQL 92 用 WHERE，SQL99 用 ON ON 链接条件 WHERE SQL 92 内链接 SQL 92 只支持内链接，语法：
+SELECT 查询列表 FROM 表一 别名,表二 别名 WHERE 链接条件 </description>
+    </item>
+    
+    <item>
+      <title>MySQL 等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>等值链接 判断不同表中都包含的字段是否相等，相等则显示，不等则过滤。且一般都用=来判断。
+查询的是多张表的交集字段。
+一般需要为表起别名。
+注意
+使用链接查询，很多时候容易出现Column &#39;字段名&#39; in ambiguousfield 错误，这种情况一般是因为不同的表中含有相同的字段名，导致系统无法知道我们到底要查询哪个表中的字段。这个时候只需要指定一下我们要查询的是哪个表中的字段即可。
+查询女神名所对应的男神名 SELECT name,boyName FROM beauty,boys WHERE beauty.boyfriend_id = boys.id; 查询员工名所对应的部门名 SELECT last_name AS 员工名,department_name AS 部门名 FROM employees,departments WHERE employees.department_id = departments.department_id 查询员工名、工种号、工种名 链接查询通常比较长，因此我们可以给表定义一个别名。
+注意，如果我们为一些表起了别名之后，后续的语句当中如果需要用到这些表，则只能用我们定义的别名，不能用原本的表名。
+# 因为jobs 表和 employees 表中都用 job_id， # 系统不知道我们到底要查询哪一个， # 因此，这里需要指定一下我们要查询哪个表中的job_id SELECT last_name,员工表.job_id,job_title FROM employees AS 员工表, jobs AS 工种表 WHERE 员工表.job_id = 工种表.job_id; 查询城市名中第二个字符为 o 的部门和城市名 SELECT department_name,	city FROM departments AS 部门表,locations AS 位置表 WHERE 部门表.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 自链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E8%87%AA%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E8%87%AA%E9%93%BE%E6%8E%A5/</guid>
+      <description>自链接 判断同一张表中的不同字段是否相等，相等则显示，不相等则过滤。
+需要给同一张表取不同的别名，让系统分清同一张表中的不同字段。
+查询员工名所对应的领导名 SELECT 员工表.last_name AS 员工,领导表.last_name AS 领导 FROM employees AS 员工表, employees AS 领导表 WHERE 员工表.manager_id= 领导表.employee_id; </description>
+    </item>
+    
+    <item>
+      <title>MySQL 非等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>非等值链接 新建查询并运行。
+CREATE TABLE job_grades (grade_level VARCHAR(3),  lowest_sal int,  highest_sal int);  INSERT INTO job_grades VALUES (&amp;#39;A&amp;#39;, 1000, 2999);  INSERT INTO job_grades VALUES (&amp;#39;B&amp;#39;, 3000, 5999);  INSERT INTO job_grades VALUES(&amp;#39;C&amp;#39;, 6000, 9999);  INSERT INTO job_grades VALUES(&amp;#39;D&amp;#39;, 10000, 14999);  INSERT INTO job_grades VALUES(&amp;#39;E&amp;#39;, 15000, 24999);  INSERT INTO job_grades VALUES(&amp;#39;F&amp;#39;, 25000, 40000); 查询员工的工资和工资级别 SELECT salary,grade_level FROM employees AS 员工表, job_grades 工资等级表 WHERE 员工表.salary BETWEEN 工资等级表.lowest_sal AND 工资等级表.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 分组查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/%E5%88%86%E7%BB%84%E6%9F%A5%E8%AF%A2/</guid>
+      <description>分组查询 通过一定的规则将一个数据集划分为若干个小组，然后对这些小组中的数据进行处理。
+语法 SELECT 字段名 FROM 表名 WHERE 分组前的筛选条件 GROUP BY 依照哪个字段进行分组 ORDER BY 排序列表 HAVING 分组后的筛选条件 查询列表必须特殊，必须实分组函数和 GROUP BY后面出现的字段。
+分组查询的筛选条件被分为分组前的筛选和分组后的筛选
+WHERE 和 HAVING WHERE，分组之前的筛选条件，数据来源是原始表。
+HAVING，分组之后的筛选条件，数据来源是经过 WHERE 筛选后的表。
+用先用 WHERE 来进行筛选的，优先考虑先用 WHERE 来进行筛选。
+按单个字段分组 查询每个工种的最高工资 SELECT MAX(salary),job_id FROM employees GROUP BY job_id 查询每个部门，邮箱中包含 a 字符的平均工资 SELECT AVG(salary), department_id FROM employees WHERE email LIKE &amp;#39;%a%&amp;#39; GROUP BY department_id 查询每个领导手下有奖金的员工的最高工资 SELECT MAX(salary),manager_id FROM employees WHERE commission_pct IS NOT NULL GROUP BY manager_id 查询哪些部门的员工数 &amp;gt; 2 SELECT COUNT(*) AS 员工个数, department_id FROM employees GROUP BY department_id HAVING 员工个数 &amp;gt;2; 查询哪些工种编号的最高工资 &amp;gt; 12000 SELECT MAX(salary) AS 最高工资, job_id FROM employees WHERE commission_pct IS NOT NULL GROUP BY job_id HAVING 最高工资 &amp;gt;12000; 查询哪些领导编号 &amp;gt;102 ，且最低工资 &amp;gt; 5000 SELECT MIN(salary) AS 最低工资,manager_id FROM employees WHERE manager_id &amp;gt; 102 GROUP BY manager_id HAVING 最低工资 &amp;gt; 5000; 按表达式或函数分组 按员工姓的长度分组，查询每组员工个数 &amp;gt;5 的组 SELECT COUNT(*) AS 员工个数,LENGTH(last_name) AS 这些员工的姓名长度 FROM employees GROUP BY LENGTH(last_name) HAVING 员工个数 &amp;gt; 5 按多个字段分组 将GROUP BY后面的多个字段用,隔开即可。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 链接查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/</guid>
+      <description>链接查询 当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 函数</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</guid>
+      <description>函数 函数之间可以嵌套
+语法 SELECT 函数名(实参列表,表名) 单行函数 主要用于处理数据，传入一个参数，返回一个值。
+ 字符函数，传入的参数为字符串类型。 数学函数，传入的参数为数字类型。 日期函数，传入的参数为日期类型。 其他函数 流程控制函数，可以实现一些分支结构。  分组函数 主要用于统计数据，传入一组参数，并返回一个值，也叫统计函数、组函数、聚合函数。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 模糊查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Sat, 23 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2/</guid>
+      <description>模糊查询 LIKE 查询某个字段中所有包含单个或多个字符的数据
+查询员工名中第三个字符为 n，第五个字符为 l 的员工名和工资 _通配符，表示匹配任意单个字符。
+SELECT last_name, salary FROM employees WHERE last_name LIKE # 第三个字符为 n，第五个字符为 l 的数据 &amp;#39;__n_l%&amp;#39;; 查询员工名中第二个字符为 _ 的员工名 \转义字符，表示特殊的控制意义，一般用于格式控制。
+SELECT last_name, salary FROM employees WHERE last_name LIKE &amp;#39;_\_%&amp;#39;; ESCAPE关键字可以让我们自定义转义字符。
+SELECT last_name, salary FROM employees WHERE last_name LIKE &amp;#39;_$_%&amp;#39; # 自定义一个转义字符 $ ESCAPE &amp;#39;$&amp;#39;; 查询员工名中包含字符 a 的员工信息 %通配符，表示匹配任意多个字符，且包含 0 个字符。
+SELECT * FROM employees WHERE last_name LIKE # % 表示匹配任意内容的意思 # 这里的 % 表示匹配 a 字符前面和后面都有任意字符的数据 &amp;#39;%a%&amp;#39;; BETWEEN AND 查询某个字段中所有在&amp;hellip;和&amp;hellip;之间的数据。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 排序查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/%E6%8E%92%E5%BA%8F%E6%9F%A5%E8%AF%A2/</guid>
+      <description>排序查询 语法 SELECT 查询列表 FROM 表名 WHERE 筛选条件 ORDER BY 排序列表 ASC DESC 升序/降序 特点  ASC 代表升序，DESC 代表降序，如果不写，则默认是升序。 支持单个字段、多个字段、表达式、函数、别名等。 一般放在查询语句的最后面，limit 语句除外。  按字段排序 查询员工信息，并按工资从高至低排序 SELECT * FROM employees WHERE salary # 降序 用 DESC ，升序用 ASC ORDER BY salary DESC; 按多个字段排序 查询员工信息，并先按工资升序，再按员工编号降序 如果有两种排序规则，若第一种排序规则中有相同的数据，那么这两个数据应该哪个在前，哪个在后呢？这时候会按照第二种排序规则进行排序，决定第一种排序规则中的相同数据的先后顺序。
+SELECT *, salary AS 工资, employee_id AS 员工编号 FROM employees ORDER BY salary ASC,employee_id DESC; 按表达式排序 查询部门编号 &amp;gt;= 90 的员工信息，并按入职的先后顺序排序 SELECT * FROM employees WHERE department_id &amp;gt;= 90 # 降序 用 DESC ，升序用 ASC ORDER BY salary ASC; 按表达式排序 SELECT *, # 因为表中没有年薪这个字段，所以我们需要用表达式来计算每个员工的年薪 salary * 12*(1 + IFNULL(commission_pct,0)) AS 年薪 FROM employees ORDER BY salary * 12*(1 + IFNULL(commission_pct,0)) DESC; 按别名排序 查询员工的信息和年薪，并按年薪的高低排序 SELECT *, # 因为表中没有年薪这个字段，所以我们需要用表达式来计算每个员工的年薪 salary * 12*(1 + IFNULL(commission_pct,0)) AS 年薪 FROM employees # 用表达式所对应的别名来替代表达式，使得语句更好理解 ORDER BY 年薪 DESC; 按函数排序 查询远东的姓名和工资，并按姓的字节长度从多到少排序 SELECT LENGTH(last_name) AS 字节长度, last_name,salary FROM employees ORDER BY LENGTH(last_name) DESC;  </description>
+    </item>
+    
+    <item>
+      <title>MySQL 基础查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/</guid>
+      <description>基础查询 我们用的是名为 MyEmployees.sql 和 Girls.sql 的 SQL 文件。
+语法 select 查询列表 from 表名 特点  查询列表可以是表中的字段、常量、表达式、函数。 查询的结果是一个虚拟的表格。  查询表中的单个字段 SELECT last_name FROM employees; 查询表中的多个字段 会以特定的顺序显示我们查询的字段。
+SELECT last_name,first_name,email FROM employees; 查询表中的所有字段 会以表原本的字段顺序显示我们查询的字段
+SELECT * FROM employees; 区分关键字和字段名 MySQL 中，我们可以用一对着重号**``**来区 MySQL 中的分字段和关键字
+SELECT `NAME` FROM rainy; 查询常量 SELECT &amp;#39;john&amp;#39;; 查询表达式 SELECT 100 * 57; 起别名 自定义字段名（列名），起别名可以使我们更好的理解表。
+有时候，字段名可能会是一些表达式，会让输出的虚拟表达中的字段名难以理解，这时候，我们可以为其设置一个便于理解的字段名。
+表达式可以用这个表达式的别名来代替该表达式 当我们为一个表达式定义了一个别名，如果后续我们需要用到这个表达式，那么我们可以不用再重复书写表达式，直接写别名即可。
+SELECT *, # 因为表中没有年薪这个字段，所以我们需要用表达式来计算每个员工的年薪 salary * 12*(1 + IFNULL(commission_pct,0)) AS 年薪 FROM employees # 用表达式所对应的别名来替代表达式，使得语句更好理解 ORDER BY 年薪 DESC; 如果要查询的字段中有重名的情况，也可以使用别名来区分。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 条件查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/</guid>
+      <description>条件查询 语法 select # 3、查询 	QueryList from # 1、寻找库中有无指定名 TableName WHERE # 2、筛选满足条件的字段 	Conditional Expression; 分类  按条件表达式查询，主要用条件运算符 按逻辑表达式查询，主要用逻辑运算符 模糊查询，主要用模糊关键字  &amp;gt; 大于。
+查询工资大于 12000 的员工信息 SELECT * FROM employees WHERE salary &amp;gt; 12000; &amp;lt; 小于。
+= 等于。
+&amp;lt;&amp;gt; 不等于，也可以用 !=，但是在 MySQL 中 建议中 &amp;lt;&amp;gt;。
+查询部门编号不等于 90 号的员工名和部门编号 SELECT last_name, department_id FROM employees WHERE department_id &amp;lt;&amp;gt; 90; &amp;gt;= 大于等于。
+&amp;lt;= 小于等于。</description>
+    </item>
+    
+    <item>
+      <title>MySQL 逻辑查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/%E9%80%BB%E8%BE%91%E6%9F%A5%E8%AF%A2/</guid>
+      <description>逻辑查询 AND 与运算符，也可以用 &amp;amp;&amp;amp;，但是在 MySQL 中，建议用 and。
+当表达式都为 true 时，结果才为 true，否则结果为 false。
+查询工资在 10000-20000 之间的员工名、工资以及奖金 SELECT last_name, salary, commission_pct FROM employees WHERE salary &amp;gt;= 12000 AND  salary &amp;lt;= 20000; OR 或运算符，但也可以用 ||，但是在 MySQL 中，建议用 or。
+当表达式都为 false 时，结果才为 false，否则结果为 true。
+查询部门编号不在 90 - 100 之间，或者工资高于 15000 的员工信息 SELECT * FROM employees WHERE # 筛选部门 id 小于 90 或 大于 100 d department_id &amp;lt; 90 OR department_id &amp;gt; 110 OR  salary &amp;gt; 15000; NOT 非运算符，但也可以用 !</description>
+    </item>
+    
+  </channel>
+</rss>

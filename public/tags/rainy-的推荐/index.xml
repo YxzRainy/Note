@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rainy 的推荐 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/rainy-%E7%9A%84%E6%8E%A8%E8%8D%90/</link>
+    <description>Recent content in Rainy 的推荐 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/rainy-%E7%9A%84%E6%8E%A8%E8%8D%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vs Code 扩展</title>
+      <link>https://note.yxzi.xyz/note/technology/softwareuse/vscode/%E6%89%A9%E5%B1%95/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/softwareuse/vscode/%E6%89%A9%E5%B1%95/</guid>
+      <description>Vs Code 扩展 Bracket Pair Colorizer 给匹配的括号着色
+Path Intellisense 自动完成文件名
+Material Icon Theme 好看的文件图标
+Prettier - Code formatter 更优雅的代码格式化。vscode 里比较优秀的一个格式化插件。
+VS Code Counter 统计代码总行数、注释行数、空白行数，以及使用的语言。
+使用方法：右键需要统计的文件夹—Count lines in directory
+Power Mode 一款超级炫酷的编辑代码的插
+HTML Snippets 非常实用的 HTML 代码片段以及提示
+Atuo Rename Tag 修改 html 标签，自动帮你完成尾部闭合标签的同步修改
+Code Runner 能够运行多种语言的代码片段或代码文件：JavaScript，C，C ++，Java，PHP，Python，Perl，Ruby，Go 等等
+Easy LESS 保存style.less后，会自动生成style.css到当前路径
+px to rem &amp;amp; rpx 实现 px 和 rem 单位之间转换，并支持 WXSS。
+Markdown Preview Mermaid Support markdown 支持思维导图
+Vetur vue 补全</description>
+    </item>
+    
+  </channel>
+</rss>

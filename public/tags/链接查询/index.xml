@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>链接查询 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/</link>
+    <description>Recent content in 链接查询 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 外连接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%A4%96%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%A4%96%E8%BF%9E%E6%8E%A5/</guid>
+      <description>外连接 查询主表中的所有记录，如果从表中有与其匹配的记录，则显示该记录的值；如果从表中没有与其匹配的记录，则显示 Null。
+左外链接 LEFT JOIN 的左侧是主表。
+查询男朋友不在男神表的女神名 SELECT b.name AS Name FROM beauty AS b LEFT OUTER JOIN boys boy ON b.boyfriend_id = boy.id WHERE boy.boyName IS NULL 查询哪些部门没有员工 SELECT department_name FROM departments AS d LEFT OUTER JOIN employees e ON d.department_id = e.department_id WHERE e.department_id IS NULL 右外链接 RIGHT JOIN 的右侧是主表。
+查询男朋友不在男神表的女神名 SELECT b.name AS Name FROM boys boy RIGHT OUTER JOIN beauty AS b ON b.boyfriend_id = boy.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>等值链接 判断不同表中都包含的字段是否相等，相等则显示，不等则过滤。且一般都用=来判断。
+一般需要为表起别名。
+查询员工名、部门名、工种名、并按部门名降序（三表链接） SELECT last_name, department_name,job_title FROM employees e INNER JOIN departments d ON e.department_id = d.department_id INNER JOIN jobs j ON e.job_id = j.job_id ORDER BY department_name DESC; </description>
+    </item>
+    
+    <item>
+      <title>MySQL 自链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E8%87%AA%E8%BF%9E%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E8%87%AA%E8%BF%9E%E6%8E%A5/</guid>
+      <description>自链接 判断同一张表中的不同字段是否相等，相等则显示，不相等则过滤。需要给同一张表取不同的别名，让系统分清同一张表中的不同字段。
+查询员工名所对应的领导名 SELECT e.last_name AS employeeName,m.last_name AS managerName FROM employees AS e INNER JOIN employees AS m ON e.manager_id = m.employee_id </description>
+    </item>
+    
+    <item>
+      <title>MySQL 非等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-99/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>非等值链接 查询员工的工资和工资级别，并按工资级别降序 SELECT salary,grade_level FROM employees AS e INNER JOIN job_grades AS g ON e.salary BETWEEN g.lowest_sal AND g.highest_sal ORDER BY grade_level DESC </description>
+    </item>
+    
+    <item>
+      <title>MySQL 交叉链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E4%BA%A4%E5%8F%89%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Sat, 30 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E4%BA%A4%E5%8F%89%E9%93%BE%E6%8E%A5/</guid>
+      <description>交叉链接 返回左表中的所有行，左表中的每一行与右表中的所有行组合。交叉联接也称作笛卡尔积
+笛卡尔乘积错误 表 1 有 N 行，表 2 有 M 行，最终的查询结果就是 M * N 行。****
+SELECT b.name,boy.boyName FROM beauty AS b,boys AS boy 笛卡尔乘积也叫交叉链接：
+SELECT b.name,boy.boyName FROM beauty AS b CROSS JOIN boys boy 导致错误的原因是因为没有添加有效的链接条件。
+只需要添加有效的链接条件即可：
+SELECT b.name,boy.boyName FROM beauty AS b LEFT OUTER JOIN boys AS boy # 链接条件 ON b.boyfriend_id = boy.id </description>
+    </item>
+    
+    <item>
+      <title>MySQL  内链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/%E5%86%85%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/%E5%86%85%E9%93%BE%E6%8E%A5/</guid>
+      <description>内链接 查询的是多张表交集部分的记录。
+SQL 99 内链接 SQL 99 支持内链接、外连接以及交叉链接，并且该版本的链接查询语法要比 SQL 92 的可读性要高）。
+SELECT 查询列表 FROM 表一 别名 INNER JOIN 表二 别名 # SQL 92 用 WHERE，SQL99 用 ON ON 链接条件 WHERE SQL 92 内链接 SQL 92 只支持内链接，语法：
+SELECT 查询列表 FROM 表一 别名,表二 别名 WHERE 链接条件 </description>
+    </item>
+    
+    <item>
+      <title>MySQL 等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>等值链接 判断不同表中都包含的字段是否相等，相等则显示，不等则过滤。且一般都用=来判断。
+查询的是多张表的交集字段。
+一般需要为表起别名。
+注意
+使用链接查询，很多时候容易出现Column &#39;字段名&#39; in ambiguousfield 错误，这种情况一般是因为不同的表中含有相同的字段名，导致系统无法知道我们到底要查询哪个表中的字段。这个时候只需要指定一下我们要查询的是哪个表中的字段即可。
+查询女神名所对应的男神名 SELECT name,boyName FROM beauty,boys WHERE beauty.boyfriend_id = boys.id; 查询员工名所对应的部门名 SELECT last_name AS 员工名,department_name AS 部门名 FROM employees,departments WHERE employees.department_id = departments.department_id 查询员工名、工种号、工种名 链接查询通常比较长，因此我们可以给表定义一个别名。
+注意，如果我们为一些表起了别名之后，后续的语句当中如果需要用到这些表，则只能用我们定义的别名，不能用原本的表名。
+# 因为jobs 表和 employees 表中都用 job_id， # 系统不知道我们到底要查询哪一个， # 因此，这里需要指定一下我们要查询哪个表中的job_id SELECT last_name,员工表.job_id,job_title FROM employees AS 员工表, jobs AS 工种表 WHERE 员工表.job_id = 工种表.job_id; 查询城市名中第二个字符为 o 的部门和城市名 SELECT department_name,	city FROM departments AS 部门表,locations AS 位置表 WHERE 部门表.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 自链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E8%87%AA%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E8%87%AA%E9%93%BE%E6%8E%A5/</guid>
+      <description>自链接 判断同一张表中的不同字段是否相等，相等则显示，不相等则过滤。
+需要给同一张表取不同的别名，让系统分清同一张表中的不同字段。
+查询员工名所对应的领导名 SELECT 员工表.last_name AS 员工,领导表.last_name AS 领导 FROM employees AS 员工表, employees AS 领导表 WHERE 员工表.manager_id= 领导表.employee_id; </description>
+    </item>
+    
+    <item>
+      <title>MySQL 非等值链接</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E5%86%85%E9%93%BE%E6%8E%A5/sql-92/%E9%9D%9E%E7%AD%89%E5%80%BC%E9%93%BE%E6%8E%A5/</guid>
+      <description>非等值链接 新建查询并运行。
+CREATE TABLE job_grades (grade_level VARCHAR(3),  lowest_sal int,  highest_sal int);  INSERT INTO job_grades VALUES (&amp;#39;A&amp;#39;, 1000, 2999);  INSERT INTO job_grades VALUES (&amp;#39;B&amp;#39;, 3000, 5999);  INSERT INTO job_grades VALUES(&amp;#39;C&amp;#39;, 6000, 9999);  INSERT INTO job_grades VALUES(&amp;#39;D&amp;#39;, 10000, 14999);  INSERT INTO job_grades VALUES(&amp;#39;E&amp;#39;, 15000, 24999);  INSERT INTO job_grades VALUES(&amp;#39;F&amp;#39;, 25000, 40000); 查询员工的工资和工资级别 SELECT salary,grade_level FROM employees AS 员工表, job_grades 工资等级表 WHERE 员工表.salary BETWEEN 工资等级表.lowest_sal AND 工资等级表.</description>
+    </item>
+    
+    <item>
+      <title>MySQL 链接查询</title>
+      <link>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/mysql/dql/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/%E9%93%BE%E6%8E%A5%E6%9F%A5%E8%AF%A2/</guid>
+      <description>链接查询 当需要从多张表中查询数据，而这些表之间有关联字段的时候，需要使用连接查询。</description>
+    </item>
+    
+  </channel>
+</rss>

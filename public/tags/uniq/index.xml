@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Uniq on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/uniq/</link>
+    <description>Recent content in Uniq on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 16 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/uniq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Uniq</title>
+      <link>https://note.yxzi.xyz/note/technology/storehouse/uniq/uniq/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/storehouse/uniq/uniq/</guid>
+      <description>Uniq ‎ 用于将数组中的所有重复项删除，并按数组中每个元素的首位字符进行升序
+安装 npm install uniq 使用
+// 导入 uniq var uniq = require(&amp;#39;uniq&amp;#39;); // 定义数组 var arr = [199, 9, 3]; // 排序 var result = uniq(arr); // [ 199, 3, 9 ] // 虽然 199 大于 3 和 9，但因为 199 的首位字符为 1，因此，它排在l console.log(result); </description>
+    </item>
+    
+  </channel>
+</rss>

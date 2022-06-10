@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>编程知识 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content in 编程知识 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 10 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/categories/%E7%BC%96%E7%A8%8B%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>前端和后端</title>
+      <link>https://note.yxzi.xyz/note/technology/frame/%E5%89%8D%E7%AB%AF%E5%92%8C%E5%90%8E%E7%AB%AF/</link>
+      <pubDate>Sun, 10 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/frame/%E5%89%8D%E7%AB%AF%E5%92%8C%E5%90%8E%E7%AB%AF/</guid>
+      <description>前端和后端 前端 前端是链接终端设备与人的技术。行的网页，并配合后端做网页的数据显示和交互等可视方面的工作内容。 后端是指用户看不见的东西，通常是与前端工程师进行数据交互及网站数据的保存和读取，相对来说后端涉及到的逻辑代码比前端要多的多，后端考虑的是底层业务逻辑的实现，平台的稳定性与性能等。
+所用技术 前端开发用到的技术包括但不限于 html5、css3、javascript、jquery、Bootstrap、Node.js 、Webpack，AngularJs，ReactJs，VueJs 等技术。 后端开发 以 java 为例 主要用到的 是包括但不限于 Struts spring springmvc Hibernate Http 协议 Servlet Tomcat 服务器等技术。
+工作职责 前端工程师主要的工作职责分为三大部分，分别是传统的 Web 前端开发，移动端开发和大数据呈现端开发。Web 前端开发主要针对的是 PC 端开发任务；移动端开发则包括 Android 开发、iOS 开发和各种小程序开发，在移动互联网迅速发展的带动下，移动端的开发任务量是比较大的，随着 5G 标准的落地，未来移动端的开发任务将得到进一步的拓展；大数据呈现则主要是基于已有的平台完成最终分析结果的呈现，呈现方式通常也有多种选择，比如大屏展示等。 后端工程师的主要职责也集中在三大部分，分别是平台设计、接口设计和功能实现。平台设计主要是搭建后端的支撑服务容器；接口设计主要针对于不同行业进行相应的功能接口设计，通常一个平台有多套接口，就像卫星导航平台设有民用和军用两套接口一样；功能实现则是完成具体的业务逻辑实现。
+知识结构 在知识结构方面，前端开发涉及到的内容包括 Html、CSS、JavaScript、Android 开发（采用 Java 或者 kotlin）、iOS 开发（采用 OC 或者 Swift）、各种小程序开发技术（类 Html），随着前端开发任务的不断拓展，前端开发后端化也是一个较为明显的趋势，比如 Nodejs 的应用。 后端开发通常需要根据业务场景进行不同语言的选择，另外后端开发的重点在于算法设计、数据结构、性能优化等方面，在具体的功能实现部分可以采用 Java、Python 或者 PHP 等编程语言来实现。对于不少中小企业来说，后端开发通常都会采用开源的开发平台，这样就可以把精力集中在业务处理上，通常应用级程序员就可以解决问题，相应的开发成本也会有大幅度的下降。
+应用范围 从应用范围来看，前端开发不仅被常人所知、且应用场景也要比后端广泛的太多太多。 一是 PC (Personal Computer) 即个人电脑。目前电脑端仍是前端一个主要的领域，主要分为面向大众的各类网站，如新闻媒体、社交、电商、论坛等和面向管理员的各种 CMS (内容管理系统)和其它的后台管理系统。 二 Web App 是指使用 Web 开发技术，实现的有较好用户体验的 Web 应用程序。它是运行在手机和桌面端浏览中，随着移动端网络速度的提升，Web App 为我们提供了很大的便利。此外近两年 Google 提出了一种新的 Web App 形态，即 PWA(渐进增强 Web APP) 。三 WeChat (微信) 这个平台，拥有大量的用户群体，因此它也是我们前端开发另一个重要的领域。微信的公众号与订阅号为市场营销和自媒体从业者，打造了一个新的天地。 四 Hybrid App (混合应用) 是指介于 Web App、原生 App (主要是 Android 或 iOS )之间的 App，它兼具原生 App 良好用户交互体验的优势和 Web App 跨平台开发的优势。 五 Game（游戏），HTML5 游戏从 2014 年 Egret 引擎开发的神经猫引爆朋友圈之后，就开始一发不可收拾。不过现在游戏开发变得越来越复杂，需要制作各种炫丽炫丽的效果，还要制作各炫丽于 2D 或者 3D 的场景。 六 Desktop 桌面应用软件，就是我们日常生活中电脑中安装的各类软件。早期要开发桌面应用程序，就需要有专门的语言 UI (界面) 库支持，如 C++ 中的 Qt 库、MFC 库，Java 的 Swing、Python 的 PyQT 等，否则语言是没办法进行快速界面开发。 七 Server Node.</description>
+    </item>
+    
+    <item>
+      <title>库，框架，架构，平台的区别</title>
+      <link>https://note.yxzi.xyz/note/technology/frame/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/frame/%E5%BA%93%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>库，框架，架构，平台的区别 库（Library） 库是一系列预先编写好的代码集合，供开发者在编程中调用，大大减少重复工作量。
+库的概念很宽泛。
+程序员第一次输出 Hello World 用的 printf 就来自 C 语言标准库；
+各种 SDK 都是库；
+从 npm、Maven、Nuget 下载的包都是库；
+你自己写一个字符串处理函数，包装好之后调用，也是库。
+框架（Framework） 框架是库的一种。很多人会把框架和普通库的区别仅仅理解为规模和复杂度，其实不然。
+jQuery 的规模够大了，但仍然是库，不是框架。
+框架的最大特征是它会接管程序的主控制流，开发者只需编写业务逻辑代码，具体执行工作由框架来调用。实践中经常会用到控制反转（IoC）以及模板类继承等方式。
+比如用 Spring 开发 Web 项目，你只需编写 Controller 和配置文件。具体到项目如何启动、如何监听端口、每一次网络请求的响应处理，这些都由框架来实现。
+所以一般来说单个项目可以引入很多库，却不能用多个框架。
+同时用 jQuery 和 Vue 没问题，但同时用 Vue 和 React 就不行。
+因为主控制流只有一个。
+架构（Architecture） 架构与前面两个的区别不仅仅是规模更大，而且它是个抽象概念，不涉及具体语言和代码实现。
+它可以是编程模式，比如 MVC 架构、MVVM 架构，只是规定了代码如何进行逻辑分离。每种语言都有自己的 MVC 框架；
+也可以是客户端形式，比如多年前常谈的 B/S、C/S 架构；
+还可以是服务器端结构，比如分布式架构、微服务架构；
+再比如说数据库，为了让客户放心你可以吹自己用的是业内顶端的高可用高一致性弹性伸缩多机房异地容灾双活架构（实际是阿里云每月八百块买的）；
+等等等等。
+所以说架构师的价值并不在于写代码快、Bug 少、熟练使用某些库与框架，而是掌握并评估项目的什么地方适合用什么架构。
+大方向一旦出了问题，比写几处错误代码的影响可大多了。
+平台（Platform） 平台又是另一回事，区别就在于前三者属于技术领域的概念，平台则属于业务领域的概念。
+只要是运行中的程序通过本机或网络 API 对外提供服务，无论是小规模的单个接口、大规模的云端集群服务，都可以称为平台。
+操作系统是平台，它提供你的应用程序与硬件、软件、网络交互的渠道；
+浏览器是平台，与操作系统的主要区别在于开发语言单一、权限控制较严；
+各互联网服务商自然是平台，提供物理主机、虚拟主机、云主机、容器、Serverless 等等并通过网络进行部署和访问；
+以及常见的通知推送平台、短信平台、统计分析平台等等等。
+ 当然，以上所有概念在网上经常出现混淆，但也不算什么严重的错误。</description>
+    </item>
+    
+  </channel>
+</rss>

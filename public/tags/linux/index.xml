@@ -1,58 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Linux on Rainy · Blog</title>
+    <title>Linux on Rainy · Note</title>
     <link>https://note.yxzi.xyz/tags/linux/</link>
-    <description>Recent content in Linux on Rainy · Blog</description>
+    <description>Recent content in Linux on Rainy · Note</description>
     <image>
       <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Arp 中间人攻击</title>
-      <link>https://note.yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      <title>SHH 密钥登录</title>
+      <link>https://note.yxzi.xyz/note/technology/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://note.yxzi.xyz/blog/technology/arp-%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB/</guid>
-      <description>Arp 中间人攻击 使用 Windows 7 登录到 Window Sever 2012 上搭建好的 FTP 服务器。
-使用 kali
-准备 Linux，用来模拟攻击机，本文用的是系统为 kali，其他系统可以参考。
-Windows 7，用来模拟受害机。
-Window Sever 2012，用于搭建 FTP 服务器，
-Windows 本地环境，在 VMware 配置三台虚拟机
-搭建 FTP 站点 打开服务器管理器的仪表板。
-右上角管理 ，添加角色 Web 服务器：
-勾选后一直下一步，在角色服务找到 FTP 服务器并勾选 ：
-确认选项点击安装，等待安全完成即可。
-配置 Linux 更新 Linux 软件列表
-apt-get update 安装 dsniff 工具
-apt-get install dsniff 使目标机器断网 我们现在要使受害机断网，先查看内网 ip
-ifconfig 扫描内网网段
-nbtscan -r 192.168.54.0/24 可以看到探测到了 ip 为 192.168.54.249，名为 WIN7-2022BXTBSK 的受害机。
-开启 arp 欺骗攻击：</description>
+      <guid>https://note.yxzi.xyz/note/technology/linux/shh-%E5%AF%86%E9%92%A5%E7%99%BB%E9%99%86/</guid>
+      <description>SHH 密钥登录 用 xshell 生成密钥 新建用户密钥生成向导
+输入密钥长度，比如 2024，下一步
+输入密钥名称、密码，下一步
+将公钥保存为文件，完成
+将公钥上传到服务器 我这里用的服务器是 Linux，以及宝塔面板。
+进入服务器的**/root/.ssh路径，在这个文件夹中新建authorized_keys文件，并将之前保存的公钥中的文件内容复制到新建的authorized_keys**文件中。
+配置 sshd_config 找到服务器下的**/etc/ssh/sshd_config**，点击编辑。
+核对文件中的内容是否与一下内容一致，不一致请作出对应的的修改。
+注意，一下内容前面的注释符号**#**请删掉。
+AuthorizedKeysFile .ssh/authorized_keys PasswordAuthentication no </description>
     </item>
     
     <item>
-      <title>Hugo 自动化部署到服务器</title>
-      <link>https://note.yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      <title>登录宝塔</title>
+      <link>https://note.yxzi.xyz/note/technology/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</link>
+      <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://note.yxzi.xyz/blog/technology/hugo-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
-      <description>Hugo 自动化部署到服务器 准备 Git
-Linux 服务器
-GitHub 仓库
-Windows 本地环境</description>
-    </item>
-    
-    <item>
-      <title>Linux 环境安装 Hugo</title>
-      <link>https://note.yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://note.yxzi.xyz/blog/technology/linux-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85-hugo/</guid>
-      <description></description>
+      <guid>https://note.yxzi.xyz/note/technology/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</guid>
+      <description>登录宝塔 前言 本文是我第一次使用服务器搭建网站后所写的，本文使用的是以下产品。
+轻量云服务器 CentOS 7.6 64bit
+Putty 用于 Windows 从本地登陆到远程 Linux 服务器
+宝塔 下载 Putty 用 Putty 登陆到 Linux 配置 Putty  Host Name（IP address）：轻量应用服务器的公网 IP Port：轻量应用服务器的连接端口，必须设置为22。 Connect type：选择SSH. Saved Sessions：填写会话名称，例如 Rainy。 配置 “Host Name” 后，再配置 “Saved Sessions” 并 Save，则后续使用时可直接双击 “Saved Sessions” 下保存的会话名称登录到对应服务器。  输入用户名和密码   填写完成后单击 open，进入到 Putty 的运行界面，提示 login as.
+  在login as后输入用户名，一般都是 root，按 Enter。
+  输入密码，这里注意密码在输入时是不显示的，大家不要以为密码没输入，输入完成后按 Enter.
+  登陆完成。
+  安装宝塔 Centos 系统直接在登陆后 Putty 界面输入以下命令安装。</description>
     </item>
     
   </channel>

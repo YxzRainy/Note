@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>事件 on Rainy · Note</title>
+    <link>https://note.yxzi.xyz/tags/%E4%BA%8B%E4%BB%B6/</link>
+    <description>Recent content in 事件 on Rainy · Note</description>
+    <image>
+      <url>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://note.yxzi.xyz/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/%E4%BA%8B%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 区分点击事件与长按事件</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E5%8C%BA%E5%88%86%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E4%B8%8E%E9%95%BF%E6%8C%89%E4%BA%8B%E4%BB%B6/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E5%8C%BA%E5%88%86%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6%E4%B8%8E%E9%95%BF%E6%8C%89%E4%BA%8B%E4%BB%B6/</guid>
+      <description>区分点击事件与长按事件 HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; 	&amp;lt;head&amp;gt; 	&amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; 	&amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; 	&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34; /&amp;gt; 	&amp;lt;title&amp;gt;区分点击事件与长按事件.m&amp;lt;/title&amp;gt; 	&amp;lt;style&amp;gt; 	div { 	width: 100px; 	height: 100px; 	background-color: rgb(15, 190, 131); 	} 	&amp;lt;/style&amp;gt; 	&amp;lt;/head&amp;gt;  	&amp;lt;body&amp;gt; 	&amp;lt;div style=&amp;#34;position:absolute;left:0;top:0;&amp;#34;&amp;gt;该拖曳只对内联样式有效&amp;lt;/div&amp;gt; 	&amp;lt;/body&amp;gt; 	&amp;lt;script src=&amp;#34;./js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/html&amp;gt; JavaScrip var div = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];  var firstTime = new Date(); var lastTime = new Date(); var key = false; // 元素按下时的时间 document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 拖拽元素</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E6%8B%96%E6%8B%BD%E5%85%83%E7%B4%A0/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E6%8B%96%E6%8B%BD%E5%85%83%E7%B4%A0/</guid>
+      <description>拖拽元素 HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; 	&amp;lt;head&amp;gt; 	&amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; 	&amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; 	&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0&amp;#34; /&amp;gt; 	&amp;lt;title&amp;gt;拖拽元素&amp;lt;/title&amp;gt; 	&amp;lt;style&amp;gt; 	div { 	width: 100px; 	height: 100px; 	background-color: rgb(15, 190, 131); 	} 	&amp;lt;/style&amp;gt; 	&amp;lt;/head&amp;gt;  	&amp;lt;body&amp;gt; 	&amp;lt;div style=&amp;#34;position:absolute;left:0;top:0;&amp;#34;&amp;gt;该拖曳只对内联样式有效&amp;lt;/div&amp;gt; 	&amp;lt;/body&amp;gt; 	&amp;lt;script src=&amp;#34;./js/main.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/html&amp;gt; JavaScrip function drag(elem) { 	var disX, disY; 	// 鼠标 	elem.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript 自动阅读</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E8%87%AA%E5%8A%A8%E9%98%85%E8%AF%BB/</guid>
+      <description>自动阅读 JavaScrip var start = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var stop = document.getElementsByTagName(&amp;#39;div&amp;#39;)[0];var time;// 定义一个 key，用来判断自动阅读是否暂停// 如果不加判断，setInterval() 就会被重复执行多个（导致自动阅读的速度增加），而 clearInterval() 则只能暂停第一个 setInterval()（导致自动阅读无法被暂停）var key = &amp;#39;自动阅读已暂停&amp;#39;;start.onclick = function () {// 判断自动阅读的状态if (key == &amp;#39;自动阅读已暂停&amp;#39;) {// 用 setInterval() 反复执行 scrollBy() 实现页面自动向下滚动time = setInterval(function () {window.scrollBy(0, 10);}, 100);// 自动阅读已开始key = &amp;#39;自动阅读已开始&amp;#39;;}};// 自动阅读已暂停stop.onclick = function () {clearInterval(time);key = &amp;#39;自动阅读已暂停&amp;#39;;}; </description>
+    </item>
+    
+    <item>
+      <title>JavaScript 返回父元素节点.</title>
+      <link>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E8%BF%94%E5%9B%9E%E7%88%B6%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%AE%9E%E4%BE%8B/%E8%BF%94%E5%9B%9E%E7%88%B6%E5%85%83%E7%B4%A0%E8%8A%82%E7%82%B9/</guid>
+      <description>返回父元素节点. JavaScrip function re(e, n) { 	// 如果 e 不为 null 并且 n 不为 0 	while (e &amp;amp;&amp;amp; n) { 	// 获取当前节点的父元素 	e = e.parentElement; 	// 每次循环一次，则想上找一层的父元素，直到 n 为 0 	n--; 	} 	return e; }  var i = document.getElementsByTagName(&amp;#39;i&amp;#39;)[0];  var result = re(i, 3); console.log(result); </description>
+    </item>
+    
+  </channel>
+</rss>
