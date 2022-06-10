@@ -26,7 +26,7 @@ jobs:
         env:
          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
          ARGS: "-rltgoDzvO"
-         SOURCE: "public/"
+         SOURCE: ${{ secrets.SOURCE }}
          REMOTE_HOST: ${{ secrets.HOST }}
          REMOTE_USER: ${{ secrets.USER_NAME }}
          REMOTE_PORT: ${{ secrets.PORT }}
