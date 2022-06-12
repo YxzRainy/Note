@@ -18,7 +18,7 @@ Yarn 在 npm5 之前，优势明显，但在 npm5 之后，两者差别不大。
 全局安装：
 
 ```sh
-npm install -g yarn
+[[[[npm]]]] install -g yarn
 ```
 
 如果以后要将 Yarn 更新到最新版本，请运行：

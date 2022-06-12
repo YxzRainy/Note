@@ -66,24 +66,25 @@ a {
 	transform: translate(-50%);
 }
 
-#Record .PublicSecurityRecord {
-	display: block;
-}
-
 #Record .RecordImg {
 	width: 1.2rem;
 	display: inline-block;
 }
 
-#Record .RecordNumber {
+#Record .RecordNumber,
+#Record .PublicSecurityRecord {
 	opacity: 0.7;
 	text-decoration: none;
 	display: inline-block;
 }
+#Record .PublicSecurityRecord {
+	display: block;
+	margin-top: 0.3rem;
+}
 
-#Record .RecordNumber:hover {
+#Record .RecordNumber:hover,
+#Record .PublicSecurityRecord:hover {
 	opacity: 0.7;
 	text-decoration: none;
-
 	color: #008c8cdc;
 }

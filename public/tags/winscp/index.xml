@@ -12,11 +12,18 @@
     <lastBuildDate>Fri, 22 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://note.yxzi.xyz/tags/winscp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>WinSCP SSH 密钥登录</title>
-      <link>https://note.yxzi.xyz/note/technology/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</link>
+      <link>https://note.yxzi.xyz/note/technology/linux/%E7%94%A8%E6%88%B7/</link>
       <pubDate>Fri, 22 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://note.yxzi.xyz/note/technology/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</guid>
-      <description>WinSCP SSH 密钥登录 WinSCP -&amp;gt; 高级 -&amp;gt; SSH -&amp;gt; 验证 -&amp;gt; 密钥文件</description>
+      <guid>https://note.yxzi.xyz/note/technology/linux/%E7%94%A8%E6%88%B7/</guid>
+      <description>用户 linux 的用户保存在 /etc/passwd 中
+这个文件的内容非常规律，每行代表一个用户。大家可能会比较惊讶，Linux 系统中默认怎么会有这么多的用户啊！这些用户中的绝大多数是系统或服务正常运行所必需的用户，我们把这种用户称为系统用户或伪用户。系统用户是不能登录系统的，但是这些用户同样也不能被删除，因为一旦删除，依赖这些用户运行的服务或程序就不能正常执行，会导致系统问题。
+现在我们就把 root 用户这一行拿出来，具体分析这个文件中的内容具体代表的含义。可以注意到，这个文件用&amp;quot;:&amp;ldquo;作为分隔符，划分为 7 个字段，我们逐个来看具体的含义。 （1）用户名称 第一个字段中保存的是用户名称。不过大家需要注意，用户名称只是为了方便管理员记忆，Linux 系统是通过用户 ID (UID) 来区分不同用户、分配用户权限的。而用户名称和 UID 的对应正是通过 /etc/passwd 这个文件来定义的。
+（2）密码标志 这里的&amp;quot;x&amp;quot;代表的是密码标志，而不是真正的密码，真正的密码是保存在 /etc/shadow 文件中的。在早期的 UNIX 中，这里保存的就是真正的加密密码串，但是这个文件的权限是 644，查询命令如下： [root@localhost ~]# ll /etc/passwd -rw-r–r&amp;ndash; 1 root root 1648 12月29 00:17 /etc/passwd
+所有用户都可以读取 /etc/passwd 文件，这样非常容易导致密码的泄露。虽然密码是加密的，但是采用暴力破解的方式也是能够进行破解的。所以现在的 Linux 系统把真正的加密密码串放置在影子文件/etc/shadow中，而影子文件的权限是 000，查询命令如下： [root@localhost ~]# ll /etc/shadow &amp;mdash;&amp;mdash;&amp;mdash;- 1 root root 1028 12月29 00:18 /etc/shadow
+这个文件是没有任何权限的，但因为我是 root 用户，所以读取权限不受限制。当然，用强制修改的方法也是可以手工修改这个文件的内容的。只有 root 用户可以浏览和操作这个文件，这样就最大限度地保证了密码的安全。
+所以在 /etc/passwd 中只有一个&amp;quot;x&amp;quot;代表用户是拥有密码的，我们把这个字段称作密码标志，具体的密码要去 /etc/shadow 文件中查询。但是这个密码标志&amp;quot;x&amp;quot;也是不能被删除的，如果删除了密码标志&amp;quot;x&amp;rdquo;，那么系统会认为这个用户没有密码，从而导致只输入用户名而不用输入密码就可以登陆（当然只能在使用无密码登录，远程是不可以的），除非特殊情况（如破解用户密码），这当然是不可行的。
+（3）UID 第三个字段就是用户 ID(UID)，我们已经知道系统是通过 UID 来识别不同的用户和分配用户权限的。这些 UID 是有使用限制和要求的： 0：超级用户 UID。如果用户 UID 为 0，则代表这个账号是管理员账号。在 Linux 中如何把普通用户升级成管理员呢？只需把其他用户的 UID 修改为 0 就可以了，这一点和 Windows 是不同的。不过不建议建立多个管理员账号。 1~499：系统用户（伪用户）UID。这些 UID 是系统保留给系统用户的 UID，也就是说 UID 是 1~499 范围内的用户是不能登录系统的，而是用来运行系统或服务的。其中，1~99 是系统保留的账号，系统自动创建；100~499 是预留给用户创建账号的。 500~65535：普通用户 UID。建立的普通用户 UID 从 500 开始，最大到 65535。</description>
     </item>
     
   </channel>

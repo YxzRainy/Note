@@ -1742,9 +1742,6 @@
     <loc>https://note.yxzi.xyz/tags/ps/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://note.yxzi.xyz/tags/putty/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://note.yxzi.xyz/tags/rainy-%E7%9A%84%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -1763,13 +1760,10 @@
     <loc>https://note.yxzi.xyz/note/technology/softwareuse/vscode/%E6%89%A9%E5%B1%95/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://note.yxzi.xyz/tags/windows/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://note.yxzi.xyz/tags/winscp/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://note.yxzi.xyz/note/technology/linux/winscp-ssh-%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95/</loc>
+    <loc>https://note.yxzi.xyz/note/technology/linux/%E7%94%A8%E6%88%B7/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://note.yxzi.xyz/note/afterthought/book/novel/%E4%B8%89%E4%BD%93%E5%9C%B0%E7%90%83%E5%BE%80%E4%BA%8B/</loc>
@@ -2025,9 +2019,6 @@
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://note.yxzi.xyz/tags/%E7%8E%84%E5%B9%BB/</loc>
-    <lastmod>2021-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://note.yxzi.xyz/note/technology/linux/%E7%99%BB%E9%99%86%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2021-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://note.yxzi.xyz/note/view/thinking/%E7%9F%A5%E8%AF%86%E8%AF%85%E5%92%92/</loc>
@@ -2730,6 +2721,14 @@
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://note.yxzi.xyz/note/technology/language/javascrip/%E5%A3%B0%E6%98%8E/let/</loc>
+  </url><url>
+    <loc>https://note.yxzi.xyz/note/technology/linux/%E5%91%BD%E4%BB%A4/</loc>
+  </url><url>
+    <loc>https://note.yxzi.xyz/note/technology/linux/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
+  </url><url>
+    <loc>https://note.yxzi.xyz/note/technology/mysql/%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF/</loc>
+  </url><url>
+    <loc>https://note.yxzi.xyz/note/technology/%E5%AE%9D%E5%A1%94/</loc>
   </url><url>
     <loc>https://note.yxzi.xyz/archives/</loc>
   </url><url>

@@ -11,14 +11,14 @@ tags:
 
 # 命令
 
-## yarn add
+## [[yarn]] add
 
 添加模块。
 
-## yarn remove
+## [[yarn]] remove
 
 删除模块。
 
-## yarn add jquery --dev
+## [[yarn]] add jquery --dev
 
 安装开发环境的`jquery`依赖。
