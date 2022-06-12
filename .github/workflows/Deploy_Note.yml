@@ -2,7 +2,6 @@ name: Deploy Note
 on:
   push:
     branches:
-    # Note 分支有 push 行为时就触发这个 action
       - Note
 
 jobs:
