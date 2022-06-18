@@ -1,11 +1,13 @@
 .page-header,
 .post-header {
+	font-weight: normal;
 	margin: 24px auto var(--content-gap) auto;
 }
 
 .post-title {
 	margin-bottom: 2px;
-	font-size: 40px;
+	font-size: 30px;
+	font-weight: normal;
 }
 
 .post-description {
@@ -44,21 +46,25 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
+	font-weight: normal;
+	color: rgb(69, 69, 69);
 	margin: 24px 0 16px;
 }
 
 .post-content h1 {
 	margin: 40px auto 32px;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .post-content h2 {
 	margin: 32px auto 24px;
-	font-size: 32px;
+	color: rgb(69, 69, 69);
+
+	font-size: 24px;
 }
 
 .post-content h3 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .post-content h4 {
@@ -66,11 +72,11 @@
 }
 
 .post-content h5 {
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .post-content h6 {
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .post-content a,

@@ -7,7 +7,9 @@
 }
 
 .page-header h1 {
-	font-size: 40px;
+	font-weight: normal;
+
+	font-size: 20px;
 }
 
 .pagination {

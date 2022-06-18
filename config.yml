@@ -1,6 +1,7 @@
 baseURL: "https://note.yxzi.xyz"
 title: Rainy · Note
 paginate: 10
+
 theme: PaperMod
 
 enableRobotsTXT: true
