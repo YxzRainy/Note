@@ -2,10 +2,9 @@
 title: C printf
 date: 2022-01-04
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
-
 ---
 
 # printf

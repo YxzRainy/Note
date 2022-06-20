@@ -2,7 +2,7 @@
 title: JavaScript Math
 date: 2021-10-21
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

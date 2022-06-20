@@ -2,7 +2,7 @@
 title: JavaScript Object
 date: 2021-10-21
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -79,10 +79,23 @@ function connect(host, port, ...user) {
 }
 
 connect('127.0.0.2', 3306, { username: 'root', password: 'root', type: 'mysql' });
-
 ```
 
+## ?.
 
+可选链操作符，当尝试访问可能不存在的对象属性时，可选链操作符将会使表达式更短、更简明。
 
+如果 `?.` 左侧的变量传入了值，再读取后面的变量，如果没有，则返回 `undefined`。
 
+```js
+function fun(config) {
+	let dbHost = config?.db?.host;
+	console.log(dbHost);
+}
 
+fun({
+	db: {
+		host: '192.168.1.1',
+	},
+});
+```

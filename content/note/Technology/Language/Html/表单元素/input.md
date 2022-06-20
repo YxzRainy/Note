@@ -2,11 +2,10 @@
 title: HTML input
 date: 2022-05-20
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
         - HTML
-
 ---
 
 # input

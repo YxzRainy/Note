@@ -2,7 +2,7 @@
 title: JavaScrip Symbol
 date: 2022-05-29
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

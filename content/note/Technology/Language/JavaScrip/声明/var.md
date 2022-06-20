@@ -2,7 +2,7 @@
 title: JavaScrip var
 date: 2021-10-23
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

@@ -2,11 +2,10 @@
 title: PHP
 date: 2021-01-30
 categories:
-        - 编程语言
+        - Note
 tags:
         - PHP
         - 后端
-
 ---
 
 # PHP

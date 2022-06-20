@@ -2,12 +2,11 @@
 title: Less
 date: 2022-05-14
 categories:
-        - 编程语言
+        - Note
 tags:
         - Css
         - Less
         - 预处理器
-
 ---
 
 # Less

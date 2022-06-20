@@ -2,7 +2,7 @@
 title: JavaScrip ES6 模块化规范
 date: 2022-05-15
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
         - 模块化
@@ -57,6 +57,8 @@ export { fun2, fun22 };
 
 ## 导入模块
 
+### 静态 import
+
 使用`import`来导入模块，用于输入其他模块提供的功能。
 
 ```js
@@ -69,6 +71,10 @@ fun2();
 fun22();
 console.log(arr[1]);
 ```
+
+### 动态 import
+
+`import`函数的参数`specifier`，指定所要加载的模块的位置。`import`命令能够接受什么参数，`import()`就能接受什么参数，两者区别主要是后者为动态加载（按需加载）。
 
 ## 实现
 

@@ -2,10 +2,9 @@
 title: C scanf
 date: 2022-01-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
-
 ---
 
 # scanf

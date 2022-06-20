@@ -2,7 +2,7 @@
 title: JavaScrip Browserify 实现模块化
 date: 2022-05-15
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
         - 模块化

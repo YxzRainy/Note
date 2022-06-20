@@ -2,10 +2,9 @@
 title: RegExp 属性
 date: 2022-05-10
 categories:
-        - 编程语言
+        - Note
 tags:
         - RegExp
-
 ---
 
 # RegExp 属性

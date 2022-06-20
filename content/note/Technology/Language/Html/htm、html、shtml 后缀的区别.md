@@ -2,11 +2,10 @@
 title: htm、html、shtml 后缀的区别
 date: 2021-10-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - HTML
         - 前端
-
 ---
 
 # htm、html、shtml 后缀的区别

@@ -2,7 +2,7 @@
 title: JavaScript Math 方法
 date: 2022-05-21
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -34,4 +34,3 @@ tags:
 ## pow()
 
 返回第一个参数的 N 次幂
-

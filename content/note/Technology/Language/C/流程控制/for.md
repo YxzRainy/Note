@@ -2,11 +2,10 @@
 title: C for
 date: 2022-04-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
         - 循环控制
-
 ---
 
 # for

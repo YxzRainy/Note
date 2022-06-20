@@ -2,11 +2,10 @@
 title: C CPU 如何对内存条进行处理
 date: 2022-02-17
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
         - 指针
-
 ---
 
 # CPU 如何对内存条进行处理

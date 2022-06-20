@@ -2,7 +2,7 @@
 title: Promise 方法
 date: 2022-06-05
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -134,3 +134,13 @@ p.catch((err) => {
 	console.log(err);
 });
 ```
+
+## allSettled()
+
+不管传入的 promise 是成功还是失败，它始终返回一个成功的 promise，这个 promise 的值是多个 promise 的结果和状态，这些结果和状态都被作为对象存储到一个数组中并返回。
+
+## all()
+
+当传入的 promise 都成功，返回的 promise 才会成功，并且会将所有成功的 promise 的结果和状态作为数组返回。
+
+如果有一个 promise 失败，则返回的 promise 也失败，并且会将失败的 promise 的结果作为数组返回

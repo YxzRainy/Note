@@ -2,11 +2,10 @@
 title: HTML img 的常见问题
 date: 2021-10-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - HTML
         - 前端
-
 ---
 
 # img 的常见问题

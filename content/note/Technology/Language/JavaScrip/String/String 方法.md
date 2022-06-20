@@ -2,7 +2,7 @@
 title: JavaScript String 方法
 date: 2022-05-05
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -10,6 +10,18 @@ tags:
 ---
 
 # String 方法
+
+## trimEnd()
+
+清除字符串右侧的所有空白字符。
+
+## trimStart()
+
+清除字符串左侧的所有空白字符。
+
+## trim()
+
+清除字符串两端的所有空白字符。
 
 ## fromCharCode()
 
@@ -27,6 +39,34 @@ var reg = /ab/g;
 var str = 'abababababab';
 
 var result = str.match(reg);
+console.log(result);
+```
+
+## matchAll()
+
+返回正则批量匹配的结果。
+
+返回一个包含所有匹配正则表达式的结果及分组捕获组的迭代器。
+
+**对数据的批量提取**
+
+```js
+const regexp = /<a href="">(.*?)<\/a>.*?<p>(.*?)<\/p>/gs;
+
+const str = `<ul>
+<li>
+    <a href="">肖生克的救赎</a>
+    <p>上映日期：1994-09-10</p>
+</li>
+
+<li>
+    <a href="">阿甘正传</a>
+    <p>上映日期：1999-10-21</p>
+</li>
+</ul>`;
+const array = str.matchAll(regexp);
+
+let result = [...array];
 console.log(result);
 ```
 

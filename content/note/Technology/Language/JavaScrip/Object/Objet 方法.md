@@ -2,7 +2,7 @@
 title: JavaScript Object 方法
 date: 2022-05-11
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -10,6 +10,8 @@ tags:
 ---
 
 # Object 方法
+
+formentries
 
 ## keys()
 
@@ -19,9 +21,13 @@ tags:
 
 返回指定对象所有属性值组成的数组。
 
+## formEntries()
+
+把键值对数组转换为一个对象。
+
 ## entries()
 
-方法返回指定对象自身**可枚举属性的键值对数组**。
+返回指定对象自身**可枚举属性的键值对数组**。
 
 ## is()
 

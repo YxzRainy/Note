@@ -2,11 +2,10 @@
 title: Vs Code 配置 Java
 date: 2021-10-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - Java
         - Vs Code
-
 ---
 
 # Vs Code 配置 Java

@@ -2,7 +2,7 @@
 title: Map
 date: 2022-06-05
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

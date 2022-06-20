@@ -2,11 +2,10 @@
 title: Css Body 背景图
 date: 2021-10-09
 categories:
-        - 编程语言
+        - Note
 tags:
         - Css
         - 前端
-
 ---
 
 # Body 背景图

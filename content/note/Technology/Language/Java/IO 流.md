@@ -2,10 +2,9 @@
 title: Java IO 流
 date: 2021-12-19
 categories:
-        - 编程语言
+        - Note
 tags:
         - Java
-
 ---
 
 # IO 流

@@ -2,12 +2,11 @@
 title: 安装 Apache
 date: 2021-01-07
 categories:
-        - 编程语言
+        - Note
 tags:
         - 网络
         - 后端
         - 服务器
-
 ---
 
 # 安装 Apache

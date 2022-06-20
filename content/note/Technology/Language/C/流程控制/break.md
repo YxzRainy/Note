@@ -2,10 +2,9 @@
 title: C break
 date: 2021-10-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
-
 ---
 
 # break

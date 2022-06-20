@@ -2,10 +2,9 @@
 title: C Null
 date: 2022-04-20
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
-
 ---
 
 # Null

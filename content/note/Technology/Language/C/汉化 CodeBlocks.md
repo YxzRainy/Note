@@ -2,11 +2,10 @@
 title: CodeBlocks 的使用
 date: 2022-02-19
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
         - 软件使用
-
 ---
 
 # CodeBlocks 的使用

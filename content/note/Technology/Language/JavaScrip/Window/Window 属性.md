@@ -2,7 +2,7 @@
 title: JavaScript Window 属性
 date: 2022-05-05
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

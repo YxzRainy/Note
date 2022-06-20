@@ -2,11 +2,10 @@
 title: italic 和 oblique
 date: 2021-10-09
 categories:
-        - 编程语言
+        - Note
 tags:
         - Css
         - 前端
-
 ---
 
 # italic 和 oblique

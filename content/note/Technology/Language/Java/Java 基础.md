@@ -2,10 +2,9 @@
 title: Java 基础
 date: 2021-10-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - Java
-
 ---
 
 # 基础

@@ -2,7 +2,7 @@
 title: JavaScrip JSON 方法
 date: 2022-04-30
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 

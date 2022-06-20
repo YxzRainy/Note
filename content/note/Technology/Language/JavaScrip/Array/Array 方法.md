@@ -2,7 +2,7 @@
 title: JavaScript Array 方法
 date: 2022-05-02
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -10,6 +10,36 @@ tags:
 ---
 
 # Array 方法
+
+## map()
+
+第一个参数是一个回调函数，该回调函数的第一个参数是数组当前正在被处理的函数。
+
+创建一个新数组，这个新数组**由原数组中的每个元素都调用一次指定的函数后的返回值组成**。
+
+```js
+const array1 = [1, 4, 9, 16];
+ 9啊
+const map1 = array1.map((x) => x * 2);
+
+console.log(map1);
+
+```
+
+## flat()
+
+按照指定深度，将多维数组转换为低维数组。
+
+```js
+let arr = [4, 8, [2, [3, 9]]];
+
+// 将三维数组转换为一维数组
+console.log(arr.flat(2));
+```
+
+## flatMap()
+
+它相当于是 `Map()` 和`flat()`的结合。但`flatMap` 比它们结合使用的效率要高一些。
 
 ## splice(start,deleteCount,item...)
 

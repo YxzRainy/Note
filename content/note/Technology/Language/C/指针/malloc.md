@@ -2,11 +2,10 @@
 title: C malloc
 date: 2022-04-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
         - 指针
-
 ---
 
 # malloc

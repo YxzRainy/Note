@@ -2,7 +2,7 @@
 title: Promise
 date: 2022-06-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - 前端
 
@@ -21,7 +21,7 @@ Promise 说得通俗一点就是一种写代码的方式，并且是用来写 Ja
 
 如果`async()`的返回值不是 promise，则一定返回一个成功的 promise。
 
-如果`async()`的返回值是 promise，则返回的结果由这个作为返回值的 promise  决定。
+如果`async()`的返回值是 promise，则返回的结果由这个作为返回值的 promise 决定。
 
 ```js
 async function fun() {
@@ -37,16 +37,11 @@ console.log(result);
 // [[Prototype]]: Promise
 // [[PromiseState]]: "rejected"
 // [[PromiseResult]]: "失败"
-
 ```
 
-
-
-## await 
+## await
 
 暂停当前`async()`的执行，等待 Promise 处理完成再继续执行 `async()`。
-
-
 
 ## 基本使用
 

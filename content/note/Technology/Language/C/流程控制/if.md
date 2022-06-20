@@ -2,11 +2,10 @@
 title: C if
 date: 2022-04-03
 categories:
-        - 编程语言
+        - Note
 tags:
         - C
         - 选择控制
-
 ---
 
 ## if

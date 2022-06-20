@@ -2,11 +2,10 @@
 title: PHP static
 date: 2022-05-25
 categories:
-        - 编程语言
+        - Note
 tags:
         - PFP
         - 后端
-
 ---
 
 # static
