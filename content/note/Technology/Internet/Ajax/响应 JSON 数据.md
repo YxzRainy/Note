@@ -5,7 +5,7 @@ categories:
         - Ajax
 tags:
         - 前端
-        - Note
+
 ---
 
 # 响应 JSON 数据

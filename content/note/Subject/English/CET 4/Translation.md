@@ -4,7 +4,7 @@ date: 2022-05-28
 categories:
         - English
 tags:
-        - Note
+
 ---
 
 # Translation

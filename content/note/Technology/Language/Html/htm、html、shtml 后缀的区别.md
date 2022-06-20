@@ -6,7 +6,7 @@ categories:
 tags:
         - HTML
         - 前端
-        - Note
+
 ---
 
 # htm、html、shtml 后缀的区别

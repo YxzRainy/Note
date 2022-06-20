@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - 前端
-        - Note
+
         - JavaScript
 ---
 
@@ -16,6 +16,10 @@ tags:
 从数组的索引 start 开始删除 deleteCount 个元素，并在索引为 start 的地方添加若干个 item 元素，并返回一个新数组。
 
 此方法会改变原数组。
+
+## includes()
+
+判断一个数组是否包含一个指定的值。
 
 ## shift()
 

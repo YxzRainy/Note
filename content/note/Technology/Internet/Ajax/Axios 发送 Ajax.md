@@ -5,7 +5,7 @@ categories:
         - Ajax
 tags:
         - 前端
-        - Note
+
 ---
 
 # Axios 发送 Ajax 请求

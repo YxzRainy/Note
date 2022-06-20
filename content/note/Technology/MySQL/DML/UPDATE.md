@@ -7,7 +7,7 @@ tags:
         - SQL
         - DML
         - MySQL
-        - Note
+
 ---
 
 # UPDATE

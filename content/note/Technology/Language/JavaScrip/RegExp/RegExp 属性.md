@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - RegExp
-        - Note
+
 ---
 
 # RegExp 属性

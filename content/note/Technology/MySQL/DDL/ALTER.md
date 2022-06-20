@@ -7,7 +7,6 @@ tags:
         - SQL
         - DDL
         - MySQL
-        - Note
 ---
 
 # ALTER

@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - 前端
-        - Note
+
         - JavaScript
 ---
 
@@ -15,7 +15,7 @@ tags:
 
 `then()` 返回一个 Promise 对象。它有两个参数：Promise 调用`resolve()` 和调用 `rejecte()` 情况的回调函数。
 
-### 返回 Promise 对象
+### 返回值
 
 `than()`的返回值如果是 Promise 对象，那么该 Promise 对象的执行结果会作为当前 `than()` 的返回值。
 

@@ -5,7 +5,7 @@ categories:
         - Ajax
 tags:
         - 前端
-        - Note
+
 ---
 
 # Jsonp 实现原理

@@ -5,7 +5,7 @@ categories:
         - Ajax
 tags:
         - 前端
-        - Note
+
 ---
 
 # Ajax IE 缓存问题

@@ -6,7 +6,7 @@ categories:
 tags:
         - NPM
         - NodeJs
-        - Note
+
 ---
 
 # npm config

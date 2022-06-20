@@ -6,7 +6,7 @@ categories:
 tags:
         - 前端
         - 模块化
-        - Note
+
         - 模块化规范
         - JavaScript
 ---
@@ -72,6 +72,6 @@ console.log(arr[1]);
 
 ## 实现
 
-用 Babel 将 ES6+ 语法转换为向后兼容 ES5 的语法。
+先用 **Babel** 将 ES6+ 语法转换为向后兼容 ES5 的语法。
 
-用 Browserify 打包转换后的主模块文件。
+用 **Browserify** 打包转换后的主模块文件。

@@ -6,7 +6,7 @@ categories:
 tags:
         - C
         - 指针
-        - Note
+
 ---
 
 # CPU 如何对内存条进行处理

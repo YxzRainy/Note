@@ -7,7 +7,7 @@ tags:
         - Vue
         - 前端
         - Vue 2
-        - Note
+
 ---
 
 # Class 与 Style 绑定

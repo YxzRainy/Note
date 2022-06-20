@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - 前端
-        - Note
+
         - JavaScript
 ---
 
@@ -68,10 +68,21 @@ console.log(b.health);
 // 返回 99。
 ```
 
-### create()
+## rest
 
-Object.create()方法是 ECMAScript 5 中新增的方法，这个方法用于创建一个新对象。被创建的对象继承另一个对象的原型，在创建新对象时可以指定一些属性。
+```js
+function connect(host, port, ...user) {
+	console.log(host);
+	console.log(port);
+	// 多余的参数都会保存到 user 中
+	console.log(user);
+}
 
-**注意**
+connect('127.0.0.2', 3306, { username: 'root', password: 'root', type: 'mysql' });
 
-使用 Object.create() 方法创建对象时，如果不是继承一个原有的对象，而是创建一个全新的对象，就要把 proto 设置为 null。
+```
+
+
+
+
+

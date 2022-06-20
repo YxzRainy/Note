@@ -6,7 +6,7 @@ categories:
 tags:
         - 网络
         - Cisco
-        - Note
+
 ---
 
 # OSPF 协议

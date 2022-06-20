@@ -5,7 +5,7 @@ categories:
         - Ajax
 tags:
         - 前端
-        - Note
+
 ---
 
 # Fetch 发送 Ajax

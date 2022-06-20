@@ -7,7 +7,7 @@ tags:
         - SQL
         - DDL
         - MySQL
-        - Note
+
 ---
 
 ### 创建表

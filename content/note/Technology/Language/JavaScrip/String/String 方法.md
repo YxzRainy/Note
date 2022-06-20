@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - 前端
-        - Note
+
         - JavaScript
 ---
 
@@ -176,4 +176,4 @@ console.log(sentence.toLowerCase());
 
 返回字符串中所包含某个字符串第一次出现的索引。
 
-用`indexOf()`判断一个字符串中是否包含空字符串，会返回`0`，而不是-1。
+用它判断一个字符串中是否包含空字符串，会返回`0`，而不是 -1。

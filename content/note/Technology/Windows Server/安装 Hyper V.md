@@ -6,7 +6,7 @@ categories:
 tags:
         - Win Server
         - 虚拟机
-        - Note
+
 ---
 
 # 安装 Hyper V

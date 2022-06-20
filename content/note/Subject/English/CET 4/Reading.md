@@ -4,7 +4,7 @@ date: 2022-06-05
 categories:
         - English
 tags:
-        - Note
+
 ---
 
 # Reading

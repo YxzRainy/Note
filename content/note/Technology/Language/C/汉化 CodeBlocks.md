@@ -6,7 +6,7 @@ categories:
 tags:
         - C
         - 软件使用
-        - Note
+
 ---
 
 # CodeBlocks 的使用

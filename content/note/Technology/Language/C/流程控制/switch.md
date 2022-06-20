@@ -6,7 +6,7 @@ categories:
 tags:
         - C
         - 选择控制
-        - Note
+
 ---
 
 # switch

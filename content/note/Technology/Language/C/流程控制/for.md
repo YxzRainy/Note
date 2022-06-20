@@ -6,7 +6,7 @@ categories:
 tags:
         - C
         - 循环控制
-        - Note
+
 ---
 
 # for

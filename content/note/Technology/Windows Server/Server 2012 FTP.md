@@ -7,7 +7,7 @@ tags:
         - Server 2012
         - 虚拟机
         - 域服务器
-        - Note
+
 ---
 
 # Server 2012 FTP

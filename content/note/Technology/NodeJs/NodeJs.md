@@ -5,7 +5,7 @@ categories:
         - NodeJs
 tags:
         - NPM
-        - Note
+
 ---
 
 # Node.js

@@ -6,7 +6,7 @@ categories:
 tags:
         - SQL
         - MySQL
-        - Note
+
 ---
 
 # DBMS

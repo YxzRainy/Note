@@ -6,7 +6,7 @@ categories:
 tags:
         - Yarn
         - NodeJs
-        - Note
+
 ---
 
 # 命令

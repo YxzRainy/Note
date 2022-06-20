@@ -5,7 +5,7 @@ categories:
         - 编程语言
 tags:
         - 前端
-        - Note
+
         - JavaScript
 ---
 

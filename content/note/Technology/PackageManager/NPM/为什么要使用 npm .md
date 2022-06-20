@@ -6,7 +6,7 @@ categories:
 tags:
         - NPM
         - NodeJs
-        - Note记
+记
 ---
 
 # 为什么要使用 npm

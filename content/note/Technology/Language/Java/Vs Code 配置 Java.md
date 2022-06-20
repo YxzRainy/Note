@@ -6,7 +6,7 @@ categories:
 tags:
         - Java
         - Vs Code
-        - Note
+
 ---
 
 # Vs Code 配置 Java
