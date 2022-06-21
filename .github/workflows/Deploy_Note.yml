@@ -2,7 +2,7 @@ name: Deploy Note
 on:
   push:
     branches:
-      - Note
+      - Noteee
 
 jobs:
   Build_And_Deploy:
