@@ -1,4 +1,3 @@
-# Rainy's notes
+# Rainy's blog
 
-A note generated using Hugo.
-
+This is [Blog](https://yxzi.xyz/) address
