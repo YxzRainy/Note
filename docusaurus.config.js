@@ -7,6 +7,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	// themes: ['@docusaurus/theme-search-algolia'],
+	themes: [
+		// ... Your other themes.
+		[
+			require.resolve('@easyops-cn/docusaurus-search-local'),
+			{
+				// ... Your options.
+				// `hashed` is recommended as long-term-cache of index file is possible.
+				hashed: true,
+				// For Docs using Chinese, The `language` is recommended to set to:
+				// ```
+				language: ['en', 'zh'],
+				// ```
+				highlightSearchTermsOnTargetPage: true,
+				explicitSearchResultPath: true,
+			},
+		],
+	],
 
 	title: '自由清净，无人干涉',
 	// tagline: 'Dinosaurs are cool',
@@ -19,7 +36,7 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: 'facebook', // Usually your GitHub org/user name.
-	projectName: 'docusaurus', // Usually your repo name.
+	projectName: 'Note', // Usually your repo name.
 
 	// Even if you don't use internalization, you can use this field to set useful
 	// metadata like html lang. For example, if your site is Chinese, you may want
@@ -35,19 +52,12 @@ const config = {
 			/** @type {import('@docusaurus/preset-classic').Options} */
 			({
 				docs: {
+					breadcrumbs: false,
 					sidebarPath: require.resolve('./sidebars.js'),
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
-					editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
 				},
-				blog: {
-					showReadingTime: true,
-					readingTime: ({ content, frontMatter, defaultReadingTime }) => defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
-					blogTitle: 'Rainy Blog',
-					postsPerPage: 10,
-					blogSidebarTitle: 'All posts',
-					blogSidebarCount: 'ALL',
-				},
+				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
@@ -69,16 +79,20 @@ const config = {
 						type: 'doc',
 						docId: 'intro',
 						position: 'left',
-						label: 'Note',
+						label: 'Home',
 					},
-					{ to: '/blog', label: 'Blog', position: 'left' },
-
 					{
 						href: 'https://github.com/YxzRainy/Notes',
 						label: 'GitHub',
 						position: 'right',
 					},
 				],
+			},
+			docs: {
+				sidebar: {
+					hideable: true,
+					autoCollapseCategories: true,
+				},
 			},
 		}),
 };
