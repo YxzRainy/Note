@@ -1,17 +1,9 @@
 name: Deploy to
 
 on:
-<<<<<<< HEAD
         push:
                 branches:
                         - Note
-=======
-  push:
-    branches:
-      - Note
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
->>>>>>> 95abbb3bbc95d652415f693898c485b194be4bad
 
 jobs:
         deploy:

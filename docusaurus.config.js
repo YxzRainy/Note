@@ -7,6 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 	// themes: ['@docusaurus/theme-search-algolia'],
+
 	themes: [
 		// ... Your other themes.
 		[
@@ -45,23 +46,17 @@ const config = {
 		defaultLocale: 'zh-Hans',
 		locales: ['zh-Hans'],
 	},
-
 	presets: [
 		[
-			'classic',
-			/** @type {import('@docusaurus/preset-classic').Options} */
-			({
+			'@docusaurus/preset-classic',
+			{
 				docs: {
-					breadcrumbs: false,
-					sidebarPath: require.resolve('./sidebars.js'),
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
+					remarkPlugins: [require('mdx-mermaid')],
 				},
-				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
-			}),
+			},
 		],
 	],
 
@@ -80,6 +75,11 @@ const config = {
 						docId: 'intro',
 						position: 'left',
 						label: 'Home',
+					},
+					{
+						label: 'Blog',
+						href: 'https://yxzi.xyz/',
+						position: 'left',
 					},
 					{
 						href: 'https://github.com/YxzRainy/Notes',
