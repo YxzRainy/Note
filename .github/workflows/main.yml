@@ -1,34 +1,30 @@
-name: Deploy to 
+name: Deploy to
 
 on:
-  push:
-    branches:
-      - master
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+        push:
+                branches:
+                        - Note
 
 jobs:
-  deploy:
-    name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      
+        deploy:
+                name: Deploy to GitHub Pages
+                runs-on: ubuntu-latest
+                steps:
+                        - uses: actions/checkout@v2
 
+                        - name: Install dependencies
+                          run: yarn install --frozen-lockfile
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-        
-      - name: Build website
-        run: yarn build
+                        - name: Build website
+                          run: yarn build
 
-      - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.2.11 
-        env:
-         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-         ARGS: "-rltgoDzvO"
-         SOURCE: ${{ secrets.SOURCE }}
-         REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-         REMOTE_USER: ${{ secrets.REMOTE_USER }}
-         REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-         TARGET: ${{ secrets.TARGET }}
+                        - name: Deploy
+                          uses: easingthemes/ssh-deploy@v2.2.11
+                          env:
+                                  SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+                                  ARGS: '-rltgoDzvO'
+                                  SOURCE: ${{ secrets.SOURCE }}
+                                  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+                                  REMOTE_USER: ${{ secrets.REMOTE_USER }}
+                                  REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+                                  TARGET: ${{ secrets.TARGET }}
