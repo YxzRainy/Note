@@ -1,9 +1,15 @@
 name: Deploy to
 
 on:
+<<<<<<< HEAD
         push:
                 branches:
                         - Note
+=======
+  push:
+    branches:
+        - Note
+>>>>>>> 75f4504deb27e5524e3ce77e9e094d640198c229
 
 jobs:
         deploy:
