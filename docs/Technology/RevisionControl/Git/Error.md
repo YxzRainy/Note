@@ -34,3 +34,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details
 ```
 
 先 `git pull origin master`，再`git push origin master`即可解决。
+
+## Git 检测不到 Hexo themes 下的文件夹被更改
+
+执行 `git rm -r --cached .`之后，再正常提交即可。
+

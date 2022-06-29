@@ -76,6 +76,18 @@ console.log(arr[1]);
 
 `import`函数的参数`specifier`，指定所要加载的模块的位置。`import`命令能够接受什么参数，`import()`就能接受什么参数，两者区别主要是后者为动态加载（按需加载）。
 
+```js
+ [类](..\..\类) import('./js/test')
+	.then((result) => {
+		console.log('模块加载成功', result.default(9, 5));
+	})
+	.catch((err) => {
+		console.log('模块加载失败', err);
+	});
+```
+
+
+
 ## 实现
 
 先用 **Babel** 将 ES6+ 语法转换为向后兼容 ES5 的语法。

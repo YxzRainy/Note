@@ -6,10 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	// themes: ['@docusaurus/theme-search-algolia'],
-
 	themes: [
-		// ... Your other themes.
 		[
 			require.resolve('@easyops-cn/docusaurus-search-local'),
 			{
@@ -52,7 +49,10 @@ const config = {
 			{
 				docs: {
 					remarkPlugins: [require('mdx-mermaid')],
+					sidebarPath: require.resolve('./sidebars.js'),
+					breadcrumbs: false,
 				},
+				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
