@@ -23,7 +23,7 @@ const config = {
 		],
 	],
 
-	title: '自由清净，无人干涉',
+	title: 'Note',
 	// tagline: 'Dinosaurs are cool',
 	url: 'https://note.yxzi.xyz/',
 	baseUrl: '/',
@@ -64,7 +64,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: '自由清净，无人干涉',
+				title: 'Note',
 				logo: {
 					alt: 'My Site Logo',
 					src: 'https://gallery.yxzi.xyz/galleries/2022/06/12/Note.png',

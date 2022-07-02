@@ -2,4 +2,6 @@
 sidebar_position: 1
 ---
 
-# Intro
+# 介绍
+
+这是 Rainy 的笔记。

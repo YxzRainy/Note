@@ -6,6 +6,7 @@ categories:
 tags:
         - NodeJs
         - 打包工具
+        - Webpack
 ---
 
 # Webpack
@@ -74,7 +75,7 @@ module: {
 
  
 
-## 处理图片资源
+处理图片资源
 
 过去在 Webpack4 时，我们处理图片资源通过 `file-loader` 和 `url-loader` 进行处理。
 
