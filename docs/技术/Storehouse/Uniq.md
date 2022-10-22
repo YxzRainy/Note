@@ -6,14 +6,13 @@ categories:
 tags:
         - 前端
         - Uniq
-
 ---
 
 # Uniq
 
 ‎ 用于将数组中的所有重复项删除，并按数组中每个元素的**首位字符**进行升序
 
-## `安装`
+## 安装
 
 ```sh
 npm install uniq
