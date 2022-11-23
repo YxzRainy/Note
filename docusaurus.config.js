@@ -3,6 +3,15 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
+module.exports = {
+	markdown: {
+		mermaid: true,
+	},
+	themes: ['@docusaurus/theme-mermaid'],
+};
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -43,21 +52,33 @@ const config = {
 		defaultLocale: 'zh-Hans',
 		locales: ['zh-Hans'],
 	},
+
 	presets: [
 		[
 			'@docusaurus/preset-classic',
 			{
 				docs: {
-					remarkPlugins: [require('mdx-mermaid')],
+					// remarkPlugins: [require('mdx-mermaid')],
 					sidebarPath: require.resolve('./sidebars.js'),
+					// rehypePlugins: [katex],
+					// remarkPlugins: [math],
 					breadcrumbs: false,
 				},
+
 				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
 			},
 		],
+	],
+	stylesheets: [
+		{
+			href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+			type: 'text/css',
+			integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+			crossorigin: 'anonymous',
+		},
 	],
 
 	themeConfig:
