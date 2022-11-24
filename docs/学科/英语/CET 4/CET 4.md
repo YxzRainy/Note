@@ -2,15 +2,14 @@
 title: English CET 4
 date: 2022-05-28
 categories:
-        - English
+        - 英语
 tags:
-        - English
-
+        - 英语
 ---
 
 # CET 4
 
-![CET 4](CET 4.assets/CET 4.png)
+![CET 4](https://gallery.yxzi.xyz/galleries/2022/11/23/CET%204.png)
 
 ## 分值性价比
 

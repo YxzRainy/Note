@@ -2,9 +2,9 @@
 title: English Writing
 date: 2022-05-28
 categories:
-        - English
+        - 英语
 tags:
-        - English
+        - 英语
 ---
 
 # Writing

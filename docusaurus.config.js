@@ -6,34 +6,36 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
 const katex = require('rehype-katex');
 
-module.exports = {
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+	// mermaid
 	markdown: {
 		mermaid: true,
 	},
-	themes: ['@docusaurus/theme-mermaid'],
-};
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+	plugins: ['@docusaurus/theme-mermaid'],
+	// search local
 	themes: [
 		[
 			require.resolve('@easyops-cn/docusaurus-search-local'),
 			{
-				// ... Your options.
-				// `hashed` is recommended as long-term-cache of index file is possible.
 				hashed: true,
-				// For Docs using Chinese, The `language` is recommended to set to:
-				// ```
 				language: ['en', 'zh'],
-				// ```
 				highlightSearchTermsOnTargetPage: true,
 				explicitSearchResultPath: true,
 			},
 		],
 	],
+	// latex
 
+	stylesheets: [
+		{
+			href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+			type: 'text/css',
+			integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+			crossorigin: 'anonymous',
+		},
+	],
 	title: 'Note',
-	// tagline: 'Dinosaurs are cool',
 	url: 'https://note.yxzi.xyz/',
 	baseUrl: '/',
 	onBrokenLinks: 'throw',
@@ -43,42 +45,30 @@ const config = {
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
 	organizationName: 'facebook', // Usually your GitHub org/user name.
-	projectName: 'Note', // Usually your repo name.
+	projectName: 'docusaurus', // Usually your repo name.
 
-	// Even if you don't use internalization, you can use this field to set useful
-	// metadata like html lang. For example, if your site is Chinese, you may want
-	// to replace "en" with "zh-Hans".
 	i18n: {
-		defaultLocale: 'zh-Hans',
-		locales: ['zh-Hans'],
+		defaultLocale: 'en',
+		locales: ['en'],
 	},
 
 	presets: [
 		[
-			'@docusaurus/preset-classic',
-			{
+			'classic',
+			/** @type {import('@docusaurus/preset-classic').Options} */
+			({
 				docs: {
-					// remarkPlugins: [require('mdx-mermaid')],
 					sidebarPath: require.resolve('./sidebars.js'),
-					// rehypePlugins: [katex],
-					// remarkPlugins: [math],
 					breadcrumbs: false,
+					remarkPlugins: [math],
+					rehypePlugins: [katex],
 				},
-
 				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
-			},
+			}),
 		],
-	],
-	stylesheets: [
-		{
-			href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-			type: 'text/css',
-			integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-			crossorigin: 'anonymous',
-		},
 	],
 
 	themeConfig:
@@ -103,7 +93,7 @@ const config = {
 						position: 'left',
 					},
 					{
-						href: 'https://github.com/YxzRainy/Notes',
+						href: 'https://github.com/YxzRainy/Note',
 						label: 'GitHub',
 						position: 'right',
 					},
@@ -115,6 +105,55 @@ const config = {
 					autoCollapseCategories: true,
 				},
 			},
+			//   footer: {
+			//     style: 'dark',
+			//     links: [
+			//       {
+			//         title: 'Docs',
+			//         items: [
+			//           {
+			//             label: 'Tutorial',
+			//             to: '/docs/intro',
+			//           },
+			//         ],
+			//       },
+			//       {
+			//         title: 'Community',
+			//         items: [
+			//           {
+			//             label: 'Stack Overflow',
+			//             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+			//           },
+			//           {
+			//             label: 'Discord',
+			//             href: 'https://discordapp.com/invite/docusaurus',
+			//           },
+			//           {
+			//             label: 'Twitter',
+			//             href: 'https://twitter.com/docusaurus',
+			//           },
+			//         ],
+			//       },
+			//       {
+			//         title: 'More',
+			//         items: [
+			//           {
+			//             label: 'Blog',
+			//             to: '/blog',
+			//           },
+			//           {
+			//             label: 'GitHub',
+			//             href: 'https://github.com/facebook/docusaurus',
+			//           },
+			//         ],
+			//       },
+			//     ],
+			//     copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			//   },
+			//   prism: {
+			//     theme: lightCodeTheme,
+			//     darkTheme: darkCodeTheme,
+			//   },
 		}),
 };
 
