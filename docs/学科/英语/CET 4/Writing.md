@@ -1,5 +1,5 @@
 ---
-title: English Writing
+title: Writing
 date: 2022-05-28
 categories:
         - 英语

@@ -1,5 +1,5 @@
 ---
-title: English Translation
+title: Translation
 date: 2022-05-28
 categories:
         - 英语

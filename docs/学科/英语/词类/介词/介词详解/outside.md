@@ -1,5 +1,5 @@
 ---
-title: English outside
+title: outside
 date: 2022-04-27
 categories:
         - 英语

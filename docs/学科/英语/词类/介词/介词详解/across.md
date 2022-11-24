@@ -1,5 +1,5 @@
 ---
-title: English across
+title: across
 date: 2022-04-27
 categories:
         - 英语

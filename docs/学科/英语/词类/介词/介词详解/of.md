@@ -1,5 +1,5 @@
 ---
-title: English of
+title: of
 date: 2022-04-25
 categories:
         - 英语

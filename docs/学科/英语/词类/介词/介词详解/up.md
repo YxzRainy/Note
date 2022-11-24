@@ -1,5 +1,5 @@
 ---
-title: English up
+title: up
 date: 2022-04-26
 categories:
         - 英语
