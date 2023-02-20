@@ -1,15 +1,15 @@
 ---
-title: 专升本应试技巧
-date: 2022-05-28
+title: Top-up
+date: 2023-01-28
 categories:
         - 英语
 tags:
         - 英语
 ---
 
-# 专升本应试技巧
+# Top-up
 
-## 冠词
+### 冠词
 
 play / 球
 
@@ -34,3 +34,7 @@ much more/-er
 the more the more/-er
 
 ## 虚拟语气
+
+## 代词
+
+动介后用宾格

@@ -13,6 +13,7 @@ const config = {
 		mermaid: true,
 	},
 	plugins: ['@docusaurus/theme-mermaid'],
+
 	// search local
 	themes: [
 		[
@@ -63,10 +64,10 @@ const config = {
 					remarkPlugins: [math],
 					rehypePlugins: [katex],
 				},
-				blog: false,
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
 				},
+				blog: false,
 			}),
 		],
 	],
