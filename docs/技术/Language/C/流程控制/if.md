@@ -211,3 +211,28 @@ int main(void) {
 	//默认为 a 最大，b 次之，c 最小；比较三个值大小使得 a、b、c，交换最大、中间、最小的位置。
 }
 ```
+
+#### 三数中的最大值
+
+```c
+#include <stdio.h>
+int main() {
+	int a, b, c;
+	int max;
+	scanf_s("%d %d %d", &a, &b, &c);
+	// 找出前两数中的较大值
+	if(a > b){
+		max = a;
+	}else{
+		max = b;
+	}
+	// 将较大值与第三个数比较
+	if(c > max){
+		max = c;
+	}
+	// 返回最大值
+	printf("max = %d", max);
+	return 0;
+}
+```
+
